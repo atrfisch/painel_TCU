@@ -1,0 +1,82 @@
+# .github/workflows/atualizar-painel.yml
+#
+# Estrutura de repositório esperada:
+#   coleta_tcu.py
+#   requirements.txt          -> uma linha: requests
+#   site/index.html
+#   site/dados.json           -> gerado por este workflow (não versione à mão)
+#   .github/workflows/atualizar-painel.yml
+#
+# Antes do primeiro uso, em Settings > Pages, defina Source = "GitHub Actions".
+
+name: Atualizar painel TCU
+
+on:
+  schedule:
+    # Horários em UTC. O TCU julga às terças e quartas; a coleta roda cedo em
+    # dias úteis (06:00 e 15:00 em Brasília) para pegar a pauta antes da sessão.
+    - cron: "0 9 * * 1-5"
+    - cron: "0 18 * * 1-5"
+  workflow_dispatch:        # permite rodar na mão pela aba Actions
+  push:
+    branches: [main]
+    paths: ["site/**", "coleta_tcu.py"]
+
+permissions:
+  contents: write           # para commitar o dados.json
+  pages: write
+  id-token: write
+
+concurrency:
+  group: painel-tcu
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Coletar dados do TCU
+        id: coleta
+        # As APIs do TCU oscilam. Se a coleta falhar, o passo não derruba o
+        # workflow: o site continua publicado com o dados.json anterior.
+        continue-on-error: true
+        run: python coleta_tcu.py --saida site/dados.json --verbose
+
+      - name: Registrar falha na coleta
+        if: steps.coleta.outcome == 'failure'
+        run: echo "::warning::Coleta falhou. Publicando o dados.json da execução anterior."
+
+      - name: Commitar se houve mudança
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- site/dados.json; then
+            echo "Sem alterações nos dados."
+          else
+            git add site/dados.json
+            git commit -m "dados: coleta de $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  publicar:
+    needs: coletar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
