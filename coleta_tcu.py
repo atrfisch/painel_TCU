@@ -28,7 +28,7 @@ import re
 import sys
 import tempfile
 import unicodedata
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from typing import Any, Iterable, Iterator
 
 import requests
@@ -49,18 +49,37 @@ PAUTA_PDF_URL = "https://sessoes-portal-ms.apps.tcu.gov.br/api/sessoes/downloadP
 # Âncora de varredura das pautas publicadas. O id 23240 corresponde ao BTCU de
 # 15/05/2026; os ids crescem a cada edição. A cada execução o coletor avança a
 # partir do maior id já processado, gravado no próprio dados.json.
+# Ancoragem por data: ids observados 22110=05/08/2024, 22495=28/04/2025,
+# 23186=20/03/2026, 23240=15/05/2026 — cerca de um id por dia corrido, mas com
+# lacunas (o id é compartilhado com outros tipos de documento). Por isso a
+# varredura não pode parar no primeiro vazio.
 PAUTA_ID_ANCORA = 23240
-PAUTA_MISSES_SEGUIDOS = 12  # desiste depois de N ids consecutivos sem pauta
+PAUTA_DATA_ANCORA = date(2026, 5, 15)
+PAUTA_MISSES_SEGUIDOS = 45  # tolera lacunas longas antes de desistir
 
-# Processos que o MPO acompanha nominalmente. Entram no painel sempre, mesmo
-# que nenhuma outra regra os capture. Acrescente números aqui conforme surgirem.
-PROCESSOS_INTERESSE = {
-    "022.756/2025-6",
-    "005.405/2026-2",
-    "022.852/2025-5",
-    "022.280/2024-3",
-    "008.798/2025-7",
-}
+# OPCIONAL e normalmente vazio. A descoberta é automática: todo processo cuja
+# unidade jurisdicionada seja do MPO entra sozinho. Use isto apenas para forçar
+# a entrada de um processo que a pauta ainda não mencionou.
+PROCESSOS_INTERESSE: set[str] = set()
+
+# Peso do vínculo com o órgão, extraído da própria pauta.
+PESO_VINCULO = {"principal": 3.0, "compartilhado": 1.8, "interessado": 1.0}
+
+# A pauta é dominada por atos de pessoal e cobranças. São processos legítimos,
+# mas não são matéria de gestão do Ministério: entram no painel rebaixados,
+# não excluídos, para não esconder nada de quem quiser olhar.
+NATUREZAS_ROTINA = (
+    r"aposentadoria", r"pens[aã]o (civil|militar)", r"reforma\b",
+    r"tomada de contas especial", r"recolhimento administrativo",
+    r"admiss[aã]o de pessoal", r"ato de pessoal",
+)
+# Matérias em que uma decisão do TCU muda a vida do Ministério.
+NATUREZAS_ALTA = (
+    r"auditoria", r"acompanhament", r"levantament", r"monitorament",
+    r"desestatiza[cç][aã]o", r"consulta", r"solicita[cç][aã]o do congresso",
+    r"representa[cç][aã]o", r"den[uú]ncia", r"presta[cç][aã]o de contas",
+    r"relat[oó]rio de gest[aã]o",
+)
 
 # Unidades jurisdicionadas de interesse. Diferente das camadas nominal e
 # temática, isto casa contra um campo que o PRÓPRIO TCU declara na pauta —
@@ -469,6 +488,54 @@ def _extrair_campo(bloco: str, rotulos: tuple[str, ...]) -> str | None:
     return None
 
 
+RX_ROTINA = [re.compile(p) for p in NATUREZAS_ROTINA]
+RX_ALTA = [re.compile(p) for p in NATUREZAS_ALTA]
+
+
+def classe_materia(natureza: str | None, descricao: str) -> tuple[str, float]:
+    """Separa matéria de gestão de rotina administrativa, sem descartar nada."""
+    texto = normalizar(f"{natureza or ''} {descricao[:160]}")
+    if any(rx.search(texto) for rx in RX_ROTINA):
+        return "rotina", 0.25
+    if any(rx.search(texto) for rx in RX_ALTA):
+        return "materia", 1.0
+    return "outra", 0.6
+
+
+def grau_vinculo(unidade: str | None, interessados: str | None,
+                 regras: dict[str, list[re.Pattern[str]]]) -> tuple[list[str], str]:
+    """
+    Quão diretamente o órgão está preso ao processo. Ser a única unidade
+    jurisdicionada não é o mesmo que aparecer como um entre sete interessados.
+    """
+    na_unidade = identificar(normalizar(unidade or ""), regras)
+    if na_unidade:
+        vinculo = "compartilhado" if ";" in (unidade or "") else "principal"
+        return na_unidade, vinculo
+    nos_interessados = identificar(normalizar(interessados or ""), regras)
+    if nos_interessados:
+        return nos_interessados, "interessado"
+    return [], "nenhum"
+
+
+def exigir_pypdf():
+    """
+    A ausência do pypdf fazia TODA a fonte de pautas sumir silenciosamente,
+    aparecendo no painel como "não respondeu" — um diagnóstico errado que custa
+    tempo. Agora a falta da dependência para a execução com a mensagem certa.
+    """
+    try:
+        from pypdf import PdfReader
+        return PdfReader
+    except ImportError:
+        raise SystemExit(
+            "\nFALTA DEPENDÊNCIA: pypdf\n"
+            "As pautas do TCU são PDF. Instale com:\n"
+            "    pip install pypdf\n"
+            "e confirme que 'pypdf' está no requirements.txt do repositório.\n"
+        )
+
+
 def baixar_pauta(sessao: requests.Session, id_pauta: int) -> str | None:
     """Baixa uma edição do BTCU e devolve o texto. None se a edição não existe."""
     try:
@@ -479,16 +546,10 @@ def baixar_pauta(sessao: requests.Session, id_pauta: int) -> str | None:
         log.debug("Pauta %s indisponível: %s", id_pauta, exc)
         return None
 
-    try:
-        from pypdf import PdfReader  # dependência só desta fonte
-    except ImportError:
-        log.error("pypdf não instalado — acrescente 'pypdf' ao requirements.txt.")
-        return None
-
     import io
 
     try:
-        leitor = PdfReader(io.BytesIO(resp.content))
+        leitor = exigir_pypdf()(io.BytesIO(resp.content))
         return "\n".join(p.extract_text() or "" for p in leitor.pages)
     except Exception as exc:  # PDF corrompido não deve derrubar a coleta
         log.warning("Falha ao ler a pauta %s: %s", id_pauta, exc)
@@ -519,26 +580,31 @@ def parsear_pauta(texto: str, id_pauta: int) -> list[dict]:
             bloco, (r"Unidade [Jj]urisdicionada", r"[ÓO]rg[ãa]o/Entidade/Unidade", r"[ÓO]rg[ãa]o/Entidade")
         )
         interessados = _extrair_campo(bloco, (r"Interessad[oa]s?",))
-        alvo = normalizar(f"{unidade or ''} {interessados or ''}")
-        orgaos = identificar(alvo, RX_UNIDADES)
+        orgaos, vinculo = grau_vinculo(unidade, interessados, RX_UNIDADES)
         na_watchlist = numero_atual in PROCESSOS_INTERESSE
 
         if orgaos or na_watchlist:
             corte = RX_CAMPO.search(bloco)
             descricao = (bloco[: corte.start()] if corte else bloco).strip().rstrip(".")
+            natureza = _extrair_campo(bloco, (r"Natureza",))
+            classe, peso_materia = classe_materia(natureza, descricao)
+            relevancia = round(PESO_VINCULO.get(vinculo, 1.0) * peso_materia, 2)
             registros.append(
                 {
                     "fonte": "Pauta",
                     "orgaos": orgaos,
                     "temas": identificar(normalizar(descricao), RX_TEMAS),
                     "confianca": "unidade_jurisdicionada" if orgaos else "watchlist",
+                    "vinculo": vinculo,
+                    "classe": classe,
+                    "relevancia": relevancia,
                     "processo": numero_atual,
                     "processo_id": limpar_processo(numero_atual),
                     "assunto": descricao or "Processo incluído em pauta",
                     "unidade_jurisdicionada": unidade,
                     "relator": relator,
                     "colegiado": colegiado,
-                    "natureza": _extrair_campo(bloco, (r"Natureza",)),
+                    "natureza": natureza,
                     "data": iso(parse_data(data_sessao)),
                     "data_sessao": iso(parse_data(data_sessao)),
                     "edicao_btcu": id_pauta,
@@ -576,13 +642,18 @@ def coletar_pautas_publicadas(sessao: requests.Session, ancora: int, maximo: int
     Avança a partir da âncora até acumular MISSES seguidos. Devolve os registros
     e o maior id efetivamente lido, para servir de âncora na próxima execução.
     """
+    # Teto estimado: ~1,1 id por dia desde a âncora conhecida, com folga.
+    dias = (date.today() - PAUTA_DATA_ANCORA).days
+    teto = PAUTA_ID_ANCORA + int(dias * 1.1) + 40
+    log.info("Varrendo pautas de %d até no máximo %d", ancora, teto)
+
     registros: list[dict] = []
     misses = 0
     maior = ancora
     id_atual = ancora
     lidas = 0
 
-    while misses < PAUTA_MISSES_SEGUIDOS and lidas < maximo:
+    while misses < PAUTA_MISSES_SEGUIDOS and lidas < maximo and id_atual <= teto:
         texto = baixar_pauta(sessao, id_atual)
         if texto is None:
             misses += 1
