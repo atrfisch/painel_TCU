@@ -1,0 +1,563 @@
+{
+  "schema": 3,
+  "resumo_temas": [
+    {
+      "tema": "Orçamento e execução",
+      "total": 6,
+      "nominais": 0,
+      "data_ultimo_registro": "2025-07-14T03:00:00+00:00"
+    },
+    {
+      "tema": "Transferências e convênios",
+      "total": 4,
+      "nominais": 0,
+      "data_ultimo_registro": "2026-05-18T03:00:00+00:00"
+    },
+    {
+      "tema": "Regras fiscais",
+      "total": 3,
+      "nominais": 0,
+      "data_ultimo_registro": "2025-03-07T03:00:00+00:00"
+    },
+    {
+      "tema": "Emendas parlamentares",
+      "total": 2,
+      "nominais": 0,
+      "data_ultimo_registro": "2025-08-12T17:08:29+00:00"
+    },
+    {
+      "tema": "Planejamento e avaliação de políticas",
+      "total": 2,
+      "nominais": 0,
+      "data_ultimo_registro": "2025-08-12T16:44:31+00:00"
+    }
+  ],
+  "resumo": [
+    {
+      "orgao": "MPO",
+      "nome_completo": "Ministério do Planejamento e Orçamento",
+      "total": 0,
+      "por_fonte": {},
+      "por_tema": {},
+      "data_ultimo_registro": null
+    },
+    {
+      "orgao": "SOF",
+      "nome_completo": "Secretaria de Orçamento Federal",
+      "total": 0,
+      "por_fonte": {},
+      "por_tema": {},
+      "data_ultimo_registro": null
+    },
+    {
+      "orgao": "SEPLAN",
+      "nome_completo": "Secretaria Nacional de Planejamento",
+      "total": 0,
+      "por_fonte": {},
+      "por_tema": {},
+      "data_ultimo_registro": null
+    },
+    {
+      "orgao": "SMA",
+      "nome_completo": "Secretaria de Monitoramento e Avaliação",
+      "total": 0,
+      "por_fonte": {},
+      "por_tema": {},
+      "data_ultimo_registro": null
+    }
+  ],
+  "ultimos_andamentos": [
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Transferências e convênios"
+      ],
+      "confianca": "tematica",
+      "processo": "011.503/2026-2",
+      "processo_id": "01150320262",
+      "tipo": "REQ",
+      "numero": 23,
+      "assunto": "Requer que seja solicitado ao Tribunal de Contas da União a realização de fiscalização na RO-383, no município de Cacoal/RO, com o objetivo de averiguar a causa dos problemas nas obras de recuperação da rodovia e apurar responsabilidades, incluindo o repasse de recursos federais e os convênios firmados.",
+      "autor": "Marcos Rogério",
+      "data": "2026-05-18T03:00:00+00:00",
+      "link_proposicao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/174188",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Emendas parlamentares"
+      ],
+      "confianca": "tematica",
+      "processo": "017.291/2025-9",
+      "processo_id": "01729120259",
+      "tipo": "REQ",
+      "numero": 336,
+      "assunto": "Requer o envio à CFFC, pelo Tribunal de Contas da União (TCU), de cópias digitais de Acórdãos (acompanhados de respectivos relatórios e votos) exarados recentemente pela Corte de Contas em relação à temática: emendas Parlamentares - transparência e eficiência na aplicação de recursos provenientes de emendas individuais e de relator.",
+      "autor": "Dimas Gadelha",
+      "data": "2025-08-12T17:08:29+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2543184",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Planejamento e avaliação de políticas"
+      ],
+      "confianca": "tematica",
+      "processo": "017.290/2025-2",
+      "processo_id": "01729020252",
+      "tipo": "REQ",
+      "numero": 333,
+      "assunto": "Requer o envio à CFFC, pelo Tribunal de Contas da União (TCU), de cópias digitais de Acórdãos (acompanhados de respectivos relatórios e votos) exarados recentemente pela Corte de Contas em relação à temática Gastos Tributários (renúncias de receitas).",
+      "autor": "Dimas Gadelha",
+      "data": "2025-08-12T16:44:31+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2543162",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Orçamento e execução"
+      ],
+      "confianca": "tematica",
+      "processo": "015.321/2025-8",
+      "processo_id": "01532120258",
+      "tipo": "REQ",
+      "numero": 40,
+      "assunto": "Requer que esta Comissão encaminhe solicitação ao Tribunal de Contas da União (TCU) para a realização de auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes agências reguladoras federais: ANM, Anatel, Aneel, ANAC, ANP, ANTT e ANTAQ, bem como dos ministérios aos quais essas entidades estão vinculadas.",
+      "autor": "Marcos Rogério",
+      "data": "2025-07-14T03:00:00+00:00",
+      "link_proposicao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/169550",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Orçamento e execução"
+      ],
+      "confianca": "tematica",
+      "processo": "017.443/2025-3",
+      "processo_id": "01744320253",
+      "tipo": "REQ",
+      "numero": 276,
+      "assunto": "Requer o encaminhamento de solicitação de informações ao Tribunal de Contas da União (TCU) quanto à supressão, na proposta de Lei de Diretrizes Orçamentárias (LDO) para 2026, da cláusula que obrigava a reversão patrimonial de bens adquiridos com recursos públicos no âmbito de parcerias firmadas com ONGs, solicitando esclarecimentos sobre os impactos dessa medida na proteção do patrimônio público e na fiscalização da correta aplicação dos recursos federais transferidos ao terceiro setor.",
+      "autor": "Evair Vieira de Melo",
+      "data": "2025-06-16T14:36:58+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2532295",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Orçamento e execução",
+        "Regras fiscais"
+      ],
+      "confianca": "tematica",
+      "processo": "005.011/2025-6",
+      "processo_id": "00501120256",
+      "tipo": "REQ",
+      "numero": 4,
+      "assunto": "Requer, nos termos do art. 71, inciso IV, da Constituição Federal, combinado com o art. 90, inciso X, do Regimento Interno do Senado Federal, que seja solicitada ao Tribunal de Contas da União a realização de auditoria para avaliar a regularidade orçamentária dos programas governamentais instituídos pela Medida Provisória nº 1.278, de 11 de dezembro de 2024, considerando possíveis impactos sobre as regras fiscais vigentes.",
+      "autor": "Ciro Nogueira",
+      "data": "2025-03-07T03:00:00+00:00",
+      "link_proposicao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/167451",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Emendas parlamentares"
+      ],
+      "confianca": "tematica",
+      "processo": "028.516/2024-9",
+      "processo_id": "02851620249",
+      "tipo": "REQ",
+      "numero": 218,
+      "assunto": "Solicita informações ao Tribunal de Contas da União sobre a autorização do Governo Lula para que sindicatos utilizem recursos do Fundo de Amparo ao Trabalhador (FAT) e de emendas parlamentares.",
+      "autor": "Evair Vieira de Melo",
+      "data": "2024-08-29T18:37:12+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2457184",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Orçamento e execução",
+        "Regras fiscais"
+      ],
+      "confianca": "tematica",
+      "processo": "011.176/2024-5",
+      "processo_id": "01117620245",
+      "tipo": "REQ",
+      "numero": 103,
+      "assunto": "Requisita-se informações ao Tribunal de Contas da União-TCU a respeito de eventual irregularidade no cancelamento durante o exercício de recursos orçamentários, que constam do Anexo III da LDO, que não são objeto de limitação de empenho nos termos do disposto no § 2º do Art. 9º da Lei Complementar nº 101, de 4 de maio de 2000 - Lei de Responsabilidade Fiscal (LRF).",
+      "autor": "Evair Vieira de Melo",
+      "data": "2024-04-15T17:39:01+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2426815",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Orçamento e execução",
+        "Regras fiscais"
+      ],
+      "confianca": "tematica",
+      "processo": "015.819/2024-8",
+      "processo_id": "01581920248",
+      "tipo": "SIT",
+      "numero": 2,
+      "assunto": "Requisita-se informações ao Tribunal de Contas da União-TCU a respeito de eventual irregularidade no cancelamento durante o exercício de recursos orçamentários, que constam do Anexo III da LDO, que não são objeto de limitação de empenho nos termos do disposto no § 2º do Art. 9º da Lei Complementar nº 101, de 4 de maio de 2000 - Lei de Responsabilidade Fiscal (LRF).",
+      "autor": "Evair Vieira de Melo",
+      "data": "2024-04-15T14:17:26+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2426710",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Transferências e convênios"
+      ],
+      "confianca": "tematica",
+      "processo": "012.209/2024-4",
+      "processo_id": "01220920244",
+      "tipo": "REQ",
+      "numero": 92,
+      "assunto": "Requer informações ao Tribunal de Contas da União acerca das transferências de recursos pelo Ministério da Saúde aos Estados e municípios em 2023 e 2024, incluindo possíveis indicações políticas associadas a esses repasses.",
+      "autor": "Evair Vieira de Melo",
+      "data": "2024-04-12T19:42:18+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2426726",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Planejamento e avaliação de políticas"
+      ],
+      "confianca": "tematica",
+      "processo": "008.135/2024-0",
+      "processo_id": "00813520240",
+      "tipo": "REQ",
+      "numero": 89,
+      "assunto": "Requer a realização de auditoria, juntamente com o Tribunal de Contas da União (TCU), a fim de apurar possíveis irregularidades na aplicação dos recursos públicos e de avaliar políticas públicas do programa de conectividade de escolas, que envolve o Ministério das Comunicações, o Ministério da Educação e a Entidade Administradora da Conectividade de Escolas.",
+      "autor": "Aureo Ribeiro",
+      "data": "2024-04-12T14:42:21+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2426581",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Transferências e convênios"
+      ],
+      "confianca": "tematica",
+      "processo": "012.209/2024-4",
+      "processo_id": "01220920244",
+      "tipo": "REQ",
+      "numero": 80,
+      "assunto": "Requer a realização de uma auditoria pelo Tribunal de Contas da União (TCU) para verificar as transferências de recursos realizadas pelo Ministério da Saúde aos Estados e municípios nos anos de 2023 e 2024, assim como os indícios de indicações políticas associadas a esses repasses.",
+      "autor": "Kim Kataguiri",
+      "data": "2024-04-03T23:02:56+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2424678",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Transferências e convênios"
+      ],
+      "confianca": "tematica",
+      "processo": "040.227/2023-5",
+      "processo_id": "04022720235",
+      "tipo": "REQ",
+      "numero": 557,
+      "assunto": "Requer auditoria, com auxílio do Tribunal de Contas da União, para verificar a regularidade da execução dos recursos repassados pelo Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome para a Associação Programa um Milhão de Cisternas para o Semiárido, no âmbito dos convênios que especifica.",
+      "autor": "Adriana Ventura",
+      "data": "2023-12-11T17:36:36+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2411986",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Orçamento e execução"
+      ],
+      "confianca": "tematica",
+      "processo": "038.882/2023-0",
+      "processo_id": "03888220230",
+      "tipo": "REQ",
+      "numero": 416,
+      "assunto": "Requer a realização de Auditoria, com o auxílio do Tribunal de Contas da União, com o objetivo acompanhar e apurar a legalidade da execução orçamentária referente ao bloqueio de R$ 116 milhões destinados à Capes em 2023 pelo Governo Lula.",
+      "autor": "Evair Vieira de Melo",
+      "data": "2023-10-20T18:29:56+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2398043",
+      "link_tcu": null
+    }
+  ],
+  "processos_detalhes": [
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Transferências e convênios"
+      ],
+      "confianca": "tematica",
+      "processo": "011.503/2026-2",
+      "processo_id": "01150320262",
+      "tipo": "REQ",
+      "numero": 23,
+      "assunto": "Requer que seja solicitado ao Tribunal de Contas da União a realização de fiscalização na RO-383, no município de Cacoal/RO, com o objetivo de averiguar a causa dos problemas nas obras de recuperação da rodovia e apurar responsabilidades, incluindo o repasse de recursos federais e os convênios firmados.",
+      "autor": "Marcos Rogério",
+      "data": "2026-05-18T03:00:00+00:00",
+      "link_proposicao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/174188",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Emendas parlamentares"
+      ],
+      "confianca": "tematica",
+      "processo": "017.291/2025-9",
+      "processo_id": "01729120259",
+      "tipo": "REQ",
+      "numero": 336,
+      "assunto": "Requer o envio à CFFC, pelo Tribunal de Contas da União (TCU), de cópias digitais de Acórdãos (acompanhados de respectivos relatórios e votos) exarados recentemente pela Corte de Contas em relação à temática: emendas Parlamentares - transparência e eficiência na aplicação de recursos provenientes de emendas individuais e de relator.",
+      "autor": "Dimas Gadelha",
+      "data": "2025-08-12T17:08:29+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2543184",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Planejamento e avaliação de políticas"
+      ],
+      "confianca": "tematica",
+      "processo": "017.290/2025-2",
+      "processo_id": "01729020252",
+      "tipo": "REQ",
+      "numero": 333,
+      "assunto": "Requer o envio à CFFC, pelo Tribunal de Contas da União (TCU), de cópias digitais de Acórdãos (acompanhados de respectivos relatórios e votos) exarados recentemente pela Corte de Contas em relação à temática Gastos Tributários (renúncias de receitas).",
+      "autor": "Dimas Gadelha",
+      "data": "2025-08-12T16:44:31+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2543162",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Orçamento e execução"
+      ],
+      "confianca": "tematica",
+      "processo": "015.321/2025-8",
+      "processo_id": "01532120258",
+      "tipo": "REQ",
+      "numero": 40,
+      "assunto": "Requer que esta Comissão encaminhe solicitação ao Tribunal de Contas da União (TCU) para a realização de auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes agências reguladoras federais: ANM, Anatel, Aneel, ANAC, ANP, ANTT e ANTAQ, bem como dos ministérios aos quais essas entidades estão vinculadas.",
+      "autor": "Marcos Rogério",
+      "data": "2025-07-14T03:00:00+00:00",
+      "link_proposicao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/169550",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Orçamento e execução"
+      ],
+      "confianca": "tematica",
+      "processo": "017.443/2025-3",
+      "processo_id": "01744320253",
+      "tipo": "REQ",
+      "numero": 276,
+      "assunto": "Requer o encaminhamento de solicitação de informações ao Tribunal de Contas da União (TCU) quanto à supressão, na proposta de Lei de Diretrizes Orçamentárias (LDO) para 2026, da cláusula que obrigava a reversão patrimonial de bens adquiridos com recursos públicos no âmbito de parcerias firmadas com ONGs, solicitando esclarecimentos sobre os impactos dessa medida na proteção do patrimônio público e na fiscalização da correta aplicação dos recursos federais transferidos ao terceiro setor.",
+      "autor": "Evair Vieira de Melo",
+      "data": "2025-06-16T14:36:58+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2532295",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Orçamento e execução",
+        "Regras fiscais"
+      ],
+      "confianca": "tematica",
+      "processo": "005.011/2025-6",
+      "processo_id": "00501120256",
+      "tipo": "REQ",
+      "numero": 4,
+      "assunto": "Requer, nos termos do art. 71, inciso IV, da Constituição Federal, combinado com o art. 90, inciso X, do Regimento Interno do Senado Federal, que seja solicitada ao Tribunal de Contas da União a realização de auditoria para avaliar a regularidade orçamentária dos programas governamentais instituídos pela Medida Provisória nº 1.278, de 11 de dezembro de 2024, considerando possíveis impactos sobre as regras fiscais vigentes.",
+      "autor": "Ciro Nogueira",
+      "data": "2025-03-07T03:00:00+00:00",
+      "link_proposicao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/167451",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Emendas parlamentares"
+      ],
+      "confianca": "tematica",
+      "processo": "028.516/2024-9",
+      "processo_id": "02851620249",
+      "tipo": "REQ",
+      "numero": 218,
+      "assunto": "Solicita informações ao Tribunal de Contas da União sobre a autorização do Governo Lula para que sindicatos utilizem recursos do Fundo de Amparo ao Trabalhador (FAT) e de emendas parlamentares.",
+      "autor": "Evair Vieira de Melo",
+      "data": "2024-08-29T18:37:12+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2457184",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Orçamento e execução",
+        "Regras fiscais"
+      ],
+      "confianca": "tematica",
+      "processo": "011.176/2024-5",
+      "processo_id": "01117620245",
+      "tipo": "REQ",
+      "numero": 103,
+      "assunto": "Requisita-se informações ao Tribunal de Contas da União-TCU a respeito de eventual irregularidade no cancelamento durante o exercício de recursos orçamentários, que constam do Anexo III da LDO, que não são objeto de limitação de empenho nos termos do disposto no § 2º do Art. 9º da Lei Complementar nº 101, de 4 de maio de 2000 - Lei de Responsabilidade Fiscal (LRF).",
+      "autor": "Evair Vieira de Melo",
+      "data": "2024-04-15T17:39:01+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2426815",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Orçamento e execução",
+        "Regras fiscais"
+      ],
+      "confianca": "tematica",
+      "processo": "015.819/2024-8",
+      "processo_id": "01581920248",
+      "tipo": "SIT",
+      "numero": 2,
+      "assunto": "Requisita-se informações ao Tribunal de Contas da União-TCU a respeito de eventual irregularidade no cancelamento durante o exercício de recursos orçamentários, que constam do Anexo III da LDO, que não são objeto de limitação de empenho nos termos do disposto no § 2º do Art. 9º da Lei Complementar nº 101, de 4 de maio de 2000 - Lei de Responsabilidade Fiscal (LRF).",
+      "autor": "Evair Vieira de Melo",
+      "data": "2024-04-15T14:17:26+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2426710",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Transferências e convênios"
+      ],
+      "confianca": "tematica",
+      "processo": "012.209/2024-4",
+      "processo_id": "01220920244",
+      "tipo": "REQ",
+      "numero": 92,
+      "assunto": "Requer informações ao Tribunal de Contas da União acerca das transferências de recursos pelo Ministério da Saúde aos Estados e municípios em 2023 e 2024, incluindo possíveis indicações políticas associadas a esses repasses.",
+      "autor": "Evair Vieira de Melo",
+      "data": "2024-04-12T19:42:18+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2426726",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Planejamento e avaliação de políticas"
+      ],
+      "confianca": "tematica",
+      "processo": "008.135/2024-0",
+      "processo_id": "00813520240",
+      "tipo": "REQ",
+      "numero": 89,
+      "assunto": "Requer a realização de auditoria, juntamente com o Tribunal de Contas da União (TCU), a fim de apurar possíveis irregularidades na aplicação dos recursos públicos e de avaliar políticas públicas do programa de conectividade de escolas, que envolve o Ministério das Comunicações, o Ministério da Educação e a Entidade Administradora da Conectividade de Escolas.",
+      "autor": "Aureo Ribeiro",
+      "data": "2024-04-12T14:42:21+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2426581",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Transferências e convênios"
+      ],
+      "confianca": "tematica",
+      "processo": "012.209/2024-4",
+      "processo_id": "01220920244",
+      "tipo": "REQ",
+      "numero": 80,
+      "assunto": "Requer a realização de uma auditoria pelo Tribunal de Contas da União (TCU) para verificar as transferências de recursos realizadas pelo Ministério da Saúde aos Estados e municípios nos anos de 2023 e 2024, assim como os indícios de indicações políticas associadas a esses repasses.",
+      "autor": "Kim Kataguiri",
+      "data": "2024-04-03T23:02:56+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2424678",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Transferências e convênios"
+      ],
+      "confianca": "tematica",
+      "processo": "040.227/2023-5",
+      "processo_id": "04022720235",
+      "tipo": "REQ",
+      "numero": 557,
+      "assunto": "Requer auditoria, com auxílio do Tribunal de Contas da União, para verificar a regularidade da execução dos recursos repassados pelo Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome para a Associação Programa um Milhão de Cisternas para o Semiárido, no âmbito dos convênios que especifica.",
+      "autor": "Adriana Ventura",
+      "data": "2023-12-11T17:36:36+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2411986",
+      "link_tcu": null
+    },
+    {
+      "fonte": "SCN",
+      "orgaos": [],
+      "temas": [
+        "Orçamento e execução"
+      ],
+      "confianca": "tematica",
+      "processo": "038.882/2023-0",
+      "processo_id": "03888220230",
+      "tipo": "REQ",
+      "numero": 416,
+      "assunto": "Requer a realização de Auditoria, com o auxílio do Tribunal de Contas da União, com o objetivo acompanhar e apurar a legalidade da execução orçamentária referente ao bloqueio de R$ 116 milhões destinados à Capes em 2023 pelo Governo Lula.",
+      "autor": "Evair Vieira de Melo",
+      "data": "2023-10-20T18:29:56+00:00",
+      "link_proposicao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2398043",
+      "link_tcu": null
+    }
+  ],
+  "ultima_atualizacao": "23/07/2026 às 19:21",
+  "ultima_atualizacao_iso": "2026-07-23T19:21:46.902116+00:00",
+  "pautas_futuras": [],
+  "fontes_indisponiveis": [
+    "Acórdãos",
+    "Pautas"
+  ],
+  "total_itens": 14
+}
