@@ -269,8 +269,10 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
   <section class="wrap atencao" id="atencao"></section>
 
   <section class="wrap secao">
-    <h2>Processos em acompanhamento</h2>
-    <p class="sub">Lista nominal do MPO. Entram no painel sempre, independentemente das regras de busca.</p>
+    <h2>Processos do MPO no Tribunal</h2>
+    <p class="sub">Descobertos automaticamente: todo processo em que MPO, SOF, SEPLAN ou SMA
+       consta como unidade jurisdicionada na pauta publicada. Ordenados por quanto a decisão
+       afeta o Ministério.</p>
     <div class="wl" id="wl"></div>
   </section>
 
@@ -384,8 +386,15 @@ const fmtDiaSemana = (d) => d ? d.toLocaleDateString("pt-BR", { weekday:"long" }
 
 const plural = (n, s, p) => `${n} ${n === 1 ? s : p}`;
 
+// O id do documento no TCU não leva zeros à esquerda: o processo 007.276/2022-2
+// resolve em /doc/processo/727620222, não em /doc/processo/00727620222.
+function idDoc(processo, processoId){
+  const d = (processoId || String(processo || "")).replace(/\D/g, "");
+  return d.replace(/^0+/, "");
+}
+
 function linkProcesso(item){
-  const id = item.processo_id || String(item.processo || "").replace(/\D/g, "");
+  const id = idDoc(item.processo, item.processo_id);
   if (item.link_tcu && !item.link_tcu.includes("/ords/")) return item.link_tcu;
   return id ? URL_PROCESSO + id : null;
 }
@@ -433,7 +442,7 @@ function render(){
   avisos();
   horizonte(hoje);
   atencao(itens, hoje);
-  watchlist();
+  processosMPO();
   orgaos();
   abasCalor();
   desenharCalor();
@@ -533,32 +542,60 @@ function atencao(itens, hoje){
     </div>`).join("");
 }
 
-function watchlist(){
+function processosMPO(){
   const hoje = new Date();
-  const lista = DADOS.watchlist || [];
-  const el = document.getElementById("wl");
-  if(!lista.length){ el.closest("section").hidden = true; return; }
+  const secao = document.getElementById("wl").closest("section");
 
-  el.innerHTML = lista.map((w, k) => {
-    const u = w.ultimo;
-    const url = URL_PROCESSO + (w.processo_id || "");
-    const cabeca = `<a class="wl-num" href="${esc(url)}" target="_blank" rel="noopener">${esc(w.processo)} ↗</a>`;
+  // Um registro por processo: mantém o mais recente e soma quantas vezes apareceu.
+  const porProcesso = new Map();
+  DADOS.processos_detalhes.forEach((i) => {
+    if(!i.processo || !(i.orgaos || []).length) return;
+    const atual = porProcesso.get(i.processo);
+    if(!atual){ porProcesso.set(i.processo, { ...i, aparicoes: 1 }); return; }
+    atual.aparicoes++;
+    if((parseData(i.data) || 0) > (parseData(atual.data) || 0)) Object.assign(atual, i);
+  });
 
-    if(!u) return `<div class="wl-item surge" style="animation-delay:${k * 45}ms">
-      ${cabeca}
-      <p class="wl-sem">Nenhum registro nas fontes coletadas até agora.</p>
-    </div>`;
+  const lista = [...porProcesso.values()].map((i) => {
+    const d = parseData(i.data);
+    const idade = d ? Math.max(0, diasAte(hoje, d)) : 999;
+    const napauta = PAUTA_POR_PROCESSO.has(i.processo_id);
+    // Relevância declarada pela coleta, realçada por recência e sessão marcada.
+    const base = i.relevancia != null ? i.relevancia : 1;
+    i._score = base * Math.pow(0.5, idade / 180) * (napauta ? 1.6 : 1);
+    return i;
+  }).sort((a, b) => b._score - a._score);
 
-    const d = parseData(u.data);
-    const pauta = PAUTA_POR_PROCESSO.get(w.processo_id);
-    return `<div class="wl-item ativo surge" style="animation-delay:${k * 45}ms">
-      ${cabeca}
-      ${u.unidade_jurisdicionada ? `<p class="wl-uj"><b>${esc(u.unidade_jurisdicionada)}</b></p>` : ""}
-      <p class="wl-uj">${esc((u.assunto || "").slice(0, 130))}${(u.assunto || "").length > 130 ? "…" : ""}</p>
-      <p class="wl-meta">${esc(u.relator || "relator não informado")} · ${d ? esc(fmtData(d)) : "sem data"}${
-        pauta ? ` · pauta ${esc(fmtData(parseData(pauta.data_sessao)))}` : ""}</p>
+  if(!lista.length){
+    secao.querySelector(".sub").textContent =
+      "Nenhum processo encontrado ainda. A descoberta depende das pautas publicadas — confira o log da coleta.";
+    document.getElementById("wl").innerHTML = "";
+    return;
+  }
+
+  const rotulo = { principal: "unidade principal", compartilhado: "unidade entre outras", interessado: "interessado" };
+
+  document.getElementById("wl").innerHTML = lista.slice(0, 12).map((i, k) => {
+    const d = parseData(i.data);
+    const pauta = PAUTA_POR_PROCESSO.get(i.processo_id);
+    const url = linkProcesso(i);
+    const rotina = i.classe === "rotina";
+
+    return `<div class="wl-item ${rotina ? "" : "ativo"} surge" style="animation-delay:${k * 40}ms">
+      <div style="display:flex; gap:8px; align-items:baseline; flex-wrap:wrap">
+        <a class="wl-num" href="${esc(url)}" target="_blank" rel="noopener">${esc(i.processo)} ↗</a>
+        ${(i.orgaos || []).map((o) => `<span class="chip chip-orgao" style="background:${CORES[o] || "var(--ink-2)"}">${esc(o)}</span>`).join("")}
+        ${pauta ? `<span class="chip chip-pauta">Pauta ${esc(fmtData(parseData(pauta.data_sessao)))}</span>` : ""}
+        ${rotina ? `<span class="chip chip-fonte" title="Ato de pessoal ou cobrança: aparece, mas não é matéria de gestão.">rotina</span>` : ""}
+      </div>
+      <p class="wl-uj">${esc((i.assunto || "").slice(0, 145))}${(i.assunto || "").length > 145 ? "…" : ""}</p>
+      ${i.unidade_jurisdicionada ? `<p class="wl-meta" title="${esc(i.unidade_jurisdicionada)}">${esc(i.unidade_jurisdicionada.slice(0, 70))}${i.unidade_jurisdicionada.length > 70 ? "…" : ""}</p>` : ""}
+      <p class="wl-meta">${esc(rotulo[i.vinculo] || "vínculo não classificado")} · ${esc(i.relator || "relator não informado")} · ${d ? esc(fmtData(d)) : "sem data"}</p>
     </div>`;
   }).join("");
+
+  secao.querySelector(".sub").insertAdjacentHTML("beforeend",
+    ` <b>${plural(lista.length, "processo encontrado", "processos encontrados")}</b>${lista.length > 12 ? ", mostrando os 12 mais relevantes" : ""}.`);
 }
 
 function orgaos(){
