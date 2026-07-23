@@ -1,15 +1,48 @@
 {
-  "schema": 3,
+  "schema": 4,
+  "ancora_pauta": 23240,
+  "watchlist": [
+    {
+      "processo": "005.405/2026-2",
+      "processo_id": "00540520262",
+      "eventos": 0,
+      "ultimo": null
+    },
+    {
+      "processo": "008.798/2025-7",
+      "processo_id": "00879820257",
+      "eventos": 0,
+      "ultimo": null
+    },
+    {
+      "processo": "022.280/2024-3",
+      "processo_id": "02228020243",
+      "eventos": 0,
+      "ultimo": null
+    },
+    {
+      "processo": "022.756/2025-6",
+      "processo_id": "02275620256",
+      "eventos": 0,
+      "ultimo": null
+    },
+    {
+      "processo": "022.852/2025-5",
+      "processo_id": "02285220255",
+      "eventos": 0,
+      "ultimo": null
+    }
+  ],
   "resumo_temas": [
     {
       "tema": "Transferências e convênios",
-      "total": 392,
+      "total": 393,
       "nominais": 0,
       "data_ultimo_registro": "2026-07-22T00:00:00+00:00"
     },
     {
       "tema": "Planejamento e avaliação de políticas",
-      "total": 130,
+      "total": 131,
       "nominais": 0,
       "data_ultimo_registro": "2026-07-22T00:00:00+00:00"
     },
@@ -73,6 +106,25 @@
     }
   ],
   "ultimos_andamentos": [
+    {
+      "fonte": "Acórdão",
+      "orgaos": [],
+      "temas": [
+        "Transferências e convênios",
+        "Planejamento e avaliação de políticas"
+      ],
+      "confianca": "tematica",
+      "processo": null,
+      "processo_id": null,
+      "numero_acordao": "1971",
+      "ano": "2026",
+      "colegiado": "Plenário",
+      "relator": "WEDER DE OLIVEIRA",
+      "situacao": "OFICIALIZADO",
+      "assunto": "MONITORAMENTO: CONSELHO FEDERAL DE ADMINISTRAÇÃO (CFA). VERIFICAÇÃO DO CUMPRIMENTO DAS DELIBERAÇÕES DOS ITENS 9.4.1.2, 9.4.1.3, 9.4.1.4 E 9.4.1.5 DO ACÓRDÃO 1925/2019-PLENÁRIO - NORMATIZAÇÃO DAS TRANSFERÊNCIAS DE RECURSOS DO SISTEMA CONSELHO FEDERAL AOS CONSELHOS REGIONAIS E A TERCEIROS. CUMPRIMENTO DOS ITENS 9.4.1.2 E 9.4.1.5. NÃO ATENDIMENTO DOS ITENS 9.4.1.3 E SEUS SUBITENS E 9.4.1.4 E SEUS SUBITENS. COMUNICAÇÕES.",
+      "data": "2026-07-22T00:00:00+00:00",
+      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2705068%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
+    },
     {
       "fonte": "Acórdão",
       "orgaos": [],
@@ -327,27 +379,28 @@
       "assunto": "TOMADA DE CONTAS ESPECIAL. CONVÊNIO. NÃO COMPROVAÇÃO DA EXECUÇÃO FÍSICA DO OBJETO PACTUADO. AUSÊNCIA DE DOCUMENTAÇÃO PROBATÓRIA NA PRESTAÇÃO DE CONTAS. NÃO COMPROVAÇÃO DA CORRETA APLICAÇÃO DOS RECURSOS. CITAÇÃO. RECONHECIMENTO DA OCORRÊNCIA DA PRESCRIÇÃO INTERCORRENTE. ARQUIVAMENTO.",
       "data": "2026-07-21T00:00:00+00:00",
       "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2774700%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
-    },
+    }
+  ],
+  "processos_detalhes": [
     {
       "fonte": "Acórdão",
       "orgaos": [],
       "temas": [
-        "Transferências e convênios"
+        "Transferências e convênios",
+        "Planejamento e avaliação de políticas"
       ],
       "confianca": "tematica",
       "processo": null,
       "processo_id": null,
-      "numero_acordao": "3816",
+      "numero_acordao": "1971",
       "ano": "2026",
-      "colegiado": "Segunda Câmara",
-      "relator": "AUGUSTO NARDES",
+      "colegiado": "Plenário",
+      "relator": "WEDER DE OLIVEIRA",
       "situacao": "OFICIALIZADO",
-      "assunto": "TOMADA DE CONTAS ESPECIAL. CONVÊNIO. NÃO COMPROVAÇÃO DO NEXO CAUSAL. CITAÇÃO. ACOLHIMENTO PARCIAL DAS ALEGAÇÕES DOS GESTORES. CONTAS ILIQUIDÁVEIS PARA UM RESPONSÁVEL. CONTAS REGULARES COM RESSALVA PARA OS DEMAIS. QUITAÇÃO. REJEIÇÃO PARCIAL DAS ALEGAÇÕES DO CONVENENTE. NÃO RECOLHIMENTO DA DÍVIDA. CONTAS IRREGULARES. DÉBITO. RECURSO DE RECONSIDERAÇÃO. NÃO CONHECIMENTO DO RECURSO DE UM RECORRENTE. CONHECIMENTO PARA OS DEMAIS. NEGATIVA DE PROVIMENTO. COMUNICAÇÃO.",
-      "data": "2026-07-21T00:00:00+00:00",
-      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2772927%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
-    }
-  ],
-  "processos_detalhes": [
+      "assunto": "MONITORAMENTO: CONSELHO FEDERAL DE ADMINISTRAÇÃO (CFA). VERIFICAÇÃO DO CUMPRIMENTO DAS DELIBERAÇÕES DOS ITENS 9.4.1.2, 9.4.1.3, 9.4.1.4 E 9.4.1.5 DO ACÓRDÃO 1925/2019-PLENÁRIO - NORMATIZAÇÃO DAS TRANSFERÊNCIAS DE RECURSOS DO SISTEMA CONSELHO FEDERAL AOS CONSELHOS REGIONAIS E A TERCEIROS. CUMPRIMENTO DOS ITENS 9.4.1.2 E 9.4.1.5. NÃO ATENDIMENTO DOS ITENS 9.4.1.3 E SEUS SUBITENS E 9.4.1.4 E SEUS SUBITENS. COMUNICAÇÕES.",
+      "data": "2026-07-22T00:00:00+00:00",
+      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2705068%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
+    },
     {
       "fonte": "Acórdão",
       "orgaos": [],
@@ -6136,12 +6189,12 @@
       "processo_id": null,
       "numero_acordao": "1675",
       "ano": "2026",
-      "colegiado": "Segunda Câmara",
-      "relator": "AUGUSTO NARDES",
+      "colegiado": "Primeira Câmara",
+      "relator": "BENJAMIN ZYMLER",
       "situacao": "OFICIALIZADO",
-      "assunto": "TOMADA DE CONTAS ESPECIAL. TRANSFERÊNCIA LEGAL. EXECUÇÃO DE AÇÕES DE RESPOSTA MEDIANTE ASSISTÊNCIA A PESSOAS AFETADAS DIRETA E INDIRETAMENTE POR DESASTRE NATURAL DECORRENTE DE CHUVAS. AUSÊNCIA PARCIAL DE DOCUMENTAÇÃO DE PRESTAÇÃO DE CONTAS. CITAÇÃO. REVELIA. NÃO COMPROVAÇÃO DA CORRETA APLICAÇÃO DOS RECURSOS. IRREGULARIDADE DAS CONTAS. DÉBITO. MULTA.",
+      "assunto": "TOMADA DE CONTAS ESPECIAL. FUNDAÇÃO NACIONAL DE SAÚDE. CONVÊNIO. EXECUÇÃO DE SISTEMA DE ABASTECIMENTO DE ÁGUA. IMPUGNAÇÃO PARCIAL DOS DISPÊNDIOS. CITAÇÃO. REJEIÇÃO DAS ALEGAÇÕES DE DEFESA DA EX-PREFEITA. CONTAS IRREGULARES. RECURSO DE RECONSIDERAÇÃO. INOCORRÊNCIA DA PRESCRIÇÃO. A DELEGAÇÃO DE COMPETÊNCIAS AO SECRETÁRIO MUNICIPAL DE INFRAESTRUTURA, POR MEIO DA LEI MUNICIPAL 469/2009, NÃO EXIME A PREFEITA DE SUA RESPONSABILIDADE, ESPECIALMENTE PORQUE OS ATOS RELACIONADOS AO AJUSTE FORAM PRATICADOS MAJORITARIAMENTE POR ELA. A RESPONSABILIDADE DA RECORRENTE NÃO PODE SER AFASTADA COM BASE NO ARGUMENTO DE QUE AS IRREGULARIDADES ERAM DE DIFÍCIL PERCEPÇÃO PARA UM LEIGO, POIS SUA ATUAÇÃO DIRETA NO AJUSTE EXIGIA UM NÍVEL MÍNIMO DE DILIGÊNCIA. NEGATIVA DE PROVIMENTO. EMBARGOS DE DECLARAÇÃO. REJEIÇÃO.",
       "data": "2026-04-14T00:00:00+00:00",
-      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2747063%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
+      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2760926%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
     },
     {
       "fonte": "Acórdão",
@@ -6154,12 +6207,12 @@
       "processo_id": null,
       "numero_acordao": "1675",
       "ano": "2026",
-      "colegiado": "Primeira Câmara",
-      "relator": "BENJAMIN ZYMLER",
+      "colegiado": "Segunda Câmara",
+      "relator": "AUGUSTO NARDES",
       "situacao": "OFICIALIZADO",
-      "assunto": "TOMADA DE CONTAS ESPECIAL. FUNDAÇÃO NACIONAL DE SAÚDE. CONVÊNIO. EXECUÇÃO DE SISTEMA DE ABASTECIMENTO DE ÁGUA. IMPUGNAÇÃO PARCIAL DOS DISPÊNDIOS. CITAÇÃO. REJEIÇÃO DAS ALEGAÇÕES DE DEFESA DA EX-PREFEITA. CONTAS IRREGULARES. RECURSO DE RECONSIDERAÇÃO. INOCORRÊNCIA DA PRESCRIÇÃO. A DELEGAÇÃO DE COMPETÊNCIAS AO SECRETÁRIO MUNICIPAL DE INFRAESTRUTURA, POR MEIO DA LEI MUNICIPAL 469/2009, NÃO EXIME A PREFEITA DE SUA RESPONSABILIDADE, ESPECIALMENTE PORQUE OS ATOS RELACIONADOS AO AJUSTE FORAM PRATICADOS MAJORITARIAMENTE POR ELA. A RESPONSABILIDADE DA RECORRENTE NÃO PODE SER AFASTADA COM BASE NO ARGUMENTO DE QUE AS IRREGULARIDADES ERAM DE DIFÍCIL PERCEPÇÃO PARA UM LEIGO, POIS SUA ATUAÇÃO DIRETA NO AJUSTE EXIGIA UM NÍVEL MÍNIMO DE DILIGÊNCIA. NEGATIVA DE PROVIMENTO. EMBARGOS DE DECLARAÇÃO. REJEIÇÃO.",
+      "assunto": "TOMADA DE CONTAS ESPECIAL. TRANSFERÊNCIA LEGAL. EXECUÇÃO DE AÇÕES DE RESPOSTA MEDIANTE ASSISTÊNCIA A PESSOAS AFETADAS DIRETA E INDIRETAMENTE POR DESASTRE NATURAL DECORRENTE DE CHUVAS. AUSÊNCIA PARCIAL DE DOCUMENTAÇÃO DE PRESTAÇÃO DE CONTAS. CITAÇÃO. REVELIA. NÃO COMPROVAÇÃO DA CORRETA APLICAÇÃO DOS RECURSOS. IRREGULARIDADE DAS CONTAS. DÉBITO. MULTA.",
       "data": "2026-04-14T00:00:00+00:00",
-      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2760926%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
+      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2747063%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
     },
     {
       "fonte": "Acórdão",
@@ -6625,12 +6678,12 @@
       "processo_id": null,
       "numero_acordao": "1516",
       "ano": "2026",
-      "colegiado": "Primeira Câmara",
-      "relator": "WALTON ALENCAR RODRIGUES",
+      "colegiado": "Segunda Câmara",
+      "relator": "ANTONIO ANASTASIA",
       "situacao": "OFICIALIZADO",
-      "assunto": "RECURSO DE RECONSIDERAÇÃO EM TOMADA DE CONTAS ESPECIAL. RECURSOS DO SISTEMA ÚNICO DE SAÚDE (SUS). REPASSES FUNDO A FUNDO. OBRAS NÃO EXECUTADAS E NÃO DEVOLUÇÃO DOS SALDOS. DESVIO DE FINALIDADE. CONDENAÇÃO DO MUNICÍPIO E DO EX-GESTOR. RECURSO DE RECONSIDERAÇÃO. CONHECIMENTO. NEGATIVA DE PROVIMENTO.",
+      "assunto": "TOMADA DE CONTAS ESPECIAL. FUNDO NACIONAL DE DESENVOLVIMENTO DA EDUCAÇÃO. MUNICÍPIO DE PRAINHA (PA). DAVI XAVIER DE MORAES. PROGRAMA DINHEIRO DIRETO NA ESCOLA DE 2019. NÃO EXECUÇÃO TOTAL DO OBJETO DA TRANSFERÊNCIA. REVELIA. CONTAS IRREGULARES, DÉBITO E MULTA.",
       "data": "2026-03-31T00:00:00+00:00",
-      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2743317%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
+      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2738197%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
     },
     {
       "fonte": "Acórdão",
@@ -6643,12 +6696,12 @@
       "processo_id": null,
       "numero_acordao": "1516",
       "ano": "2026",
-      "colegiado": "Segunda Câmara",
-      "relator": "ANTONIO ANASTASIA",
+      "colegiado": "Primeira Câmara",
+      "relator": "WALTON ALENCAR RODRIGUES",
       "situacao": "OFICIALIZADO",
-      "assunto": "TOMADA DE CONTAS ESPECIAL. FUNDO NACIONAL DE DESENVOLVIMENTO DA EDUCAÇÃO. MUNICÍPIO DE PRAINHA (PA). DAVI XAVIER DE MORAES. PROGRAMA DINHEIRO DIRETO NA ESCOLA DE 2019. NÃO EXECUÇÃO TOTAL DO OBJETO DA TRANSFERÊNCIA. REVELIA. CONTAS IRREGULARES, DÉBITO E MULTA.",
+      "assunto": "RECURSO DE RECONSIDERAÇÃO EM TOMADA DE CONTAS ESPECIAL. RECURSOS DO SISTEMA ÚNICO DE SAÚDE (SUS). REPASSES FUNDO A FUNDO. OBRAS NÃO EXECUTADAS E NÃO DEVOLUÇÃO DOS SALDOS. DESVIO DE FINALIDADE. CONDENAÇÃO DO MUNICÍPIO E DO EX-GESTOR. RECURSO DE RECONSIDERAÇÃO. CONHECIMENTO. NEGATIVA DE PROVIMENTO.",
       "data": "2026-03-31T00:00:00+00:00",
-      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2738197%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
+      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2743317%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
     },
     {
       "fonte": "Acórdão",
@@ -10258,12 +10311,12 @@
       "processo_id": null,
       "numero_acordao": "19",
       "ano": "2026",
-      "colegiado": "Segunda Câmara",
-      "relator": "AUGUSTO NARDES",
+      "colegiado": "Primeira Câmara",
+      "relator": "BENJAMIN ZYMLER",
       "situacao": "OFICIALIZADO",
-      "assunto": "TOMADA DE CONTAS ESPECIAL. CONVÊNIO. NÃO DEVOLUÇÃO DE SALDO EM CONTA BANCÁRIA. NÃO COMPROVAÇÃO DO APORTE DA CONTRAPARTIDA. AUSÊNCIA PARCIAL DE DOCUMENTAÇÃO DA PRESTAÇÃO DE CONTAS. CITAÇÃO. NÃO COMPROVAÇÃO DA BOA E REGULAR APLICAÇÃO DOS RECURSOS. IRREGULARIDADE DAS CONTAS. DÉBITO. MULTA. RECURSO DE RECONSIDERAÇÃO. CONHECIMENTO. INSUBSISTÊNCIA DE PARTE DO DÉBITO. ALTERAÇÃO DA CADEIA DE RESPONSABILIDADE. PROVIMENTO PARCIAL. COMUNICAÇÃO.",
+      "assunto": "TOMADA DE CONTAS ESPECIAL. CONVÊNIO. NÃO COMPROVAÇÃO DA BOA E REGULAR APLICAÇÃO DOS RECURSOS. CITAÇÃO. REVELIA DOS RESPONSÁVEIS. PRESUNÇÃO DE BOA-FÉ DO ENTE MUNICIPAL. FIXAÇÃO DE NOVO E IMPRORROGÁVEL PRAZO PARA O RECOLHIMENTO DA DÍVIDA. CIÊNCIA.",
       "data": "2026-01-27T00:00:00+00:00",
-      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2707185%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
+      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2736663%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
     },
     {
       "fonte": "Acórdão",
@@ -10276,12 +10329,12 @@
       "processo_id": null,
       "numero_acordao": "19",
       "ano": "2026",
-      "colegiado": "Primeira Câmara",
-      "relator": "BENJAMIN ZYMLER",
+      "colegiado": "Segunda Câmara",
+      "relator": "AUGUSTO NARDES",
       "situacao": "OFICIALIZADO",
-      "assunto": "TOMADA DE CONTAS ESPECIAL. CONVÊNIO. NÃO COMPROVAÇÃO DA BOA E REGULAR APLICAÇÃO DOS RECURSOS. CITAÇÃO. REVELIA DOS RESPONSÁVEIS. PRESUNÇÃO DE BOA-FÉ DO ENTE MUNICIPAL. FIXAÇÃO DE NOVO E IMPRORROGÁVEL PRAZO PARA O RECOLHIMENTO DA DÍVIDA. CIÊNCIA.",
+      "assunto": "TOMADA DE CONTAS ESPECIAL. CONVÊNIO. NÃO DEVOLUÇÃO DE SALDO EM CONTA BANCÁRIA. NÃO COMPROVAÇÃO DO APORTE DA CONTRAPARTIDA. AUSÊNCIA PARCIAL DE DOCUMENTAÇÃO DA PRESTAÇÃO DE CONTAS. CITAÇÃO. NÃO COMPROVAÇÃO DA BOA E REGULAR APLICAÇÃO DOS RECURSOS. IRREGULARIDADE DAS CONTAS. DÉBITO. MULTA. RECURSO DE RECONSIDERAÇÃO. CONHECIMENTO. INSUBSISTÊNCIA DE PARTE DO DÉBITO. ALTERAÇÃO DA CADEIA DE RESPONSABILIDADE. PROVIMENTO PARCIAL. COMUNICAÇÃO.",
       "data": "2026-01-27T00:00:00+00:00",
-      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2736663%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
+      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2707185%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
     },
     {
       "fonte": "Acórdão",
@@ -10312,12 +10365,12 @@
       "processo_id": null,
       "numero_acordao": "13",
       "ano": "2026",
-      "colegiado": "Primeira Câmara",
-      "relator": "BENJAMIN ZYMLER",
+      "colegiado": "Segunda Câmara",
+      "relator": "AUGUSTO NARDES",
       "situacao": "OFICIALIZADO",
-      "assunto": "TOMADA DE CONTAS ESPECIAL. FUNDO NACIONAL DE SAÚDE. REPASSE DE RECURSOS FEDERAIS AO MUNICÍPIO DE SALVADOR/BA. EXERCÍCIO DE 2002 A 2008. IRREGULARIDADES DIVERSAS VERIFICADAS EM RELATÓRIO DE FISCALIZAÇÃO DA CGU. IMPUGNAÇÕES DE DESPESAS. NOTIFICAÇÃO. CITAÇÃO. ALEGAÇÕES DE DEFESA APRESENTADAS POR ALGUNS RESPONSÁVEIS E REVELIA DE OUTROS. INOCORRÊNCIA DAS PRESCRIÇÕES RESSARCITÓRIA E PUNITIVA. CONTAS IRREGULARES. DÉBITO. MULTA. RECURSOS DE RECONSIDERAÇÃO. INOCORRÊNCIA DA PRESCRIÇÃO. REVELIA. INOCORRÊNCIA DE PREJUÍZO AO CONTRADITÓRIO. PROVAS INSUFICIENTES PARA AFASTAR OS TERMOS DA CONDENAÇÃO. NEGATIVA DE PROVIMENTO DOS RECURSOS. EMBARGOS DE DECLARAÇÃO. NÃO CONHECIMENTO DE UM. CONHECIMENTO DO OUTRO. ACOLHIMENTO PARCIAL. CIÊNCIA. EMBARGOS DE DECLARAÇÃO. NÃO CONHECIMENTO. CIÊNCIA.",
+      "assunto": "TOMADA DE CONTAS ESPECIAL. CONVÊNIO. EXECUÇÃO PARCIAL DO OBJETO PACTUADO. PAGAMENTO POR SERVIÇOS NÃO EXECUTADOS. IMPOSSIBILIDADE DE APROVEITAMENTO DA PARCELA EXECUTADA. CITAÇÃO. REVELIA DE DOIS RESPONSÁVEIS. REJEIÇÃO DA DEFESA APRESENTADA PELO TERCEIRO. CONTAS IRREGULARES. DÉBITO. MULTA. CONSTATAÇÃO DE ERRO DE PROCEDIMENTO NO CHAMAMENTO DE UM DOS RESPONSÁVEIS. ANULAÇÃO DO ACÓRDÃO CONDENATÓRIO APENAS EM RELAÇÃO A ESSE RESPONSÁVEL. NOVA CITAÇÃO. LONGO DECURSO DE TEMPO ENTRE OS FATOS IRREGULARES E A CITAÇÃO. PREJUÍZO AO CONTRADITÓRIO E À AMPLA DEFESA. ARQUIVAMENTO, SEM JULGAMENTO DO MÉRITO.",
       "data": "2026-01-27T00:00:00+00:00",
-      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2738430%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
+      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2722315%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
     },
     {
       "fonte": "Acórdão",
@@ -10330,12 +10383,12 @@
       "processo_id": null,
       "numero_acordao": "13",
       "ano": "2026",
-      "colegiado": "Segunda Câmara",
-      "relator": "AUGUSTO NARDES",
+      "colegiado": "Primeira Câmara",
+      "relator": "BENJAMIN ZYMLER",
       "situacao": "OFICIALIZADO",
-      "assunto": "TOMADA DE CONTAS ESPECIAL. CONVÊNIO. EXECUÇÃO PARCIAL DO OBJETO PACTUADO. PAGAMENTO POR SERVIÇOS NÃO EXECUTADOS. IMPOSSIBILIDADE DE APROVEITAMENTO DA PARCELA EXECUTADA. CITAÇÃO. REVELIA DE DOIS RESPONSÁVEIS. REJEIÇÃO DA DEFESA APRESENTADA PELO TERCEIRO. CONTAS IRREGULARES. DÉBITO. MULTA. CONSTATAÇÃO DE ERRO DE PROCEDIMENTO NO CHAMAMENTO DE UM DOS RESPONSÁVEIS. ANULAÇÃO DO ACÓRDÃO CONDENATÓRIO APENAS EM RELAÇÃO A ESSE RESPONSÁVEL. NOVA CITAÇÃO. LONGO DECURSO DE TEMPO ENTRE OS FATOS IRREGULARES E A CITAÇÃO. PREJUÍZO AO CONTRADITÓRIO E À AMPLA DEFESA. ARQUIVAMENTO, SEM JULGAMENTO DO MÉRITO.",
+      "assunto": "TOMADA DE CONTAS ESPECIAL. FUNDO NACIONAL DE SAÚDE. REPASSE DE RECURSOS FEDERAIS AO MUNICÍPIO DE SALVADOR/BA. EXERCÍCIO DE 2002 A 2008. IRREGULARIDADES DIVERSAS VERIFICADAS EM RELATÓRIO DE FISCALIZAÇÃO DA CGU. IMPUGNAÇÕES DE DESPESAS. NOTIFICAÇÃO. CITAÇÃO. ALEGAÇÕES DE DEFESA APRESENTADAS POR ALGUNS RESPONSÁVEIS E REVELIA DE OUTROS. INOCORRÊNCIA DAS PRESCRIÇÕES RESSARCITÓRIA E PUNITIVA. CONTAS IRREGULARES. DÉBITO. MULTA. RECURSOS DE RECONSIDERAÇÃO. INOCORRÊNCIA DA PRESCRIÇÃO. REVELIA. INOCORRÊNCIA DE PREJUÍZO AO CONTRADITÓRIO. PROVAS INSUFICIENTES PARA AFASTAR OS TERMOS DA CONDENAÇÃO. NEGATIVA DE PROVIMENTO DOS RECURSOS. EMBARGOS DE DECLARAÇÃO. NÃO CONHECIMENTO DE UM. CONHECIMENTO DO OUTRO. ACOLHIMENTO PARCIAL. CIÊNCIA. EMBARGOS DE DECLARAÇÃO. NÃO CONHECIMENTO. CIÊNCIA.",
       "data": "2026-01-27T00:00:00+00:00",
-      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2722315%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
+      "link_tcu": "https://contas.tcu.gov.br/pesquisaJurisprudencia/#/detalhamento/11/*/KEY:%22ACORDAO-COMPLETO-2738430%22/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/false/1/false"
     },
     {
       "fonte": "Acórdão",
@@ -11631,8 +11684,8 @@
       "link_tcu": "https://contas.tcu.gov.br/ords/api/publica/scn/pedidos_congresso/04104320189"
     }
   ],
-  "ultima_atualizacao": "23/07/2026 às 19:37",
-  "ultima_atualizacao_iso": "2026-07-23T19:37:35.499204+00:00",
+  "ultima_atualizacao": "23/07/2026 às 20:06",
+  "ultima_atualizacao_iso": "2026-07-23T20:06:03.740942+00:00",
   "pautas_futuras": [
     {
       "processo": "015.297/2014-4",
@@ -12769,6 +12822,8 @@
       "tipo": "SOLICITAÇÃO DO CONGRESSO NACIONAL"
     }
   ],
-  "fontes_indisponiveis": [],
-  "total_itens": 626
+  "fontes_indisponiveis": [
+    "Pautas publicadas"
+  ],
+  "total_itens": 627
 }
