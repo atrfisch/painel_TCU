@@ -119,6 +119,18 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{
 .temas li span:last-child{font-family:"JetBrains Mono",monospace; color:var(--muted)}
 .silencio{margin:10px 0 0; padding-top:9px; border-top:1px solid var(--line-2); font-size:11.5px; color:var(--muted)}
 
+/* ---------- lista de acompanhamento ---------- */
+.wl{display:grid; grid-template-columns:repeat(auto-fill,minmax(255px,1fr)); gap:12px}
+.wl-item{background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--line); border-radius:var(--r); padding:13px 15px; box-shadow:var(--shadow)}
+.wl-item.ativo{border-left-color:var(--petrol)}
+.wl-num{font-family:"JetBrains Mono",monospace; font-size:14px; font-weight:600; text-decoration:none; display:inline-block}
+.wl-num:hover{text-decoration:underline}
+.wl-uj{margin:6px 0 0; font-size:12.5px; color:var(--ink-2); line-height:1.4}
+.wl-meta{margin:6px 0 0; font-size:11.5px; color:var(--muted); font-family:"JetBrains Mono",monospace}
+.wl-sem{margin:6px 0 0; font-size:12.5px; color:var(--muted); font-style:italic}
+.item-uj{margin:5px 0 0; font-size:12.5px; color:var(--ink-2)}
+.item-uj b{font-weight:600}
+
 /* ---------- mapa de calor ---------- */
 .hm-topo{display:flex; flex-wrap:wrap; gap:10px; align-items:baseline; justify-content:space-between; margin-bottom:14px}
 .hm-abas{display:flex; gap:0; border:1px solid var(--line); border-radius:8px; overflow:hidden; background:var(--surface)}
@@ -255,6 +267,12 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
   </section>
 
   <section class="wrap atencao" id="atencao"></section>
+
+  <section class="wrap secao">
+    <h2>Processos em acompanhamento</h2>
+    <p class="sub">Lista nominal do MPO. Entram no painel sempre, independentemente das regras de busca.</p>
+    <div class="wl" id="wl"></div>
+  </section>
 
   <section class="wrap secao">
     <h2>Onde está a atenção do Tribunal</h2>
@@ -415,6 +433,7 @@ function render(){
   avisos();
   horizonte(hoje);
   atencao(itens, hoje);
+  watchlist();
   orgaos();
   abasCalor();
   desenharCalor();
@@ -512,6 +531,34 @@ function atencao(itens, hoje){
       <h3>${c.t}</h3>
       <p>${c.p}</p>
     </div>`).join("");
+}
+
+function watchlist(){
+  const hoje = new Date();
+  const lista = DADOS.watchlist || [];
+  const el = document.getElementById("wl");
+  if(!lista.length){ el.closest("section").hidden = true; return; }
+
+  el.innerHTML = lista.map((w, k) => {
+    const u = w.ultimo;
+    const url = URL_PROCESSO + (w.processo_id || "");
+    const cabeca = `<a class="wl-num" href="${esc(url)}" target="_blank" rel="noopener">${esc(w.processo)} ↗</a>`;
+
+    if(!u) return `<div class="wl-item surge" style="animation-delay:${k * 45}ms">
+      ${cabeca}
+      <p class="wl-sem">Nenhum registro nas fontes coletadas até agora.</p>
+    </div>`;
+
+    const d = parseData(u.data);
+    const pauta = PAUTA_POR_PROCESSO.get(w.processo_id);
+    return `<div class="wl-item ativo surge" style="animation-delay:${k * 45}ms">
+      ${cabeca}
+      ${u.unidade_jurisdicionada ? `<p class="wl-uj"><b>${esc(u.unidade_jurisdicionada)}</b></p>` : ""}
+      <p class="wl-uj">${esc((u.assunto || "").slice(0, 130))}${(u.assunto || "").length > 130 ? "…" : ""}</p>
+      <p class="wl-meta">${esc(u.relator || "relator não informado")} · ${d ? esc(fmtData(d)) : "sem data"}${
+        pauta ? ` · pauta ${esc(fmtData(parseData(pauta.data_sessao)))}` : ""}</p>
+    </div>`;
+  }).join("");
 }
 
 function orgaos(){
@@ -729,7 +776,10 @@ function desenharFeed(itens, hoje){
 
     const chipsOrgao = (i.orgaos || []).length
       ? (i.orgaos).map((o) => `<span class="chip chip-orgao" style="background:${CORES[o] || "var(--ink-2)"}">${esc(o)}</span>`).join("")
-      : `<span class="chip chip-fonte" title="O texto não nomeia o órgão; entrou por tratar de matéria da competência do MPO.">por matéria</span>`;
+      : `<span class="chip chip-fonte" title="${i.confianca === "watchlist"
+            ? "Processo da lista de acompanhamento nominal."
+            : "O texto não nomeia o órgão; entrou por tratar de matéria da competência do MPO."}">${
+            i.confianca === "watchlist" ? "acompanhado" : "por matéria"}</span>`;
     const chipsTema = (i.temas || []).map((t) => `<span class="chip chip-tema">${esc(t)}</span>`).join("");
     const chipPauta = pauta
       ? `<span class="chip chip-pauta">Pauta ${esc(fmtData(parseData(pauta.data_sessao)))}</span>` : "";
@@ -755,6 +805,7 @@ function desenharFeed(itens, hoje){
           ${url ? `<a class="item-proc" href="${esc(url)}" target="_blank" rel="noopener">${esc(i.processo || "abrir")} ↗</a>` : ""}
         </div>
         <p class="item-assunto">${esc(i.assunto || "Sem descrição")}</p>
+        ${i.unidade_jurisdicionada ? `<p class="item-uj"><b>Unidade jurisdicionada:</b> ${esc(i.unidade_jurisdicionada)}</p>` : ""}
         <p class="item-pe">${identificacao}${extra}</p>
       </div>
     </li>`;
