@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Horizonte TCU — Planejamento e Orçamento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#e8ece9; --surface:#ffffff; --surface-2:#f4f7f5;
+  --ink:#141f1c; --ink-2:#3d4f4a; --muted:#74847f;
+  --line:#ccd6d2; --line-2:#e2e9e6;
+  --petrol:#0e4a44; --petrol-soft:#dbeae7;
+  --amber:#9c5c07; --amber-soft:#f7e9d3;
+  --red:#8a2e26; --red-soft:#f4ddd9;
+  --mpo:#0e4a44; --sof:#1b5674; --seplan:#573566; --sma:#63601c;
+  --r:10px;
+  --shadow:0 1px 2px rgba(20,31,28,.06), 0 8px 24px -16px rgba(20,31,28,.28);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Public Sans",system-ui,sans-serif; font-size:15px; line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif; margin:0; letter-spacing:-.02em; font-weight:600}
+a{color:var(--petrol)}
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{
+  outline:2px solid var(--petrol); outline-offset:2px; border-radius:4px;
+}
+.wrap{max-width:1180px; margin:0 auto; padding:0 20px}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
+.eyebrow{
+  font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted);
+}
+
+/* ---------- topo ---------- */
+.top{background:var(--surface); border-bottom:1px solid var(--line)}
+.top-in{display:flex; flex-wrap:wrap; gap:16px; align-items:baseline; justify-content:space-between; padding:18px 0 16px}
+.brand h1{font-size:26px; font-weight:800}
+.brand p{margin:2px 0 0; color:var(--ink-2); font-size:13.5px}
+.stamp{font-family:"JetBrains Mono",monospace; font-size:11.5px; color:var(--muted); text-align:right}
+.stamp b{color:var(--ink); font-weight:600}
+
+.aviso{
+  display:none; gap:10px; align-items:flex-start; padding:11px 14px; margin:14px 0 0;
+  background:var(--amber-soft); border:1px solid #e3c894; border-radius:var(--r);
+  font-size:13.5px; color:#5c3a06;
+}
+.aviso.on{display:flex}
+
+/* ---------- horizonte (elemento-assinatura) ---------- */
+.horizonte{padding:30px 0 6px}
+.hz-head{display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:14px}
+.hz-head h2{font-size:19px}
+.hz-rail{
+  display:flex; gap:0; overflow-x:auto; scroll-snap-type:x proximity;
+  padding-bottom:14px; margin:0 -20px; padding-left:20px; padding-right:20px;
+}
+.hz-hoje{
+  flex:0 0 auto; width:74px; display:flex; flex-direction:column; justify-content:flex-start;
+  padding-top:8px; border-right:2px solid var(--ink); margin-right:18px;
+}
+.hz-hoje span{font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink)}
+.hz-hoje strong{font-family:"Bricolage Grotesque",sans-serif; font-size:15px; font-weight:600; margin-top:2px}
+.sessao{
+  flex:0 0 auto; width:270px; margin-right:14px; scroll-snap-align:start;
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--r);
+  border-top:3px solid var(--line); padding:14px 15px 12px; box-shadow:var(--shadow);
+}
+.sessao.urgente{border-top-color:var(--amber)}
+.sessao.hoje{border-top-color:var(--red)}
+.sessao-topo{display:flex; align-items:baseline; gap:9px; margin-bottom:9px}
+.contagem{font-family:"JetBrains Mono",monospace; font-size:31px; font-weight:600; line-height:1; letter-spacing:-.04em}
+.contagem small{font-size:11px; font-weight:400; color:var(--muted); letter-spacing:0}
+.sessao.urgente .contagem{color:var(--amber)}
+.sessao.hoje .contagem{color:var(--red)}
+.sessao-data{font-size:12.5px; color:var(--ink-2); line-height:1.35}
+.sessao-data b{display:block; font-weight:600; color:var(--ink)}
+.sessao ul{list-style:none; margin:0; padding:10px 0 0; border-top:1px solid var(--line-2)}
+.sessao li{padding:7px 0; border-bottom:1px dotted var(--line-2)}
+.sessao li:last-child{border-bottom:0; padding-bottom:0}
+.sessao li a{font-family:"JetBrains Mono",monospace; font-size:12.5px; font-weight:600; text-decoration:none}
+.sessao li a:hover{text-decoration:underline}
+.sessao li p{margin:3px 0 0; font-size:12.5px; color:var(--ink-2); line-height:1.4}
+.sessao li em{font-style:normal; color:var(--muted); font-size:11.5px}
+.hz-vazio{
+  flex:1 1 auto; background:var(--surface); border:1px dashed var(--line);
+  border-radius:var(--r); padding:20px; color:var(--muted); font-size:14px; min-width:260px;
+}
+
+/* ---------- atenção ---------- */
+.atencao{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; padding:22px 0 0}
+.card-at{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:15px 16px; box-shadow:var(--shadow)}
+.card-at .n{font-family:"JetBrains Mono",monospace; font-size:29px; font-weight:600; line-height:1.1; letter-spacing:-.03em}
+.card-at h3{font-size:14px; font-weight:600; margin:2px 0 6px}
+.card-at p{margin:0; font-size:12.5px; color:var(--muted); line-height:1.45}
+.card-at.alerta .n{color:var(--amber)}
+.card-at.novo .n{color:var(--petrol)}
+
+/* ---------- órgãos ---------- */
+.secao{padding:34px 0 0}
+.secao > h2{font-size:19px; margin-bottom:4px}
+.secao > .sub{margin:0 0 16px; color:var(--muted); font-size:13.5px}
+.orgaos{display:grid; grid-template-columns:repeat(4,1fr); gap:14px}
+.orgao{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:15px 16px; box-shadow:var(--shadow)}
+.orgao-top{display:flex; align-items:baseline; justify-content:space-between; gap:8px}
+.orgao-sig{font-family:"Bricolage Grotesque",sans-serif; font-size:16px; font-weight:800; letter-spacing:-.01em}
+.orgao-tot{font-family:"JetBrains Mono",monospace; font-size:24px; font-weight:600; letter-spacing:-.03em}
+.orgao-nome{font-size:12px; color:var(--muted); margin:1px 0 12px; line-height:1.35; min-height:32px}
+.barra{display:flex; height:7px; border-radius:4px; overflow:hidden; background:var(--surface-2); margin-bottom:10px}
+.barra i{display:block; height:100%}
+.temas{list-style:none; margin:0; padding:0}
+.temas li{display:flex; justify-content:space-between; gap:8px; font-size:12px; padding:2.5px 0; color:var(--ink-2)}
+.temas li span:last-child{font-family:"JetBrains Mono",monospace; color:var(--muted)}
+.silencio{margin:10px 0 0; padding-top:9px; border-top:1px solid var(--line-2); font-size:11.5px; color:var(--muted)}
+
+/* ---------- mapa de calor ---------- */
+.hm-topo{display:flex; flex-wrap:wrap; gap:10px; align-items:baseline; justify-content:space-between; margin-bottom:14px}
+.hm-abas{display:flex; gap:0; border:1px solid var(--line); border-radius:8px; overflow:hidden; background:var(--surface)}
+.hm-abas button{
+  font:inherit; font-size:13px; padding:7px 14px; border:0; background:none;
+  cursor:pointer; color:var(--ink-2); border-right:1px solid var(--line);
+}
+.hm-abas button:last-child{border-right:0}
+.hm-abas button[aria-pressed="true"]{background:var(--petrol); color:#fff; font-weight:600}
+.hm-caixa{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px 14px; box-shadow:var(--shadow); overflow-x:auto}
+.hm{display:grid; gap:3px; min-width:660px}
+.hm-rot{
+  font-size:12.5px; color:var(--ink-2); padding-right:12px; align-self:center;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.hm-rot a{font-family:"JetBrains Mono",monospace; font-size:12px; text-decoration:none}
+.hm-rot a:hover{text-decoration:underline}
+.hm-mes{
+  font-family:"JetBrains Mono",monospace; font-size:9.5px; color:var(--muted);
+  text-align:center; letter-spacing:.04em; text-transform:uppercase;
+}
+.hm-cel{
+  height:26px; border-radius:3px; display:flex; align-items:center; justify-content:center;
+  font-family:"JetBrains Mono",monospace; font-size:11px; font-weight:600; color:#fff;
+}
+.hm-cel[data-n="0"]{background:var(--surface-2); border:1px solid var(--line-2); color:transparent}
+.hm-cel[data-n="1"]{background:#c3dbd6; color:var(--petrol)}
+.hm-cel[data-n="2"]{background:#8dbcb4}
+.hm-cel[data-n="3"]{background:#4d8e85}
+.hm-cel[data-n="4"]{background:var(--petrol)}
+.hm-cel[data-n="5"]{background:#06322e}
+.hm-pe{display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:space-between; margin-top:13px; padding-top:11px; border-top:1px solid var(--line-2); font-size:12px; color:var(--muted)}
+.hm-legenda{display:flex; align-items:center; gap:5px}
+.hm-legenda i{width:17px; height:11px; border-radius:2px; display:block}
+.hm-score{font-family:"JetBrains Mono",monospace; font-size:11px; color:var(--muted); text-align:right; align-self:center; padding-left:10px}
+
+/* ---------- filtros + feed ---------- */
+.barra-filtros{
+  display:flex; flex-wrap:wrap; gap:9px; align-items:center;
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--r);
+  padding:11px 12px; margin-bottom:14px; box-shadow:var(--shadow);
+}
+.barra-filtros input,.barra-filtros select{
+  font-family:inherit; font-size:13.5px; color:var(--ink); background:var(--surface-2);
+  border:1px solid var(--line); border-radius:7px; padding:7px 10px;
+}
+.barra-filtros input{flex:1 1 230px; min-width:0}
+.contador{margin-left:auto; font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--muted)}
+.btn-limpar{
+  font:inherit; font-size:13px; background:none; border:1px solid var(--line);
+  border-radius:7px; padding:7px 11px; cursor:pointer; color:var(--ink-2);
+}
+.btn-limpar:hover{background:var(--surface-2)}
+
+.feed{list-style:none; margin:0; padding:0; background:var(--surface); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow)}
+.item{display:grid; grid-template-columns:104px 1fr; gap:18px; padding:15px 18px; border-bottom:1px solid var(--line-2)}
+.item:last-child{border-bottom:0}
+.item:hover{background:var(--surface-2)}
+.item-data{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--ink-2); line-height:1.5}
+.item-data em{display:block; font-style:normal; color:var(--muted); font-size:11px}
+.item-topo{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:6px}
+.chip{
+  font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:.05em;
+  text-transform:uppercase; padding:2.5px 7px; border-radius:5px; border:1px solid transparent;
+}
+.chip-orgao{color:#fff}
+.chip-fonte{background:var(--surface-2); border-color:var(--line); color:var(--ink-2)}
+.chip-tema{background:var(--petrol-soft); color:var(--petrol); text-transform:none; letter-spacing:.02em; font-family:"Public Sans",sans-serif; font-size:11.5px}
+.chip-pauta{background:var(--amber-soft); color:var(--amber); border-color:#e3c894}
+.item-proc{font-family:"JetBrains Mono",monospace; font-size:13px; font-weight:600; text-decoration:none; margin-left:auto}
+.item-proc:hover{text-decoration:underline}
+.item-assunto{margin:0; font-size:14px; line-height:1.5; color:var(--ink)}
+.item-pe{margin:7px 0 0; font-size:12.5px; color:var(--muted)}
+.item-pe a{color:var(--muted); text-decoration:underline}
+
+.vazio{padding:40px 20px; text-align:center; color:var(--muted); font-size:14px}
+.setup{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:26px; box-shadow:var(--shadow)}
+.setup h2{font-size:18px; margin-bottom:8px}
+.setup p{color:var(--ink-2); font-size:14px; margin:0 0 12px}
+.setup code{font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(--surface-2); border:1px solid var(--line-2); border-radius:5px; padding:1.5px 5px}
+
+footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surface)}
+.foot-in{display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; padding:16px 0; font-size:12px; color:var(--muted)}
+
+/* aparição escalonada */
+@keyframes surge{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none}}
+.surge{animation:surge .45s cubic-bezier(.22,.61,.36,1) both}
+@media (prefers-reduced-motion:reduce){.surge{animation:none}}
+
+@media (max-width:900px){
+  .orgaos{grid-template-columns:repeat(2,1fr)}
+  .atencao{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  .orgaos{grid-template-columns:1fr}
+  .item{grid-template-columns:1fr; gap:8px}
+  .item-data{display:flex; gap:8px; align-items:baseline}
+  .item-data em{display:inline}
+  .item-proc{margin-left:0}
+  .brand h1{font-size:22px}
+  .stamp{text-align:left}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-in">
+    <div class="brand">
+      <p class="eyebrow">Tribunal de Contas da União · Dados abertos</p>
+      <h1>Horizonte TCU</h1>
+      <p>Planejamento e Orçamento — MPO, SOF, SEPLAN e SMA</p>
+    </div>
+    <div class="stamp">
+      Coleta: <b id="carimbo">—</b><br>
+      <span id="carimbo-idade"></span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap"><div class="aviso" id="aviso"><span aria-hidden="true">▲</span><span id="aviso-txt"></span></div></div>
+
+<main id="app" hidden>
+
+  <section class="wrap horizonte">
+    <div class="hz-head">
+      <div>
+        <p class="eyebrow">Próximas sessões</p>
+        <h2>O que entra em pauta</h2>
+      </div>
+      <p class="eyebrow" id="hz-nota"></p>
+    </div>
+    <div class="hz-rail" id="rail"></div>
+  </section>
+
+  <section class="wrap atencao" id="atencao"></section>
+
+  <section class="wrap secao">
+    <h2>Onde está a atenção do Tribunal</h2>
+    <p class="sub">Volume por órgão e distribuição temática, sobre tudo que foi coletado.</p>
+    <div class="orgaos" id="orgaos"></div>
+  </section>
+
+  <section class="wrap secao">
+    <div class="hm-topo">
+      <div>
+        <h2>Mapa de calor da atividade</h2>
+        <p class="sub" id="hm-sub" style="margin:0">Concentração de registros por mês na janela escolhida.</p>
+      </div>
+      <div style="display:flex; gap:9px; align-items:center; flex-wrap:wrap">
+        <div class="hm-abas" role="group" aria-label="Agrupar o mapa de calor">
+          <button type="button" id="hm-por-tema" aria-pressed="true">Por matéria</button>
+          <button type="button" id="hm-por-processo" aria-pressed="false">Por processo</button>
+        </div>
+        <select id="hm-janela" aria-label="Janela do mapa de calor"
+                style="font-family:inherit; font-size:13px; background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:7px 10px; color:var(--ink)">
+          <option value="12">12 meses</option>
+          <option value="24">24 meses</option>
+          <option value="36" selected>36 meses</option>
+          <option value="60">5 anos</option>
+        </select>
+      </div>
+    </div>
+    <div class="hm-caixa">
+      <div class="hm" id="hm"></div>
+      <div class="hm-pe">
+        <span class="hm-legenda">
+          Menos
+          <i style="background:var(--surface-2); border:1px solid var(--line-2)"></i>
+          <i style="background:#c3dbd6"></i><i style="background:#8dbcb4"></i>
+          <i style="background:#4d8e85"></i><i style="background:#0e4a44"></i>
+          <i style="background:#06322e"></i>
+          Mais
+        </span>
+        <span id="hm-nota"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap secao">
+    <h2>Registros</h2>
+    <p class="sub">Solicitações do Congresso e acórdãos atribuídos aos órgãos monitorados.</p>
+    <div class="barra-filtros">
+      <input type="search" id="f-busca" placeholder="Buscar em assunto, autor ou processo" aria-label="Buscar">
+      <select id="f-orgao" aria-label="Filtrar por órgão"><option value="">Todos os órgãos</option></select>
+      <select id="f-tema" aria-label="Filtrar por tema"><option value="">Todos os temas</option></select>
+      <select id="f-fonte" aria-label="Filtrar por fonte"><option value="">Todas as fontes</option></select>
+      <select id="f-periodo" aria-label="Filtrar por período">
+        <option value="0">Qualquer data</option>
+        <option value="30">Últimos 30 dias</option>
+        <option value="90">Últimos 90 dias</option>
+        <option value="365">Últimos 12 meses</option>
+      </select>
+      <button class="btn-limpar" id="f-limpar" type="button">Limpar</button>
+      <span class="contador" id="contador" aria-live="polite"></span>
+    </div>
+    <ul class="feed" id="feed"></ul>
+  </section>
+</main>
+
+<div class="wrap" id="setup" hidden>
+  <div class="setup secao">
+    <p class="eyebrow">Sem dados ainda</p>
+    <h2>O painel está no ar, o arquivo de dados não</h2>
+    <p>Esta página lê <code>dados.json</code>, gerado por <code>coleta_tcu.py</code>. Rode a coleta uma vez e publique o arquivo ao lado deste HTML:</p>
+    <p><code>python coleta_tcu.py --saida dados.json</code></p>
+    <p id="setup-erro" style="color:var(--red)"></p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>Fontes: Solicitações do Congresso (SCN), Acórdãos e Pautas de sessão — dados abertos do TCU.</span>
+    <span>A atribuição de órgão é heurística, por casamento textual. Confira antes de citar.</span>
+  </div>
+</footer>
+
+<script>
+"use strict";
+
+// Base para o link de acompanhamento do processo no TCU. Se o Tribunal mudar a
+// rota da pesquisa integrada, é o único ponto a ajustar.
+const URL_PROCESSO = "https://pesquisa.apps.tcu.gov.br/doc/processo/";
+
+const CORES = { MPO:"var(--mpo)", SOF:"var(--sof)", SEPLAN:"var(--seplan)", SMA:"var(--sma)" };
+const PALETA_TEMAS = ["#0e4a44","#1b5674","#573566","#63601c","#8a2e26","#2f6b3f","#9c5c07"];
+const DIA = 86400000;
+
+let DADOS = null;
+let PAUTA_POR_PROCESSO = new Map();
+
+/* ---------- utilidades ---------- */
+const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) =>
+  ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+
+const parseData = (v) => { if(!v) return null; const d = new Date(v); return isNaN(d) ? null : d; };
+
+const meiaNoite = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
+
+const diasAte = (d, ref) => Math.round((meiaNoite(d) - meiaNoite(ref)) / DIA);
+
+const fmtData = (d) => d ? d.toLocaleDateString("pt-BR", { day:"2-digit", month:"2-digit", year:"numeric" }) : "—";
+
+const fmtDiaSemana = (d) => d ? d.toLocaleDateString("pt-BR", { weekday:"long" }) : "";
+
+const plural = (n, s, p) => `${n} ${n === 1 ? s : p}`;
+
+function linkProcesso(item){
+  const id = item.processo_id || String(item.processo || "").replace(/\D/g, "");
+  if (item.link_tcu && !item.link_tcu.includes("/ords/")) return item.link_tcu;
+  return id ? URL_PROCESSO + id : null;
+}
+
+function rotuloRelativo(dias){
+  if (dias === 0) return "hoje";
+  if (dias === 1) return "amanhã";
+  if (dias === -1) return "ontem";
+  return dias > 0 ? `em ${plural(dias, "dia", "dias")}` : `há ${plural(-dias, "dia", "dias")}`;
+}
+
+/* ---------- carga ---------- */
+async function carregar(){
+  try{
+    const r = await fetch("dados.json?v=" + Date.now(), { cache:"no-store" });
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    DADOS = await r.json();
+    if(!DADOS || !Array.isArray(DADOS.processos_detalhes)) throw new Error("Formato inesperado");
+    render();
+  }catch(e){
+    document.getElementById("setup").hidden = false;
+    document.getElementById("setup-erro").textContent =
+      "Detalhe técnico: " + e.message + ". Se o arquivo existe, verifique se está na mesma pasta do index.html.";
+  }
+}
+
+/* ---------- render ---------- */
+function render(){
+  const app = document.getElementById("app");
+  app.hidden = false;
+
+  const hoje = new Date();
+  const itens = DADOS.processos_detalhes.slice();
+
+  // índice de pauta: processo -> sessão mais próxima
+  PAUTA_POR_PROCESSO = new Map();
+  (DADOS.pautas_futuras || []).forEach((p) => {
+    const d = parseData(p.data_sessao);
+    if(!d || diasAte(d, hoje) < 0) return;
+    const atual = PAUTA_POR_PROCESSO.get(p.processo_id);
+    if(!atual || parseData(atual.data_sessao) > d) PAUTA_POR_PROCESSO.set(p.processo_id, p);
+  });
+
+  carimbo(hoje);
+  avisos();
+  horizonte(hoje);
+  atencao(itens, hoje);
+  orgaos();
+  abasCalor();
+  desenharCalor();
+  filtros(itens);
+  aplicarFiltros();
+}
+
+function carimbo(hoje){
+  document.getElementById("carimbo").textContent = DADOS.ultima_atualizacao || "—";
+  const d = parseData(DADOS.ultima_atualizacao_iso);
+  if(!d) return;
+  const h = Math.round((hoje - d) / 3600000);
+  document.getElementById("carimbo-idade").textContent =
+    h < 1 ? "agora há pouco" : h < 48 ? `há ${plural(h, "hora", "horas")}` : `há ${plural(Math.round(h/24), "dia", "dias")}`;
+}
+
+function avisos(){
+  const falhas = DADOS.fontes_indisponiveis || [];
+  if(!falhas.length) return;
+  const el = document.getElementById("aviso");
+  el.classList.add("on");
+  document.getElementById("aviso-txt").innerHTML =
+    `<b>Coleta parcial.</b> ${esc(falhas.join(" e "))} não respondeu na última execução, então os números abaixo estão incompletos para ${falhas.length > 1 ? "essas fontes" : "essa fonte"}.`;
+}
+
+function horizonte(hoje){
+  const rail = document.getElementById("rail");
+  const porDia = new Map();
+
+  PAUTA_POR_PROCESSO.forEach((p) => {
+    const d = parseData(p.data_sessao);
+    const chave = meiaNoite(d).getTime();
+    if(!porDia.has(chave)) porDia.set(chave, []);
+    porDia.get(chave).push(p);
+  });
+
+  const dias = [...porDia.entries()].sort((a, b) => a[0] - b[0]).slice(0, 8);
+
+  let html = `<div class="hz-hoje"><span>Hoje</span><strong class="mono">${fmtData(hoje)}</strong></div>`;
+
+  if(!dias.length){
+    html += `<div class="hz-vazio">Nenhum processo monitorado tem sessão marcada na pauta publicada.
+      A pauta do TCU cobre poucos dias à frente — vale reconsultar depois de cada coleta.</div>`;
+    document.getElementById("hz-nota").textContent = "";
+  }else{
+    dias.forEach(([chave, lista], i) => {
+      const d = new Date(chave);
+      const n = diasAte(d, hoje);
+      const classe = n === 0 ? "hoje" : n <= 7 ? "urgente" : "";
+      const itensHtml = lista.map((p) => {
+        const url = linkProcesso(p);
+        const num = esc(p.processo || "—");
+        return `<li>
+          ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${num}</a>` : `<span class="mono">${num}</span>`}
+          <p>${esc(p.natureza || p.tipo || "Processo")}<br><em>Relator: ${esc(p.relator || "não informado")} · ${esc(p.colegiado || "colegiado não informado")}</em></p>
+        </li>`;
+      }).join("");
+
+      html += `<div class="sessao ${classe} surge" style="animation-delay:${i * 55}ms">
+        <div class="sessao-topo">
+          <span class="contagem">${n === 0 ? "0" : n}<small>${n === 0 ? " hoje" : n === 1 ? " dia" : " dias"}</small></span>
+          <span class="sessao-data"><b>${fmtData(d)}</b>${fmtDiaSemana(d)}</span>
+        </div>
+        <ul>${itensHtml}</ul>
+      </div>`;
+    });
+    document.getElementById("hz-nota").textContent = `${plural(PAUTA_POR_PROCESSO.size, "processo", "processos")} · ${plural(dias.length, "sessão", "sessões")}`;
+  }
+  rail.innerHTML = html;
+}
+
+function atencao(itens, hoje){
+  const emPauta7 = [...PAUTA_POR_PROCESSO.values()]
+    .filter((p) => { const d = parseData(p.data_sessao); return d && diasAte(d, hoje) <= 7; });
+
+  const novos = itens.filter((i) => { const d = parseData(i.data); return d && diasAte(d, hoje) >= -14; });
+
+  const semTema = itens.filter((i) => !(i.temas || []).length);
+
+  const cards = [
+    { classe:"alerta", n:emPauta7.length, t:"Julgamento em até 7 dias",
+      p: emPauta7.length ? "Processos monitorados com sessão marcada nesta semana. É a janela útil para posicionamento."
+                         : "Nenhuma sessão marcada para os próximos sete dias." },
+    { classe:"novo", n:novos.length, t:"Registros novos em 14 dias",
+      p: novos.length ? "Entraram no radar desde a quinzena anterior. Comece a leitura por aqui."
+                      : "Nenhum registro novo na última quinzena." },
+    { classe:"", n:semTema.length, t:"Sem classificação temática",
+      p: semTema.length ? "O texto não casou com nenhum tema conhecido. Revise e, se houver padrão, acrescente-o ao dicionário TEMAS da coleta."
+                        : "Todos os registros receberam ao menos um tema." }
+  ];
+
+  document.getElementById("atencao").innerHTML = cards.map((c, i) => `
+    <div class="card-at ${c.classe} surge" style="animation-delay:${i * 55}ms">
+      <span class="n">${c.n}</span>
+      <h3>${c.t}</h3>
+      <p>${c.p}</p>
+    </div>`).join("");
+}
+
+function orgaos(){
+  const hoje = new Date();
+  document.getElementById("orgaos").innerHTML = (DADOS.resumo || []).map((o, i) => {
+    const temas = Object.entries(o.por_tema || {});
+    const soma = temas.reduce((a, [, v]) => a + v, 0) || 1;
+    const barra = temas.map(([t, v], k) =>
+      `<i style="width:${(v / soma * 100).toFixed(1)}%; background:${PALETA_TEMAS[k % PALETA_TEMAS.length]}" title="${esc(t)}: ${v}"></i>`).join("");
+    const lista = temas.slice(0, 4).map(([t, v]) =>
+      `<li><span>${esc(t)}</span><span>${v}</span></li>`).join("");
+
+    const ult = parseData(o.data_ultimo_registro);
+    const silencio = ult
+      ? `Último registro ${rotuloRelativo(diasAte(ult, hoje))}, em ${fmtData(ult)}.`
+      : "Sem registros datados.";
+
+    return `<div class="orgao surge" style="animation-delay:${i * 55}ms; border-top:3px solid ${CORES[o.orgao] || "var(--line)"}">
+      <div class="orgao-top">
+        <span class="orgao-sig" style="color:${CORES[o.orgao] || "var(--ink)"}">${esc(o.orgao)}</span>
+        <span class="orgao-tot">${o.total ?? 0}</span>
+      </div>
+      <p class="orgao-nome">${esc(o.nome_completo || "")}</p>
+      <div class="barra">${barra}</div>
+      <ul class="temas">${lista || '<li><span>Sem temas classificados</span><span>—</span></li>'}</ul>
+      <p class="silencio">${silencio}</p>
+    </div>`;
+  }).join("");
+}
+
+/* ---------- mapa de calor ---------- */
+let HM_MODO = "tema";
+// 36 meses por padrão: a base do SCN acumula devagar e uma janela de 12 meses
+// deixa a maior parte dos registros de fora, produzindo um mapa quase vazio.
+let MESES_HM = 36;
+const MEIA_VIDA = 120; // dias: um registro de 4 meses atrás pesa ~metade de um de hoje
+
+function gradeMeses(hoje){
+  const cols = [];
+  for(let k = MESES_HM - 1; k >= 0; k--){
+    const d = new Date(hoje.getFullYear(), hoje.getMonth() - k, 1);
+    cols.push({ chave:`${d.getFullYear()}-${d.getMonth()}`, data:d });
+  }
+  return cols;
+}
+
+function agregarCalor(itens, hoje, modo){
+  const cols = gradeMeses(hoje);
+  const idx = new Map(cols.map((c, i) => [c.chave, i]));
+  const linhas = new Map();
+
+  itens.forEach((i) => {
+    const d = parseData(i.data);
+    if(!d) return;
+    const col = idx.get(`${d.getFullYear()}-${d.getMonth()}`);
+    if(col === undefined) return;
+
+    const chaves = modo === "tema"
+      ? (i.temas || []).length ? i.temas : ["Sem classificação"]
+      : i.processo ? [i.processo] : [];
+
+    // Peso decai com a idade: atividade recente pesa mais que histórico.
+    const peso = Math.pow(0.5, diasAte(hoje, d) / MEIA_VIDA);
+
+    chaves.forEach((k) => {
+      if(!linhas.has(k)) linhas.set(k, { chave:k, celulas:new Array(MESES_HM).fill(0), total:0, score:0, exemplo:i });
+      const l = linhas.get(k);
+      l.celulas[col]++; l.total++; l.score += peso;
+    });
+  });
+
+  let lista = [...linhas.values()];
+  if(modo === "processo") lista = lista.filter((l) => l.total >= 2); // 1 evento não é "atividade"
+  return { cols, linhas: lista.sort((a, b) => b.score - a.score).slice(0, 14) };
+}
+
+function nivel(n, teto){
+  if(!n) return 0;
+  if(teto <= 1) return 3;
+  return Math.min(5, Math.max(1, Math.ceil(n / teto * 5)));
+}
+
+function desenharCalor(){
+  const hoje = new Date();
+  const { cols, linhas } = agregarCalor(DADOS.processos_detalhes, hoje, HM_MODO);
+  const el = document.getElementById("hm");
+  const nota = document.getElementById("hm-nota");
+
+  document.getElementById("hm-sub").textContent = HM_MODO === "tema"
+    ? "Concentração de registros por matéria, mês a mês, na janela escolhida."
+    : "Processos com dois ou mais registros no período — os demais não caracterizam atividade recorrente.";
+
+  if(!linhas.length){
+    el.innerHTML = "";
+    el.style.gridTemplateColumns = "1fr";
+    el.innerHTML = `<p class="vazio">${HM_MODO === "processo"
+      ? "Nenhum processo teve mais de um registro na janela escolhida. Cada solicitação do Congresso costuma gerar um processo próprio; a reincidência aparece quando o mesmo processo volta em acórdão ou pauta."
+      : "Sem registros datados no período."}</p>`;
+    nota.textContent = "";
+    return;
+  }
+
+  const teto = Math.max(...linhas.flatMap((l) => l.celulas));
+  const larg = MESES_HM > 36 ? 14 : MESES_HM > 24 ? 18 : 28;
+  el.style.gridTemplateColumns = `minmax(120px, 210px) repeat(${MESES_HM}, minmax(${larg}px, 1fr)) 46px`;
+
+  // Em janelas longas o rótulo de todo mês vira ruído: só janeiro e julho.
+  const denso = MESES_HM > 24;
+  let html = `<div></div>` + cols.map((c) => {
+    const m = c.data.getMonth();
+    const mostra = !denso || m === 0 || m === 6;
+    const rot = mostra ? c.data.toLocaleDateString("pt-BR", { month:"short" }).replace(".", "") : "";
+    return `<div class="hm-mes">${rot}${m === 0 ? "<br>" + c.data.getFullYear() : ""}</div>`;
+  }).join("") + `<div class="hm-mes">peso</div>`;
+
+  linhas.forEach((l) => {
+    const url = HM_MODO === "processo" ? linkProcesso(l.exemplo) : null;
+    html += `<div class="hm-rot" title="${esc(l.chave)}">${
+      url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(l.chave)}</a>` : esc(l.chave)
+    }</div>`;
+    html += l.celulas.map((n, k) =>
+      `<div class="hm-cel" data-n="${nivel(n, teto)}" title="${esc(l.chave)} · ${cols[k].data.toLocaleDateString("pt-BR", { month:"long", year:"numeric" })} · ${plural(n, "registro", "registros")}">${n || ""}</div>`
+    ).join("");
+    html += `<div class="hm-score">${l.score.toFixed(1)}</div>`;
+  });
+
+  el.innerHTML = html;
+  nota.textContent = `${plural(linhas.length, "linha", "linhas")} · peso = soma dos registros com decaimento de meia-vida de ${MEIA_VIDA} dias`;
+}
+
+function abasCalor(){
+  const bt = document.getElementById("hm-por-tema");
+  const bp = document.getElementById("hm-por-processo");
+  const trocar = (modo) => {
+    HM_MODO = modo;
+    bt.setAttribute("aria-pressed", String(modo === "tema"));
+    bp.setAttribute("aria-pressed", String(modo === "processo"));
+    desenharCalor();
+  };
+  bt.addEventListener("click", () => trocar("tema"));
+  bp.addEventListener("click", () => trocar("processo"));
+  document.getElementById("hm-janela").addEventListener("change", (e) => {
+    MESES_HM = parseInt(e.target.value, 10);
+    desenharCalor();
+  });
+}
+
+function filtros(itens){
+  const orgaos = new Set(), temas = new Set(), fontes = new Set();
+  itens.forEach((i) => {
+    (i.orgaos || []).forEach((o) => orgaos.add(o));
+    (i.temas || []).forEach((t) => temas.add(t));
+    if(i.fonte) fontes.add(i.fonte);
+  });
+  const preencher = (id, valores) => {
+    const el = document.getElementById(id);
+    [...valores].sort().forEach((v) => {
+      const opt = document.createElement("option");
+      opt.value = v; opt.textContent = v;
+      el.appendChild(opt);
+    });
+  };
+  preencher("f-orgao", orgaos);
+  preencher("f-tema", temas);
+  preencher("f-fonte", fontes);
+
+  ["f-busca","f-orgao","f-tema","f-fonte","f-periodo"].forEach((id) =>
+    document.getElementById(id).addEventListener("input", aplicarFiltros));
+  document.getElementById("f-limpar").addEventListener("click", () => {
+    document.getElementById("f-busca").value = "";
+    ["f-orgao","f-tema","f-fonte"].forEach((id) => document.getElementById(id).value = "");
+    document.getElementById("f-periodo").value = "0";
+    aplicarFiltros();
+  });
+}
+
+function aplicarFiltros(){
+  const hoje = new Date();
+  const q = document.getElementById("f-busca").value.trim().toLowerCase();
+  const fo = document.getElementById("f-orgao").value;
+  const ft = document.getElementById("f-tema").value;
+  const ff = document.getElementById("f-fonte").value;
+  const fp = parseInt(document.getElementById("f-periodo").value, 10);
+
+  const todos = DADOS.processos_detalhes;
+  const filtrados = todos.filter((i) => {
+    if(fo && !(i.orgaos || []).includes(fo)) return false;
+    if(ft && !(i.temas || []).includes(ft)) return false;
+    if(ff && i.fonte !== ff) return false;
+    if(fp){
+      const d = parseData(i.data);
+      if(!d || diasAte(d, hoje) < -fp) return false;
+    }
+    if(q){
+      const alvo = [i.assunto, i.autor, i.processo, i.numero_acordao, i.relator].join(" ").toLowerCase();
+      if(!alvo.includes(q)) return false;
+    }
+    return true;
+  });
+
+  document.getElementById("contador").textContent = `${filtrados.length} de ${todos.length}`;
+  desenharFeed(filtrados.slice(0, 200), hoje);
+}
+
+function desenharFeed(itens, hoje){
+  const feed = document.getElementById("feed");
+  if(!itens.length){
+    feed.innerHTML = `<li class="vazio">Nenhum registro com esses filtros. Amplie o período ou limpe a busca.</li>`;
+    return;
+  }
+  feed.innerHTML = itens.map((i) => {
+    const d = parseData(i.data);
+    const url = linkProcesso(i);
+    const pauta = i.processo_id ? PAUTA_POR_PROCESSO.get(i.processo_id) : null;
+
+    const chipsOrgao = (i.orgaos || []).length
+      ? (i.orgaos).map((o) => `<span class="chip chip-orgao" style="background:${CORES[o] || "var(--ink-2)"}">${esc(o)}</span>`).join("")
+      : `<span class="chip chip-fonte" title="O texto não nomeia o órgão; entrou por tratar de matéria da competência do MPO.">por matéria</span>`;
+    const chipsTema = (i.temas || []).map((t) => `<span class="chip chip-tema">${esc(t)}</span>`).join("");
+    const chipPauta = pauta
+      ? `<span class="chip chip-pauta">Pauta ${esc(fmtData(parseData(pauta.data_sessao)))}</span>` : "";
+
+    const identificacao = i.fonte === "Acórdão"
+      ? `Acórdão ${esc(i.numero_acordao || "")}/${esc(i.ano || "")} · ${esc(i.colegiado || "")}`
+      : `${esc(i.tipo || "")} ${esc(i.numero || "")}${i.autor ? " · " + esc(i.autor) : ""}`;
+
+    const extra = i.link_proposicao
+      ? ` · <a href="${esc(i.link_proposicao)}" target="_blank" rel="noopener">proposição de origem</a>` : "";
+
+    return `<li class="item">
+      <div class="item-data">
+        ${esc(fmtData(d))}
+        <em>${d ? esc(rotuloRelativo(diasAte(d, hoje))) : "sem data"}</em>
+      </div>
+      <div>
+        <div class="item-topo">
+          ${chipsOrgao}
+          <span class="chip chip-fonte">${esc(i.fonte || "—")}</span>
+          ${chipsTema}
+          ${chipPauta}
+          ${url ? `<a class="item-proc" href="${esc(url)}" target="_blank" rel="noopener">${esc(i.processo || "abrir")} ↗</a>` : ""}
+        </div>
+        <p class="item-assunto">${esc(i.assunto || "Sem descrição")}</p>
+        <p class="item-pe">${identificacao}${extra}</p>
+      </div>
+    </li>`;
+  }).join("");
+}
+
+carregar();
+</script>
+</body>
+</html>
