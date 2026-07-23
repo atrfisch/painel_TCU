@@ -44,6 +44,37 @@ log = logging.getLogger("coleta_tcu")
 SCN_URL = "https://contas.tcu.gov.br/ords/api/publica/scn/pedidos_congresso"
 ACORDAOS_URL = "https://dados-abertos.apps.tcu.gov.br/api/acordao/recupera-acordaos"
 PAUTAS_URL = "https://dados-abertos.apps.tcu.gov.br/api/pautassessao"
+PAUTA_PDF_URL = "https://sessoes-portal-ms.apps.tcu.gov.br/api/sessoes/downloadPautaPublicada/{id}"
+
+# Âncora de varredura das pautas publicadas. O id 23240 corresponde ao BTCU de
+# 15/05/2026; os ids crescem a cada edição. A cada execução o coletor avança a
+# partir do maior id já processado, gravado no próprio dados.json.
+PAUTA_ID_ANCORA = 23240
+PAUTA_MISSES_SEGUIDOS = 12  # desiste depois de N ids consecutivos sem pauta
+
+# Processos que o MPO acompanha nominalmente. Entram no painel sempre, mesmo
+# que nenhuma outra regra os capture. Acrescente números aqui conforme surgirem.
+PROCESSOS_INTERESSE = {
+    "022.756/2025-6",
+    "005.405/2026-2",
+    "022.852/2025-5",
+    "022.280/2024-3",
+    "008.798/2025-7",
+}
+
+# Unidades jurisdicionadas de interesse. Diferente das camadas nominal e
+# temática, isto casa contra um campo que o PRÓPRIO TCU declara na pauta —
+# é a atribuição de maior confiança que a base pública oferece.
+UNIDADES_ALVO: dict[str, list[str]] = {
+    "MPO": [
+        r"minist[eé]rio do planejamento e or[cç]amento",
+        r"secretaria-?executiva do minist[eé]rio do planejamento",
+        r"assessoria especial de controle interno do minist[eé]rio do planejamento",
+    ],
+    "SOF": [r"secretaria de or[cç]amento federal"],
+    "SEPLAN": [r"secretaria nacional de planejamento"],
+    "SMA": [r"secretaria (nacional )?de monitoramento e avalia[cç][aã]o"],
+}
 
 TIMEOUT = (10, 60)  # (connect, read)
 LOTE_ACORDAOS = 500
@@ -393,6 +424,183 @@ def coletar_pautas(sessao: requests.Session, processos_interesse: set[str]) -> l
 
 
 # --------------------------------------------------------------------------- #
+# Fonte 4 — Pautas publicadas (BTCU) — a fonte de maior confiança
+# --------------------------------------------------------------------------- #
+
+RX_UNIDADES = _compilar(UNIDADES_ALVO)
+
+# Cabeçalhos que mudam o contexto corrente enquanto varremos o documento.
+RX_RELATOR = re.compile(r"^\s*(?:Ministro|MINISTRO)(?:-Substituto|-SUBSTITUTO)?\s+([A-ZÁÂÃÉÊÍÓÔÕÚÇ][A-Za-zÁÂÃÉÊÍÓÔÕÚÇáâãéêíóôõúç\s\.]{4,60})\s*$")
+RX_COLEGIADO = re.compile(r"PAUTA (?:DO|DA) (PLEN[ÁA]RIO|PRIMEIRA C[ÂA]MARA|SEGUNDA C[ÂA]MARA)")
+RX_SESSAO = re.compile(r"Sess[ãa]o\s+\w+\s+de\s+(\d{2}/\d{2}/\d{4})")
+# Início de bloco de processo: NNN.NNN/AAAA-D seguido de hífen.
+RX_BLOCO = re.compile(r"^\s*(\d{3}\.\d{3}/\d{4}-\d)\s*-\s*", re.M)
+# Rótulos que encerram a descrição e iniciam campos estruturados.
+RX_CAMPO = re.compile(
+    r"(Natureza|Unidade [Jj]urisdicionada|[ÓO]rg[ãa]o/Entidade/Unidade|[ÓO]rg[ãa]o/Entidade|"
+    r"Respons[áa]ve(?:l|is)|Interessad[oa]s?|Representa[çc][ãa]o legal|Recorrentes?|"
+    r"Embargantes?|Representante|Solicitante|Exerc[íi]cio|Revisor|Interesse em sustenta[çc][ãa]o oral)\s*:",
+)
+RX_RUIDO = re.compile(
+    r"(Para verificar as assinaturas.*?\d{8}\.|BTCU Deliberações.*?\d{4}\s+\d+|"
+    r"CODMATERIA=\d+|A presente pauta pode.*?RITCU\)\.|As transmiss[õo]es das sess[õo]es.*?sessoes/\.)",
+    re.S,
+)
+
+
+def _limpar_pagina(texto: str) -> str:
+    """Remove rodapés e boilerplate que se repetem a cada página do boletim."""
+    texto = RX_RUIDO.sub(" ", texto)
+    return re.sub(r"[ \t]+", " ", texto)
+
+
+def _extrair_campo(bloco: str, rotulos: tuple[str, ...]) -> str | None:
+    """Devolve o valor de um rótulo até o próximo rótulo estruturado."""
+    for rotulo in rotulos:
+        m = re.search(rotulo + r"\s*:\s*(.+)", bloco, re.S)
+        if not m:
+            continue
+        resto = m.group(1)
+        fim = RX_CAMPO.search(resto)
+        valor = (resto[: fim.start()] if fim else resto).strip()
+        valor = re.sub(r"\s+", " ", valor).rstrip(".").strip()
+        if valor and valor.lower() not in {"não há", "nao ha"}:
+            return valor
+    return None
+
+
+def baixar_pauta(sessao: requests.Session, id_pauta: int) -> str | None:
+    """Baixa uma edição do BTCU e devolve o texto. None se a edição não existe."""
+    try:
+        resp = sessao.get(PAUTA_PDF_URL.format(id=id_pauta), timeout=TIMEOUT)
+        if resp.status_code != 200 or not resp.content[:5].startswith(b"%PDF"):
+            return None
+    except requests.exceptions.RequestException as exc:
+        log.debug("Pauta %s indisponível: %s", id_pauta, exc)
+        return None
+
+    try:
+        from pypdf import PdfReader  # dependência só desta fonte
+    except ImportError:
+        log.error("pypdf não instalado — acrescente 'pypdf' ao requirements.txt.")
+        return None
+
+    import io
+
+    try:
+        leitor = PdfReader(io.BytesIO(resp.content))
+        return "\n".join(p.extract_text() or "" for p in leitor.pages)
+    except Exception as exc:  # PDF corrompido não deve derrubar a coleta
+        log.warning("Falha ao ler a pauta %s: %s", id_pauta, exc)
+        return None
+
+
+def parsear_pauta(texto: str, id_pauta: int) -> list[dict]:
+    """
+    Percorre o boletim mantendo o contexto corrente (colegiado, data da sessão,
+    relator) e emite um registro por processo cuja unidade jurisdicionada — ou
+    cujo número — seja de interesse.
+    """
+    texto = _limpar_pagina(texto)
+    linhas = texto.split("\n")
+
+    colegiado = data_sessao = relator = None
+    registros: list[dict] = []
+    buffer: list[str] = []
+    numero_atual: str | None = None
+
+    def fechar() -> None:
+        nonlocal buffer, numero_atual
+        if not numero_atual:
+            buffer = []
+            return
+        bloco = " ".join(buffer)
+        unidade = _extrair_campo(
+            bloco, (r"Unidade [Jj]urisdicionada", r"[ÓO]rg[ãa]o/Entidade/Unidade", r"[ÓO]rg[ãa]o/Entidade")
+        )
+        interessados = _extrair_campo(bloco, (r"Interessad[oa]s?",))
+        alvo = normalizar(f"{unidade or ''} {interessados or ''}")
+        orgaos = identificar(alvo, RX_UNIDADES)
+        na_watchlist = numero_atual in PROCESSOS_INTERESSE
+
+        if orgaos or na_watchlist:
+            corte = RX_CAMPO.search(bloco)
+            descricao = (bloco[: corte.start()] if corte else bloco).strip().rstrip(".")
+            registros.append(
+                {
+                    "fonte": "Pauta",
+                    "orgaos": orgaos,
+                    "temas": identificar(normalizar(descricao), RX_TEMAS),
+                    "confianca": "unidade_jurisdicionada" if orgaos else "watchlist",
+                    "processo": numero_atual,
+                    "processo_id": limpar_processo(numero_atual),
+                    "assunto": descricao or "Processo incluído em pauta",
+                    "unidade_jurisdicionada": unidade,
+                    "relator": relator,
+                    "colegiado": colegiado,
+                    "natureza": _extrair_campo(bloco, (r"Natureza",)),
+                    "data": iso(parse_data(data_sessao)),
+                    "data_sessao": iso(parse_data(data_sessao)),
+                    "edicao_btcu": id_pauta,
+                    "link_tcu": None,
+                }
+            )
+        buffer = []
+        numero_atual = None
+
+    for linha in linhas:
+        if m := RX_COLEGIADO.search(linha):
+            colegiado = m.group(1).title().replace("Camara", "Câmara")
+            continue
+        if m := RX_SESSAO.search(linha):
+            data_sessao = m.group(1)
+            continue
+        if m := RX_RELATOR.match(linha):
+            fechar()
+            relator = m.group(1).strip().title()
+            continue
+        if m := RX_BLOCO.match(linha):
+            fechar()
+            numero_atual = m.group(1)
+            buffer = [linha[m.end():]]
+            continue
+        if numero_atual is not None:
+            buffer.append(linha)
+
+    fechar()
+    return registros
+
+
+def coletar_pautas_publicadas(sessao: requests.Session, ancora: int, maximo: int) -> tuple[list[dict], int]:
+    """
+    Avança a partir da âncora até acumular MISSES seguidos. Devolve os registros
+    e o maior id efetivamente lido, para servir de âncora na próxima execução.
+    """
+    registros: list[dict] = []
+    misses = 0
+    maior = ancora
+    id_atual = ancora
+    lidas = 0
+
+    while misses < PAUTA_MISSES_SEGUIDOS and lidas < maximo:
+        texto = baixar_pauta(sessao, id_atual)
+        if texto is None:
+            misses += 1
+        else:
+            misses = 0
+            maior = max(maior, id_atual)
+            lidas += 1
+            achados = parsear_pauta(texto, id_atual)
+            if achados:
+                log.info("Pauta %s: %d processos de interesse", id_atual, len(achados))
+            registros.extend(achados)
+        id_atual += 1
+
+    log.info("Pautas: %d edições lidas, %d registros, âncora agora em %d", lidas, len(registros), maior)
+    return registros, maior
+
+
+# --------------------------------------------------------------------------- #
 # Montagem do painel
 # --------------------------------------------------------------------------- #
 
@@ -446,11 +654,29 @@ def montar_resumo_temas(itens: list[dict]) -> list[dict]:
     return sorted(saida, key=lambda t: -t["total"])
 
 
-def montar_payload(itens: list[dict], pautas: list[dict], falhas: list[str]) -> dict:
+def montar_watchlist(itens: list[dict]) -> list[dict]:
+    """Situação de cada processo da lista de acompanhamento nominal."""
+    saida = []
+    for numero in sorted(PROCESSOS_INTERESSE):
+        eventos = [i for i in itens if i.get("processo") == numero]
+        eventos = ordenar_por_data(eventos)
+        saida.append({
+            "processo": numero,
+            "processo_id": limpar_processo(numero),
+            "eventos": len(eventos),
+            "ultimo": eventos[0] if eventos else None,
+        })
+    return saida
+
+
+def montar_payload(itens: list[dict], pautas: list[dict], falhas: list[str],
+                   ancora_pauta: int = PAUTA_ID_ANCORA) -> dict:
     ordenados = ordenar_por_data(itens)
     agora = datetime.now(timezone.utc)
     return {
-        "schema": 3,
+        "schema": 4,
+        "ancora_pauta": ancora_pauta,
+        "watchlist": montar_watchlist(ordenados),
         "resumo_temas": montar_resumo_temas(ordenados),
         # Chaves originais preservadas para não quebrar o front atual:
         "resumo": montar_resumo(ordenados),
@@ -490,7 +716,10 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Coleta dados do TCU sobre o MPO e secretarias.")
     parser.add_argument("--saida", default="dados.json")
     parser.add_argument("--sem-acordaos", action="store_true", help="pula a fonte de acórdãos")
+    parser.add_argument("--sem-pautas", action="store_true", help="pula as pautas publicadas")
     parser.add_argument("--max-acordaos", type=int, default=10_000)
+    parser.add_argument("--max-pautas", type=int, default=60,
+                        help="máximo de edições do BTCU lidas por execução")
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args(argv)
 
@@ -503,9 +732,25 @@ def main(argv: list[str] | None = None) -> int:
     sessao = criar_sessao()
     falhas: list[str] = []
 
+    # A âncora das pautas vem do dados.json anterior: cada execução retoma de
+    # onde a última parou, em vez de revarrer o boletim inteiro.
+    ancora = PAUTA_ID_ANCORA
+    try:
+        with open(args.saida, encoding="utf-8") as f:
+            ancora = max(ancora, int(json.load(f).get("ancora_pauta", ancora)))
+        log.info("Retomando a varredura de pautas do id %d", ancora)
+    except (OSError, ValueError, TypeError):
+        log.info("Sem âncora anterior; começando do id %d", ancora)
+
     itens = coletar_scn(sessao)
     if not itens:
         falhas.append("SCN")
+
+    if not args.sem_pautas:
+        da_pauta, ancora = coletar_pautas_publicadas(sessao, ancora, args.max_pautas)
+        if not da_pauta:
+            falhas.append("Pautas publicadas")
+        itens.extend(da_pauta)
 
     if not args.sem_acordaos:
         acordaos = coletar_acordaos(sessao, args.max_acordaos)
@@ -520,7 +765,7 @@ def main(argv: list[str] | None = None) -> int:
         log.error("Nenhum item coletado — dados.json NÃO foi sobrescrito.")
         return 1
 
-    payload = montar_payload(itens, pautas, falhas)
+    payload = montar_payload(itens, pautas, falhas, ancora)
     salvar_atomico(payload, args.saida)
     log.info("%s gravado: %d itens, %d na pauta.", args.saida, len(itens), len(pautas))
     return 0
