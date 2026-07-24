@@ -5,6 +5,11 @@
       "status": "Em pauta",
       "processos": 3,
       "registros": 3
+    },
+    {
+      "status": "Julgado",
+      "processos": 1,
+      "registros": 1
     }
   ],
   "ancora_pauta": 23281,
@@ -18,6 +23,12 @@
     },
     {
       "tema": "Regras fiscais",
+      "total": 1,
+      "nominais": 0,
+      "data_ultimo_registro": "2026-05-19T00:00:00+00:00"
+    },
+    {
+      "tema": "Planejamento e avaliação de políticas",
       "total": 1,
       "nominais": 0,
       "data_ultimo_registro": "2026-05-19T00:00:00+00:00"
@@ -40,12 +51,14 @@
     {
       "orgao": "SOF",
       "nome_completo": "Secretaria de Orçamento Federal",
-      "total": 1,
+      "total": 2,
       "por_fonte": {
+        "Acórdão": 1,
         "Pauta": 1
       },
       "por_tema": {
-        "Regras fiscais": 1
+        "Regras fiscais": 1,
+        "Planejamento e avaliação de políticas": 1
       },
       "data_ultimo_registro": "2026-05-19T00:00:00+00:00"
     },
@@ -151,6 +164,35 @@
       "data_julgamento": null,
       "edicao_btcu": 23281,
       "link_tcu": null
+    },
+    {
+      "fonte": "Acórdão",
+      "secao": "ata",
+      "status": "Julgado",
+      "status_descricao": "Deliberado em sessão; acórdão proferido",
+      "acordao": "2.789/2019-Plenário",
+      "orgaos": [
+        "SOF"
+      ],
+      "temas": [
+        "Planejamento e avaliação de políticas"
+      ],
+      "confianca": "unidade_jurisdicionada",
+      "vinculo": "compartilhado",
+      "classe": "materia",
+      "relevancia": 1.8,
+      "processo": "002.013/2024-0",
+      "processo_id": "00201320240",
+      "assunto": "(MONITORAMENTO)  1.1",
+      "unidade_jurisdicionada": "Advocacia-geral da União; Banco Central do Brasil; Casa Civil da Presidência da República; Departamento Nacional de Infraestrutura de Transportes; Fundação Nacional de Saúde; Instituto Chico Mendes de Conservação da Biodiversidade; Instituto Nacional de Colonização e Reforma Agrária; Instituto Nacional do Câncer José de Alencar Gomes da Silva; Instituto Nacional do Seguro Social; Polícia Rodoviária Federal; Procuradoria-geral da Fazenda Nacional; Secretaria de Governo Digital; Secretaria de Orçamento Federal; Secretaria do Tesouro Nacional; Secretaria-executiva do Ministério da Agricultura e Pecuária; Secretaria-executiva do Ministério da Educação; Secretaria-executiva do Ministério da Saúde. 1.2. Relator: Ministro Antonio Anastasia. 1.3. Representante do Ministério Público: não atuou. 1.4. Unidade Técnica: Unidade de Auditoria Especializada em Tecnologia da Informação (AudTI). 1.5",
+      "relator": "João Augusto Ribeiro Nardes",
+      "colegiado": "Segunda Câmara",
+      "natureza": null,
+      "data": "2026-05-19T00:00:00+00:00",
+      "data_sessao": null,
+      "data_julgamento": "2026-05-19T00:00:00+00:00",
+      "edicao_btcu": 23281,
+      "link_tcu": null
     }
   ],
   "processos_detalhes": [
@@ -238,10 +280,39 @@
       "data_julgamento": null,
       "edicao_btcu": 23281,
       "link_tcu": null
+    },
+    {
+      "fonte": "Acórdão",
+      "secao": "ata",
+      "status": "Julgado",
+      "status_descricao": "Deliberado em sessão; acórdão proferido",
+      "acordao": "2.789/2019-Plenário",
+      "orgaos": [
+        "SOF"
+      ],
+      "temas": [
+        "Planejamento e avaliação de políticas"
+      ],
+      "confianca": "unidade_jurisdicionada",
+      "vinculo": "compartilhado",
+      "classe": "materia",
+      "relevancia": 1.8,
+      "processo": "002.013/2024-0",
+      "processo_id": "00201320240",
+      "assunto": "(MONITORAMENTO)  1.1",
+      "unidade_jurisdicionada": "Advocacia-geral da União; Banco Central do Brasil; Casa Civil da Presidência da República; Departamento Nacional de Infraestrutura de Transportes; Fundação Nacional de Saúde; Instituto Chico Mendes de Conservação da Biodiversidade; Instituto Nacional de Colonização e Reforma Agrária; Instituto Nacional do Câncer José de Alencar Gomes da Silva; Instituto Nacional do Seguro Social; Polícia Rodoviária Federal; Procuradoria-geral da Fazenda Nacional; Secretaria de Governo Digital; Secretaria de Orçamento Federal; Secretaria do Tesouro Nacional; Secretaria-executiva do Ministério da Agricultura e Pecuária; Secretaria-executiva do Ministério da Educação; Secretaria-executiva do Ministério da Saúde. 1.2. Relator: Ministro Antonio Anastasia. 1.3. Representante do Ministério Público: não atuou. 1.4. Unidade Técnica: Unidade de Auditoria Especializada em Tecnologia da Informação (AudTI). 1.5",
+      "relator": "João Augusto Ribeiro Nardes",
+      "colegiado": "Segunda Câmara",
+      "natureza": null,
+      "data": "2026-05-19T00:00:00+00:00",
+      "data_sessao": null,
+      "data_julgamento": "2026-05-19T00:00:00+00:00",
+      "edicao_btcu": 23281,
+      "link_tcu": null
     }
   ],
-  "ultima_atualizacao": "24/07/2026 às 14:25",
-  "ultima_atualizacao_iso": "2026-07-24T14:25:22.291776+00:00",
+  "ultima_atualizacao": "24/07/2026 às 15:09",
+  "ultima_atualizacao_iso": "2026-07-24T15:09:43.141618+00:00",
   "pautas_futuras": [
     {
       "processo": "025.632/2024-8",
@@ -251,6 +322,15 @@
       "relator": "BRUNO DANTAS",
       "natureza": "CONTROLE EXTERNO",
       "tipo": "RELATÓRIO DE AUDITORIA"
+    },
+    {
+      "processo": "002.013/2024-0",
+      "processo_id": "00201320240",
+      "data_sessao": "2026-05-06T00:00:00+00:00",
+      "colegiado": "Plenário",
+      "relator": "ANTONIO ANASTASIA",
+      "natureza": "CONTROLE EXTERNO",
+      "tipo": "MONITORAMENTO"
     },
     {
       "processo": "024.241/2025-3",
@@ -292,5 +372,5 @@
   "fontes_indisponiveis": [
     "Acórdãos"
   ],
-  "total_itens": 3
+  "total_itens": 4
 }
