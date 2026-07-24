@@ -3,786 +3,345 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Horizonte TCU — Planejamento e Orçamento</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<title>Processos do MPO no TCU</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#e8ece9; --surface:#ffffff; --surface-2:#f4f7f5;
-  --ink:#141f1c; --ink-2:#3d4f4a; --muted:#74847f;
-  --line:#ccd6d2; --line-2:#e2e9e6;
-  --petrol:#0e4a44; --petrol-soft:#dbeae7;
-  --amber:#9c5c07; --amber-soft:#f7e9d3;
-  --red:#8a2e26; --red-soft:#f4ddd9;
-  --mpo:#0e4a44; --sof:#1b5674; --seplan:#573566; --sma:#63601c;
-  --r:10px;
-  --shadow:0 1px 2px rgba(20,31,28,.06), 0 8px 24px -16px rgba(20,31,28,.28);
+  --paper:#eaeeec; --surface:#fff; --surface-2:#f4f7f6;
+  --ink:#131f1c; --ink-2:#3e504b; --muted:#77857f;
+  --line:#ccd6d2; --line-2:#e3e9e7;
+  --petrol:#0e4a44; --amber:#9a5a06; --red:#8a2e26;
+  --mpo:#0e4a44; --sof:#1b5674; --seplan:#573566; --sma:#63601c; --sest:#7a4a1f;
+  --r:10px; --shadow:0 1px 2px rgba(19,31,28,.05), 0 10px 26px -18px rgba(19,31,28,.3);
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0; background:var(--paper); color:var(--ink);
-  font-family:"Public Sans",system-ui,sans-serif; font-size:15px; line-height:1.55;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif; margin:0; letter-spacing:-.02em; font-weight:600}
+body{margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Public Sans",system-ui,sans-serif; font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased}
+h1,h2{font-family:"Bricolage Grotesque",sans-serif; margin:0; letter-spacing:-.02em}
 a{color:var(--petrol)}
-a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{
-  outline:2px solid var(--petrol); outline-offset:2px; border-radius:4px;
-}
-.wrap{max-width:1180px; margin:0 auto; padding:0 20px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--petrol); outline-offset:2px}
+.wrap{max-width:1160px; margin:0 auto; padding:0 20px}
 .mono{font-family:"JetBrains Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
-.eyebrow{
-  font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:.14em;
-  text-transform:uppercase; color:var(--muted);
-}
+.eyebrow{font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:0}
 
-/* ---------- topo ---------- */
-.top{background:var(--surface); border-bottom:1px solid var(--line)}
-.top-in{display:flex; flex-wrap:wrap; gap:16px; align-items:baseline; justify-content:space-between; padding:18px 0 16px}
-.brand h1{font-size:26px; font-weight:800}
-.brand p{margin:2px 0 0; color:var(--ink-2); font-size:13.5px}
-.stamp{font-family:"JetBrains Mono",monospace; font-size:11.5px; color:var(--muted); text-align:right}
-.stamp b{color:var(--ink); font-weight:600}
+header{background:var(--surface); border-bottom:1px solid var(--line)}
+.hd{display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:baseline; padding:18px 0}
+.hd h1{font-size:25px; font-weight:800}
+.hd p{margin:2px 0 0; font-size:13.5px; color:var(--ink-2)}
+.hd .quando{font-family:"JetBrains Mono",monospace; font-size:11.5px; color:var(--muted); text-align:right}
 
-.aviso{
-  display:none; gap:10px; align-items:flex-start; padding:11px 14px; margin:14px 0 0;
-  background:var(--amber-soft); border:1px solid #e3c894; border-radius:var(--r);
-  font-size:13.5px; color:#5c3a06;
-}
-.aviso.on{display:flex}
+.aviso{display:flex; gap:9px; padding:11px 14px; margin:14px 0 0; border-radius:var(--r);
+  background:#f8ecd6; font-size:13px; color:#5b3a06}
+.aviso{border-color:#e3c894}
 
-/* ---------- cartão de processo ---------- */
-.filtros{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:0 0 16px}
-.filtros input{flex:1 1 240px; min-width:0; font:inherit; font-size:13.5px; background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:8px 11px; color:var(--ink)}
-.fbt{font:inherit; font-size:12.5px; padding:7px 12px; border:1px solid var(--line); background:var(--surface); border-radius:20px; cursor:pointer; color:var(--ink-2)}
-.fbt[aria-pressed="true"]{background:var(--ink); color:#fff; border-color:var(--ink)}
-.fcount{margin-left:auto; font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--muted)}
+.kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; padding:24px 0 0}
+.kpi{background:var(--surface); border:1px solid var(--line); border-top:3px solid var(--line);
+  border-radius:var(--r); padding:13px 15px; box-shadow:var(--shadow); text-align:left; font:inherit; cursor:pointer}
+.kpi[aria-pressed="true"]{background:var(--surface-2); border-color:var(--ink-2)}
+.kpi b{font-family:"JetBrains Mono",monospace; font-size:29px; font-weight:600; line-height:1; display:block; letter-spacing:-.04em}
+.kpi span{display:block; font-size:13px; font-weight:600; margin-top:6px}
+.kpi small{display:block; font-size:11.5px; color:var(--muted); margin-top:2px; line-height:1.35}
+.kpi.total{border-top-color:var(--ink-2)}
+.kpi.pauta{border-top-color:var(--amber)} .kpi.pauta b{color:var(--amber)}
+.kpi.julgado{border-top-color:var(--petrol)} .kpi.julgado b{color:var(--petrol)}
+.kpi.despacho{border-top-color:var(--sof)} .kpi.despacho b{color:var(--sof)}
 
-.procs{display:grid; gap:11px}
-.proc{background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--line); border-radius:var(--r); padding:15px 17px; box-shadow:var(--shadow)}
-.proc.f-julgado{border-left-color:var(--petrol)}
-.proc.f-pauta{border-left-color:var(--amber)}
-.proc.f-despacho{border-left-color:var(--sof)}
-.proc-topo{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:7px}
-.proc-num{font-family:"JetBrains Mono",monospace; font-size:15px; font-weight:600; text-decoration:none; letter-spacing:-.01em}
-.proc-num:hover{text-decoration:underline}
-.proc-quando{margin-left:auto; font-family:"JetBrains Mono",monospace; font-size:11.5px; color:var(--muted)}
-.proc-txt{margin:0; font-size:14px; line-height:1.5}
-.proc-meta{margin:7px 0 0; font-size:12px; color:var(--muted); display:flex; flex-wrap:wrap; gap:4px 12px}
-.proc-meta b{font-weight:600; color:var(--ink-2)}
+section{padding:32px 0 0}
+section h2{font-size:19px}
+.sub{margin:3px 0 15px; color:var(--muted); font-size:13.5px}
 
-/* trilha: as fases pelas quais o processo passou, em ordem */
-.trilha{display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin:10px 0 0; padding-top:9px; border-top:1px solid var(--line-2)}
-.fase{display:flex; align-items:center; gap:5px; font-size:11.5px; color:var(--ink-2); background:var(--surface-2); border:1px solid var(--line-2); border-radius:20px; padding:3px 9px 3px 6px}
-.fase i{width:7px; height:7px; border-radius:50%; background:var(--muted); flex:0 0 auto}
-.fase.pauta i{background:var(--amber)} .fase.julgado i{background:var(--petrol)}
-.fase.despacho i{background:var(--sof)} .fase.apreciado i{background:var(--muted)}
-.fase b{font-family:"JetBrains Mono",monospace; font-weight:400; color:var(--muted); font-size:11px}
-.seta{color:var(--line); font-size:11px}
+.chip{display:inline-block; font-family:"JetBrains Mono",monospace; font-size:10.5px;
+  letter-spacing:.05em; text-transform:uppercase; padding:2.5px 7px; border-radius:5px; color:#fff}
+.chip.MPO{background:var(--mpo)} .chip.SOF{background:var(--sof)} .chip.SEPLAN{background:var(--seplan)}
+.chip.SMA{background:var(--sma)} .chip.SEST{background:var(--sest)}
+.chip-fase{background:var(--surface-2); color:var(--ink-2); border:1px solid var(--line); text-transform:none; letter-spacing:0}
+.chip-ac{background:#dceae7; color:var(--petrol); text-transform:none; letter-spacing:0}
+.chip-estado{background:var(--petrol); text-transform:none; letter-spacing:0}
 
-/* ---------- linha do tempo de atividades ---------- */
-.tl{position:relative; margin:0; padding:0 0 0 30px; list-style:none}
-.tl::before{content:""; position:absolute; left:8px; top:6px; bottom:6px; width:2px; background:var(--line)}
-.tl-marco{position:relative; margin:0 0 6px; padding:5px 0 3px}
-.tl-marco::before{content:""; position:absolute; left:-26px; top:12px; width:11px; height:11px; border-radius:50%; background:var(--paper); border:2px solid var(--ink)}
-.tl-marco span{font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink); font-weight:600}
-.tl-ev{position:relative; margin-bottom:9px}
-.tl-ev::before{content:""; position:absolute; left:-25px; top:17px; width:9px; height:9px; border-radius:50%; background:var(--muted); border:2px solid var(--paper)}
-.tl-ev.futuro::before{background:var(--amber)}
-.tl-ev.julgado::before{background:var(--petrol)}
-.tl-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:12px 15px; box-shadow:var(--shadow)}
-.tl-ev.futuro .tl-card{border-left:3px solid var(--amber)}
-.tl-ev.julgado .tl-card{border-left:3px solid var(--petrol)}
-.tl-topo{display:flex; flex-wrap:wrap; gap:7px; align-items:center; margin-bottom:5px}
-.tl-num{font-family:"JetBrains Mono",monospace; font-size:13px; font-weight:600; text-decoration:none}
-.tl-num:hover{text-decoration:underline}
-.tl-quando{margin-left:auto; font-family:"JetBrains Mono",monospace; font-size:11.5px; color:var(--muted)}
-.tl-txt{margin:0; font-size:13.5px; line-height:1.5; color:var(--ink)}
-.tl-meta{margin:5px 0 0; font-size:12px; color:var(--muted)}
-.tl-vazio{background:var(--surface); border:1px dashed var(--line); border-radius:var(--r); padding:20px; color:var(--muted); font-size:14px}
+/* movimentações */
+.movs{list-style:none; margin:0; padding:0; background:var(--surface); border:1px solid var(--line);
+  border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow)}
+.mov{display:grid; grid-template-columns:96px 1fr; gap:16px; padding:12px 17px; border-bottom:1px solid var(--line-2)}
+.mov:last-child{border-bottom:0}
+.mov:hover{background:var(--surface-2)}
+.mov-d{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--ink-2)}
+.mov-d em{display:block; font-style:normal; font-size:11px; color:var(--muted)}
+.mov-l1{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:3px}
+.mov-n{font-family:"JetBrains Mono",monospace; font-size:13px; font-weight:600; text-decoration:none}
+.mov-n:hover{text-decoration:underline}
+.mov-a{margin:0; font-size:13.5px; color:var(--ink-2); line-height:1.45}
 
-/* ---------- barra de estado (topo) ---------- */
-.estado{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:12px; padding:26px 0 0}
-.tile{
-  background:var(--surface); border:1px solid var(--line); border-top:3px solid var(--line);
-  border-radius:var(--r); padding:14px 16px 13px; box-shadow:var(--shadow);
-  text-align:left; font:inherit; cursor:pointer; transition:transform .12s ease, box-shadow .12s ease;
-}
-.tile:hover{transform:translateY(-2px); box-shadow:0 2px 4px rgba(20,31,28,.07), 0 14px 30px -18px rgba(20,31,28,.4)}
-.tile[aria-pressed="true"]{background:var(--surface-2); border-color:var(--ink-2)}
-.tile-n{font-family:"JetBrains Mono",monospace; font-size:32px; font-weight:600; line-height:1; letter-spacing:-.04em; display:block}
-.tile-t{font-family:"Bricolage Grotesque",sans-serif; font-size:14px; font-weight:600; margin:6px 0 3px}
-.tile-d{font-size:11.5px; color:var(--muted); line-height:1.4; margin:0; min-height:31px}
-.tile.pauta{border-top-color:var(--amber)} .tile.pauta .tile-n{color:var(--amber)}
-.tile.julgado{border-top-color:var(--petrol)} .tile.julgado .tile-n{color:var(--petrol)}
-.tile.despacho{border-top-color:var(--sof)} .tile.despacho .tile-n{color:var(--sof)}
-.tile.todos{border-top-color:var(--ink-2)} .tile.todos .tile-n{color:var(--ink)}
-.tile-d{min-height:0}
-
-.chip-status{color:#fff; font-weight:600}
-.st-pauta{background:var(--amber)} .st-julgado{background:var(--petrol)}
-.st-despacho{background:var(--sof)} .st-registrado{background:var(--muted)}
-.st-edital{background:var(--seplan)}
-.chip-ac{background:var(--petrol-soft); color:var(--petrol); border-color:#a9cdc6}
-.origem{margin:7px 0 0; padding:8px 10px; background:var(--surface-2); border-left:2px solid var(--line); border-radius:0 5px 5px 0; font-size:12.5px; color:var(--ink-2)}
-.origem b{font-weight:600}
-
-/* ---------- horizonte (elemento-assinatura) ---------- */
-.horizonte{padding:30px 0 6px}
-.hz-head{display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:14px}
-.hz-head h2{font-size:19px}
-.hz-rail{
-  display:flex; gap:0; overflow-x:auto; scroll-snap-type:x proximity;
-  padding-bottom:14px; margin:0 -20px; padding-left:20px; padding-right:20px;
-}
-.hz-hoje{
-  flex:0 0 auto; width:74px; display:flex; flex-direction:column; justify-content:flex-start;
-  padding-top:8px; border-right:2px solid var(--ink); margin-right:18px;
-}
-.hz-hoje span{font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink)}
-.hz-hoje strong{font-family:"Bricolage Grotesque",sans-serif; font-size:15px; font-weight:600; margin-top:2px}
-.sessao{
-  flex:0 0 auto; width:270px; margin-right:14px; scroll-snap-align:start;
-  background:var(--surface); border:1px solid var(--line); border-radius:var(--r);
-  border-top:3px solid var(--line); padding:14px 15px 12px; box-shadow:var(--shadow);
-}
-.sessao.urgente{border-top-color:var(--amber)}
-.sessao.hoje{border-top-color:var(--red)}
-.sessao-topo{display:flex; align-items:baseline; gap:9px; margin-bottom:9px}
-.contagem{font-family:"JetBrains Mono",monospace; font-size:31px; font-weight:600; line-height:1; letter-spacing:-.04em}
-.contagem small{font-size:11px; font-weight:400; color:var(--muted); letter-spacing:0}
-.sessao.urgente .contagem{color:var(--amber)}
-.sessao.hoje .contagem{color:var(--red)}
-.sessao-data{font-size:12.5px; color:var(--ink-2); line-height:1.35}
-.sessao-data b{display:block; font-weight:600; color:var(--ink)}
-.sessao ul{list-style:none; margin:0; padding:10px 0 0; border-top:1px solid var(--line-2)}
-.sessao li{padding:7px 0; border-bottom:1px dotted var(--line-2)}
-.sessao li:last-child{border-bottom:0; padding-bottom:0}
-.sessao li a{font-family:"JetBrains Mono",monospace; font-size:12.5px; font-weight:600; text-decoration:none}
-.sessao li a:hover{text-decoration:underline}
-.sessao li p{margin:3px 0 0; font-size:12.5px; color:var(--ink-2); line-height:1.4}
-.sessao li em{font-style:normal; color:var(--muted); font-size:11.5px}
-.hz-vazio{
-  flex:1 1 auto; background:var(--surface); border:1px dashed var(--line);
-  border-radius:var(--r); padding:20px; color:var(--muted); font-size:14px; min-width:260px;
-}
-
-/* ---------- atenção ---------- */
-.atencao{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; padding:22px 0 0}
-.card-at{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:15px 16px; box-shadow:var(--shadow)}
-.card-at .n{font-family:"JetBrains Mono",monospace; font-size:29px; font-weight:600; line-height:1.1; letter-spacing:-.03em}
-.card-at h3{font-size:14px; font-weight:600; margin:2px 0 6px}
-.card-at p{margin:0; font-size:12.5px; color:var(--muted); line-height:1.45}
-.card-at.alerta .n{color:var(--amber)}
-.card-at.novo .n{color:var(--petrol)}
-
-/* ---------- órgãos ---------- */
-.secao{padding:34px 0 0}
-.secao > h2{font-size:19px; margin-bottom:4px}
-.secao > .sub{margin:0 0 16px; color:var(--muted); font-size:13.5px}
-.orgaos{display:grid; grid-template-columns:repeat(4,1fr); gap:14px}
-.orgao{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:15px 16px; box-shadow:var(--shadow)}
-.orgao-top{display:flex; align-items:baseline; justify-content:space-between; gap:8px}
-.orgao-sig{font-family:"Bricolage Grotesque",sans-serif; font-size:16px; font-weight:800; letter-spacing:-.01em}
-.orgao-tot{font-family:"JetBrains Mono",monospace; font-size:24px; font-weight:600; letter-spacing:-.03em}
-.orgao-nome{font-size:12px; color:var(--muted); margin:1px 0 12px; line-height:1.35; min-height:32px}
-.barra{display:flex; height:7px; border-radius:4px; overflow:hidden; background:var(--surface-2); margin-bottom:10px}
-.barra i{display:block; height:100%}
-.temas{list-style:none; margin:0; padding:0}
-.temas li{display:flex; justify-content:space-between; gap:8px; font-size:12px; padding:2.5px 0; color:var(--ink-2)}
-.temas li span:last-child{font-family:"JetBrains Mono",monospace; color:var(--muted)}
-.silencio{margin:10px 0 0; padding-top:9px; border-top:1px solid var(--line-2); font-size:11.5px; color:var(--muted)}
-
-/* ---------- lista de acompanhamento ---------- */
-.wl{display:grid; grid-template-columns:repeat(auto-fill,minmax(255px,1fr)); gap:12px}
-.wl-item{background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--line); border-radius:var(--r); padding:13px 15px; box-shadow:var(--shadow)}
-.wl-item.ativo{border-left-color:var(--petrol)}
-.wl-num{font-family:"JetBrains Mono",monospace; font-size:14px; font-weight:600; text-decoration:none; display:inline-block}
-.wl-num:hover{text-decoration:underline}
-.wl-uj{margin:6px 0 0; font-size:12.5px; color:var(--ink-2); line-height:1.4}
-.wl-meta{margin:6px 0 0; font-size:11.5px; color:var(--muted); font-family:"JetBrains Mono",monospace}
-.wl-sem{margin:6px 0 0; font-size:12.5px; color:var(--muted); font-style:italic}
-.item-uj{margin:5px 0 0; font-size:12.5px; color:var(--ink-2)}
-.item-uj b{font-weight:600}
-
-/* ---------- mapa de calor ---------- */
-.hm-topo{display:flex; flex-wrap:wrap; gap:10px; align-items:baseline; justify-content:space-between; margin-bottom:14px}
-.hm-abas{display:flex; gap:0; border:1px solid var(--line); border-radius:8px; overflow:hidden; background:var(--surface)}
-.hm-abas button{
-  font:inherit; font-size:13px; padding:7px 14px; border:0; background:none;
-  cursor:pointer; color:var(--ink-2); border-right:1px solid var(--line);
-}
-.hm-abas button:last-child{border-right:0}
-.hm-abas button[aria-pressed="true"]{background:var(--petrol); color:#fff; font-weight:600}
-.hm-caixa{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px 14px; box-shadow:var(--shadow); overflow-x:auto}
-.hm{display:grid; gap:3px; min-width:660px}
-.hm-rot{
-  font-size:12.5px; color:var(--ink-2); padding-right:12px; align-self:center;
-  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
-}
-.hm-rot a{font-family:"JetBrains Mono",monospace; font-size:12px; text-decoration:none}
-.hm-rot a:hover{text-decoration:underline}
-.hm-mes{
-  font-family:"JetBrains Mono",monospace; font-size:9.5px; color:var(--muted);
-  text-align:center; letter-spacing:.04em; text-transform:uppercase;
-}
-.hm-cel{
-  height:26px; border-radius:3px; display:flex; align-items:center; justify-content:center;
-  font-family:"JetBrains Mono",monospace; font-size:11px; font-weight:600; color:#fff;
-}
-.hm-cel[data-n="0"]{background:var(--surface-2); border:1px solid var(--line-2); color:transparent}
-.hm-cel[data-n="1"]{background:#c3dbd6; color:var(--petrol)}
-.hm-cel[data-n="2"]{background:#8dbcb4}
-.hm-cel[data-n="3"]{background:#4d8e85}
-.hm-cel[data-n="4"]{background:var(--petrol)}
-.hm-cel[data-n="5"]{background:#06322e}
-.hm-pe{display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:space-between; margin-top:13px; padding-top:11px; border-top:1px solid var(--line-2); font-size:12px; color:var(--muted)}
-.hm-legenda{display:flex; align-items:center; gap:5px}
-.hm-legenda i{width:17px; height:11px; border-radius:2px; display:block}
-.hm-score{font-family:"JetBrains Mono",monospace; font-size:11px; color:var(--muted); text-align:right; align-self:center; padding-left:10px}
-
-/* ---------- filtros + feed ---------- */
-.barra-filtros{
-  display:flex; flex-wrap:wrap; gap:9px; align-items:center;
-  background:var(--surface); border:1px solid var(--line); border-radius:var(--r);
-  padding:11px 12px; margin-bottom:14px; box-shadow:var(--shadow);
-}
-.barra-filtros input,.barra-filtros select{
-  font-family:inherit; font-size:13.5px; color:var(--ink); background:var(--surface-2);
-  border:1px solid var(--line); border-radius:7px; padding:7px 10px;
-}
-.barra-filtros input{flex:1 1 230px; min-width:0}
-.contador{margin-left:auto; font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--muted)}
-.btn-limpar{
-  font:inherit; font-size:13px; background:none; border:1px solid var(--line);
-  border-radius:7px; padding:7px 11px; cursor:pointer; color:var(--ink-2);
-}
-.btn-limpar:hover{background:var(--surface-2)}
-
-.feed{list-style:none; margin:0; padding:0; background:var(--surface); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow)}
-.item{display:grid; grid-template-columns:104px 1fr; gap:18px; padding:15px 18px; border-bottom:1px solid var(--line-2)}
-.item:last-child{border-bottom:0}
-.item:hover{background:var(--surface-2)}
-.item-data{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--ink-2); line-height:1.5}
-.item-data em{display:block; font-style:normal; color:var(--muted); font-size:11px}
-.item-topo{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:6px}
-.chip{
-  font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:.05em;
-  text-transform:uppercase; padding:2.5px 7px; border-radius:5px; border:1px solid transparent;
-}
-.chip-orgao{color:#fff}
-.chip-fonte{background:var(--surface-2); border-color:var(--line); color:var(--ink-2)}
-.chip-tema{background:var(--petrol-soft); color:var(--petrol); text-transform:none; letter-spacing:.02em; font-family:"Public Sans",sans-serif; font-size:11.5px}
-.chip-pauta{background:var(--amber-soft); color:var(--amber); border-color:#e3c894}
-.item-proc{font-family:"JetBrains Mono",monospace; font-size:13px; font-weight:600; text-decoration:none; margin-left:auto}
-.item-proc:hover{text-decoration:underline}
-.item-assunto{margin:0; font-size:14px; line-height:1.5; color:var(--ink)}
-.item-pe{margin:7px 0 0; font-size:12.5px; color:var(--muted)}
-.item-pe a{color:var(--muted); text-decoration:underline}
-
-.vazio{padding:40px 20px; text-align:center; color:var(--muted); font-size:14px}
-.setup{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:26px; box-shadow:var(--shadow)}
-.setup h2{font-size:18px; margin-bottom:8px}
-.setup p{color:var(--ink-2); font-size:14px; margin:0 0 12px}
-.setup code{font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(--surface-2); border:1px solid var(--line-2); border-radius:5px; padding:1.5px 5px}
-
+/* tabela de processos */
+.ferramentas{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:13px}
+.ferramentas input,.ferramentas select{font:inherit; font-size:13.5px; background:var(--surface);
+  border:1px solid var(--line); border-radius:8px; padding:8px 11px; color:var(--ink)}
+.ferramentas input{flex:1 1 250px; min-width:0}
+.cont{margin-left:auto; font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--muted)}
+.tabela{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow)}
+.linha{display:grid; grid-template-columns:150px 1fr 190px; gap:16px; padding:14px 18px; border-bottom:1px solid var(--line-2); align-items:start}
+.linha:last-child{border-bottom:0}
+.linha:hover{background:var(--surface-2)}
+.cab{display:grid; grid-template-columns:150px 1fr 190px; gap:16px; padding:9px 18px; background:var(--surface-2);
+  border-bottom:1px solid var(--line); font-family:"JetBrains Mono",monospace; font-size:10px;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--muted)}
+.pn{font-family:"JetBrains Mono",monospace; font-size:13.5px; font-weight:600; text-decoration:none; display:block}
+.pn:hover{text-decoration:underline}
+.pmeta{margin:5px 0 0; display:flex; flex-wrap:wrap; gap:4px}
+.pa{margin:0; font-size:14px; line-height:1.5}
+.pu{margin:5px 0 0; font-size:12px; color:var(--muted)}
+.pr{font-size:13px; color:var(--ink-2)}
+.pr b{display:block; font-family:"JetBrains Mono",monospace; font-size:9.5px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); font-weight:400; margin-bottom:1px}
+.pr span+b{margin-top:8px}
+.trilha{margin:9px 0 0; display:flex; flex-wrap:wrap; gap:5px; align-items:center}
+.f{font-size:11.5px; color:var(--ink-2); background:var(--surface-2); border:1px solid var(--line-2);
+  border-radius:20px; padding:2px 9px}
+.f b{font-family:"JetBrains Mono",monospace; font-weight:400; color:var(--muted)}
+.seta{color:var(--line)}
+.vazio{padding:36px 20px; text-align:center; color:var(--muted)}
+.setup{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:24px; box-shadow:var(--shadow); margin-top:26px}
+code{font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(--surface-2);
+  border:1px solid var(--line-2); border-radius:5px; padding:1px 5px}
 footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surface)}
-.foot-in{display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; padding:16px 0; font-size:12px; color:var(--muted)}
-
-/* aparição escalonada */
-@keyframes surge{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none}}
-.surge{animation:surge .45s cubic-bezier(.22,.61,.36,1) both}
-@media (prefers-reduced-motion:reduce){.surge{animation:none}}
-
-@media (max-width:900px){
-  .orgaos{grid-template-columns:repeat(2,1fr)}
-  .atencao{grid-template-columns:1fr}
-}
-@media (max-width:620px){
-  .orgaos{grid-template-columns:1fr}
-  .item{grid-template-columns:1fr; gap:8px}
-  .item-data{display:flex; gap:8px; align-items:baseline}
-  .item-data em{display:inline}
-  .item-proc{margin-left:0}
-  .brand h1{font-size:22px}
-  .stamp{text-align:left}
+.ft{padding:15px 0; font-size:12px; color:var(--muted)}
+@keyframes sobe{from{opacity:0; transform:translateY(6px)} to{opacity:1; transform:none}}
+.sobe{animation:sobe .4s cubic-bezier(.22,.61,.36,1) both}
+@media (prefers-reduced-motion:reduce){.sobe{animation:none}}
+@media (max-width:820px){
+  .linha,.cab{grid-template-columns:1fr}
+  .cab{display:none}
+  .mov{grid-template-columns:1fr; gap:6px}
+  .mov-d{display:flex; gap:8px; align-items:baseline}
+  .mov-d em{display:inline}
 }
 </style>
 </head>
 <body>
 
-<header class="top">
-  <div class="wrap top-in">
-    <div class="brand">
-      <p class="eyebrow">Tribunal de Contas da União · Dados abertos</p>
-      <h1>Horizonte TCU</h1>
-      <p>Planejamento e Orçamento — MPO, SOF, SEPLAN e SMA</p>
+<header>
+  <div class="wrap hd">
+    <div>
+      <p class="eyebrow">Tribunal de Contas da União</p>
+      <h1>Processos do MPO</h1>
+      <p>Processos em que o Ministério do Planejamento e Orçamento ou suas secretarias constam como unidade jurisdicionada</p>
     </div>
-    <div class="stamp">
-      Coleta: <b id="carimbo">—</b><br>
-      <span id="carimbo-idade"></span>
-    </div>
+    <p class="quando" id="quando">—</p>
   </div>
 </header>
 
-<div class="wrap"><div class="aviso" id="aviso"><span aria-hidden="true">▲</span><span id="aviso-txt"></span></div></div>
-
 <main id="app" hidden>
+  <div class="wrap"><div id="avisos"></div></div>
+  <div class="wrap kpis" id="kpis"></div>
 
-  <section class="wrap estado" id="estado" aria-label="Situação dos processos"></section>
+  <div class="wrap">
+    <section>
+      <h2>Últimas movimentações</h2>
+      <p class="sub" id="sub-movs"></p>
+      <ul class="movs" id="movs"></ul>
+    </section>
 
-  <section class="wrap secao" id="sec-atividades">
-    <h2>Processos e atividades</h2>
-    <p class="sub" id="tl-sub">Um cartão por processo, com a trilha das fases pelas quais ele passou.</p>
-    <div class="filtros" id="filtros"></div>
-    <div class="procs" id="procs"></div>
-  </section>
-
-  <section class="wrap secao">
-    <div class="hm-topo">
-      <div>
-        <h2>Mapa de calor da atividade</h2>
-        <p class="sub" id="hm-sub" style="margin:0">Concentração de registros por mês na janela escolhida.</p>
-      </div>
-      <div style="display:flex; gap:9px; align-items:center; flex-wrap:wrap">
-        <div class="hm-abas" role="group" aria-label="Agrupar o mapa de calor">
-          <button type="button" id="hm-por-tema" aria-pressed="true">Por matéria</button>
-          <button type="button" id="hm-por-processo" aria-pressed="false">Por processo</button>
-        </div>
-        <select id="hm-janela" aria-label="Janela do mapa de calor"
-                style="font-family:inherit; font-size:13px; background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:7px 10px; color:var(--ink)">
-          <option value="12">12 meses</option>
-          <option value="24">24 meses</option>
-          <option value="36" selected>36 meses</option>
-          <option value="60">5 anos</option>
+    <section>
+      <h2>Todos os processos</h2>
+      <p class="sub" id="sub-procs"></p>
+      <div class="ferramentas">
+        <input type="search" id="q" placeholder="Buscar por número, assunto ou relator" aria-label="Buscar">
+        <select id="f-orgao" aria-label="Filtrar por órgão"><option value="">Todos os órgãos</option></select>
+        <select id="f-relator" aria-label="Filtrar por relator"><option value="">Todos os relatores</option></select>
+        <select id="ordem" aria-label="Ordenar">
+          <option value="recente">Movimentação mais recente</option>
+          <option value="numero">Número do processo</option>
+          <option value="relator">Relator</option>
         </select>
+        <span class="cont" id="cont" aria-live="polite"></span>
       </div>
-    </div>
-    <div class="hm-caixa">
-      <div class="hm" id="hm"></div>
-      <div class="hm-pe">
-        <span class="hm-legenda">
-          Menos
-          <i style="background:var(--surface-2); border:1px solid var(--line-2)"></i>
-          <i style="background:#c3dbd6"></i><i style="background:#8dbcb4"></i>
-          <i style="background:#4d8e85"></i><i style="background:#0e4a44"></i>
-          <i style="background:#06322e"></i>
-          Mais
-        </span>
-        <span id="hm-nota"></span>
+      <div class="tabela">
+        <div class="cab"><span>Processo</span><span>Assunto</span><span>Relator e fase</span></div>
+        <div id="linhas"></div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  </div>
 </main>
 
 <div class="wrap" id="setup" hidden>
-  <div class="setup secao">
-    <p class="eyebrow">Sem dados ainda</p>
+  <div class="setup">
+    <p class="eyebrow">Sem dados</p>
     <h2>O painel está no ar, o arquivo de dados não</h2>
-    <p>Esta página lê <code>dados.json</code>, gerado por <code>coleta_tcu.py</code>. Rode a coleta uma vez e publique o arquivo ao lado deste HTML:</p>
-    <p><code>python coleta_tcu.py --saida dados.json</code></p>
-    <p id="setup-erro" style="color:var(--red)"></p>
+    <p>Esta página lê <code>dados.json</code>, gerado por <code>coleta.py</code>. Rode a coleta e publique o arquivo na mesma pasta deste HTML.</p>
+    <p id="erro" style="color:var(--red)"></p>
   </div>
 </div>
 
-<footer>
-  <div class="wrap foot-in">
-    <span>Fontes: Solicitações do Congresso (SCN), Acórdãos e Pautas de sessão — dados abertos do TCU.</span>
-    <span>A atribuição de órgão é heurística, por casamento textual. Confira antes de citar.</span>
-  </div>
-</footer>
+<footer><div class="wrap ft">
+  Fonte: Pesquisa Integrada do TCU. Todos os processos com órgão do MPO como unidade jurisdicionada, com estado, relator, assunto e movimentações declarados pelo próprio Tribunal.
+</div></footer>
 
 <script>
 "use strict";
-
-// Base para o link de acompanhamento do processo no TCU. Se o Tribunal mudar a
-// rota da pesquisa integrada, é o único ponto a ajustar.
-const URL_PROCESSO = "https://pesquisa.apps.tcu.gov.br/doc/processo/";
-
-const CORES = { MPO:"var(--mpo)", SOF:"var(--sof)", SEPLAN:"var(--seplan)", SMA:"var(--sma)" };
-const PALETA_TEMAS = ["#0e4a44","#1b5674","#573566","#63601c","#8a2e26","#2f6b3f","#9c5c07"];
+const URL_DOC = "https://pesquisa.apps.tcu.gov.br/doc/processo/";
 const DIA = 86400000;
-const CLASSE_STATUS = { "Em pauta":"st-pauta", "Julgado":"st-julgado", "Despacho":"st-despacho",
-                        "Edital":"st-edital", "Registrado":"st-registrado" };
-let FILTRO_STATUS = "";
+let D = null, FILTRO_FASE = "";
 
-let DADOS = null;
-let PAUTA_POR_PROCESSO = new Map();
-
-/* ---------- utilidades ---------- */
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) =>
-  ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
-
-const parseData = (v) => { if(!v) return null; const d = new Date(v); return isNaN(d) ? null : d; };
-
+  ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+const dt = (v) => { if(!v) return null; const d = new Date(v); return isNaN(d) ? null : d; };
 const meiaNoite = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
-
-const diasAte = (d, ref) => Math.round((meiaNoite(d) - meiaNoite(ref)) / DIA);
-
-const fmtData = (d) => d ? d.toLocaleDateString("pt-BR", { day:"2-digit", month:"2-digit", year:"numeric" }) : "—";
-
-const fmtDiaSemana = (d) => d ? d.toLocaleDateString("pt-BR", { weekday:"long" }) : "";
-
+const dias = (a, b) => Math.round((meiaNoite(a) - meiaNoite(b)) / DIA);
+const fmt = (d) => d ? d.toLocaleDateString("pt-BR") : "—";
 const plural = (n, s, p) => `${n} ${n === 1 ? s : p}`;
 
-// O id do documento no TCU não leva zeros à esquerda: o processo 007.276/2022-2
-// resolve em /doc/processo/727620222, não em /doc/processo/00727620222.
-function idDoc(processo, processoId){
-  const d = (processoId || String(processo || "")).replace(/\D/g, "");
-  return d.replace(/^0+/, "");
+// O id do documento no TCU não leva zeros à esquerda:
+// 007.276/2022-2 resolve em /doc/processo/727620222.
+const link = (numero) => URL_DOC + String(numero || "").replace(/\D/g, "").replace(/^0+/, "");
+
+function relativo(n){
+  if(n === 0) return "hoje";
+  if(n === 1) return "ontem";
+  return n > 0 ? `há ${plural(n, "dia", "dias")}` : `em ${plural(-n, "dia", "dias")}`;
 }
 
-function linkProcesso(item){
-  const id = idDoc(item.processo, item.processo_id);
-  if (item.link_tcu && !item.link_tcu.includes("/ords/")) return item.link_tcu;
-  return id ? URL_PROCESSO + id : null;
-}
-
-function rotuloRelativo(dias){
-  if (dias === 0) return "hoje";
-  if (dias === 1) return "amanhã";
-  if (dias === -1) return "ontem";
-  return dias > 0 ? `em ${plural(dias, "dia", "dias")}` : `há ${plural(-dias, "dia", "dias")}`;
-}
-
-/* ---------- carga ---------- */
 async function carregar(){
   try{
     const r = await fetch("dados.json?v=" + Date.now(), { cache:"no-store" });
     if(!r.ok) throw new Error("HTTP " + r.status);
-    DADOS = await r.json();
-    if(!DADOS || !Array.isArray(DADOS.processos_detalhes)) throw new Error("Formato inesperado");
+    D = await r.json();
+    if(!D || !Array.isArray(D.processos)) throw new Error("Formato inesperado do dados.json");
     render();
   }catch(e){
     document.getElementById("setup").hidden = false;
-    document.getElementById("setup-erro").textContent =
-      "Detalhe técnico: " + e.message + ". Se o arquivo existe, verifique se está na mesma pasta do index.html.";
+    document.getElementById("erro").textContent = "Detalhe técnico: " + e.message;
   }
 }
 
-/* ---------- render ---------- */
 function render(){
-  const app = document.getElementById("app");
-  app.hidden = false;
+  document.getElementById("app").hidden = false;
+  document.getElementById("quando").innerHTML =
+    `Coleta: <strong>${esc(D.gerado_em_br || "—")}</strong>`;
 
-  const hoje = new Date();
+  document.getElementById("avisos").innerHTML = (D.avisos || []).length
+    ? `<div class="aviso"><span aria-hidden="true">▲</span><span>${(D.avisos).map(esc).join(" ")}</span></div>` : "";
 
-  // índice de pauta: processo -> sessão mais próxima
-  PAUTA_POR_PROCESSO = new Map();
-  (DADOS.pautas_futuras || []).forEach((p) => {
-    const d = parseData(p.data_sessao);
-    if(!d || diasAte(d, hoje) < 0) return;
-    const atual = PAUTA_POR_PROCESSO.get(p.processo_id);
-    if(!atual || parseData(atual.data_sessao) > d) PAUTA_POR_PROCESSO.set(p.processo_id, p);
-  });
-
-  carimbo(hoje);
-  barraEstado(hoje);
-  avisos();
-  atividades(hoje);
-  abasCalor();
-  desenharCalor();
+  kpis();
+  movimentacoes();
+  ferramentas();
+  lista();
 }
 
-function carimbo(hoje){
-  document.getElementById("carimbo").textContent = DADOS.ultima_atualizacao || "—";
-  const d = parseData(DADOS.ultima_atualizacao_iso);
-  if(!d) return;
-  const h = Math.round((hoje - d) / 3600000);
-  document.getElementById("carimbo-idade").textContent =
-    h < 1 ? "agora há pouco" : h < 48 ? `há ${plural(h, "hora", "horas")}` : `há ${plural(Math.round(h/24), "dia", "dias")}`;
-}
+function kpis(){
+  const total = D.totais.processos;
+  const abertos = D.totais.abertos;
+  const cartoes = [
+    { f:"", n:total, t:"Processos", d:"Com órgão do MPO como unidade jurisdicionada.", c:"total" },
+    { f:"__aberto", n:abertos, t:"Abertos", d:"Estado ativo, conforme a Pesquisa Integrada.", c:"julgado" },
+    { f:"__encerrado", n:total - abertos, t:"Encerrados", d:"Já concluídos.", c:"despacho" },
+  ];
+  (D.por_orgao || []).forEach((o) => cartoes.push(
+    { f:"__org_" + o.orgao, n:o.total, t:o.orgao, d:o.nome, c:"total" }));
 
-function avisos(){
-  const falhas = DADOS.fontes_indisponiveis || [];
-  if(!falhas.length) return;
-  const el = document.getElementById("aviso");
-  el.classList.add("on");
-  document.getElementById("aviso-txt").innerHTML =
-    `<b>Coleta parcial.</b> ${esc(falhas.join(" e "))} não respondeu na última execução, então os números abaixo estão incompletos para ${falhas.length > 1 ? "essas fontes" : "essa fonte"}.`;
-}
-
-function ordenarPorData(l){
-  const piso = new Date(0);
-  return [...l].sort((a,b) => (parseData(b.data) || piso) - (parseData(a.data) || piso));
-}
-
-const DESC_STATUS = {
-  "Em pauta":  "Aguardando julgamento em sessão marcada",
-  "Apreciado": "Constou de pauta em sessão já realizada",
-  "Julgado":   "Deliberado; acórdão proferido",
-  "Despacho":  "Decisão monocrática do relator",
-  "Edital":    "Citação ou notificação publicada",
-  "Registrado":"Mencionado no boletim, fase não identificada",
-};
-const CLS_TILE = { "Em pauta":"pauta", "Julgado":"julgado", "Despacho":"despacho", "Apreciado":"todos" };
-
-function barraEstado(hoje){
-  const itens = DADOS.processos_detalhes;
-  const distintos = (f) => new Set(itens.filter(f).map((i) => i.processo)).size;
-
-  // Um bloco por fase efetivamente presente: nada de caixa zerada ocupando espaço.
-  const tiles = (DADOS.resumo_status || []).map((r) => {
-    let d = DESC_STATUS[r.status] || "";
-    if(r.status === "Em pauta"){
-      const prox = itens.filter((i) => i.status === "Em pauta")
-        .map((i) => parseData(i.data_sessao)).filter(Boolean).sort((a, b) => a - b)[0];
-      if(prox) d = `Sessão mais próxima ${rotuloRelativo(diasAte(prox, hoje))}, em ${fmtData(prox)}.`;
-    }
-    if(r.status === "Julgado"){
-      const ac = itens.filter((i) => i.status === "Julgado" && i.acordao);
-      if(ac.length) d = `Acórdão mais recente: ${ordenarPorData(ac)[0].acordao}.`;
-    }
-    return { k:r.status, cls:CLS_TILE[r.status] || "todos", n:r.processos, d };
-  });
-
-  tiles.push({ k:"", cls:"todos", n:distintos((i) => i.processo),
-               d:"Processos distintos com MPO, SOF, SEPLAN ou SMA como unidade jurisdicionada." });
-
-  document.getElementById("estado").innerHTML = tiles.map((t, i) => `
-    <button type="button" class="tile ${t.cls} surge" data-status="${esc(t.k)}"
-            aria-pressed="${FILTRO_STATUS === t.k && t.k !== ""}" style="animation-delay:${i * 45}ms">
-      <span class="tile-n">${t.n}</span>
-      <p class="tile-t">${t.k || "Total no radar"}</p>
-      <p class="tile-d">${esc(t.d)}</p>
+  document.getElementById("kpis").innerHTML = cartoes.map((k, i) => `
+    <button type="button" class="kpi ${k.c} sobe" data-fase="${esc(k.f)}"
+            aria-pressed="${FILTRO_FASE === k.f && k.f !== ""}" style="animation-delay:${i * 45}ms">
+      <b>${k.n}</b><span>${esc(k.t)}</span><small>${esc(k.d)}</small>
     </button>`).join("");
 
-  document.querySelectorAll(".tile").forEach((b) => b.addEventListener("click", () => {
-    const st = b.dataset.status;
-    FILTRO_STATUS = (FILTRO_STATUS === st || st === "") ? "" : st;
-    barraEstado(new Date());
-    atividades(new Date());
-    document.getElementById("sec-atividades").scrollIntoView({ behavior:"smooth", block:"start" });
+  document.querySelectorAll(".kpi").forEach((b) => b.addEventListener("click", () => {
+    const f = b.dataset.fase;
+    FILTRO_FASE = (FILTRO_FASE === f || f === "") ? "" : f;
+    kpis(); lista();
+    document.getElementById("linhas").scrollIntoView({ behavior:"smooth", block:"start" });
   }));
 }
 
-const FASE_ORDEM = { "Registrado":0, "Edital":1, "Em pauta":2, "Apreciado":3, "Despacho":4, "Julgado":5 };
-let FILTRO_ORGAO = "";
-let BUSCA = "";
-
-function agruparProcessos(){
-  const mapa = new Map();
-  DADOS.processos_detalhes.forEach((i) => {
-    if(!i.processo || !(i.orgaos || []).length) return;
-    if(!mapa.has(i.processo)){
-      mapa.set(i.processo, { processo:i.processo, processo_id:i.processo_id, eventos:[], orgaos:new Set() });
-    }
-    const p = mapa.get(i.processo);
-    p.eventos.push(i);
-    (i.orgaos || []).forEach((o) => p.orgaos.add(o));
-  });
-
-  return [...mapa.values()].map((p) => {
-    // Fase atual = a mais avançada; empate de data é comum entre pauta e ata.
-    p.eventos.sort((a, b) => (FASE_ORDEM[a.status] ?? 0) - (FASE_ORDEM[b.status] ?? 0));
-    const atual = p.eventos[p.eventos.length - 1];
-    const datas = p.eventos.map((e) => parseData(e.data)).filter(Boolean);
-    return Object.assign(p, {
-      orgaos: [...p.orgaos],
-      atual,
-      assunto: p.eventos.map((e) => e.assunto).sort((a, b) => (b || "").length - (a || "").length)[0],
-      unidade_jurisdicionada: p.eventos.find((e) => e.unidade_jurisdicionada)?.unidade_jurisdicionada,
-      relator: p.eventos.find((e) => e.relator)?.relator,
-      colegiado: p.eventos.find((e) => e.colegiado)?.colegiado,
-      origem_congresso: p.eventos.find((e) => e.origem_congresso)?.origem_congresso,
-      relevancia: Math.max(...p.eventos.map((e) => e.relevancia ?? 1)),
-      quando: datas.length ? new Date(Math.max(...datas)) : null,
-    });
-  });
-}
-
-function atividades(hoje){
-  const todos = agruparProcessos();
-
-  const orgaos = [...new Set(todos.flatMap((p) => p.orgaos))].sort();
-  document.getElementById("filtros").innerHTML =
-    `<input type="search" id="f-q" placeholder="Buscar por número, assunto ou relator" aria-label="Buscar" value="${esc(BUSCA)}">` +
-    orgaos.map((o) => `<button type="button" class="fbt" data-orgao="${esc(o)}" aria-pressed="${FILTRO_ORGAO === o}">${esc(o)}</button>`).join("") +
-    `<span class="fcount" id="f-count" aria-live="polite"></span>`;
-
-  document.getElementById("f-q").addEventListener("input", (e) => { BUSCA = e.target.value; desenhar(); });
-  document.querySelectorAll(".fbt").forEach((b) => b.addEventListener("click", () => {
-    FILTRO_ORGAO = FILTRO_ORGAO === b.dataset.orgao ? "" : b.dataset.orgao;
-    atividades(new Date());
-  }));
-
-  function desenhar(){
-    const q = BUSCA.trim().toLowerCase();
-    const lista = todos.filter((p) => {
-      if(FILTRO_STATUS && p.atual.status !== FILTRO_STATUS) return false;
-      if(FILTRO_ORGAO && !p.orgaos.includes(FILTRO_ORGAO)) return false;
-      if(q && ![p.processo, p.assunto, p.relator, p.atual.acordao].join(" ").toLowerCase().includes(q)) return false;
-      return true;
-    }).sort((a, b) => {
-      const pa = a.atual.status === "Em pauta", pb = b.atual.status === "Em pauta";
-      if(pa !== pb) return pa ? -1 : 1;              // o que ainda vai a julgamento primeiro
-      return (b.quando || 0) - (a.quando || 0);
-    });
-
-    document.getElementById("f-count").textContent = `${lista.length} de ${todos.length}`;
-    document.getElementById("tl-sub").textContent =
-      `${plural(todos.length, "processo", "processos")} em que MPO, SOF, SEPLAN ou SMA consta como unidade jurisdicionada.`;
-
-    document.getElementById("procs").innerHTML = lista.length ? lista.map((p, k) => {
-      const st = p.atual.status || "Registrado";
-      const cls = st === "Julgado" ? "f-julgado" : st === "Em pauta" ? "f-pauta" : st === "Despacho" ? "f-despacho" : "";
-      const ujs = (p.unidade_jurisdicionada || "").split(";").map((s) => s.trim()).filter(Boolean);
-
-      // Trilha: uma pastilha por fase, na ordem em que o processo as percorreu.
-      const trilha = p.eventos.map((e) => {
-        const d = parseData(e.data);
-        const c = (e.status || "").toLowerCase().replace(" ", "");
-        return `<span class="fase ${c === "empauta" ? "pauta" : c}"><i></i>${esc(e.status)}${
-          d ? ` <b>${esc(fmtData(d))}</b>` : ""}${e.acordao ? ` <b>Ac. ${esc(e.acordao.split("-")[0])}</b>` : ""}</span>`;
-      }).join('<span class="seta">→</span>');
-
-      return `<article class="proc ${cls} surge" style="animation-delay:${Math.min(k, 8) * 40}ms">
-        <div class="proc-topo">
-          <a class="proc-num" href="${esc(linkProcesso(p))}" target="_blank" rel="noopener">${esc(p.processo)} ↗</a>
-          ${p.orgaos.map((o) => `<span class="chip chip-orgao" style="background:${CORES[o] || "var(--ink-2)"}">${esc(o)}</span>`).join("")}
-          <span class="proc-quando">${p.quando ? esc(rotuloRelativo(diasAte(p.quando, hoje))) : "sem data"}</span>
-        </div>
-        <p class="proc-txt">${esc((p.assunto || "Sem descrição").slice(0, 210))}${(p.assunto || "").length > 210 ? "…" : ""}</p>
-        <p class="proc-meta">
-          ${p.relator ? `<span><b>Relator</b> ${esc(p.relator)}</span>` : ""}
-          ${p.colegiado ? `<span><b>Colegiado</b> ${esc(p.colegiado)}</span>` : ""}
-          ${ujs.length ? `<span title="${esc(ujs.join("; "))}"><b>Unidade</b> ${esc(ujs[0])}${ujs.length > 1 ? ` +${ujs.length - 1}` : ""}</span>` : ""}
-        </p>
-        ${p.origem_congresso ? `<p class="origem"><b>Origem:</b> ${esc(p.origem_congresso.tipo || "")} ${esc(p.origem_congresso.numero || "")}${
-          p.origem_congresso.autor ? ` de ${esc(p.origem_congresso.autor)}` : ""}</p>` : ""}
-        <div class="trilha">${trilha}</div>
-      </article>`;
-    }).join("") : `<p class="vazio">Nenhum processo com esses filtros.</p>`;
-  }
-
-  desenhar();
-}
-
-
-
-
-/* ---------- mapa de calor ---------- */
-let HM_MODO = "tema";
-// 36 meses por padrão: a base do SCN acumula devagar e uma janela de 12 meses
-// deixa a maior parte dos registros de fora, produzindo um mapa quase vazio.
-let MESES_HM = 36;
-const MEIA_VIDA = 120; // dias: um registro de 4 meses atrás pesa ~metade de um de hoje
-
-function gradeMeses(hoje){
-  const cols = [];
-  for(let k = MESES_HM - 1; k >= 0; k--){
-    const d = new Date(hoje.getFullYear(), hoje.getMonth() - k, 1);
-    cols.push({ chave:`${d.getFullYear()}-${d.getMonth()}`, data:d });
-  }
-  return cols;
-}
-
-function agregarCalor(itens, hoje, modo){
-  const cols = gradeMeses(hoje);
-  const idx = new Map(cols.map((c, i) => [c.chave, i]));
-  const linhas = new Map();
-
-  itens.forEach((i) => {
-    const d = parseData(i.data);
-    if(!d) return;
-    const col = idx.get(`${d.getFullYear()}-${d.getMonth()}`);
-    if(col === undefined) return;
-
-    const chaves = modo === "tema"
-      ? (i.temas || []).length ? i.temas : ["Sem classificação"]
-      : i.processo ? [i.processo] : [];
-
-    // Peso decai com a idade: atividade recente pesa mais que histórico.
-    const peso = Math.pow(0.5, diasAte(hoje, d) / MEIA_VIDA);
-
-    chaves.forEach((k) => {
-      if(!linhas.has(k)) linhas.set(k, { chave:k, celulas:new Array(MESES_HM).fill(0), total:0, score:0, exemplo:i });
-      const l = linhas.get(k);
-      l.celulas[col]++; l.total++; l.score += peso;
-    });
-  });
-
-  let lista = [...linhas.values()];
-  if(modo === "processo") lista = lista.filter((l) => l.total >= 2); // 1 evento não é "atividade"
-  return { cols, linhas: lista.sort((a, b) => b.score - a.score).slice(0, 14) };
-}
-
-function nivel(n, teto){
-  if(!n) return 0;
-  if(teto <= 1) return 3;
-  return Math.min(5, Math.max(1, Math.ceil(n / teto * 5)));
-}
-
-function desenharCalor(){
+function movimentacoes(){
   const hoje = new Date();
-  const { cols, linhas } = agregarCalor(DADOS.processos_detalhes, hoje, HM_MODO);
-  const el = document.getElementById("hm");
-  const nota = document.getElementById("hm-nota");
+  const movs = (D.movimentacoes || []).slice(0, 20);
+  document.getElementById("sub-movs").textContent =
+    `As ${movs.length} mais recentes de ${plural(D.totais.movimentacoes, "movimentação registrada", "movimentações registradas")}.`;
 
-  document.getElementById("hm-sub").textContent = HM_MODO === "tema"
-    ? "Concentração de registros por matéria, mês a mês, na janela escolhida."
-    : "Processos com dois ou mais registros no período — os demais não caracterizam atividade recorrente.";
-
-  if(!linhas.length){
-    el.innerHTML = "";
-    el.style.gridTemplateColumns = "1fr";
-    el.innerHTML = `<p class="vazio">${HM_MODO === "processo"
-      ? "Nenhum processo teve mais de um registro na janela escolhida. Cada solicitação do Congresso costuma gerar um processo próprio; a reincidência aparece quando o mesmo processo volta em acórdão ou pauta."
-      : "Sem registros datados no período."}</p>`;
-    nota.textContent = "";
-    return;
-  }
-
-  const teto = Math.max(...linhas.flatMap((l) => l.celulas));
-  const larg = MESES_HM > 36 ? 14 : MESES_HM > 24 ? 18 : 28;
-  el.style.gridTemplateColumns = `minmax(120px, 210px) repeat(${MESES_HM}, minmax(${larg}px, 1fr)) 46px`;
-
-  // Em janelas longas o rótulo de todo mês vira ruído: só janeiro e julho.
-  const denso = MESES_HM > 24;
-  let html = `<div></div>` + cols.map((c) => {
-    const m = c.data.getMonth();
-    const mostra = !denso || m === 0 || m === 6;
-    const rot = mostra ? c.data.toLocaleDateString("pt-BR", { month:"short" }).replace(".", "") : "";
-    return `<div class="hm-mes">${rot}${m === 0 ? "<br>" + c.data.getFullYear() : ""}</div>`;
-  }).join("") + `<div class="hm-mes">peso</div>`;
-
-  linhas.forEach((l) => {
-    const url = HM_MODO === "processo" ? linkProcesso(l.exemplo) : null;
-    html += `<div class="hm-rot" title="${esc(l.chave)}">${
-      url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(l.chave)}</a>` : esc(l.chave)
-    }</div>`;
-    html += l.celulas.map((n, k) =>
-      `<div class="hm-cel" data-n="${nivel(n, teto)}" title="${esc(l.chave)} · ${cols[k].data.toLocaleDateString("pt-BR", { month:"long", year:"numeric" })} · ${plural(n, "registro", "registros")}">${n || ""}</div>`
-    ).join("");
-    html += `<div class="hm-score">${l.score.toFixed(1)}</div>`;
-  });
-
-  el.innerHTML = html;
-  nota.textContent = `${plural(linhas.length, "linha", "linhas")} · peso = soma dos registros com decaimento de meia-vida de ${MEIA_VIDA} dias`;
+  document.getElementById("movs").innerHTML = movs.length ? movs.map((m) => {
+    const d = dt(m.data);
+    return `<li class="mov">
+      <div class="mov-d">${esc(fmt(d))}<em>${d ? esc(relativo(dias(hoje, d))) : "sem data"}</em></div>
+      <div>
+        <div class="mov-l1">
+          <a class="mov-n" href="${esc(link(m.processo))}" target="_blank" rel="noopener">${esc(m.processo)} ↗</a>
+          ${m.acordao ? `<span class="chip chip-ac">Acórdão ${esc(m.acordao)}</span>` : ""}
+          ${(m.orgaos || []).map((o) => `<span class="chip ${esc(o)}">${esc(o)}</span>`).join("")}
+        </div>
+        <p class="mov-a">${esc((m.descricao || m.assunto || "Sem descrição").slice(0, 180))}${(m.descricao || m.assunto || "").length > 180 ? "…" : ""}</p>
+      </div>
+    </li>`;
+  }).join("") : `<li class="vazio">Nenhuma movimentação coletada.</li>`;
 }
 
-function abasCalor(){
-  const bt = document.getElementById("hm-por-tema");
-  const bp = document.getElementById("hm-por-processo");
-  const trocar = (modo) => {
-    HM_MODO = modo;
-    bt.setAttribute("aria-pressed", String(modo === "tema"));
-    bp.setAttribute("aria-pressed", String(modo === "processo"));
-    desenharCalor();
+function ferramentas(){
+  const preencher = (id, valores) => {
+    const el = document.getElementById(id);
+    [...new Set(valores)].filter(Boolean).sort().forEach((v) => {
+      const o = document.createElement("option");
+      o.value = v; o.textContent = v; el.appendChild(o);
+    });
   };
-  bt.addEventListener("click", () => trocar("tema"));
-  bp.addEventListener("click", () => trocar("processo"));
-  document.getElementById("hm-janela").addEventListener("change", (e) => {
-    MESES_HM = parseInt(e.target.value, 10);
-    desenharCalor();
-  });
+  preencher("f-orgao", D.processos.flatMap((p) => p.orgaos || []));
+  preencher("f-relator", D.processos.map((p) => p.relator));
+  ["q","f-orgao","f-relator","ordem"].forEach((id) =>
+    document.getElementById(id).addEventListener("input", lista));
 }
 
+function lista(){
+  const hoje = new Date();
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const fo = document.getElementById("f-orgao").value;
+  const fr = document.getElementById("f-relator").value;
+  const ord = document.getElementById("ordem").value;
 
+  let l = D.processos.filter((p) => {
+    if(FILTRO_FASE === "__aberto"){ if(String(p.estado || "").toLowerCase() !== "aberto") return false; }
+    else if(FILTRO_FASE === "__encerrado"){ if(String(p.estado || "").toLowerCase() === "aberto") return false; }
+    else if(FILTRO_FASE.startsWith("__org_")){ if(!(p.orgaos || []).includes(FILTRO_FASE.slice(6))) return false; }
+    if(fo && !(p.orgaos || []).includes(fo)) return false;
+    if(fr && p.relator !== fr) return false;
+    if(q && ![p.numero, p.assunto, p.relator, p.natureza].join(" ").toLowerCase().includes(q)) return false;
+    return true;
+  });
 
+  if(ord === "numero") l = l.slice().sort((a, b) => a.numero.localeCompare(b.numero));
+  else if(ord === "relator") l = l.slice().sort((a, b) => (a.relator || "zz").localeCompare(b.relator || "zz"));
+
+  document.getElementById("cont").textContent = `${l.length} de ${D.processos.length}`;
+  document.getElementById("sub-procs").textContent =
+    "Lista completa, com relator, assunto e a trilha de fases de cada processo.";
+
+  document.getElementById("linhas").innerHTML = l.length ? l.map((p) => {
+    const d = dt(p.atualizado_em);
+    const trilha = (p.movimentacoes || []).slice(0, 4).map((m) => {
+      const md = dt(m.data);
+      return `<span class="f">${md ? `<b>${esc(fmt(md))}</b> ` : ""}${esc((m.descricao || "").slice(0, 60))}${
+        m.acordao ? ` <b>Ac. ${esc(m.acordao)}</b>` : ""}</span>`;
+    }).join("");
+
+    return `<div class="linha">
+      <div>
+        <a class="pn" href="${esc(link(p.numero))}" target="_blank" rel="noopener">${esc(p.numero)} ↗</a>
+        <div class="pmeta">
+          ${(p.orgaos || []).map((o) => `<span class="chip ${esc(o)}">${esc(o)}</span>`).join("")}
+          ${p.estado ? `<span class="chip chip-estado">${esc(p.estado)}</span>` : ""}
+        </div>
+      </div>
+      <div>
+        <p class="pa">${esc(p.assunto || "Assunto não informado no boletim")}</p>
+        ${(p.unidades || []).length ? `<p class="pu" title="${esc((p.unidades).join("; "))}">${
+          esc(p.unidades[0])}${p.unidades.length > 1 ? ` +${p.unidades.length - 1} unidades` : ""}</p>` : ""}
+        <div class="trilha">${trilha}</div>
+      </div>
+      <div class="pr">
+        <b>Relator</b><span>${esc(p.relator || "não informado")}</span>
+        <b>Última movimentação</b><span>${esc((p.fase_atual || "—").slice(0,70))}${d ? ` · ${esc(relativo(dias(hoje, d)))}` : ""}</span>
+        ${p.natureza ? `<b>Natureza</b><span>${esc(p.natureza)}</span>` : ""}
+      </div>
+    </div>`;
+  }).join("") : `<div class="vazio">Nenhum processo com esses filtros.</div>`;
+}
 
 carregar();
 </script>
