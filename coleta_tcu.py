@@ -483,6 +483,7 @@ RX_SECAO = re.compile(
     r"ACORD[ÃA]OS|DELIBERA[ÇC][ÕO]ES)\s*$", re.I)
 SECAO_STATUS = {
     "pauta": ("Em pauta", "Aguardando julgamento em sessão marcada"),
+    "apreciado": ("Apreciado", "Constou de pauta em sessão já realizada"),
     "ata": ("Julgado", "Deliberado em sessão; acórdão proferido"),
     "despacho": ("Despacho", "Decisão monocrática do relator"),
     "edital": ("Edital", "Citação, audiência ou notificação publicada"),
@@ -654,10 +655,14 @@ def parsear_pauta(texto: str, id_pauta: int) -> list[dict]:
             classe, peso_materia = classe_materia(natureza, descricao)
             relevancia = round(PESO_VINCULO.get(vinculo, 1.0) * peso_materia, 2)
             status, status_desc = SECAO_STATUS[secao]
-            # O número do acórdão pode estar no próprio bloco ou no cabeçalho da relação.
-            m_ac = RX_ACORDAO.search(bloco)
-            acordao = f"{m_ac.group(1)}/{m_ac.group(2)}-{m_ac.group(3)}" if m_ac else (
-                acordao_atual if secao == "ata" else None)
+            # Pauta com sessão já realizada não está pendente: foi apreciada.
+            d_sessao = parse_data(data_sessao)
+            if secao == "pauta" and d_sessao and d_sessao.date() < date.today():
+                status, status_desc = ("Apreciado", "Constou de pauta em sessão já realizada")
+            # Só o cabeçalho da relação define o acórdão. Procurar o padrão dentro
+            # do bloco capturava acórdãos CITADOS no texto (um monitoramento
+            # menciona a decisão que monitora) e os atribuía ao processo errado.
+            acordao = acordao_atual if secao == "ata" else None
             registros.append(
                 {
                     "fonte": "Pauta" if secao == "pauta" else "Acórdão" if secao == "ata" else "Boletim",
@@ -693,9 +698,10 @@ def parsear_pauta(texto: str, id_pauta: int) -> list[dict]:
             fechar()
             secao = _secao_de(m.group(1))
             continue
-        if m := RX_ACORDAO.search(linha):
-            # O cabeçalho vem ANTES do processo que ele decide. Fechar o bloco
-            # pendente primeiro, senão o processo anterior herda o acórdão errado.
+        # Só é CABEÇALHO se abre a linha. Um acórdão citado no meio de um texto
+        # de monitoramento ("em cumprimento ao Acórdão 2.789/2019") é referência,
+        # não decisão deste processo — grudá-lo aqui produz atribuição falsa.
+        if m := RX_ACORDAO.match(linha.strip()):
             fechar()
             acordao_atual = f"{m.group(1)}/{m.group(2)}-{m.group(3)}"
             if secao == "indefinido":
@@ -830,7 +836,7 @@ def montar_watchlist(itens: list[dict]) -> list[dict]:
 def montar_resumo_status(itens: list[dict]) -> list[dict]:
     """Quantos processos DISTINTOS em cada fase. Contar registros inflaria o número:
     o mesmo processo aparece em várias edições do boletim."""
-    ordem = ["Em pauta", "Julgado", "Despacho", "Edital", "Registrado"]
+    ordem = ["Em pauta", "Apreciado", "Julgado", "Despacho", "Edital", "Registrado"]
     saida = []
     for status in ordem:
         procs = {i["processo"] for i in itens if i.get("status") == status and i.get("processo")}
@@ -887,7 +893,9 @@ def salvar_atomico(payload: dict, caminho: str) -> None:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Coleta dados do TCU sobre o MPO e secretarias.")
     parser.add_argument("--saida", default="dados.json")
-    parser.add_argument("--sem-acordaos", action="store_true", help="pula a fonte de acórdãos")
+    parser.add_argument("--com-acordaos", action="store_true",
+                        help="tenta a API de acórdãos (fora do ar desde 2026; os acórdãos "
+                             "já vêm das atas do boletim)")
     parser.add_argument("--sem-pautas", action="store_true", help="pula as pautas publicadas")
     parser.add_argument("--max-acordaos", type=int, default=10_000)
     parser.add_argument("--max-pautas", type=int, default=120,
@@ -942,10 +950,10 @@ def main(argv: list[str] | None = None) -> int:
                 casados += 1
         log.info("SCN: %d processos enriquecidos com a origem no Congresso", casados)
 
-    if not args.sem_acordaos:
+    if args.com_acordaos:
         acordaos = coletar_acordaos(sessao, args.max_acordaos)
         if not acordaos:
-            falhas.append("Acórdãos")
+            log.warning("API de acórdãos sem resposta — os acórdãos das atas já estão cobertos.")
         itens.extend(acordaos)
 
     processos = {i["processo_id"] for i in itens if i.get("processo_id")}
