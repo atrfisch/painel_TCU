@@ -53,6 +53,27 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{
 }
 .aviso.on{display:flex}
 
+/* ---------- linha do tempo de atividades ---------- */
+.tl{position:relative; margin:0; padding:0 0 0 30px; list-style:none}
+.tl::before{content:""; position:absolute; left:8px; top:6px; bottom:6px; width:2px; background:var(--line)}
+.tl-marco{position:relative; margin:0 0 6px; padding:5px 0 3px}
+.tl-marco::before{content:""; position:absolute; left:-26px; top:12px; width:11px; height:11px; border-radius:50%; background:var(--paper); border:2px solid var(--ink)}
+.tl-marco span{font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink); font-weight:600}
+.tl-ev{position:relative; margin-bottom:9px}
+.tl-ev::before{content:""; position:absolute; left:-25px; top:17px; width:9px; height:9px; border-radius:50%; background:var(--muted); border:2px solid var(--paper)}
+.tl-ev.futuro::before{background:var(--amber)}
+.tl-ev.julgado::before{background:var(--petrol)}
+.tl-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:12px 15px; box-shadow:var(--shadow)}
+.tl-ev.futuro .tl-card{border-left:3px solid var(--amber)}
+.tl-ev.julgado .tl-card{border-left:3px solid var(--petrol)}
+.tl-topo{display:flex; flex-wrap:wrap; gap:7px; align-items:center; margin-bottom:5px}
+.tl-num{font-family:"JetBrains Mono",monospace; font-size:13px; font-weight:600; text-decoration:none}
+.tl-num:hover{text-decoration:underline}
+.tl-quando{margin-left:auto; font-family:"JetBrains Mono",monospace; font-size:11.5px; color:var(--muted)}
+.tl-txt{margin:0; font-size:13.5px; line-height:1.5; color:var(--ink)}
+.tl-meta{margin:5px 0 0; font-size:12px; color:var(--muted)}
+.tl-vazio{background:var(--surface); border:1px dashed var(--line); border-radius:var(--r); padding:20px; color:var(--muted); font-size:14px}
+
 /* ---------- barra de estado (topo) ---------- */
 .estado{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; padding:26px 0 0}
 .tile{
@@ -282,15 +303,10 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
 
   <section class="wrap estado" id="estado" aria-label="Situação dos processos"></section>
 
-  <section class="wrap horizonte">
-    <div class="hz-head">
-      <div>
-        <p class="eyebrow">Próximas sessões</p>
-        <h2>Próximas sessões</h2>
-      </div>
-      <p class="eyebrow" id="hz-nota"></p>
-    </div>
-    <div class="hz-rail" id="rail"></div>
+  <section class="wrap secao" id="sec-atividades">
+    <h2>Últimas atividades</h2>
+    <p class="sub" id="tl-sub">Tudo que o Tribunal publicou sobre processos do MPO, do mais recente ao mais antigo — com as sessões marcadas no topo.</p>
+    <ul class="tl" id="tl"></ul>
   </section>
 
   <section class="wrap atencao" id="atencao"></section>
@@ -471,7 +487,7 @@ function render(){
   carimbo(hoje);
   barraEstado(hoje);
   avisos();
-  horizonte(hoje);
+  atividades(hoje);
   atencao(itens, hoje);
   processosMPO();
   orgaos();
@@ -544,50 +560,57 @@ function barraEstado(hoje){
   }));
 }
 
-function horizonte(hoje){
-  const rail = document.getElementById("rail");
-  const porDia = new Map();
+function atividades(hoje){
+  const eventos = DADOS.processos_detalhes
+    .filter((i) => i.processo && (i.orgaos || []).length)
+    .map((i) => {
+      const sessao = parseData(i.data_sessao);
+      const futuro = sessao && diasAte(sessao, hoje) >= 0 && i.status === "Em pauta";
+      return { ...i, _quando: parseData(i.data) || sessao, _futuro: futuro };
+    })
+    .filter((e) => e._quando);
 
-  PAUTA_POR_PROCESSO.forEach((p) => {
-    const d = parseData(p.data_sessao);
-    const chave = meiaNoite(d).getTime();
-    if(!porDia.has(chave)) porDia.set(chave, []);
-    porDia.get(chave).push(p);
-  });
+  // Futuro primeiro, em ordem crescente (o que acontece antes vem antes);
+  // depois o passado em ordem decrescente. É a leitura natural de uma agenda.
+  const futuros = eventos.filter((e) => e._futuro).sort((a, b) => a._quando - b._quando);
+  const passados = eventos.filter((e) => !e._futuro).sort((a, b) => b._quando - a._quando).slice(0, 25);
 
-  const dias = [...porDia.entries()].sort((a, b) => a[0] - b[0]).slice(0, 8);
-
-  let html = `<div class="hz-hoje"><span>Hoje</span><strong class="mono">${fmtData(hoje)}</strong></div>`;
-
-  if(!dias.length){
-    html += `<div class="hz-vazio">Nenhum processo monitorado tem sessão marcada na pauta publicada.
-      A pauta do TCU cobre poucos dias à frente — vale reconsultar depois de cada coleta.</div>`;
-    document.getElementById("hz-nota").textContent = "";
-  }else{
-    dias.forEach(([chave, lista], i) => {
-      const d = new Date(chave);
-      const n = diasAte(d, hoje);
-      const classe = n === 0 ? "hoje" : n <= 7 ? "urgente" : "";
-      const itensHtml = lista.map((p) => {
-        const url = linkProcesso(p);
-        const num = esc(p.processo || "—");
-        return `<li>
-          ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${num}</a>` : `<span class="mono">${num}</span>`}
-          <p>${esc(p.natureza || p.tipo || "Processo")}<br><em>Relator: ${esc(p.relator || "não informado")} · ${esc(p.colegiado || "colegiado não informado")}</em></p>
-        </li>`;
-      }).join("");
-
-      html += `<div class="sessao ${classe} surge" style="animation-delay:${i * 55}ms">
-        <div class="sessao-topo">
-          <span class="contagem">${n === 0 ? "0" : n}<small>${n === 0 ? " hoje" : n === 1 ? " dia" : " dias"}</small></span>
-          <span class="sessao-data"><b>${fmtData(d)}</b>${fmtDiaSemana(d)}</span>
-        </div>
-        <ul>${itensHtml}</ul>
-      </div>`;
-    });
-    document.getElementById("hz-nota").textContent = `${plural(PAUTA_POR_PROCESSO.size, "processo", "processos")} · ${plural(dias.length, "sessão", "sessões")}`;
+  const el = document.getElementById("tl");
+  if(!futuros.length && !passados.length){
+    el.innerHTML = `<li class="tl-vazio">Nenhuma atividade registrada. Se a coleta rodou, amplie a janela
+      com <code>--desde-id 22110</code> para varrer o boletim desde agosto de 2024.</li>`;
+    return;
   }
-  rail.innerHTML = html;
+
+  const cartao = (e) => {
+    const url = linkProcesso(e);
+    const dias = diasAte(e._quando, hoje);
+    const cls = e._futuro ? "futuro" : e.status === "Julgado" ? "julgado" : "";
+    return `<li class="tl-ev ${cls} surge">
+      <div class="tl-card">
+        <div class="tl-topo">
+          <a class="tl-num" href="${esc(url)}" target="_blank" rel="noopener">${esc(e.processo)} ↗</a>
+          <span class="chip chip-status ${CLASSE_STATUS[e.status] || "st-registrado"}">${esc(e.status || "—")}</span>
+          ${(e.orgaos || []).map((o) => `<span class="chip chip-orgao" style="background:${CORES[o] || "var(--ink-2)"}">${esc(o)}</span>`).join("")}
+          ${e.acordao ? `<span class="chip chip-ac">Acórdão ${esc(e.acordao)}</span>` : ""}
+          <span class="tl-quando">${esc(fmtData(e._quando))} · ${esc(rotuloRelativo(dias))}</span>
+        </div>
+        <p class="tl-txt">${esc((e.assunto || "").slice(0, 190))}${(e.assunto || "").length > 190 ? "…" : ""}</p>
+        <p class="tl-meta">${esc(e.relator || "relator não informado")}${e.colegiado ? " · " + esc(e.colegiado) : ""}${
+          e.unidade_jurisdicionada ? " · " + esc(e.unidade_jurisdicionada.split(";")[0]) + ((e.unidade_jurisdicionada.match(/;/g) || []).length ? ` +${(e.unidade_jurisdicionada.match(/;/g) || []).length}` : "") : ""}</p>
+      </div>
+    </li>`;
+  };
+
+  let html = "";
+  if(futuros.length) html += `<li class="tl-marco"><span>A seguir — ${plural(futuros.length, "sessão marcada", "sessões marcadas")}</span></li>` + futuros.map(cartao).join("");
+  if(passados.length) html += `<li class="tl-marco"><span>Já ocorrido</span></li>` + passados.map(cartao).join("");
+  el.innerHTML = html;
+
+  document.getElementById("tl-sub").textContent =
+    `${plural(eventos.length, "atividade registrada", "atividades registradas")} em ${
+      plural(new Set(eventos.map(e => e.processo)).size, "processo", "processos")}` +
+    (passados.length === 25 ? ", mostrando as 25 mais recentes." : ".");
 }
 
 function atencao(itens, hoje){
