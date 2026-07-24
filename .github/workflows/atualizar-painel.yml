@@ -18,6 +18,11 @@ on:
     - cron: "0 9 * * 1-5"    # 06:00 em Brasília
     - cron: "0 18 * * 1-5"   # 15:00 em Brasília
   workflow_dispatch:
+    inputs:
+      desde_id:
+        description: "Carga histórica: id inicial do boletim (22110 ≈ ago/2024, 23186 ≈ mar/2026). Vazio = continua de onde parou."
+        required: false
+        default: ""
   push:
     branches: [main]
     paths: ["site/index.html", "coleta_tcu.py", "requirements.txt"]
@@ -39,6 +44,7 @@ env:
 jobs:
   coletar:
     runs-on: ubuntu-latest
+    timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
 
@@ -62,7 +68,12 @@ jobs:
         id: coleta
         run: |
           set +e
-          python coleta_tcu.py --saida site/dados.json --verbose 2>&1 | tee /tmp/coleta.log
+          EXTRA=""
+          if [ -n "${{ github.event.inputs.desde_id }}" ]; then
+            EXTRA="--desde-id ${{ github.event.inputs.desde_id }} --max-pautas 1500"
+            echo "Carga histórica a partir do id ${{ github.event.inputs.desde_id }} — pode levar bastante tempo."
+          fi
+          python coleta_tcu.py --saida site/dados.json --verbose $EXTRA 2>&1 | tee /tmp/coleta.log
           codigo=${PIPESTATUS[0]}
           set -e
           echo "codigo=$codigo" >> "$GITHUB_OUTPUT"
