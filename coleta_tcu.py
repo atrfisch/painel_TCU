@@ -503,8 +503,19 @@ def _secao_de(titulo: str) -> str:
     if "acorda" in t or "delibera" in t: return "ata"
     return "indefinido"
 RX_SESSAO = re.compile(r"Sess[ãa]o\s+\w+\s+de\s+(\d{2}/\d{2}/\d{4})")
-# Início de bloco de processo: NNN.NNN/AAAA-D seguido de hífen.
-RX_BLOCO = re.compile(r"^\s*(\d{3}\.\d{3}/\d{4}-\d)\s*-\s*", re.M)
+# Início de bloco de processo. O número aparece em várias roupagens ao longo do
+# boletim, e exigir "número no começo da linha seguido de hífen" perdia TODAS as
+# relações — que é onde os acórdãos são publicados em lote:
+#     022.756/2025-6 - Auditoria...        (pauta)
+#     1. Processo TC-022.852/2025-5        (relação)
+#     2. Processo TC 005.405/2026-2 - ...  (relação, com espaço)
+#     Anexo: TC-022.280/2024-3 - ...       (apensado)
+RX_BLOCO = re.compile(
+    r"^\s*(?:\d{1,3}\s*[.)]\s*)?"                    # "1." da relação
+    r"(?:(?:Processo|Anexo|Apenso|Apensos?)\s*:?\s*)?"  # rótulo
+    r"(?:TC[-\s]\s*)?"                                 # prefixo TC
+    r"(\d{3}\.\d{3}/\d{4}-\d)"
+    r"\s*-?\s*", re.M)
 # Rótulos que encerram a descrição e iniciam campos estruturados.
 RX_CAMPO = re.compile(
     r"(Natureza|Unidade [Jj]urisdicionada|[ÓO]rg[ãa]o/Entidade/Unidade|[ÓO]rg[ãa]o/Entidade|"
@@ -720,7 +731,7 @@ def coletar_pautas_publicadas(sessao: requests.Session, ancora: int, maximo: int
     """
     # Teto estimado: ~1,1 id por dia desde a âncora conhecida, com folga.
     dias = (date.today() - PAUTA_DATA_ANCORA).days
-    teto = PAUTA_ID_ANCORA + int(dias * 1.1) + 40
+    teto = max(ancora, PAUTA_ID_ANCORA) + int(dias * 1.1) + 40
     log.info("Varrendo pautas de %d até no máximo %d", ancora, teto)
 
     registros: list[dict] = []
@@ -879,8 +890,12 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--sem-acordaos", action="store_true", help="pula a fonte de acórdãos")
     parser.add_argument("--sem-pautas", action="store_true", help="pula as pautas publicadas")
     parser.add_argument("--max-acordaos", type=int, default=10_000)
-    parser.add_argument("--max-pautas", type=int, default=60,
+    parser.add_argument("--max-pautas", type=int, default=120,
                         help="máximo de edições do BTCU lidas por execução")
+    parser.add_argument("--desde-id", type=int, default=None,
+                        help="força o início da varredura neste id, ignorando a âncora salva. "
+                             "Use na primeira carga para recuar anos: 22110 ≈ ago/2024, "
+                             "22495 ≈ abr/2025, 23186 ≈ mar/2026, 23240 ≈ mai/2026.")
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args(argv)
 
@@ -895,13 +910,17 @@ def main(argv: list[str] | None = None) -> int:
 
     # A âncora das pautas vem do dados.json anterior: cada execução retoma de
     # onde a última parou, em vez de revarrer o boletim inteiro.
-    ancora = PAUTA_ID_ANCORA
-    try:
-        with open(args.saida, encoding="utf-8") as f:
-            ancora = max(ancora, int(json.load(f).get("ancora_pauta", ancora)))
-        log.info("Retomando a varredura de pautas do id %d", ancora)
-    except (OSError, ValueError, TypeError):
-        log.info("Sem âncora anterior; começando do id %d", ancora)
+    if args.desde_id:
+        ancora = args.desde_id
+        log.info("Carga forçada a partir do id %d (--desde-id)", ancora)
+    else:
+        ancora = PAUTA_ID_ANCORA
+        try:
+            with open(args.saida, encoding="utf-8") as f:
+                ancora = max(ancora, int(json.load(f).get("ancora_pauta", ancora)))
+            log.info("Retomando a varredura de pautas do id %d", ancora)
+        except (OSError, ValueError, TypeError):
+            log.info("Sem âncora anterior; começando do id %d", ancora)
 
     # Descoberta: quem é do MPO vem do boletim, onde o TCU declara a unidade
     # jurisdicionada. O SCN entra depois, só para dizer de onde o processo veio.
