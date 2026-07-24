@@ -192,27 +192,20 @@ def identificar(texto_norm: str, regras: dict[str, list[re.Pattern[str]]]) -> li
 
 def classificar(texto: str) -> dict[str, Any] | None:
     """
-    Seleção em duas camadas.
+    Só entra no painel quem NOMEIA o órgão.
 
-      nominal  — o texto cita o órgão ("MPO", "Secretaria de Orçamento Federal").
-                 Alta confiança, volume baixo.
-      temática — o texto trata de matéria da competência do MPO (LDO, LOA, PPA,
-                 regra fiscal, emendas, transferências). Confiança média, volume alto.
+    A camada temática (LDO, emendas, transferências) foi rebaixada a etiqueta.
+    Ela dava entrada e enchia o painel de processos do Ministério da Saúde, do
+    DNOCS, de cisternas — matéria orçamentária de terceiros, não do MPO. Tema
+    descreve o assunto; não estabelece vínculo com o Ministério.
 
-    Filtrar só por nome do órgão devolve quase nada: as solicitações do Congresso
-    descrevem o objeto ("supressão de cláusula na LDO 2026"), não a pasta
-    responsável. Devolve None quando o item não interessa a nenhuma das camadas.
+    Devolve None quando nenhum órgão monitorado é citado.
     """
     norm = normalizar(texto)
     orgaos = identificar(norm, RX_ORGAOS)
-    temas = identificar(norm, RX_TEMAS)
-    if not orgaos and not temas:
+    if not orgaos:
         return None
-    return {
-        "orgaos": orgaos,
-        "temas": temas,
-        "confianca": "nominal" if orgaos else "tematica",
-    }
+    return {"orgaos": orgaos, "temas": identificar(norm, RX_TEMAS), "confianca": "nominal"}
 
 
 def limpar_processo(numero: str | None) -> str:
@@ -310,6 +303,36 @@ def iter_scn(sessao: requests.Session, max_paginas: int = MAX_PAGINAS_SCN) -> It
         pagina += 1
     if pagina >= max_paginas:
         log.warning("Limite de %d páginas atingido no SCN — pode haver truncamento.", max_paginas)
+
+
+def indexar_scn(sessao: requests.Session) -> dict[str, dict]:
+    """
+    Índice processo -> solicitação do Congresso, para ENRIQUECER processos já
+    identificados como do MPO por outra via.
+
+    O SCN não serve para descobrir: o assunto descreve o que o parlamentar pediu
+    ("auditoria na LDO 2026"), quase nunca nomeia a pasta responsável. Casar por
+    texto trazia dezenas de processos de outros ministérios. Casar pelo NÚMERO do
+    processo é exato: se a pauta diz que 017.443/2025-3 é do MPO e o SCN diz que
+    ele nasceu de um requerimento do deputado X, os dois falam do mesmo processo.
+    """
+    indice: dict[str, dict] = {}
+    for item in iter_scn(sessao):
+        pid = limpar_processo(item.get("processo_scn"))
+        if not pid:
+            continue
+        indice[pid] = {
+            "origem_congresso": {
+                "tipo": item.get("tipo"),
+                "numero": item.get("numero"),
+                "autor": (item.get("autor") or "").strip() or None,
+                "assunto": (item.get("assunto") or "").strip(),
+                "data": iso(parse_data(item.get("data_aprovacao"))),
+                "link_proposicao": item.get("link_proposicao"),
+            }
+        }
+    log.info("SCN: %d solicitações indexadas para cruzamento por número", len(indice))
+    return indice
 
 
 def coletar_scn(sessao: requests.Session) -> list[dict]:
@@ -451,6 +474,34 @@ RX_UNIDADES = _compilar(UNIDADES_ALVO)
 # Cabeçalhos que mudam o contexto corrente enquanto varremos o documento.
 RX_RELATOR = re.compile(r"^\s*(?:Ministro|MINISTRO)(?:-Substituto|-SUBSTITUTO)?\s+([A-ZÁÂÃÉÊÍÓÔÕÚÇ][A-Za-zÁÂÃÉÊÍÓÔÕÚÇáâãéêíóôõúç\s\.]{4,60})\s*$")
 RX_COLEGIADO = re.compile(r"PAUTA (?:DO|DA) (PLEN[ÁA]RIO|PRIMEIRA C[ÂA]MARA|SEGUNDA C[ÂA]MARA)")
+
+# O BTCU é dividido em seções, e a seção diz o ESTADO do processo. Um processo
+# nas Pautas ainda vai a julgamento; nas Atas já foi julgado e gerou acórdão.
+# Antes eu lia só as Pautas — por isso o painel só mostrava o que estava por vir.
+RX_SECAO = re.compile(
+    r"^\s*(PAUTAS?|ATAS?|DESPACHOS DE AUTORIDADES|EDITAIS|"
+    r"ACORD[ÃA]OS|DELIBERA[ÇC][ÕO]ES)\s*$", re.I)
+SECAO_STATUS = {
+    "pauta": ("Em pauta", "Aguardando julgamento em sessão marcada"),
+    "ata": ("Julgado", "Deliberado em sessão; acórdão proferido"),
+    "despacho": ("Despacho", "Decisão monocrática do relator"),
+    "edital": ("Edital", "Citação, audiência ou notificação publicada"),
+    "indefinido": ("Registrado", "Mencionado no boletim, fase não identificada"),
+}
+# Número do acórdão dentro das atas: "ACÓRDÃO Nº 1.234/2026 - TCU - Plenário"
+RX_ACORDAO = re.compile(
+    r"AC[ÓO]RD[ÃA]O\s+N?[ºo°]?\s*([\d.]+)\s*/\s*(\d{4})\s*[-–]\s*TCU\s*[-–]\s*"
+    r"(Plen[áa]rio|Primeira C[âa]mara|Segunda C[âa]mara|1[ªa] C[âa]mara|2[ªa] C[âa]mara)", re.I)
+
+
+def _secao_de(titulo: str) -> str:
+    t = normalizar(titulo)
+    if t.startswith("pauta"): return "pauta"
+    if t.startswith("ata"): return "ata"
+    if "despacho" in t: return "despacho"
+    if "edital" in t: return "edital"
+    if "acorda" in t or "delibera" in t: return "ata"
+    return "indefinido"
 RX_SESSAO = re.compile(r"Sess[ãa]o\s+\w+\s+de\s+(\d{2}/\d{2}/\d{4})")
 # Início de bloco de processo: NNN.NNN/AAAA-D seguido de hífen.
 RX_BLOCO = re.compile(r"^\s*(\d{3}\.\d{3}/\d{4}-\d)\s*-\s*", re.M)
@@ -566,6 +617,8 @@ def parsear_pauta(texto: str, id_pauta: int) -> list[dict]:
     linhas = texto.split("\n")
 
     colegiado = data_sessao = relator = None
+    secao = "indefinido"
+    acordao_atual: str | None = None
     registros: list[dict] = []
     buffer: list[str] = []
     numero_atual: str | None = None
@@ -589,9 +642,18 @@ def parsear_pauta(texto: str, id_pauta: int) -> list[dict]:
             natureza = _extrair_campo(bloco, (r"Natureza",))
             classe, peso_materia = classe_materia(natureza, descricao)
             relevancia = round(PESO_VINCULO.get(vinculo, 1.0) * peso_materia, 2)
+            status, status_desc = SECAO_STATUS[secao]
+            # O número do acórdão pode estar no próprio bloco ou no cabeçalho da relação.
+            m_ac = RX_ACORDAO.search(bloco)
+            acordao = f"{m_ac.group(1)}/{m_ac.group(2)}-{m_ac.group(3)}" if m_ac else (
+                acordao_atual if secao == "ata" else None)
             registros.append(
                 {
-                    "fonte": "Pauta",
+                    "fonte": "Pauta" if secao == "pauta" else "Acórdão" if secao == "ata" else "Boletim",
+                    "secao": secao,
+                    "status": status,
+                    "status_descricao": status_desc,
+                    "acordao": acordao,
                     "orgaos": orgaos,
                     "temas": identificar(normalizar(descricao), RX_TEMAS),
                     "confianca": "unidade_jurisdicionada" if orgaos else "watchlist",
@@ -606,7 +668,8 @@ def parsear_pauta(texto: str, id_pauta: int) -> list[dict]:
                     "colegiado": colegiado,
                     "natureza": natureza,
                     "data": iso(parse_data(data_sessao)),
-                    "data_sessao": iso(parse_data(data_sessao)),
+                    "data_sessao": iso(parse_data(data_sessao)) if secao == "pauta" else None,
+                    "data_julgamento": iso(parse_data(data_sessao)) if secao == "ata" else None,
                     "edicao_btcu": id_pauta,
                     "link_tcu": None,
                 }
@@ -615,8 +678,21 @@ def parsear_pauta(texto: str, id_pauta: int) -> list[dict]:
         numero_atual = None
 
     for linha in linhas:
+        if m := RX_SECAO.match(linha):
+            fechar()
+            secao = _secao_de(m.group(1))
+            continue
+        if m := RX_ACORDAO.search(linha):
+            # O cabeçalho vem ANTES do processo que ele decide. Fechar o bloco
+            # pendente primeiro, senão o processo anterior herda o acórdão errado.
+            fechar()
+            acordao_atual = f"{m.group(1)}/{m.group(2)}-{m.group(3)}"
+            if secao == "indefinido":
+                secao = "ata"
         if m := RX_COLEGIADO.search(linha):
+            fechar()
             colegiado = m.group(1).title().replace("Camara", "Câmara")
+            secao = "pauta"   # "PAUTA DO PLENÁRIO" abre a seção, não só o título "PAUTAS"
             continue
         if m := RX_SESSAO.search(linha):
             data_sessao = m.group(1)
@@ -740,12 +816,26 @@ def montar_watchlist(itens: list[dict]) -> list[dict]:
     return saida
 
 
+def montar_resumo_status(itens: list[dict]) -> list[dict]:
+    """Quantos processos DISTINTOS em cada fase. Contar registros inflaria o número:
+    o mesmo processo aparece em várias edições do boletim."""
+    ordem = ["Em pauta", "Julgado", "Despacho", "Edital", "Registrado"]
+    saida = []
+    for status in ordem:
+        procs = {i["processo"] for i in itens if i.get("status") == status and i.get("processo")}
+        if procs:
+            saida.append({"status": status, "processos": len(procs),
+                          "registros": sum(1 for i in itens if i.get("status") == status)})
+    return saida
+
+
 def montar_payload(itens: list[dict], pautas: list[dict], falhas: list[str],
                    ancora_pauta: int = PAUTA_ID_ANCORA) -> dict:
     ordenados = ordenar_por_data(itens)
     agora = datetime.now(timezone.utc)
     return {
-        "schema": 4,
+        "schema": 5,
+        "resumo_status": montar_resumo_status(ordenados),
         "ancora_pauta": ancora_pauta,
         "watchlist": montar_watchlist(ordenados),
         "resumo_temas": montar_resumo_temas(ordenados),
@@ -813,15 +903,25 @@ def main(argv: list[str] | None = None) -> int:
     except (OSError, ValueError, TypeError):
         log.info("Sem âncora anterior; começando do id %d", ancora)
 
-    itens = coletar_scn(sessao)
-    if not itens:
-        falhas.append("SCN")
-
+    # Descoberta: quem é do MPO vem do boletim, onde o TCU declara a unidade
+    # jurisdicionada. O SCN entra depois, só para dizer de onde o processo veio.
+    itens: list[dict] = []
     if not args.sem_pautas:
-        da_pauta, ancora = coletar_pautas_publicadas(sessao, ancora, args.max_pautas)
-        if not da_pauta:
-            falhas.append("Pautas publicadas")
-        itens.extend(da_pauta)
+        itens, ancora = coletar_pautas_publicadas(sessao, ancora, args.max_pautas)
+        if not itens:
+            falhas.append("Boletim do TCU")
+
+    indice_scn = indexar_scn(sessao)
+    if not indice_scn:
+        falhas.append("SCN")
+    else:
+        casados = 0
+        for item in itens:
+            extra = indice_scn.get(item.get("processo_id") or "")
+            if extra:
+                item.update(extra)
+                casados += 1
+        log.info("SCN: %d processos enriquecidos com a origem no Congresso", casados)
 
     if not args.sem_acordaos:
         acordaos = coletar_acordaos(sessao, args.max_acordaos)
@@ -833,7 +933,19 @@ def main(argv: list[str] | None = None) -> int:
     pautas = coletar_pautas(sessao, processos)
 
     if not itens:
-        log.error("Nenhum item coletado — dados.json NÃO foi sobrescrito.")
+        if os.path.exists(args.saida):
+            log.warning(
+                "Nenhum item coletado nesta execução. O %s anterior foi preservado "
+                "e o painel segue no ar com os dados da última coleta bem-sucedida.",
+                args.saida,
+            )
+            return 0
+        log.error(
+            "Nenhum item coletado e não existe %s anterior. Verifique o log acima: "
+            "se todas as fontes falharam, é indisponibilidade do TCU; se só as pautas "
+            "falharam, confirme que o pypdf está instalado.",
+            args.saida,
+        )
         return 1
 
     payload = montar_payload(itens, pautas, falhas, ancora)
