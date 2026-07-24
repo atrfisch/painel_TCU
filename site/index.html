@@ -53,6 +53,31 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{
 }
 .aviso.on{display:flex}
 
+/* ---------- barra de estado (topo) ---------- */
+.estado{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; padding:26px 0 0}
+.tile{
+  background:var(--surface); border:1px solid var(--line); border-top:3px solid var(--line);
+  border-radius:var(--r); padding:14px 16px 13px; box-shadow:var(--shadow);
+  text-align:left; font:inherit; cursor:pointer; transition:transform .12s ease, box-shadow .12s ease;
+}
+.tile:hover{transform:translateY(-2px); box-shadow:0 2px 4px rgba(20,31,28,.07), 0 14px 30px -18px rgba(20,31,28,.4)}
+.tile[aria-pressed="true"]{background:var(--surface-2); border-color:var(--ink-2)}
+.tile-n{font-family:"JetBrains Mono",monospace; font-size:32px; font-weight:600; line-height:1; letter-spacing:-.04em; display:block}
+.tile-t{font-family:"Bricolage Grotesque",sans-serif; font-size:14px; font-weight:600; margin:6px 0 3px}
+.tile-d{font-size:11.5px; color:var(--muted); line-height:1.4; margin:0; min-height:31px}
+.tile.pauta{border-top-color:var(--amber)} .tile.pauta .tile-n{color:var(--amber)}
+.tile.julgado{border-top-color:var(--petrol)} .tile.julgado .tile-n{color:var(--petrol)}
+.tile.despacho{border-top-color:var(--sof)} .tile.despacho .tile-n{color:var(--sof)}
+.tile.todos{border-top-color:var(--ink-2)} .tile.todos .tile-n{color:var(--ink)}
+
+.chip-status{color:#fff; font-weight:600}
+.st-pauta{background:var(--amber)} .st-julgado{background:var(--petrol)}
+.st-despacho{background:var(--sof)} .st-registrado{background:var(--muted)}
+.st-edital{background:var(--seplan)}
+.chip-ac{background:var(--petrol-soft); color:var(--petrol); border-color:#a9cdc6}
+.origem{margin:7px 0 0; padding:8px 10px; background:var(--surface-2); border-left:2px solid var(--line); border-radius:0 5px 5px 0; font-size:12.5px; color:var(--ink-2)}
+.origem b{font-weight:600}
+
 /* ---------- horizonte (elemento-assinatura) ---------- */
 .horizonte{padding:30px 0 6px}
 .hz-head{display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:14px}
@@ -255,11 +280,13 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
 
 <main id="app" hidden>
 
+  <section class="wrap estado" id="estado" aria-label="Situação dos processos"></section>
+
   <section class="wrap horizonte">
     <div class="hz-head">
       <div>
         <p class="eyebrow">Próximas sessões</p>
-        <h2>O que entra em pauta</h2>
+        <h2>Próximas sessões</h2>
       </div>
       <p class="eyebrow" id="hz-nota"></p>
     </div>
@@ -366,6 +393,9 @@ const URL_PROCESSO = "https://pesquisa.apps.tcu.gov.br/doc/processo/";
 const CORES = { MPO:"var(--mpo)", SOF:"var(--sof)", SEPLAN:"var(--seplan)", SMA:"var(--sma)" };
 const PALETA_TEMAS = ["#0e4a44","#1b5674","#573566","#63601c","#8a2e26","#2f6b3f","#9c5c07"];
 const DIA = 86400000;
+const CLASSE_STATUS = { "Em pauta":"st-pauta", "Julgado":"st-julgado", "Despacho":"st-despacho",
+                        "Edital":"st-edital", "Registrado":"st-registrado" };
+let FILTRO_STATUS = "";
 
 let DADOS = null;
 let PAUTA_POR_PROCESSO = new Map();
@@ -439,6 +469,7 @@ function render(){
   });
 
   carimbo(hoje);
+  barraEstado(hoje);
   avisos();
   horizonte(hoje);
   atencao(itens, hoje);
@@ -466,6 +497,51 @@ function avisos(){
   el.classList.add("on");
   document.getElementById("aviso-txt").innerHTML =
     `<b>Coleta parcial.</b> ${esc(falhas.join(" e "))} não respondeu na última execução, então os números abaixo estão incompletos para ${falhas.length > 1 ? "essas fontes" : "essa fonte"}.`;
+}
+
+function ordenarPorData(l){
+  const piso = new Date(0);
+  return [...l].sort((a,b) => (parseData(b.data) || piso) - (parseData(a.data) || piso));
+}
+
+function barraEstado(hoje){
+  const itens = DADOS.processos_detalhes;
+  const conta = (st) => new Set(itens.filter(i => i.status === st).map(i => i.processo)).size;
+  const proc = new Set(itens.filter(i => i.processo).map(i => i.processo)).size;
+
+  const proxima = [...PAUTA_POR_PROCESSO.values()]
+    .map(p => parseData(p.data_sessao)).filter(Boolean).sort((a,b) => a-b)[0];
+  const julgados = itens.filter(i => i.status === "Julgado");
+  const ultimoAc = ordenarPorData(julgados)[0];
+
+  const tiles = [
+    { k:"Em pauta", cls:"pauta", n:conta("Em pauta"),
+      d: proxima ? `Sessão mais próxima ${rotuloRelativo(diasAte(proxima, hoje))}, em ${fmtData(proxima)}.`
+                 : "Nenhuma sessão marcada na pauta publicada." },
+    { k:"Julgado", cls:"julgado", n:conta("Julgado"),
+      d: ultimoAc ? `Acórdão mais recente: ${ultimoAc.acordao || "número não extraído"}.`
+                  : "Nenhum acórdão localizado ainda." },
+    { k:"Despacho", cls:"despacho", n:conta("Despacho"),
+      d:"Decisões monocráticas de relator publicadas no boletim." },
+    { k:"", cls:"todos", n:proc,
+      d:"Processos distintos em que MPO, SOF, SEPLAN ou SMA é unidade jurisdicionada." },
+  ];
+
+  document.getElementById("estado").innerHTML = tiles.map((t, i) => `
+    <button type="button" class="tile ${t.cls} surge" data-status="${esc(t.k)}"
+            aria-pressed="${FILTRO_STATUS === t.k && t.k !== ""}" style="animation-delay:${i * 50}ms">
+      <span class="tile-n">${t.n}</span>
+      <p class="tile-t">${t.k || "Total no radar"}</p>
+      <p class="tile-d">${t.d}</p>
+    </button>`).join("");
+
+  document.querySelectorAll(".tile").forEach((b) => b.addEventListener("click", () => {
+    const st = b.dataset.status;
+    FILTRO_STATUS = (FILTRO_STATUS === st || st === "") ? "" : st;
+    barraEstado(new Date());
+    aplicarFiltros();
+    document.getElementById("feed").scrollIntoView({ behavior:"smooth", block:"start" });
+  }));
 }
 
 function horizonte(hoje){
@@ -547,13 +623,18 @@ function processosMPO(){
   const secao = document.getElementById("wl").closest("section");
 
   // Um registro por processo: mantém o mais recente e soma quantas vezes apareceu.
+  const FASE = { "Registrado":0, "Edital":1, "Em pauta":2, "Despacho":3, "Julgado":4 };
   const porProcesso = new Map();
   DADOS.processos_detalhes.forEach((i) => {
     if(!i.processo || !(i.orgaos || []).length) return;
     const atual = porProcesso.get(i.processo);
-    if(!atual){ porProcesso.set(i.processo, { ...i, aparicoes: 1 }); return; }
+    if(!atual){ porProcesso.set(i.processo, { ...i, aparicoes: 1, historico: [i.status] }); return; }
     atual.aparicoes++;
-    if((parseData(i.data) || 0) > (parseData(atual.data) || 0)) Object.assign(atual, i);
+    if(!atual.historico.includes(i.status)) atual.historico.push(i.status);
+    // Empate de data é comum (pauta e ata da mesma sessão): decide a fase.
+    const mais = (parseData(i.data) || 0) - (parseData(atual.data) || 0);
+    const avanca = mais > 0 || (mais === 0 && (FASE[i.status] ?? 0) > (FASE[atual.status] ?? 0));
+    if(avanca){ const h = atual.historico, a = atual.aparicoes; Object.assign(atual, i); atual.historico = h; atual.aparicoes = a; }
   });
 
   const lista = [...porProcesso.values()].map((i) => {
@@ -586,11 +667,14 @@ function processosMPO(){
         <a class="wl-num" href="${esc(url)}" target="_blank" rel="noopener">${esc(i.processo)} ↗</a>
         ${(i.orgaos || []).map((o) => `<span class="chip chip-orgao" style="background:${CORES[o] || "var(--ink-2)"}">${esc(o)}</span>`).join("")}
         ${pauta ? `<span class="chip chip-pauta">Pauta ${esc(fmtData(parseData(pauta.data_sessao)))}</span>` : ""}
+        <span class="chip chip-status ${CLASSE_STATUS[i.status] || "st-registrado"}" title="${esc(i.status_descricao || "")}">${esc(i.status || "—")}</span>
+        ${i.acordao ? `<span class="chip chip-ac">Acórdão ${esc(i.acordao)}</span>` : ""}
         ${rotina ? `<span class="chip chip-fonte" title="Ato de pessoal ou cobrança: aparece, mas não é matéria de gestão.">rotina</span>` : ""}
       </div>
       <p class="wl-uj">${esc((i.assunto || "").slice(0, 145))}${(i.assunto || "").length > 145 ? "…" : ""}</p>
       ${i.unidade_jurisdicionada ? `<p class="wl-meta" title="${esc(i.unidade_jurisdicionada)}">${esc(i.unidade_jurisdicionada.slice(0, 70))}${i.unidade_jurisdicionada.length > 70 ? "…" : ""}</p>` : ""}
       <p class="wl-meta">${esc(rotulo[i.vinculo] || "vínculo não classificado")} · ${esc(i.relator || "relator não informado")} · ${d ? esc(fmtData(d)) : "sem data"}</p>
+      ${(i.historico || []).length > 1 ? `<p class="wl-meta" style="color:var(--ink-2)">Trajetória: ${esc(i.historico.join(" → "))}</p>` : ""}
     </div>`;
   }).join("");
 
@@ -782,6 +866,7 @@ function aplicarFiltros(){
 
   const todos = DADOS.processos_detalhes;
   const filtrados = todos.filter((i) => {
+    if(FILTRO_STATUS && i.status !== FILTRO_STATUS) return false;
     if(fo && !(i.orgaos || []).includes(fo)) return false;
     if(ft && !(i.temas || []).includes(ft)) return false;
     if(ff && i.fonte !== ff) return false;
@@ -819,7 +904,11 @@ function desenharFeed(itens, hoje){
             i.confianca === "watchlist" ? "acompanhado" : "por matéria"}</span>`;
     const chipsTema = (i.temas || []).map((t) => `<span class="chip chip-tema">${esc(t)}</span>`).join("");
     const chipPauta = pauta
-      ? `<span class="chip chip-pauta">Pauta ${esc(fmtData(parseData(pauta.data_sessao)))}</span>` : "";
+      ? `<span class="chip chip-pauta">Sessão ${esc(fmtData(parseData(pauta.data_sessao)))}</span>` : "";
+    const chipStatus = i.status
+      ? `<span class="chip chip-status ${CLASSE_STATUS[i.status] || "st-registrado"}" title="${esc(i.status_descricao || "")}">${esc(i.status)}</span>` : "";
+    const chipAcordao = i.acordao
+      ? `<span class="chip chip-ac">Acórdão ${esc(i.acordao)}</span>` : "";
 
     const identificacao = i.fonte === "Acórdão"
       ? `Acórdão ${esc(i.numero_acordao || "")}/${esc(i.ano || "")} · ${esc(i.colegiado || "")}`
@@ -835,14 +924,18 @@ function desenharFeed(itens, hoje){
       </div>
       <div>
         <div class="item-topo">
+          ${chipStatus}
           ${chipsOrgao}
-          <span class="chip chip-fonte">${esc(i.fonte || "—")}</span>
+          ${chipAcordao}
           ${chipsTema}
           ${chipPauta}
           ${url ? `<a class="item-proc" href="${esc(url)}" target="_blank" rel="noopener">${esc(i.processo || "abrir")} ↗</a>` : ""}
         </div>
         <p class="item-assunto">${esc(i.assunto || "Sem descrição")}</p>
         ${i.unidade_jurisdicionada ? `<p class="item-uj"><b>Unidade jurisdicionada:</b> ${esc(i.unidade_jurisdicionada)}</p>` : ""}
+        ${i.origem_congresso ? `<p class="origem"><b>Origem:</b> ${esc(i.origem_congresso.tipo || "")} ${esc(i.origem_congresso.numero || "")}${
+          i.origem_congresso.autor ? ` de ${esc(i.origem_congresso.autor)}` : ""}${
+          i.origem_congresso.link_proposicao ? ` · <a href="${esc(i.origem_congresso.link_proposicao)}" target="_blank" rel="noopener">proposição</a>` : ""}</p>` : ""}
         <p class="item-pe">${identificacao}${extra}</p>
       </div>
     </li>`;
