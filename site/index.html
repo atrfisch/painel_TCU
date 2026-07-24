@@ -469,7 +469,6 @@ function render(){
   app.hidden = false;
 
   const hoje = new Date();
-  const itens = DADOS.processos_detalhes.slice();
 
   // índice de pauta: processo -> sessão mais próxima
   PAUTA_POR_PROCESSO = new Map();
@@ -484,7 +483,6 @@ function render(){
   barraEstado(hoje);
   avisos();
   atividades(hoje);
-  atencao(itens, hoje);
   abasCalor();
   desenharCalor();
 }
@@ -559,6 +557,41 @@ function barraEstado(hoje){
     atividades(new Date());
     document.getElementById("sec-atividades").scrollIntoView({ behavior:"smooth", block:"start" });
   }));
+}
+
+const FASE_ORDEM = { "Registrado":0, "Edital":1, "Em pauta":2, "Apreciado":3, "Despacho":4, "Julgado":5 };
+let FILTRO_ORGAO = "";
+let BUSCA = "";
+
+function agruparProcessos(){
+  const mapa = new Map();
+  DADOS.processos_detalhes.forEach((i) => {
+    if(!i.processo || !(i.orgaos || []).length) return;
+    if(!mapa.has(i.processo)){
+      mapa.set(i.processo, { processo:i.processo, processo_id:i.processo_id, eventos:[], orgaos:new Set() });
+    }
+    const p = mapa.get(i.processo);
+    p.eventos.push(i);
+    (i.orgaos || []).forEach((o) => p.orgaos.add(o));
+  });
+
+  return [...mapa.values()].map((p) => {
+    // Fase atual = a mais avançada; empate de data é comum entre pauta e ata.
+    p.eventos.sort((a, b) => (FASE_ORDEM[a.status] ?? 0) - (FASE_ORDEM[b.status] ?? 0));
+    const atual = p.eventos[p.eventos.length - 1];
+    const datas = p.eventos.map((e) => parseData(e.data)).filter(Boolean);
+    return Object.assign(p, {
+      orgaos: [...p.orgaos],
+      atual,
+      assunto: p.eventos.map((e) => e.assunto).sort((a, b) => (b || "").length - (a || "").length)[0],
+      unidade_jurisdicionada: p.eventos.find((e) => e.unidade_jurisdicionada)?.unidade_jurisdicionada,
+      relator: p.eventos.find((e) => e.relator)?.relator,
+      colegiado: p.eventos.find((e) => e.colegiado)?.colegiado,
+      origem_congresso: p.eventos.find((e) => e.origem_congresso)?.origem_congresso,
+      relevancia: Math.max(...p.eventos.map((e) => e.relevancia ?? 1)),
+      quando: datas.length ? new Date(Math.max(...datas)) : null,
+    });
+  });
 }
 
 function atividades(hoje){
