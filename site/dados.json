@@ -2,7 +2,7 @@
   "schema": 5,
   "resumo_status": [
     {
-      "status": "Em pauta",
+      "status": "Apreciado",
       "processos": 3,
       "registros": 3
     },
@@ -83,8 +83,8 @@
     {
       "fonte": "Pauta",
       "secao": "pauta",
-      "status": "Em pauta",
-      "status_descricao": "Aguardando julgamento em sessão marcada",
+      "status": "Apreciado",
+      "status_descricao": "Constou de pauta em sessão já realizada",
       "acordao": null,
       "orgaos": [
         "MPO"
@@ -110,8 +110,8 @@
     {
       "fonte": "Pauta",
       "secao": "pauta",
-      "status": "Em pauta",
-      "status_descricao": "Aguardando julgamento em sessão marcada",
+      "status": "Apreciado",
+      "status_descricao": "Constou de pauta em sessão já realizada",
       "acordao": null,
       "orgaos": [
         "SOF"
@@ -139,8 +139,8 @@
     {
       "fonte": "Pauta",
       "secao": "pauta",
-      "status": "Em pauta",
-      "status_descricao": "Aguardando julgamento em sessão marcada",
+      "status": "Apreciado",
+      "status_descricao": "Constou de pauta em sessão já realizada",
       "acordao": null,
       "orgaos": [
         "MPO"
@@ -199,8 +199,8 @@
     {
       "fonte": "Pauta",
       "secao": "pauta",
-      "status": "Em pauta",
-      "status_descricao": "Aguardando julgamento em sessão marcada",
+      "status": "Apreciado",
+      "status_descricao": "Constou de pauta em sessão já realizada",
       "acordao": null,
       "orgaos": [
         "MPO"
@@ -226,8 +226,8 @@
     {
       "fonte": "Pauta",
       "secao": "pauta",
-      "status": "Em pauta",
-      "status_descricao": "Aguardando julgamento em sessão marcada",
+      "status": "Apreciado",
+      "status_descricao": "Constou de pauta em sessão já realizada",
       "acordao": null,
       "orgaos": [
         "SOF"
@@ -255,8 +255,8 @@
     {
       "fonte": "Pauta",
       "secao": "pauta",
-      "status": "Em pauta",
-      "status_descricao": "Aguardando julgamento em sessão marcada",
+      "status": "Apreciado",
+      "status_descricao": "Constou de pauta em sessão já realizada",
       "acordao": null,
       "orgaos": [
         "MPO"
@@ -311,8 +311,8 @@
       "link_tcu": null
     }
   ],
-  "ultima_atualizacao": "24/07/2026 às 15:09",
-  "ultima_atualizacao_iso": "2026-07-24T15:09:43.141618+00:00",
+  "ultima_atualizacao": "24/07/2026 às 17:58",
+  "ultima_atualizacao_iso": "2026-07-24T17:58:56.906418+00:00",
   "pautas_futuras": [
     {
       "processo": "025.632/2024-8",
@@ -369,8 +369,6 @@
       "tipo": "RELATÓRIO DE AUDITORIA"
     }
   ],
-  "fontes_indisponiveis": [
-    "Acórdãos"
-  ],
+  "fontes_indisponiveis": [],
   "total_itens": 4
 }
