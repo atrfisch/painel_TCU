@@ -1,31 +1,25 @@
 # .github/workflows/atualizar-painel.yml
 #
-# Estrutura esperada no repositório:
-#   coleta_tcu.py
-#   requirements.txt          -> DUAS linhas: requests e pypdf
+# Estrutura no repositório:
+#   coleta.py
+#   requirements.txt        -> requests e pypdf
 #   site/index.html
-#   site/dados.json           -> gerado aqui; não edite à mão
+#   site/dados.json         -> gerado aqui
 #   .github/workflows/atualizar-painel.yml
 #
-# Antes do primeiro uso:
-#   Settings > Pages > Source = "GitHub Actions"
-#   Settings > Actions > General > Workflow permissions = "Read and write"
+# Settings > Pages > Source = "GitHub Actions"
+# Settings > Actions > General > Workflow permissions = "Read and write"
 
 name: Atualizar painel TCU
 
 on:
   schedule:
-    - cron: "0 9 * * 1-5"    # 06:00 em Brasília
-    - cron: "0 18 * * 1-5"   # 15:00 em Brasília
+    - cron: "0 9 * * 1-5"
+    - cron: "0 18 * * 1-5"
   workflow_dispatch:
-    inputs:
-      desde_id:
-        description: "Carga histórica: id inicial do boletim (22110 ≈ ago/2024, 23186 ≈ mar/2026). Vazio = continua de onde parou."
-        required: false
-        default: ""
   push:
     branches: [main]
-    paths: ["site/index.html", "coleta_tcu.py", "requirements.txt"]
+    paths: ["site/index.html", "coleta.py", "requirements.txt"]
 
 permissions:
   contents: write
@@ -37,8 +31,6 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  # Silencia os avisos de Node.js 20 sem trocar as tags das actions por
-  # versões não verificadas — trocar para uma tag inexistente quebra o job.
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
@@ -47,70 +39,39 @@ jobs:
     timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
 
-      # As pautas do TCU são PDF: sem pypdf a fonte inteira some e o painel
-      # exibe "não respondeu", que é um diagnóstico errado. Falha aqui, claro.
-      - name: Conferir dependências
+      - name: Dependências
         run: |
-          if ! grep -qi '^pypdf' requirements.txt; then
-            echo "::error::requirements.txt não contém 'pypdf'. As pautas do TCU são PDF e a coleta não roda sem essa biblioteca. Acrescente a linha 'pypdf' ao arquivo."
-            exit 1
-          fi
           pip install -r requirements.txt
-          python -c "import requests, pypdf; print('requests e pypdf OK')"
+          python -c "import requests; print('ok')"
 
-      - name: Coletar dados do TCU
-        id: coleta
+      - name: Coletar
         run: |
           set +e
-          EXTRA=""
-          if [ -n "${{ github.event.inputs.desde_id }}" ]; then
-            EXTRA="--desde-id ${{ github.event.inputs.desde_id }} --max-pautas 1500"
-            echo "Carga histórica a partir do id ${{ github.event.inputs.desde_id }} — pode levar bastante tempo."
-          fi
-          python coleta_tcu.py --saida site/dados.json --verbose $EXTRA 2>&1 | tee /tmp/coleta.log
+          python coleta.py --saida site/dados.json --verbose 2>&1 | tee /tmp/c.log
           codigo=${PIPESTATUS[0]}
           set -e
-          echo "codigo=$codigo" >> "$GITHUB_OUTPUT"
           if [ "$codigo" -ne 0 ]; then
-            echo "::warning::A coleta terminou com código $codigo. O site segue publicado com os dados anteriores."
-            echo "----- últimas 30 linhas do log -----"
-            tail -n 30 /tmp/coleta.log
+            echo "::warning::Coleta terminou com código $codigo; o site segue com os dados anteriores."
+            tail -n 30 /tmp/c.log
           fi
-          # Nunca derruba o job: uma API fora do ar não é motivo para tirar o painel do ar.
           exit 0
 
-      - name: Garantir que existe um dados.json para publicar
+      - name: Commitar
         run: |
-          if [ ! -f site/dados.json ]; then
-            echo "::warning::site/dados.json não existe. Publicando um arquivo mínimo para o painel exibir o estado vazio."
-            mkdir -p site
-            printf '%s' '{"schema":4,"resumo":[],"resumo_temas":[],"processos_detalhes":[],"ultimos_andamentos":[],"pautas_futuras":[],"watchlist":[],"fontes_indisponiveis":["coleta ainda não concluída"],"total_itens":0,"ultima_atualizacao":"—"}' > site/dados.json
-          fi
-
-      - name: Commitar se houve mudança
-        run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/dados.json
-          if git diff --cached --quiet; then
-            echo "Sem alterações nos dados."
-            exit 0
-          fi
-          git commit -m "dados: coleta de $(date -u +'%Y-%m-%d %H:%M UTC')"
-          if ! git push; then
-            echo "::error::git push recusado. Vá em Settings > Actions > General > Workflow permissions e marque 'Read and write permissions'."
-            exit 1
-          fi
+          if git diff --cached --quiet; then echo "sem mudanças"; exit 0; fi
+          git commit -m "dados: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push || { echo "::error::push recusado — marque 'Read and write permissions' em Settings > Actions > General."; exit 1; }
 
       - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
+        with: { path: site }
 
   publicar:
     needs: coletar
