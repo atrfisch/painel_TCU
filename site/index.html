@@ -12,6 +12,7 @@
   --ink:#131f1c; --ink-2:#3e504b; --muted:#77857f;
   --line:#ccd6d2; --line-2:#e3e9e7;
   --petrol:#0e4a44; --amber:#9a5a06; --red:#8a2e26;
+  --aberto:#0e6b4f; --aberto-bg:#e2f2ec;
   --mpo:#0e4a44; --sof:#1b5674; --seplan:#573566; --sma:#63601c; --sest:#7a4a1f;
   --r:10px; --shadow:0 1px 2px rgba(19,31,28,.05), 0 10px 26px -18px rgba(19,31,28,.3);
 }
@@ -32,56 +33,81 @@ header{background:var(--surface); border-bottom:1px solid var(--line)}
 .hd .quando{font-family:"JetBrains Mono",monospace; font-size:11.5px; color:var(--muted); text-align:right}
 
 .aviso{display:flex; gap:9px; padding:11px 14px; margin:14px 0 0; border-radius:var(--r);
-  background:#f8ecd6; font-size:13px; color:#5b3a06}
-.aviso{border-color:#e3c894}
+  background:#f8ecd6; border:1px solid #e3c894; font-size:13px; color:#5b3a06}
 
-.kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; padding:24px 0 0}
+.kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; padding:24px 0 0}
 .kpi{background:var(--surface); border:1px solid var(--line); border-top:3px solid var(--line);
   border-radius:var(--r); padding:13px 15px; box-shadow:var(--shadow); text-align:left; font:inherit; cursor:pointer}
 .kpi[aria-pressed="true"]{background:var(--surface-2); border-color:var(--ink-2)}
-.kpi b{font-family:"JetBrains Mono",monospace; font-size:29px; font-weight:600; line-height:1; display:block; letter-spacing:-.04em}
+.kpi b{font-family:"JetBrains Mono",monospace; font-size:28px; font-weight:600; line-height:1; display:block; letter-spacing:-.04em}
 .kpi span{display:block; font-size:13px; font-weight:600; margin-top:6px}
 .kpi small{display:block; font-size:11.5px; color:var(--muted); margin-top:2px; line-height:1.35}
 .kpi.total{border-top-color:var(--ink-2)}
-.kpi.pauta{border-top-color:var(--amber)} .kpi.pauta b{color:var(--amber)}
-.kpi.julgado{border-top-color:var(--petrol)} .kpi.julgado b{color:var(--petrol)}
-.kpi.despacho{border-top-color:var(--sof)} .kpi.despacho b{color:var(--sof)}
+.kpi.aberto{border-top-color:var(--aberto)} .kpi.aberto b{color:var(--aberto)}
+.kpi.encerrado{border-top-color:var(--muted)} .kpi.encerrado b{color:var(--muted)}
 
-section{padding:32px 0 0}
+section{padding:30px 0 0}
 section h2{font-size:19px}
 .sub{margin:3px 0 15px; color:var(--muted); font-size:13.5px}
+
+.grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+.painel{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; box-shadow:var(--shadow)}
+.painel h3{font-family:"Bricolage Grotesque",sans-serif; font-size:15px; margin:0 0 3px; font-weight:600}
+.painel .nota{margin:0 0 14px; font-size:12px; color:var(--muted)}
+
+.calor{display:grid; grid-auto-flow:column; grid-template-rows:repeat(7,1fr); gap:3px; overflow-x:auto; padding-bottom:4px}
+.cel{width:15px; height:15px; border-radius:3px; background:var(--surface-2); border:1px solid var(--line-2)}
+.cel[data-n="1"]{background:#cfe6dd; border-color:transparent}
+.cel[data-n="2"]{background:#8fc7b5; border-color:transparent}
+.cel[data-n="3"]{background:#4c9a83; border-color:transparent}
+.cel[data-n="4"]{background:var(--petrol); border-color:transparent}
+.calor-leg{display:flex; align-items:center; gap:5px; margin-top:11px; font-size:11.5px; color:var(--muted)}
+.calor-leg i{width:14px; height:14px; border-radius:3px; display:inline-block}
+
+.barras{display:flex; flex-direction:column; gap:9px}
+.barra{font:inherit; background:none; border:0; padding:0; cursor:pointer; text-align:left; width:100%}
+.barra-top{display:flex; justify-content:space-between; gap:10px; font-size:12.5px; margin-bottom:3px}
+.barra-top b{font-weight:600}
+.barra-top span{font-family:"JetBrains Mono",monospace; color:var(--muted); white-space:nowrap}
+.barra-trilho{height:9px; background:var(--surface-2); border-radius:5px; overflow:hidden; display:flex; max-width:100%}
+.barra-fill{height:100%; background:#9db8b1}
+.barra-fill.ab{background:var(--aberto)}
+.barra[aria-pressed="true"] .barra-top b{color:var(--petrol)}
+.barra[aria-pressed="true"] .barra-trilho{outline:2px solid var(--petrol); outline-offset:2px}
 
 .chip{display:inline-block; font-family:"JetBrains Mono",monospace; font-size:10.5px;
   letter-spacing:.05em; text-transform:uppercase; padding:2.5px 7px; border-radius:5px; color:#fff}
 .chip.MPO{background:var(--mpo)} .chip.SOF{background:var(--sof)} .chip.SEPLAN{background:var(--seplan)}
 .chip.SMA{background:var(--sma)} .chip.SEST{background:var(--sest)}
-.chip-fase{background:var(--surface-2); color:var(--ink-2); border:1px solid var(--line); text-transform:none; letter-spacing:0}
 .chip-ac{background:#dceae7; color:var(--petrol); text-transform:none; letter-spacing:0}
-.chip-estado{background:var(--petrol); text-transform:none; letter-spacing:0}
+.chip-estado{background:var(--aberto); text-transform:none; letter-spacing:0}
+.chip-tipo{background:var(--surface-2); color:var(--ink-2); border:1px solid var(--line); text-transform:none; letter-spacing:0}
 
-/* movimentações */
 .movs{list-style:none; margin:0; padding:0; background:var(--surface); border:1px solid var(--line);
   border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow)}
-.mov{display:grid; grid-template-columns:96px 1fr; gap:16px; padding:12px 17px; border-bottom:1px solid var(--line-2)}
+.mov{display:grid; grid-template-columns:88px 1fr; gap:16px; padding:13px 17px; border-bottom:1px solid var(--line-2)}
 .mov:last-child{border-bottom:0}
 .mov:hover{background:var(--surface-2)}
+.mov.ab{border-left:3px solid var(--aberto)}
 .mov-d{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--ink-2)}
 .mov-d em{display:block; font-style:normal; font-size:11px; color:var(--muted)}
-.mov-l1{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:3px}
+.mov-l1{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:4px}
 .mov-n{font-family:"JetBrains Mono",monospace; font-size:13px; font-weight:600; text-decoration:none}
 .mov-n:hover{text-decoration:underline}
-.mov-a{margin:0; font-size:13.5px; color:var(--ink-2); line-height:1.45}
+.mov-mov{margin:0; font-size:13.5px; color:var(--ink); line-height:1.45}
+.mov-a{margin:3px 0 0; font-size:12.5px; color:var(--muted); line-height:1.4}
 
-/* tabela de processos */
 .ferramentas{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:13px}
 .ferramentas input,.ferramentas select{font:inherit; font-size:13.5px; background:var(--surface);
   border:1px solid var(--line); border-radius:8px; padding:8px 11px; color:var(--ink)}
-.ferramentas input{flex:1 1 250px; min-width:0}
+.ferramentas input{flex:1 1 240px; min-width:0}
 .cont{margin-left:auto; font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--muted)}
 .tabela{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow)}
 .linha{display:grid; grid-template-columns:150px 1fr 190px; gap:16px; padding:14px 18px; border-bottom:1px solid var(--line-2); align-items:start}
 .linha:last-child{border-bottom:0}
 .linha:hover{background:var(--surface-2)}
+.linha.ab{border-left:3px solid var(--aberto)}
+.linha.fechado{opacity:.62}
 .cab{display:grid; grid-template-columns:150px 1fr 190px; gap:16px; padding:9px 18px; background:var(--surface-2);
   border-bottom:1px solid var(--line); font-family:"JetBrains Mono",monospace; font-size:10px;
   letter-spacing:.12em; text-transform:uppercase; color:var(--muted)}
@@ -98,7 +124,6 @@ section h2{font-size:19px}
 .f{font-size:11.5px; color:var(--ink-2); background:var(--surface-2); border:1px solid var(--line-2);
   border-radius:20px; padding:2px 9px}
 .f b{font-family:"JetBrains Mono",monospace; font-weight:400; color:var(--muted)}
-.seta{color:var(--line)}
 .vazio{padding:36px 20px; text-align:center; color:var(--muted)}
 .setup{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:24px; box-shadow:var(--shadow); margin-top:26px}
 code{font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(--surface-2);
@@ -108,12 +133,24 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
 @keyframes sobe{from{opacity:0; transform:translateY(6px)} to{opacity:1; transform:none}}
 .sobe{animation:sobe .4s cubic-bezier(.22,.61,.36,1) both}
 @media (prefers-reduced-motion:reduce){.sobe{animation:none}}
+
 @media (max-width:820px){
+  .grid2{grid-template-columns:1fr}
   .linha,.cab{grid-template-columns:1fr}
   .cab{display:none}
-  .mov{grid-template-columns:1fr; gap:6px}
+  .linha .pr{margin-top:4px; padding-top:9px; border-top:1px solid var(--line-2)}
+  .mov{grid-template-columns:1fr; gap:5px}
   .mov-d{display:flex; gap:8px; align-items:baseline}
   .mov-d em{display:inline}
+}
+@media (max-width:520px){
+  .wrap{padding:0 14px}
+  .hd h1{font-size:21px}
+  .hd .quando{text-align:left}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  section h2{font-size:17px}
+  .ferramentas input,.ferramentas select{flex:1 1 100%}
+  .cont{margin-left:0; width:100%}
 }
 </style>
 </head>
@@ -136,6 +173,28 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
 
   <div class="wrap">
     <section>
+      <div class="grid2">
+        <div class="painel">
+          <h3>Ritmo de movimentações</h3>
+          <p class="nota">Movimentações por dia nos últimos 90 dias.</p>
+          <div class="calor" id="calor" role="img" aria-label="Mapa de calor das movimentações por dia"></div>
+          <div class="calor-leg">
+            Menos
+            <i style="background:var(--surface-2);border:1px solid var(--line-2)"></i>
+            <i style="background:#cfe6dd"></i><i style="background:#8fc7b5"></i>
+            <i style="background:#4c9a83"></i><i style="background:var(--petrol)"></i>
+            Mais
+          </div>
+        </div>
+        <div class="painel">
+          <h3>Tipos de processo</h3>
+          <p class="nota">Clique para filtrar a lista. Trecho escuro da barra = abertos.</p>
+          <div class="barras" id="barras"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <h2>Últimas movimentações</h2>
       <p class="sub" id="sub-movs"></p>
       <ul class="movs" id="movs"></ul>
@@ -147,6 +206,7 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
       <div class="ferramentas">
         <input type="search" id="q" placeholder="Buscar por número, assunto ou relator" aria-label="Buscar">
         <select id="f-orgao" aria-label="Filtrar por órgão"><option value="">Todos os órgãos</option></select>
+        <select id="f-tipo" aria-label="Filtrar por tipo"><option value="">Todos os tipos</option></select>
         <select id="f-relator" aria-label="Filtrar por relator"><option value="">Todos os relatores</option></select>
         <select id="ordem" aria-label="Ordenar">
           <option value="recente">Movimentação mais recente</option>
@@ -156,7 +216,7 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
         <span class="cont" id="cont" aria-live="polite"></span>
       </div>
       <div class="tabela">
-        <div class="cab"><span>Processo</span><span>Assunto</span><span>Relator e fase</span></div>
+        <div class="cab"><span>Processo</span><span>Assunto</span><span>Relator e estado</span></div>
         <div id="linhas"></div>
       </div>
     </section>
@@ -173,14 +233,14 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
 </div>
 
 <footer><div class="wrap ft">
-  Fonte: Pesquisa Integrada do TCU. Todos os processos com órgão do MPO como unidade jurisdicionada, com estado, relator, assunto e movimentações declarados pelo próprio Tribunal.
+  Fonte: Pesquisa Integrada do TCU. Estado, relator, assunto e movimentações declarados pelo próprio Tribunal.
 </div></footer>
 
 <script>
 "use strict";
 const URL_DOC = "https://pesquisa.apps.tcu.gov.br/doc/processo/";
 const DIA = 86400000;
-let D = null, FILTRO_FASE = "";
+let D = null, FILTRO_KPI = "", FILTRO_TIPO = "";
 
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) =>
   ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
@@ -189,9 +249,7 @@ const meiaNoite = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
 const dias = (a, b) => Math.round((meiaNoite(a) - meiaNoite(b)) / DIA);
 const fmt = (d) => d ? d.toLocaleDateString("pt-BR") : "—";
 const plural = (n, s, p) => `${n} ${n === 1 ? s : p}`;
-
-// O id do documento no TCU não leva zeros à esquerda:
-// 007.276/2022-2 resolve em /doc/processo/727620222.
+const aberto = (p) => String(p.estado || "").toLowerCase() === "aberto";
 const link = (numero) => URL_DOC + String(numero || "").replace(/\D/g, "").replace(/^0+/, "");
 
 function relativo(n){
@@ -215,63 +273,110 @@ async function carregar(){
 
 function render(){
   document.getElementById("app").hidden = false;
-  document.getElementById("quando").innerHTML =
-    `Coleta: <strong>${esc(D.gerado_em_br || "—")}</strong>`;
-
+  document.getElementById("quando").innerHTML = `Coleta: <strong>${esc(D.gerado_em_br || "—")}</strong>`;
   document.getElementById("avisos").innerHTML = (D.avisos || []).length
     ? `<div class="aviso"><span aria-hidden="true">▲</span><span>${(D.avisos).map(esc).join(" ")}</span></div>` : "";
-
   kpis();
+  calor();
+  barras();
   movimentacoes();
   ferramentas();
   lista();
 }
 
 function kpis(){
-  const total = D.totais.processos;
-  const abertos = D.totais.abertos;
+  const total = D.totais.processos, abertos = D.totais.abertos;
   const cartoes = [
     { f:"", n:total, t:"Processos", d:"Com órgão do MPO como unidade jurisdicionada.", c:"total" },
-    { f:"__aberto", n:abertos, t:"Abertos", d:"Estado ativo, conforme a Pesquisa Integrada.", c:"julgado" },
-    { f:"__encerrado", n:total - abertos, t:"Encerrados", d:"Já concluídos.", c:"despacho" },
+    { f:"__aberto", n:abertos, t:"Abertos", d:"Estado ativo, conforme a Pesquisa Integrada.", c:"aberto" },
+    { f:"__encerrado", n:total - abertos, t:"Encerrados", d:"Já concluídos.", c:"encerrado" },
   ];
   (D.por_orgao || []).forEach((o) => cartoes.push(
     { f:"__org_" + o.orgao, n:o.total, t:o.orgao, d:o.nome, c:"total" }));
 
   document.getElementById("kpis").innerHTML = cartoes.map((k, i) => `
-    <button type="button" class="kpi ${k.c} sobe" data-fase="${esc(k.f)}"
-            aria-pressed="${FILTRO_FASE === k.f && k.f !== ""}" style="animation-delay:${i * 45}ms">
+    <button type="button" class="kpi ${k.c} sobe" data-f="${esc(k.f)}"
+            aria-pressed="${FILTRO_KPI === k.f && k.f !== ""}" style="animation-delay:${i * 40}ms">
       <b>${k.n}</b><span>${esc(k.t)}</span><small>${esc(k.d)}</small>
     </button>`).join("");
 
   document.querySelectorAll(".kpi").forEach((b) => b.addEventListener("click", () => {
-    const f = b.dataset.fase;
-    FILTRO_FASE = (FILTRO_FASE === f || f === "") ? "" : f;
+    const f = b.dataset.f;
+    FILTRO_KPI = (FILTRO_KPI === f || f === "") ? "" : f;
     kpis(); lista();
+    document.getElementById("linhas").scrollIntoView({ behavior:"smooth", block:"start" });
+  }));
+}
+
+function calor(){
+  const dados = D.calor || [];
+  const el = document.getElementById("calor");
+  if(!dados.length){ el.innerHTML = `<span style="color:var(--muted);font-size:13px">Sem movimentações no período.</span>`; return; }
+  const mapa = new Map(dados.map((d) => [d.dia, d.n]));
+  const max = Math.max(...dados.map((d) => d.n));
+  const nivel = (n) => !n ? 0 : max <= 1 ? 2 : Math.min(4, Math.ceil(n / max * 4));
+
+  const hoje = new Date();
+  const inicio = new Date(hoje); inicio.setDate(hoje.getDate() - 90);
+  const cels = [];
+  for(let d = new Date(inicio); d <= hoje; d.setDate(d.getDate() + 1)){
+    const iso = d.toISOString().slice(0, 10);
+    const n = mapa.get(iso) || 0;
+    cels.push(`<div class="cel" data-n="${nivel(n)}" title="${d.toLocaleDateString("pt-BR")}: ${plural(n, "movimentação", "movimentações")}"></div>`);
+  }
+  el.innerHTML = cels.join("");
+}
+
+function barras(){
+  const tipos = D.por_tipo || [];
+  const el = document.getElementById("barras");
+  if(!tipos.length){ el.innerHTML = ""; return; }
+  const max = Math.max(...tipos.map((t) => t.total));
+  el.innerHTML = tipos.map((t) => {
+    const larg = (t.total / max * 100).toFixed(1);
+    const largAb = t.total ? (t.abertos / t.total * 100).toFixed(1) : 0;
+    return `<button type="button" class="barra" data-tipo="${esc(t.tipo)}" aria-pressed="${FILTRO_TIPO === t.tipo}">
+      <div class="barra-top"><b>${esc(t.tipo)}</b><span>${t.total}${t.abertos ? ` · ${t.abertos} ab.` : ""}</span></div>
+      <div class="barra-trilho" style="width:${larg}%">
+        <div class="barra-fill ab" style="width:${largAb}%"></div>
+        <div class="barra-fill" style="width:${(100 - largAb).toFixed(1)}%"></div>
+      </div>
+    </button>`;
+  }).join("");
+
+  document.querySelectorAll(".barra").forEach((b) => b.addEventListener("click", () => {
+    FILTRO_TIPO = FILTRO_TIPO === b.dataset.tipo ? "" : b.dataset.tipo;
+    const sel = document.getElementById("f-tipo");
+    if(sel) sel.value = FILTRO_TIPO;
+    barras(); lista();
     document.getElementById("linhas").scrollIntoView({ behavior:"smooth", block:"start" });
   }));
 }
 
 function movimentacoes(){
   const hoje = new Date();
-  const movs = (D.movimentacoes || []).slice(0, 20);
-  document.getElementById("sub-movs").textContent =
-    `As ${movs.length} mais recentes de ${plural(D.totais.movimentacoes, "movimentação registrada", "movimentações registradas")}.`;
+  const movs = (D.movimentacoes_recentes || []);
+  document.getElementById("sub-movs").textContent = movs.length
+    ? `${plural(movs.length, "movimentação", "movimentações")} nos últimos 10 dias.`
+    : "Nenhuma movimentação nos últimos 10 dias.";
 
   document.getElementById("movs").innerHTML = movs.length ? movs.map((m) => {
     const d = dt(m.data);
-    return `<li class="mov">
+    const ab = String(m.estado || "").toLowerCase() === "aberto";
+    return `<li class="mov ${ab ? "ab" : ""}">
       <div class="mov-d">${esc(fmt(d))}<em>${d ? esc(relativo(dias(hoje, d))) : "sem data"}</em></div>
       <div>
         <div class="mov-l1">
           <a class="mov-n" href="${esc(link(m.processo))}" target="_blank" rel="noopener">${esc(m.processo)} ↗</a>
+          ${m.natureza ? `<span class="chip chip-tipo">${esc(m.natureza)}</span>` : ""}
           ${m.acordao ? `<span class="chip chip-ac">Acórdão ${esc(m.acordao)}</span>` : ""}
           ${(m.orgaos || []).map((o) => `<span class="chip ${esc(o)}">${esc(o)}</span>`).join("")}
         </div>
-        <p class="mov-a">${esc((m.descricao || m.assunto || "Sem descrição").slice(0, 180))}${(m.descricao || m.assunto || "").length > 180 ? "…" : ""}</p>
+        <p class="mov-mov">${esc((m.descricao || m.fase || "Movimentação").slice(0, 150))}</p>
+        <p class="mov-a">${esc((m.assunto || "").slice(0, 150))}${(m.assunto || "").length > 150 ? "…" : ""}</p>
       </div>
     </li>`;
-  }).join("") : `<li class="vazio">Nenhuma movimentação coletada.</li>`;
+  }).join("") : `<li class="vazio">Nenhuma movimentação recente. O feed cobre os últimos 10 dias.</li>`;
 }
 
 function ferramentas(){
@@ -283,7 +388,12 @@ function ferramentas(){
     });
   };
   preencher("f-orgao", D.processos.flatMap((p) => p.orgaos || []));
+  preencher("f-tipo", D.processos.map((p) => p.natureza));
   preencher("f-relator", D.processos.map((p) => p.relator));
+
+  document.getElementById("f-tipo").addEventListener("input", (e) => {
+    FILTRO_TIPO = e.target.value; barras(); lista();
+  });
   ["q","f-orgao","f-relator","ordem"].forEach((id) =>
     document.getElementById(id).addEventListener("input", lista));
 }
@@ -296,9 +406,10 @@ function lista(){
   const ord = document.getElementById("ordem").value;
 
   let l = D.processos.filter((p) => {
-    if(FILTRO_FASE === "__aberto"){ if(String(p.estado || "").toLowerCase() !== "aberto") return false; }
-    else if(FILTRO_FASE === "__encerrado"){ if(String(p.estado || "").toLowerCase() === "aberto") return false; }
-    else if(FILTRO_FASE.startsWith("__org_")){ if(!(p.orgaos || []).includes(FILTRO_FASE.slice(6))) return false; }
+    if(FILTRO_KPI === "__aberto" && !aberto(p)) return false;
+    if(FILTRO_KPI === "__encerrado" && aberto(p)) return false;
+    if(FILTRO_KPI.startsWith("__org_") && !(p.orgaos || []).includes(FILTRO_KPI.slice(6))) return false;
+    if(FILTRO_TIPO && (p.natureza || "Não classificado") !== FILTRO_TIPO) return false;
     if(fo && !(p.orgaos || []).includes(fo)) return false;
     if(fr && p.relator !== fr) return false;
     if(q && ![p.numero, p.assunto, p.relator, p.natureza].join(" ").toLowerCase().includes(q)) return false;
@@ -310,34 +421,33 @@ function lista(){
 
   document.getElementById("cont").textContent = `${l.length} de ${D.processos.length}`;
   document.getElementById("sub-procs").textContent =
-    "Lista completa, com relator, assunto e a trilha de fases de cada processo.";
+    "Processos abertos aparecem destacados; os encerrados, esmaecidos.";
 
   document.getElementById("linhas").innerHTML = l.length ? l.map((p) => {
     const d = dt(p.atualizado_em);
+    const ab = aberto(p);
     const trilha = (p.movimentacoes || []).slice(0, 4).map((m) => {
       const md = dt(m.data);
-      return `<span class="f">${md ? `<b>${esc(fmt(md))}</b> ` : ""}${esc((m.descricao || "").slice(0, 60))}${
+      return `<span class="f">${md ? `<b>${esc(fmt(md))}</b> ` : ""}${esc((m.descricao || m.fase || "").slice(0, 55))}${
         m.acordao ? ` <b>Ac. ${esc(m.acordao)}</b>` : ""}</span>`;
     }).join("");
 
-    return `<div class="linha">
+    return `<div class="linha ${ab ? "ab" : "fechado"}">
       <div>
         <a class="pn" href="${esc(link(p.numero))}" target="_blank" rel="noopener">${esc(p.numero)} ↗</a>
         <div class="pmeta">
           ${(p.orgaos || []).map((o) => `<span class="chip ${esc(o)}">${esc(o)}</span>`).join("")}
-          ${p.estado ? `<span class="chip chip-estado">${esc(p.estado)}</span>` : ""}
+          <span class="chip chip-estado" style="${ab ? "" : "background:var(--muted)"}">${esc(p.estado || "—")}</span>
         </div>
       </div>
       <div>
-        <p class="pa">${esc(p.assunto || "Assunto não informado no boletim")}</p>
-        ${(p.unidades || []).length ? `<p class="pu" title="${esc((p.unidades).join("; "))}">${
-          esc(p.unidades[0])}${p.unidades.length > 1 ? ` +${p.unidades.length - 1} unidades` : ""}</p>` : ""}
+        <p class="pa">${esc(p.assunto || "Assunto não informado")}</p>
+        ${p.natureza ? `<p class="pu">${esc(p.natureza)}</p>` : ""}
         <div class="trilha">${trilha}</div>
       </div>
       <div class="pr">
         <b>Relator</b><span>${esc(p.relator || "não informado")}</span>
-        <b>Última movimentação</b><span>${esc((p.fase_atual || "—").slice(0,70))}${d ? ` · ${esc(relativo(dias(hoje, d)))}` : ""}</span>
-        ${p.natureza ? `<b>Natureza</b><span>${esc(p.natureza)}</span>` : ""}
+        <b>Última movimentação</b><span>${esc((p.fase_atual || "—").slice(0, 70))}${d ? ` · ${esc(relativo(dias(hoje, d)))}` : ""}</span>
       </div>
     </div>`;
   }).join("") : `<div class="vazio">Nenhum processo com esses filtros.</div>`;
