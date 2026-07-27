@@ -59,16 +59,42 @@ BTCU_MISSES = 45
 # pelo boletim. É paginado: ?inicio= avança de QUANTIDADE em QUANTIDADE.
 PESQUISA_BASE = "https://pesquisa.apps.tcu.gov.br/rest/publico/base/processo/documentosResumidos"
 PESQUISA_QUANTIDADE = 50
-PESQUISA_MAX_PAGINAS = 60
+PESQUISA_MAX_PAGINAS = 120
 PESQUISA_ORDENACAO = "DTAUTUACAOORDENACAO desc, NUMEROCOMZEROS desc, KEY asc"
-# Uma consulta por unidade monitorada: o filtro casa o nome exato da UJ.
+
+# O filtro por unidade exige correspondência com a grafia cadastrada, que varia
+# (o órgão já se chamou "Ministério da Economia" e "Ministério do Planejamento,
+# Desenvolvimento e Gestão"; secretarias trocam de vínculo). Buscar por termo
+# livre, além do filtro estruturado, recupera o que a grafia exata perderia.
 PESQUISA_UNIDADES = [
-    "Ministério do Planejamento e Orçamento",
-    "Secretaria de Orçamento Federal",
-    "Secretaria Nacional de Planejamento",
-    "Secretaria de Monitoramento e Avaliação",
-    "Secretaria de Coordenação e Governança das Empresas Estatais",
+    'UNIDADESJURISDICIONADAS:("Ministério do Planejamento e Orçamento")',
+    'UNIDADESJURISDICIONADAS:("Secretaria de Orçamento Federal")',
+    'UNIDADESJURISDICIONADAS:("Secretaria Nacional de Planejamento")',
+    'UNIDADESJURISDICIONADAS:("Secretaria de Monitoramento e Avaliação")',
+    'UNIDADESJURISDICIONADAS:("Secretaria de Coordenação e Governança das Empresas Estatais")',
+    'UNIDADESJURISDICIONADAS:("Ministério do Planejamento, Desenvolvimento e Gestão")',
+    'UNIDADESJURISDICIONADAS:("Ministério da Economia")',
 ]
+
+# Termos livres, para capturar processos cuja UJ está grafada de forma que o
+# filtro estruturado não casa (ex.: código na frente do nome).
+PESQUISA_TERMOS = [
+    '"Ministério do Planejamento e Orçamento"',
+    '"Secretaria de Orçamento Federal"',
+    '"Secretaria Nacional de Planejamento"',
+]
+
+# Endpoint de detalhe por número: traz MOVIMENTACOES e PECAS que a listagem
+# resumida não inclui. Descoberto pelo padrão /doc/processo/{PROC sem zeros}.
+PESQUISA_DETALHE = "https://pesquisa.apps.tcu.gov.br/rest/publico/base/processo/documento"
+
+# Processos que devem entrar SEMPRE, buscados um a um pelo número — independem
+# de o filtro de unidade os capturar. É a rede de segurança para os que somem.
+PROCESSOS_GARANTIDOS = [
+    "022.756/2025-6", "005.405/2026-2", "022.852/2025-5", "017.106/2025-7",
+    "025.632/2024-8", "005.104/2023-8", "007.158/2026-2", "011.685/2026-3",
+]
+
 PESQUISA_HEADERS = {"Accept": "application/json", "Referer": "https://pesquisa.apps.tcu.gov.br/"}
 # ---------------------------------------------------------------------------
 
@@ -405,52 +431,131 @@ def _campos_pesquisa(it: dict) -> dict:
     }
 
 
+def _uma_consulta(sessao: requests.Session, termo: str, filtro: str, rotulo: str,
+                  vistos: dict[str, dict]) -> bool:
+    """Executa uma consulta paginada e acumula em `vistos`. Devolve se respondeu."""
+    inicio = 0
+    respondeu = False
+    for _ in range(PESQUISA_MAX_PAGINAS):
+        params = {"termo": termo, "ordenacao": PESQUISA_ORDENACAO,
+                  "quantidade": PESQUISA_QUANTIDADE, "inicio": inicio}
+        if filtro:
+            params["filtro"] = filtro
+        try:
+            r = sessao.get(PESQUISA_BASE, params=params, headers=PESQUISA_HEADERS, timeout=TIMEOUT)
+            r.raise_for_status()
+            dados = r.json()
+        except (requests.exceptions.RequestException, ValueError) as exc:
+            log.warning("Pesquisa (%s, início %d): %s", rotulo[:34], inicio, exc)
+            break
+        respondeu = True
+        itens = dados if isinstance(dados, list) else (
+            dados.get("documentos") or dados.get("items") or dados.get("resultado")
+            or dados.get("content") or dados.get("hits") or [])
+        if not itens:
+            break
+        for it in itens:
+            campo = _campos_pesquisa(it)
+            if not campo["processo"]:
+                continue
+            # Termo livre casa qualquer texto: confirmamos que ALGUM órgão do MPO
+            # está mesmo entre as unidades, para não trazer processo alheio que
+            # só menciona "planejamento" no assunto.
+            if not campo["orgaos"]:
+                continue
+            ja = vistos.get(campo["processo"])
+            if ja:
+                ja["orgaos"] = sorted(set(ja["orgaos"]) | set(campo["orgaos"]))
+            else:
+                vistos[campo["processo"]] = campo
+        if len(itens) < PESQUISA_QUANTIDADE:
+            break
+        inicio += PESQUISA_QUANTIDADE
+    return respondeu
+
+
+def buscar_por_numero(sessao: requests.Session, numero: str) -> dict | None:
+    """Busca um processo específico pelo número. Rede de segurança para os que
+    o filtro de unidade não captura."""
+    proc_id = so_digitos(numero)
+    for termo in (numero, proc_id):
+        try:
+            params = {"termo": termo, "quantidade": 5, "inicio": 0}
+            r = sessao.get(PESQUISA_BASE, params=params, headers=PESQUISA_HEADERS, timeout=TIMEOUT)
+            r.raise_for_status()
+            itens = r.json().get("documentos") or []
+        except (requests.exceptions.RequestException, ValueError):
+            continue
+        for it in itens:
+            campo = _campos_pesquisa(it)
+            if so_digitos(campo["processo"]) == proc_id:
+                return campo
+    return None
+
+
+def enriquecer_detalhe(sessao: requests.Session, campo: dict) -> None:
+    """
+    Busca o detalhe do processo (MOVIMENTACOES, PECAS) quando a listagem resumida
+    não os trouxe. Atualiza `campo` no lugar; falha silenciosa mantém o resumo.
+    """
+    if campo.get("movimentacoes_pesquisa"):
+        return  # a listagem já trouxe; não precisa
+    proc_id = so_digitos(campo["processo"])
+    if not proc_id:
+        return
+    try:
+        r = sessao.get(PESQUISA_DETALHE, params={"key": campo.get("codigo") or proc_id},
+                       headers=PESQUISA_HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        doc = r.json()
+        doc = doc.get("documento") if isinstance(doc, dict) and "documento" in doc else doc
+    except (requests.exceptions.RequestException, ValueError):
+        return
+    if isinstance(doc, dict):
+        detalhado = _campos_pesquisa(doc)
+        for k in ("movimentacoes_pesquisa", "ultima_pesquisa", "acordao", "relator",
+                  "assunto", "natureza", "estado"):
+            if detalhado.get(k) and not campo.get(k):
+                campo[k] = detalhado[k]
+
+
 def consultar_pesquisa(sessao: requests.Session) -> list[dict]:
     """
-    Consulta o índice público de processos, uma unidade jurisdicionada por vez,
-    paginando até esgotar. É a fonte do campo Estado (Aberto/Encerrado) e da
-    lista completa — inclusive processos sem movimentação recente no boletim.
+    Descobre os processos do MPO por três caminhos complementares:
+      1. filtro estruturado por unidade (várias grafias, inclusive as antigas);
+      2. busca por termo livre (pega grafias que o filtro exato perde);
+      3. busca direta pelos números garantidos (rede de segurança).
+    Depois enriquece cada um com as movimentações do endpoint de detalhe.
     """
     vistos: dict[str, dict] = {}
     houve_resposta = False
 
-    for unidade in PESQUISA_UNIDADES:
-        filtro = f'UNIDADESJURISDICIONADAS:("{unidade}")'
-        inicio = 0
-        for _ in range(PESQUISA_MAX_PAGINAS):
-            params = {"termo": "*", "filtro": filtro, "ordenacao": PESQUISA_ORDENACAO,
-                      "quantidade": PESQUISA_QUANTIDADE, "inicio": inicio}
-            try:
-                r = sessao.get(PESQUISA_BASE, params=params, headers=PESQUISA_HEADERS, timeout=TIMEOUT)
-                r.raise_for_status()
-                dados = r.json()
-            except (requests.exceptions.RequestException, ValueError) as exc:
-                log.warning("Pesquisa Integrada (%s, início %d): %s", unidade[:30], inicio, exc)
-                break
-
+    for filtro in PESQUISA_UNIDADES:
+        if _uma_consulta(sessao, "*", filtro, filtro.split('("')[-1], vistos):
             houve_resposta = True
-            itens = dados if isinstance(dados, list) else (
-                dados.get("documentos") or dados.get("items") or dados.get("resultado")
-                or dados.get("content") or dados.get("hits") or [])
-            if not itens:
-                break
+    log.info("Após filtro por unidade: %d processos", len(vistos))
 
-            for it in itens:
-                campo = _campos_pesquisa(it)
-                if campo["processo"]:
-                    # Um processo pode casar em duas UJs; o primeiro que vier fica,
-                    # mas acumulamos os órgãos.
-                    ja = vistos.get(campo["processo"])
-                    if ja:
-                        ja["orgaos"] = sorted(set(ja["orgaos"]) | set(campo["orgaos"]))
-                    else:
-                        vistos[campo["processo"]] = campo
+    for termo in PESQUISA_TERMOS:
+        if _uma_consulta(sessao, termo, "", "termo " + termo, vistos):
+            houve_resposta = True
+    log.info("Após busca por termo livre: %d processos", len(vistos))
 
-            if len(itens) < PESQUISA_QUANTIDADE:
-                break
-            inicio += PESQUISA_QUANTIDADE
+    for numero in PROCESSOS_GARANTIDOS:
+        if numero in vistos:
+            continue
+        campo = buscar_por_numero(sessao, numero)
+        if campo:
+            campo.setdefault("garantido", True)
+            vistos[numero] = campo
+            log.info("Garantido recuperado: %s", numero)
+        else:
+            log.warning("Garantido NÃO encontrado na base: %s", numero)
 
-        log.info("Pesquisa: %s → %d processos acumulados", unidade[:34], len(vistos))
+    # Enriquecimento: só para os que vieram sem movimentações (a listagem resume).
+    faltam = [c for c in vistos.values() if not c.get("movimentacoes_pesquisa")]
+    log.info("Enriquecendo %d processos sem movimentações na listagem", len(faltam))
+    for campo in faltam:
+        enriquecer_detalhe(sessao, campo)
 
     if not houve_resposta:
         log.error("Pesquisa Integrada não respondeu em nenhuma consulta.")
@@ -493,6 +598,7 @@ def consolidar_pesquisa(processos_pesquisa: list[dict]) -> list[dict]:
             "fase_atual": ultima["descricao"][:80] if ultima else None,
             "atualizado_em": ultima["data"] if ultima else None,
             "url_push": p.get("url_push"),
+            "garantido": p.get("garantido", False),
         })
     saida.sort(key=lambda p: parse_data(p["atualizado_em"]) or datetime.min.replace(tzinfo=timezone.utc),
                reverse=True)
@@ -586,19 +692,20 @@ def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
         if do_orgao:
             por_orgao.append({"orgao": sigla, "nome": cfg["nome"], "total": len(do_orgao)})
 
-    # Distribuição por tipo/natureza de processo — para o gráfico e as tags.
-    tipos: dict[str, dict] = {}
-    for p in processos:
+    abertos_lst = [p for p in processos if normalizar(p.get("estado")) == "aberto"]
+
+    # Distribuição por tipo — SÓ processos abertos (a análise foca no que está
+    # em andamento; encerrados permanecem na lista, mas fora dos gráficos).
+    tipos: dict[str, int] = {}
+    for p in abertos_lst:
         t = (p.get("natureza") or "Não classificado").strip()
-        d = tipos.setdefault(t, {"tipo": t, "total": 0, "abertos": 0})
-        d["total"] += 1
-        if normalizar(p.get("estado")) == "aberto":
-            d["abertos"] += 1
-    por_tipo = sorted(tipos.values(), key=lambda x: -x["total"])
+        tipos[t] = tipos.get(t, 0) + 1
+    por_tipo = sorted(({"tipo": k, "total": v, "abertos": v} for k, v in tipos.items()),
+                      key=lambda x: -x["total"])
 
     movs = [{**m, "processo": p["numero"], "assunto": p["assunto"],
              "natureza": p.get("natureza"), "orgaos": p["orgaos"], "estado": p["estado"]}
-            for p in processos for m in p["movimentacoes"]]
+            for p in abertos_lst for m in p["movimentacoes"]]
     movs.sort(key=lambda m: parse_data(m["data"]) or datetime.min.replace(tzinfo=timezone.utc),
               reverse=True)
 
@@ -626,6 +733,8 @@ def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
             "movimentacoes": len(movs),
             "abertos": sum(1 for p in processos if normalizar(p["estado"]) == "aberto"),
         },
+        "foco_abertos": True,
+        "garantidos": [p["numero"] for p in processos if p.get("garantido")],
         "por_orgao": por_orgao,
         "por_tipo": por_tipo,
         "calor": [{"dia": k, "n": v} for k, v in sorted(calor.items())],
