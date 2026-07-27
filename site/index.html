@@ -55,14 +55,19 @@ section h2{font-size:19px}
 .painel h3{font-family:"Bricolage Grotesque",sans-serif; font-size:15px; margin:0 0 3px; font-weight:600}
 .painel .nota{margin:0 0 14px; font-size:12px; color:var(--muted)}
 
-.calor{display:grid; grid-auto-flow:column; grid-template-rows:repeat(7,1fr); gap:3px; overflow-x:auto; padding-bottom:4px}
-.cel{width:15px; height:15px; border-radius:3px; background:var(--surface-2); border:1px solid var(--line-2)}
-.cel[data-n="1"]{background:#cfe6dd; border-color:transparent}
-.cel[data-n="2"]{background:#8fc7b5; border-color:transparent}
-.cel[data-n="3"]{background:#4c9a83; border-color:transparent}
-.cel[data-n="4"]{background:var(--petrol); border-color:transparent}
-.calor-leg{display:flex; align-items:center; gap:5px; margin-top:11px; font-size:11.5px; color:var(--muted)}
-.calor-leg i{width:14px; height:14px; border-radius:3px; display:inline-block}
+.lt{display:flex; flex-direction:column; gap:15px}
+.lt-row{display:grid; grid-template-columns:130px 1fr; gap:12px; align-items:center}
+.lt-lbl{min-width:0}
+.lt-lbl a{font-family:"JetBrains Mono",monospace; font-size:12.5px; font-weight:600; text-decoration:none; display:block}
+.lt-lbl a:hover{text-decoration:underline}
+.lt-lbl small{font-size:11px; color:var(--muted)}
+.lt-track{position:relative; height:34px}
+.lt-track::before{content:""; position:absolute; left:0; right:0; top:16px; height:2px; background:var(--line-2)}
+.lt-dot{position:absolute; top:11px; width:12px; height:12px; border-radius:50%; background:var(--petrol);
+  border:2px solid var(--surface); transform:translateX(-50%); cursor:default}
+.lt-dot.ac{background:var(--amber); width:14px; height:14px; top:10px}
+.lt-axis{display:grid; grid-template-columns:130px 1fr; gap:12px; margin-top:2px}
+.lt-axis .lt-scale{display:flex; justify-content:space-between; font-family:"JetBrains Mono",monospace; font-size:10px; color:var(--muted)}
 
 .barras{display:flex; flex-direction:column; gap:9px}
 .barra{font:inherit; background:none; border:0; padding:0; cursor:pointer; text-align:left; width:100%}
@@ -143,6 +148,9 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
 
 @media (max-width:820px){
   .grid2{grid-template-columns:1fr}
+  .lt-row{grid-template-columns:1fr; gap:5px}
+  .lt-axis{grid-template-columns:1fr}
+  .lt-axis .lt-scale{margin-top:2px}
   .linha,.cab{grid-template-columns:1fr}
   .cab{display:none}
   .linha .pr{margin-top:4px; padding-top:9px; border-top:1px solid var(--line-2)}
@@ -168,7 +176,7 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
     <div>
       <p class="eyebrow">Tribunal de Contas da União</p>
       <h1>Processos do MPO</h1>
-      <p>Processos em que o Ministério do Planejamento e Orçamento ou suas secretarias constam como unidade jurisdicionada</p>
+      <p>Processos <strong>abertos</strong> em que o Ministério do Planejamento e Orçamento ou suas secretarias constam como unidade jurisdicionada</p>
     </div>
     <p class="quando" id="quando">—</p>
   </div>
@@ -182,20 +190,13 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
     <section>
       <div class="grid2">
         <div class="painel">
-          <h3>Ritmo de movimentações</h3>
-          <p class="nota">Movimentações de processos <b>abertos</b>, por dia, nos últimos 90 dias.</p>
-          <div class="calor" id="calor" role="img" aria-label="Mapa de calor das movimentações por dia"></div>
-          <div class="calor-leg">
-            Menos
-            <i style="background:var(--surface-2);border:1px solid var(--line-2)"></i>
-            <i style="background:#cfe6dd"></i><i style="background:#8fc7b5"></i>
-            <i style="background:#4c9a83"></i><i style="background:var(--petrol)"></i>
-            Mais
-          </div>
+          <h3>Processos mais ativos</h3>
+          <p class="nota">Os 5 com mais andamentos. Cada ponto é uma movimentação; laranja indica acórdão.</p>
+          <div class="lt" id="linha-tempo"></div>
         </div>
         <div class="painel">
           <h3>Tipos de processo</h3>
-          <p class="nota">Distribuição dos processos <b>abertos</b> por tipo. Clique para filtrar.</p>
+          <p class="nota">Distribuição por tipo. Clique numa barra para filtrar a lista.</p>
           <div class="barras" id="barras"></div>
         </div>
       </div>
@@ -293,7 +294,7 @@ function render(){
   document.getElementById("avisos").innerHTML = (D.avisos || []).length
     ? `<div class="aviso"><span aria-hidden="true">▲</span><span>${(D.avisos).map(esc).join(" ")}</span></div>` : "";
   kpis();
-  calor();
+  linhaTempo();
   barras();
   movimentacoes();
   ferramentas();
@@ -301,11 +302,10 @@ function render(){
 }
 
 function kpis(){
-  const total = D.totais.processos, abertos = D.totais.abertos;
+  const total = D.totais.processos;
+  const ocultos = (D.totais.encerrados_ocultos || 0);
   const cartoes = [
-    { f:"", n:total, t:"Processos", d:"Com órgão do MPO como unidade jurisdicionada.", c:"total" },
-    { f:"__aberto", n:abertos, t:"Abertos", d:"Estado ativo, conforme a Pesquisa Integrada.", c:"aberto" },
-    { f:"__encerrado", n:total - abertos, t:"Encerrados", d:"Já concluídos.", c:"encerrado" },
+    { f:"", n:total, t:"Processos abertos", d:"Com órgão do MPO como unidade jurisdicionada. " + (ocultos ? `${ocultos} encerrados fora da análise.` : ""), c:"aberto" },
   ];
   if(PRIO.size) cartoes.push({ f:"__prio", n:PRIO.size, t:"Prioritários", d:"Marcados por você com a estrela.", c:"prio" });
   (D.por_orgao || []).forEach((o) => cartoes.push(
@@ -325,23 +325,30 @@ function kpis(){
   }));
 }
 
-function calor(){
-  const dados = D.calor || [];
-  const el = document.getElementById("calor");
-  if(!dados.length){ el.innerHTML = `<span style="color:var(--muted);font-size:13px">Sem movimentações no período.</span>`; return; }
-  const mapa = new Map(dados.map((d) => [d.dia, d.n]));
-  const max = Math.max(...dados.map((d) => d.n));
-  const nivel = (n) => !n ? 0 : max <= 1 ? 2 : Math.min(4, Math.ceil(n / max * 4));
+function linhaTempo(){
+  const lt = D.linha_tempo || [];
+  const el = document.getElementById("linha-tempo");
+  if(!lt.length){ el.innerHTML = `<span style="color:var(--muted);font-size:13px">Sem processos com andamentos no período.</span>`; return; }
 
-  const hoje = new Date();
-  const inicio = new Date(hoje); inicio.setDate(hoje.getDate() - 90);
-  const cels = [];
-  for(let d = new Date(inicio); d <= hoje; d.setDate(d.getDate() + 1)){
-    const iso = d.toISOString().slice(0, 10);
-    const n = mapa.get(iso) || 0;
-    cels.push(`<div class="cel" data-n="${nivel(n)}" title="${d.toLocaleDateString("pt-BR")}: ${plural(n, "movimentação", "movimentações")}"></div>`);
-  }
-  el.innerHTML = cels.join("");
+  // Escala temporal comum a todas as trilhas: do evento mais antigo ao mais novo.
+  const todas = lt.flatMap((p) => p.eventos.map((e) => dt(e.data)).filter(Boolean));
+  const min = new Date(Math.min(...todas)), max = new Date(Math.max(...todas));
+  const span = Math.max(1, max - min);
+  const pos = (d) => ((dt(d) - min) / span * 100).toFixed(1);
+
+  el.innerHTML = lt.map((p) => {
+    const pontos = p.eventos.map((e) => {
+      const titulo = `${esc(fmt(dt(e.data)))} — ${esc((e.descricao || "").slice(0, 70))}`;
+      return `<span class="lt-dot ${e.acordao ? "ac" : ""}" style="left:${pos(e.data)}%" title="${titulo}"></span>`;
+    }).join("");
+    return `<div class="lt-row">
+      <div class="lt-lbl">
+        <a href="${esc(link(p.processo))}" target="_blank" rel="noopener">${esc(p.processo)} ↗</a>
+        <small>${plural(p.total, "andamento", "andamentos")}${(p.orgaos || []).length ? " · " + esc(p.orgaos.join(", ")) : ""}</small>
+      </div>
+      <div class="lt-track">${pontos}</div>
+    </div>`;
+  }).join("") + `<div class="lt-axis"><span></span><div class="lt-scale"><span>${esc(fmt(min))}</span><span>${esc(fmt(max))}</span></div></div>`;
 }
 
 function barras(){
@@ -372,8 +379,8 @@ function movimentacoes(){
   const hoje = new Date();
   const movs = (D.movimentacoes_recentes || []);
   document.getElementById("sub-movs").textContent = movs.length
-    ? `${plural(movs.length, "movimentação", "movimentações")} nos últimos 10 dias.`
-    : "Nenhuma movimentação nos últimos 10 dias.";
+    ? `${plural(movs.length, "movimentação", "movimentações")} na última semana.`
+    : "Nenhuma movimentação na última semana.";
 
   document.getElementById("movs").innerHTML = movs.length ? movs.map((m) => {
     const d = dt(m.data);
@@ -391,7 +398,7 @@ function movimentacoes(){
         <p class="mov-a">${esc((m.assunto || "").slice(0, 150))}${(m.assunto || "").length > 150 ? "…" : ""}</p>
       </div>
     </li>`;
-  }).join("") : `<li class="vazio">Nenhuma movimentação recente. O feed cobre os últimos 10 dias.</li>`;
+  }).join("") : `<li class="vazio">Nenhuma movimentação na última semana.</li>`;
 }
 
 function ferramentas(){
@@ -423,7 +430,6 @@ function lista(){
   let l = D.processos.filter((p) => {
     if(FILTRO_KPI === "__prio" && !ehPrio(p.numero)) return false;
     if(FILTRO_KPI === "__aberto" && !aberto(p)) return false;
-    if(FILTRO_KPI === "__encerrado" && aberto(p)) return false;
     if(FILTRO_KPI.startsWith("__org_") && !(p.orgaos || []).includes(FILTRO_KPI.slice(6))) return false;
     if(FILTRO_TIPO && (p.natureza || "Não classificado") !== FILTRO_TIPO) return false;
     if(fo && !(p.orgaos || []).includes(fo)) return false;
@@ -439,7 +445,7 @@ function lista(){
 
   document.getElementById("cont").textContent = `${l.length} de ${D.processos.length}`;
   document.getElementById("sub-procs").textContent =
-    "Processos abertos aparecem destacados; os encerrados, esmaecidos.";
+    "Clique na estrela para marcar os processos mais relevantes — eles sobem ao topo.";
 
   document.getElementById("linhas").innerHTML = l.length ? l.map((p) => {
     const d = dt(p.atualizado_em);
@@ -451,7 +457,7 @@ function lista(){
     }).join("");
 
     const prio = ehPrio(p.numero);
-    return `<div class="linha ${prio ? "prio" : ""} ${ab ? "ab" : "fechado"}">
+    return `<div class="linha ${prio ? "prio" : ""} ab">
       <div>
         <div style="display:flex;align-items:center;gap:2px">
           <button type="button" class="estrela ${prio ? "on" : ""}" data-prio="${esc(p.numero)}"
@@ -462,7 +468,6 @@ function lista(){
         </div>
         <div class="pmeta">
           ${(p.orgaos || []).map((o) => `<span class="chip ${esc(o)}">${esc(o)}</span>`).join("")}
-          <span class="chip chip-estado" style="${ab ? "" : "background:var(--muted)"}">${esc(p.estado || "—")}</span>
         </div>
       </div>
       <div>
