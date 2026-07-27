@@ -13,7 +13,7 @@
   --line:#ccd6d2; --line-2:#e3e9e7;
   --petrol:#0e4a44; --amber:#9a5a06; --red:#8a2e26;
   --aberto:#0e6b4f; --aberto-bg:#e2f2ec;
-  --mpo:#0e4a44; --sof:#1b5674; --seplan:#573566; --sma:#63601c; --sest:#7a4a1f;
+  --mpo:#0e4a44; --aeci:#8a4b2f; --se:#2f5a8a; --sof:#1b5674; --seplan:#573566; --sma:#63601c; --sest:#7a4a1f;
   --r:10px; --shadow:0 1px 2px rgba(19,31,28,.05), 0 10px 26px -18px rgba(19,31,28,.3);
 }
 *{box-sizing:border-box}
@@ -55,19 +55,15 @@ section h2{font-size:19px}
 .painel h3{font-family:"Bricolage Grotesque",sans-serif; font-size:15px; margin:0 0 3px; font-weight:600}
 .painel .nota{margin:0 0 14px; font-size:12px; color:var(--muted)}
 
-.lt{display:flex; flex-direction:column; gap:15px}
-.lt-row{display:grid; grid-template-columns:130px 1fr; gap:12px; align-items:center}
-.lt-lbl{min-width:0}
-.lt-lbl a{font-family:"JetBrains Mono",monospace; font-size:12.5px; font-weight:600; text-decoration:none; display:block}
-.lt-lbl a:hover{text-decoration:underline}
-.lt-lbl small{font-size:11px; color:var(--muted)}
-.lt-track{position:relative; height:34px}
-.lt-track::before{content:""; position:absolute; left:0; right:0; top:16px; height:2px; background:var(--line-2)}
-.lt-dot{position:absolute; top:11px; width:12px; height:12px; border-radius:50%; background:var(--petrol);
-  border:2px solid var(--surface); transform:translateX(-50%); cursor:default}
-.lt-dot.ac{background:var(--amber); width:14px; height:14px; top:10px}
-.lt-axis{display:grid; grid-template-columns:130px 1fr; gap:12px; margin-top:2px}
-.lt-axis .lt-scale{display:flex; justify-content:space-between; font-family:"JetBrains Mono",monospace; font-size:10px; color:var(--muted)}
+.rk{display:flex; flex-direction:column; gap:8px}
+.rk-bar{font:inherit; background:none; border:0; padding:0; cursor:pointer; text-align:left; width:100%; display:grid; grid-template-columns:118px 1fr 24px; gap:9px; align-items:center}
+.rk-lbl{font-family:"JetBrains Mono",monospace; font-size:12px; font-weight:600; color:var(--petrol); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.rk-trilho{height:18px; background:var(--surface-2); border-radius:5px; overflow:hidden}
+.rk-fill{height:100%; background:var(--petrol); border-radius:5px; min-width:3px; transition:width .3s}
+.rk-n{font-family:"JetBrains Mono",monospace; font-size:13px; font-weight:600; text-align:right; color:var(--ink)}
+.rk-bar:hover .rk-fill{background:#12645b}
+.rk-bar[aria-pressed="true"] .rk-lbl{color:#c07d0a}
+.rk-bar[aria-pressed="true"] .rk-fill{background:var(--amber)}
 
 .barras{display:flex; flex-direction:column; gap:9px}
 .barra{font:inherit; background:none; border:0; padding:0; cursor:pointer; text-align:left; width:100%}
@@ -82,11 +78,12 @@ section h2{font-size:19px}
 
 .chip{display:inline-block; font-family:"JetBrains Mono",monospace; font-size:10.5px;
   letter-spacing:.05em; text-transform:uppercase; padding:2.5px 7px; border-radius:5px; color:#fff}
-.chip.MPO{background:var(--mpo)} .chip.SOF{background:var(--sof)} .chip.SEPLAN{background:var(--seplan)}
+.chip.MPO{background:var(--mpo)} .chip.AECI{background:var(--aeci)} .chip.SE{background:var(--se)} .chip.SOF{background:var(--sof)} .chip.SEPLAN{background:var(--seplan)}
 .chip.SMA{background:var(--sma)} .chip.SEST{background:var(--sest)}
 .chip-ac{background:#dceae7; color:var(--petrol); text-transform:none; letter-spacing:0}
 .chip-estado{background:var(--aberto); text-transform:none; letter-spacing:0}
 .chip-tipo{background:var(--surface-2); color:var(--ink-2); border:1px solid var(--line); text-transform:none; letter-spacing:0}
+.chip-pauta{background:#f4e6cc; color:#7a4e08; text-transform:none; letter-spacing:0}
 
 .movs{list-style:none; margin:0; padding:0; background:var(--surface); border:1px solid var(--line);
   border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow)}
@@ -148,9 +145,7 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
 
 @media (max-width:820px){
   .grid2{grid-template-columns:1fr}
-  .lt-row{grid-template-columns:1fr; gap:5px}
-  .lt-axis{grid-template-columns:1fr}
-  .lt-axis .lt-scale{margin-top:2px}
+  .rk-bar{grid-template-columns:100px 1fr 22px; gap:7px}
   .linha,.cab{grid-template-columns:1fr}
   .cab{display:none}
   .linha .pr{margin-top:4px; padding-top:9px; border-top:1px solid var(--line-2)}
@@ -190,9 +185,9 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
     <section>
       <div class="grid2">
         <div class="painel">
-          <h3>Processos mais ativos</h3>
-          <p class="nota">Os 5 com mais andamentos. Cada ponto é uma movimentação; laranja indica acórdão.</p>
-          <div class="lt" id="linha-tempo"></div>
+          <h3>Mais movimentados no mês</h3>
+          <p class="nota">Processos com mais andamentos nos últimos 30 dias. Clique para marcar interesse.</p>
+          <div class="rk" id="ranking"></div>
         </div>
         <div class="painel">
           <h3>Tipos de processo</h3>
@@ -203,7 +198,7 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
     </section>
 
     <section>
-      <h2>Últimas movimentações</h2>
+      <h2>Pauta e acórdãos recentes</h2>
       <p class="sub" id="sub-movs"></p>
       <ul class="movs" id="movs"></ul>
     </section>
@@ -249,15 +244,15 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
 const URL_DOC = "https://pesquisa.apps.tcu.gov.br/doc/processo/";
 const DIA = 86400000;
 let D = null, FILTRO_KPI = "", FILTRO_TIPO = "";
-const CHAVE_PRIO = "mpo_prioritarios";
-let PRIO = new Set();
-try { PRIO = new Set(JSON.parse(localStorage.getItem(CHAVE_PRIO) || "[]")); } catch(e){}
-function togglePrio(numero){
-  PRIO.has(numero) ? PRIO.delete(numero) : PRIO.add(numero);
-  try { localStorage.setItem(CHAVE_PRIO, JSON.stringify([...PRIO])); } catch(e){}
-  kpis(); lista();
+const CHAVE_INT = "mpo_interesse";
+let INT = new Set();
+try { INT = new Set(JSON.parse(localStorage.getItem(CHAVE_INT) || "[]")); } catch(e){}
+function toggleInteresse(numero){
+  INT.has(numero) ? INT.delete(numero) : INT.add(numero);
+  try { localStorage.setItem(CHAVE_INT, JSON.stringify([...INT])); } catch(e){}
+  kpis(); rankingMes(); lista();
 }
-const ehPrio = (n) => PRIO.has(n);
+const ehInteresse = (n) => INT.has(n);
 
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) =>
   ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
@@ -294,7 +289,7 @@ function render(){
   document.getElementById("avisos").innerHTML = (D.avisos || []).length
     ? `<div class="aviso"><span aria-hidden="true">▲</span><span>${(D.avisos).map(esc).join(" ")}</span></div>` : "";
   kpis();
-  linhaTempo();
+  rankingMes();
   barras();
   movimentacoes();
   ferramentas();
@@ -307,7 +302,7 @@ function kpis(){
   const cartoes = [
     { f:"", n:total, t:"Processos abertos", d:"Com órgão do MPO como unidade jurisdicionada. " + (ocultos ? `${ocultos} encerrados fora da análise.` : ""), c:"aberto" },
   ];
-  if(PRIO.size) cartoes.push({ f:"__prio", n:PRIO.size, t:"Prioritários", d:"Marcados por você com a estrela.", c:"prio" });
+  if(INT.size) cartoes.push({ f:"__int", n:INT.size, t:"Meu interesse", d:"Marcados por você.", c:"prio" });
   (D.por_orgao || []).forEach((o) => cartoes.push(
     { f:"__org_" + o.orgao, n:o.total, t:o.orgao, d:o.nome, c:"total" }));
 
@@ -325,30 +320,21 @@ function kpis(){
   }));
 }
 
-function linhaTempo(){
-  const lt = D.linha_tempo || [];
-  const el = document.getElementById("linha-tempo");
-  if(!lt.length){ el.innerHTML = `<span style="color:var(--muted);font-size:13px">Sem processos com andamentos no período.</span>`; return; }
-
-  // Escala temporal comum a todas as trilhas: do evento mais antigo ao mais novo.
-  const todas = lt.flatMap((p) => p.eventos.map((e) => dt(e.data)).filter(Boolean));
-  const min = new Date(Math.min(...todas)), max = new Date(Math.max(...todas));
-  const span = Math.max(1, max - min);
-  const pos = (d) => ((dt(d) - min) / span * 100).toFixed(1);
-
-  el.innerHTML = lt.map((p) => {
-    const pontos = p.eventos.map((e) => {
-      const titulo = `${esc(fmt(dt(e.data)))} — ${esc((e.descricao || "").slice(0, 70))}`;
-      return `<span class="lt-dot ${e.acordao ? "ac" : ""}" style="left:${pos(e.data)}%" title="${titulo}"></span>`;
-    }).join("");
-    return `<div class="lt-row">
-      <div class="lt-lbl">
-        <a href="${esc(link(p.processo))}" target="_blank" rel="noopener">${esc(p.processo)} ↗</a>
-        <small>${plural(p.total, "andamento", "andamentos")}${(p.orgaos || []).length ? " · " + esc(p.orgaos.join(", ")) : ""}</small>
-      </div>
-      <div class="lt-track">${pontos}</div>
-    </div>`;
-  }).join("") + `<div class="lt-axis"><span></span><div class="lt-scale"><span>${esc(fmt(min))}</span><span>${esc(fmt(max))}</span></div></div>`;
+function rankingMes(){
+  const rk = D.ranking_mes || [];
+  const el = document.getElementById("ranking");
+  if(!rk.length){ el.innerHTML = `<span style="color:var(--muted);font-size:13px">Sem movimentações no último mês.</span>`; return; }
+  const max = Math.max(...rk.map((r) => r.movimentacoes_mes));
+  el.innerHTML = rk.map((r) => `
+    <button type="button" class="rk-bar" data-num="${esc(r.processo)}" aria-pressed="${ehInteresse(r.processo)}"
+            title="${esc((r.assunto || "").slice(0, 90))}">
+      <span class="rk-lbl">${esc(r.processo)}</span>
+      <span class="rk-trilho"><span class="rk-fill" style="width:${(r.movimentacoes_mes / max * 100).toFixed(0)}%"></span></span>
+      <span class="rk-n">${r.movimentacoes_mes}</span>
+    </button>`).join("");
+  document.querySelectorAll(".rk-bar").forEach((b) => b.addEventListener("click", () => {
+    toggleInteresse(b.dataset.num);
+  }));
 }
 
 function barras(){
@@ -379,8 +365,8 @@ function movimentacoes(){
   const hoje = new Date();
   const movs = (D.movimentacoes_recentes || []);
   document.getElementById("sub-movs").textContent = movs.length
-    ? `${plural(movs.length, "movimentação", "movimentações")} na última semana.`
-    : "Nenhuma movimentação na última semana.";
+    ? `${plural(movs.length, "evento", "eventos")} na última semana — apenas inclusões em pauta e acórdãos.`
+    : "Nenhuma inclusão em pauta ou acórdão na última semana.";
 
   document.getElementById("movs").innerHTML = movs.length ? movs.map((m) => {
     const d = dt(m.data);
@@ -390,7 +376,7 @@ function movimentacoes(){
       <div>
         <div class="mov-l1">
           <a class="mov-n" href="${esc(link(m.processo))}" target="_blank" rel="noopener">${esc(m.processo)} ↗</a>
-          ${m.natureza ? `<span class="chip chip-tipo">${esc(m.natureza)}</span>` : ""}
+          ${m.evento === "pauta" ? `<span class="chip chip-pauta">Incluído em pauta</span>` : ""}
           ${m.acordao ? `<span class="chip chip-ac">Acórdão ${esc(m.acordao)}</span>` : ""}
           ${(m.orgaos || []).map((o) => `<span class="chip ${esc(o)}">${esc(o)}</span>`).join("")}
         </div>
@@ -398,7 +384,7 @@ function movimentacoes(){
         <p class="mov-a">${esc((m.assunto || "").slice(0, 150))}${(m.assunto || "").length > 150 ? "…" : ""}</p>
       </div>
     </li>`;
-  }).join("") : `<li class="vazio">Nenhuma movimentação na última semana.</li>`;
+  }).join("") : `<li class="vazio">Nenhuma inclusão em pauta ou acórdão nos últimos 7 dias.</li>`;
 }
 
 function ferramentas(){
@@ -428,7 +414,7 @@ function lista(){
   const ord = document.getElementById("ordem").value;
 
   let l = D.processos.filter((p) => {
-    if(FILTRO_KPI === "__prio" && !ehPrio(p.numero)) return false;
+    if(FILTRO_KPI === "__int" && !ehInteresse(p.numero)) return false;
     if(FILTRO_KPI === "__aberto" && !aberto(p)) return false;
     if(FILTRO_KPI.startsWith("__org_") && !(p.orgaos || []).includes(FILTRO_KPI.slice(6))) return false;
     if(FILTRO_TIPO && (p.natureza || "Não classificado") !== FILTRO_TIPO) return false;
@@ -440,12 +426,12 @@ function lista(){
 
   if(ord === "numero") l = l.slice().sort((a, b) => a.numero.localeCompare(b.numero));
   else if(ord === "relator") l = l.slice().sort((a, b) => (a.relator || "zz").localeCompare(b.relator || "zz"));
-  // Prioritários sempre no topo, preservada a ordem interna escolhida.
-  l = l.slice().sort((a, b) => (ehPrio(b.numero) ? 1 : 0) - (ehPrio(a.numero) ? 1 : 0));
+  // Processos de interesse sempre no topo.
+  l = l.slice().sort((a, b) => (ehInteresse(b.numero) ? 1 : 0) - (ehInteresse(a.numero) ? 1 : 0));
 
   document.getElementById("cont").textContent = `${l.length} de ${D.processos.length}`;
   document.getElementById("sub-procs").textContent =
-    "Clique na estrela para marcar os processos mais relevantes — eles sobem ao topo.";
+    "Clique na estrela para marcar interesse — os marcados sobem ao topo e viram um filtro no topo da página.";
 
   document.getElementById("linhas").innerHTML = l.length ? l.map((p) => {
     const d = dt(p.atualizado_em);
@@ -456,14 +442,14 @@ function lista(){
         m.acordao ? ` <b>Ac. ${esc(m.acordao)}</b>` : ""}</span>`;
     }).join("");
 
-    const prio = ehPrio(p.numero);
-    return `<div class="linha ${prio ? "prio" : ""} ab">
+    const inter = ehInteresse(p.numero);
+    return `<div class="linha ${inter ? "prio" : ""} ab">
       <div>
         <div style="display:flex;align-items:center;gap:2px">
-          <button type="button" class="estrela ${prio ? "on" : ""}" data-prio="${esc(p.numero)}"
-                  title="${prio ? "Remover dos prioritários" : "Marcar como prioritário"}"
-                  aria-label="${prio ? "Remover dos prioritários" : "Marcar como prioritário"}"
-                  aria-pressed="${prio}">${prio ? "★" : "☆"}</button>
+          <button type="button" class="estrela ${inter ? "on" : ""}" data-int="${esc(p.numero)}"
+                  title="${inter ? "Remover do meu interesse" : "Marcar interesse"}"
+                  aria-label="${inter ? "Remover do meu interesse" : "Marcar interesse"}"
+                  aria-pressed="${inter}">${inter ? "★" : "☆"}</button>
           <a class="pn" href="${esc(link(p.numero))}" target="_blank" rel="noopener">${esc(p.numero)} ↗</a>
         </div>
         <div class="pmeta">
@@ -484,7 +470,7 @@ function lista(){
 
   document.querySelectorAll(".estrela").forEach((b) => b.addEventListener("click", (e) => {
     e.preventDefault(); e.stopPropagation();
-    togglePrio(b.dataset.prio);
+    toggleInteresse(b.dataset.int);
   }));
 }
 
