@@ -109,9 +109,20 @@ UNIDADES: dict[str, dict[str, Any]] = {
         "padroes": [
             r"minist[eé]rio do planejamento e or[cç]amento",
             r"minist[eé]rio do planejamento, or[cç]amento e gest[aã]o",
-            r"secretaria-?executiva do minist[eé]rio do planejamento",
-            r"assessoria especial de controle interno do minist[eé]rio do planejamento",
             r"\bmpo\b",
+        ],
+    },
+    "AECI": {
+        "nome": "Assessoria Especial de Controle Interno do MPO",
+        "padroes": [
+            r"assessoria especial de controle interno do minist[eé]rio do planejamento",
+            r"\baeci\b",
+        ],
+    },
+    "SE": {
+        "nome": "Secretaria-Executiva do MPO",
+        "padroes": [
+            r"secretaria-?executiva do minist[eé]rio do planejamento",
         ],
     },
     "SOF": {"nome": "Secretaria de Orçamento Federal",
@@ -143,8 +154,22 @@ RX_UNIDADES = {s: [re.compile(p) for p in c["padroes"]] for s, c in UNIDADES.ite
 
 
 def orgaos_em(texto: str | None) -> list[str]:
-    n = normalizar(texto)
-    return [s for s, rxs in RX_UNIDADES.items() if any(rx.search(n) for rx in rxs)]
+    """
+    Casa órgãos por UNIDADE. A lista de UJs vem separada por ';' — avalio cada
+    uma isolada para não misturar. AECI e SE contêm "Ministério do Planejamento
+    e Orçamento" no nome, então numa mesma unidade elas têm precedência sobre o
+    MPO: uma UJ é a Assessoria de Controle Interno OU o Ministério, não os dois.
+    """
+    achados: set[str] = set()
+    for parte in re.split(r"[;\n]", texto or ""):
+        n = normalizar(parte)
+        if not n:
+            continue
+        casaram = [s for s, rxs in RX_UNIDADES.items() if any(rx.search(n) for rx in rxs)]
+        if ("AECI" in casaram or "SE" in casaram) and "MPO" in casaram:
+            casaram.remove("MPO")  # a UJ específica prevalece sobre o guarda-chuva
+        achados.update(casaram)
+    return sorted(achados)
 
 
 def so_digitos(numero: Any) -> str:
@@ -715,26 +740,40 @@ def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
     movs.sort(key=lambda m: parse_data(m["data"]) or datetime.min.replace(tzinfo=timezone.utc),
               reverse=True)
 
-    # Linha do tempo: os 5 processos abertos com mais andamentos, cada um com
-    # seus eventos datados, para desenhar trilhas comparáveis.
-    ranking = sorted(processos, key=lambda p: len(p["movimentacoes"]), reverse=True)[:5]
-    linha_tempo = []
-    for p in ranking:
-        eventos = [{"data": m["data"], "descricao": m.get("descricao") or m.get("fase"),
-                    "acordao": m.get("acordao")}
-                   for m in p["movimentacoes"] if m.get("data")]
-        eventos.sort(key=lambda e: e["data"] or "")
-        if eventos:
-            linha_tempo.append({
+    # Ranking do último mês: processos com mais movimentações nos últimos 30
+    # dias. Vira gráfico de barras clicável no painel.
+    limite_30 = (hoje - timedelta(days=30)).isoformat()
+    contagem_mes: dict[str, dict] = {}
+    for p in processos:
+        recentes_p = [m for m in p["movimentacoes"] if (_dia(m["data"]) or "") >= limite_30]
+        if recentes_p:
+            contagem_mes[p["numero"]] = {
                 "processo": p["numero"], "orgaos": p["orgaos"],
-                "assunto": p["assunto"], "natureza": p.get("natureza"),
-                "relator": p.get("relator"), "total": len(p["movimentacoes"]),
-                "eventos": eventos,
-            })
+                "assunto": p["assunto"], "relator": p.get("relator"),
+                "movimentacoes_mes": len(recentes_p),
+            }
+    ranking_mes = sorted(contagem_mes.values(), key=lambda x: -x["movimentacoes_mes"])[:8]
 
-    # Movimentações da última semana, para o feed enxuto.
+    # Movimentações da última semana — SÓ inclusão em pauta ou acórdão publicado.
+    # O feed deixa de listar despachos internos e passa a marcar apenas os
+    # eventos de peso: entrou em pauta (vai a julgamento) ou saiu acórdão.
+    def evento_relevante(m: dict) -> str | None:
+        if m.get("acordao"):
+            return "acordao"
+        desc = normalizar(m.get("descricao") or m.get("fase"))
+        # "incluído em pauta", "incluida em pauta", "inclusão em pauta"
+        if "pauta" in desc and ("inclu" in desc or "pautad" in desc):
+            return "pauta"
+        return None
+
     limite_7 = (hoje - timedelta(days=7)).isoformat()
-    recentes = [m for m in movs if (_dia(m["data"]) or "") >= limite_7]
+    recentes = []
+    for m in movs:
+        if (_dia(m["data"]) or "") < limite_7:
+            continue
+        tipo_ev = evento_relevante(m)
+        if tipo_ev:
+            recentes.append({**m, "evento": tipo_ev})
 
     return {
         "versao": 2,
@@ -752,7 +791,7 @@ def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
         "garantidos": [p["numero"] for p in processos if p.get("garantido")],
         "por_orgao": por_orgao,
         "por_tipo": por_tipo,
-        "linha_tempo": linha_tempo,
+        "ranking_mes": ranking_mes,
         "processos": processos,
         "movimentacoes_recentes": recentes[:60],
         "movimentacoes": movs[:200],
