@@ -1,13 +1,13 @@
 {
  "versao": 1,
- "gerado_em": "2026-07-24T19:39:39.947520+00:00",
- "gerado_em_br": "24/07/2026 às 19:39",
+ "gerado_em": "2026-07-27T12:11:58.647888+00:00",
+ "gerado_em_br": "27/07/2026 às 12:11",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
   "processos": 211,
-  "movimentacoes": 565,
+  "movimentacoes": 566,
   "abertos": 30
  },
  "por_orgao": [
@@ -70,6 +70,196 @@
    "fase_atual": "Registrada ciência de comunicação do Ofício 26884/2026-TCU/Seproc via CONECTA TC",
    "atualizado_em": "2026-07-24T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1460920266"
+  },
+  {
+   "numero": "013.946/2026-9",
+   "id": "01394620269",
+   "codigo": "80524790",
+   "estado": "Aberto",
+   "relator": "Walton Alencar Rodrigues",
+   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
+   "natureza": "Representação",
+   "unidades": [
+    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "STN - Secretaria do Tesouro Nacional"
+   ],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-07-24T00:00:00+00:00",
+     "descricao": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-24T00:00:00+00:00",
+     "descricao": "Pronunciamento da AudFiscal concluído",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-06-17T00:00:00+00:00",
+     "descricao": "Unidade responsável técnica alterada de AudFiscal para Diref por AudFiscal",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-24T00:00:00+00:00",
+    "descricao": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
+   "atualizado_em": "2026-07-24T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1394620269"
+  },
+  {
+   "numero": "007.318/2026-0",
+   "id": "00731820260",
+   "codigo": "80119897",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "unidades": [
+    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "CC/PR - Casa Civil da Presidência da República",
+    "RFB - Secretaria Especial da Receita Federal do Brasil"
+   ],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-07-24T00:00:00+00:00",
+     "descricao": "Peça nº 163 do tipo Portaria de Fiscalização (doc 80.740.800-9) publicada no BTCU Controle Externo n° 125, de 24/07/2026.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-24T00:00:00+00:00",
+     "descricao": "Peça nº 164 do tipo Portaria de Fiscalização (doc 80.744.846-3) publicada no BTCU Controle Externo n° 125, de 24/07/2026.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-06-03T00:00:00+00:00",
+     "descricao": "Documento Relatório de Gestão Fiscal (Ofício nº 214/2026/GPRE/TRT16) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-24T00:00:00+00:00",
+    "descricao": "Peça nº 163 do tipo Portaria de Fiscalização (doc 80.740.800-9) publicada no BTCU Controle Externo n° 125, de 24/07/2026.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Peça nº 163 do tipo Portaria de Fiscalização (doc 80.740.800-9) publicada no BTC",
+   "atualizado_em": "2026-07-24T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=731820260"
+  },
+  {
+   "numero": "006.412/2026-2",
+   "id": "00641220262",
+   "codigo": "80008933",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "unidades": [
+    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "STN - Secretaria do Tesouro Nacional"
+   ],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-07-24T00:00:00+00:00",
+     "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-24T00:00:00+00:00",
+     "descricao": "Pronunciamento da AudFiscal concluído",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-17T00:00:00+00:00",
+     "descricao": "Registrada resposta de comunicação do Ofício 24271/2026-TCU/Seproc.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-24T00:00:00+00:00",
+    "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
+   "atualizado_em": "2026-07-24T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=641220262"
+  },
+  {
+   "numero": "017.463/2025-4",
+   "id": "01746320254",
+   "codigo": "78795505",
+   "estado": "Aberto",
+   "relator": "Benjamin Zymler",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "natureza": "Relatório de Acompanhamento",
+   "unidades": [
+    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "BCB - Banco Central do Brasil",
+    "RFB - Secretaria Especial da Receita Federal do Brasil"
+   ],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-07-24T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 29/07/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-06-02T00:00:00+00:00",
+     "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por Seproc",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-05-11T00:00:00+00:00",
+     "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 13/05/2026, às 14h30",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-24T00:00:00+00:00",
+    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 29/07/2026, às 14h30.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 29/07/",
+   "atualizado_em": "2026-07-24T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1746320254"
   },
   {
    "numero": "018.918/2025-5",
@@ -250,47 +440,6 @@
    "fase_atual": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
    "atualizado_em": "2026-07-20T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1251320261"
-  },
-  {
-   "numero": "006.412/2026-2",
-   "id": "00641220262",
-   "codigo": "80008933",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-07-17T00:00:00+00:00",
-     "descricao": "Registrada resposta de comunicação do Ofício 24271/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-17T00:00:00+00:00",
-     "descricao": "Processo enviado de Seproc para AudFiscal/Difes. (Diretoria de Fiscalização do Financiamento Estatal)",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-17T00:00:00+00:00",
-    "descricao": "Registrada resposta de comunicação do Ofício 24271/2026-TCU/Seproc.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada resposta de comunicação do Ofício 24271/2026-TCU/Seproc.",
-   "atualizado_em": "2026-07-17T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=641220262"
   },
   {
    "numero": "015.321/2025-8",
@@ -913,53 +1062,6 @@
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2234220257"
   },
   {
-   "numero": "013.946/2026-9",
-   "id": "01394620269",
-   "codigo": "80524790",
-   "estado": "Aberto",
-   "relator": "Walton Alencar Rodrigues",
-   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
-   "natureza": "Representação",
-   "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-06-17T00:00:00+00:00",
-     "descricao": "Unidade responsável técnica alterada de AudFiscal para Diref por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-06-16T00:00:00+00:00",
-     "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-06-16T00:00:00+00:00",
-     "descricao": "Membro do MPTCU designado alterado de a definir para MARINUS MARSICO automaticamente pelo sistema",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-06-17T00:00:00+00:00",
-    "descricao": "Unidade responsável técnica alterada de AudFiscal para Diref por AudFiscal",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Unidade responsável técnica alterada de AudFiscal para Diref por AudFiscal",
-   "atualizado_em": "2026-06-17T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1394620269"
-  },
-  {
    "numero": "005.678/2025-0",
    "id": "00567820250",
    "codigo": "77840306",
@@ -1144,102 +1246,6 @@
    "fase_atual": "Processo encerrado por AudFiscal/Diref. Motivo: Cumprimento de objetivo.",
    "atualizado_em": "2026-06-15T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2424120253"
-  },
-  {
-   "numero": "007.318/2026-0",
-   "id": "00731820260",
-   "codigo": "80119897",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
-    "CC/PR - Casa Civil da Presidência da República",
-    "RFB - Secretaria Especial da Receita Federal do Brasil"
-   ],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-06-03T00:00:00+00:00",
-     "descricao": "Documento Relatório de Gestão Fiscal (Ofício nº 214/2026/GPRE/TRT16) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-06-03T00:00:00+00:00",
-     "descricao": "Documento Relatório de Gestão Fiscal (RELATORIO DE GESTÃO FISCAL CJF) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-06-03T00:00:00+00:00",
-     "descricao": "Documento Relatório de Gestão Fiscal (RGF SICONFI- ATESTA PUBLICAÇÃO) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-06-03T00:00:00+00:00",
-    "descricao": "Documento Relatório de Gestão Fiscal (Ofício nº 214/2026/GPRE/TRT16) juntado ao processo por AudFiscal",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Relatório de Gestão Fiscal (Ofício nº 214/2026/GPRE/TRT16) juntado ao ",
-   "atualizado_em": "2026-06-03T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=731820260"
-  },
-  {
-   "numero": "017.463/2025-4",
-   "id": "01746320254",
-   "codigo": "78795505",
-   "estado": "Aberto",
-   "relator": "Benjamin Zymler",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
-   "natureza": "Relatório de Acompanhamento",
-   "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
-    "BCB - Banco Central do Brasil",
-    "RFB - Secretaria Especial da Receita Federal do Brasil"
-   ],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-06-02T00:00:00+00:00",
-     "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por Seproc",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-05-11T00:00:00+00:00",
-     "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 13/05/2026, às 14h30",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-05-08T00:00:00+00:00",
-     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 13/05/2026, às 14h30.",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-06-02T00:00:00+00:00",
-    "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por Seproc",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Novos elementos/informações adicionais juntado ao processo por Seproc",
-   "atualizado_em": "2026-06-02T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1746320254"
   },
   {
    "numero": "016.873/2025-4",
@@ -9632,6 +9638,97 @@
    "estado": "Aberto"
   },
   {
+   "data": "2026-07-24T00:00:00+00:00",
+   "descricao": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "013.946/2026-9",
+   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-24T00:00:00+00:00",
+   "descricao": "Pronunciamento da AudFiscal concluído",
+   "fase": null,
+   "acordao": null,
+   "processo": "013.946/2026-9",
+   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-24T00:00:00+00:00",
+   "descricao": "Peça nº 163 do tipo Portaria de Fiscalização (doc 80.740.800-9) publicada no BTCU Controle Externo n° 125, de 24/07/2026.",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.318/2026-0",
+   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-24T00:00:00+00:00",
+   "descricao": "Peça nº 164 do tipo Portaria de Fiscalização (doc 80.744.846-3) publicada no BTCU Controle Externo n° 125, de 24/07/2026.",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.318/2026-0",
+   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-24T00:00:00+00:00",
+   "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-24T00:00:00+00:00",
+   "descricao": "Pronunciamento da AudFiscal concluído",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-24T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 29/07/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.463/2025-4",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
    "data": "2026-07-23T00:00:00+00:00",
    "descricao": "Registrada resposta de comunicação do Ofício 25943/2026-TCU/Seproc.",
    "fase": null,
@@ -9751,19 +9848,6 @@
   {
    "data": "2026-07-17T00:00:00+00:00",
    "descricao": "Registrada resposta de comunicação do Ofício 24271/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-17T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/Difes. (Diretoria de Fiscalização do Financiamento Estatal)",
    "fase": null,
    "acordao": null,
    "processo": "006.412/2026-2",
@@ -10192,32 +10276,6 @@
   },
   {
    "data": "2026-06-16T00:00:00+00:00",
-   "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
-   "fase": null,
-   "acordao": null,
-   "processo": "013.946/2026-9",
-   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-16T00:00:00+00:00",
-   "descricao": "Membro do MPTCU designado alterado de a definir para MARINUS MARSICO automaticamente pelo sistema",
-   "fase": null,
-   "acordao": null,
-   "processo": "013.946/2026-9",
-   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-16T00:00:00+00:00",
    "descricao": "Documento Informações para subsidiar defesa da União (AGU) juntado ao processo por MIN-AAA",
    "fase": null,
    "acordao": null,
@@ -10296,6 +10354,19 @@
   },
   {
    "data": "2026-06-03T00:00:00+00:00",
+   "descricao": "Documento Relatório de Gestão Fiscal (Ofício nº 214/2026/GPRE/TRT16) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.318/2026-0",
+   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-06-03T00:00:00+00:00",
    "descricao": "Registrada resposta de comunicação do Ofício 16687/2026-TCU/Seproc.",
    "fase": null,
    "acordao": null,
@@ -10314,45 +10385,6 @@
    "acordao": null,
    "processo": "022.280/2024-3",
    "assunto": "Auditoria operacional sobre a estrutura e o funcionamento da Aneel, ANP, Anatel e ANM",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-03T00:00:00+00:00",
-   "descricao": "Documento Relatório de Gestão Fiscal (Ofício nº 214/2026/GPRE/TRT16) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "007.318/2026-0",
-   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-03T00:00:00+00:00",
-   "descricao": "Documento Relatório de Gestão Fiscal (RELATORIO DE GESTÃO FISCAL CJF) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "007.318/2026-0",
-   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-03T00:00:00+00:00",
-   "descricao": "Documento Relatório de Gestão Fiscal (RGF SICONFI- ATESTA PUBLICAÇÃO) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "007.318/2026-0",
-   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
    "orgaos": [
     "MPO",
     "SOF"
@@ -10661,19 +10693,6 @@
   {
    "data": "2026-05-11T00:00:00+00:00",
    "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 13/05/2026, às 14h30",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.463/2025-4",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-05-08T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 13/05/2026, às 14h30.",
    "fase": null,
    "acordao": null,
    "processo": "017.463/2025-4",
@@ -12195,19 +12214,6 @@
   {
    "data": "2025-02-20T00:00:00+00:00",
    "descricao": "Processo encerrado por AudFiscal/Diref. Motivo: Cumprimento de objetivo.",
-   "fase": null,
-   "acordao": null,
-   "processo": "002.080/2024-9",
-   "assunto": "Consulta acerca da aplicação do disposto no inciso II do § 18 do art. 71 da Lei de Diretrizes Orçamentárias para 2024 (LDO 2024), à luz do disposto no art. 7º da Lei Complementar nº 200, de 30 de agosto de 2023, e no inciso III do art. 5º da Lei nº 10.028, de 19 de outubro de 2000, em contexto no qual o Relatório de Avaliação de Receitas e Despesas Primárias aponte necessidade de contingenciamento.",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Encerrado"
-  },
-  {
-   "data": "2025-02-19T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
    "fase": null,
    "acordao": null,
    "processo": "002.080/2024-9",
