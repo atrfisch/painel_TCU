@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-07-27T17:56:48.922848+00:00",
- "gerado_em_br": "27/07/2026 às 17:56",
+ "gerado_em": "2026-07-27T19:52:54.038116+00:00",
+ "gerado_em_br": "27/07/2026 às 19:52",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -265,6 +265,12 @@
    "movimentacoes": [
     {
      "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Aviso 0736/2026-TCU/Seproc via CONECTA TCU por MARCELLO FERNANDES DE SOUZA em nome de COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR - SF",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-27T00:00:00+00:00",
      "descricao": "Registrada ciência de comunicação do Aviso 0737/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
      "fase": null,
      "acordao": null
@@ -272,12 +278,6 @@
     {
      "data": "2026-07-27T00:00:00+00:00",
      "descricao": "Processo enviado de Seproc para AudRecursos/AudRecursos-ASS. (Assessoria da AudRecursos)",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-27T00:00:00+00:00",
-     "descricao": "Documento Aviso juntado ao processo por Gabpres",
      "fase": null,
      "acordao": null
     },
@@ -290,11 +290,11 @@
    ],
    "ultima_movimentacao": {
     "data": "2026-07-27T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Aviso 0737/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
+    "descricao": "Registrada ciência de comunicação do Aviso 0736/2026-TCU/Seproc via CONECTA TCU por MARCELLO FERNANDES DE SOUZA em nome de COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR - SF",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Registrada ciência de comunicação do Aviso 0737/2026-TCU/Seproc via CONECTA TCU ",
+   "fase_atual": "Registrada ciência de comunicação do Aviso 0736/2026-TCU/Seproc via CONECTA TCU ",
    "atualizado_em": "2026-07-27T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2563220248",
    "garantido": true
@@ -2237,6 +2237,17 @@
   },
   {
    "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Aviso 0736/2026-TCU/Seproc via CONECTA TCU por MARCELLO FERNANDES DE SOUZA em nome de COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR - SF",
+   "fase": null,
+   "acordao": null,
+   "processo": "025.632/2024-8",
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Aviso 0737/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
    "fase": null,
    "acordao": null,
@@ -2249,17 +2260,6 @@
   {
    "data": "2026-07-27T00:00:00+00:00",
    "descricao": "Processo enviado de Seproc para AudRecursos/AudRecursos-ASS. (Assessoria da AudRecursos)",
-   "fase": null,
-   "acordao": null,
-   "processo": "025.632/2024-8",
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-27T00:00:00+00:00",
-   "descricao": "Documento Aviso juntado ao processo por Gabpres",
    "fase": null,
    "acordao": null,
    "processo": "025.632/2024-8",
