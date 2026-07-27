@@ -69,9 +69,12 @@ PESQUISA_ORDENACAO = "DTAUTUACAOORDENACAO desc, NUMEROCOMZEROS desc, KEY asc"
 PESQUISA_UNIDADES = [
     'UNIDADESJURISDICIONADAS:("Ministério do Planejamento e Orçamento")',
     'UNIDADESJURISDICIONADAS:("Secretaria de Orçamento Federal")',
+    'UNIDADESJURISDICIONADAS:("SOF/MPO - Secretaria de Orçamento Federal")',
     'UNIDADESJURISDICIONADAS:("Secretaria Nacional de Planejamento")',
     'UNIDADESJURISDICIONADAS:("Secretaria de Monitoramento e Avaliação")',
     'UNIDADESJURISDICIONADAS:("Secretaria de Coordenação e Governança das Empresas Estatais")',
+    'UNIDADESJURISDICIONADAS:("Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento")',
+    'UNIDADESJURISDICIONADAS:("Secretaria-Executiva do Ministério do Planejamento e Orçamento")',
     'UNIDADESJURISDICIONADAS:("Ministério do Planejamento, Desenvolvimento e Gestão")',
     'UNIDADESJURISDICIONADAS:("Ministério da Economia")',
 ]
@@ -686,18 +689,21 @@ def _dia(iso_str: str | None) -> str | None:
 def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
     agora = datetime.now(timezone.utc)
     hoje = agora.date()
+
+    # FOCO EM ABERTOS: encerrados saem de todo o painel. Guardamos a contagem
+    # só para registrar quantos foram descartados.
+    total_bruto = len(processos)
+    encerrados = sum(1 for p in processos if normalizar(p.get("estado")) != "aberto")
+    processos = [p for p in processos if normalizar(p.get("estado")) == "aberto"]
     por_orgao = []
     for sigla, cfg in UNIDADES.items():
         do_orgao = [p for p in processos if sigla in p["orgaos"]]
         if do_orgao:
             por_orgao.append({"orgao": sigla, "nome": cfg["nome"], "total": len(do_orgao)})
 
-    abertos_lst = [p for p in processos if normalizar(p.get("estado")) == "aberto"]
-
-    # Distribuição por tipo — SÓ processos abertos (a análise foca no que está
-    # em andamento; encerrados permanecem na lista, mas fora dos gráficos).
+    # Distribuição por tipo (todos já são abertos).
     tipos: dict[str, int] = {}
-    for p in abertos_lst:
+    for p in processos:
         t = (p.get("natureza") or "Não classificado").strip()
         tipos[t] = tipos.get(t, 0) + 1
     por_tipo = sorted(({"tipo": k, "total": v, "abertos": v} for k, v in tipos.items()),
@@ -705,21 +711,30 @@ def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
 
     movs = [{**m, "processo": p["numero"], "assunto": p["assunto"],
              "natureza": p.get("natureza"), "orgaos": p["orgaos"], "estado": p["estado"]}
-            for p in abertos_lst for m in p["movimentacoes"]]
+            for p in processos for m in p["movimentacoes"]]
     movs.sort(key=lambda m: parse_data(m["data"]) or datetime.min.replace(tzinfo=timezone.utc),
               reverse=True)
 
-    # Mapa de calor: contagem de movimentações por dia nos últimos 90 dias.
-    calor: dict[str, int] = {}
-    limite_calor = (hoje - timedelta(days=90)).isoformat()
-    for m in movs:
-        dia = _dia(m["data"])
-        if dia and dia >= limite_calor:
-            calor[dia] = calor.get(dia, 0) + 1
+    # Linha do tempo: os 5 processos abertos com mais andamentos, cada um com
+    # seus eventos datados, para desenhar trilhas comparáveis.
+    ranking = sorted(processos, key=lambda p: len(p["movimentacoes"]), reverse=True)[:5]
+    linha_tempo = []
+    for p in ranking:
+        eventos = [{"data": m["data"], "descricao": m.get("descricao") or m.get("fase"),
+                    "acordao": m.get("acordao")}
+                   for m in p["movimentacoes"] if m.get("data")]
+        eventos.sort(key=lambda e: e["data"] or "")
+        if eventos:
+            linha_tempo.append({
+                "processo": p["numero"], "orgaos": p["orgaos"],
+                "assunto": p["assunto"], "natureza": p.get("natureza"),
+                "relator": p.get("relator"), "total": len(p["movimentacoes"]),
+                "eventos": eventos,
+            })
 
-    # Movimentações dos últimos 10 dias, para o feed enxuto.
-    limite_10 = (hoje - timedelta(days=10)).isoformat()
-    recentes = [m for m in movs if (_dia(m["data"]) or "") >= limite_10]
+    # Movimentações da última semana, para o feed enxuto.
+    limite_7 = (hoje - timedelta(days=7)).isoformat()
+    recentes = [m for m in movs if (_dia(m["data"]) or "") >= limite_7]
 
     return {
         "versao": 2,
@@ -731,13 +746,13 @@ def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
         "totais": {
             "processos": len(processos),
             "movimentacoes": len(movs),
-            "abertos": sum(1 for p in processos if normalizar(p["estado"]) == "aberto"),
+            "abertos": len(processos),
+            "encerrados_ocultos": encerrados,
         },
-        "foco_abertos": True,
         "garantidos": [p["numero"] for p in processos if p.get("garantido")],
         "por_orgao": por_orgao,
         "por_tipo": por_tipo,
-        "calor": [{"dia": k, "n": v} for k, v in sorted(calor.items())],
+        "linha_tempo": linha_tempo,
         "processos": processos,
         "movimentacoes_recentes": recentes[:60],
         "movimentacoes": movs[:200],
