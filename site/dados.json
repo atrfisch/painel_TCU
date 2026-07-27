@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-07-27T14:46:27.857004+00:00",
- "gerado_em_br": "27/07/2026 às 14:46",
+ "gerado_em": "2026-07-27T17:56:48.922848+00:00",
+ "gerado_em_br": "27/07/2026 às 17:56",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -9,11 +9,12 @@
   "processos": 37,
   "movimentacoes": 106,
   "abertos": 37,
-  "encerrados_ocultos": 185
+  "encerrados_ocultos": 186,
+  "so_interesse": 0
  },
  "garantidos": [
-  "005.104/2023-8",
   "025.632/2024-8",
+  "005.104/2023-8",
   "011.685/2026-3",
   "007.158/2026-2",
   "017.106/2025-7",
@@ -24,12 +25,16 @@
   {
    "orgao": "MPO",
    "nome": "Ministério do Planejamento e Orçamento",
-   "total": 30
+   "total": 30,
+   "como_unidade": 30,
+   "como_interessado": 0
   },
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 30
+   "total": 30,
+   "como_unidade": 30,
+   "como_interessado": 0
   }
  ],
  "por_tipo": [
@@ -79,6 +84,36 @@
    "abertos": 1
   }
  ],
+ "por_relator": [
+  {
+   "relator": "Benjamin Zymler",
+   "total": 10
+  },
+  {
+   "relator": "Antonio Anastasia",
+   "total": 9
+  },
+  {
+   "relator": "Jhonatan de Jesus",
+   "total": 6
+  },
+  {
+   "relator": "Walton Alencar Rodrigues",
+   "total": 4
+  },
+  {
+   "relator": "Bruno Dantas",
+   "total": 3
+  },
+  {
+   "relator": "Jorge Oliveira",
+   "total": 3
+  },
+  {
+   "relator": "Augusto Nardes",
+   "total": 2
+  }
+ ],
  "ranking_mes": [
   {
    "processo": "025.632/2024-8",
@@ -86,6 +121,16 @@
    "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
    "relator": "Bruno Dantas",
    "movimentacoes_mes": 4
+  },
+  {
+   "processo": "006.412/2026-2",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 3
   },
   {
    "processo": "005.104/2023-8",
@@ -101,16 +146,6 @@
     "SOF"
    ],
    "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "006.412/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
    "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
   },
@@ -154,6 +189,117 @@
  ],
  "processos": [
   {
+   "numero": "006.412/2026-2",
+   "id": "00641220262",
+   "codigo": "80008933",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "unidades": [
+    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "STN - Secretaria do Tesouro Nacional"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Distribuído para o gabinete do Procurador Júlio Marcelo",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Processo enviado de MIN-AAA para PROC-G/PROC-G. (Gabinete do Procurador-Geral)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Documento Solicitação de Oitiva do MPTCU juntado ao processo por MIN-AAA",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-27T00:00:00+00:00",
+    "descricao": "Distribuído para o gabinete do Procurador Júlio Marcelo",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Distribuído para o gabinete do Procurador Júlio Marcelo",
+   "atualizado_em": "2026-07-27T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=641220262",
+   "garantido": false
+  },
+  {
+   "numero": "025.632/2024-8",
+   "id": "02563220248",
+   "codigo": "77080640",
+   "estado": "Aberto",
+   "relator": "Bruno Dantas",
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "natureza": "Relatório de Auditoria",
+   "unidades": [
+    "BB - Banco do Brasil S.A.",
+    "BCB - Banco Central do Brasil",
+    "BNDES - Banco Nacional de Desenvolvimento Econômico e Social"
+   ],
+   "interessados": [],
+   "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": null,
+   "acordao": "1887/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Aviso 0737/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Processo enviado de Seproc para AudRecursos/AudRecursos-ASS. (Assessoria da AudRecursos)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Documento Aviso juntado ao processo por Gabpres",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-16T00:00:00+00:00",
+     "descricao": "Acórdão 1887/2026 — Plenário",
+     "fase": "Julgado",
+     "acordao": "1887/2026"
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-27T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Aviso 0737/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Aviso 0737/2026-TCU/Seproc via CONECTA TCU ",
+   "atualizado_em": "2026-07-27T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2563220248",
+   "garantido": true
+  },
+  {
    "numero": "005.104/2023-8",
    "id": "00510420238",
    "codigo": "73127059",
@@ -164,7 +310,11 @@
    "unidades": [
     "INFRA S.A. - Valec Engenharia Construcoes e Ferrovias S/a"
    ],
+   "interessados": [],
    "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": null,
    "acordao": null,
    "movimentacoes": [
     {
@@ -210,10 +360,17 @@
     "BCB - Banco Central do Brasil",
     "INSS - Instituto Nacional do Seguro Social"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -258,10 +415,17 @@
     "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
     "STN - Secretaria do Tesouro Nacional"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -307,10 +471,17 @@
     "CC/PR - Casa Civil da Presidência da República",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -344,54 +515,6 @@
    "garantido": false
   },
   {
-   "numero": "006.412/2026-2",
-   "id": "00641220262",
-   "codigo": "80008933",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Pronunciamento da AudFiscal concluído",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-17T00:00:00+00:00",
-     "descricao": "Registrada resposta de comunicação do Ofício 24271/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-24T00:00:00+00:00",
-    "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-   "atualizado_em": "2026-07-24T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=641220262",
-   "garantido": false
-  },
-  {
    "numero": "017.463/2025-4",
    "id": "01746320254",
    "codigo": "78795505",
@@ -404,10 +527,17 @@
     "BCB - Banco Central do Brasil",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -441,58 +571,6 @@
    "garantido": false
   },
   {
-   "numero": "025.632/2024-8",
-   "id": "02563220248",
-   "codigo": "77080640",
-   "estado": "Aberto",
-   "relator": "Bruno Dantas",
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "natureza": "Relatório de Auditoria",
-   "unidades": [
-    "BB - Banco do Brasil S.A.",
-    "BCB - Banco Central do Brasil",
-    "BNDES - Banco Nacional de Desenvolvimento Econômico e Social"
-   ],
-   "orgaos": [],
-   "acordao": "1887/2026",
-   "movimentacoes": [
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 27314/2026-TCU/Seproc via CONECTA TCU por MICHELLE INACIO DA SILVA em nome de Assessoria Especial de Controle Interno do Ministério do Desenvolvimento Agrário e Agricultura Familiar",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 27298/2026-TCU/Seproc via CONECTA TCU por ERICA NATHAIR SANTOS FERRAZ em nome de Secretaria-Executiva do Ministério do Desenvolvimento, Indústria, Comércio e Serviços",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-23T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 27315/2026-TCU/Seproc via CONECTA TCU por KATIA SUYENN TORREAO LIMA em nome de Assessoria Especial de Controle Interno do Ministério das Comunicações",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-16T00:00:00+00:00",
-     "descricao": "Acórdão 1887/2026 — Plenário",
-     "fase": "Julgado",
-     "acordao": "1887/2026"
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-24T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 27314/2026-TCU/Seproc via CONECTA TCU por MICHELLE INACIO DA SILVA em nome de Assessoria Especial de Controle Interno do Ministério do Desenvolvimento Agrário e Agricultura Familiar",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 27314/2026-TCU/Seproc via CONECTA TC",
-   "atualizado_em": "2026-07-24T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2563220248",
-   "garantido": true
-  },
-  {
    "numero": "018.918/2025-5",
    "id": "01891820255",
    "codigo": "79013339",
@@ -505,10 +583,17 @@
     "PGFN - Procuradoria-Geral da Fazenda Nacional",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -542,10 +627,17 @@
     "CC/PR - Casa Civil da Presidência da República",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -591,10 +683,17 @@
     "CD - Câmara dos Deputados",
     "STN - Secretaria do Tesouro Nacional"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -636,7 +735,11 @@
    "assunto": "<em>011.685/2026-3</em> - Denúncia",
    "natureza": "Denúncia",
    "unidades": [],
+   "interessados": [],
    "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": null,
    "acordao": null,
    "movimentacoes": [
     {
@@ -682,10 +785,17 @@
     "ANP - Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
     "BCB - Banco Central do Brasil"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -731,10 +841,17 @@
     "Agência Nacional de Mineração",
     "Anac - Agência Nacional de Aviação Civil"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -767,10 +884,17 @@
     "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
     "STN - Secretaria do Tesouro Nacional"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -815,10 +939,17 @@
     "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
     "STN - Secretaria do Tesouro Nacional"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -864,10 +995,17 @@
     "CC/PR - Casa Civil da Presidência da República",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -912,10 +1050,17 @@
     "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
     "STN - Secretaria do Tesouro Nacional"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -951,7 +1096,11 @@
    "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
    "natureza": "Relatório de Auditoria",
    "unidades": [],
+   "interessados": [],
    "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": null,
    "acordao": null,
    "movimentacoes": [
     {
@@ -997,7 +1146,11 @@
     "C Ex - Comando do Exército",
     "MB - Comando da Marinha"
    ],
+   "interessados": [],
    "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": null,
    "acordao": null,
    "movimentacoes": [
     {
@@ -1043,10 +1196,17 @@
     "SG/PR - Secretaria-Geral da Presidência da República",
     "STN - Secretaria do Tesouro Nacional"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1091,10 +1251,17 @@
     "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
     "STN - Secretaria do Tesouro Nacional"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1140,10 +1307,17 @@
     "Agência Nacional de Mineração",
     "ANATEL - Agência Nacional de Telecomunicações"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1189,10 +1363,17 @@
     "BCB - Banco Central do Brasil",
     "STN - Secretaria do Tesouro Nacional"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1234,7 +1415,11 @@
    "assunto": "Consolidação das análises setorias para subsídio ao parecer prévio das contas do Presidente da República",
    "natureza": "Relatório de Auditoria",
    "unidades": [],
+   "interessados": [],
    "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": null,
    "acordao": null,
    "movimentacoes": [
     {
@@ -1280,10 +1465,17 @@
     "ANS - Agência Nacional de Saúde Suplementar",
     "SE/MS - Secretaria-Executiva do Ministério da Saúde"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1329,10 +1521,17 @@
     "BCB - Banco Central do Brasil",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1372,10 +1571,17 @@
     "Agência Nacional de Mineração",
     "ANATEL - Agência Nacional de Telecomunicações"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1419,10 +1625,17 @@
    "unidades": [
     "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1466,7 +1679,11 @@
    "unidades": [
     "CODEVASF - Companhia de Desenvolvimento dos Vales do São Francisco e do Parnaíba - Codevasf"
    ],
+   "interessados": [],
    "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": null,
    "acordao": null,
    "movimentacoes": [
     {
@@ -1512,10 +1729,17 @@
     "COMAER - Comando da Aeronáutica",
     "C Ex - Comando do Exército"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1555,10 +1779,17 @@
     "CD - Câmara dos Deputados",
     "STN - Secretaria do Tesouro Nacional"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1604,10 +1835,17 @@
     "CC/PR - Casa Civil da Presidência da República",
     "STN - Secretaria do Tesouro Nacional"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1653,10 +1891,17 @@
     "BCB - Banco Central do Brasil",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1702,10 +1947,17 @@
     "CC/PR - Casa Civil da Presidência da República",
     "MECON - Ministério da Economia (extinto)"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1751,10 +2003,17 @@
     "BCB - Banco Central do Brasil",
     "STN - Secretaria do Tesouro Nacional"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1798,10 +2057,17 @@
    "unidades": [
     "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1847,10 +2113,17 @@
     "CC/PR - Casa Civil da Presidência da República",
     "STN - Secretaria do Tesouro Nacional"
    ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
    "acordao": "1849/2025",
    "movimentacoes": [
     {
@@ -1905,9 +2178,96 @@
    ],
    "estado": "Aberto",
    "evento": "pauta"
+  },
+  {
+   "data": "2026-07-16T00:00:00+00:00",
+   "descricao": "Acórdão 1887/2026 — Plenário",
+   "fase": "Julgado",
+   "acordao": "1887/2026",
+   "processo": "025.632/2024-8",
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto",
+   "evento": "acordao"
   }
  ],
  "movimentacoes": [
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Distribuído para o gabinete do Procurador Júlio Marcelo",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Processo enviado de MIN-AAA para PROC-G/PROC-G. (Gabinete do Procurador-Geral)",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Documento Solicitação de Oitiva do MPTCU juntado ao processo por MIN-AAA",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Aviso 0737/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
+   "fase": null,
+   "acordao": null,
+   "processo": "025.632/2024-8",
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudRecursos/AudRecursos-ASS. (Assessoria da AudRecursos)",
+   "fase": null,
+   "acordao": null,
+   "processo": "025.632/2024-8",
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Documento Aviso juntado ao processo por Gabpres",
+   "fase": null,
+   "acordao": null,
+   "processo": "025.632/2024-8",
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
   {
    "data": "2026-07-27T00:00:00+00:00",
    "descricao": "Processo enviado de Seproc para AudPortoFerrovia/AudPortoFerrovia-ASS. (Assessoria da AudPortoFerrovia)",
@@ -2013,34 +2373,6 @@
   },
   {
    "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "fase": null,
-   "acordao": null,
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-24T00:00:00+00:00",
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 29/07/2026, às 14h30.",
    "fase": null,
    "acordao": null,
@@ -2051,39 +2383,6 @@
     "MPO",
     "SOF"
    ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 27314/2026-TCU/Seproc via CONECTA TCU por MICHELLE INACIO DA SILVA em nome de Assessoria Especial de Controle Interno do Ministério do Desenvolvimento Agrário e Agricultura Familiar",
-   "fase": null,
-   "acordao": null,
-   "processo": "025.632/2024-8",
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 27298/2026-TCU/Seproc via CONECTA TCU por ERICA NATHAIR SANTOS FERRAZ em nome de Secretaria-Executiva do Ministério do Desenvolvimento, Indústria, Comércio e Serviços",
-   "fase": null,
-   "acordao": null,
-   "processo": "025.632/2024-8",
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-23T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 27315/2026-TCU/Seproc via CONECTA TCU por KATIA SUYENN TORREAO LIMA em nome de Assessoria Especial de Controle Interno do Ministério das Comunicações",
-   "fase": null,
-   "acordao": null,
-   "processo": "025.632/2024-8",
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -2227,20 +2526,6 @@
    "acordao": null,
    "processo": "012.513/2026-1",
    "assunto": "2ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-17T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 24271/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
