@@ -107,7 +107,14 @@ section h2{font-size:19px}
 .linha:last-child{border-bottom:0}
 .linha:hover{background:var(--surface-2)}
 .linha.ab{border-left:3px solid var(--aberto)}
-.linha.fechado{opacity:.62}
+.linha.fechado{opacity:.6}
+.linha.prio{background:#fbf6e9}
+.linha.prio:hover{background:#f7efd9}
+.estrela{font:inherit; background:none; border:0; cursor:pointer; font-size:17px; line-height:1;
+  color:var(--line); padding:0 2px; margin-right:2px; vertical-align:-2px}
+.estrela.on{color:#d99a1c}
+.estrela:hover{color:#d99a1c}
+.kpi.prio{border-top-color:#d99a1c} .kpi.prio b{color:#c07d0a}
 .cab{display:grid; grid-template-columns:150px 1fr 190px; gap:16px; padding:9px 18px; background:var(--surface-2);
   border-bottom:1px solid var(--line); font-family:"JetBrains Mono",monospace; font-size:10px;
   letter-spacing:.12em; text-transform:uppercase; color:var(--muted)}
@@ -176,7 +183,7 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
       <div class="grid2">
         <div class="painel">
           <h3>Ritmo de movimentações</h3>
-          <p class="nota">Movimentações por dia nos últimos 90 dias.</p>
+          <p class="nota">Movimentações de processos <b>abertos</b>, por dia, nos últimos 90 dias.</p>
           <div class="calor" id="calor" role="img" aria-label="Mapa de calor das movimentações por dia"></div>
           <div class="calor-leg">
             Menos
@@ -188,7 +195,7 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
         </div>
         <div class="painel">
           <h3>Tipos de processo</h3>
-          <p class="nota">Clique para filtrar a lista. Trecho escuro da barra = abertos.</p>
+          <p class="nota">Distribuição dos processos <b>abertos</b> por tipo. Clique para filtrar.</p>
           <div class="barras" id="barras"></div>
         </div>
       </div>
@@ -241,6 +248,15 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
 const URL_DOC = "https://pesquisa.apps.tcu.gov.br/doc/processo/";
 const DIA = 86400000;
 let D = null, FILTRO_KPI = "", FILTRO_TIPO = "";
+const CHAVE_PRIO = "mpo_prioritarios";
+let PRIO = new Set();
+try { PRIO = new Set(JSON.parse(localStorage.getItem(CHAVE_PRIO) || "[]")); } catch(e){}
+function togglePrio(numero){
+  PRIO.has(numero) ? PRIO.delete(numero) : PRIO.add(numero);
+  try { localStorage.setItem(CHAVE_PRIO, JSON.stringify([...PRIO])); } catch(e){}
+  kpis(); lista();
+}
+const ehPrio = (n) => PRIO.has(n);
 
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) =>
   ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
@@ -291,6 +307,7 @@ function kpis(){
     { f:"__aberto", n:abertos, t:"Abertos", d:"Estado ativo, conforme a Pesquisa Integrada.", c:"aberto" },
     { f:"__encerrado", n:total - abertos, t:"Encerrados", d:"Já concluídos.", c:"encerrado" },
   ];
+  if(PRIO.size) cartoes.push({ f:"__prio", n:PRIO.size, t:"Prioritários", d:"Marcados por você com a estrela.", c:"prio" });
   (D.por_orgao || []).forEach((o) => cartoes.push(
     { f:"__org_" + o.orgao, n:o.total, t:o.orgao, d:o.nome, c:"total" }));
 
@@ -334,12 +351,10 @@ function barras(){
   const max = Math.max(...tipos.map((t) => t.total));
   el.innerHTML = tipos.map((t) => {
     const larg = (t.total / max * 100).toFixed(1);
-    const largAb = t.total ? (t.abertos / t.total * 100).toFixed(1) : 0;
     return `<button type="button" class="barra" data-tipo="${esc(t.tipo)}" aria-pressed="${FILTRO_TIPO === t.tipo}">
-      <div class="barra-top"><b>${esc(t.tipo)}</b><span>${t.total}${t.abertos ? ` · ${t.abertos} ab.` : ""}</span></div>
+      <div class="barra-top"><b>${esc(t.tipo)}</b><span>${t.total}</span></div>
       <div class="barra-trilho" style="width:${larg}%">
-        <div class="barra-fill ab" style="width:${largAb}%"></div>
-        <div class="barra-fill" style="width:${(100 - largAb).toFixed(1)}%"></div>
+        <div class="barra-fill ab" style="width:100%"></div>
       </div>
     </button>`;
   }).join("");
@@ -406,6 +421,7 @@ function lista(){
   const ord = document.getElementById("ordem").value;
 
   let l = D.processos.filter((p) => {
+    if(FILTRO_KPI === "__prio" && !ehPrio(p.numero)) return false;
     if(FILTRO_KPI === "__aberto" && !aberto(p)) return false;
     if(FILTRO_KPI === "__encerrado" && aberto(p)) return false;
     if(FILTRO_KPI.startsWith("__org_") && !(p.orgaos || []).includes(FILTRO_KPI.slice(6))) return false;
@@ -418,6 +434,8 @@ function lista(){
 
   if(ord === "numero") l = l.slice().sort((a, b) => a.numero.localeCompare(b.numero));
   else if(ord === "relator") l = l.slice().sort((a, b) => (a.relator || "zz").localeCompare(b.relator || "zz"));
+  // Prioritários sempre no topo, preservada a ordem interna escolhida.
+  l = l.slice().sort((a, b) => (ehPrio(b.numero) ? 1 : 0) - (ehPrio(a.numero) ? 1 : 0));
 
   document.getElementById("cont").textContent = `${l.length} de ${D.processos.length}`;
   document.getElementById("sub-procs").textContent =
@@ -432,9 +450,16 @@ function lista(){
         m.acordao ? ` <b>Ac. ${esc(m.acordao)}</b>` : ""}</span>`;
     }).join("");
 
-    return `<div class="linha ${ab ? "ab" : "fechado"}">
+    const prio = ehPrio(p.numero);
+    return `<div class="linha ${prio ? "prio" : ""} ${ab ? "ab" : "fechado"}">
       <div>
-        <a class="pn" href="${esc(link(p.numero))}" target="_blank" rel="noopener">${esc(p.numero)} ↗</a>
+        <div style="display:flex;align-items:center;gap:2px">
+          <button type="button" class="estrela ${prio ? "on" : ""}" data-prio="${esc(p.numero)}"
+                  title="${prio ? "Remover dos prioritários" : "Marcar como prioritário"}"
+                  aria-label="${prio ? "Remover dos prioritários" : "Marcar como prioritário"}"
+                  aria-pressed="${prio}">${prio ? "★" : "☆"}</button>
+          <a class="pn" href="${esc(link(p.numero))}" target="_blank" rel="noopener">${esc(p.numero)} ↗</a>
+        </div>
         <div class="pmeta">
           ${(p.orgaos || []).map((o) => `<span class="chip ${esc(o)}">${esc(o)}</span>`).join("")}
           <span class="chip chip-estado" style="${ab ? "" : "background:var(--muted)"}">${esc(p.estado || "—")}</span>
@@ -451,6 +476,11 @@ function lista(){
       </div>
     </div>`;
   }).join("") : `<div class="vazio">Nenhum processo com esses filtros.</div>`;
+
+  document.querySelectorAll(".estrela").forEach((b) => b.addEventListener("click", (e) => {
+    e.preventDefault(); e.stopPropagation();
+    togglePrio(b.dataset.prio);
+  }));
 }
 
 carregar();
