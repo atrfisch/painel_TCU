@@ -80,11 +80,14 @@ PESQUISA_UNIDADES = [
 ]
 
 # Termos livres, para capturar processos cuja UJ está grafada de forma que o
-# filtro estruturado não casa (ex.: código na frente do nome).
+# filtro estruturado não casa (ex.: código na frente do nome), e para achar
+# AECI/SE que aparecem como INTERESSADOS, não como unidade jurisdicionada.
 PESQUISA_TERMOS = [
     '"Ministério do Planejamento e Orçamento"',
     '"Secretaria de Orçamento Federal"',
     '"Secretaria Nacional de Planejamento"',
+    '"Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento"',
+    '"Secretaria-Executiva do Ministério do Planejamento e Orçamento"',
 ]
 
 # Endpoint de detalhe por número: traz MOVIMENTACOES e PECAS que a listagem
@@ -438,6 +441,25 @@ def _campos_pesquisa(it: dict) -> dict:
     unidades = [u.strip() for u in unidades if u and u.strip()]
     texto_uj = " ; ".join(unidades)
 
+    # Além da unidade jurisdicionada, um processo pode ter órgãos do MPO como
+    # INTERESSADOS. Ex.: uma auditoria cuja UJ é outro ministério, mas em que a
+    # SOF ou a Assessoria de Controle Interno do MPO constam como interessadas.
+    # Capturamos todos esses vínculos, mas guardamos COMO cada órgão entra
+    # (unidade vs interessado) para não confundir "processo do MPO" com
+    # "processo em que o MPO aparece".
+    interessados = it.get("INTERESSADOS") or it.get("INTERESSADO") or []
+    if isinstance(interessados, str):
+        interessados = [interessados]
+    interessados = [str(i).strip() for i in interessados if i and str(i).strip()]
+    texto_int = " ; ".join(interessados)
+
+    orgaos_uj = set(orgaos_em(texto_uj))
+    orgaos_int = set(orgaos_em(texto_int))
+    orgaos = sorted(orgaos_uj | orgaos_int)
+    # Vínculo predominante: se algum órgão é unidade jurisdicionada, o processo é
+    # "do MPO"; se só aparece como interessado, é "interesse".
+    vinculo = "unidade" if orgaos_uj else ("interessado" if orgaos_int else None)
+
     pecas = it.get("PECAS") or []
     movs = _movimentacoes_pesquisa(it.get("MOVIMENTACOES"), pecas)
     ultima = movs[0] if movs else None
@@ -451,7 +473,11 @@ def _campos_pesquisa(it: dict) -> dict:
         "assunto": it.get("ASSUNTO") or it.get("TITULOCOMPLETO"),
         "natureza": it.get("TIPO"),
         "unidades": unidades,
-        "orgaos": orgaos_em(texto_uj),
+        "interessados": interessados,
+        "orgaos": orgaos,
+        "orgaos_unidade": sorted(orgaos_uj),
+        "orgaos_interessado": sorted(orgaos_int - orgaos_uj),
+        "vinculo": vinculo,
         "movimentacoes_pesquisa": movs,
         "ultima_pesquisa": ultima,
         "acordao": acordao,
@@ -619,7 +645,11 @@ def consolidar_pesquisa(processos_pesquisa: list[dict]) -> list[dict]:
             "assunto": p.get("assunto"),
             "natureza": p.get("natureza"),
             "unidades": p.get("unidades") or [],
+            "interessados": p.get("interessados") or [],
             "orgaos": sorted(p.get("orgaos") or []),
+            "orgaos_unidade": p.get("orgaos_unidade") or [],
+            "orgaos_interessado": p.get("orgaos_interessado") or [],
+            "vinculo": p.get("vinculo"),
             "acordao": p.get("acordao"),
             "movimentacoes": limpas,
             "ultima_movimentacao": ultima,
@@ -724,7 +754,13 @@ def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
     for sigla, cfg in UNIDADES.items():
         do_orgao = [p for p in processos if sigla in p["orgaos"]]
         if do_orgao:
-            por_orgao.append({"orgao": sigla, "nome": cfg["nome"], "total": len(do_orgao)})
+            como_unidade = sum(1 for p in do_orgao if sigla in (p.get("orgaos_unidade") or []))
+            por_orgao.append({"orgao": sigla, "nome": cfg["nome"], "total": len(do_orgao),
+                              "como_unidade": como_unidade,
+                              "como_interessado": len(do_orgao) - como_unidade})
+
+    # Quantos processos entram por unidade jurisdicionada vs só como interessado.
+    so_interesse = sum(1 for p in processos if p.get("vinculo") == "interessado")
 
     # Distribuição por tipo (todos já são abertos).
     tipos: dict[str, int] = {}
@@ -733,6 +769,14 @@ def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
         tipos[t] = tipos.get(t, 0) + 1
     por_tipo = sorted(({"tipo": k, "total": v, "abertos": v} for k, v in tipos.items()),
                       key=lambda x: -x["total"])
+
+    # Distribuição por relator — terceiro gráfico do topo.
+    relatores: dict[str, int] = {}
+    for p in processos:
+        r = (p.get("relator") or "Não distribuído").strip()
+        relatores[r] = relatores.get(r, 0) + 1
+    por_relator = sorted(({"relator": k, "total": v} for k, v in relatores.items()),
+                         key=lambda x: -x["total"])
 
     movs = [{**m, "processo": p["numero"], "assunto": p["assunto"],
              "natureza": p.get("natureza"), "orgaos": p["orgaos"], "estado": p["estado"]}
@@ -766,10 +810,10 @@ def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
             return "pauta"
         return None
 
-    limite_7 = (hoje - timedelta(days=7)).isoformat()
+    limite_feed = (hoje - timedelta(days=30)).isoformat()
     recentes = []
     for m in movs:
-        if (_dia(m["data"]) or "") < limite_7:
+        if (_dia(m["data"]) or "") < limite_feed:
             continue
         tipo_ev = evento_relevante(m)
         if tipo_ev:
@@ -787,10 +831,12 @@ def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
             "movimentacoes": len(movs),
             "abertos": len(processos),
             "encerrados_ocultos": encerrados,
+            "so_interesse": so_interesse,
         },
         "garantidos": [p["numero"] for p in processos if p.get("garantido")],
         "por_orgao": por_orgao,
         "por_tipo": por_tipo,
+        "por_relator": por_relator,
         "ranking_mes": ranking_mes,
         "processos": processos,
         "movimentacoes_recentes": recentes[:60],
