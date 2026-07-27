@@ -33,7 +33,7 @@ import re
 import sys
 import tempfile
 import unicodedata
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from typing import Any, Iterator
 
 import requests
@@ -572,22 +572,50 @@ def _consolidar_boletim(movs: list[dict], da_pesquisa: list[dict]) -> list[dict]
     return saida
 
 
+def _dia(iso_str: str | None) -> str | None:
+    d = parse_data(iso_str)
+    return d.date().isoformat() if d else None
+
+
 def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
     agora = datetime.now(timezone.utc)
+    hoje = agora.date()
     por_orgao = []
     for sigla, cfg in UNIDADES.items():
         do_orgao = [p for p in processos if sigla in p["orgaos"]]
         if do_orgao:
             por_orgao.append({"orgao": sigla, "nome": cfg["nome"], "total": len(do_orgao)})
 
+    # Distribuição por tipo/natureza de processo — para o gráfico e as tags.
+    tipos: dict[str, dict] = {}
+    for p in processos:
+        t = (p.get("natureza") or "Não classificado").strip()
+        d = tipos.setdefault(t, {"tipo": t, "total": 0, "abertos": 0})
+        d["total"] += 1
+        if normalizar(p.get("estado")) == "aberto":
+            d["abertos"] += 1
+    por_tipo = sorted(tipos.values(), key=lambda x: -x["total"])
+
     movs = [{**m, "processo": p["numero"], "assunto": p["assunto"],
-             "orgaos": p["orgaos"], "estado": p["estado"]}
+             "natureza": p.get("natureza"), "orgaos": p["orgaos"], "estado": p["estado"]}
             for p in processos for m in p["movimentacoes"]]
     movs.sort(key=lambda m: parse_data(m["data"]) or datetime.min.replace(tzinfo=timezone.utc),
               reverse=True)
 
+    # Mapa de calor: contagem de movimentações por dia nos últimos 90 dias.
+    calor: dict[str, int] = {}
+    limite_calor = (hoje - timedelta(days=90)).isoformat()
+    for m in movs:
+        dia = _dia(m["data"])
+        if dia and dia >= limite_calor:
+            calor[dia] = calor.get(dia, 0) + 1
+
+    # Movimentações dos últimos 10 dias, para o feed enxuto.
+    limite_10 = (hoje - timedelta(days=10)).isoformat()
+    recentes = [m for m in movs if (_dia(m["data"]) or "") >= limite_10]
+
     return {
-        "versao": 1,
+        "versao": 2,
         "gerado_em": agora.isoformat(),
         "gerado_em_br": agora.astimezone().strftime("%d/%m/%Y às %H:%M"),
         "ancora_btcu": ancora,
@@ -599,7 +627,10 @@ def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
             "abertos": sum(1 for p in processos if normalizar(p["estado"]) == "aberto"),
         },
         "por_orgao": por_orgao,
+        "por_tipo": por_tipo,
+        "calor": [{"dia": k, "n": v} for k, v in sorted(calor.items())],
         "processos": processos,
+        "movimentacoes_recentes": recentes[:60],
         "movimentacoes": movs[:200],
     }
 
