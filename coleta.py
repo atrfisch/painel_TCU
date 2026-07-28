@@ -158,9 +158,19 @@ TIMEOUT = (10, 90)
 def normalizar(texto: Any) -> str:
     if not texto:
         return ""
-    t = unicodedata.normalize("NFKD", str(texto))
+    t = str(texto)
+    # A Pesquisa destaca os termos buscados com <em>...</em> dentro dos próprios
+    # valores (nome de unidade, assunto). Sem remover, "SOF/MPO - <em>Secretaria</em>"
+    # entra sujo e pode furar o casamento de órgão.
+    t = re.sub(r"</?em>", "", t)
+    t = unicodedata.normalize("NFKD", t)
     t = "".join(c for c in t if not unicodedata.combining(c))
     return re.sub(r"\s+", " ", t).lower().strip()
+
+
+def limpar_html(texto: Any) -> str:
+    """Remove o realce <em> que a API insere nos valores."""
+    return re.sub(r"</?em>", "", str(texto or "")).strip()
 
 
 RX_UNIDADES = {s: [re.compile(p) for p in c["padroes"]] for s, c in UNIDADES.items()}
@@ -448,33 +458,40 @@ def _campos_pesquisa(it: dict) -> dict:
     unidades = it.get("UNIDADESJURISDICIONADAS") or []
     if isinstance(unidades, str):
         unidades = [unidades]
-    unidades = [u.strip() for u in unidades if u and u.strip()]
+    unidades = [limpar_html(u) for u in unidades if u and str(u).strip()]
     texto_uj = " ; ".join(unidades)
 
     # Além da unidade jurisdicionada, um processo pode ter órgãos do MPO como
     # INTERESSADOS — ex.: a Assessoria de Controle Interno ou a Secretaria-
-    # Executiva do MPO. A resposta da Pesquisa às vezes traz INTERESSADOS e
-    # RESPONSAVEIS (confirmado em resposta real), às vezes vem enxuta sem eles;
-    # quando faltam, buscar_por_numero recupera a versão completa. RESPONSAVEIS
-    # costuma ser pessoa física, mas pode conter unidade — lemos ambos.
+    # Executiva do MPO. A busca em massa costuma vir SEM esse campo (vem vazio);
+    # nesse caso, o vínculo desses órgãos aparece no TEXTO das movimentações
+    # ("... em nome de Secretaria-Executiva do Ministério do Planejamento..."),
+    # de onde também os extraímos.
     interessados = (it.get("INTERESSADOS") or it.get("INTERESSADO")
                     or it.get("PARTES") or [])
     if isinstance(interessados, str):
         interessados = [interessados]
-    interessados = [str(i).strip() for i in interessados if i and str(i).strip()]
+    interessados = [limpar_html(i) for i in interessados if i and str(i).strip()]
 
     responsaveis = it.get("RESPONSAVEIS") or []
     if isinstance(responsaveis, str):
         responsaveis = [responsaveis]
-    responsaveis = [str(r).strip() for r in responsaveis if r and str(r).strip()]
+    responsaveis = [limpar_html(r) for r in responsaveis if r and str(r).strip()]
+
+    movs_brutas = it.get("MOVIMENTACOES") or []
+    texto_movs = " ; ".join(str(m) for m in movs_brutas)
 
     texto_int = " ; ".join(interessados + responsaveis)
 
     orgaos_uj = set(orgaos_em(texto_uj))
     orgaos_int = set(orgaos_em(texto_int))
+    # AECI e SE também valem quando citadas nas movimentações (padrão comum:
+    # comunicações "em nome de" essas unidades). Só essas duas, para não capturar
+    # menções incidentais de outros órgãos no corpo do andamento.
+    orgaos_mov = {s for s in ("AECI", "SE") if s in orgaos_em(texto_movs)}
+    orgaos_int |= orgaos_mov
+
     orgaos = sorted(orgaos_uj | orgaos_int)
-    # Vínculo predominante: se algum órgão é unidade jurisdicionada, o processo é
-    # "do MPO"; se só aparece como interessado, é "interesse".
     vinculo = "unidade" if orgaos_uj else ("interessado" if orgaos_int else None)
 
     pecas = it.get("PECAS") or []
@@ -486,9 +503,9 @@ def _campos_pesquisa(it: dict) -> dict:
         "processo": formatar_processo(it.get("NUMEROFORMATADO") or it.get("PROC")),
         "codigo": it.get("CODIGO"),
         "estado": it.get("ESTADO"),
-        "relator": it.get("RELATOR"),
-        "assunto": it.get("ASSUNTO") or it.get("TITULOCOMPLETO"),
-        "natureza": it.get("TIPO"),
+        "relator": limpar_html(it.get("RELATOR")) or None,
+        "assunto": limpar_html(it.get("ASSUNTO") or it.get("TITULOCOMPLETO")) or None,
+        "natureza": limpar_html(it.get("TIPO")) or None,
         "unidades": unidades,
         "interessados": interessados,
         "orgaos": orgaos,
@@ -618,12 +635,19 @@ def consultar_pesquisa(sessao: requests.Session) -> list[dict]:
 
     for numero in PROCESSOS_GARANTIDOS:
         if numero in vistos:
+            vistos[numero]["garantido"] = True
             continue
         campo = buscar_por_numero(sessao, numero)
         if campo:
-            campo.setdefault("garantido", True)
+            campo["garantido"] = True
+            # Garantido que não casou nenhum órgão do MPO nos campos: ainda assim
+            # entra (você o marcou como relevante), com vínculo próprio para o
+            # painel poder exibi-lo com uma tag "acompanhado" em vez de nenhuma.
+            if not campo.get("orgaos"):
+                campo["vinculo"] = campo.get("vinculo") or "acompanhado"
             vistos[numero] = campo
-            log.info("Garantido recuperado: %s", numero)
+            log.info("Garantido recuperado: %s (órgãos: %s)",
+                     numero, campo.get("orgaos") or "nenhum reconhecido")
         else:
             log.warning("Garantido NÃO encontrado na base: %s", numero)
 
