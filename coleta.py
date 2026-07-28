@@ -1,944 +1,524 @@
-#!/usr/bin/env python3
-"""
-coleta.py — processos do TCU que têm o MPO (ou suas secretarias) como
-unidade jurisdicionada.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Processos do MPO no TCU</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#eaeeec; --surface:#fff; --surface-2:#f4f7f6;
+  --ink:#131f1c; --ink-2:#3e504b; --muted:#77857f;
+  --line:#ccd6d2; --line-2:#e3e9e7;
+  --petrol:#0e4a44; --amber:#9a5a06; --red:#8a2e26;
+  --aberto:#0e6b4f; --aberto-bg:#e2f2ec;
+  --mpo:#0e4a44; --aeci:#8a4b2f; --se:#2f5a8a; --sof:#1b5674; --seplan:#573566; --sma:#63601c; --sest:#7a4a1f;
+  --r:10px; --shadow:0 1px 2px rgba(19,31,28,.05), 0 10px 26px -18px rgba(19,31,28,.3);
+}
+*{box-sizing:border-box}
+body{margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Public Sans",system-ui,sans-serif; font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased}
+h1,h2{font-family:"Bricolage Grotesque",sans-serif; margin:0; letter-spacing:-.02em}
+a{color:var(--petrol)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--petrol); outline-offset:2px}
+.wrap{max-width:1160px; margin:0 auto; padding:0 20px}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
+.eyebrow{font-family:"JetBrains Mono",monospace; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:0}
 
-DUAS FONTES, uma verificada e outra a configurar:
+header{background:var(--surface); border-bottom:1px solid var(--line)}
+.hd{display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:baseline; padding:18px 0}
+.hd h1{font-size:25px; font-weight:800}
+.hd p{margin:2px 0 0; font-size:13.5px; color:var(--ink-2)}
+.hd .quando{font-family:"JetBrains Mono",monospace; font-size:11.5px; color:var(--muted); text-align:right}
 
-  1. BTCU (Boletim do TCU)  — VERIFICADA E FUNCIONANDO.
-     PDFs públicos em sessoes-portal-ms.apps.tcu.gov.br. Cada edição declara
-     "Unidade jurisdicionada:" por processo. Dá: número, relator, colegiado,
-     assunto, natureza e movimentações (a seção do boletim indica a fase).
-     NÃO dá o campo "Estado" (Aberto/Encerrado) — o boletim não publica isso.
+.aviso{display:flex; gap:9px; padding:11px 14px; margin:14px 0 0; border-radius:var(--r);
+  background:#f8ecd6; border:1px solid #e3c894; font-size:13px; color:#5b3a06}
 
-  2. Pesquisa Integrada — A CONFIGURAR (veja PESQUISA_* abaixo).
-     É a fonte que tem o filtro "Estado: Aberto". A API não é documentada;
-     capture-a no navegador (F12 > Network) e preencha as constantes.
-     Enquanto não estiver configurada, o painel indica isso explicitamente
-     em vez de fingir que a lista está completa.
+.kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; padding:24px 0 0}
+.kpi{background:var(--surface); border:1px solid var(--line); border-top:3px solid var(--line);
+  border-radius:var(--r); padding:13px 15px; box-shadow:var(--shadow); text-align:left; font:inherit; cursor:pointer}
+.kpi[aria-pressed="true"]{background:var(--surface-2); border-color:var(--ink-2)}
+.kpi b{font-family:"JetBrains Mono",monospace; font-size:28px; font-weight:600; line-height:1; display:block; letter-spacing:-.04em}
+.kpi span{display:block; font-size:13px; font-weight:600; margin-top:6px}
+.kpi small{display:block; font-size:11.5px; color:var(--muted); margin-top:2px; line-height:1.35}
+.kpi.total{border-top-color:var(--ink-2)}
+.kpi.aberto{border-top-color:var(--aberto)} .kpi.aberto b{color:var(--aberto)}
+.kpi.encerrado{border-top-color:var(--muted)} .kpi.encerrado b{color:var(--muted)}
 
-Uso:
-    python coleta.py --saida site/dados.json
-    python coleta.py --saida site/dados.json --desde-id 22110 --max-edicoes 1500
-"""
+section{padding:30px 0 0}
+section h2{font-size:19px}
+.sub{margin:3px 0 15px; color:var(--muted); font-size:13.5px}
 
-from __future__ import annotations
+.grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+.painel{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; box-shadow:var(--shadow)}
+.painel h3{font-family:"Bricolage Grotesque",sans-serif; font-size:15px; margin:0 0 3px; font-weight:600}
+.painel .nota{margin:0 0 14px; font-size:12px; color:var(--muted)}
 
-import argparse
-import io
-import json
-import logging
-import os
-import re
-import sys
-import tempfile
-import unicodedata
-from datetime import date, datetime, timedelta, timezone
-from typing import Any, Iterator
+.rk{display:flex; flex-direction:column; gap:8px}
+.rk-bar{font:inherit; background:none; border:0; padding:0; cursor:pointer; text-align:left; width:100%; display:grid; grid-template-columns:118px 1fr 24px; gap:9px; align-items:center}
+.rk-lbl{font-family:"JetBrains Mono",monospace; font-size:12px; font-weight:600; color:var(--petrol); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.rk-trilho{height:18px; background:var(--surface-2); border-radius:5px; overflow:hidden}
+.rk-fill{height:100%; background:var(--petrol); border-radius:5px; min-width:3px; transition:width .3s}
+.rk-n{font-family:"JetBrains Mono",monospace; font-size:13px; font-weight:600; text-align:right; color:var(--ink)}
+.rk-bar:hover .rk-fill{background:#12645b}
+.rk-bar[aria-pressed="true"] .rk-lbl{color:#c07d0a}
+.rk-bar[aria-pressed="true"] .rk-fill{background:var(--amber)}
 
-import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
+.barras{display:flex; flex-direction:column; gap:9px}
+.barra{font:inherit; background:none; border:0; padding:0; cursor:pointer; text-align:left; width:100%}
+.barra-top{display:flex; justify-content:space-between; gap:10px; font-size:12.5px; margin-bottom:3px; align-items:baseline}
+.barra-top b{font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; min-width:0}
+.barra-top span{font-family:"JetBrains Mono",monospace; color:var(--muted); white-space:nowrap}
+.barra-trilho{height:9px; background:var(--surface-2); border-radius:5px; overflow:hidden; display:flex; max-width:100%}
+.barra-fill{height:100%; background:#9db8b1}
+.barra-fill.ab{background:var(--aberto)}
+.barra[aria-pressed="true"] .barra-top b{color:var(--petrol)}
+.barra[aria-pressed="true"] .barra-trilho{outline:2px solid var(--petrol); outline-offset:2px}
 
-log = logging.getLogger("coleta")
+.chip{display:inline-block; font-family:"JetBrains Mono",monospace; font-size:10.5px;
+  letter-spacing:.05em; text-transform:uppercase; padding:2.5px 7px; border-radius:5px; color:#fff}
+.chip.MPO{background:var(--mpo)} .chip.AECI{background:var(--aeci)} .chip.SE{background:var(--se)} .chip.SOF{background:var(--sof)} .chip.SEPLAN{background:var(--seplan)}
+.chip.SMA{background:var(--sma)} .chip.SEST{background:var(--sest)}
+.chip-ac{background:#dceae7; color:var(--petrol); text-transform:none; letter-spacing:0}
+.chip-estado{background:var(--aberto); text-transform:none; letter-spacing:0}
+.chip-vinc{background:transparent; color:var(--muted); border:1px dashed var(--line); text-transform:none; letter-spacing:0}
+.chip.int{opacity:.55}
+.chip-tipo{background:var(--surface-2); color:var(--ink-2); border:1px solid var(--line); text-transform:none; letter-spacing:0}
+.chip-pauta{background:#f4e6cc; color:#7a4e08; text-transform:none; letter-spacing:0}
 
-# =========================================================================== #
-# CONFIGURAÇÃO
-# =========================================================================== #
+.movs{list-style:none; margin:0; padding:0; background:var(--surface); border:1px solid var(--line);
+  border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow)}
+.mov{display:grid; grid-template-columns:88px 1fr; gap:16px; padding:13px 17px; border-bottom:1px solid var(--line-2)}
+.mov:last-child{border-bottom:0}
+.mov:hover{background:var(--surface-2)}
+.mov.ab{border-left:3px solid var(--aberto)}
+.mov-d{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--ink-2)}
+.mov-d em{display:block; font-style:normal; font-size:11px; color:var(--muted)}
+.mov-l1{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:4px}
+.mov-n{font-family:"JetBrains Mono",monospace; font-size:13px; font-weight:600; text-decoration:none}
+.mov-n:hover{text-decoration:underline}
+.mov-mov{margin:0; font-size:13.5px; color:var(--ink); line-height:1.45}
+.mov-a{margin:4px 0 0; font-size:13px; color:var(--ink-2); line-height:1.45}
 
-BTCU_URL = "https://sessoes-portal-ms.apps.tcu.gov.br/api/sessoes/downloadPautaPublicada/{id}"
+.ferramentas{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:13px}
+.ferramentas input,.ferramentas select{font:inherit; font-size:13.5px; background:var(--surface);
+  border:1px solid var(--line); border-radius:8px; padding:8px 11px; color:var(--ink)}
+.ferramentas input{flex:1 1 240px; min-width:0}
+.cont{margin-left:auto; font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--muted)}
+.tabela{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow)}
+.linha{display:grid; grid-template-columns:150px 1fr 190px; gap:16px; padding:14px 18px; border-bottom:1px solid var(--line-2); align-items:start}
+.linha:last-child{border-bottom:0}
+.linha:hover{background:var(--surface-2)}
+.linha.ab{border-left:3px solid var(--aberto)}
+.linha.fechado{opacity:.6}
+.linha.prio{background:#fbf6e9}
+.linha.prio:hover{background:#f7efd9}
+.estrela{font:inherit; background:none; border:0; cursor:pointer; font-size:17px; line-height:1;
+  color:var(--line); padding:0 2px; margin-right:2px; vertical-align:-2px}
+.estrela.on{color:#d99a1c}
+.estrela:hover{color:#d99a1c}
+.kpi.prio{border-top-color:#d99a1c} .kpi.prio b{color:#c07d0a}
+.cab{display:grid; grid-template-columns:150px 1fr 190px; gap:16px; padding:9px 18px; background:var(--surface-2);
+  border-bottom:1px solid var(--line); font-family:"JetBrains Mono",monospace; font-size:10px;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--muted)}
+.pn{font-family:"JetBrains Mono",monospace; font-size:13.5px; font-weight:600; text-decoration:none; display:block}
+.pn:hover{text-decoration:underline}
+.pmeta{margin:5px 0 0; display:flex; flex-wrap:wrap; gap:4px}
+.pa{margin:0; font-size:14px; line-height:1.5}
+.pu{margin:5px 0 0; font-size:12px; color:var(--muted)}
+.pr{font-size:13px; color:var(--ink-2)}
+.pr b{display:block; font-family:"JetBrains Mono",monospace; font-size:9.5px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); font-weight:400; margin-bottom:1px}
+.pr span+b{margin-top:8px}
+.trilha{margin:9px 0 0; display:flex; flex-wrap:wrap; gap:5px; align-items:center}
+.f{font-size:11.5px; color:var(--ink-2); background:var(--surface-2); border:1px solid var(--line-2);
+  border-radius:20px; padding:2px 9px}
+.f b{font-family:"JetBrains Mono",monospace; font-weight:400; color:var(--muted)}
+.vazio{padding:36px 20px; text-align:center; color:var(--muted)}
+.setup{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:24px; box-shadow:var(--shadow); margin-top:26px}
+code{font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(--surface-2);
+  border:1px solid var(--line-2); border-radius:5px; padding:1px 5px}
+footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surface)}
+.ft{padding:15px 0; font-size:12px; color:var(--muted)}
+@keyframes sobe{from{opacity:0; transform:translateY(6px)} to{opacity:1; transform:none}}
+.sobe{animation:sobe .4s cubic-bezier(.22,.61,.36,1) both}
+@media (prefers-reduced-motion:reduce){.sobe{animation:none}}
 
-# Ids observados: 22110≈ago/2024, 22495≈abr/2025, 23186≈mar/2026, 23240≈mai/2026.
-# Cerca de 1 id/dia, com lacunas (o id é compartilhado com outros documentos).
-BTCU_ANCORA = 23240
-BTCU_DATA_ANCORA = date(2026, 5, 15)
-BTCU_MISSES = 45
+@media (max-width:980px){
+  .grid3{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .grid3{grid-template-columns:1fr}
+  .rk-bar{grid-template-columns:100px 1fr 22px; gap:7px}
+  .linha,.cab{grid-template-columns:1fr}
+  .cab{display:none}
+  .linha .pr{margin-top:4px; padding-top:9px; border-top:1px solid var(--line-2)}
+  .mov{grid-template-columns:1fr; gap:5px}
+  .mov-d{display:flex; gap:8px; align-items:baseline}
+  .mov-d em{display:inline}
+}
+@media (max-width:520px){
+  .wrap{padding:0 14px}
+  .hd h1{font-size:21px}
+  .hd .quando{text-align:left}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  section h2{font-size:17px}
+  .ferramentas input,.ferramentas select{flex:1 1 100%}
+  .cont{margin-left:0; width:100%}
+}
+</style>
+</head>
+<body>
 
-# --- Pesquisa Integrada: endpoint público de processos (capturado no navegador)
-# Traz o campo Estado (Aberto/Encerrado) e a lista completa, não só o que passou
-# pelo boletim. É paginado: ?inicio= avança de QUANTIDADE em QUANTIDADE.
-PESQUISA_BASE = "https://pesquisa.apps.tcu.gov.br/rest/publico/base/processo/documentosResumidos"
-PESQUISA_QUANTIDADE = 50
-PESQUISA_MAX_PAGINAS = 120
-PESQUISA_ORDENACAO = "DTAUTUACAOORDENACAO desc, NUMEROCOMZEROS desc, KEY asc"
+<header>
+  <div class="wrap hd">
+    <div>
+      <p class="eyebrow">Tribunal de Contas da União</p>
+      <h1>Processos do MPO</h1>
+      <p>Processos <strong>abertos</strong> em que o Ministério do Planejamento e Orçamento ou suas secretarias constam como unidade jurisdicionada</p>
+    </div>
+    <p class="quando" id="quando">—</p>
+  </div>
+</header>
 
-# O filtro por unidade exige correspondência com a grafia cadastrada, que varia
-# (o órgão já se chamou "Ministério da Economia" e "Ministério do Planejamento,
-# Desenvolvimento e Gestão"; secretarias trocam de vínculo). Buscar por termo
-# livre, além do filtro estruturado, recupera o que a grafia exata perderia.
-PESQUISA_UNIDADES = [
-    'UNIDADESJURISDICIONADAS:("Ministério do Planejamento e Orçamento")',
-    'UNIDADESJURISDICIONADAS:("Secretaria de Orçamento Federal")',
-    'UNIDADESJURISDICIONADAS:("SOF/MPO - Secretaria de Orçamento Federal")',
-    'UNIDADESJURISDICIONADAS:("Secretaria Nacional de Planejamento")',
-    'UNIDADESJURISDICIONADAS:("Secretaria de Monitoramento e Avaliação")',
-    'UNIDADESJURISDICIONADAS:("Secretaria de Coordenação e Governança das Empresas Estatais")',
-    'UNIDADESJURISDICIONADAS:("Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento")',
-    'UNIDADESJURISDICIONADAS:("Secretaria-Executiva do Ministério do Planejamento e Orçamento")',
-    'UNIDADESJURISDICIONADAS:("Ministério do Planejamento, Desenvolvimento e Gestão")',
-    'UNIDADESJURISDICIONADAS:("Ministério da Economia")',
-]
+<main id="app" hidden>
+  <div class="wrap"><div id="avisos"></div></div>
+  <div class="wrap kpis" id="kpis"></div>
 
-# Filtros por INTERESSADO: capturam processos em que o órgão do MPO não é a
-# unidade jurisdicionada, mas consta como parte interessada — o caso típico da
-# AECI e da Secretaria-Executiva. Complementa o filtro por unidade.
-PESQUISA_INTERESSADOS = [
-    'INTERESSADOS:("Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento")',
-    'INTERESSADOS:("Secretaria-Executiva do Ministério do Planejamento e Orçamento")',
-    'INTERESSADOS:("Ministério do Planejamento e Orçamento")',
-    'INTERESSADOS:("Secretaria de Orçamento Federal")',
-]
+  <div class="wrap">
+    <section>
+      <div class="grid3">
+        <div class="painel">
+          <h3>Mais movimentados no mês</h3>
+          <p class="nota">Mais andamentos em 30 dias. Clique para marcar interesse.</p>
+          <div class="rk" id="ranking"></div>
+        </div>
+        <div class="painel">
+          <h3>Tipos de processo</h3>
+          <p class="nota">Clique numa barra para filtrar a lista.</p>
+          <div class="barras" id="barras"></div>
+        </div>
+        <div class="painel">
+          <h3>Processos por relator</h3>
+          <p class="nota">Clique num relator para filtrar a lista.</p>
+          <div class="barras" id="relatores"></div>
+        </div>
+      </div>
+    </section>
 
-# Termos livres, para capturar processos cuja UJ está grafada de forma que o
-# filtro estruturado não casa (ex.: código na frente do nome), e para achar
-# AECI/SE que aparecem como INTERESSADOS, não como unidade jurisdicionada.
-PESQUISA_TERMOS = [
-    '"Ministério do Planejamento e Orçamento"',
-    '"Secretaria de Orçamento Federal"',
-    '"Secretaria Nacional de Planejamento"',
-    '"Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento"',
-    '"Secretaria-Executiva do Ministério do Planejamento e Orçamento"',
-]
+    <section>
+      <h2>Pauta e acórdãos recentes</h2>
+      <p class="sub" id="sub-movs"></p>
+      <ul class="movs" id="movs"></ul>
+    </section>
 
-# Endpoint de detalhe por número: traz MOVIMENTACOES e PECAS que a listagem
-# resumida não inclui. Descoberto pelo padrão /doc/processo/{PROC sem zeros}.
-PESQUISA_DETALHE = "https://pesquisa.apps.tcu.gov.br/rest/publico/base/processo/documento"
+    <section>
+      <h2>Todos os processos</h2>
+      <p class="sub" id="sub-procs"></p>
+      <div class="ferramentas">
+        <input type="search" id="q" placeholder="Buscar por número, assunto ou relator" aria-label="Buscar">
+        <select id="f-orgao" aria-label="Filtrar por órgão"><option value="">Todos os órgãos</option></select>
+        <select id="f-tipo" aria-label="Filtrar por tipo"><option value="">Todos os tipos</option></select>
+        <select id="f-relator" aria-label="Filtrar por relator"><option value="">Todos os relatores</option></select>
+        <select id="ordem" aria-label="Ordenar">
+          <option value="recente">Movimentação mais recente</option>
+          <option value="numero">Número do processo</option>
+          <option value="relator">Relator</option>
+        </select>
+        <span class="cont" id="cont" aria-live="polite"></span>
+      </div>
+      <div class="tabela">
+        <div class="cab"><span>Processo</span><span>Assunto</span><span>Relator e estado</span></div>
+        <div id="linhas"></div>
+      </div>
+    </section>
+  </div>
+</main>
 
-# Processos que devem entrar SEMPRE, buscados um a um pelo número — independem
-# de o filtro de unidade os capturar. É a rede de segurança para os que somem.
-PROCESSOS_GARANTIDOS = [
-    "022.756/2025-6", "005.405/2026-2", "022.852/2025-5", "017.106/2025-7",
-    "025.632/2024-8", "005.104/2023-8", "007.158/2026-2", "011.685/2026-3",
-]
+<div class="wrap" id="setup" hidden>
+  <div class="setup">
+    <p class="eyebrow">Sem dados</p>
+    <h2>O painel está no ar, o arquivo de dados não</h2>
+    <p>Esta página lê <code>dados.json</code>, gerado por <code>coleta.py</code>. Rode a coleta e publique o arquivo na mesma pasta deste HTML.</p>
+    <p id="erro" style="color:var(--red)"></p>
+  </div>
+</div>
 
-PESQUISA_HEADERS = {"Accept": "application/json", "Referer": "https://pesquisa.apps.tcu.gov.br/"}
-# ---------------------------------------------------------------------------
+<footer><div class="wrap ft">
+  Fonte: Pesquisa Integrada do TCU. Inclui processos em que um órgão do MPO é unidade jurisdicionada ou consta como interessado. Estado, relator, assunto e movimentações declarados pelo próprio Tribunal.
+</div></footer>
 
-# Unidades jurisdicionadas monitoradas. O casamento é sobre o campo que o
-# PRÓPRIO TCU declara — não é heurística sobre o texto do assunto.
-UNIDADES: dict[str, dict[str, Any]] = {
-    "MPO": {
-        "nome": "Ministério do Planejamento e Orçamento",
-        "padroes": [
-            r"minist[eé]rio do planejamento e or[cç]amento",
-            r"minist[eé]rio do planejamento, or[cç]amento e gest[aã]o",
-            r"\bmpo\b",
-        ],
-    },
-    "AECI": {
-        "nome": "Assessoria Especial de Controle Interno do MPO",
-        "padroes": [
-            r"assessoria especial de controle interno do minist[eé]rio do planejamento",
-            r"\baeci\b",
-        ],
-    },
-    "SE": {
-        "nome": "Secretaria-Executiva do MPO",
-        "padroes": [
-            r"secretaria-?executiva do minist[eé]rio do planejamento",
-        ],
-    },
-    "SOF": {"nome": "Secretaria de Orçamento Federal",
-            "padroes": [r"secretaria de or[cç]amento federal", r"\bsof\b"]},
-    "SEPLAN": {"nome": "Secretaria Nacional de Planejamento",
-               "padroes": [r"secretaria nacional de planejamento", r"\bseplan\b"]},
-    "SMA": {"nome": "Secretaria de Monitoramento e Avaliação",
-            "padroes": [r"secretaria (nacional )?de monitoramento e avalia[cç][aã]o", r"\bsma\b"]},
-    "SEST": {"nome": "Secretaria de Coordenação e Governança das Empresas Estatais",
-             "padroes": [r"secretaria de coordena[cç][aã]o e governan[cç]a das empresas estatais", r"\bsest\b"]},
+<script>
+"use strict";
+const URL_DOC = "https://pesquisa.apps.tcu.gov.br/doc/processo/";
+const DIA = 86400000;
+let D = null, FILTRO_KPI = "", FILTRO_TIPO = "";
+const CHAVE_INT = "mpo_interesse";
+let INT = new Set();
+try { INT = new Set(JSON.parse(localStorage.getItem(CHAVE_INT) || "[]")); } catch(e){}
+function toggleInteresse(numero){
+  INT.has(numero) ? INT.delete(numero) : INT.add(numero);
+  try { localStorage.setItem(CHAVE_INT, JSON.stringify([...INT])); } catch(e){}
+  kpis(); rankingMes(); lista();
+}
+const ehInteresse = (n) => INT.has(n);
+
+const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) =>
+  ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+const dt = (v) => { if(!v) return null; const d = new Date(v); return isNaN(d) ? null : d; };
+const meiaNoite = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
+const dias = (a, b) => Math.round((meiaNoite(a) - meiaNoite(b)) / DIA);
+const fmt = (d) => d ? d.toLocaleDateString("pt-BR") : "—";
+const plural = (n, s, p) => `${n} ${n === 1 ? s : p}`;
+const aberto = (p) => String(p.estado || "").toLowerCase() === "aberto";
+const link = (numero) => URL_DOC + String(numero || "").replace(/\D/g, "").replace(/^0+/, "");
+
+function relativo(n){
+  if(n === 0) return "hoje";
+  if(n === 1) return "ontem";
+  return n > 0 ? `há ${plural(n, "dia", "dias")}` : `em ${plural(-n, "dia", "dias")}`;
 }
 
-TIMEOUT = (10, 90)
-
-# =========================================================================== #
-# UTILIDADES
-# =========================================================================== #
-
-
-def normalizar(texto: Any) -> str:
-    if not texto:
-        return ""
-    t = unicodedata.normalize("NFKD", str(texto))
-    t = "".join(c for c in t if not unicodedata.combining(c))
-    return re.sub(r"\s+", " ", t).lower().strip()
-
-
-RX_UNIDADES = {s: [re.compile(p) for p in c["padroes"]] for s, c in UNIDADES.items()}
-
-
-def orgaos_em(texto: str | None) -> list[str]:
-    """
-    Casa órgãos por UNIDADE. A lista de UJs vem separada por ';' — avalio cada
-    uma isolada para não misturar. AECI e SE contêm "Ministério do Planejamento
-    e Orçamento" no nome, então numa mesma unidade elas têm precedência sobre o
-    MPO: uma UJ é a Assessoria de Controle Interno OU o Ministério, não os dois.
-    """
-    achados: set[str] = set()
-    for parte in re.split(r"[;\n]", texto or ""):
-        n = normalizar(parte)
-        if not n:
-            continue
-        casaram = [s for s, rxs in RX_UNIDADES.items() if any(rx.search(n) for rx in rxs)]
-        if ("AECI" in casaram or "SE" in casaram) and "MPO" in casaram:
-            casaram.remove("MPO")  # a UJ específica prevalece sobre o guarda-chuva
-        achados.update(casaram)
-    return sorted(achados)
-
-
-def so_digitos(numero: Any) -> str:
-    return re.sub(r"\D", "", str(numero or ""))
-
-
-def formatar_processo(numero: Any) -> str:
-    d = so_digitos(numero)
-    return f"{d[:3]}.{d[3:6]}/{d[6:10]}-{d[10]}" if len(d) == 11 else str(numero or "").strip()
-
-
-def parse_data(valor: Any) -> datetime | None:
-    if not valor:
-        return None
-    t = str(valor).strip()
-    for f in (lambda s: datetime.fromisoformat(s.replace("Z", "+00:00")),
-              lambda s: datetime.strptime(s, "%d/%m/%Y"),
-              lambda s: datetime.strptime(s, "%Y-%m-%d")):
-        try:
-            d = f(t)
-            return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
-        except (ValueError, TypeError):
-            continue
-    return None
-
-
-def iso(d: datetime | None) -> str | None:
-    return d.isoformat() if d else None
-
-
-def sessao_http() -> requests.Session:
-    s = requests.Session()
-    s.mount("https://", HTTPAdapter(max_retries=Retry(
-        total=4, backoff_factor=1.5, status_forcelist=(429, 500, 502, 503, 504),
-        allowed_methods=frozenset(["GET", "POST"]), raise_on_status=False)))
-    s.headers.update({"Accept": "application/json",
-                      "User-Agent": "painel-mpo/2.0 (monitoramento de dados abertos)"})
-    return s
-
-
-# =========================================================================== #
-# FONTE 1 — BTCU
-# =========================================================================== #
-
-# Um processo aparece em várias roupagens ao longo do boletim. Exigir "número no
-# começo da linha seguido de hífen" perde todas as relações, que é onde os
-# acórdãos são publicados em lote.
-RX_PROCESSO = re.compile(
-    r"^\s*(?:\d{1,3}\s*[.)]\s*)?"
-    r"(?:(?:Processo|Anexo|Apenso|Apensos?)\s*:?\s*)?"
-    r"(?:TC[-\s]\s*)?"
-    r"(\d{3}\.\d{3}/\d{4}-\d)\s*-?\s*", re.M)
-
-RX_CAMPO = re.compile(
-    r"(Natureza|Unidade [Jj]urisdicionada|[ÓO]rg[ãa]o/Entidade/Unidade|[ÓO]rg[ãa]o/Entidade|"
-    r"Respons[áa]ve(?:l|is)|Interessad[oa]s?|Representa[çc][ãa]o legal|Recorrentes?|"
-    r"Embargantes?|Representante|Solicitante|Exerc[íi]cio|Revisor|Advogad[oa]s?|"
-    r"Interesse em sustenta[çc][ãa]o oral)\s*:")
-
-RX_RELATOR = re.compile(
-    r"^\s*(?:Ministr[oa]|MINISTR[OA])(?:[-\s]Substitut[oa]|[-\s]SUBSTITUT[OA])?\s+"
-    r"([A-ZÁÂÃÉÊÍÓÔÕÚÇ][A-Za-zÁÂÃÉÊÍÓÔÕÚÇáâãéêíóôõúç\s.]{4,60})\s*$")
-RX_COLEGIADO = re.compile(r"PAUTA (?:DO|DA) (PLEN[ÁA]RIO|PRIMEIRA C[ÂA]MARA|SEGUNDA C[ÂA]MARA)")
-RX_SESSAO = re.compile(r"Sess[ãa]o\s+\w+\s+de\s+(\d{2}/\d{2}/\d{4})")
-RX_SECAO = re.compile(r"^\s*(PAUTAS?|ATAS?|DESPACHOS DE AUTORIDADES|EDITAIS|"
-                      r"ACORD[ÃA]OS|DELIBERA[ÇC][ÕO]ES)\s*$", re.I)
-RX_ACORDAO = re.compile(
-    r"AC[ÓO]RD[ÃA]O\s+N?[ºo°]?\s*([\d.]+)\s*/\s*(\d{4})\s*[-–]\s*TCU\s*[-–]\s*"
-    r"(Plen[áa]rio|Primeira C[âa]mara|Segunda C[âa]mara|1[ªa] C[âa]mara|2[ªa] C[âa]mara)", re.I)
-RX_RUIDO = re.compile(
-    r"(Para verificar as assinaturas.*?\d{8}\.|BTCU Deliberações.*?\d{4}\s+\d+|"
-    r"CODMATERIA=\d+|A presente pauta pode.*?RITCU\)\.|"
-    r"As transmiss[õo]es das sess[õo]es.*?sessoes/\.)", re.S)
-
-FASES = {
-    "pauta": "Incluído em pauta",
-    "ata": "Julgado",
-    "despacho": "Despacho do relator",
-    "edital": "Edital publicado",
-    "indefinido": "Movimentação no boletim",
+async function carregar(){
+  try{
+    const r = await fetch("dados.json?v=" + Date.now(), { cache:"no-store" });
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    D = await r.json();
+    if(!D || !Array.isArray(D.processos)) throw new Error("Formato inesperado do dados.json");
+    render();
+  }catch(e){
+    document.getElementById("setup").hidden = false;
+    document.getElementById("erro").textContent = "Detalhe técnico: " + e.message;
+  }
 }
 
-
-def _secao(titulo: str) -> str:
-    t = normalizar(titulo)
-    if t.startswith("pauta"):
-        return "pauta"
-    if t.startswith("ata") or "acorda" in t or "delibera" in t:
-        return "ata"
-    if "despacho" in t:
-        return "despacho"
-    if "edital" in t:
-        return "edital"
-    return "indefinido"
-
-
-def _campo(bloco: str, rotulos: tuple[str, ...]) -> str | None:
-    for rot in rotulos:
-        m = re.search(rot + r"\s*:\s*(.+)", bloco, re.S)
-        if not m:
-            continue
-        resto = m.group(1)
-        fim = RX_CAMPO.search(resto)
-        v = re.sub(r"\s+", " ", (resto[: fim.start()] if fim else resto)).strip().rstrip(".").strip()
-        if v and normalizar(v) not in {"nao ha", "nao consta"}:
-            return v
-    return None
-
-
-def ler_btcu(sessao: requests.Session, id_edicao: int) -> str | None:
-    try:
-        r = sessao.get(BTCU_URL.format(id=id_edicao), timeout=TIMEOUT)
-        if r.status_code != 200 or not r.content[:5].startswith(b"%PDF"):
-            return None
-    except requests.exceptions.RequestException:
-        return None
-    try:
-        from pypdf import PdfReader
-    except ImportError:
-        raise SystemExit(
-            "\nFALTA DEPENDÊNCIA: pypdf\n"
-            "As edições do boletim são PDF. Instale com:  pip install pypdf\n"
-            "e confirme que 'pypdf' está no requirements.txt do repositório.\n")
-    try:
-        return "\n".join(p.extract_text() or "" for p in PdfReader(io.BytesIO(r.content)).pages)
-    except Exception as exc:
-        log.warning("Edição %s ilegível: %s", id_edicao, exc)
-        return None
-
-
-def extrair_movimentacoes(texto: str, id_edicao: int) -> list[dict]:
-    """Uma movimentação por aparição de processo de interesse no boletim."""
-    texto = re.sub(r"[ \t]+", " ", RX_RUIDO.sub(" ", texto))
-    colegiado = data_sessao = relator = None
-    secao, acordao = "indefinido", None
-    saida: list[dict] = []
-    buffer: list[str] = []
-    numero: str | None = None
-
-    def fechar() -> None:
-        nonlocal buffer, numero
-        if not numero:
-            buffer = []
-            return
-        bloco = " ".join(buffer)
-        unidade = _campo(bloco, (r"Unidade [Jj]urisdicionada",
-                                 r"[ÓO]rg[ãa]o/Entidade/Unidade", r"[ÓO]rg[ãa]o/Entidade"))
-        interessados = _campo(bloco, (r"Interessad[oa]s?",))
-        na_unidade = orgaos_em(unidade)
-        orgaos = na_unidade or orgaos_em(interessados)
-        if orgaos:
-            corte = RX_CAMPO.search(bloco)
-            assunto = (bloco[: corte.start()] if corte else bloco).strip().rstrip(".")
-            saida.append({
-                "processo": numero,
-                "orgaos": orgaos,
-                "vinculo": ("unidade jurisdicionada" if na_unidade else "interessado"),
-                "unidades": [u.strip() for u in (unidade or "").split(";") if u.strip()],
-                "assunto": assunto or None,
-                "natureza": _campo(bloco, (r"Natureza",)),
-                "relator": relator,
-                "colegiado": colegiado,
-                "fase": FASES[secao],
-                "acordao": acordao if secao == "ata" else None,
-                "data": iso(parse_data(data_sessao)),
-                "edicao": id_edicao,
-            })
-        buffer = []
-        numero = None
-
-    for linha in texto.split("\n"):
-        if m := RX_SECAO.match(linha):
-            fechar()
-            secao = _secao(m.group(1))
-            continue
-        # Só é cabeçalho se ABRE a linha: um acórdão citado dentro do texto de um
-        # monitoramento é referência, não a decisão deste processo.
-        if m := RX_ACORDAO.match(linha.strip()):
-            fechar()
-            acordao = f"{m.group(1)}/{m.group(2)}"
-            if secao == "indefinido":
-                secao = "ata"
-            continue
-        if m := RX_COLEGIADO.search(linha):
-            fechar()
-            colegiado, secao = m.group(1).title().replace("Camara", "Câmara"), "pauta"
-            continue
-        if m := RX_SESSAO.search(linha):
-            data_sessao = m.group(1)
-            continue
-        if m := RX_RELATOR.match(linha):
-            fechar()
-            relator = m.group(1).strip().title()
-            continue
-        if m := RX_PROCESSO.match(linha):
-            fechar()
-            numero = m.group(1)
-            buffer = [linha[m.end():]]
-            continue
-        if numero is not None:
-            buffer.append(linha)
-
-    fechar()
-    return saida
-
-
-def varrer_btcu(sessao: requests.Session, ancora: int, maximo: int) -> tuple[list[dict], int]:
-    teto = max(ancora, BTCU_ANCORA) + int((date.today() - BTCU_DATA_ANCORA).days * 1.1) + 40
-    log.info("BTCU: varrendo de %d até no máximo %d", ancora, teto)
-
-    movs: list[dict] = []
-    misses, lidas, maior, atual = 0, 0, ancora, ancora
-    while misses < BTCU_MISSES and lidas < maximo and atual <= teto:
-        texto = ler_btcu(sessao, atual)
-        if texto is None:
-            misses += 1
-        else:
-            misses, lidas, maior = 0, lidas + 1, max(maior, atual)
-            achados = extrair_movimentacoes(texto, atual)
-            if achados:
-                log.info("Edição %d: %d movimentações de interesse", atual, len(achados))
-            movs.extend(achados)
-        atual += 1
-    log.info("BTCU: %d edições lidas, %d movimentações, âncora em %d", lidas, len(movs), maior)
-    return movs, maior
-
-
-# =========================================================================== #
-# FONTE 2 — Pesquisa Integrada (a configurar)
-# =========================================================================== #
-
-
-# Movimentação da Pesquisa: "DD/MM/AAAA - HH:MM:SS - texto livre"
-RX_MOV = re.compile(r"^\s*(\d{2}/\d{2}/\d{4})\s*-\s*[\d:]+\s*-\s*(.+)$")
-# Acórdão dentro do título de uma peça: "Acórdão Nº 7615/2020-TCU-Primeira Câmara"
-RX_PECA_ACORDAO = re.compile(r"AC[ÓO]RD[ÃA]O\s+N?[ºo°]?\s*([\d.]+)/(\d{4})\s*-\s*TCU\s*-\s*"
-                             r"([\w\s]+?C[âa]mara|Plen[áa]rio)", re.I)
-
-
-def _movimentacoes_pesquisa(brutas: list, pecas: list) -> list[dict]:
-    """Converte as MOVIMENTACOES (texto) e localiza acórdãos entre as PECAS."""
-    movs = []
-    for linha in brutas or []:
-        m = RX_MOV.match(str(linha))
-        if m:
-            movs.append({"data": iso(parse_data(m.group(1))), "descricao": m.group(2).strip(),
-                         "fase": None, "acordao": None})
-    for pe in pecas or []:
-        titulo = pe.get("TITULO") or pe.get("ASSUNTO") or ""
-        m = RX_PECA_ACORDAO.search(titulo)
-        if m:
-            movs.append({
-                "data": iso(parse_data((pe.get("DTRELEVANCIA") or "")[:10])),
-                "descricao": f"Acórdão {m.group(1)}/{m.group(2)} — {m.group(3).strip()}",
-                "fase": "Julgado", "acordao": f"{m.group(1)}/{m.group(2)}",
-            })
-    movs.sort(key=lambda x: parse_data(x["data"]) or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
-    return movs
-
-
-def _campos_pesquisa(it: dict) -> dict:
-    """Mapeia um documento da Pesquisa Integrada. Nomes REAIS confirmados na resposta."""
-    unidades = it.get("UNIDADESJURISDICIONADAS") or []
-    if isinstance(unidades, str):
-        unidades = [unidades]
-    unidades = [u.strip() for u in unidades if u and u.strip()]
-    texto_uj = " ; ".join(unidades)
-
-    # Além da unidade jurisdicionada, um processo pode ter órgãos do MPO como
-    # INTERESSADOS — ex.: a Assessoria de Controle Interno ou a Secretaria-
-    # Executiva do MPO. A resposta da Pesquisa às vezes traz INTERESSADOS e
-    # RESPONSAVEIS (confirmado em resposta real), às vezes vem enxuta sem eles;
-    # quando faltam, buscar_por_numero recupera a versão completa. RESPONSAVEIS
-    # costuma ser pessoa física, mas pode conter unidade — lemos ambos.
-    interessados = (it.get("INTERESSADOS") or it.get("INTERESSADO")
-                    or it.get("PARTES") or [])
-    if isinstance(interessados, str):
-        interessados = [interessados]
-    interessados = [str(i).strip() for i in interessados if i and str(i).strip()]
-
-    responsaveis = it.get("RESPONSAVEIS") or []
-    if isinstance(responsaveis, str):
-        responsaveis = [responsaveis]
-    responsaveis = [str(r).strip() for r in responsaveis if r and str(r).strip()]
-
-    texto_int = " ; ".join(interessados + responsaveis)
-
-    orgaos_uj = set(orgaos_em(texto_uj))
-    orgaos_int = set(orgaos_em(texto_int))
-    orgaos = sorted(orgaos_uj | orgaos_int)
-    # Vínculo predominante: se algum órgão é unidade jurisdicionada, o processo é
-    # "do MPO"; se só aparece como interessado, é "interesse".
-    vinculo = "unidade" if orgaos_uj else ("interessado" if orgaos_int else None)
-
-    pecas = it.get("PECAS") or []
-    movs = _movimentacoes_pesquisa(it.get("MOVIMENTACOES"), pecas)
-    ultima = movs[0] if movs else None
-    acordao = next((m["acordao"] for m in movs if m.get("acordao")), None)
-
-    return {
-        "processo": formatar_processo(it.get("NUMEROFORMATADO") or it.get("PROC")),
-        "codigo": it.get("CODIGO"),
-        "estado": it.get("ESTADO"),
-        "relator": it.get("RELATOR"),
-        "assunto": it.get("ASSUNTO") or it.get("TITULOCOMPLETO"),
-        "natureza": it.get("TIPO"),
-        "unidades": unidades,
-        "interessados": interessados,
-        "orgaos": orgaos,
-        "orgaos_unidade": sorted(orgaos_uj),
-        "orgaos_interessado": sorted(orgaos_int - orgaos_uj),
-        "vinculo": vinculo,
-        "movimentacoes_pesquisa": movs,
-        "ultima_pesquisa": ultima,
-        "acordao": acordao,
-        "url_push": it.get("URLSISTEMAPUSH"),
-    }
-
-
-def _uma_consulta(sessao: requests.Session, termo: str, filtro: str, rotulo: str,
-                  vistos: dict[str, dict]) -> bool:
-    """Executa uma consulta paginada e acumula em `vistos`. Devolve se respondeu."""
-    inicio = 0
-    respondeu = False
-    for _ in range(PESQUISA_MAX_PAGINAS):
-        params = {"termo": termo, "ordenacao": PESQUISA_ORDENACAO,
-                  "quantidade": PESQUISA_QUANTIDADE, "inicio": inicio}
-        if filtro:
-            params["filtro"] = filtro
-        try:
-            r = sessao.get(PESQUISA_BASE, params=params, headers=PESQUISA_HEADERS, timeout=TIMEOUT)
-            r.raise_for_status()
-            dados = r.json()
-        except (requests.exceptions.RequestException, ValueError) as exc:
-            log.warning("Pesquisa (%s, início %d): %s", rotulo[:34], inicio, exc)
-            break
-        respondeu = True
-        itens = dados if isinstance(dados, list) else (
-            dados.get("documentos") or dados.get("items") or dados.get("resultado")
-            or dados.get("content") or dados.get("hits") or [])
-        if not itens:
-            break
-        for it in itens:
-            campo = _campos_pesquisa(it)
-            if not campo["processo"]:
-                continue
-            # Termo livre casa qualquer texto: confirmamos que ALGUM órgão do MPO
-            # está mesmo entre as unidades, para não trazer processo alheio que
-            # só menciona "planejamento" no assunto.
-            if not campo["orgaos"]:
-                continue
-            ja = vistos.get(campo["processo"])
-            if ja:
-                ja["orgaos"] = sorted(set(ja["orgaos"]) | set(campo["orgaos"]))
-            else:
-                vistos[campo["processo"]] = campo
-        if len(itens) < PESQUISA_QUANTIDADE:
-            break
-        inicio += PESQUISA_QUANTIDADE
-    return respondeu
-
-
-def buscar_por_numero(sessao: requests.Session, numero: str) -> dict | None:
-    """Busca um processo específico pelo número. Rede de segurança para os que
-    o filtro de unidade não captura."""
-    proc_id = so_digitos(numero)
-    for termo in (numero, proc_id):
-        try:
-            params = {"termo": termo, "quantidade": 5, "inicio": 0}
-            r = sessao.get(PESQUISA_BASE, params=params, headers=PESQUISA_HEADERS, timeout=TIMEOUT)
-            r.raise_for_status()
-            itens = r.json().get("documentos") or []
-        except (requests.exceptions.RequestException, ValueError):
-            continue
-        for it in itens:
-            campo = _campos_pesquisa(it)
-            if so_digitos(campo["processo"]) == proc_id:
-                return campo
-    return None
-
-
-def enriquecer_detalhe(sessao: requests.Session, campo: dict) -> None:
-    """
-    Busca o detalhe do processo (MOVIMENTACOES, PECAS) quando a listagem resumida
-    não os trouxe. Atualiza `campo` no lugar; falha silenciosa mantém o resumo.
-    """
-    if campo.get("movimentacoes_pesquisa"):
-        return  # a listagem já trouxe; não precisa
-    proc_id = so_digitos(campo["processo"])
-    if not proc_id:
-        return
-    try:
-        r = sessao.get(PESQUISA_DETALHE, params={"key": campo.get("codigo") or proc_id},
-                       headers=PESQUISA_HEADERS, timeout=TIMEOUT)
-        r.raise_for_status()
-        doc = r.json()
-        doc = doc.get("documento") if isinstance(doc, dict) and "documento" in doc else doc
-    except (requests.exceptions.RequestException, ValueError):
-        return
-    if isinstance(doc, dict):
-        detalhado = _campos_pesquisa(doc)
-        for k in ("movimentacoes_pesquisa", "ultima_pesquisa", "acordao", "relator",
-                  "assunto", "natureza", "estado"):
-            if detalhado.get(k) and not campo.get(k):
-                campo[k] = detalhado[k]
-
-
-def consultar_pesquisa(sessao: requests.Session) -> list[dict]:
-    """
-    Descobre os processos do MPO por três caminhos complementares:
-      1. filtro estruturado por unidade (várias grafias, inclusive as antigas);
-      2. busca por termo livre (pega grafias que o filtro exato perde);
-      3. busca direta pelos números garantidos (rede de segurança).
-    Depois enriquece cada um com as movimentações do endpoint de detalhe.
-    """
-    vistos: dict[str, dict] = {}
-    houve_resposta = False
-
-    for filtro in PESQUISA_UNIDADES:
-        if _uma_consulta(sessao, "*", filtro, filtro.split('("')[-1], vistos):
-            houve_resposta = True
-    log.info("Após filtro por unidade: %d processos", len(vistos))
-
-    for filtro in PESQUISA_INTERESSADOS:
-        if _uma_consulta(sessao, "*", filtro, "int " + filtro.split('("')[-1], vistos):
-            houve_resposta = True
-    log.info("Após filtro por interessado: %d processos", len(vistos))
-
-    for termo in PESQUISA_TERMOS:
-        if _uma_consulta(sessao, termo, "", "termo " + termo, vistos):
-            houve_resposta = True
-    log.info("Após busca por termo livre: %d processos", len(vistos))
-
-    for numero in PROCESSOS_GARANTIDOS:
-        if numero in vistos:
-            continue
-        campo = buscar_por_numero(sessao, numero)
-        if campo:
-            campo.setdefault("garantido", True)
-            vistos[numero] = campo
-            log.info("Garantido recuperado: %s", numero)
-        else:
-            log.warning("Garantido NÃO encontrado na base: %s", numero)
-
-    # Enriquecimento: só para os que vieram sem movimentações (a listagem resume).
-    faltam = [c for c in vistos.values() if not c.get("movimentacoes_pesquisa")]
-    log.info("Enriquecendo %d processos sem movimentações na listagem", len(faltam))
-    for campo in faltam:
-        enriquecer_detalhe(sessao, campo)
-
-    if not houve_resposta:
-        log.error("Pesquisa Integrada não respondeu em nenhuma consulta.")
-    return list(vistos.values())
-
-
-# =========================================================================== #
-# CONSOLIDAÇÃO
-# =========================================================================== #
-
-ORDEM_FASE = {"Incluído em pauta": 1, "Edital publicado": 2, "Movimentação no boletim": 3,
-              "Despacho do relator": 4, "Julgado": 5}
-
-
-def consolidar_pesquisa(processos_pesquisa: list[dict]) -> list[dict]:
-    """A Pesquisa Integrada já traz tudo por processo: monta a saída direto dela."""
-    saida = []
-    for p in processos_pesquisa:
-        movs = p.get("movimentacoes_pesquisa") or []
-        # Dedup por (data, descrição) — a mesma movimentação pode repetir.
-        vistas, limpas = set(), []
-        for m in movs:
-            chave = (m["data"], m["descricao"][:60])
-            if chave not in vistas:
-                vistas.add(chave)
-                limpas.append(m)
-        ultima = limpas[0] if limpas else None
-        saida.append({
-            "numero": p["processo"], "id": so_digitos(p["processo"]),
-            "codigo": p.get("codigo"),
-            "estado": p.get("estado"),
-            "relator": p.get("relator"),
-            "assunto": p.get("assunto"),
-            "natureza": p.get("natureza"),
-            "unidades": p.get("unidades") or [],
-            "interessados": p.get("interessados") or [],
-            "orgaos": sorted(p.get("orgaos") or []),
-            "orgaos_unidade": p.get("orgaos_unidade") or [],
-            "orgaos_interessado": p.get("orgaos_interessado") or [],
-            "vinculo": p.get("vinculo"),
-            "acordao": p.get("acordao"),
-            "movimentacoes": limpas,
-            "ultima_movimentacao": ultima,
-            "fase_atual": ultima["descricao"][:80] if ultima else None,
-            "atualizado_em": ultima["data"] if ultima else None,
-            "url_push": p.get("url_push"),
-            "garantido": p.get("garantido", False),
-        })
-    saida.sort(key=lambda p: parse_data(p["atualizado_em"]) or datetime.min.replace(tzinfo=timezone.utc),
-               reverse=True)
-    return saida
-
-
-def _consolidar_boletim(movs: list[dict], da_pesquisa: list[dict]) -> list[dict]:
-    """Agrupa movimentações por processo e funde com o que veio da pesquisa."""
-    proc: dict[str, dict] = {}
-
-    for m in movs:
-        p = proc.setdefault(m["processo"], {
-            "numero": m["processo"], "id": so_digitos(m["processo"]),
-            "movimentacoes": [], "orgaos": set(), "unidades": [],
-            "relator": None, "colegiado": None, "assunto": None,
-            "natureza": None, "estado": None, "vinculo": None, "abertura": None,
-        })
-        p["orgaos"].update(m["orgaos"])
-        if m["unidades"] and not p["unidades"]:
-            p["unidades"] = m["unidades"]
-        for campo in ("relator", "colegiado", "natureza"):
-            if m.get(campo) and not p[campo]:
-                p[campo] = m[campo]
-        # Fica o assunto mais completo: o boletim ora traz a ementa inteira,
-        # ora só uma linha de relação.
-        if m.get("assunto") and len(m["assunto"]) > len(p["assunto"] or ""):
-            p["assunto"] = m["assunto"]
-        if m["vinculo"] == "unidade jurisdicionada":
-            p["vinculo"] = m["vinculo"]
-        elif not p["vinculo"]:
-            p["vinculo"] = m["vinculo"]
-        p["movimentacoes"].append({
-            "data": m["data"], "fase": m["fase"],
-            "acordao": m.get("acordao"), "colegiado": m.get("colegiado"),
-            "relator": m.get("relator"), "edicao": m.get("edicao"),
-        })
-
-    for p in da_pesquisa:
-        alvo = proc.setdefault(p["processo"], {
-            "numero": p["processo"], "id": so_digitos(p["processo"]),
-            "movimentacoes": [], "orgaos": set(), "unidades": [],
-            "relator": None, "colegiado": None, "assunto": None,
-            "natureza": None, "estado": None,
-            "vinculo": "unidade jurisdicionada", "abertura": None,
-        })
-        alvo["orgaos"].update(p.get("orgaos") or [])
-        for campo in ("estado", "relator", "assunto", "natureza", "abertura"):
-            if p.get(campo):
-                alvo[campo] = p[campo]     # a pesquisa é autoritativa
-        if p.get("unidades"):
-            alvo["unidades"] = p["unidades"]
-
-    saida = []
-    for p in proc.values():
-        movs_p = sorted(p["movimentacoes"],
-                        key=lambda m: (parse_data(m["data"]) or datetime.min.replace(tzinfo=timezone.utc),
-                                       ORDEM_FASE.get(m["fase"], 0)))
-        # Deduplicar: a mesma fase na mesma data em edições diferentes é repetição.
-        vistas, limpas = set(), []
-        for m in movs_p:
-            chave = (m["data"], m["fase"], m["acordao"])
-            if chave not in vistas:
-                vistas.add(chave)
-                limpas.append(m)
-        ultima = limpas[-1] if limpas else None
-        saida.append({
-            **p,
-            "orgaos": sorted(p["orgaos"]),
-            "movimentacoes": limpas,
-            "ultima_movimentacao": ultima,
-            "fase_atual": ultima["fase"] if ultima else None,
-            "atualizado_em": ultima["data"] if ultima else None,
-        })
-
-    saida.sort(key=lambda p: parse_data(p["atualizado_em"]) or datetime.min.replace(tzinfo=timezone.utc),
-               reverse=True)
-    return saida
-
-
-def _dia(iso_str: str | None) -> str | None:
-    d = parse_data(iso_str)
-    return d.date().isoformat() if d else None
-
-
-def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
-    agora = datetime.now(timezone.utc)
-    hoje = agora.date()
-
-    # FOCO EM ABERTOS: encerrados saem de todo o painel. Guardamos a contagem
-    # só para registrar quantos foram descartados.
-    total_bruto = len(processos)
-    encerrados = sum(1 for p in processos if normalizar(p.get("estado")) != "aberto")
-    processos = [p for p in processos if normalizar(p.get("estado")) == "aberto"]
-    por_orgao = []
-    for sigla, cfg in UNIDADES.items():
-        do_orgao = [p for p in processos if sigla in p["orgaos"]]
-        if do_orgao:
-            como_unidade = sum(1 for p in do_orgao if sigla in (p.get("orgaos_unidade") or []))
-            por_orgao.append({"orgao": sigla, "nome": cfg["nome"], "total": len(do_orgao),
-                              "como_unidade": como_unidade,
-                              "como_interessado": len(do_orgao) - como_unidade})
-
-    # Quantos processos entram por unidade jurisdicionada vs só como interessado.
-    so_interesse = sum(1 for p in processos if p.get("vinculo") == "interessado")
-
-    # Distribuição por tipo (todos já são abertos).
-    tipos: dict[str, int] = {}
-    for p in processos:
-        t = (p.get("natureza") or "Não classificado").strip()
-        tipos[t] = tipos.get(t, 0) + 1
-    por_tipo = sorted(({"tipo": k, "total": v, "abertos": v} for k, v in tipos.items()),
-                      key=lambda x: -x["total"])
-
-    # Distribuição por relator — terceiro gráfico do topo.
-    relatores: dict[str, int] = {}
-    for p in processos:
-        r = (p.get("relator") or "Não distribuído").strip()
-        relatores[r] = relatores.get(r, 0) + 1
-    por_relator = sorted(({"relator": k, "total": v} for k, v in relatores.items()),
-                         key=lambda x: -x["total"])
-
-    movs = [{**m, "processo": p["numero"], "assunto": p["assunto"],
-             "natureza": p.get("natureza"), "orgaos": p["orgaos"], "estado": p["estado"]}
-            for p in processos for m in p["movimentacoes"]]
-    movs.sort(key=lambda m: parse_data(m["data"]) or datetime.min.replace(tzinfo=timezone.utc),
-              reverse=True)
-
-    # Ranking do último mês: processos com mais movimentações nos últimos 30
-    # dias. Vira gráfico de barras clicável no painel.
-    limite_30 = (hoje - timedelta(days=30)).isoformat()
-    contagem_mes: dict[str, dict] = {}
-    for p in processos:
-        recentes_p = [m for m in p["movimentacoes"] if (_dia(m["data"]) or "") >= limite_30]
-        if recentes_p:
-            contagem_mes[p["numero"]] = {
-                "processo": p["numero"], "orgaos": p["orgaos"],
-                "assunto": p["assunto"], "relator": p.get("relator"),
-                "movimentacoes_mes": len(recentes_p),
-            }
-    ranking_mes = sorted(contagem_mes.values(), key=lambda x: -x["movimentacoes_mes"])[:8]
-
-    # Movimentações da última semana — SÓ inclusão em pauta ou acórdão publicado.
-    # O feed deixa de listar despachos internos e passa a marcar apenas os
-    # eventos de peso: entrou em pauta (vai a julgamento) ou saiu acórdão.
-    def evento_relevante(m: dict) -> str | None:
-        if m.get("acordao"):
-            return "acordao"
-        desc = normalizar(m.get("descricao") or m.get("fase"))
-        # "incluído em pauta", "incluida em pauta", "inclusão em pauta"
-        if "pauta" in desc and ("inclu" in desc or "pautad" in desc):
-            return "pauta"
-        return None
-
-    limite_feed = (hoje - timedelta(days=30)).isoformat()
-    recentes = []
-    for m in movs:
-        if (_dia(m["data"]) or "") < limite_feed:
-            continue
-        tipo_ev = evento_relevante(m)
-        if tipo_ev:
-            recentes.append({**m, "evento": tipo_ev})
-
-    return {
-        "versao": 2,
-        "gerado_em": agora.isoformat(),
-        "gerado_em_br": agora.astimezone().strftime("%d/%m/%Y às %H:%M"),
-        "ancora_btcu": ancora,
-        "tem_estado": any(p["estado"] for p in processos),
-        "avisos": avisos,
-        "totais": {
-            "processos": len(processos),
-            "movimentacoes": len(movs),
-            "abertos": len(processos),
-            "encerrados_ocultos": encerrados,
-            "so_interesse": so_interesse,
-        },
-        "garantidos": [p["numero"] for p in processos if p.get("garantido")],
-        "por_orgao": por_orgao,
-        "por_tipo": por_tipo,
-        "por_relator": por_relator,
-        "ranking_mes": ranking_mes,
-        "processos": processos,
-        "movimentacoes_recentes": recentes[:60],
-        "movimentacoes": movs[:200],
-    }
-
-
-def salvar(payload: dict, caminho: str) -> None:
-    destino = os.path.abspath(caminho)
-    pasta = os.path.dirname(destino) or "."
-    os.makedirs(pasta, exist_ok=True)
-    fd, tmp = tempfile.mkstemp(dir=pasta, suffix=".tmp")
-    try:
-        with os.fdopen(fd, "w", encoding="utf-8") as f:
-            json.dump(payload, f, ensure_ascii=False, indent=1)
-            f.flush()
-            os.fsync(f.fileno())
-        os.replace(tmp, destino)
-    except BaseException:
-        if os.path.exists(tmp):
-            os.unlink(tmp)
-        raise
-
-
-# =========================================================================== #
-
-
-def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description="Processos do TCU com o MPO como unidade jurisdicionada.")
-    ap.add_argument("--saida", default="site/dados.json")
-    ap.add_argument("--com-boletim", action="store_true",
-                    help="além da Pesquisa Integrada, varre o boletim para captar pauta futura")
-    ap.add_argument("--desde-id", type=int, default=None,
-                    help="com --com-boletim: id inicial do boletim (22110≈ago/2024)")
-    ap.add_argument("--max-edicoes", type=int, default=60)
-    ap.add_argument("-v", "--verbose", action="store_true")
-    args = ap.parse_args(argv)
-
-    logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
-                        format="%(asctime)s %(levelname)-7s %(message)s", datefmt="%H:%M:%S")
-
-    http = sessao_http()
-    avisos: list[str] = []
-
-    # Fonte primária: Pesquisa Integrada. Traz a lista COMPLETA de processos do
-    # MPO, com estado, relator, assunto, movimentações e acórdãos.
-    da_pesquisa = consultar_pesquisa(http)
-    if not da_pesquisa:
-        avisos.append("A Pesquisa Integrada do TCU não respondeu nesta execução. "
-                      "Tente novamente mais tarde; o site pode estar instável.")
-        if os.path.exists(args.saida):
-            log.warning("Nada coletado; %s anterior preservado.", args.saida)
-            return 0
-        log.error("Nada coletado e não há arquivo anterior.")
-        return 1
-
-    processos = consolidar_pesquisa(da_pesquisa)
-
-    # Camada opcional: o boletim adiciona pauta futura (a Pesquisa não distingue
-    # "vai ser julgado" de "foi julgado"). Só quando pedido, para não pesar.
-    ancora = args.desde_id or BTCU_ANCORA
-    if args.com_boletim:
-        if not args.desde_id:
-            try:
-                with open(args.saida, encoding="utf-8") as f:
-                    ancora = max(ancora, int(json.load(f).get("ancora_btcu", ancora)))
-            except (OSError, ValueError, TypeError):
-                pass
-        movs, ancora = varrer_btcu(http, ancora, args.max_edicoes)
-        emedados = {p["numero"] for p in processos}
-        extras = [m for m in movs if m["processo"] not in emedados]
-        if extras:
-            processos += _consolidar_boletim(extras, [])
-            log.info("Boletim: %d processos adicionais não vistos na Pesquisa", len(extras))
-
-    salvar(montar(processos, ancora, avisos), args.saida)
-    log.info("%s gravado: %d processos, %d movimentações.",
-             args.saida, len(processos), sum(len(p["movimentacoes"]) for p in processos))
-    return 0
-
-
-if __name__ == "__main__":
-    sys.exit(main())
+function render(){
+  document.getElementById("app").hidden = false;
+  document.getElementById("quando").innerHTML = `Coleta: <strong>${esc(D.gerado_em_br || "—")}</strong>`;
+  document.getElementById("avisos").innerHTML = (D.avisos || []).length
+    ? `<div class="aviso"><span aria-hidden="true">▲</span><span>${(D.avisos).map(esc).join(" ")}</span></div>` : "";
+  kpis();
+  rankingMes();
+  barras();
+  graficoRelator();
+  movimentacoes();
+  ferramentas();
+  lista();
+}
+
+function kpis(){
+  const total = D.totais.processos;
+  const ocultos = (D.totais.encerrados_ocultos || 0);
+  const cartoes = [
+    { f:"", n:total, t:"Processos abertos", d:"Com órgão do MPO como unidade jurisdicionada. " + (ocultos ? `${ocultos} encerrados fora da análise.` : ""), c:"aberto" },
+  ];
+  if(INT.size) cartoes.push({ f:"__int", n:INT.size, t:"Meu interesse", d:"Marcados por você.", c:"prio" });
+  const soInt = (D.totais && D.totais.so_interesse) || 0;
+  if(soInt) cartoes.push({ f:"__interesse", n:soInt, t:"Só interesse", d:"MPO consta como interessado, não como unidade jurisdicionada.", c:"total" });
+  (D.por_orgao || []).forEach((o) => cartoes.push(
+    { f:"__org_" + o.orgao, n:o.total, t:o.orgao, d:o.nome, c:"total" }));
+
+  document.getElementById("kpis").innerHTML = cartoes.map((k, i) => `
+    <button type="button" class="kpi ${k.c} sobe" data-f="${esc(k.f)}"
+            aria-pressed="${FILTRO_KPI === k.f && k.f !== ""}" style="animation-delay:${i * 40}ms">
+      <b>${k.n}</b><span>${esc(k.t)}</span><small>${esc(k.d)}</small>
+    </button>`).join("");
+
+  document.querySelectorAll(".kpi").forEach((b) => b.addEventListener("click", () => {
+    const f = b.dataset.f;
+    FILTRO_KPI = (FILTRO_KPI === f || f === "") ? "" : f;
+    kpis(); lista();
+    document.getElementById("linhas").scrollIntoView({ behavior:"smooth", block:"start" });
+  }));
+}
+
+function rankingMes(){
+  const rk = D.ranking_mes || [];
+  const el = document.getElementById("ranking");
+  if(!rk.length){ el.innerHTML = `<span style="color:var(--muted);font-size:13px">Sem movimentações no último mês.</span>`; return; }
+  const max = Math.max(...rk.map((r) => r.movimentacoes_mes));
+  el.innerHTML = rk.map((r) => `
+    <button type="button" class="rk-bar" data-num="${esc(r.processo)}" aria-pressed="${ehInteresse(r.processo)}"
+            title="${esc((r.assunto || "").slice(0, 90))}">
+      <span class="rk-lbl">${esc(r.processo)}</span>
+      <span class="rk-trilho"><span class="rk-fill" style="width:${(r.movimentacoes_mes / max * 100).toFixed(0)}%"></span></span>
+      <span class="rk-n">${r.movimentacoes_mes}</span>
+    </button>`).join("");
+  document.querySelectorAll(".rk-bar").forEach((b) => b.addEventListener("click", () => {
+    toggleInteresse(b.dataset.num);
+  }));
+}
+
+function barras(){
+  const tipos = D.por_tipo || [];
+  const el = document.getElementById("barras");
+  if(!tipos.length){ el.innerHTML = ""; return; }
+  const max = Math.max(...tipos.map((t) => t.total));
+  el.innerHTML = tipos.map((t) => {
+    const larg = (t.total / max * 100).toFixed(1);
+    return `<button type="button" class="barra" data-tipo="${esc(t.tipo)}" aria-pressed="${FILTRO_TIPO === t.tipo}">
+      <div class="barra-top"><b>${esc(t.tipo)}</b><span>${t.total}</span></div>
+      <div class="barra-trilho" style="width:${larg}%">
+        <div class="barra-fill ab" style="width:100%"></div>
+      </div>
+    </button>`;
+  }).join("");
+
+  document.querySelectorAll(".barra").forEach((b) => b.addEventListener("click", () => {
+    FILTRO_TIPO = FILTRO_TIPO === b.dataset.tipo ? "" : b.dataset.tipo;
+    const sel = document.getElementById("f-tipo");
+    if(sel) sel.value = FILTRO_TIPO;
+    barras();
+  graficoRelator(); lista();
+    document.getElementById("linhas").scrollIntoView({ behavior:"smooth", block:"start" });
+  }));
+}
+
+function graficoRelator(){
+  const rel = D.por_relator || [];
+  const el = document.getElementById("relatores");
+  if(!rel.length){ el.innerHTML = ""; return; }
+  const max = Math.max(...rel.map((r) => r.total));
+  const ativo = document.getElementById("f-relator");
+  el.innerHTML = rel.slice(0, 8).map((r) => {
+    const sel = ativo && ativo.value === r.relator;
+    // encurta "Benjamin Zymler" -> mantém; nomes longos truncam no CSS
+    return `<button type="button" class="barra" data-rel="${esc(r.relator)}" aria-pressed="${sel}">
+      <div class="barra-top"><b>${esc(r.relator)}</b><span>${r.total}</span></div>
+      <div class="barra-trilho" style="width:${(r.total / max * 100).toFixed(1)}%">
+        <div class="barra-fill ab" style="width:100%"></div>
+      </div>
+    </button>`;
+  }).join("");
+  document.querySelectorAll("#relatores .barra").forEach((b) => b.addEventListener("click", () => {
+    const sel = document.getElementById("f-relator");
+    sel.value = sel.value === b.dataset.rel ? "" : b.dataset.rel;
+    graficoRelator(); lista();
+    document.getElementById("linhas").scrollIntoView({ behavior:"smooth", block:"start" });
+  }));
+}
+
+function movimentacoes(){
+  const hoje = new Date();
+  const movs = (D.movimentacoes_recentes || []);
+  document.getElementById("sub-movs").textContent = movs.length
+    ? `${plural(movs.length, "evento", "eventos")} no último mês — apenas inclusões em pauta e acórdãos.`
+    : "Nenhuma inclusão em pauta ou acórdão no último mês.";
+
+  document.getElementById("movs").innerHTML = movs.length ? movs.map((m) => {
+    const d = dt(m.data);
+    const ab = String(m.estado || "").toLowerCase() === "aberto";
+    return `<li class="mov ${ab ? "ab" : ""}">
+      <div class="mov-d">${esc(fmt(d))}<em>${d ? esc(relativo(dias(hoje, d))) : "sem data"}</em></div>
+      <div>
+        <div class="mov-l1">
+          <a class="mov-n" href="${esc(link(m.processo))}" target="_blank" rel="noopener">${esc(m.processo)} ↗</a>
+          ${m.evento === "pauta" ? `<span class="chip chip-pauta">Incluído em pauta</span>` : ""}
+          ${m.acordao ? `<span class="chip chip-ac">Acórdão ${esc(m.acordao)}</span>` : ""}
+          ${(m.orgaos || []).map((o) => `<span class="chip ${esc(o)}">${esc(o)}</span>`).join("")}
+        </div>
+        <p class="mov-mov">${esc((m.descricao || m.fase || "Movimentação").slice(0, 150))}</p>
+        ${m.assunto ? `<p class="mov-a">${esc(m.assunto.slice(0, 160))}${m.assunto.length > 160 ? "…" : ""}</p>` : ""}
+      </div>
+    </li>`;
+  }).join("") : `<li class="vazio">Nenhuma inclusão em pauta ou acórdão nos últimos 30 dias.</li>`;
+}
+
+function ferramentas(){
+  const preencher = (id, valores) => {
+    const el = document.getElementById(id);
+    [...new Set(valores)].filter(Boolean).sort().forEach((v) => {
+      const o = document.createElement("option");
+      o.value = v; o.textContent = v; el.appendChild(o);
+    });
+  };
+  preencher("f-orgao", D.processos.flatMap((p) => p.orgaos || []));
+  preencher("f-tipo", D.processos.map((p) => p.natureza));
+  preencher("f-relator", D.processos.map((p) => p.relator));
+
+  document.getElementById("f-tipo").addEventListener("input", (e) => {
+    FILTRO_TIPO = e.target.value; barras(); lista();
+  });
+  document.getElementById("f-relator").addEventListener("input", () => { graficoRelator(); lista(); });
+  ["q","f-orgao","ordem"].forEach((id) =>
+    document.getElementById(id).addEventListener("input", lista));
+}
+
+function lista(){
+  const hoje = new Date();
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const fo = document.getElementById("f-orgao").value;
+  const fr = document.getElementById("f-relator").value;
+  const ord = document.getElementById("ordem").value;
+
+  let l = D.processos.filter((p) => {
+    if(FILTRO_KPI === "__int" && !ehInteresse(p.numero)) return false;
+    if(FILTRO_KPI === "__interesse" && p.vinculo !== "interessado") return false;
+    if(FILTRO_KPI === "__aberto" && !aberto(p)) return false;
+    if(FILTRO_KPI.startsWith("__org_") && !(p.orgaos || []).includes(FILTRO_KPI.slice(6))) return false;
+    if(FILTRO_TIPO && (p.natureza || "Não classificado") !== FILTRO_TIPO) return false;
+    if(fo && !(p.orgaos || []).includes(fo)) return false;
+    if(fr && p.relator !== fr) return false;
+    if(q && ![p.numero, p.assunto, p.relator, p.natureza].join(" ").toLowerCase().includes(q)) return false;
+    return true;
+  });
+
+  if(ord === "numero") l = l.slice().sort((a, b) => a.numero.localeCompare(b.numero));
+  else if(ord === "relator") l = l.slice().sort((a, b) => (a.relator || "zz").localeCompare(b.relator || "zz"));
+  // Processos de interesse sempre no topo.
+  l = l.slice().sort((a, b) => (ehInteresse(b.numero) ? 1 : 0) - (ehInteresse(a.numero) ? 1 : 0));
+
+  document.getElementById("cont").textContent = `${l.length} de ${D.processos.length}`;
+  document.getElementById("sub-procs").textContent =
+    "Clique na estrela para marcar interesse — os marcados sobem ao topo e viram um filtro no topo da página.";
+
+  document.getElementById("linhas").innerHTML = l.length ? l.map((p) => {
+    const d = dt(p.atualizado_em);
+    const ab = aberto(p);
+    const trilha = (p.movimentacoes || []).slice(0, 4).map((m) => {
+      const md = dt(m.data);
+      return `<span class="f">${md ? `<b>${esc(fmt(md))}</b> ` : ""}${esc((m.descricao || m.fase || "").slice(0, 55))}${
+        m.acordao ? ` <b>Ac. ${esc(m.acordao)}</b>` : ""}</span>`;
+    }).join("");
+
+    const inter = ehInteresse(p.numero);
+    return `<div class="linha ${inter ? "prio" : ""} ab">
+      <div>
+        <div style="display:flex;align-items:center;gap:2px">
+          <button type="button" class="estrela ${inter ? "on" : ""}" data-int="${esc(p.numero)}"
+                  title="${inter ? "Remover do meu interesse" : "Marcar interesse"}"
+                  aria-label="${inter ? "Remover do meu interesse" : "Marcar interesse"}"
+                  aria-pressed="${inter}">${inter ? "★" : "☆"}</button>
+          <a class="pn" href="${esc(link(p.numero))}" target="_blank" rel="noopener">${esc(p.numero)} ↗</a>
+        </div>
+        <div class="pmeta">
+          ${(p.orgaos || []).map((o) => {
+            const soInt = (p.orgaos_interessado || []).includes(o) && !(p.orgaos_unidade || []).includes(o);
+            return `<span class="chip ${esc(o)} ${soInt ? "int" : ""}" title="${soInt ? o + " consta como interessado" : o + " é unidade jurisdicionada"}">${esc(o)}</span>`;
+          }).join("")}
+          ${p.vinculo === "interessado" ? `<span class="chip chip-vinc" title="Nenhum órgão do MPO é unidade jurisdicionada; aparece(m) como interessado(s).">só interesse</span>` : ""}
+        </div>
+      </div>
+      <div>
+        <p class="pa">${esc(p.assunto || "Assunto não informado")}</p>
+        ${p.natureza ? `<p class="pu">${esc(p.natureza)}</p>` : ""}
+        <div class="trilha">${trilha}</div>
+      </div>
+      <div class="pr">
+        <b>Relator</b><span>${esc(p.relator || "não informado")}</span>
+        <b>Última movimentação</b><span>${esc((p.fase_atual || "—").slice(0, 70))}${d ? ` · ${esc(relativo(dias(hoje, d)))}` : ""}</span>
+      </div>
+    </div>`;
+  }).join("") : `<div class="vazio">Nenhum processo com esses filtros.</div>`;
+
+  document.querySelectorAll(".estrela").forEach((b) => b.addEventListener("click", (e) => {
+    e.preventDefault(); e.stopPropagation();
+    toggleInteresse(b.dataset.int);
+  }));
+}
+
+carregar();
+</script>
+</body>
+</html>
