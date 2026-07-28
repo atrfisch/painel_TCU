@@ -1,14 +1,14 @@
 {
  "versao": 2,
- "gerado_em": "2026-07-27T19:52:54.038116+00:00",
- "gerado_em_br": "27/07/2026 às 19:52",
+ "gerado_em": "2026-07-28T12:58:29.057028+00:00",
+ "gerado_em_br": "28/07/2026 às 12:58",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 37,
-  "movimentacoes": 106,
-  "abertos": 37,
+  "processos": 38,
+  "movimentacoes": 109,
+  "abertos": 38,
   "encerrados_ocultos": 186,
   "so_interesse": 0
  },
@@ -25,15 +25,15 @@
   {
    "orgao": "MPO",
    "nome": "Ministério do Planejamento e Orçamento",
-   "total": 30,
-   "como_unidade": 30,
+   "total": 31,
+   "como_unidade": 31,
    "como_interessado": 0
   },
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 30,
-   "como_unidade": 30,
+   "total": 31,
+   "como_unidade": 31,
    "como_interessado": 0
   }
  ],
@@ -45,8 +45,8 @@
   },
   {
    "tipo": "Relatório de Auditoria",
-   "total": 7,
-   "abertos": 7
+   "total": 8,
+   "abertos": 8
   },
   {
    "tipo": "Representação",
@@ -86,12 +86,12 @@
  ],
  "por_relator": [
   {
-   "relator": "Benjamin Zymler",
+   "relator": "Antonio Anastasia",
    "total": 10
   },
   {
-   "relator": "Antonio Anastasia",
-   "total": 9
+   "relator": "Benjamin Zymler",
+   "total": 10
   },
   {
    "relator": "Jhonatan de Jesus",
@@ -123,6 +123,16 @@
    "movimentacoes_mes": 4
   },
   {
+   "processo": "016.141/2026-1",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
+   "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 3
+  },
+  {
    "processo": "006.412/2026-2",
    "orgaos": [
     "MPO",
@@ -130,6 +140,16 @@
    ],
    "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
    "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "008.798/2025-7",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Avaliação do acompanhamento de Benefícios Tributários pelo governo federal com objetivo de verificar o alinhamento de gastos tributários relevantes com o referencial de controle de benefícios tributários do TCU.",
+   "relator": "Benjamin Zymler",
    "movimentacoes_mes": 3
   },
   {
@@ -150,16 +170,6 @@
    "movimentacoes_mes": 3
   },
   {
-   "processo": "008.798/2025-7",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Avaliação do acompanhamento de Benefícios Tributários pelo governo federal com objetivo de verificar o alinhamento de gastos tributários relevantes com o referencial de controle de benefícios tributários do TCU.",
-   "relator": "Benjamin Zymler",
-   "movimentacoes_mes": 3
-  },
-  {
    "processo": "014.010/2026-7",
    "orgaos": [
     "MPO",
@@ -175,19 +185,65 @@
    "assunto": "<em>011.685/2026-3</em> - Denúncia",
    "relator": "Walton Alencar Rodrigues",
    "movimentacoes_mes": 3
-  },
+  }
+ ],
+ "processos": [
   {
-   "processo": "012.513/2026-1",
+   "numero": "016.141/2026-1",
+   "id": "01614120261",
+   "codigo": "80761519",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
+   "natureza": "Relatório de Auditoria",
+   "unidades": [
+    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "PGFN - Procuradoria-Geral da Fazenda Nacional",
+    "RFB - Secretaria Especial da Receita Federal do Brasil"
+   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "2ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  }
- ],
- "processos": [
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.762.030-2) publicada no BTCU Controle Externo n° 126, de 27/07/2026.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Relatoria alterada de relatoria a definir para MIN-AAA por AudFiscal (por Atribuição)",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-27T00:00:00+00:00",
+    "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.762.030-2) publicada no BTCU Controle Externo n° 126, de 27/07/2026.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.762.030-2) publicada no BTCU ",
+   "atualizado_em": "2026-07-27T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1614120261",
+   "garantido": false
+  },
   {
    "numero": "006.412/2026-2",
    "id": "00641220262",
@@ -241,6 +297,62 @@
    "fase_atual": "Distribuído para o gabinete do Procurador Júlio Marcelo",
    "atualizado_em": "2026-07-27T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=641220262",
+   "garantido": false
+  },
+  {
+   "numero": "008.798/2025-7",
+   "id": "00879820257",
+   "codigo": "78141261",
+   "estado": "Aberto",
+   "relator": "Benjamin Zymler",
+   "assunto": "Avaliação do acompanhamento de Benefícios Tributários pelo governo federal com objetivo de verificar o alinhamento de gastos tributários relevantes com o referencial de controle de benefícios tributários do TCU.",
+   "natureza": "Relatório de Acompanhamento",
+   "unidades": [
+    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "CC/PR - Casa Civil da Presidência da República",
+    "RFB - Secretaria Especial da Receita Federal do Brasil"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 27186/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 27190/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-22T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 27191/2026-TCU/Seproc via CONECTA TCU por MARCIO NUNES BILAR em nome de Advocacia-Geral da União",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-27T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 27186/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 27186/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-07-27T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=879820257",
    "garantido": false
   },
   {
@@ -612,62 +724,6 @@
    "fase_atual": "Registrada resposta de comunicação do Ofício 25943/2026-TCU/Seproc.",
    "atualizado_em": "2026-07-23T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1891820255",
-   "garantido": false
-  },
-  {
-   "numero": "008.798/2025-7",
-   "id": "00879820257",
-   "codigo": "78141261",
-   "estado": "Aberto",
-   "relator": "Benjamin Zymler",
-   "assunto": "Avaliação do acompanhamento de Benefícios Tributários pelo governo federal com objetivo de verificar o alinhamento de gastos tributários relevantes com o referencial de controle de benefícios tributários do TCU.",
-   "natureza": "Relatório de Acompanhamento",
-   "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
-    "CC/PR - Casa Civil da Presidência da República",
-    "RFB - Secretaria Especial da Receita Federal do Brasil"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-07-22T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 27191/2026-TCU/Seproc via CONECTA TCU por MARCIO NUNES BILAR em nome de Advocacia-Geral da União",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-22T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 27187/2026-TCU/Seproc via CONECTA TCU por BISMARK FELEX DA SILVA em nome de Secretaria-Executiva da Controladoria-Geral da União",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-22T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 27189/2026-TCU/Seproc via CONECTA TCU por MARCELE BOTELHO em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-22T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 27191/2026-TCU/Seproc via CONECTA TCU por MARCIO NUNES BILAR em nome de Advocacia-Geral da União",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 27191/2026-TCU/Seproc via CONECTA TC",
-   "atualizado_em": "2026-07-22T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=879820257",
    "garantido": false
   },
   {
@@ -2195,6 +2251,48 @@
  "movimentacoes": [
   {
    "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.762.030-2) publicada no BTCU Controle Externo n° 126, de 27/07/2026.",
+   "fase": null,
+   "acordao": null,
+   "processo": "016.141/2026-1",
+   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+   "fase": null,
+   "acordao": null,
+   "processo": "016.141/2026-1",
+   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Relatoria alterada de relatoria a definir para MIN-AAA por AudFiscal (por Atribuição)",
+   "fase": null,
+   "acordao": null,
+   "processo": "016.141/2026-1",
+   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
    "descricao": "Distribuído para o gabinete do Procurador Júlio Marcelo",
    "fase": null,
    "acordao": null,
@@ -2228,6 +2326,34 @@
    "acordao": null,
    "processo": "006.412/2026-2",
    "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 27186/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.798/2025-7",
+   "assunto": "Avaliação do acompanhamento de Benefícios Tributários pelo governo federal com objetivo de verificar o alinhamento de gastos tributários relevantes com o referencial de controle de benefícios tributários do TCU.",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 27190/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.798/2025-7",
+   "assunto": "Avaliação do acompanhamento de Benefícios Tributários pelo governo federal com objetivo de verificar o alinhamento de gastos tributários relevantes com o referencial de controle de benefícios tributários do TCU.",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
@@ -2402,34 +2528,6 @@
   {
    "data": "2026-07-22T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 27191/2026-TCU/Seproc via CONECTA TCU por MARCIO NUNES BILAR em nome de Advocacia-Geral da União",
-   "fase": null,
-   "acordao": null,
-   "processo": "008.798/2025-7",
-   "assunto": "Avaliação do acompanhamento de Benefícios Tributários pelo governo federal com objetivo de verificar o alinhamento de gastos tributários relevantes com o referencial de controle de benefícios tributários do TCU.",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-22T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 27187/2026-TCU/Seproc via CONECTA TCU por BISMARK FELEX DA SILVA em nome de Secretaria-Executiva da Controladoria-Geral da União",
-   "fase": null,
-   "acordao": null,
-   "processo": "008.798/2025-7",
-   "assunto": "Avaliação do acompanhamento de Benefícios Tributários pelo governo federal com objetivo de verificar o alinhamento de gastos tributários relevantes com o referencial de controle de benefícios tributários do TCU.",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-22T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 27189/2026-TCU/Seproc via CONECTA TCU por MARCELE BOTELHO em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
    "fase": null,
    "acordao": null,
    "processo": "008.798/2025-7",
