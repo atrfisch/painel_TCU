@@ -1,20 +1,20 @@
 {
  "versao": 2,
- "gerado_em": "2026-07-28T13:13:41.722876+00:00",
- "gerado_em_br": "28/07/2026 às 13:13",
+ "gerado_em": "2026-07-28T14:07:25.517932+00:00",
+ "gerado_em_br": "28/07/2026 às 14:07",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 38,
-  "movimentacoes": 109,
-  "abertos": 38,
-  "encerrados_ocultos": 186,
-  "so_interesse": 0
+  "processos": 41,
+  "movimentacoes": 119,
+  "abertos": 41,
+  "encerrados_ocultos": 189,
+  "so_interesse": 5
  },
  "garantidos": [
-  "025.632/2024-8",
   "005.104/2023-8",
+  "025.632/2024-8",
   "011.685/2026-3",
   "007.158/2026-2",
   "017.106/2025-7",
@@ -28,6 +28,13 @@
    "total": 31,
    "como_unidade": 31,
    "como_interessado": 0
+  },
+  {
+   "orgao": "SE",
+   "nome": "Secretaria-Executiva do MPO",
+   "total": 6,
+   "como_unidade": 0,
+   "como_interessado": 6
   },
   {
    "orgao": "SOF",
@@ -45,8 +52,8 @@
   },
   {
    "tipo": "Relatório de Auditoria",
-   "total": 8,
-   "abertos": 8
+   "total": 10,
+   "abertos": 10
   },
   {
    "tipo": "Representação",
@@ -69,6 +76,11 @@
    "abertos": 2
   },
   {
+   "tipo": "Monitoramento",
+   "total": 2,
+   "abertos": 2
+  },
+  {
    "tipo": "Acompanhamento",
    "total": 2,
    "abertos": 2
@@ -77,25 +89,20 @@
    "tipo": "Denúncia",
    "total": 1,
    "abertos": 1
-  },
-  {
-   "tipo": "Monitoramento",
-   "total": 1,
-   "abertos": 1
   }
  ],
  "por_relator": [
+  {
+   "relator": "Benjamin Zymler",
+   "total": 12
+  },
   {
    "relator": "Antonio Anastasia",
    "total": 10
   },
   {
-   "relator": "Benjamin Zymler",
-   "total": 10
-  },
-  {
    "relator": "Jhonatan de Jesus",
-   "total": 6
+   "total": 7
   },
   {
    "relator": "Walton Alencar Rodrigues",
@@ -115,6 +122,15 @@
   }
  ],
  "ranking_mes": [
+  {
+   "processo": "011.103/2025-6",
+   "orgaos": [
+    "SE"
+   ],
+   "assunto": "Barreiras laborais enfrentadas por pessoas com deficiência (PcD) que trabalham em órgãos da Administração Direta do Poder Executivo Federal",
+   "relator": "Benjamin Zymler",
+   "movimentacoes_mes": 4
+  },
   {
    "processo": "025.632/2024-8",
    "orgaos": [],
@@ -146,6 +162,7 @@
    "processo": "008.798/2025-7",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "assunto": "Avaliação do acompanhamento de Benefícios Tributários pelo governo federal com objetivo de verificar o alinhamento de gastos tributários relevantes com o referencial de controle de benefícios tributários do TCU.",
@@ -154,7 +171,9 @@
   },
   {
    "processo": "005.104/2023-8",
-   "orgaos": [],
+   "orgaos": [
+    "SE"
+   ],
    "assunto": "Acompanhamento sistemático do desenvolvimento das etapas seguintes do PNL e do PIT",
    "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
@@ -178,16 +197,69 @@
    "assunto": "Consulta acerca da legalidade de autarquia federal, com autonomia administrativa e financeira, que arrecade e seja custeada por receita de natureza jurídica de tarifa (preço público), elaborar sua proposta orçamentária própria.",
    "relator": "Jhonatan de Jesus",
    "movimentacoes_mes": 3
-  },
-  {
-   "processo": "011.685/2026-3",
-   "orgaos": [],
-   "assunto": "<em>011.685/2026-3</em> - Denúncia",
-   "relator": "Walton Alencar Rodrigues",
-   "movimentacoes_mes": 3
   }
  ],
  "processos": [
+  {
+   "numero": "011.103/2025-6",
+   "id": "01110320256",
+   "codigo": "78268138",
+   "estado": "Aberto",
+   "relator": "Benjamin Zymler",
+   "assunto": "Barreiras laborais enfrentadas por pessoas com deficiência (PcD) que trabalham em órgãos da Administração Direta do Poder Executivo Federal",
+   "natureza": "Relatório de Auditoria",
+   "unidades": [
+    "AGU - Advocacia-Geral da União",
+    "CC/PR - Casa Civil da Presidência da República",
+    "CGU - Controladoria-Geral da União"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "SE"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "SE"
+   ],
+   "vinculo": "interessado",
+   "acordao": "1743/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-07-28T00:00:00+00:00",
+     "descricao": "Registrada resposta de comunicação do Ofício 25133/2026-TCU/Seproc.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-20T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 25124/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-17T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 25143/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-02T00:00:00+00:00",
+     "descricao": "Acórdão 1743/2026 — Plenário",
+     "fase": "Julgado",
+     "acordao": "1743/2026"
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-28T00:00:00+00:00",
+    "descricao": "Registrada resposta de comunicação do Ofício 25133/2026-TCU/Seproc.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada resposta de comunicação do Ofício 25133/2026-TCU/Seproc.",
+   "atualizado_em": "2026-07-28T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1110320256",
+   "garantido": false
+  },
   {
    "numero": "016.141/2026-1",
    "id": "01614120261",
@@ -197,7 +269,7 @@
    "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
    "natureza": "Relatório de Auditoria",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "PGFN - Procuradoria-Geral da Fazenda Nacional",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
@@ -253,7 +325,7 @@
    "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
    "natureza": "Relatório de Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
    ],
    "interessados": [],
@@ -308,20 +380,23 @@
    "assunto": "Avaliação do acompanhamento de Benefícios Tributários pelo governo federal com objetivo de verificar o alinhamento de gastos tributários relevantes com o referencial de controle de benefícios tributários do TCU.",
    "natureza": "Relatório de Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "CC/PR - Casa Civil da Presidência da República",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [],
+   "orgaos_interessado": [
+    "SE"
+   ],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -356,6 +431,58 @@
    "garantido": false
   },
   {
+   "numero": "005.104/2023-8",
+   "id": "00510420238",
+   "codigo": "73127059",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "Acompanhamento sistemático do desenvolvimento das etapas seguintes do PNL e do PIT",
+   "natureza": "Relatório de Acompanhamento",
+   "unidades": [
+    "INFRA S.A. - Valec Engenharia Construcoes e Ferrovias S/a"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "SE"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "SE"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Processo enviado de Seproc para AudPortoFerrovia/AudPortoFerrovia-ASS. (Assessoria da AudPortoFerrovia)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-24T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 26084/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-27T00:00:00+00:00",
+    "descricao": "Processo enviado de Seproc para AudPortoFerrovia/AudPortoFerrovia-ASS. (Assessoria da AudPortoFerrovia)",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo enviado de Seproc para AudPortoFerrovia/AudPortoFerrovia-ASS. (Assessor",
+   "atualizado_em": "2026-07-27T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=510420238",
+   "garantido": true
+  },
+  {
    "numero": "025.632/2024-8",
    "id": "02563220248",
    "codigo": "77080640",
@@ -372,7 +499,7 @@
    "orgaos": [],
    "orgaos_unidade": [],
    "orgaos_interessado": [],
-   "vinculo": null,
+   "vinculo": "acompanhado",
    "acordao": "1887/2026",
    "movimentacoes": [
     {
@@ -412,54 +539,6 @@
    "garantido": true
   },
   {
-   "numero": "005.104/2023-8",
-   "id": "00510420238",
-   "codigo": "73127059",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Acompanhamento sistemático do desenvolvimento das etapas seguintes do PNL e do PIT",
-   "natureza": "Relatório de Acompanhamento",
-   "unidades": [
-    "INFRA S.A. - Valec Engenharia Construcoes e Ferrovias S/a"
-   ],
-   "interessados": [],
-   "orgaos": [],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [],
-   "vinculo": null,
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-07-27T00:00:00+00:00",
-     "descricao": "Processo enviado de Seproc para AudPortoFerrovia/AudPortoFerrovia-ASS. (Assessoria da AudPortoFerrovia)",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-27T00:00:00+00:00",
-     "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 26084/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-27T00:00:00+00:00",
-    "descricao": "Processo enviado de Seproc para AudPortoFerrovia/AudPortoFerrovia-ASS. (Assessoria da AudPortoFerrovia)",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo enviado de Seproc para AudPortoFerrovia/AudPortoFerrovia-ASS. (Assessor",
-   "atualizado_em": "2026-07-27T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=510420238",
-   "garantido": true
-  },
-  {
    "numero": "014.609/2026-6",
    "id": "01460920266",
    "codigo": "80607514",
@@ -468,7 +547,7 @@
    "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
    "natureza": "Relatório de Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "BCB - Banco Central do Brasil",
     "INSS - Instituto Nacional do Seguro Social"
    ],
@@ -524,7 +603,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
    "natureza": "Representação",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
    ],
    "interessados": [],
@@ -579,7 +658,7 @@
    "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
    "natureza": "Relatório de Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "CC/PR - Casa Civil da Presidência da República",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
@@ -635,7 +714,7 @@
    "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
    "natureza": "Relatório de Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "BCB - Banco Central do Brasil",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
@@ -691,7 +770,7 @@
    "assunto": "Acompanhamento das Receitas Públicas - PF/BCN 2025",
    "natureza": "Relatório de Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "PGFN - Procuradoria-Geral da Fazenda Nacional",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
@@ -735,7 +814,7 @@
    "assunto": "Consulta acerca da legalidade de autarquia federal, com autonomia administrativa e financeira, que arrecade e seja custeada por receita de natureza jurídica de tarifa (preço público), elaborar sua proposta orçamentária própria.",
    "natureza": "Consulta",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "CD - Câmara dos Deputados",
     "STN - Secretaria do Tesouro Nacional"
    ],
@@ -788,14 +867,14 @@
    "codigo": "80388372",
    "estado": "Aberto",
    "relator": "Walton Alencar Rodrigues",
-   "assunto": "<em>011.685/2026-3</em> - Denúncia",
+   "assunto": "011.685/2026-3 - Denúncia",
    "natureza": "Denúncia",
    "unidades": [],
    "interessados": [],
    "orgaos": [],
    "orgaos_unidade": [],
    "orgaos_interessado": [],
-   "vinculo": null,
+   "vinculo": "acompanhado",
    "acordao": null,
    "movimentacoes": [
     {
@@ -837,7 +916,7 @@
    "assunto": "2ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
    "natureza": "Relatório de Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "ANP - Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
     "BCB - Banco Central do Brasil"
    ],
@@ -893,7 +972,7 @@
    "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
    "natureza": "Solicitação do Congresso Nacional",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "Agência Nacional de Mineração",
     "Anac - Agência Nacional de Aviação Civil"
    ],
@@ -937,7 +1016,7 @@
    "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  1º Semestre de 2026",
    "natureza": "Relatório de Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
    ],
    "interessados": [],
@@ -992,7 +1071,7 @@
    "assunto": "Consulta do Congresso Nacional (REQ nº 40/2025 - CICS) sobre proposta orçamentária própria de autarquias federais custeadas por tarifas ou preços públicos.",
    "natureza": "Solicitação do Congresso Nacional",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
    ],
    "interessados": [],
@@ -1047,7 +1126,7 @@
    "assunto": "006.750/2026-5 - Relatório de Levantamento",
    "natureza": "Relatório de Levantamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "CC/PR - Casa Civil da Presidência da República",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
@@ -1103,7 +1182,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 170500 (Objeto: Utilização de recursos oriundos da suspensão das parcelas da dívida do Estado do Rio Grande do Sul com a União no Programa de Subsídio de Juros para Investimentos em Grandes Empreendimentos Voltados ao Turismo no Estado do Rio Grande do Sul (PROGRANTUR).)",
    "natureza": "Representação",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
    ],
    "interessados": [],
@@ -1156,7 +1235,7 @@
    "orgaos": [],
    "orgaos_unidade": [],
    "orgaos_interessado": [],
-   "vinculo": null,
+   "vinculo": "acompanhado",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1206,7 +1285,7 @@
    "orgaos": [],
    "orgaos_unidade": [],
    "orgaos_interessado": [],
-   "vinculo": null,
+   "vinculo": "acompanhado",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1248,7 +1327,7 @@
    "assunto": "Representação referente ao ato de gestão (Objeto: Possível subavaliação de impactos fiscais decorrentes da utilização de fundos públicos, fundos garantidores, créditos subsidiados e créditos extraordinários.)",
    "natureza": "Representação",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "SG/PR - Secretaria-Geral da Presidência da República",
     "STN - Secretaria do Tesouro Nacional"
    ],
@@ -1304,7 +1383,7 @@
    "assunto": "Acompanhamento da Execução do Orçamento de Investimentos das Estatais e do Programa de Dispêndios Globais -  1º a 3º trimestre de 2025",
    "natureza": "Relatório de Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
    ],
    "interessados": [],
@@ -1359,7 +1438,7 @@
    "assunto": "Auditoria operacional sobre a estrutura e o funcionamento da Aneel, ANP, Anatel e ANM",
    "natureza": "Relatório de Auditoria",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "Agência Nacional de Mineração",
     "ANATEL - Agência Nacional de Telecomunicações"
    ],
@@ -1415,7 +1494,7 @@
    "assunto": "Acompanhamento da Sustentabilidade da Dívida Pública de 2025",
    "natureza": "Relatório de Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "BCB - Banco Central do Brasil",
     "STN - Secretaria do Tesouro Nacional"
    ],
@@ -1472,10 +1551,14 @@
    "natureza": "Relatório de Auditoria",
    "unidades": [],
    "interessados": [],
-   "orgaos": [],
+   "orgaos": [
+    "SE"
+   ],
    "orgaos_unidade": [],
-   "orgaos_interessado": [],
-   "vinculo": null,
+   "orgaos_interessado": [
+    "SE"
+   ],
+   "vinculo": "interessado",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1517,7 +1600,7 @@
    "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
    "natureza": "Relatório de Auditoria",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "ANS - Agência Nacional de Saúde Suplementar",
     "SE/MS - Secretaria-Executiva do Ministério da Saúde"
    ],
@@ -1573,7 +1656,7 @@
    "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
    "natureza": "Relatório de Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "BCB - Banco Central do Brasil",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
@@ -1623,7 +1706,7 @@
    "assunto": "Monitoramento Auditoria das agências - MONITORAMENTO DAS DETERMINAÇÕES E/OU RECOMENDAÇÕES FEITAS A(AO) Agência Nacional de Energia Elétrica, Agência Nacional de Mineração, Agência Nacional de Telecomunicações, Agência Nacional do Petróleo, Gás Natural e Biocombustíveis, Casa Civil da Presidência da República, Ministério da Fazenda, Secretaria de Orçamento Federal, POR MEIO DO ACÓRDÃO 280/2026-Plenário, NO ÂMBITO DO PROCESSO 022.280/2024-3 (Auditoria das agências)",
    "natureza": "Monitoramento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "Agência Nacional de Mineração",
     "ANATEL - Agência Nacional de Telecomunicações"
    ],
@@ -1679,7 +1762,7 @@
    "assunto": "016.873/2025-4 - Relatório de Levantamento",
    "natureza": "Relatório de Levantamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>"
+    "SOF/MPO - Secretaria de Orçamento Federal"
    ],
    "interessados": [],
    "orgaos": [
@@ -1739,7 +1822,7 @@
    "orgaos": [],
    "orgaos_unidade": [],
    "orgaos_interessado": [],
-   "vinculo": null,
+   "vinculo": "acompanhado",
    "acordao": null,
    "movimentacoes": [
     {
@@ -1781,7 +1864,7 @@
    "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
    "natureza": "Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "COMAER - Comando da Aeronáutica",
     "C Ex - Comando do Exército"
    ],
@@ -1823,15 +1906,65 @@
    "garantido": false
   },
   {
+   "numero": "021.341/2025-7",
+   "id": "02134120257",
+   "codigo": "79159562",
+   "estado": "Aberto",
+   "relator": "Benjamin Zymler",
+   "assunto": "Fiscalização para elaboração do Capítulo 3 que compõe o Relatório e Parecer prévio sobre as contas do presidente de 2025",
+   "natureza": "Relatório de Auditoria",
+   "unidades": [],
+   "interessados": [],
+   "orgaos": [
+    "SE"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "SE"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-05-18T00:00:00+00:00",
+     "descricao": "Processo enviado de Seproc para AudBenefícios/AudBenefícios-ASS. (Assessoria da AudBenefícios)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-05-18T00:00:00+00:00",
+     "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-05-18T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 16880/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-05-18T00:00:00+00:00",
+    "descricao": "Processo enviado de Seproc para AudBenefícios/AudBenefícios-ASS. (Assessoria da AudBenefícios)",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo enviado de Seproc para AudBenefícios/AudBenefícios-ASS. (Assessoria da ",
+   "atualizado_em": "2026-05-18T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2134120257",
+   "garantido": false
+  },
+  {
    "numero": "010.183/2026-4",
    "id": "01018320264",
    "codigo": "80315512",
    "estado": "Aberto",
    "relator": "Jorge Oliveira",
-   "assunto": "Consulta formulada pela Deputado Coronel Meira -\r\nComissão de Segurança Pública e Combate ao Crime \r\nOrganizado - CD, por meio Ofício  Pres. nº 78/2026 - CSPCCO ",
+   "assunto": "Consulta formulada pela Deputado Coronel Meira -\r\nComissão de Segurança Pública e Combate ao Crime \r\nOrganizado - CD, por meio Ofício  Pres. nº 78/2026 - CSPCCO",
    "natureza": "Consulta",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "CD - Câmara dos Deputados",
     "STN - Secretaria do Tesouro Nacional"
    ],
@@ -1879,6 +2012,58 @@
    "garantido": false
   },
   {
+   "numero": "012.712/2022-1",
+   "id": "01271220221",
+   "codigo": "71412943",
+   "estado": "Aberto",
+   "relator": "Jhonatan de Jesus",
+   "assunto": "MONITORAMENTO DAS DETERMINAÇÕES E/OU RECOMENDAÇÕES FEITAS AO Ministério da Cidadania, por meio do Acórdão 3142/2021-Plenário, (016.827/2020-1 - RAcom Auxílio Emergencial).",
+   "natureza": "Monitoramento",
+   "unidades": [
+    "MCIDADANIA - Ministério da Cidadania (extinto)"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "SE"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "SE"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-05-07T00:00:00+00:00",
+     "descricao": "Processo enviado de Seproc para AudBenefícios/AudBenefícios-ASS. (Assessoria da AudBenefícios)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-05-07T00:00:00+00:00",
+     "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-05-06T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 15572/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-05-07T00:00:00+00:00",
+    "descricao": "Processo enviado de Seproc para AudBenefícios/AudBenefícios-ASS. (Assessoria da AudBenefícios)",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo enviado de Seproc para AudBenefícios/AudBenefícios-ASS. (Assessoria da ",
+   "atualizado_em": "2026-05-07T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1271220221",
+   "garantido": false
+  },
+  {
    "numero": "015.123/2025-1",
    "id": "01512320251",
    "codigo": "78505123",
@@ -1887,7 +2072,7 @@
    "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira -  2025",
    "natureza": "Relatório de Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "CC/PR - Casa Civil da Presidência da República",
     "STN - Secretaria do Tesouro Nacional"
    ],
@@ -1943,7 +2128,7 @@
    "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
    "natureza": "Relatório de Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "BCB - Banco Central do Brasil",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
@@ -1999,7 +2184,7 @@
    "assunto": "Acórdão 2283/2020-P item 9.2 - objetivo de melhor delinear e consolidar os entendimentos e procedimentos relativos ao Orçamento de Guerra, bem como suas intersecções com as hipóteses de abertura de crédito extraordinário e os limites impostos pelo Teto de Gastos. (TC 016.873/2020-3)",
    "natureza": "Acompanhamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "CC/PR - Casa Civil da Presidência da República",
     "MECON - Ministério da Economia (extinto)"
    ],
@@ -2055,7 +2240,7 @@
    "assunto": "008.930/2025-2 - Relatório de Levantamento",
    "natureza": "Relatório de Levantamento",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "BCB - Banco Central do Brasil",
     "STN - Secretaria do Tesouro Nacional"
    ],
@@ -2111,7 +2296,7 @@
    "assunto": "Representação referente ao ato de gestão (Objeto: Esclarecimentos sobre a aplicação do entendimento do Acórdão nº 1103/2024-Plenário à situação tratada no Acórdão nº 1649/2024-Plenário, envolvendo a recomposição do limite de gastos do Ministério Público da União.)",
    "natureza": "Representação",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>"
+    "SOF/MPO - Secretaria de Orçamento Federal"
    ],
    "interessados": [],
    "orgaos": [
@@ -2162,10 +2347,10 @@
    "codigo": "78340377",
    "estado": "Aberto",
    "relator": "Bruno Dantas",
-   "assunto": "Ofício nº 064/2025/CFFC-P, de 18/6/2025, encaminha o REQ 203/2025-CFFC, de autoria do Deputado Evair Vieira de Melo, por meio do qual solicita ao TCU informações \"sobre a auditoria que identificou a movimentação de aproximadamente R$ 30 bilhões fora do orçamento oficial por parte do Governo Federal\".\r\n ",
+   "assunto": "Ofício nº 064/2025/CFFC-P, de 18/6/2025, encaminha o REQ 203/2025-CFFC, de autoria do Deputado Evair Vieira de Melo, por meio do qual solicita ao TCU informações \"sobre a auditoria que identificou a movimentação de aproximadamente R$ 30 bilhões fora do orçamento oficial por parte do Governo Federal\".",
    "natureza": "Solicitação do Congresso Nacional",
    "unidades": [
-    "SOF/MPO - <em>Secretaria</em> de <em>Orçamento</em> <em>Federal</em>",
+    "SOF/MPO - Secretaria de Orçamento Federal",
     "CC/PR - Casa Civil da Presidência da República",
     "STN - Secretaria do Tesouro Nacional"
    ],
@@ -2246,9 +2431,36 @@
    "orgaos": [],
    "estado": "Aberto",
    "evento": "acordao"
+  },
+  {
+   "data": "2026-07-02T00:00:00+00:00",
+   "descricao": "Acórdão 1743/2026 — Plenário",
+   "fase": "Julgado",
+   "acordao": "1743/2026",
+   "processo": "011.103/2025-6",
+   "assunto": "Barreiras laborais enfrentadas por pessoas com deficiência (PcD) que trabalham em órgãos da Administração Direta do Poder Executivo Federal",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "SE"
+   ],
+   "estado": "Aberto",
+   "evento": "acordao"
   }
  ],
  "movimentacoes": [
+  {
+   "data": "2026-07-28T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 25133/2026-TCU/Seproc.",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.103/2025-6",
+   "assunto": "Barreiras laborais enfrentadas por pessoas com deficiência (PcD) que trabalham em órgãos da Administração Direta do Poder Executivo Federal",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
   {
    "data": "2026-07-27T00:00:00+00:00",
    "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.762.030-2) publicada no BTCU Controle Externo n° 126, de 27/07/2026.",
@@ -2343,6 +2555,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -2357,7 +2570,34 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudPortoFerrovia/AudPortoFerrovia-ASS. (Assessoria da AudPortoFerrovia)",
+   "fase": null,
+   "acordao": null,
+   "processo": "005.104/2023-8",
+   "assunto": "Acompanhamento sistemático do desenvolvimento das etapas seguintes do PNL e do PIT",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
+   "fase": null,
+   "acordao": null,
+   "processo": "005.104/2023-8",
+   "assunto": "Acompanhamento sistemático do desenvolvimento das etapas seguintes do PNL e do PIT",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -2395,28 +2635,6 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-27T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudPortoFerrovia/AudPortoFerrovia-ASS. (Assessoria da AudPortoFerrovia)",
-   "fase": null,
-   "acordao": null,
-   "processo": "005.104/2023-8",
-   "assunto": "Acompanhamento sistemático do desenvolvimento das etapas seguintes do PNL e do PIT",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-27T00:00:00+00:00",
-   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
-   "fase": null,
-   "acordao": null,
-   "processo": "005.104/2023-8",
-   "assunto": "Acompanhamento sistemático do desenvolvimento das etapas seguintes do PNL e do PIT",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-07-24T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 26084/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
    "fase": null,
@@ -2424,7 +2642,9 @@
    "processo": "005.104/2023-8",
    "assunto": "Acompanhamento sistemático do desenvolvimento das etapas seguintes do PNL e do PIT",
    "natureza": "Relatório de Acompanhamento",
-   "orgaos": [],
+   "orgaos": [
+    "SE"
+   ],
    "estado": "Aberto"
   },
   {
@@ -2535,6 +2755,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -2573,7 +2794,7 @@
    "fase": null,
    "acordao": null,
    "processo": "011.685/2026-3",
-   "assunto": "<em>011.685/2026-3</em> - Denúncia",
+   "assunto": "011.685/2026-3 - Denúncia",
    "natureza": "Denúncia",
    "orgaos": [],
    "estado": "Aberto"
@@ -2584,9 +2805,22 @@
    "fase": null,
    "acordao": null,
    "processo": "011.685/2026-3",
-   "assunto": "<em>011.685/2026-3</em> - Denúncia",
+   "assunto": "011.685/2026-3 - Denúncia",
    "natureza": "Denúncia",
    "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-20T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 25124/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.103/2025-6",
+   "assunto": "Barreiras laborais enfrentadas por pessoas com deficiência (PcD) que trabalham em órgãos da Administração Direta do Poder Executivo Federal",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "SE"
+   ],
    "estado": "Aberto"
   },
   {
@@ -2628,6 +2862,19 @@
    "orgaos": [
     "MPO",
     "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-17T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 25143/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.103/2025-6",
+   "assunto": "Barreiras laborais enfrentadas por pessoas com deficiência (PcD) que trabalham em órgãos da Administração Direta do Poder Executivo Federal",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -2704,7 +2951,7 @@
    "fase": null,
    "acordao": null,
    "processo": "011.685/2026-3",
-   "assunto": "<em>011.685/2026-3</em> - Denúncia",
+   "assunto": "011.685/2026-3 - Denúncia",
    "natureza": "Denúncia",
    "orgaos": [],
    "estado": "Aberto"
@@ -2852,6 +3099,19 @@
    "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
    "natureza": "Relatório de Auditoria",
    "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-02T00:00:00+00:00",
+   "descricao": "Acórdão 1743/2026 — Plenário",
+   "fase": "Julgado",
+   "acordao": "1743/2026",
+   "processo": "011.103/2025-6",
+   "assunto": "Barreiras laborais enfrentadas por pessoas com deficiência (PcD) que trabalham em órgãos da Administração Direta do Poder Executivo Federal",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "SE"
+   ],
    "estado": "Aberto"
   },
   {
@@ -3016,7 +3276,9 @@
    "processo": "022.756/2025-6",
    "assunto": "Consolidação das análises setorias para subsídio ao parecer prévio das contas do Presidente da República",
    "natureza": "Relatório de Auditoria",
-   "orgaos": [],
+   "orgaos": [
+    "SE"
+   ],
    "estado": "Aberto"
   },
   {
@@ -3027,7 +3289,9 @@
    "processo": "022.756/2025-6",
    "assunto": "Consolidação das análises setorias para subsídio ao parecer prévio das contas do Presidente da República",
    "natureza": "Relatório de Auditoria",
-   "orgaos": [],
+   "orgaos": [
+    "SE"
+   ],
    "estado": "Aberto"
   },
   {
@@ -3038,7 +3302,9 @@
    "processo": "022.756/2025-6",
    "assunto": "Consolidação das análises setorias para subsídio ao parecer prévio das contas do Presidente da República",
    "natureza": "Relatório de Auditoria",
-   "orgaos": [],
+   "orgaos": [
+    "SE"
+   ],
    "estado": "Aberto"
   },
   {
@@ -3318,6 +3584,45 @@
    "estado": "Aberto"
   },
   {
+   "data": "2026-05-18T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudBenefícios/AudBenefícios-ASS. (Assessoria da AudBenefícios)",
+   "fase": null,
+   "acordao": null,
+   "processo": "021.341/2025-7",
+   "assunto": "Fiscalização para elaboração do Capítulo 3 que compõe o Relatório e Parecer prévio sobre as contas do presidente de 2025",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-05-18T00:00:00+00:00",
+   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
+   "fase": null,
+   "acordao": null,
+   "processo": "021.341/2025-7",
+   "assunto": "Fiscalização para elaboração do Capítulo 3 que compõe o Relatório e Parecer prévio sobre as contas do presidente de 2025",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-05-18T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 16880/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+   "fase": null,
+   "acordao": null,
+   "processo": "021.341/2025-7",
+   "assunto": "Fiscalização para elaboração do Capítulo 3 que compõe o Relatório e Parecer prévio sobre as contas do presidente de 2025",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
    "data": "2026-05-14T00:00:00+00:00",
    "descricao": "Unidade responsável técnica alterada de AudElétrica para D1AudElétrica por AudElétrica",
    "fase": null,
@@ -3351,7 +3656,7 @@
    "fase": null,
    "acordao": null,
    "processo": "010.183/2026-4",
-   "assunto": "Consulta formulada pela Deputado Coronel Meira -\r\nComissão de Segurança Pública e Combate ao Crime \r\nOrganizado - CD, por meio Ofício  Pres. nº 78/2026 - CSPCCO ",
+   "assunto": "Consulta formulada pela Deputado Coronel Meira -\r\nComissão de Segurança Pública e Combate ao Crime \r\nOrganizado - CD, por meio Ofício  Pres. nº 78/2026 - CSPCCO",
    "natureza": "Consulta",
    "orgaos": [
     "MPO",
@@ -3365,7 +3670,7 @@
    "fase": null,
    "acordao": null,
    "processo": "010.183/2026-4",
-   "assunto": "Consulta formulada pela Deputado Coronel Meira -\r\nComissão de Segurança Pública e Combate ao Crime \r\nOrganizado - CD, por meio Ofício  Pres. nº 78/2026 - CSPCCO ",
+   "assunto": "Consulta formulada pela Deputado Coronel Meira -\r\nComissão de Segurança Pública e Combate ao Crime \r\nOrganizado - CD, por meio Ofício  Pres. nº 78/2026 - CSPCCO",
    "natureza": "Consulta",
    "orgaos": [
     "MPO",
@@ -3379,7 +3684,7 @@
    "fase": null,
    "acordao": null,
    "processo": "010.183/2026-4",
-   "assunto": "Consulta formulada pela Deputado Coronel Meira -\r\nComissão de Segurança Pública e Combate ao Crime \r\nOrganizado - CD, por meio Ofício  Pres. nº 78/2026 - CSPCCO ",
+   "assunto": "Consulta formulada pela Deputado Coronel Meira -\r\nComissão de Segurança Pública e Combate ao Crime \r\nOrganizado - CD, por meio Ofício  Pres. nº 78/2026 - CSPCCO",
    "natureza": "Consulta",
    "orgaos": [
     "MPO",
@@ -3398,6 +3703,45 @@
    "orgaos": [
     "MPO",
     "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-05-07T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudBenefícios/AudBenefícios-ASS. (Assessoria da AudBenefícios)",
+   "fase": null,
+   "acordao": null,
+   "processo": "012.712/2022-1",
+   "assunto": "MONITORAMENTO DAS DETERMINAÇÕES E/OU RECOMENDAÇÕES FEITAS AO Ministério da Cidadania, por meio do Acórdão 3142/2021-Plenário, (016.827/2020-1 - RAcom Auxílio Emergencial).",
+   "natureza": "Monitoramento",
+   "orgaos": [
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-05-07T00:00:00+00:00",
+   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
+   "fase": null,
+   "acordao": null,
+   "processo": "012.712/2022-1",
+   "assunto": "MONITORAMENTO DAS DETERMINAÇÕES E/OU RECOMENDAÇÕES FEITAS AO Ministério da Cidadania, por meio do Acórdão 3142/2021-Plenário, (016.827/2020-1 - RAcom Auxílio Emergencial).",
+   "natureza": "Monitoramento",
+   "orgaos": [
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-05-06T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 15572/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+   "fase": null,
+   "acordao": null,
+   "processo": "012.712/2022-1",
+   "assunto": "MONITORAMENTO DAS DETERMINAÇÕES E/OU RECOMENDAÇÕES FEITAS AO Ministério da Cidadania, por meio do Acórdão 3142/2021-Plenário, (016.827/2020-1 - RAcom Auxílio Emergencial).",
+   "natureza": "Monitoramento",
+   "orgaos": [
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -3659,7 +4003,7 @@
    "fase": null,
    "acordao": null,
    "processo": "013.076/2025-6",
-   "assunto": "Ofício nº 064/2025/CFFC-P, de 18/6/2025, encaminha o REQ 203/2025-CFFC, de autoria do Deputado Evair Vieira de Melo, por meio do qual solicita ao TCU informações \"sobre a auditoria que identificou a movimentação de aproximadamente R$ 30 bilhões fora do orçamento oficial por parte do Governo Federal\".\r\n ",
+   "assunto": "Ofício nº 064/2025/CFFC-P, de 18/6/2025, encaminha o REQ 203/2025-CFFC, de autoria do Deputado Evair Vieira de Melo, por meio do qual solicita ao TCU informações \"sobre a auditoria que identificou a movimentação de aproximadamente R$ 30 bilhões fora do orçamento oficial por parte do Governo Federal\".",
    "natureza": "Solicitação do Congresso Nacional",
    "orgaos": [
     "MPO",
@@ -3673,7 +4017,7 @@
    "fase": null,
    "acordao": null,
    "processo": "013.076/2025-6",
-   "assunto": "Ofício nº 064/2025/CFFC-P, de 18/6/2025, encaminha o REQ 203/2025-CFFC, de autoria do Deputado Evair Vieira de Melo, por meio do qual solicita ao TCU informações \"sobre a auditoria que identificou a movimentação de aproximadamente R$ 30 bilhões fora do orçamento oficial por parte do Governo Federal\".\r\n ",
+   "assunto": "Ofício nº 064/2025/CFFC-P, de 18/6/2025, encaminha o REQ 203/2025-CFFC, de autoria do Deputado Evair Vieira de Melo, por meio do qual solicita ao TCU informações \"sobre a auditoria que identificou a movimentação de aproximadamente R$ 30 bilhões fora do orçamento oficial por parte do Governo Federal\".",
    "natureza": "Solicitação do Congresso Nacional",
    "orgaos": [
     "MPO",
@@ -3687,7 +4031,7 @@
    "fase": null,
    "acordao": null,
    "processo": "013.076/2025-6",
-   "assunto": "Ofício nº 064/2025/CFFC-P, de 18/6/2025, encaminha o REQ 203/2025-CFFC, de autoria do Deputado Evair Vieira de Melo, por meio do qual solicita ao TCU informações \"sobre a auditoria que identificou a movimentação de aproximadamente R$ 30 bilhões fora do orçamento oficial por parte do Governo Federal\".\r\n ",
+   "assunto": "Ofício nº 064/2025/CFFC-P, de 18/6/2025, encaminha o REQ 203/2025-CFFC, de autoria do Deputado Evair Vieira de Melo, por meio do qual solicita ao TCU informações \"sobre a auditoria que identificou a movimentação de aproximadamente R$ 30 bilhões fora do orçamento oficial por parte do Governo Federal\".",
    "natureza": "Solicitação do Congresso Nacional",
    "orgaos": [
     "MPO",
@@ -3701,7 +4045,7 @@
    "fase": "Julgado",
    "acordao": "1849/2025",
    "processo": "013.076/2025-6",
-   "assunto": "Ofício nº 064/2025/CFFC-P, de 18/6/2025, encaminha o REQ 203/2025-CFFC, de autoria do Deputado Evair Vieira de Melo, por meio do qual solicita ao TCU informações \"sobre a auditoria que identificou a movimentação de aproximadamente R$ 30 bilhões fora do orçamento oficial por parte do Governo Federal\".\r\n ",
+   "assunto": "Ofício nº 064/2025/CFFC-P, de 18/6/2025, encaminha o REQ 203/2025-CFFC, de autoria do Deputado Evair Vieira de Melo, por meio do qual solicita ao TCU informações \"sobre a auditoria que identificou a movimentação de aproximadamente R$ 30 bilhões fora do orçamento oficial por parte do Governo Federal\".",
    "natureza": "Solicitação do Congresso Nacional",
    "orgaos": [
     "MPO",
