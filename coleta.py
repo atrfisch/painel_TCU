@@ -79,6 +79,16 @@ PESQUISA_UNIDADES = [
     'UNIDADESJURISDICIONADAS:("Ministério da Economia")',
 ]
 
+# Filtros por INTERESSADO: capturam processos em que o órgão do MPO não é a
+# unidade jurisdicionada, mas consta como parte interessada — o caso típico da
+# AECI e da Secretaria-Executiva. Complementa o filtro por unidade.
+PESQUISA_INTERESSADOS = [
+    'INTERESSADOS:("Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento")',
+    'INTERESSADOS:("Secretaria-Executiva do Ministério do Planejamento e Orçamento")',
+    'INTERESSADOS:("Ministério do Planejamento e Orçamento")',
+    'INTERESSADOS:("Secretaria de Orçamento Federal")',
+]
+
 # Termos livres, para capturar processos cuja UJ está grafada de forma que o
 # filtro estruturado não casa (ex.: código na frente do nome), e para achar
 # AECI/SE que aparecem como INTERESSADOS, não como unidade jurisdicionada.
@@ -442,16 +452,23 @@ def _campos_pesquisa(it: dict) -> dict:
     texto_uj = " ; ".join(unidades)
 
     # Além da unidade jurisdicionada, um processo pode ter órgãos do MPO como
-    # INTERESSADOS. Ex.: uma auditoria cuja UJ é outro ministério, mas em que a
-    # SOF ou a Assessoria de Controle Interno do MPO constam como interessadas.
-    # Capturamos todos esses vínculos, mas guardamos COMO cada órgão entra
-    # (unidade vs interessado) para não confundir "processo do MPO" com
-    # "processo em que o MPO aparece".
-    interessados = it.get("INTERESSADOS") or it.get("INTERESSADO") or []
+    # INTERESSADOS — ex.: a Assessoria de Controle Interno ou a Secretaria-
+    # Executiva do MPO. A resposta da Pesquisa às vezes traz INTERESSADOS e
+    # RESPONSAVEIS (confirmado em resposta real), às vezes vem enxuta sem eles;
+    # quando faltam, buscar_por_numero recupera a versão completa. RESPONSAVEIS
+    # costuma ser pessoa física, mas pode conter unidade — lemos ambos.
+    interessados = (it.get("INTERESSADOS") or it.get("INTERESSADO")
+                    or it.get("PARTES") or [])
     if isinstance(interessados, str):
         interessados = [interessados]
     interessados = [str(i).strip() for i in interessados if i and str(i).strip()]
-    texto_int = " ; ".join(interessados)
+
+    responsaveis = it.get("RESPONSAVEIS") or []
+    if isinstance(responsaveis, str):
+        responsaveis = [responsaveis]
+    responsaveis = [str(r).strip() for r in responsaveis if r and str(r).strip()]
+
+    texto_int = " ; ".join(interessados + responsaveis)
 
     orgaos_uj = set(orgaos_em(texto_uj))
     orgaos_int = set(orgaos_em(texto_int))
@@ -588,6 +605,11 @@ def consultar_pesquisa(sessao: requests.Session) -> list[dict]:
         if _uma_consulta(sessao, "*", filtro, filtro.split('("')[-1], vistos):
             houve_resposta = True
     log.info("Após filtro por unidade: %d processos", len(vistos))
+
+    for filtro in PESQUISA_INTERESSADOS:
+        if _uma_consulta(sessao, "*", filtro, "int " + filtro.split('("')[-1], vistos):
+            houve_resposta = True
+    log.info("Após filtro por interessado: %d processos", len(vistos))
 
     for termo in PESQUISA_TERMOS:
         if _uma_consulta(sessao, termo, "", "termo " + termo, vistos):
