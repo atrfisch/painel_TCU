@@ -84,6 +84,7 @@ section h2{font-size:19px}
 .chip-estado{background:var(--aberto); text-transform:none; letter-spacing:0}
 .chip-vinc{background:transparent; color:var(--muted); border:1px dashed var(--line); text-transform:none; letter-spacing:0}
 .chip.int{opacity:.55}
+.chip-acomp{background:#5b4a7a; color:#fff; text-transform:none; letter-spacing:0}
 .chip-tipo{background:var(--surface-2); color:var(--ink-2); border:1px solid var(--line); text-transform:none; letter-spacing:0}
 .chip-pauta{background:#f4e6cc; color:#7a4e08; text-transform:none; letter-spacing:0}
 
@@ -497,6 +498,7 @@ function lista(){
             const soInt = (p.orgaos_interessado || []).includes(o) && !(p.orgaos_unidade || []).includes(o);
             return `<span class="chip ${esc(o)} ${soInt ? "int" : ""}" title="${soInt ? o + " consta como interessado" : o + " é unidade jurisdicionada"}">${esc(o)}</span>`;
           }).join("")}
+          ${(p.orgaos || []).length === 0 && p.vinculo === "acompanhado" ? `<span class="chip chip-acomp" title="Processo em acompanhamento manual; nenhum órgão do MPO consta nos campos indexados.">acompanhado</span>` : ""}
           ${p.vinculo === "interessado" ? `<span class="chip chip-vinc" title="Nenhum órgão do MPO é unidade jurisdicionada; aparece(m) como interessado(s).">só interesse</span>` : ""}
         </div>
       </div>
