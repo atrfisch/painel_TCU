@@ -109,6 +109,7 @@ PESQUISA_DETALHE = "https://pesquisa.apps.tcu.gov.br/rest/publico/base/processo/
 PROCESSOS_GARANTIDOS = [
     "022.756/2025-6", "005.405/2026-2", "022.852/2025-5", "017.106/2025-7",
     "025.632/2024-8", "005.104/2023-8", "007.158/2026-2", "011.685/2026-3",
+    "011.526/2022-0", "008.723/2023-0",
 ]
 
 PESQUISA_HEADERS = {"Accept": "application/json", "Referer": "https://pesquisa.apps.tcu.gov.br/"}
@@ -787,7 +788,8 @@ def _dia(iso_str: str | None) -> str | None:
     return d.date().isoformat() if d else None
 
 
-def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
+def montar(processos: list[dict], ancora: int, avisos: list[str],
+           anterior: dict | None = None) -> dict:
     agora = datetime.now(timezone.utc)
     hoje = agora.date()
 
@@ -796,6 +798,51 @@ def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
     total_bruto = len(processos)
     encerrados = sum(1 for p in processos if normalizar(p.get("estado")) != "aberto")
     processos = [p for p in processos if normalizar(p.get("estado")) == "aberto"]
+
+    # --- Novidades desde a coleta anterior --------------------------------
+    # "Novo" = processo que não existia no dados.json anterior.
+    # "Andamento" = movimentação cuja data é de ontem ou hoje (não estava, ou
+    # o processo ganhou movimento recente). Comparar com a coleta anterior é o
+    # que permite dizer "entrou no radar ontem" com honestidade.
+    numeros_antes: set[str] = set()
+    movs_antes: dict[str, set] = {}
+    if anterior and isinstance(anterior.get("processos"), list):
+        for p in anterior["processos"]:
+            numeros_antes.add(p.get("numero"))
+            movs_antes[p.get("numero")] = {
+                (m.get("data"), (m.get("descricao") or "")[:60])
+                for m in (p.get("movimentacoes") or [])
+            }
+
+    ontem = (hoje - timedelta(days=1)).isoformat()
+    novos_processos = []
+    andamentos_novos = []
+    for p in processos:
+        eh_novo = numeros_antes and p["numero"] not in numeros_antes
+        if eh_novo:
+            novos_processos.append({
+                "processo": p["numero"], "orgaos": p["orgaos"],
+                "assunto": p["assunto"], "natureza": p.get("natureza"),
+                "relator": p.get("relator"), "estado": p.get("estado"),
+            })
+        # Andamentos: movimentações de ontem/hoje que não constavam antes.
+        conhecidas = movs_antes.get(p["numero"], set())
+        for m in (p.get("movimentacoes") or []):
+            dia = _dia(m.get("data"))
+            if not dia or dia < ontem:
+                continue
+            chave = (m.get("data"), (m.get("descricao") or "")[:60])
+            # Se já havia coleta anterior, só conta o que é realmente novo lá.
+            if numeros_antes and chave in conhecidas:
+                continue
+            andamentos_novos.append({
+                "processo": p["numero"], "orgaos": p["orgaos"],
+                "assunto": p["assunto"], "data": m.get("data"),
+                "descricao": m.get("descricao"), "acordao": m.get("acordao"),
+                "novo_no_radar": eh_novo,
+            })
+    andamentos_novos.sort(key=lambda a: a["data"] or "", reverse=True)
+
     por_orgao = []
     for sigla, cfg in UNIDADES.items():
         do_orgao = [p for p in processos if sigla in p["orgaos"]]
@@ -880,6 +927,9 @@ def montar(processos: list[dict], ancora: int, avisos: list[str]) -> dict:
             "so_interesse": so_interesse,
         },
         "garantidos": [p["numero"] for p in processos if p.get("garantido")],
+        "novos_processos": novos_processos,
+        "andamentos_novos": andamentos_novos[:40],
+        "tem_baseline": bool(numeros_antes),
         "por_orgao": por_orgao,
         "por_tipo": por_tipo,
         "por_relator": por_relator,
@@ -958,7 +1008,16 @@ def main(argv: list[str] | None = None) -> int:
             processos += _consolidar_boletim(extras, [])
             log.info("Boletim: %d processos adicionais não vistos na Pesquisa", len(extras))
 
-    salvar(montar(processos, ancora, avisos), args.saida)
+    # Carrega a coleta anterior ANTES de sobrescrever, para detectar o que é novo
+    # desde ontem. Sem baseline (primeira execução), nada é marcado como novo.
+    anterior = None
+    try:
+        with open(args.saida, encoding="utf-8") as f:
+            anterior = json.load(f)
+    except (OSError, ValueError, TypeError):
+        anterior = None
+
+    salvar(montar(processos, ancora, avisos, anterior), args.saida)
     log.info("%s gravado: %d processos, %d movimentações.",
              args.saida, len(processos), sum(len(p["movimentacoes"]) for p in processos))
     return 0
