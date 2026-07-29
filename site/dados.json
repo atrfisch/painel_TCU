@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-07-28T19:50:56.681209+00:00",
- "gerado_em_br": "28/07/2026 às 19:50",
+ "gerado_em": "2026-07-29T11:22:49.675901+00:00",
+ "gerado_em_br": "29/07/2026 às 11:22",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -13,9 +13,9 @@
   "so_interesse": 5
  },
  "garantidos": [
-  "005.104/2023-8",
   "025.632/2024-8",
   "011.685/2026-3",
+  "005.104/2023-8",
   "007.158/2026-2",
   "017.106/2025-7",
   "022.756/2025-6",
@@ -139,6 +139,13 @@
    "movimentacoes_mes": 4
   },
   {
+   "processo": "011.685/2026-3",
+   "orgaos": [],
+   "assunto": "011.685/2026-3 - Denúncia",
+   "relator": "Walton Alencar Rodrigues",
+   "movimentacoes_mes": 3
+  },
+  {
    "processo": "016.141/2026-1",
    "orgaos": [
     "MPO",
@@ -186,16 +193,6 @@
    ],
    "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
    "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "014.010/2026-7",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Consulta acerca da legalidade de autarquia federal, com autonomia administrativa e financeira, que arrecade e seja custeada por receita de natureza jurídica de tarifa (preço público), elaborar sua proposta orçamentária própria.",
-   "relator": "Jhonatan de Jesus",
    "movimentacoes_mes": 3
   }
  ],
@@ -259,6 +256,108 @@
    "atualizado_em": "2026-07-28T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1110320256",
    "garantido": false
+  },
+  {
+   "numero": "025.632/2024-8",
+   "id": "02563220248",
+   "codigo": "77080640",
+   "estado": "Aberto",
+   "relator": "Bruno Dantas",
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "natureza": "Relatório de Auditoria",
+   "unidades": [
+    "BB - Banco do Brasil S.A.",
+    "BCB - Banco Central do Brasil",
+    "BNDES - Banco Nacional de Desenvolvimento Econômico e Social"
+   ],
+   "interessados": [],
+   "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": "acompanhado",
+   "acordao": "1887/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-07-28T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 27318/2026-TCU/Seproc via CONECTA TCU por MARCIO NUNES BILAR em nome de Advocacia-Geral da União",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Aviso 0736/2026-TCU/Seproc via CONECTA TCU por MARCELLO FERNANDES DE SOUZA em nome de COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR - SF",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Aviso 0737/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-16T00:00:00+00:00",
+     "descricao": "Acórdão 1887/2026 — Plenário",
+     "fase": "Julgado",
+     "acordao": "1887/2026"
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-28T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 27318/2026-TCU/Seproc via CONECTA TCU por MARCIO NUNES BILAR em nome de Advocacia-Geral da União",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 27318/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-07-28T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2563220248",
+   "garantido": true
+  },
+  {
+   "numero": "011.685/2026-3",
+   "id": "01168520263",
+   "codigo": "80388372",
+   "estado": "Aberto",
+   "relator": "Walton Alencar Rodrigues",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "unidades": [],
+   "interessados": [],
+   "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": "acompanhado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-07-28T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Dashboard - FGO/Novo Desenrola) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-21T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Nota SEI nº 33/2026/CAFIN/CAF/PGAFF/PGFN-MF) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-21T00:00:00+00:00",
+     "descricao": "Documento Ofício de Requisição (Ofício 000.084/2026 - AudFiscal) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-28T00:00:00+00:00",
+    "descricao": "Documento Elementos comprobatórios/Evidências (Dashboard - FGO/Novo Desenrola) juntado ao processo por AudFiscal",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Elementos comprobatórios/Evidências (Dashboard - FGO/Novo Desenrola) j",
+   "atualizado_em": "2026-07-28T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1168520263",
+   "garantido": true
   },
   {
    "numero": "016.141/2026-1",
@@ -480,62 +579,6 @@
    "fase_atual": "Processo enviado de Seproc para AudPortoFerrovia/AudPortoFerrovia-ASS. (Assessor",
    "atualizado_em": "2026-07-27T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=510420238",
-   "garantido": true
-  },
-  {
-   "numero": "025.632/2024-8",
-   "id": "02563220248",
-   "codigo": "77080640",
-   "estado": "Aberto",
-   "relator": "Bruno Dantas",
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "natureza": "Relatório de Auditoria",
-   "unidades": [
-    "BB - Banco do Brasil S.A.",
-    "BCB - Banco Central do Brasil",
-    "BNDES - Banco Nacional de Desenvolvimento Econômico e Social"
-   ],
-   "interessados": [],
-   "orgaos": [],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [],
-   "vinculo": "acompanhado",
-   "acordao": "1887/2026",
-   "movimentacoes": [
-    {
-     "data": "2026-07-27T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Aviso 0736/2026-TCU/Seproc via CONECTA TCU por MARCELLO FERNANDES DE SOUZA em nome de COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR - SF",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-27T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Aviso 0737/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-27T00:00:00+00:00",
-     "descricao": "Processo enviado de Seproc para AudRecursos/AudRecursos-ASS. (Assessoria da AudRecursos)",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-16T00:00:00+00:00",
-     "descricao": "Acórdão 1887/2026 — Plenário",
-     "fase": "Julgado",
-     "acordao": "1887/2026"
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-27T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Aviso 0736/2026-TCU/Seproc via CONECTA TCU por MARCELLO FERNANDES DE SOUZA em nome de COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR - SF",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Aviso 0736/2026-TCU/Seproc via CONECTA TCU ",
-   "atualizado_em": "2026-07-27T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2563220248",
    "garantido": true
   },
   {
@@ -860,52 +903,6 @@
    "atualizado_em": "2026-07-21T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1401020267",
    "garantido": false
-  },
-  {
-   "numero": "011.685/2026-3",
-   "id": "01168520263",
-   "codigo": "80388372",
-   "estado": "Aberto",
-   "relator": "Walton Alencar Rodrigues",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "unidades": [],
-   "interessados": [],
-   "orgaos": [],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [],
-   "vinculo": "acompanhado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-07-21T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Nota SEI nº 33/2026/CAFIN/CAF/PGAFF/PGFN-MF) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-21T00:00:00+00:00",
-     "descricao": "Documento Ofício de Requisição (Ofício 000.084/2026 - AudFiscal) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-15T00:00:00+00:00",
-     "descricao": "Processo enviado de Seproc para AudFiscal/Dipog. (Diretoria de Fiscalização do Planejamento e do Orçamento Governamental)",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-21T00:00:00+00:00",
-    "descricao": "Documento Elementos comprobatórios/Evidências (Nota SEI nº 33/2026/CAFIN/CAF/PGAFF/PGFN-MF) juntado ao processo por AudFiscal",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Elementos comprobatórios/Evidências (Nota SEI nº 33/2026/CAFIN/CAF/PGA",
-   "atualizado_em": "2026-07-21T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1168520263",
-   "garantido": true
   },
   {
    "numero": "012.513/2026-1",
@@ -2462,6 +2459,50 @@
    "estado": "Aberto"
   },
   {
+   "data": "2026-07-28T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 27318/2026-TCU/Seproc via CONECTA TCU por MARCIO NUNES BILAR em nome de Advocacia-Geral da União",
+   "fase": null,
+   "acordao": null,
+   "processo": "025.632/2024-8",
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-28T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Dashboard - FGO/Novo Desenrola) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.685/2026-3",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Aviso 0736/2026-TCU/Seproc via CONECTA TCU por MARCELLO FERNANDES DE SOUZA em nome de COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR - SF",
+   "fase": null,
+   "acordao": null,
+   "processo": "025.632/2024-8",
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Aviso 0737/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
+   "fase": null,
+   "acordao": null,
+   "processo": "025.632/2024-8",
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
    "data": "2026-07-27T00:00:00+00:00",
    "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.762.030-2) publicada no BTCU Controle Externo n° 126, de 27/07/2026.",
    "fase": null,
@@ -2602,39 +2643,6 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-27T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Aviso 0736/2026-TCU/Seproc via CONECTA TCU por MARCELLO FERNANDES DE SOUZA em nome de COMISSÃO DE TRANSPARÊNCIA, GOVERNANÇA, FISCALIZAÇÃO E CONTROLE E DEFESA DO CONSUMIDOR - SF",
-   "fase": null,
-   "acordao": null,
-   "processo": "025.632/2024-8",
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-27T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Aviso 0737/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
-   "fase": null,
-   "acordao": null,
-   "processo": "025.632/2024-8",
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-27T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudRecursos/AudRecursos-ASS. (Assessoria da AudRecursos)",
-   "fase": null,
-   "acordao": null,
-   "processo": "025.632/2024-8",
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-07-24T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 26084/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
    "fase": null,
@@ -2762,6 +2770,28 @@
   },
   {
    "data": "2026-07-21T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Nota SEI nº 33/2026/CAFIN/CAF/PGAFF/PGFN-MF) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.685/2026-3",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-21T00:00:00+00:00",
+   "descricao": "Documento Ofício de Requisição (Ofício 000.084/2026 - AudFiscal) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.685/2026-3",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-21T00:00:00+00:00",
    "descricao": "Enviado para pronunciamento do Ministro Jhonatan de Jesus por AudFiscal",
    "fase": null,
    "acordao": null,
@@ -2786,28 +2816,6 @@
     "MPO",
     "SOF"
    ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-21T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Nota SEI nº 33/2026/CAFIN/CAF/PGAFF/PGFN-MF) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.685/2026-3",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-21T00:00:00+00:00",
-   "descricao": "Documento Ofício de Requisição (Ofício 000.084/2026 - AudFiscal) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.685/2026-3",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -2943,17 +2951,6 @@
     "MPO",
     "SOF"
    ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-15T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/Dipog. (Diretoria de Fiscalização do Planejamento e do Orçamento Governamental)",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.685/2026-3",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "orgaos": [],
    "estado": "Aberto"
   },
   {
