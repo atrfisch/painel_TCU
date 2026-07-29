@@ -1,14 +1,14 @@
 {
  "versao": 2,
- "gerado_em": "2026-07-29T11:22:49.675901+00:00",
- "gerado_em_br": "29/07/2026 às 11:22",
+ "gerado_em": "2026-07-29T14:38:37.678152+00:00",
+ "gerado_em_br": "29/07/2026 às 14:38",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 41,
-  "movimentacoes": 119,
-  "abertos": 41,
+  "processos": 43,
+  "movimentacoes": 124,
+  "abertos": 43,
   "encerrados_ocultos": 189,
   "so_interesse": 5
  },
@@ -19,8 +19,30 @@
   "007.158/2026-2",
   "017.106/2025-7",
   "022.756/2025-6",
-  "022.852/2025-5"
+  "022.852/2025-5",
+  "008.723/2023-0",
+  "011.526/2022-0"
  ],
+ "novos_processos": [
+  {
+   "processo": "008.723/2023-0",
+   "orgaos": [],
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
+   "natureza": "Representação",
+   "relator": "Benjamin Zymler",
+   "estado": "Aberto"
+  },
+  {
+   "processo": "011.526/2022-0",
+   "orgaos": [],
+   "assunto": "CONS - Nos termos do art. 1°, XVII, da Lei n° 8.443, de 1992,\r\nconfeccionados em face de preocupações e dúvidas desta Pasta em razão da divergência de entendimentos entre a CGU e os demais órgãos do Governo sobre qual tratamento deve ser dado à aplicação dos depósitos especiais do FAT.",
+   "natureza": "Consulta",
+   "relator": "Odair Cunha",
+   "estado": "Aberto"
+  }
+ ],
+ "andamentos_novos": [],
+ "tem_baseline": true,
  "por_orgao": [
   {
    "orgao": "MPO",
@@ -57,8 +79,13 @@
   },
   {
    "tipo": "Representação",
-   "total": 4,
-   "abertos": 4
+   "total": 5,
+   "abertos": 5
+  },
+  {
+   "tipo": "Consulta",
+   "total": 3,
+   "abertos": 3
   },
   {
    "tipo": "Solicitação do Congresso Nacional",
@@ -69,11 +96,6 @@
    "tipo": "Relatório de Levantamento",
    "total": 3,
    "abertos": 3
-  },
-  {
-   "tipo": "Consulta",
-   "total": 2,
-   "abertos": 2
   },
   {
    "tipo": "Monitoramento",
@@ -94,7 +116,7 @@
  "por_relator": [
   {
    "relator": "Benjamin Zymler",
-   "total": 12
+   "total": 13
   },
   {
    "relator": "Antonio Anastasia",
@@ -119,6 +141,10 @@
   {
    "relator": "Augusto Nardes",
    "total": 2
+  },
+  {
+   "relator": "Odair Cunha",
+   "total": 1
   }
  ],
  "ranking_mes": [
@@ -1853,6 +1879,96 @@
    "garantido": true
   },
   {
+   "numero": "008.723/2023-0",
+   "id": "00872320230",
+   "codigo": "73545490",
+   "estado": "Aberto",
+   "relator": "Benjamin Zymler",
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
+   "natureza": "Representação",
+   "unidades": [
+    "AGU - Advocacia-Geral da União",
+    "Antaq - Agência Nacional de Transportes Aquaviários",
+    "ANTT - Agência Nacional de Transportes Terrestres"
+   ],
+   "interessados": [],
+   "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": "acompanhado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-05-21T00:00:00+00:00",
+     "descricao": "Documento Vista e/ou Cópia (Pedido/Autorização/Recibo) juntado ao processo por Seproc",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-05-20T00:00:00+00:00",
+     "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por Seproc",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-05-21T00:00:00+00:00",
+    "descricao": "Documento Vista e/ou Cópia (Pedido/Autorização/Recibo) juntado ao processo por Seproc",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Vista e/ou Cópia (Pedido/Autorização/Recibo) juntado ao processo por S",
+   "atualizado_em": "2026-05-21T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=872320230",
+   "garantido": true
+  },
+  {
+   "numero": "011.526/2022-0",
+   "id": "01152620220",
+   "codigo": "71304046",
+   "estado": "Aberto",
+   "relator": "Odair Cunha",
+   "assunto": "CONS - Nos termos do art. 1°, XVII, da Lei n° 8.443, de 1992,\r\nconfeccionados em face de preocupações e dúvidas desta Pasta em razão da divergência de entendimentos entre a CGU e os demais órgãos do Governo sobre qual tratamento deve ser dado à aplicação dos depósitos especiais do FAT.",
+   "natureza": "Consulta",
+   "unidades": [],
+   "interessados": [],
+   "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": "acompanhado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-05-20T00:00:00+00:00",
+     "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-05-20T00:00:00+00:00",
+     "descricao": "Relatoria alterada de MIN-AC para MIN-OJC por AudFiscal (por Atribuição)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2025-09-10T00:00:00+00:00",
+     "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-05-20T00:00:00+00:00",
+    "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+   "atualizado_em": "2026-05-20T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1152620220",
+   "garantido": true
+  },
+  {
    "numero": "016.997/2022-0",
    "id": "01699720220",
    "codigo": "71725694",
@@ -3539,6 +3655,50 @@
    "estado": "Aberto"
   },
   {
+   "data": "2026-05-21T00:00:00+00:00",
+   "descricao": "Documento Vista e/ou Cópia (Pedido/Autorização/Recibo) juntado ao processo por Seproc",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.723/2023-0",
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-05-20T00:00:00+00:00",
+   "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por Seproc",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.723/2023-0",
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-05-20T00:00:00+00:00",
+   "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.526/2022-0",
+   "assunto": "CONS - Nos termos do art. 1°, XVII, da Lei n° 8.443, de 1992,\r\nconfeccionados em face de preocupações e dúvidas desta Pasta em razão da divergência de entendimentos entre a CGU e os demais órgãos do Governo sobre qual tratamento deve ser dado à aplicação dos depósitos especiais do FAT.",
+   "natureza": "Consulta",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-05-20T00:00:00+00:00",
+   "descricao": "Relatoria alterada de MIN-AC para MIN-OJC por AudFiscal (por Atribuição)",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.526/2022-0",
+   "assunto": "CONS - Nos termos do art. 1°, XVII, da Lei n° 8.443, de 1992,\r\nconfeccionados em face de preocupações e dúvidas desta Pasta em razão da divergência de entendimentos entre a CGU e os demais órgãos do Governo sobre qual tratamento deve ser dado à aplicação dos depósitos especiais do FAT.",
+   "natureza": "Consulta",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
    "data": "2026-05-19T00:00:00+00:00",
    "descricao": "Registrada resposta de comunicação do Ofício 0442/2026-TCU/AudEducação.",
    "fase": null,
@@ -3992,6 +4152,17 @@
     "MPO",
     "SOF"
    ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2025-09-10T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.526/2022-0",
+   "assunto": "CONS - Nos termos do art. 1°, XVII, da Lei n° 8.443, de 1992,\r\nconfeccionados em face de preocupações e dúvidas desta Pasta em razão da divergência de entendimentos entre a CGU e os demais órgãos do Governo sobre qual tratamento deve ser dado à aplicação dos depósitos especiais do FAT.",
+   "natureza": "Consulta",
+   "orgaos": [],
    "estado": "Aberto"
   },
   {
