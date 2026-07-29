@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-07-29T14:38:37.678152+00:00",
- "gerado_em_br": "29/07/2026 às 14:38",
+ "gerado_em": "2026-07-29T19:35:54.271172+00:00",
+ "gerado_em_br": "29/07/2026 às 19:35",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -23,24 +23,7 @@
   "008.723/2023-0",
   "011.526/2022-0"
  ],
- "novos_processos": [
-  {
-   "processo": "008.723/2023-0",
-   "orgaos": [],
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "natureza": "Representação",
-   "relator": "Benjamin Zymler",
-   "estado": "Aberto"
-  },
-  {
-   "processo": "011.526/2022-0",
-   "orgaos": [],
-   "assunto": "CONS - Nos termos do art. 1°, XVII, da Lei n° 8.443, de 1992,\r\nconfeccionados em face de preocupações e dúvidas desta Pasta em razão da divergência de entendimentos entre a CGU e os demais órgãos do Governo sobre qual tratamento deve ser dado à aplicação dos depósitos especiais do FAT.",
-   "natureza": "Consulta",
-   "relator": "Odair Cunha",
-   "estado": "Aberto"
-  }
- ],
+ "novos_processos": [],
  "andamentos_novos": [],
  "tem_baseline": true,
  "por_orgao": [
