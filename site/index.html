@@ -51,6 +51,24 @@ section h2{font-size:19px}
 .sub{margin:3px 0 15px; color:var(--muted); font-size:13.5px}
 
 .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+
+/* caixa de novidades desde ontem */
+.novidades{margin-top:22px; background:#fbeeec; border:1px solid #e3b4ac; border-left:4px solid var(--red); border-radius:var(--r); padding:16px 18px; box-shadow:var(--shadow)}
+.novidades h2{font-size:16px; color:var(--red); margin:0 0 2px}
+.novidades .quando-nov{font-size:12px; color:#9a5049; margin:0 0 14px}
+.nov-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+.nov-col h3{font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--red); margin:0 0 9px; display:flex; align-items:center; gap:7px}
+.nov-cont{background:var(--red); color:#fff; border-radius:11px; font-size:11px; padding:1px 8px; font-weight:600}
+.nov-lista{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px; max-height:280px; overflow-y:auto}
+.nov-item{background:var(--surface); border:1px solid #eccbc5; border-radius:8px; padding:9px 12px}
+.nov-item a{font-family:"JetBrains Mono",monospace; font-size:12.5px; font-weight:600; text-decoration:none}
+.nov-item a:hover{text-decoration:underline}
+.nov-l1{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:3px}
+.nov-txt{margin:0; font-size:12.5px; color:var(--ink-2); line-height:1.4}
+.nov-data{font-family:"JetBrains Mono",monospace; font-size:11px; color:var(--muted); margin-left:auto}
+.nov-vazio{color:#9a5049; font-size:13px; padding:6px 0}
+.nov-selo{background:var(--red); color:#fff; font-family:"JetBrains Mono",monospace; font-size:9.5px; text-transform:uppercase; letter-spacing:.05em; padding:1.5px 6px; border-radius:4px}
+.nov-baseline{margin:12px 0 0; font-size:11.5px; color:#9a5049; font-style:italic}
 .painel{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; box-shadow:var(--shadow)}
 .painel h3{font-family:"Bricolage Grotesque",sans-serif; font-size:15px; margin:0 0 3px; font-weight:600}
 .painel .nota{margin:0 0 14px; font-size:12px; color:var(--muted)}
@@ -148,6 +166,7 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
 
 @media (max-width:980px){
   .grid3{grid-template-columns:1fr 1fr}
+  .nov-grid{grid-template-columns:1fr}
 }
 @media (max-width:640px){
   .grid3{grid-template-columns:1fr}
@@ -186,6 +205,8 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
 <main id="app" hidden>
   <div class="wrap"><div id="avisos"></div></div>
   <div class="wrap kpis" id="kpis"></div>
+
+  <div class="wrap"><section class="novidades" id="novidades" hidden aria-label="Novidades desde a última coleta"></section></div>
 
   <div class="wrap">
     <section>
@@ -300,12 +321,60 @@ function render(){
   document.getElementById("avisos").innerHTML = (D.avisos || []).length
     ? `<div class="aviso"><span aria-hidden="true">▲</span><span>${(D.avisos).map(esc).join(" ")}</span></div>` : "";
   kpis();
+  novidades();
   rankingMes();
   barras();
   graficoRelator();
   movimentacoes();
   ferramentas();
   lista();
+}
+
+function novidades(){
+  const nov = D.novos_processos || [];
+  const anda = D.andamentos_novos || [];
+  const el = document.getElementById("novidades");
+
+  // Sem baseline (primeira coleta), não há com o que comparar: não mostra a caixa
+  // para não dar falsa impressão de que "tudo é novo".
+  if(!D.tem_baseline){ el.hidden = true; return; }
+  if(!nov.length && !anda.length){ el.hidden = true; return; }
+  el.hidden = false;
+
+  const itemProc = (p) => `<li class="nov-item">
+    <div class="nov-l1">
+      <a href="${esc(link(p.processo))}" target="_blank" rel="noopener">${esc(p.processo)} ↗</a>
+      ${p.natureza ? `<span class="chip chip-tipo">${esc(p.natureza)}</span>` : ""}
+      ${(p.orgaos || []).map((o) => `<span class="chip ${esc(o)}">${esc(o)}</span>`).join("")}
+    </div>
+    <p class="nov-txt">${esc((p.assunto || "Sem descrição").slice(0, 120))}${(p.assunto || "").length > 120 ? "…" : ""}</p>
+  </li>`;
+
+  const itemAnda = (a) => `<li class="nov-item">
+    <div class="nov-l1">
+      <a href="${esc(link(a.processo))}" target="_blank" rel="noopener">${esc(a.processo)} ↗</a>
+      ${a.acordao ? `<span class="chip chip-ac">Acórdão ${esc(a.acordao)}</span>` : ""}
+      ${a.novo_no_radar ? `<span class="nov-selo">novo</span>` : ""}
+      <span class="nov-data">${esc(fmt(dt(a.data)))}</span>
+    </div>
+    <p class="nov-txt">${esc((a.descricao || "").slice(0, 130))}${(a.descricao || "").length > 130 ? "…" : ""}</p>
+  </li>`;
+
+  el.innerHTML = `
+    <h2>Novidades desde a última coleta</h2>
+    <p class="quando-nov">Comparado com a coleta anterior. Atualizado em ${esc(D.gerado_em_br || "—")}.</p>
+    <div class="nov-grid">
+      <div class="nov-col">
+        <h3>Novos processos <span class="nov-cont">${nov.length}</span></h3>
+        ${nov.length ? `<ul class="nov-lista">${nov.map(itemProc).join("")}</ul>`
+                     : `<p class="nov-vazio">Nenhum processo novo entrou no radar.</p>`}
+      </div>
+      <div class="nov-col">
+        <h3>Andamentos recentes <span class="nov-cont">${anda.length}</span></h3>
+        ${anda.length ? `<ul class="nov-lista">${anda.map(itemAnda).join("")}</ul>`
+                      : `<p class="nov-vazio">Nenhum andamento novo desde ontem.</p>`}
+      </div>
+    </div>`;
 }
 
 function kpis(){
