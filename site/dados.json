@@ -1,13 +1,13 @@
 {
  "versao": 2,
- "gerado_em": "2026-07-30T11:06:40.150453+00:00",
- "gerado_em_br": "30/07/2026 às 11:06",
+ "gerado_em": "2026-07-30T19:51:19.145996+00:00",
+ "gerado_em_br": "30/07/2026 às 19:51",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
   "processos": 43,
-  "movimentacoes": 124,
+  "movimentacoes": 125,
   "abertos": 43,
   "encerrados_ocultos": 189,
   "so_interesse": 5
@@ -24,7 +24,56 @@
   "011.526/2022-0"
  ],
  "novos_processos": [],
- "andamentos_novos": [],
+ "andamentos_novos": [
+  {
+   "processo": "006.412/2026-2",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "data": "2026-07-30T00:00:00+00:00",
+   "descricao": "Processo 009.943/2026-9 foi apensado a este processo por AudFiscal.",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "017.463/2025-4",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "data": "2026-07-30T00:00:00+00:00",
+   "descricao": "Processo enviado de MIN-BZ para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "017.463/2025-4",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "data": "2026-07-30T00:00:00+00:00",
+   "descricao": "Apreciado na Sessão Ordinária do Plenário em 29/07/2026 por meio do Acórdão 2011/2026-PL, referente ao Recurso 017.463/2025-4/R001",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "017.463/2025-4",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "data": "2026-07-30T00:00:00+00:00",
+   "descricao": "Acórdão 2011/2026 — Plenário",
+   "acordao": "2011/2026",
+   "novo_no_radar": false
+  }
+ ],
  "tem_baseline": true,
  "por_orgao": [
   {
@@ -132,6 +181,16 @@
  ],
  "ranking_mes": [
   {
+   "processo": "017.463/2025-4",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "relator": "Benjamin Zymler",
+   "movimentacoes_mes": 4
+  },
+  {
    "processo": "011.103/2025-6",
    "orgaos": [
     "SE"
@@ -148,6 +207,16 @@
    "movimentacoes_mes": 4
   },
   {
+   "processo": "006.412/2026-2",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 3
+  },
+  {
    "processo": "011.685/2026-3",
    "orgaos": [],
    "assunto": "011.685/2026-3 - Denúncia",
@@ -161,16 +230,6 @@
     "SOF"
    ],
    "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "006.412/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
    "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
   },
@@ -193,19 +252,126 @@
    "assunto": "Acompanhamento sistemático do desenvolvimento das etapas seguintes do PNL e do PIT",
    "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
-  },
+  }
+ ],
+ "processos": [
   {
-   "processo": "014.609/2026-6",
+   "numero": "006.412/2026-2",
+   "id": "00641220262",
+   "codigo": "80008933",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "STN - Secretaria do Tesouro Nacional"
+   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  }
- ],
- "processos": [
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-07-30T00:00:00+00:00",
+     "descricao": "Processo 009.943/2026-9 foi apensado a este processo por AudFiscal.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Distribuído para o gabinete do Procurador Júlio Marcelo",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-27T00:00:00+00:00",
+     "descricao": "Processo enviado de MIN-AAA para PROC-G/PROC-G. (Gabinete do Procurador-Geral)",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-30T00:00:00+00:00",
+    "descricao": "Processo 009.943/2026-9 foi apensado a este processo por AudFiscal.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo 009.943/2026-9 foi apensado a este processo por AudFiscal.",
+   "atualizado_em": "2026-07-30T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=641220262",
+   "garantido": false
+  },
+  {
+   "numero": "017.463/2025-4",
+   "id": "01746320254",
+   "codigo": "78795505",
+   "estado": "Aberto",
+   "relator": "Benjamin Zymler",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "natureza": "Relatório de Acompanhamento",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "BCB - Banco Central do Brasil",
+    "RFB - Secretaria Especial da Receita Federal do Brasil"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": "2011/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-07-30T00:00:00+00:00",
+     "descricao": "Processo enviado de MIN-BZ para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-30T00:00:00+00:00",
+     "descricao": "Apreciado na Sessão Ordinária do Plenário em 29/07/2026 por meio do Acórdão 2011/2026-PL, referente ao Recurso 017.463/2025-4/R001",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-30T00:00:00+00:00",
+     "descricao": "Acórdão 2011/2026 — Plenário",
+     "fase": "Julgado",
+     "acordao": "2011/2026"
+    },
+    {
+     "data": "2026-07-24T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 29/07/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-30T00:00:00+00:00",
+    "descricao": "Processo enviado de MIN-BZ para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo enviado de MIN-BZ para Seses/Disup. (Diretoria de Suporte aos Colegiado",
+   "atualizado_em": "2026-07-30T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1746320254",
+   "garantido": false
+  },
   {
    "numero": "011.103/2025-6",
    "id": "01110320256",
@@ -422,61 +588,6 @@
    "fase_atual": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.762.030-2) publicada no BTCU ",
    "atualizado_em": "2026-07-27T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1614120261",
-   "garantido": false
-  },
-  {
-   "numero": "006.412/2026-2",
-   "id": "00641220262",
-   "codigo": "80008933",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-07-27T00:00:00+00:00",
-     "descricao": "Distribuído para o gabinete do Procurador Júlio Marcelo",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-27T00:00:00+00:00",
-     "descricao": "Processo enviado de MIN-AAA para PROC-G/PROC-G. (Gabinete do Procurador-Geral)",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-27T00:00:00+00:00",
-     "descricao": "Documento Solicitação de Oitiva do MPTCU juntado ao processo por MIN-AAA",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-27T00:00:00+00:00",
-    "descricao": "Distribuído para o gabinete do Procurador Júlio Marcelo",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Distribuído para o gabinete do Procurador Júlio Marcelo",
-   "atualizado_em": "2026-07-27T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=641220262",
    "garantido": false
   },
   {
@@ -755,62 +866,6 @@
    "fase_atual": "Peça nº 163 do tipo Portaria de Fiscalização (doc 80.740.800-9) publicada no BTC",
    "atualizado_em": "2026-07-24T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=731820260",
-   "garantido": false
-  },
-  {
-   "numero": "017.463/2025-4",
-   "id": "01746320254",
-   "codigo": "78795505",
-   "estado": "Aberto",
-   "relator": "Benjamin Zymler",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
-   "natureza": "Relatório de Acompanhamento",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "BCB - Banco Central do Brasil",
-    "RFB - Secretaria Especial da Receita Federal do Brasil"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 29/07/2026, às 14h30.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-06-02T00:00:00+00:00",
-     "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por Seproc",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-05-11T00:00:00+00:00",
-     "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 13/05/2026, às 14h30",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-24T00:00:00+00:00",
-    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 29/07/2026, às 14h30.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 29/07/",
-   "atualizado_em": "2026-07-24T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1746320254",
    "garantido": false
   },
   {
@@ -1236,7 +1291,9 @@
    "relator": "Antonio Anastasia",
    "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
    "natureza": "Relatório de Auditoria",
-   "unidades": [],
+   "unidades": [
+    "PGFN - Procuradoria-Geral da Fazenda Nacional"
+   ],
    "interessados": [],
    "orgaos": [],
    "orgaos_unidade": [],
@@ -2502,6 +2559,21 @@
  ],
  "movimentacoes_recentes": [
   {
+   "data": "2026-07-30T00:00:00+00:00",
+   "descricao": "Acórdão 2011/2026 — Plenário",
+   "fase": "Julgado",
+   "acordao": "2011/2026",
+   "processo": "017.463/2025-4",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto",
+   "evento": "acordao"
+  },
+  {
    "data": "2026-07-24T00:00:00+00:00",
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 29/07/2026, às 14h30.",
    "fase": null,
@@ -2545,6 +2617,62 @@
  ],
  "movimentacoes": [
   {
+   "data": "2026-07-30T00:00:00+00:00",
+   "descricao": "Processo 009.943/2026-9 foi apensado a este processo por AudFiscal.",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-30T00:00:00+00:00",
+   "descricao": "Processo enviado de MIN-BZ para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.463/2025-4",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-30T00:00:00+00:00",
+   "descricao": "Apreciado na Sessão Ordinária do Plenário em 29/07/2026 por meio do Acórdão 2011/2026-PL, referente ao Recurso 017.463/2025-4/R001",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.463/2025-4",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-30T00:00:00+00:00",
+   "descricao": "Acórdão 2011/2026 — Plenário",
+   "fase": "Julgado",
+   "acordao": "2011/2026",
+   "processo": "017.463/2025-4",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
    "data": "2026-07-28T00:00:00+00:00",
    "descricao": "Registrada resposta de comunicação do Ofício 25133/2026-TCU/Seproc.",
    "fase": null,
@@ -2577,6 +2705,34 @@
    "assunto": "011.685/2026-3 - Denúncia",
    "natureza": "Denúncia",
    "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Distribuído para o gabinete do Procurador Júlio Marcelo",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-27T00:00:00+00:00",
+   "descricao": "Processo enviado de MIN-AAA para PROC-G/PROC-G. (Gabinete do Procurador-Geral)",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
    "estado": "Aberto"
   },
   {
@@ -2645,48 +2801,6 @@
   },
   {
    "data": "2026-07-27T00:00:00+00:00",
-   "descricao": "Distribuído para o gabinete do Procurador Júlio Marcelo",
-   "fase": null,
-   "acordao": null,
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-27T00:00:00+00:00",
-   "descricao": "Processo enviado de MIN-AAA para PROC-G/PROC-G. (Gabinete do Procurador-Geral)",
-   "fase": null,
-   "acordao": null,
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-27T00:00:00+00:00",
-   "descricao": "Documento Solicitação de Oitiva do MPTCU juntado ao processo por MIN-AAA",
-   "fase": null,
-   "acordao": null,
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-27T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 27186/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
    "fase": null,
    "acordao": null,
@@ -2738,6 +2852,20 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-24T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 29/07/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.463/2025-4",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -2817,20 +2945,6 @@
    "acordao": null,
    "processo": "007.318/2026-0",
    "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 29/07/2026, às 14h30.",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.463/2025-4",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
@@ -3552,20 +3666,6 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-06-02T00:00:00+00:00",
-   "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por Seproc",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.463/2025-4",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-06-01T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 0008/2026-TCU/AudDigital via CONECTA TCU por ANA DOROTEA VERAS COSTA em nome de Secretaria do Tesouro Nacional",
    "fase": null,
@@ -3826,20 +3926,6 @@
    "processo": "010.183/2026-4",
    "assunto": "Consulta formulada pela Deputado Coronel Meira -\r\nComissão de Segurança Pública e Combate ao Crime \r\nOrganizado - CD, por meio Ofício  Pres. nº 78/2026 - CSPCCO",
    "natureza": "Consulta",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-05-11T00:00:00+00:00",
-   "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 13/05/2026, às 14h30",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.463/2025-4",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
-   "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
     "SOF"
