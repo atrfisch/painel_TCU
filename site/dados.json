@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-07-30T19:51:19.145996+00:00",
- "gerado_em_br": "30/07/2026 às 19:51",
+ "gerado_em": "2026-07-31T11:28:49.990795+00:00",
+ "gerado_em_br": "31/07/2026 às 11:28",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -26,51 +26,15 @@
  "novos_processos": [],
  "andamentos_novos": [
   {
-   "processo": "006.412/2026-2",
+   "processo": "013.946/2026-9",
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
    "data": "2026-07-30T00:00:00+00:00",
-   "descricao": "Processo 009.943/2026-9 foi apensado a este processo por AudFiscal.",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Primeira Câmara, prevista para 04/08/2026, às 15h.",
    "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.463/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
-   "data": "2026-07-30T00:00:00+00:00",
-   "descricao": "Processo enviado de MIN-BZ para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.463/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
-   "data": "2026-07-30T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária do Plenário em 29/07/2026 por meio do Acórdão 2011/2026-PL, referente ao Recurso 017.463/2025-4/R001",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.463/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
-   "data": "2026-07-30T00:00:00+00:00",
-   "descricao": "Acórdão 2011/2026 — Plenário",
-   "acordao": "2011/2026",
    "novo_no_radar": false
   }
  ],
@@ -207,6 +171,16 @@
    "movimentacoes_mes": 4
   },
   {
+   "processo": "013.946/2026-9",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
+   "relator": "Walton Alencar Rodrigues",
+   "movimentacoes_mes": 3
+  },
+  {
    "processo": "006.412/2026-2",
    "orgaos": [
     "MPO",
@@ -243,18 +217,64 @@
    "assunto": "Avaliação do acompanhamento de Benefícios Tributários pelo governo federal com objetivo de verificar o alinhamento de gastos tributários relevantes com o referencial de controle de benefícios tributários do TCU.",
    "relator": "Benjamin Zymler",
    "movimentacoes_mes": 3
-  },
-  {
-   "processo": "005.104/2023-8",
-   "orgaos": [
-    "SE"
-   ],
-   "assunto": "Acompanhamento sistemático do desenvolvimento das etapas seguintes do PNL e do PIT",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
   }
  ],
  "processos": [
+  {
+   "numero": "013.946/2026-9",
+   "id": "01394620269",
+   "codigo": "80524790",
+   "estado": "Aberto",
+   "relator": "Walton Alencar Rodrigues",
+   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
+   "natureza": "Representação",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "STN - Secretaria do Tesouro Nacional"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-07-30T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Ordinária de Primeira Câmara, prevista para 04/08/2026, às 15h.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-24T00:00:00+00:00",
+     "descricao": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-24T00:00:00+00:00",
+     "descricao": "Pronunciamento da AudFiscal concluído",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-30T00:00:00+00:00",
+    "descricao": "Processo incluído na pauta da sessão Ordinária de Primeira Câmara, prevista para 04/08/2026, às 15h.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo incluído na pauta da sessão Ordinária de Primeira Câmara, prevista para",
+   "atualizado_em": "2026-07-30T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1394620269",
+   "garantido": false
+  },
   {
    "numero": "006.412/2026-2",
    "id": "00641220262",
@@ -755,61 +775,6 @@
    "fase_atual": "Registrada ciência de comunicação do Ofício 26884/2026-TCU/Seproc via CONECTA TC",
    "atualizado_em": "2026-07-24T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1460920266",
-   "garantido": false
-  },
-  {
-   "numero": "013.946/2026-9",
-   "id": "01394620269",
-   "codigo": "80524790",
-   "estado": "Aberto",
-   "relator": "Walton Alencar Rodrigues",
-   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
-   "natureza": "Representação",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Pronunciamento da AudFiscal concluído",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-06-17T00:00:00+00:00",
-     "descricao": "Unidade responsável técnica alterada de AudFiscal para Diref por AudFiscal",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-24T00:00:00+00:00",
-    "descricao": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
-   "atualizado_em": "2026-07-24T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1394620269",
    "garantido": false
   },
   {
@@ -2560,6 +2525,21 @@
  "movimentacoes_recentes": [
   {
    "data": "2026-07-30T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Primeira Câmara, prevista para 04/08/2026, às 15h.",
+   "fase": null,
+   "acordao": null,
+   "processo": "013.946/2026-9",
+   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto",
+   "evento": "pauta"
+  },
+  {
+   "data": "2026-07-30T00:00:00+00:00",
    "descricao": "Acórdão 2011/2026 — Plenário",
    "fase": "Julgado",
    "acordao": "2011/2026",
@@ -2616,6 +2596,20 @@
   }
  ],
  "movimentacoes": [
+  {
+   "data": "2026-07-30T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Primeira Câmara, prevista para 04/08/2026, às 15h.",
+   "fase": null,
+   "acordao": null,
+   "processo": "013.946/2026-9",
+   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
   {
    "data": "2026-07-30T00:00:00+00:00",
    "descricao": "Processo 009.943/2026-9 foi apensado a este processo por AudFiscal.",
@@ -2857,6 +2851,34 @@
   },
   {
    "data": "2026-07-24T00:00:00+00:00",
+   "descricao": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "013.946/2026-9",
+   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-24T00:00:00+00:00",
+   "descricao": "Pronunciamento da AudFiscal concluído",
+   "fase": null,
+   "acordao": null,
+   "processo": "013.946/2026-9",
+   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-24T00:00:00+00:00",
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 29/07/2026, às 14h30.",
    "fase": null,
    "acordao": null,
@@ -2890,34 +2912,6 @@
    "processo": "014.609/2026-6",
    "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
    "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "013.946/2026-9",
-   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "fase": null,
-   "acordao": null,
-   "processo": "013.946/2026-9",
-   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
-   "natureza": "Representação",
    "orgaos": [
     "MPO",
     "SOF"
@@ -3514,20 +3508,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "SE"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-17T00:00:00+00:00",
-   "descricao": "Unidade responsável técnica alterada de AudFiscal para Diref por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "013.946/2026-9",
-   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
    ],
    "estado": "Aberto"
   },
