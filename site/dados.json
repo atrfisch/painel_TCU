@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-07-31T19:53:27.710088+00:00",
- "gerado_em_br": "31/07/2026 às 19:53",
+ "gerado_em": "2026-08-03T12:21:38.770623+00:00",
+ "gerado_em_br": "03/08/2026 às 12:21",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -24,29 +24,7 @@
   "011.526/2022-0"
  ],
  "novos_processos": [],
- "andamentos_novos": [
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "016.873/2025-4 - Relatório de Levantamento",
-   "data": "2026-07-31T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 0009/2026 por unidade AudDigital em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "025.632/2024-8",
-   "orgaos": [],
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "data": "2026-07-31T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 27301/2026-TCU/Seproc via CONECTA TCU por LETICIA SOEIRO em nome de Secretaria do Tesouro Nacional",
-   "acordao": null,
-   "novo_no_radar": false
-  }
- ],
+ "andamentos_novos": [],
  "tem_baseline": true,
  "por_orgao": [
   {
@@ -171,15 +149,6 @@
    "movimentacoes_mes": 4
   },
   {
-   "processo": "011.103/2025-6",
-   "orgaos": [
-    "SE"
-   ],
-   "assunto": "Barreiras laborais enfrentadas por pessoas com deficiência (PcD) que trabalham em órgãos da Administração Direta do Poder Executivo Federal",
-   "relator": "Benjamin Zymler",
-   "movimentacoes_mes": 4
-  },
-  {
    "processo": "013.946/2026-9",
    "orgaos": [
     "MPO",
@@ -197,6 +166,15 @@
    ],
    "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
    "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "011.103/2025-6",
+   "orgaos": [
+    "SE"
+   ],
+   "assunto": "Barreiras laborais enfrentadas por pessoas com deficiência (PcD) que trabalham em órgãos da Administração Direta do Poder Executivo Federal",
+   "relator": "Benjamin Zymler",
    "movimentacoes_mes": 3
   },
   {
@@ -2586,20 +2564,6 @@
    "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
    "natureza": "Relatório de Auditoria",
    "orgaos": [],
-   "estado": "Aberto",
-   "evento": "acordao"
-  },
-  {
-   "data": "2026-07-02T00:00:00+00:00",
-   "descricao": "Acórdão 1743/2026 — Plenário",
-   "fase": "Julgado",
-   "acordao": "1743/2026",
-   "processo": "011.103/2025-6",
-   "assunto": "Barreiras laborais enfrentadas por pessoas com deficiência (PcD) que trabalham em órgãos da Administração Direta do Poder Executivo Federal",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "SE"
-   ],
    "estado": "Aberto",
    "evento": "acordao"
   }
