@@ -582,30 +582,61 @@ def buscar_por_numero(sessao: requests.Session, numero: str) -> dict | None:
     return None
 
 
-def enriquecer_detalhe(sessao: requests.Session, campo: dict) -> None:
+def enriquecer_detalhe(sessao: requests.Session, campo: dict) -> bool:
     """
-    Busca o detalhe do processo (MOVIMENTACOES, PECAS) quando a listagem resumida
-    não os trouxe. Atualiza `campo` no lugar; falha silenciosa mantém o resumo.
+    Busca o detalhe do processo para obter INTERESSADOS e RESPONSAVEIS, que a
+    busca em massa não traz (vêm vazios). É a via que finalmente captura AECI, SE
+    e os órgãos do MPO que aparecem só como interessados — o vínculo que o
+    Conecta-TCU mostra atrás de login, mas que também existe no detalhe público.
+
+    Devolve True se conseguiu reclassificar os órgãos do processo.
     """
-    if campo.get("movimentacoes_pesquisa"):
-        return  # a listagem já trouxe; não precisa
     proc_id = so_digitos(campo["processo"])
     if not proc_id:
-        return
-    try:
-        r = sessao.get(PESQUISA_DETALHE, params={"key": campo.get("codigo") or proc_id},
-                       headers=PESQUISA_HEADERS, timeout=TIMEOUT)
-        r.raise_for_status()
-        doc = r.json()
-        doc = doc.get("documento") if isinstance(doc, dict) and "documento" in doc else doc
-    except (requests.exceptions.RequestException, ValueError):
-        return
-    if isinstance(doc, dict):
+        return False
+    # Tenta o código interno (mais preciso) e, como alternativa, o número.
+    chaves = [campo.get("codigo"), proc_id]
+    for key in [k for k in chaves if k]:
+        try:
+            r = sessao.get(PESQUISA_DETALHE, params={"key": key},
+                           headers=PESQUISA_HEADERS, timeout=TIMEOUT)
+            r.raise_for_status()
+            doc = r.json()
+        except (requests.exceptions.RequestException, ValueError):
+            continue
+        # A resposta pode vir embrulhada de várias formas.
+        if isinstance(doc, dict):
+            doc = doc.get("documento") or doc.get("documentos") or doc
+        if isinstance(doc, list):
+            doc = doc[0] if doc else None
+        if not isinstance(doc, dict):
+            continue
+
         detalhado = _campos_pesquisa(doc)
-        for k in ("movimentacoes_pesquisa", "ultima_pesquisa", "acordao", "relator",
-                  "assunto", "natureza", "estado"):
+        # Reclassifica os órgãos: o detalhe pode revelar AECI/SE/etc como
+        # interessados que a listagem resumida não mostrava.
+        antes = set(campo.get("orgaos") or [])
+        depois = set(detalhado.get("orgaos") or []) | antes
+        if depois:
+            campo["orgaos"] = sorted(depois)
+            campo["orgaos_unidade"] = sorted(set(campo.get("orgaos_unidade") or [])
+                                             | set(detalhado.get("orgaos_unidade") or []))
+            campo["orgaos_interessado"] = sorted(set(campo.get("orgaos_interessado") or [])
+                                                 | set(detalhado.get("orgaos_interessado") or []))
+            if detalhado.get("interessados") and not campo.get("interessados"):
+                campo["interessados"] = detalhado["interessados"]
+            # Vínculo: unidade prevalece; senão interessado.
+            if campo.get("orgaos_unidade"):
+                campo["vinculo"] = "unidade"
+            elif campo.get("orgaos_interessado"):
+                campo["vinculo"] = campo.get("vinculo") or "interessado"
+        # Preenche o que faltava.
+        for k in ("movimentacoes_pesquisa", "ultima_pesquisa", "acordao",
+                  "relator", "assunto", "natureza", "estado"):
             if detalhado.get(k) and not campo.get(k):
                 campo[k] = detalhado[k]
+        return bool(depois - antes)
+    return False
 
 
 def consultar_pesquisa(sessao: requests.Session) -> list[dict]:
@@ -652,11 +683,35 @@ def consultar_pesquisa(sessao: requests.Session) -> list[dict]:
         else:
             log.warning("Garantido NÃO encontrado na base: %s", numero)
 
-    # Enriquecimento: só para os que vieram sem movimentações (a listagem resume).
-    faltam = [c for c in vistos.values() if not c.get("movimentacoes_pesquisa")]
-    log.info("Enriquecendo %d processos sem movimentações na listagem", len(faltam))
-    for campo in faltam:
-        enriquecer_detalhe(sessao, campo)
+    # Enriquecimento por detalhe: a busca em massa não traz INTERESSADOS nem
+    # RESPONSAVEIS (vêm vazios), então AECI, SE e órgãos do MPO que só constam
+    # como interessados ficam invisíveis. Buscar o detalhe de cada processo
+    # revela esse vínculo — é o mesmo dado que o Conecta-TCU mostra atrás de
+    # login. Custa uma requisição por processo; como são dezenas (não a base
+    # inteira), o custo é aceitável numa execução que roda de madrugada.
+    todos = list(vistos.values())
+    log.info("Enriquecendo %d processos com o detalhe (interessados, movimentações)", len(todos))
+    revelados = 0
+    falhas_seguidas = 0
+    houve_sucesso = False
+    for i, campo in enumerate(todos, 1):
+        try:
+            mudou = enriquecer_detalhe(sessao, campo)
+            houve_sucesso = True
+            falhas_seguidas = 0
+            if mudou:
+                revelados += 1
+        except Exception:
+            falhas_seguidas += 1
+        # Se o endpoint de detalhe não responde de cara, aborta para não travar a
+        # coleta inteira em dezenas de timeouts. A lista segue com o que já tem.
+        if falhas_seguidas >= 8 and not houve_sucesso:
+            log.warning("Endpoint de detalhe não respondeu nas primeiras %d tentativas; "
+                        "pulando o enriquecimento. Interessados podem faltar.", falhas_seguidas)
+            break
+        if i % 25 == 0:
+            log.info("  ... %d/%d enriquecidos", i, len(todos))
+    log.info("Detalhe: %d processos ganharam órgão novo (AECI/SE/etc via interessado)", revelados)
 
     if not houve_resposta:
         log.error("Pesquisa Integrada não respondeu em nenhuma consulta.")
