@@ -14,8 +14,11 @@ name: Atualizar painel TCU
 
 on:
   schedule:
+    # Uma vez por dia, em dias úteis. 09:00 UTC = 06:00 em Brasília — a coleta
+    # fica pronta antes do expediente. O horário de madrugada também deixa a base
+    # do TCU já atualizada com o movimento do dia anterior, que é o que a caixa
+    # de novidades compara.
     - cron: "0 9 * * 1-5"
-    - cron: "0 18 * * 1-5"
   workflow_dispatch:
   push:
     branches: [main]
