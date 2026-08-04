@@ -106,11 +106,43 @@ PESQUISA_DETALHE = "https://pesquisa.apps.tcu.gov.br/rest/publico/base/processo/
 
 # Processos que devem entrar SEMPRE, buscados um a um pelo número — independem
 # de o filtro de unidade os capturar. É a rede de segurança para os que somem.
-PROCESSOS_GARANTIDOS = [
+#
+# A lista fica num arquivo TEXTO separado (processos-acompanhados.txt), que pode
+# ser editado direto pelo GitHub sem tocar no código. A lista abaixo é só o
+# fallback, usado se o arquivo não existir.
+_GARANTIDOS_FALLBACK = [
     "022.756/2025-6", "005.405/2026-2", "022.852/2025-5", "017.106/2025-7",
     "025.632/2024-8", "005.104/2023-8", "007.158/2026-2", "011.685/2026-3",
     "011.526/2022-0", "008.723/2023-0",
+    "011.358/2026-2", "024.312/2024-0", "024.381/2025-0",
 ]
+
+RX_NUM_PROCESSO = re.compile(r"\d{3}\.\d{3}/\d{4}-\d")
+
+
+def carregar_garantidos(caminho: str = "processos-acompanhados.txt") -> list[str]:
+    """Lê a lista de processos acompanhados do arquivo texto. Ignora comentários
+    (#) e linhas em branco. Cai no fallback embutido se o arquivo não existir."""
+    try:
+        with open(caminho, encoding="utf-8") as f:
+            numeros = []
+            for linha in f:
+                linha = linha.strip()
+                if not linha or linha.startswith("#"):
+                    continue
+                m = RX_NUM_PROCESSO.search(linha)
+                if m:
+                    numeros.append(m.group(0))
+        if numeros:
+            log.info("Acompanhados: %d processos lidos de %s", len(numeros), caminho)
+            return numeros
+    except OSError:
+        pass
+    log.info("Acompanhados: usando lista embutida (%d processos)", len(_GARANTIDOS_FALLBACK))
+    return _GARANTIDOS_FALLBACK
+
+
+PROCESSOS_GARANTIDOS = _GARANTIDOS_FALLBACK  # substituído em tempo de execução
 
 PESQUISA_HEADERS = {"Accept": "application/json", "Referer": "https://pesquisa.apps.tcu.gov.br/"}
 # ---------------------------------------------------------------------------
@@ -639,7 +671,7 @@ def enriquecer_detalhe(sessao: requests.Session, campo: dict) -> bool:
     return False
 
 
-def consultar_pesquisa(sessao: requests.Session) -> list[dict]:
+def consultar_pesquisa(sessao: requests.Session, garantidos: list[str] | None = None) -> list[dict]:
     """
     Descobre os processos do MPO por três caminhos complementares:
       1. filtro estruturado por unidade (várias grafias, inclusive as antigas);
@@ -649,6 +681,7 @@ def consultar_pesquisa(sessao: requests.Session) -> list[dict]:
     """
     vistos: dict[str, dict] = {}
     houve_resposta = False
+    garantidos = garantidos if garantidos is not None else PROCESSOS_GARANTIDOS
 
     for filtro in PESQUISA_UNIDADES:
         if _uma_consulta(sessao, "*", filtro, filtro.split('("')[-1], vistos):
@@ -665,7 +698,7 @@ def consultar_pesquisa(sessao: requests.Session) -> list[dict]:
             houve_resposta = True
     log.info("Após busca por termo livre: %d processos", len(vistos))
 
-    for numero in PROCESSOS_GARANTIDOS:
+    for numero in garantidos:
         if numero in vistos:
             vistos[numero]["garantido"] = True
             continue
@@ -869,7 +902,14 @@ def montar(processos: list[dict], ancora: int, avisos: list[str],
                 for m in (p.get("movimentacoes") or [])
             }
 
-    ontem = (hoje - timedelta(days=1)).isoformat()
+    # Andamentos: o que é NOVO em relação à coleta anterior. Duas fontes de
+    # verdade, combinadas para robustez:
+    #  - comparação com a coleta anterior (o que não estava lá é novo), que
+    #    resiste a falhas: se a coleta pulou um dia, o movimento de dois dias
+    #    atrás ainda aparece por não ter sido visto antes;
+    #  - janela de data (últimos 3 dias) como teto, para a primeira coleta com
+    #    baseline não despejar meses de histórico de uma vez.
+    limite_and = (hoje - timedelta(days=3)).isoformat()
     novos_processos = []
     andamentos_novos = []
     for p in processos:
@@ -880,15 +920,17 @@ def montar(processos: list[dict], ancora: int, avisos: list[str],
                 "assunto": p["assunto"], "natureza": p.get("natureza"),
                 "relator": p.get("relator"), "estado": p.get("estado"),
             })
-        # Andamentos: movimentações de ontem/hoje que não constavam antes.
         conhecidas = movs_antes.get(p["numero"], set())
         for m in (p.get("movimentacoes") or []):
             dia = _dia(m.get("data"))
-            if not dia or dia < ontem:
+            if not dia or dia < limite_and:
                 continue
             chave = (m.get("data"), (m.get("descricao") or "")[:60])
-            # Se já havia coleta anterior, só conta o que é realmente novo lá.
-            if numeros_antes and chave in conhecidas:
+            # O critério principal é "não estava na coleta anterior". A janela de
+            # data só evita o despejo inicial. Sem baseline, nada é novo ainda.
+            if not numeros_antes:
+                continue
+            if chave in conhecidas:
                 continue
             andamentos_novos.append({
                 "processo": p["numero"], "orgaos": p["orgaos"],
@@ -1034,7 +1076,8 @@ def main(argv: list[str] | None = None) -> int:
 
     # Fonte primária: Pesquisa Integrada. Traz a lista COMPLETA de processos do
     # MPO, com estado, relator, assunto, movimentações e acórdãos.
-    da_pesquisa = consultar_pesquisa(http)
+    garantidos = carregar_garantidos()
+    da_pesquisa = consultar_pesquisa(http, garantidos)
     if not da_pesquisa:
         avisos.append("A Pesquisa Integrada do TCU não respondeu nesta execução. "
                       "Tente novamente mais tarde; o site pode estar instável.")
