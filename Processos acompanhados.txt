@@ -1,0 +1,24 @@
+# Processos que devem entrar no painel SEMPRE, mesmo que a busca automática
+# não os capture (ex.: o MPO não consta nos campos indexados do TCU).
+#
+# COMO USAR: escreva um número de processo por linha, no formato NNN.NNN/AAAA-D.
+# Linhas em branco e linhas começando com # são ignoradas.
+# Depois de editar, o painel se atualiza na próxima coleta (uma vez por dia).
+#
+# Este arquivo pode ser editado direto pelo GitHub, sem mexer no código:
+# abra-o no repositório, clique no lápis, edite e confirme (Commit).
+ 
+022.756/2025-6
+005.405/2026-2
+022.852/2025-5
+017.106/2025-7
+025.632/2024-8
+005.104/2023-8
+007.158/2026-2
+011.685/2026-3
+011.526/2022-0
+008.723/2023-0
+011.358/2026-2
+024.312/2024-0
+024.381/2025-0
+ 
