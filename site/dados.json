@@ -1,21 +1,22 @@
 {
  "versao": 2,
- "gerado_em": "2026-08-07T16:32:03.481194+00:00",
- "gerado_em_br": "07/08/2026 às 16:32",
+ "gerado_em": "2026-08-10T11:42:21.855503+00:00",
+ "gerado_em_br": "10/08/2026 às 11:42",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 43,
-  "movimentacoes": 122,
-  "abertos": 43,
+  "processos": 44,
+  "movimentacoes": 125,
+  "abertos": 44,
   "encerrados_ocultos": 190,
   "so_interesse": 3
  },
  "garantidos": [
+  "024.381/2025-0",
   "011.358/2026-2",
   "017.106/2025-7",
-  "024.381/2025-0",
+  "024.312/2024-0",
   "025.632/2024-8",
   "005.104/2023-8",
   "011.685/2026-3",
@@ -24,49 +25,23 @@
   "008.723/2023-0",
   "011.526/2022-0"
  ],
- "novos_processos": [],
+ "novos_processos": [
+  {
+   "processo": "024.312/2024-0",
+   "orgaos": [],
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "natureza": "Representação",
+   "relator": "Augusto Nardes",
+   "estado": "Aberto"
+  }
+ ],
  "andamentos_novos": [
   {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-08-06T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Evidência ) juntado ao processo por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.463/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
-   "data": "2026-08-06T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Aviso 0782/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "011.358/2026-2",
-   "orgaos": [
-    "SE"
-   ],
-   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
-   "data": "2026-08-06T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 27953/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.106/2025-7",
+   "processo": "024.381/2025-0",
    "orgaos": [],
-   "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
-   "data": "2026-08-06T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por MIN-BD",
+   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
+   "data": "2026-08-07T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 29913/2026 por unidade Seproc em virtude de expedição",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -74,8 +49,8 @@
    "processo": "024.381/2025-0",
    "orgaos": [],
    "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
-   "data": "2026-08-06T00:00:00+00:00",
-   "descricao": "Processo enviado de MIN-JGO para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
+   "data": "2026-08-07T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 29914/2026 por unidade Seproc em virtude de expedição",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -83,18 +58,9 @@
    "processo": "024.381/2025-0",
    "orgaos": [],
    "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
-   "data": "2026-08-06T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária do Plenário em 05/08/2026 por meio do Acórdão 2052/2026-PL",
+   "data": "2026-08-07T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 29915/2026 por unidade Seproc em virtude de expedição",
    "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "024.381/2025-0",
-   "orgaos": [],
-   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
-   "data": "2026-08-06T00:00:00+00:00",
-   "descricao": "Acórdão 2052/2026 — Plenário",
-   "acordao": "2052/2026",
    "novo_no_radar": false
   }
  ],
@@ -129,14 +95,14 @@
    "abertos": 14
   },
   {
-   "tipo": "Relatório de Auditoria",
+   "tipo": "Representação",
    "total": 8,
    "abertos": 8
   },
   {
-   "tipo": "Representação",
-   "total": 7,
-   "abertos": 7
+   "tipo": "Relatório de Auditoria",
+   "total": 8,
+   "abertos": 8
   },
   {
    "tipo": "Relatório de Levantamento",
@@ -187,12 +153,12 @@
    "total": 4
   },
   {
-   "relator": "Walton Alencar Rodrigues",
+   "relator": "Augusto Nardes",
    "total": 4
   },
   {
-   "relator": "Augusto Nardes",
-   "total": 3
+   "relator": "Walton Alencar Rodrigues",
+   "total": 4
   },
   {
    "relator": "Bruno Dantas",
@@ -205,6 +171,13 @@
  ],
  "ranking_mes": [
   {
+   "processo": "024.381/2025-0",
+   "orgaos": [],
+   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
+   "relator": "Jorge Oliveira",
+   "movimentacoes_mes": 4
+  },
+  {
    "processo": "017.463/2025-4",
    "orgaos": [
     "MPO",
@@ -212,13 +185,6 @@
    ],
    "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
    "relator": "Benjamin Zymler",
-   "movimentacoes_mes": 4
-  },
-  {
-   "processo": "024.381/2025-0",
-   "orgaos": [],
-   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
-   "relator": "Jorge Oliveira",
    "movimentacoes_mes": 4
   },
   {
@@ -234,6 +200,13 @@
     "SE"
    ],
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
+   "relator": "Augusto Nardes",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "024.312/2024-0",
+   "orgaos": [],
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
    "relator": "Augusto Nardes",
    "movimentacoes_mes": 3
   },
@@ -267,19 +240,63 @@
    "assunto": "Avaliação do acompanhamento de Benefícios Tributários pelo governo federal com objetivo de verificar o alinhamento de gastos tributários relevantes com o referencial de controle de benefícios tributários do TCU.",
    "relator": "Benjamin Zymler",
    "movimentacoes_mes": 3
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "016.873/2025-4 - Relatório de Levantamento",
-   "relator": "Jhonatan de Jesus",
-   "movimentacoes_mes": 3
   }
  ],
  "processos": [
+  {
+   "numero": "024.381/2025-0",
+   "id": "02438120250",
+   "codigo": "79444147",
+   "estado": "Aberto",
+   "relator": "Jorge Oliveira",
+   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
+   "natureza": "Representação",
+   "unidades": [
+    "SPE - Secretaria de Política Econômica"
+   ],
+   "interessados": [],
+   "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": "acompanhado",
+   "acordao": "2052/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-08-07T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 29913/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-07T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 29914/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-07T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 29915/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-06T00:00:00+00:00",
+     "descricao": "Acórdão 2052/2026 — Plenário",
+     "fase": "Julgado",
+     "acordao": "2052/2026"
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-07T00:00:00+00:00",
+    "descricao": "Juntada comunicação Ofício 29913/2026 por unidade Seproc em virtude de expedição",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Juntada comunicação Ofício 29913/2026 por unidade Seproc em virtude de expedição",
+   "atualizado_em": "2026-08-07T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2438120250",
+   "garantido": true
+  },
   {
    "numero": "014.609/2026-6",
    "id": "01460920266",
@@ -293,9 +310,7 @@
     "BCB - Banco Central do Brasil",
     "INSS - Instituto Nacional do Seguro Social"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -306,7 +321,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-08-06T00:00:00+00:00",
@@ -491,40 +506,34 @@
    "garantido": true
   },
   {
-   "numero": "024.381/2025-0",
-   "id": "02438120250",
-   "codigo": "79444147",
+   "numero": "024.312/2024-0",
+   "id": "02431220240",
+   "codigo": "76933644",
    "estado": "Aberto",
-   "relator": "Jorge Oliveira",
-   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
+   "relator": "Augusto Nardes",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
    "natureza": "Representação",
    "unidades": [
-    "SPE - Secretaria de Política Econômica"
+    "MEC - Ministério da Educação"
    ],
    "interessados": [],
    "orgaos": [],
    "orgaos_unidade": [],
    "orgaos_interessado": [],
    "vinculo": "acompanhado",
-   "acordao": "2052/2026",
+   "acordao": null,
    "movimentacoes": [
     {
      "data": "2026-08-06T00:00:00+00:00",
-     "descricao": "Processo enviado de MIN-JGO para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
+     "descricao": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
      "fase": null,
      "acordao": null
     },
     {
-     "data": "2026-08-06T00:00:00+00:00",
-     "descricao": "Apreciado na Sessão Ordinária do Plenário em 05/08/2026 por meio do Acórdão 2052/2026-PL",
+     "data": "2026-08-05T00:00:00+00:00",
+     "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 05/08/2026, às 14h30.",
      "fase": null,
      "acordao": null
-    },
-    {
-     "data": "2026-08-06T00:00:00+00:00",
-     "descricao": "Acórdão 2052/2026 — Plenário",
-     "fase": "Julgado",
-     "acordao": "2052/2026"
     },
     {
      "data": "2026-07-31T00:00:00+00:00",
@@ -535,13 +544,13 @@
    ],
    "ultima_movimentacao": {
     "data": "2026-08-06T00:00:00+00:00",
-    "descricao": "Processo enviado de MIN-JGO para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
+    "descricao": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Processo enviado de MIN-JGO para Seses/Disup. (Diretoria de Suporte aos Colegiad",
+   "fase_atual": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
    "atualizado_em": "2026-08-06T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2438120250",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2431220240",
    "garantido": true
   },
   {
@@ -668,7 +677,9 @@
     "BCB - Banco Central do Brasil",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
-   "interessados": [],
+   "interessados": [
+    "FUNDO NACIONAL DE SAÚDE - MS"
+   ],
    "orgaos": [
     "MPO",
     "SOF"
@@ -679,7 +690,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "8656/2020",
+   "acordao": "7615/2020",
    "movimentacoes": [
     {
      "data": "2026-08-05T00:00:00+00:00",
@@ -724,7 +735,9 @@
     "CC/PR - Casa Civil da Presidência da República",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
-   "interessados": [],
+   "interessados": [
+    "FUNDO NACIONAL DE SAÚDE - MS"
+   ],
    "orgaos": [
     "MPO",
     "SE",
@@ -738,7 +751,7 @@
     "SE"
    ],
    "vinculo": "unidade",
-   "acordao": "8656/2020",
+   "acordao": "7615/2020",
    "movimentacoes": [
     {
      "data": "2026-08-05T00:00:00+00:00",
@@ -930,9 +943,7 @@
     "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -943,7 +954,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-07-30T00:00:00+00:00",
@@ -1035,7 +1046,7 @@
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
    "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
+    "Spel Engenharia Ltda"
    ],
    "orgaos": [
     "MPO",
@@ -1047,7 +1058,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": null,
    "movimentacoes": [
     {
      "data": "2026-07-24T00:00:00+00:00",
@@ -1092,9 +1103,7 @@
     "PGFN - Procuradoria-Geral da Fazenda Nacional",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1105,7 +1114,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-07-23T00:00:00+00:00",
@@ -1138,9 +1147,7 @@
     "CD - Câmara dos Deputados",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "Spel Engenharia Ltda"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1151,7 +1158,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-07-21T00:00:00+00:00",
@@ -1196,9 +1203,7 @@
     "ANP - Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
     "BCB - Banco Central do Brasil"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1209,7 +1214,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-07-20T00:00:00+00:00",
@@ -1298,7 +1303,7 @@
     "STN - Secretaria do Tesouro Nacional"
    ],
    "interessados": [
-    "Spel Engenharia Ltda"
+    "FUNDO NACIONAL DE SAÚDE - MS"
    ],
    "orgaos": [
     "MPO",
@@ -1310,7 +1315,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "7615/2020",
    "movimentacoes": [
     {
      "data": "2026-07-16T00:00:00+00:00",
@@ -1354,9 +1359,7 @@
     "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1367,7 +1370,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-07-16T00:00:00+00:00",
@@ -1467,9 +1470,7 @@
     "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "Spel Engenharia Ltda"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1480,7 +1481,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-07-13T00:00:00+00:00",
@@ -1567,9 +1568,7 @@
     "SG/PR - Secretaria-Geral da Presidência da República",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "Spel Engenharia Ltda"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1580,7 +1579,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-06-26T00:00:00+00:00",
@@ -1681,7 +1680,7 @@
     "ANATEL - Agência Nacional de Telecomunicações"
    ],
    "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
+    "Spel Engenharia Ltda"
    ],
    "orgaos": [
     "MPO",
@@ -1693,7 +1692,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": null,
    "movimentacoes": [
     {
      "data": "2026-06-25T00:00:00+00:00",
@@ -1738,9 +1737,7 @@
     "BCB - Banco Central do Brasil",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "Spel Engenharia Ltda"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1751,7 +1748,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-06-22T00:00:00+00:00",
@@ -1796,7 +1793,9 @@
     "ANS - Agência Nacional de Saúde Suplementar",
     "SE/MS - Secretaria-Executiva do Ministério da Saúde"
    ],
-   "interessados": [],
+   "interessados": [
+    "Spel Engenharia Ltda"
+   ],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1807,7 +1806,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "8656/2020",
+   "acordao": null,
    "movimentacoes": [
     {
      "data": "2026-06-17T00:00:00+00:00",
@@ -1852,9 +1851,7 @@
     "Agência Nacional de Mineração",
     "ANATEL - Agência Nacional de Telecomunicações"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1865,7 +1862,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-06-15T00:00:00+00:00",
@@ -2048,9 +2045,7 @@
     "COMAER - Comando da Aeronáutica",
     "C Ex - Comando do Exército"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -2061,7 +2056,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-05-19T00:00:00+00:00",
@@ -2150,9 +2145,7 @@
     "CD - Câmara dos Deputados",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -2163,7 +2156,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-05-13T00:00:00+00:00",
@@ -2540,9 +2533,7 @@
     "CC/PR - Casa Civil da Presidência da República",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -2610,8 +2601,8 @@
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 05/08/2026, às 14h30.",
    "fase": null,
    "acordao": null,
-   "processo": "024.381/2025-0",
-   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
+   "processo": "024.312/2024-0",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
    "natureza": "Representação",
    "orgaos": [],
    "estado": "Aberto",
@@ -2661,6 +2652,50 @@
   }
  ],
  "movimentacoes": [
+  {
+   "data": "2026-08-07T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 29913/2026 por unidade Seproc em virtude de expedição",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.381/2025-0",
+   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-07T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 29914/2026 por unidade Seproc em virtude de expedição",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.381/2025-0",
+   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-07T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 29915/2026 por unidade Seproc em virtude de expedição",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.381/2025-0",
+   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-06T00:00:00+00:00",
+   "descricao": "Acórdão 2052/2026 — Plenário",
+   "fase": "Julgado",
+   "acordao": "2052/2026",
+   "processo": "024.381/2025-0",
+   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
   {
    "data": "2026-08-06T00:00:00+00:00",
    "descricao": "Documento Elementos comprobatórios/Evidências (Evidência ) juntado ao processo por AudFiscal",
@@ -2715,33 +2750,11 @@
   },
   {
    "data": "2026-08-06T00:00:00+00:00",
-   "descricao": "Processo enviado de MIN-JGO para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
+   "descricao": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
    "fase": null,
    "acordao": null,
-   "processo": "024.381/2025-0",
-   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
-   "natureza": "Representação",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-06T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária do Plenário em 05/08/2026 por meio do Acórdão 2052/2026-PL",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.381/2025-0",
-   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
-   "natureza": "Representação",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-06T00:00:00+00:00",
-   "descricao": "Acórdão 2052/2026 — Plenário",
-   "fase": "Julgado",
-   "acordao": "2052/2026",
-   "processo": "024.381/2025-0",
-   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
+   "processo": "024.312/2024-0",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
    "natureza": "Representação",
    "orgaos": [],
    "estado": "Aberto"
@@ -2772,6 +2785,17 @@
     "MPO",
     "SOF"
    ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-05T00:00:00+00:00",
+   "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 05/08/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.312/2024-0",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "natureza": "Representação",
+   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -2922,8 +2946,8 @@
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 05/08/2026, às 14h30.",
    "fase": null,
    "acordao": null,
-   "processo": "024.381/2025-0",
-   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
+   "processo": "024.312/2024-0",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
    "natureza": "Representação",
    "orgaos": [],
    "estado": "Aberto"
