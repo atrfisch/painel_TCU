@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-08-11T16:46:30.324736+00:00",
- "gerado_em_br": "11/08/2026 às 16:46",
+ "gerado_em": "2026-08-12T11:24:28.916852+00:00",
+ "gerado_em_br": "12/08/2026 às 11:24",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -13,11 +13,11 @@
   "so_interesse": 4
  },
  "garantidos": [
+  "011.358/2026-2",
+  "017.106/2025-7",
   "024.381/2025-0",
   "025.632/2024-8",
   "011.685/2026-3",
-  "011.358/2026-2",
-  "017.106/2025-7",
   "024.312/2024-0",
   "005.104/2023-8",
   "007.158/2026-2",
@@ -35,205 +35,62 @@
    ],
    "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
    "data": "2026-08-11T00:00:00+00:00",
-   "descricao": "Documento Termo (SPI) juntado ao processo por Seproc",
+   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "016.873/2025-4",
+   "processo": "017.463/2025-4",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
-   "assunto": "016.873/2025-4 - Relatório de Levantamento",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
    "data": "2026-08-11T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 0009/2026-TCU/AudDigital via CONECTA TCU por BRUNA SILVEIRA ZOGHBI em nome de Secretaria de Coordenação e Governança das Empresas Estatais",
+   "descricao": "Registrada ciência de comunicação do Ofício 29299/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "013.946/2026-9",
+   "processo": "017.463/2025-4",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária da Primeira Câmara em 04/08/2026 por meio do Acórdão 4225/2026-1C",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "data": "2026-08-11T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 29301/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "013.946/2026-9",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Acórdão 4225/2026 — Primeira Câmara",
-   "acordao": "4225/2026",
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.219/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Possível subavaliação de impactos fiscais decorrentes da utilização de fundos públicos, fundos garantidores, créditos subsidiados e créditos extraordinários.)",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Jhonatan de Jesus por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.219/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Possível subavaliação de impactos fiscais decorrentes da utilização de fundos públicos, fundos garantidores, créditos subsidiados e créditos extraordinários.)",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "003.030/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Consulta do Congresso Nacional (REQ nº 40/2025 - CICS) sobre proposta orçamentária própria de autarquias federais custeadas por tarifas ou preços públicos.",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Processo enviado de MIN-JPJ para Seproc/não definida.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "003.030/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Consulta do Congresso Nacional (REQ nº 40/2025 - CICS) sobre proposta orçamentária própria de autarquias federais custeadas por tarifas ou preços públicos.",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-JPJ",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "003.030/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Consulta do Congresso Nacional (REQ nº 40/2025 - CICS) sobre proposta orçamentária própria de autarquias federais custeadas por tarifas ou preços públicos.",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Despacho oficializado.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.918/2025-5",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento das Receitas Públicas - PF/BCN 2025",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/Difes. (Diretoria de Fiscalização do Financiamento Estatal)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.918/2025-5",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento das Receitas Públicas - PF/BCN 2025",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "024.381/2025-0",
+   "processo": "011.358/2026-2",
    "orgaos": [
     "SE"
    ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Documento Aviso juntado ao processo por Gabpres",
+   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
+   "data": "2026-08-11T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 27947/2026-TCU/Seproc.",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "024.381/2025-0",
-   "orgaos": [
-    "SE"
-   ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Aviso expedido pelo Gabinete da Presidência",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "024.381/2025-0",
-   "orgaos": [
-    "SE"
-   ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 29913/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "025.632/2024-8",
+   "processo": "017.106/2025-7",
    "orgaos": [],
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Membro do MPTCU MARINUS MARSICO designado para os recursos 025.632/2024-8/R004 automaticamente pelo sistema",
+   "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
+   "data": "2026-08-11T00:00:00+00:00",
+   "descricao": "Documento Termo juntado ao processo por Seproc",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "025.632/2024-8",
+   "processo": "017.106/2025-7",
    "orgaos": [],
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "025.632/2024-8",
-   "orgaos": [],
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Designado o Ministro Relator MIN-BD para os recursos 025.632/2024-8/R004 por AudFiscal (por Atribuição)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "011.685/2026-3",
-   "orgaos": [],
-   "assunto": "011.685/2026-3 - Denúncia",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Dashboard FGO/DESENROLA) juntado ao processo por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "011.685/2026-3",
-   "orgaos": [],
-   "assunto": "011.685/2026-3 - Denúncia",
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Estatísticas do SVR do Bacen) juntado ao processo por AudFiscal",
+   "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
+   "data": "2026-08-11T00:00:00+00:00",
+   "descricao": "Pronunciamento da AudDefesa concluído",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -250,9 +107,9 @@
   {
    "orgao": "SE",
    "nome": "Secretaria-Executiva do MPO",
-   "total": 5,
+   "total": 6,
    "como_unidade": 0,
-   "como_interessado": 5
+   "como_interessado": 6
   },
   {
    "orgao": "SOF",
@@ -327,11 +184,11 @@
    "total": 4
   },
   {
-   "relator": "Jorge Oliveira",
+   "relator": "Augusto Nardes",
    "total": 4
   },
   {
-   "relator": "Augusto Nardes",
+   "relator": "Jorge Oliveira",
    "total": 4
   },
   {
@@ -355,6 +212,17 @@
    "movimentacoes_mes": 4
   },
   {
+   "processo": "017.463/2025-4",
+   "orgaos": [
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "relator": "Benjamin Zymler",
+   "movimentacoes_mes": 4
+  },
+  {
    "processo": "024.381/2025-0",
    "orgaos": [
     "SE"
@@ -371,16 +239,6 @@
    "movimentacoes_mes": 4
   },
   {
-   "processo": "017.463/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
-   "relator": "Benjamin Zymler",
-   "movimentacoes_mes": 4
-  },
-  {
    "processo": "016.873/2025-4",
    "orgaos": [
     "MPO",
@@ -391,6 +249,22 @@
    "movimentacoes_mes": 3
   },
   {
+   "processo": "011.358/2026-2",
+   "orgaos": [
+    "SE"
+   ],
+   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
+   "relator": "Augusto Nardes",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "017.106/2025-7",
+   "orgaos": [],
+   "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
+   "relator": "Bruno Dantas",
+   "movimentacoes_mes": 3
+  },
+  {
    "processo": "003.030/2026-1",
    "orgaos": [
     "MPO",
@@ -398,23 +272,6 @@
    ],
    "assunto": "Consulta do Congresso Nacional (REQ nº 40/2025 - CICS) sobre proposta orçamentária própria de autarquias federais custeadas por tarifas ou preços públicos.",
    "relator": "Jhonatan de Jesus",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "018.918/2025-5",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento das Receitas Públicas - PF/BCN 2025",
-   "relator": "Benjamin Zymler",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "011.685/2026-3",
-   "orgaos": [],
-   "assunto": "011.685/2026-3 - Denúncia",
-   "relator": "Walton Alencar Rodrigues",
    "movimentacoes_mes": 3
   }
  ],
@@ -431,9 +288,7 @@
     "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -446,6 +301,12 @@
    "vinculo": "unidade",
    "acordao": "4225/2026",
    "movimentacoes": [
+    {
+     "data": "2026-08-11T00:00:00+00:00",
+     "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
+     "fase": null,
+     "acordao": null
+    },
     {
      "data": "2026-08-11T00:00:00+00:00",
      "descricao": "Documento Termo (SPI) juntado ao processo por Seproc",
@@ -463,23 +324,84 @@
      "descricao": "Acórdão 4225/2026 — Primeira Câmara",
      "fase": "Julgado",
      "acordao": "4225/2026"
-    },
-    {
-     "data": "2026-07-30T00:00:00+00:00",
-     "descricao": "Processo incluído na pauta da sessão Ordinária de Primeira Câmara, prevista para 04/08/2026, às 15h.",
-     "fase": null,
-     "acordao": null
     }
    ],
    "ultima_movimentacao": {
     "data": "2026-08-11T00:00:00+00:00",
-    "descricao": "Documento Termo (SPI) juntado ao processo por Seproc",
+    "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Documento Termo (SPI) juntado ao processo por Seproc",
+   "fase_atual": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFisca",
    "atualizado_em": "2026-08-11T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1394620269",
+   "garantido": false
+  },
+  {
+   "numero": "017.463/2025-4",
+   "id": "01746320254",
+   "codigo": "78795505",
+   "estado": "Aberto",
+   "relator": "Benjamin Zymler",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "natureza": "Relatório de Acompanhamento",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "BCB - Banco Central do Brasil",
+    "RFB - Secretaria Especial da Receita Federal do Brasil"
+   ],
+   "interessados": [
+    "Spel Engenharia Ltda"
+   ],
+   "orgaos": [
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [
+    "SE"
+   ],
+   "vinculo": "unidade",
+   "acordao": "2011/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-08-11T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 29299/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-11T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 29301/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-06T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Aviso 0782/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-30T00:00:00+00:00",
+     "descricao": "Acórdão 2011/2026 — Plenário",
+     "fase": "Julgado",
+     "acordao": "2011/2026"
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-11T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 29299/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 29299/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-08-11T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1746320254",
    "garantido": false
   },
   {
@@ -535,6 +457,108 @@
    "atualizado_em": "2026-08-11T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1687320254",
    "garantido": false
+  },
+  {
+   "numero": "011.358/2026-2",
+   "id": "01135820262",
+   "codigo": "80345619",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
+   "natureza": "Representação",
+   "unidades": [
+    "GM/MTE - Gabinete do Ministro - Mte (extinto)"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "SE"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "SE"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-11T00:00:00+00:00",
+     "descricao": "Registrada resposta de comunicação do Ofício 27947/2026-TCU/Seproc.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-06T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 27953/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-29T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 27954/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-11T00:00:00+00:00",
+    "descricao": "Registrada resposta de comunicação do Ofício 27947/2026-TCU/Seproc.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada resposta de comunicação do Ofício 27947/2026-TCU/Seproc.",
+   "atualizado_em": "2026-08-11T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1135820262",
+   "garantido": true
+  },
+  {
+   "numero": "017.106/2025-7",
+   "id": "01710620257",
+   "codigo": "78744157",
+   "estado": "Aberto",
+   "relator": "Bruno Dantas",
+   "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
+   "natureza": "Relatório de Auditoria",
+   "unidades": [
+    "COMAER - Comando da Aeronáutica",
+    "C Ex - Comando do Exército",
+    "MB - Comando da Marinha"
+   ],
+   "interessados": [],
+   "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": "acompanhado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-11T00:00:00+00:00",
+     "descricao": "Documento Termo juntado ao processo por Seproc",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-11T00:00:00+00:00",
+     "descricao": "Pronunciamento da AudDefesa concluído",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-06T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por MIN-BD",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-11T00:00:00+00:00",
+    "descricao": "Documento Termo juntado ao processo por Seproc",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Termo juntado ao processo por Seproc",
+   "atualizado_em": "2026-08-11T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1710620257",
+   "garantido": true
   },
   {
    "numero": "014.219/2026-3",
@@ -604,9 +628,7 @@
     "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "Spel Engenharia Ltda"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -617,7 +639,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-08-10T00:00:00+00:00",
@@ -881,7 +903,7 @@
     "INSS - Instituto Nacional do Seguro Social"
    ],
    "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
+    "Spel Engenharia Ltda"
    ],
    "orgaos": [
     "MPO",
@@ -893,7 +915,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": null,
    "movimentacoes": [
     {
      "data": "2026-08-06T00:00:00+00:00",
@@ -912,172 +934,6 @@
    "atualizado_em": "2026-08-06T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1460920266",
    "garantido": false
-  },
-  {
-   "numero": "017.463/2025-4",
-   "id": "01746320254",
-   "codigo": "78795505",
-   "estado": "Aberto",
-   "relator": "Benjamin Zymler",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
-   "natureza": "Relatório de Acompanhamento",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "BCB - Banco Central do Brasil",
-    "RFB - Secretaria Especial da Receita Federal do Brasil"
-   ],
-   "interessados": [
-    "Spel Engenharia Ltda"
-   ],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": "2011/2026",
-   "movimentacoes": [
-    {
-     "data": "2026-08-06T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Aviso 0782/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-05T00:00:00+00:00",
-     "descricao": "Documento Aviso juntado ao processo por Gabpres",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-05T00:00:00+00:00",
-     "descricao": "Aviso expedido pelo Gabinete da Presidência",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-30T00:00:00+00:00",
-     "descricao": "Acórdão 2011/2026 — Plenário",
-     "fase": "Julgado",
-     "acordao": "2011/2026"
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-06T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Aviso 0782/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Aviso 0782/2026-TCU/Seproc via CONECTA TCU ",
-   "atualizado_em": "2026-08-06T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1746320254",
-   "garantido": false
-  },
-  {
-   "numero": "011.358/2026-2",
-   "id": "01135820262",
-   "codigo": "80345619",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
-   "natureza": "Representação",
-   "unidades": [
-    "GM/MTE - Gabinete do Ministro - Mte (extinto)"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "SE"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "SE"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-08-06T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 27953/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-29T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 27954/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-28T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 27944/2026-TCU/Seproc via CONECTA TCU por HENRIQUE CESAR SISTEROLLI KAMCHEN em nome de Secretaria-Executiva do Ministério do Trabalho e Emprego",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-06T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 27953/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 27953/2026-TCU/Seproc via CONECTA TC",
-   "atualizado_em": "2026-08-06T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1135820262",
-   "garantido": true
-  },
-  {
-   "numero": "017.106/2025-7",
-   "id": "01710620257",
-   "codigo": "78744157",
-   "estado": "Aberto",
-   "relator": "Bruno Dantas",
-   "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
-   "natureza": "Relatório de Auditoria",
-   "unidades": [
-    "COMAER - Comando da Aeronáutica",
-    "C Ex - Comando do Exército",
-    "MB - Comando da Marinha"
-   ],
-   "interessados": [],
-   "orgaos": [],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [],
-   "vinculo": "acompanhado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-08-06T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por MIN-BD",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-09T00:00:00+00:00",
-     "descricao": "Documento Vista e/ou Cópia (Pedido/Autorização/Recibo) juntado ao processo por Seproc",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-07T00:00:00+00:00",
-     "descricao": "Documento Termo juntado ao processo via CONECTA TCU por luiz fillipy pontin fontes",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-06T00:00:00+00:00",
-    "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por MIN-BD",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Elementos comprobatórios/Evidências juntado ao processo por MIN-BD",
-   "atualizado_em": "2026-08-06T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1710620257",
-   "garantido": true
   },
   {
    "numero": "024.312/2024-0",
@@ -1198,7 +1054,7 @@
     "STN - Secretaria do Tesouro Nacional"
    ],
    "interessados": [
-    "Spel Engenharia Ltda"
+    "FUNDO NACIONAL DE SAÚDE - MS"
    ],
    "orgaos": [
     "MPO",
@@ -1210,7 +1066,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "7615/2020",
    "movimentacoes": [
     {
      "data": "2026-08-05T00:00:00+00:00",
@@ -1312,7 +1168,7 @@
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
    "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
+    "Spel Engenharia Ltda"
    ],
    "orgaos": [
     "MPO",
@@ -1327,7 +1183,7 @@
     "SE"
    ],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": null,
    "movimentacoes": [
     {
      "data": "2026-08-05T00:00:00+00:00",
@@ -1466,9 +1322,7 @@
     "CD - Câmara dos Deputados",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1479,7 +1333,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-07-21T00:00:00+00:00",
@@ -1627,9 +1481,7 @@
     "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "Spel Engenharia Ltda"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1640,7 +1492,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-07-16T00:00:00+00:00",
@@ -1685,9 +1537,7 @@
     "CC/PR - Casa Civil da Presidência da República",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1698,7 +1548,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-07-14T00:00:00+00:00",
@@ -1743,7 +1593,7 @@
     "STN - Secretaria do Tesouro Nacional"
    ],
    "interessados": [
-    "Spel Engenharia Ltda"
+    "FUNDO NACIONAL DE SAÚDE - MS"
    ],
    "orgaos": [
     "MPO",
@@ -1755,7 +1605,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "7615/2020",
    "movimentacoes": [
     {
      "data": "2026-07-13T00:00:00+00:00",
@@ -1842,7 +1692,7 @@
     "STN - Secretaria do Tesouro Nacional"
    ],
    "interessados": [
-    "Spel Engenharia Ltda"
+    "FUNDO NACIONAL DE SAÚDE - MS"
    ],
    "orgaos": [
     "MPO",
@@ -1854,7 +1704,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "7615/2020",
    "movimentacoes": [
     {
      "data": "2026-06-26T00:00:00+00:00",
@@ -1900,7 +1750,7 @@
     "ANATEL - Agência Nacional de Telecomunicações"
    ],
    "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
+    "Spel Engenharia Ltda"
    ],
    "orgaos": [
     "MPO",
@@ -1912,7 +1762,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": null,
    "movimentacoes": [
     {
      "data": "2026-06-25T00:00:00+00:00",
@@ -1957,9 +1807,7 @@
     "BCB - Banco Central do Brasil",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1970,7 +1818,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-06-22T00:00:00+00:00",
@@ -2015,9 +1863,7 @@
     "ANS - Agência Nacional de Saúde Suplementar",
     "SE/MS - Secretaria-Executiva do Ministério da Saúde"
    ],
-   "interessados": [
-    "Spel Engenharia Ltda"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -2028,7 +1874,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-06-17T00:00:00+00:00",
@@ -2074,7 +1920,7 @@
     "ANATEL - Agência Nacional de Telecomunicações"
    ],
    "interessados": [
-    "Spel Engenharia Ltda"
+    "FUNDO NACIONAL DE SAÚDE - MS"
    ],
    "orgaos": [
     "MPO",
@@ -2086,7 +1932,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "7615/2020",
    "movimentacoes": [
     {
      "data": "2026-06-15T00:00:00+00:00",
@@ -2270,7 +2116,7 @@
     "C Ex - Comando do Exército"
    ],
    "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
+    "Spel Engenharia Ltda"
    ],
    "orgaos": [
     "MPO",
@@ -2282,7 +2128,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": null,
    "movimentacoes": [
     {
      "data": "2026-05-19T00:00:00+00:00",
@@ -2371,9 +2217,7 @@
     "CD - Câmara dos Deputados",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
@@ -2384,7 +2228,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": "7615/2020",
+   "acordao": "8656/2020",
    "movimentacoes": [
     {
      "data": "2026-05-13T00:00:00+00:00",
@@ -2482,7 +2326,7 @@
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
    "interessados": [
-    "Spel Engenharia Ltda"
+    "FUNDO NACIONAL DE SAÚDE - MS"
    ],
    "orgaos": [
     "MPO",
@@ -2494,7 +2338,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "7615/2020",
    "movimentacoes": [
     {
      "data": "2026-03-20T00:00:00+00:00",
@@ -2712,7 +2556,7 @@
     "STN - Secretaria do Tesouro Nacional"
    ],
    "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
+    "Spel Engenharia Ltda"
    ],
    "orgaos": [
     "MPO",
@@ -2807,21 +2651,6 @@
   },
   {
    "data": "2026-07-30T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Primeira Câmara, prevista para 04/08/2026, às 15h.",
-   "fase": null,
-   "acordao": null,
-   "processo": "013.946/2026-9",
-   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto",
-   "evento": "pauta"
-  },
-  {
-   "data": "2026-07-30T00:00:00+00:00",
    "descricao": "Acórdão 2011/2026 — Plenário",
    "fase": "Julgado",
    "acordao": "2011/2026",
@@ -2830,6 +2659,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto",
@@ -2851,6 +2681,20 @@
  "movimentacoes": [
   {
    "data": "2026-08-11T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
+   "fase": null,
+   "acordao": null,
+   "processo": "013.946/2026-9",
+   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-11T00:00:00+00:00",
    "descricao": "Documento Termo (SPI) juntado ao processo por Seproc",
    "fase": null,
    "acordao": null,
@@ -2859,6 +2703,36 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-11T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 29299/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.463/2025-4",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-11T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 29301/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.463/2025-4",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -2875,6 +2749,41 @@
     "MPO",
     "SOF"
    ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-11T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 27947/2026-TCU/Seproc.",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.358/2026-2",
+   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
+   "natureza": "Representação",
+   "orgaos": [
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-11T00:00:00+00:00",
+   "descricao": "Documento Termo juntado ao processo por Seproc",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.106/2025-7",
+   "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-11T00:00:00+00:00",
+   "descricao": "Pronunciamento da AudDefesa concluído",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.106/2025-7",
+   "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -3099,33 +3008,6 @@
   },
   {
    "data": "2026-08-06T00:00:00+00:00",
-   "descricao": "Acórdão 2052/2026 — Plenário",
-   "fase": "Julgado",
-   "acordao": "2052/2026",
-   "processo": "024.381/2025-0",
-   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "SE"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-06T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Evidência ) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "014.609/2026-6",
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-06T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Aviso 0782/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
    "fase": null,
    "acordao": null,
@@ -3134,6 +3016,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -3164,6 +3047,33 @@
   },
   {
    "data": "2026-08-06T00:00:00+00:00",
+   "descricao": "Acórdão 2052/2026 — Plenário",
+   "fase": "Julgado",
+   "acordao": "2052/2026",
+   "processo": "024.381/2025-0",
+   "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-06T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Evidência ) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "014.609/2026-6",
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-06T00:00:00+00:00",
    "descricao": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
    "fase": null,
    "acordao": null,
@@ -3171,34 +3081,6 @@
    "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
    "natureza": "Representação",
    "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-05T00:00:00+00:00",
-   "descricao": "Documento Aviso juntado ao processo por Gabpres",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.463/2025-4",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-05T00:00:00+00:00",
-   "descricao": "Aviso expedido pelo Gabinete da Presidência",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.463/2025-4",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União no 4° Bimestre 2025 e Projeções Anuais",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
    "estado": "Aberto"
   },
   {
@@ -3335,20 +3217,6 @@
   },
   {
    "data": "2026-07-30T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Primeira Câmara, prevista para 04/08/2026, às 15h.",
-   "fase": null,
-   "acordao": null,
-   "processo": "013.946/2026-9",
-   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto: Tramitação acelerada de proposições legislativas no Congresso Nacional com elevado potencial de impacto orçamentário-financeiro, econômico e social.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-30T00:00:00+00:00",
    "descricao": "Acórdão 2011/2026 — Plenário",
    "fase": "Julgado",
    "acordao": "2011/2026",
@@ -3357,6 +3225,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -3397,19 +3266,6 @@
    "assunto": "011.685/2026-3 - Denúncia",
    "natureza": "Denúncia",
    "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-28T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 27944/2026-TCU/Seproc via CONECTA TCU por HENRIQUE CESAR SISTEROLLI KAMCHEN em nome de Secretaria-Executiva do Ministério do Trabalho e Emprego",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.358/2026-2",
-   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
-   "natureza": "Representação",
-   "orgaos": [
-    "SE"
-   ],
    "estado": "Aberto"
   },
   {
@@ -3700,28 +3556,6 @@
     "MPO",
     "SOF"
    ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-09T00:00:00+00:00",
-   "descricao": "Documento Vista e/ou Cópia (Pedido/Autorização/Recibo) juntado ao processo por Seproc",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.106/2025-7",
-   "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-07T00:00:00+00:00",
-   "descricao": "Documento Termo juntado ao processo via CONECTA TCU por luiz fillipy pontin fontes",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.106/2025-7",
-   "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [],
    "estado": "Aberto"
   },
   {
