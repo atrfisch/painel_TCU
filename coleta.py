@@ -96,11 +96,16 @@ PESQUISA_INTERESSADOS = [
 # secretarias aparecem como co-fiscalizados em processos cujo órgão PRINCIPAL é
 # outro (tipicamente o Ministério da Fazenda). É o que captura fiscalizações
 # conjuntas que os filtros estruturados de unidade não trazem.
+#
+# Para a SMA, busca-se o trecho ESTÁVEL do nome ("Monitoramento e Avaliação de
+# Políticas Públicas"), não a frase completa: o nome longo varia (às vezes vem
+# sem "e Assuntos Econômicos", às vezes com "Secretaria Nacional"), e a busca
+# por frase exata perde essas variações — foi o que deixou o 017.191 escapar.
 PESQUISA_TERMOS = [
     '"Ministério do Planejamento e Orçamento"',
     '"Secretaria de Orçamento Federal"',
     '"Secretaria Nacional de Planejamento"',
-    '"Secretaria de Monitoramento e Avaliação de Políticas Públicas e Assuntos Econômicos"',
+    '"Monitoramento e Avaliação de Políticas Públicas"',
     '"Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento"',
     '"Secretaria-Executiva do Ministério do Planejamento e Orçamento"',
 ]
@@ -572,8 +577,17 @@ def _campos_pesquisa(it: dict) -> dict:
 
 
 def _uma_consulta(sessao: requests.Session, termo: str, filtro: str, rotulo: str,
-                  vistos: dict[str, dict]) -> bool:
-    """Executa uma consulta paginada e acumula em `vistos`. Devolve se respondeu."""
+                  vistos: dict[str, dict], orgao_alvo: str | None = None) -> bool:
+    """
+    Executa uma consulta paginada e acumula em `vistos`. Devolve se respondeu.
+
+    `orgao_alvo`: quando a busca é por um termo que É o nome de um órgão do MPO
+    (ex.: busca pela SMA), o processo que casa TEM vínculo com esse órgão, mesmo
+    que o campo onde a SMA aparece não venha na listagem em massa. Nesse caso,
+    atribuímos o órgão-alvo em vez de descartar o processo por "sem órgão". É o
+    que resolve o 017.191: a SMA está no campo de fiscalizados, que a listagem
+    não expõe, mas a busca pelo nome dela encontra o processo mesmo assim.
+    """
     inicio = 0
     respondeu = False
     for _ in range(PESQUISA_MAX_PAGINAS):
@@ -598,6 +612,20 @@ def _uma_consulta(sessao: requests.Session, termo: str, filtro: str, rotulo: str
             campo = _campos_pesquisa(it)
             if not campo["processo"]:
                 continue
+            # Quando a busca é pelo nome de um órgão específico (orgao_alvo), o
+            # casamento já prova o vínculo, mesmo que a listagem resumida não
+            # traga o campo onde o órgão aparece. Atribuímos o órgão então.
+            if orgao_alvo and orgao_alvo not in campo["orgaos"]:
+                # Confirma que o texto do órgão realmente está no documento (a
+                # busca do TCU pode casar por relevância; conferimos no que veio).
+                doc_texto = normalizar(json.dumps(it, ensure_ascii=False))
+                if any(rx.search(doc_texto) for rx in RX_UNIDADES[orgao_alvo]):
+                    campo["orgaos"] = sorted(set(campo["orgaos"]) | {orgao_alvo})
+                    if orgao_alvo not in (campo.get("orgaos_unidade") or []):
+                        campo["orgaos_interessado"] = sorted(
+                            set(campo.get("orgaos_interessado") or []) | {orgao_alvo})
+                    if not campo.get("vinculo"):
+                        campo["vinculo"] = "interessado"
             # Termo livre casa qualquer texto: confirmamos que ALGUM órgão do MPO
             # está mesmo entre as unidades, para não trazer processo alheio que
             # só menciona "planejamento" no assunto.
@@ -606,6 +634,8 @@ def _uma_consulta(sessao: requests.Session, termo: str, filtro: str, rotulo: str
             ja = vistos.get(campo["processo"])
             if ja:
                 ja["orgaos"] = sorted(set(ja["orgaos"]) | set(campo["orgaos"]))
+                ja["orgaos_interessado"] = sorted(
+                    set(ja.get("orgaos_interessado") or []) | set(campo.get("orgaos_interessado") or []))
             else:
                 vistos[campo["processo"]] = campo
         if len(itens) < PESQUISA_QUANTIDADE:
@@ -712,8 +742,19 @@ def consultar_pesquisa(sessao: requests.Session, garantidos: list[str] | None = 
             houve_resposta = True
     log.info("Após filtro por interessado: %d processos", len(vistos))
 
+    # Cada termo de busca corresponde a um órgão: quando a busca casa, o vínculo
+    # com esse órgão está provado, mesmo que a listagem não exponha o campo.
+    termo_orgao = {
+        '"Ministério do Planejamento e Orçamento"': "MPO",
+        '"Secretaria de Orçamento Federal"': "SOF",
+        '"Secretaria Nacional de Planejamento"': "SEPLAN",
+        '"Monitoramento e Avaliação de Políticas Públicas"': "SMA",
+        '"Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento"': "AECI",
+        '"Secretaria-Executiva do Ministério do Planejamento e Orçamento"': "SE",
+    }
     for termo in PESQUISA_TERMOS:
-        if _uma_consulta(sessao, termo, "", "termo " + termo, vistos):
+        alvo = termo_orgao.get(termo)
+        if _uma_consulta(sessao, termo, "", "termo " + termo, vistos, orgao_alvo=alvo):
             houve_resposta = True
     log.info("Após busca por termo livre: %d processos", len(vistos))
 
