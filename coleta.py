@@ -87,15 +87,20 @@ PESQUISA_INTERESSADOS = [
     'INTERESSADOS:("Secretaria-Executiva do Ministério do Planejamento e Orçamento")',
     'INTERESSADOS:("Ministério do Planejamento e Orçamento")',
     'INTERESSADOS:("Secretaria de Orçamento Federal")',
+    'INTERESSADOS:("Secretaria de Monitoramento e Avaliação de Políticas Públicas e Assuntos Econômicos")',
+    'INTERESSADOS:("Secretaria Nacional de Planejamento")',
 ]
 
-# Termos livres, para capturar processos cuja UJ está grafada de forma que o
-# filtro estruturado não casa (ex.: código na frente do nome), e para achar
-# AECI/SE que aparecem como INTERESSADOS, não como unidade jurisdicionada.
+# Termos livres — a rede mais ampla. Buscam o nome do órgão em QUALQUER campo
+# indexado, inclusive "Órgãos/Entidades fiscalizados", onde o MPO e suas
+# secretarias aparecem como co-fiscalizados em processos cujo órgão PRINCIPAL é
+# outro (tipicamente o Ministério da Fazenda). É o que captura fiscalizações
+# conjuntas que os filtros estruturados de unidade não trazem.
 PESQUISA_TERMOS = [
     '"Ministério do Planejamento e Orçamento"',
     '"Secretaria de Orçamento Federal"',
     '"Secretaria Nacional de Planejamento"',
+    '"Secretaria de Monitoramento e Avaliação de Políticas Públicas e Assuntos Econômicos"',
     '"Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento"',
     '"Secretaria-Executiva do Ministério do Planejamento e Orçamento"',
 ]
@@ -492,7 +497,21 @@ def _campos_pesquisa(it: dict) -> dict:
     if isinstance(unidades, str):
         unidades = [unidades]
     unidades = [limpar_html(u) for u in unidades if u and str(u).strip()]
-    texto_uj = " ; ".join(unidades)
+
+    # Órgãos/Entidades FISCALIZADOS: em fiscalizações conjuntas, o processo é
+    # atribuído ao órgão PRINCIPAL (muitas vezes o Ministério da Fazenda), e o
+    # MPO e suas secretarias entram como co-fiscalizados. Esse campo — que a
+    # página do processo mostra como "Órgãos/Entidades fiscalizados" — nem sempre
+    # aparece na listagem; tentamos vários nomes prováveis. Ser fiscalizado é
+    # vínculo de UNIDADE (não mero interesse): o órgão é objeto da fiscalização.
+    fiscalizados = (it.get("ORGAOSFISCALIZADOS") or it.get("ENTIDADESFISCALIZADAS")
+                    or it.get("FISCALIZADOS") or it.get("ORGAOS") or [])
+    if isinstance(fiscalizados, str):
+        fiscalizados = [fiscalizados]
+    fiscalizados = [limpar_html(f) for f in fiscalizados if f and str(f).strip()]
+    # Unidades = jurisdicionadas + fiscalizadas (ambas geram vínculo de unidade).
+    unidades_todas = list(dict.fromkeys(unidades + fiscalizados))
+    texto_uj = " ; ".join(unidades_todas)
 
     # Além da unidade jurisdicionada, um processo pode ter órgãos do MPO como
     # INTERESSADOS — ex.: a Assessoria de Controle Interno ou a Secretaria-
@@ -539,7 +558,7 @@ def _campos_pesquisa(it: dict) -> dict:
         "relator": limpar_html(it.get("RELATOR")) or None,
         "assunto": limpar_html(it.get("ASSUNTO") or it.get("TITULOCOMPLETO")) or None,
         "natureza": limpar_html(it.get("TIPO")) or None,
-        "unidades": unidades,
+        "unidades": unidades_todas,
         "interessados": interessados,
         "orgaos": orgaos,
         "orgaos_unidade": sorted(orgaos_uj),
