@@ -134,26 +134,47 @@ _GARANTIDOS_FALLBACK = [
 RX_NUM_PROCESSO = re.compile(r"\d{3}\.\d{3}/\d{4}-\d")
 
 
-def carregar_garantidos(caminho: str = "processos-acompanhados.txt") -> list[str]:
-    """Lê a lista de processos acompanhados do arquivo texto. Ignora comentários
-    (#) e linhas em branco. Cai no fallback embutido se o arquivo não existir."""
+def carregar_garantidos(caminho: str = "processos-acompanhados.txt") -> tuple[list[str], dict[str, list[str]]]:
+    """
+    Lê a lista de processos acompanhados. Cada linha pode ser:
+      - só o número:            017.191/2026-2
+      - número + órgãos:        017.191/2026-2 = MPO, SMA
+
+    A segunda forma serve para processos cujo vínculo com o MPO NÃO aparece na
+    API de busca (ex.: órgão fiscalizado em fiscalização conjunta, que só consta
+    na tela do processo). Assim você classifica manualmente o que a automação não
+    alcança. Devolve (lista de números, mapa número→órgãos manuais).
+    Ignora comentários (#) e linhas em branco; cai no fallback se o arquivo sumir.
+    """
+    validos = set(UNIDADES.keys())
     try:
         with open(caminho, encoding="utf-8") as f:
-            numeros = []
+            numeros: list[str] = []
+            orgaos_manuais: dict[str, list[str]] = {}
             for linha in f:
                 linha = linha.strip()
                 if not linha or linha.startswith("#"):
                     continue
                 m = RX_NUM_PROCESSO.search(linha)
-                if m:
-                    numeros.append(m.group(0))
+                if not m:
+                    continue
+                numero = m.group(0)
+                numeros.append(numero)
+                # Parte após "=" (ou ":") lista os órgãos a atribuir manualmente.
+                if "=" in linha or ":" in linha:
+                    depois = re.split(r"[=:]", linha, maxsplit=1)[1]
+                    siglas = [s.strip().upper() for s in re.split(r"[,;/\s]+", depois) if s.strip()]
+                    siglas = [s for s in siglas if s in validos]
+                    if siglas:
+                        orgaos_manuais[numero] = siglas
         if numeros:
-            log.info("Acompanhados: %d processos lidos de %s", len(numeros), caminho)
-            return numeros
+            log.info("Acompanhados: %d processos lidos de %s (%d com órgão manual)",
+                     len(numeros), caminho, len(orgaos_manuais))
+            return numeros, orgaos_manuais
     except OSError:
         pass
     log.info("Acompanhados: usando lista embutida (%d processos)", len(_GARANTIDOS_FALLBACK))
-    return _GARANTIDOS_FALLBACK
+    return _GARANTIDOS_FALLBACK, {}
 
 
 PROCESSOS_GARANTIDOS = _GARANTIDOS_FALLBACK  # substituído em tempo de execução
@@ -750,17 +771,21 @@ def enriquecer_detalhe(sessao: requests.Session, campo: dict) -> bool:
     return False
 
 
-def consultar_pesquisa(sessao: requests.Session, garantidos: list[str] | None = None) -> list[dict]:
+def consultar_pesquisa(sessao: requests.Session, garantidos: list[str] | None = None,
+                       orgaos_manuais: dict[str, list[str]] | None = None) -> list[dict]:
     """
     Descobre os processos do MPO por três caminhos complementares:
       1. filtro estruturado por unidade (várias grafias, inclusive as antigas);
       2. busca por termo livre (pega grafias que o filtro exato perde);
       3. busca direta pelos números garantidos (rede de segurança).
-    Depois enriquece cada um com as movimentações do endpoint de detalhe.
+    Depois enriquece cada um com o detalhe. Por fim, aplica os órgãos marcados
+    MANUALMENTE no arquivo de acompanhados — para processos cujo vínculo com o
+    MPO a API não expõe (ex.: órgão fiscalizado em fiscalização conjunta).
     """
     vistos: dict[str, dict] = {}
     houve_resposta = False
     garantidos = garantidos if garantidos is not None else PROCESSOS_GARANTIDOS
+    orgaos_manuais = orgaos_manuais or {}
 
     for filtro in PESQUISA_UNIDADES:
         if _uma_consulta(sessao, "*", filtro, filtro.split('("')[-1], vistos):
@@ -849,6 +874,25 @@ def consultar_pesquisa(sessao: requests.Session, garantidos: list[str] | None = 
         if processados % 25 == 0:
             log.info("  ... %d/%d enriquecidos", processados, len(candidatos))
     log.info("Detalhe: %d de %d candidatos ganharam órgão novo", revelados, processados)
+
+    # Órgãos marcados MANUALMENTE no arquivo (número = MPO, SMA). Palavra final:
+    # para processos cujo vínculo a API não expõe, é a única fonte confiável.
+    # Marca como unidade, pois em fiscalização conjunta o órgão é objeto do
+    # trabalho — não mero interessado.
+    aplicados = 0
+    for numero, siglas in orgaos_manuais.items():
+        campo = vistos.get(numero)
+        if not campo:
+            continue
+        novos = set(siglas) - set(campo.get("orgaos") or [])
+        if novos:
+            campo["orgaos"] = sorted(set(campo.get("orgaos") or []) | set(siglas))
+            campo["orgaos_unidade"] = sorted(set(campo.get("orgaos_unidade") or []) | set(siglas))
+            campo["vinculo"] = "unidade"
+            campo["orgao_manual"] = True
+            aplicados += 1
+    if aplicados:
+        log.info("Órgãos manuais aplicados a %d processos", aplicados)
 
     if not houve_resposta:
         log.error("Pesquisa Integrada não respondeu em nenhuma consulta.")
@@ -1180,8 +1224,8 @@ def main(argv: list[str] | None = None) -> int:
 
     # Fonte primária: Pesquisa Integrada. Traz a lista COMPLETA de processos do
     # MPO, com estado, relator, assunto, movimentações e acórdãos.
-    garantidos = carregar_garantidos()
-    da_pesquisa = consultar_pesquisa(http, garantidos)
+    garantidos, orgaos_manuais = carregar_garantidos()
+    da_pesquisa = consultar_pesquisa(http, garantidos, orgaos_manuais)
     if not da_pesquisa:
         avisos.append("A Pesquisa Integrada do TCU não respondeu nesta execução. "
                       "Tente novamente mais tarde; o site pode estar instável.")
