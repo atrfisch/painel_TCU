@@ -58,8 +58,12 @@ BTCU_MISSES = 45
 # Traz o campo Estado (Aberto/Encerrado) e a lista completa, não só o que passou
 # pelo boletim. É paginado: ?inicio= avança de QUANTIDADE em QUANTIDADE.
 PESQUISA_BASE = "https://pesquisa.apps.tcu.gov.br/rest/publico/base/processo/documentosResumidos"
-PESQUISA_QUANTIDADE = 50
-PESQUISA_MAX_PAGINAS = 120
+# 100 itens por página (o máximo que a API costuma aceitar) reduz o número de
+# requisições pela metade em relação a 50. O teto de páginas evita paginação
+# infinita: 40 x 100 = 4.000 processos por consulta, muito acima do que as
+# buscas do MPO retornam na prática.
+PESQUISA_QUANTIDADE = 100
+PESQUISA_MAX_PAGINAS = 40
 PESQUISA_ORDENACAO = "DTAUTUACAOORDENACAO desc, NUMEROCOMZEROS desc, KEY asc"
 
 # O filtro por unidade exige correspondência com a grafia cadastrada, que varia
@@ -191,7 +195,16 @@ UNIDADES: dict[str, dict[str, Any]] = {
              "padroes": [r"secretaria de coordena[cç][aã]o e governan[cç]a das empresas estatais", r"\bsest\b"]},
 }
 
-TIMEOUT = (10, 90)
+# Timeout por requisição: (conexão, leitura). 15s de leitura é folgado para uma
+# API que responde em 1-2s; o valor antigo (90s) fazia uma única requisição
+# lenta segurar a coleta por um minuto e meio, e centenas delas estouravam o
+# limite do GitHub.
+TIMEOUT = (10, 15)
+
+# Teto de tempo para a fase de enriquecimento por detalhe. Ela é opcional (a
+# captura principal não depende dela), então recebe um orçamento fixo: o que
+# não couber fica para a próxima coleta.
+ENRIQUECIMENTO_MINUTOS = 8
 
 # =========================================================================== #
 # UTILIDADES
@@ -782,29 +795,37 @@ def consultar_pesquisa(sessao: requests.Session, garantidos: list[str] | None = 
     # revela esse vínculo — é o mesmo dado que o Conecta-TCU mostra atrás de
     # login. Custa uma requisição por processo; como são dezenas (não a base
     # inteira), o custo é aceitável numa execução que roda de madrugada.
-    todos = list(vistos.values())
-    log.info("Enriquecendo %d processos com o detalhe (interessados, movimentações)", len(todos))
+    # Enriquecimento por detalhe — OPCIONAL e com ORÇAMENTO DE TEMPO RÍGIDO.
+    # Buscar o detalhe revela interessados (AECI/SE) que a listagem não traz, mas
+    # é uma requisição por processo: se o endpoint do TCU responde devagar, o
+    # total estoura o limite do GitHub (foi o que aconteceu — 5h30 e cancelado).
+    # Por isso: (1) só enriquece quem PODE ganhar algo — processos ainda sem
+    # órgão do MPO reconhecido, ou garantidos; (2) para assim que o orçamento de
+    # tempo acaba, seguindo com o que já tem. A captura por unidade/termo já
+    # cobre a maioria; o enriquecimento é o reforço, não a espinha dorsal.
+    candidatos = [c for c in vistos.values()
+                  if not c.get("orgaos") or c.get("garantido")]
+    orcamento = timedelta(minutes=ENRIQUECIMENTO_MINUTOS)
+    inicio_enr = datetime.now(timezone.utc)
+    log.info("Enriquecendo até %d processos (orçamento de %d min)",
+             len(candidatos), ENRIQUECIMENTO_MINUTOS)
     revelados = 0
-    falhas_seguidas = 0
-    houve_sucesso = False
-    for i, campo in enumerate(todos, 1):
+    processados = 0
+    for campo in candidatos:
+        if datetime.now(timezone.utc) - inicio_enr > orcamento:
+            log.warning("Orçamento de enriquecimento (%d min) esgotado em %d/%d; "
+                        "seguindo com o que há.", ENRIQUECIMENTO_MINUTOS,
+                        processados, len(candidatos))
+            break
         try:
-            mudou = enriquecer_detalhe(sessao, campo)
-            houve_sucesso = True
-            falhas_seguidas = 0
-            if mudou:
+            if enriquecer_detalhe(sessao, campo):
                 revelados += 1
         except Exception:
-            falhas_seguidas += 1
-        # Se o endpoint de detalhe não responde de cara, aborta para não travar a
-        # coleta inteira em dezenas de timeouts. A lista segue com o que já tem.
-        if falhas_seguidas >= 8 and not houve_sucesso:
-            log.warning("Endpoint de detalhe não respondeu nas primeiras %d tentativas; "
-                        "pulando o enriquecimento. Interessados podem faltar.", falhas_seguidas)
-            break
-        if i % 25 == 0:
-            log.info("  ... %d/%d enriquecidos", i, len(todos))
-    log.info("Detalhe: %d processos ganharam órgão novo (AECI/SE/etc via interessado)", revelados)
+            pass
+        processados += 1
+        if processados % 25 == 0:
+            log.info("  ... %d/%d enriquecidos", processados, len(candidatos))
+    log.info("Detalhe: %d de %d candidatos ganharam órgão novo", revelados, processados)
 
     if not houve_resposta:
         log.error("Pesquisa Integrada não respondeu em nenhuma consulta.")
