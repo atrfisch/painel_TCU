@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-08-17T20:11:26.333311+00:00",
- "gerado_em_br": "17/08/2026 às 20:11",
+ "gerado_em": "2026-08-17T20:27:08.236225+00:00",
+ "gerado_em_br": "17/08/2026 às 20:27",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -9,7 +9,7 @@
   "processos": 71,
   "movimentacoes": 211,
   "abertos": 71,
-  "encerrados_ocultos": 560,
+  "encerrados_ocultos": 559,
   "so_interesse": 34
  },
  "garantidos": [
@@ -46,9 +46,9 @@
   {
    "orgao": "SE",
    "nome": "Secretaria-Executiva do MPO",
-   "total": 14,
+   "total": 4,
    "como_unidade": 0,
-   "como_interessado": 14
+   "como_interessado": 4
   },
   {
    "orgao": "SOF",
@@ -194,8 +194,7 @@
    "processo": "021.399/2025-5",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "assunto": "Acompanhamento para avaliação de maturidade  da implementação da Política Compromisso Nacional Criança Alfabetizada (CNCA), para atendimento ao RePP 2026",
    "relator": "Jorge Oliveira",
@@ -859,16 +858,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [
-    "SE"
-   ],
+   "orgaos_interessado": [],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -962,13 +958,11 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -1021,14 +1015,12 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -2015,14 +2007,12 @@
    "interessados": [],
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": "1924/2026",
@@ -2648,13 +2638,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": "573/2026",
@@ -2928,13 +2916,11 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -2983,14 +2969,12 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3042,13 +3026,11 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3524,13 +3506,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -3633,16 +3613,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [
-    "SE"
-   ],
+   "orgaos_interessado": [],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -4184,8 +4161,7 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto",
    "evento": "acordao"
@@ -4499,7 +4475,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4514,7 +4489,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4529,7 +4503,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4570,7 +4543,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4585,7 +4557,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4601,7 +4572,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4617,7 +4587,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4633,7 +4602,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4648,7 +4616,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5346,8 +5313,7 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5361,8 +5327,7 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5376,8 +5341,7 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5444,8 +5408,7 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5581,7 +5544,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5784,8 +5746,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6068,7 +6029,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6084,7 +6044,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6100,7 +6059,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6116,7 +6074,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6131,7 +6088,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6146,7 +6102,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6161,7 +6116,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6176,7 +6130,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6545,8 +6498,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6559,8 +6511,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6573,8 +6524,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6587,8 +6537,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6601,8 +6550,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6655,7 +6603,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6670,7 +6617,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6685,7 +6631,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6755,7 +6700,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6769,8 +6713,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
