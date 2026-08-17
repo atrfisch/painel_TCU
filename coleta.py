@@ -688,24 +688,41 @@ def enriquecer_detalhe(sessao: requests.Session, campo: dict) -> bool:
     proc_id = so_digitos(campo["processo"])
     if not proc_id:
         return False
-    # Tenta o código interno (mais preciso) e, como alternativa, o número.
-    chaves = [campo.get("codigo"), proc_id]
-    for key in [k for k in chaves if k]:
+    numero_fmt = campo["processo"]  # ex.: "017.191/2026-2"
+
+    # Estratégias de detalhe, em ordem de preferência. A busca por número
+    # formatado no documentosResumidos (o que a interface faz ao abrir um
+    # processo pela URL /documento/processo/NNN.NNN/AAAA-D) devolve o registro
+    # com mais campos — incluindo os órgãos fiscalizados, que a busca em massa
+    # paginada omite. É essa a via que revela a SMA no 017.191.
+    def _via_busca_numero():
+        r = sessao.get(PESQUISA_BASE,
+                       params={"termo": numero_fmt, "quantidade": 3, "inicio": 0},
+                       headers=PESQUISA_HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        for it in (r.json().get("documentos") or []):
+            if so_digitos(it.get("NUMEROFORMATADO") or it.get("PROC")) == proc_id:
+                return it
+        return None
+
+    def _via_documento_key():
+        r = sessao.get(PESQUISA_DETALHE, params={"key": campo.get("codigo") or proc_id},
+                       headers=PESQUISA_HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        d = r.json()
+        if isinstance(d, dict):
+            d = d.get("documento") or d.get("documentos") or d
+        return d[0] if isinstance(d, list) and d else (d if isinstance(d, dict) else None)
+
+    doc = None
+    for estrategia in (_via_busca_numero, _via_documento_key):
         try:
-            r = sessao.get(PESQUISA_DETALHE, params={"key": key},
-                           headers=PESQUISA_HEADERS, timeout=TIMEOUT)
-            r.raise_for_status()
-            doc = r.json()
+            doc = estrategia()
+            if doc:
+                break
         except (requests.exceptions.RequestException, ValueError):
             continue
-        # A resposta pode vir embrulhada de várias formas.
-        if isinstance(doc, dict):
-            doc = doc.get("documento") or doc.get("documentos") or doc
-        if isinstance(doc, list):
-            doc = doc[0] if doc else None
-        if not isinstance(doc, dict):
-            continue
-
+    if isinstance(doc, dict):
         detalhado = _campos_pesquisa(doc)
         # Reclassifica os órgãos: o detalhe pode revelar AECI/SE/etc como
         # interessados que a listagem resumida não mostrava.
@@ -803,8 +820,14 @@ def consultar_pesquisa(sessao: requests.Session, garantidos: list[str] | None = 
     # órgão do MPO reconhecido, ou garantidos; (2) para assim que o orçamento de
     # tempo acaba, seguindo com o que já tem. A captura por unidade/termo já
     # cobre a maioria; o enriquecimento é o reforço, não a espinha dorsal.
-    candidatos = [c for c in vistos.values()
-                  if not c.get("orgaos") or c.get("garantido")]
+    # Candidatos ao enriquecimento: quem pode ganhar classificação. Garantidos
+    # PRIMEIRO — eles são poucos e importam mais (você os marcou), então nunca
+    # devem ficar de fora se o orçamento apertar. Depois, os sem órgão ainda
+    # reconhecido, que podem ter vínculo escondido nos fiscalizados/interessados.
+    candidatos = sorted(
+        (c for c in vistos.values() if not c.get("orgaos") or c.get("garantido")),
+        key=lambda c: 0 if c.get("garantido") else 1,
+    )
     orcamento = timedelta(minutes=ENRIQUECIMENTO_MINUTOS)
     inicio_enr = datetime.now(timezone.utc)
     log.info("Enriquecendo até %d processos (orçamento de %d min)",
