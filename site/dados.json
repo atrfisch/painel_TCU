@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-08-17T20:55:29.391344+00:00",
- "gerado_em_br": "17/08/2026 às 20:55",
+ "gerado_em": "2026-08-18T09:31:20.471755+00:00",
+ "gerado_em_br": "18/08/2026 às 09:31",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -9,7 +9,7 @@
   "processos": 71,
   "movimentacoes": 211,
   "abertos": 71,
-  "encerrados_ocultos": 559,
+  "encerrados_ocultos": 560,
   "so_interesse": 34
  },
  "garantidos": [
@@ -26,7 +26,44 @@
   "011.526/2022-0"
  ],
  "novos_processos": [],
- "andamentos_novos": [],
+ "andamentos_novos": [
+  {
+   "processo": "017.226/2026-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
+   "data": "2026-08-17T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 31731/2026 por unidade Seproc em virtude de expedição",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "017.226/2026-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
+   "data": "2026-08-17T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 31730/2026 por unidade Seproc em virtude de expedição",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "017.226/2026-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
+   "data": "2026-08-17T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 31728/2026 por unidade Seproc em virtude de expedição",
+   "acordao": null,
+   "novo_no_radar": false
+  }
+ ],
  "tem_baseline": true,
  "por_orgao": [
   {
@@ -46,9 +83,9 @@
   {
    "orgao": "SE",
    "nome": "Secretaria-Executiva do MPO",
-   "total": 4,
+   "total": 14,
    "como_unidade": 0,
-   "como_interessado": 4
+   "como_interessado": 14
   },
   {
    "orgao": "SOF",
@@ -72,12 +109,12 @@
    "abertos": 16
   },
   {
-   "tipo": "Relatório de Auditoria",
+   "tipo": "Representação",
    "total": 15,
    "abertos": 15
   },
   {
-   "tipo": "Representação",
+   "tipo": "Relatório de Auditoria",
    "total": 15,
    "abertos": 15
   },
@@ -194,21 +231,12 @@
    "processo": "021.399/2025-5",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "assunto": "Acompanhamento para avaliação de maturidade  da implementação da Política Compromisso Nacional Criança Alfabetizada (CNCA), para atendimento ao RePP 2026",
    "relator": "Jorge Oliveira",
    "movimentacoes_mes": 4
-  },
-  {
-   "processo": "008.928/2025-8",
-   "orgaos": [
-    "MPO",
-    "SE"
-   ],
-   "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
-   "relator": "Augusto Nardes",
-   "movimentacoes_mes": 3
   },
   {
    "processo": "017.226/2026-0",
@@ -218,6 +246,16 @@
    ],
    "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
    "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "008.928/2025-8",
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
+   "relator": "Augusto Nardes",
    "movimentacoes_mes": 3
   },
   {
@@ -261,6 +299,64 @@
   }
  ],
  "processos": [
+  {
+   "numero": "017.226/2026-0",
+   "id": "01722620260",
+   "codigo": "80886971",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
+   "natureza": "Representação",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "ANEEL - Agência Nacional de Energia Elétrica",
+    "CCEE - Câmara de Comercialização de Energia Elétrica"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [
+    "MPO"
+   ],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-17T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 31731/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-17T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 31730/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-17T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 31728/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-17T00:00:00+00:00",
+    "descricao": "Juntada comunicação Ofício 31731/2026 por unidade Seproc em virtude de expedição",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Juntada comunicação Ofício 31731/2026 por unidade Seproc em virtude de expedição",
+   "atualizado_em": "2026-08-17T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1722620260",
+   "garantido": false
+  },
   {
    "numero": "008.928/2025-8",
    "id": "00892820258",
@@ -315,62 +411,6 @@
    "fase_atual": "Registrada ciência de comunicação do Ofício 30634/2026-TCU/Seproc via CONECTA TC",
    "atualizado_em": "2026-08-17T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=892820258",
-   "garantido": false
-  },
-  {
-   "numero": "017.226/2026-0",
-   "id": "01722620260",
-   "codigo": "80886971",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "natureza": "Representação",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "ANEEL - Agência Nacional de Energia Elétrica",
-    "CCEE - Câmara de Comercialização de Energia Elétrica"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-08-15T00:00:00+00:00",
-     "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-15T00:00:00+00:00",
-     "descricao": "Pronunciamento da AudFiscal concluído",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-14T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (PARECER Nº 00188_2026_PFANEEL_PGF_AGU) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-15T00:00:00+00:00",
-    "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-   "atualizado_em": "2026-08-15T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1722620260",
    "garantido": false
   },
   {
@@ -858,13 +898,16 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [],
+   "orgaos_interessado": [
+    "SE"
+   ],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -958,11 +1001,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -1015,12 +1060,14 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -2007,12 +2054,14 @@
    "interessados": [],
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": "1924/2026",
@@ -2638,11 +2687,13 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": "573/2026",
@@ -2916,11 +2967,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -2969,12 +3022,14 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3026,11 +3081,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3506,11 +3563,13 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -3613,13 +3672,16 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [],
+   "orgaos_interessado": [
+    "SE"
+   ],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -4161,13 +4223,56 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto",
    "evento": "acordao"
   }
  ],
  "movimentacoes": [
+  {
+   "data": "2026-08-17T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 31731/2026 por unidade Seproc em virtude de expedição",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.226/2026-0",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-17T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 31730/2026 por unidade Seproc em virtude de expedição",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.226/2026-0",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-17T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 31728/2026 por unidade Seproc em virtude de expedição",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.226/2026-0",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
   {
    "data": "2026-08-17T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 30634/2026-TCU/Seproc via CONECTA TCU por MARCIO NUNES BILAR em nome de Advocacia-Geral da União",
@@ -4179,34 +4284,6 @@
    "orgaos": [
     "MPO",
     "SE"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-15T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.226/2026-0",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-15T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.226/2026-0",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -4235,20 +4312,6 @@
    "orgaos": [
     "MPO",
     "SE"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-14T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (PARECER Nº 00188_2026_PFANEEL_PGF_AGU) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.226/2026-0",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -4475,6 +4538,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4489,6 +4553,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4503,6 +4568,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4543,6 +4609,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4557,6 +4624,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4572,6 +4640,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4587,6 +4656,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4602,6 +4672,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4616,6 +4687,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5313,7 +5385,8 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5327,7 +5400,8 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5341,7 +5415,8 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5408,7 +5483,8 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5544,6 +5620,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5746,7 +5823,8 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6029,6 +6107,7 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6044,6 +6123,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6059,6 +6139,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6074,6 +6155,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6088,6 +6170,7 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6102,6 +6185,7 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6116,6 +6200,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6130,6 +6215,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6498,7 +6584,8 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6511,7 +6598,8 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6524,7 +6612,8 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6537,7 +6626,8 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6550,7 +6640,8 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6603,6 +6694,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6617,6 +6709,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6631,6 +6724,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6700,6 +6794,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6713,7 +6808,8 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
