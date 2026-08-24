@@ -129,7 +129,16 @@ _GARANTIDOS_FALLBACK = [
     "025.632/2024-8", "005.104/2023-8", "007.158/2026-2", "011.685/2026-3",
     "011.526/2022-0", "008.723/2023-0",
     "011.358/2026-2", "024.312/2024-0", "024.381/2025-0",
+    "017.191/2026-2", "017.183/2026-0",
 ]
+
+# Órgãos manuais embutidos — segunda rede de segurança. Se o arquivo txt não for
+# encontrado, estes ainda são aplicados, para que os processos de fiscalização
+# conjunta (MPO/SMA como fiscalizados, que a API não expõe) apareçam classificados.
+_ORGAOS_MANUAIS_FALLBACK = {
+    "017.191/2026-2": ["MPO", "SMA"],
+    "017.183/2026-0": ["MPO", "SOF"],
+}
 
 RX_NUM_PROCESSO = re.compile(r"\d{3}\.\d{3}/\d{4}-\d")
 
@@ -145,36 +154,52 @@ def carregar_garantidos(caminho: str = "processos-acompanhados.txt") -> tuple[li
     na tela do processo). Assim você classifica manualmente o que a automação não
     alcança. Devolve (lista de números, mapa número→órgãos manuais).
     Ignora comentários (#) e linhas em branco; cai no fallback se o arquivo sumir.
+
+    Procura o arquivo em vários lugares porque a coleta pode rodar de diretórios
+    diferentes (raiz do repo, subpasta). Assim, não importa de onde `python
+    coleta.py` é chamado — o arquivo é encontrado se existir no projeto.
     """
+    import os
+    aqui = os.path.dirname(os.path.abspath(__file__))
+    candidatos_caminho = [
+        caminho,                                     # relativo ao diretório atual
+        os.path.join(aqui, caminho),                 # ao lado do coleta.py
+        os.path.join(aqui, "..", caminho),           # um nível acima
+        os.path.join(os.getcwd(), caminho),          # diretório de trabalho
+    ]
     validos = set(UNIDADES.keys())
-    try:
-        with open(caminho, encoding="utf-8") as f:
-            numeros: list[str] = []
-            orgaos_manuais: dict[str, list[str]] = {}
-            for linha in f:
-                linha = linha.strip()
-                if not linha or linha.startswith("#"):
-                    continue
-                m = RX_NUM_PROCESSO.search(linha)
-                if not m:
-                    continue
-                numero = m.group(0)
-                numeros.append(numero)
-                # Parte após "=" (ou ":") lista os órgãos a atribuir manualmente.
-                if "=" in linha or ":" in linha:
-                    depois = re.split(r"[=:]", linha, maxsplit=1)[1]
-                    siglas = [s.strip().upper() for s in re.split(r"[,;/\s]+", depois) if s.strip()]
-                    siglas = [s for s in siglas if s in validos]
-                    if siglas:
-                        orgaos_manuais[numero] = siglas
-        if numeros:
-            log.info("Acompanhados: %d processos lidos de %s (%d com órgão manual)",
-                     len(numeros), caminho, len(orgaos_manuais))
-            return numeros, orgaos_manuais
-    except OSError:
-        pass
-    log.info("Acompanhados: usando lista embutida (%d processos)", len(_GARANTIDOS_FALLBACK))
-    return _GARANTIDOS_FALLBACK, {}
+    for cam in candidatos_caminho:
+        try:
+            with open(cam, encoding="utf-8") as f:
+                numeros: list[str] = []
+                orgaos_manuais: dict[str, list[str]] = {}
+                for linha in f:
+                    linha = linha.strip()
+                    if not linha or linha.startswith("#"):
+                        continue
+                    m = RX_NUM_PROCESSO.search(linha)
+                    if not m:
+                        continue
+                    numero = m.group(0)
+                    numeros.append(numero)
+                    # Parte após "=" (ou ":") lista os órgãos a atribuir manualmente.
+                    if "=" in linha or ":" in linha:
+                        depois = re.split(r"[=:]", linha, maxsplit=1)[1]
+                        siglas = [s.strip().upper() for s in re.split(r"[,;/\s]+", depois) if s.strip()]
+                        siglas = [s for s in siglas if s in validos]
+                        if siglas:
+                            orgaos_manuais[numero] = siglas
+            if numeros:
+                log.info("Acompanhados: %d processos lidos de %s (%d com órgão manual)",
+                         len(numeros), cam, len(orgaos_manuais))
+                return numeros, orgaos_manuais
+        except OSError:
+            continue
+    log.warning("Acompanhados: ARQUIVO NÃO ENCONTRADO em nenhum caminho testado "
+                "(%s) — usando lista embutida (%d processos, SEM órgãos manuais). "
+                "Coloque processos-acompanhados.txt na raiz do repositório.",
+                ", ".join(candidatos_caminho), len(_GARANTIDOS_FALLBACK))
+    return _GARANTIDOS_FALLBACK, _ORGAOS_MANUAIS_FALLBACK
 
 
 PROCESSOS_GARANTIDOS = _GARANTIDOS_FALLBACK  # substituído em tempo de execução
@@ -611,17 +636,21 @@ def _campos_pesquisa(it: dict) -> dict:
 
 
 def _uma_consulta(sessao: requests.Session, termo: str, filtro: str, rotulo: str,
-                  vistos: dict[str, dict], orgao_alvo: str | None = None) -> bool:
+                  vistos: dict[str, dict], orgao_alvo: str | None = None,
+                  acompanhados: set[str] | None = None) -> bool:
     """
     Executa uma consulta paginada e acumula em `vistos`. Devolve se respondeu.
 
     `orgao_alvo`: quando a busca é por um termo que É o nome de um órgão do MPO
     (ex.: busca pela SMA), o processo que casa TEM vínculo com esse órgão, mesmo
     que o campo onde a SMA aparece não venha na listagem em massa. Nesse caso,
-    atribuímos o órgão-alvo em vez de descartar o processo por "sem órgão". É o
-    que resolve o 017.191: a SMA está no campo de fiscalizados, que a listagem
-    não expõe, mas a busca pelo nome dela encontra o processo mesmo assim.
+    atribuímos o órgão-alvo em vez de descartar o processo por "sem órgão".
+
+    `acompanhados`: números que estão na lista de acompanhados. Um processo dessa
+    lista NUNCA é descartado, mesmo sem órgão reconhecido — ele é relevante por
+    decisão do usuário, e a marcação manual o classificará depois.
     """
+    acompanhados = acompanhados or set()
     inicio = 0
     respondeu = False
     for _ in range(PESQUISA_MAX_PAGINAS):
@@ -660,10 +689,11 @@ def _uma_consulta(sessao: requests.Session, termo: str, filtro: str, rotulo: str
                             set(campo.get("orgaos_interessado") or []) | {orgao_alvo})
                     if not campo.get("vinculo"):
                         campo["vinculo"] = "interessado"
-            # Termo livre casa qualquer texto: confirmamos que ALGUM órgão do MPO
-            # está mesmo entre as unidades, para não trazer processo alheio que
-            # só menciona "planejamento" no assunto.
-            if not campo["orgaos"]:
+            # Descarta processo sem órgão do MPO — EXCETO se ele está na lista de
+            # acompanhados, caso em que entra de qualquer forma (a marcação manual
+            # o classifica depois). Sem essa exceção, um acompanhado que a busca
+            # traz sem órgão reconhecido seria jogado fora aqui e sumiria.
+            if not campo["orgaos"] and campo["processo"] not in acompanhados:
                 continue
             ja = vistos.get(campo["processo"])
             if ja:
@@ -786,14 +816,15 @@ def consultar_pesquisa(sessao: requests.Session, garantidos: list[str] | None = 
     houve_resposta = False
     garantidos = garantidos if garantidos is not None else PROCESSOS_GARANTIDOS
     orgaos_manuais = orgaos_manuais or {}
+    acomp = set(garantidos)  # nunca descartar um acompanhado, mesmo sem órgão
 
     for filtro in PESQUISA_UNIDADES:
-        if _uma_consulta(sessao, "*", filtro, filtro.split('("')[-1], vistos):
+        if _uma_consulta(sessao, "*", filtro, filtro.split('("')[-1], vistos, acompanhados=acomp):
             houve_resposta = True
     log.info("Após filtro por unidade: %d processos", len(vistos))
 
     for filtro in PESQUISA_INTERESSADOS:
-        if _uma_consulta(sessao, "*", filtro, "int " + filtro.split('("')[-1], vistos):
+        if _uma_consulta(sessao, "*", filtro, "int " + filtro.split('("')[-1], vistos, acompanhados=acomp):
             houve_resposta = True
     log.info("Após filtro por interessado: %d processos", len(vistos))
 
@@ -809,7 +840,7 @@ def consultar_pesquisa(sessao: requests.Session, garantidos: list[str] | None = 
     }
     for termo in PESQUISA_TERMOS:
         alvo = termo_orgao.get(termo)
-        if _uma_consulta(sessao, termo, "", "termo " + termo, vistos, orgao_alvo=alvo):
+        if _uma_consulta(sessao, termo, "", "termo " + termo, vistos, orgao_alvo=alvo, acompanhados=acomp):
             houve_resposta = True
     log.info("Após busca por termo livre: %d processos", len(vistos))
 
@@ -820,14 +851,25 @@ def consultar_pesquisa(sessao: requests.Session, garantidos: list[str] | None = 
         campo = buscar_por_numero(sessao, numero)
         if campo:
             campo["garantido"] = True
-            # Garantido que não casou nenhum órgão do MPO nos campos: ainda assim
-            # entra (você o marcou como relevante), com vínculo próprio para o
-            # painel poder exibi-lo com uma tag "acompanhado" em vez de nenhuma.
             if not campo.get("orgaos"):
                 campo["vinculo"] = campo.get("vinculo") or "acompanhado"
             vistos[numero] = campo
             log.info("Garantido recuperado: %s (órgãos: %s)",
                      numero, campo.get("orgaos") or "nenhum reconhecido")
+        elif numero in orgaos_manuais:
+            # A busca não devolveu o processo, MAS ele tem órgãos marcados à mão.
+            # Criamos o registro mínimo a partir do arquivo, para que ele apareça
+            # no painel de qualquer forma — a marcação manual é a fonte da verdade
+            # para casos que a API não expõe (fiscalização conjunta).
+            vistos[numero] = {
+                "processo": numero, "codigo": None, "estado": "Aberto",
+                "relator": None, "assunto": None, "natureza": None,
+                "unidades": [], "interessados": [], "orgaos": [],
+                "orgaos_unidade": [], "orgaos_interessado": [], "vinculo": None,
+                "movimentacoes_pesquisa": [], "ultima_pesquisa": None,
+                "acordao": None, "url_push": None, "garantido": True,
+            }
+            log.info("Garantido criado do arquivo (busca não retornou): %s", numero)
         else:
             log.warning("Garantido NÃO encontrado na base: %s", numero)
 
