@@ -1,22 +1,22 @@
 {
  "versao": 2,
- "gerado_em": "2026-08-21T09:36:33.779835+00:00",
- "gerado_em_br": "21/08/2026 às 09:36",
+ "gerado_em": "2026-08-24T09:45:15.361752+00:00",
+ "gerado_em_br": "24/08/2026 às 09:45",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 71,
-  "movimentacoes": 211,
-  "abertos": 71,
-  "encerrados_ocultos": 562,
-  "so_interesse": 34
+  "processos": 73,
+  "movimentacoes": 217,
+  "abertos": 73,
+  "encerrados_ocultos": 563,
+  "so_interesse": 36
  },
  "garantidos": [
+  "011.685/2026-3",
   "011.358/2026-2",
   "024.312/2024-0",
   "017.106/2025-7",
-  "011.685/2026-3",
   "008.723/2023-0",
   "024.381/2025-0",
   "025.632/2024-8",
@@ -27,17 +27,47 @@
  ],
  "novos_processos": [
   {
-   "processo": "011.601/2025-6",
+   "processo": "024.770/2025-6",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
-   "assunto": "Monitoramento das determinações feitas ao MT e à  ANTT por meio do Acórdão  522/2025-Plenário (006.626/2024-6) relacionadas com a FCA.",
+   "assunto": "Monitoramento das deliberações endereçadas ao IBGE, MMA e ao MPO no Acórdão 1708/2025-Plenário no âmbito do Processo 020.665/2023-7 - Auditoria operacional em contas econômicas ambientais",
    "natureza": "Monitoramento",
-   "relator": "Jorge Oliveira",
+   "relator": "Augusto Nardes",
+   "estado": "Aberto"
+  },
+  {
+   "processo": "026.569/2024-8",
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "assunto": "Monitoramento das deliberações do Acórdão 2201/2024-Plenário, proferido no âmbito do TC 032.255/2023-3, que tratou de auditoria operacional para avaliar a governança instituída em âmbito federal para enfrentamento da crise climática",
+   "natureza": "Monitoramento",
+   "relator": "Bruno Dantas",
    "estado": "Aberto"
   }
  ],
  "andamentos_novos": [
+  {
+   "processo": "011.685/2026-3",
+   "orgaos": [],
+   "assunto": "011.685/2026-3 - Denúncia",
+   "data": "2026-08-23T00:00:00+00:00",
+   "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-WAR",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "011.685/2026-3",
+   "orgaos": [],
+   "assunto": "011.685/2026-3 - Denúncia",
+   "data": "2026-08-23T00:00:00+00:00",
+   "descricao": "Despacho de Cautelar oficializado.",
+   "acordao": null,
+   "novo_no_radar": false
+  },
   {
    "processo": "017.226/2026-0",
    "orgaos": [
@@ -45,8 +75,44 @@
     "SOF"
    ],
    "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Processo excluído de pauta durante a sessão Ordinária do Plenário em 19/08/2026",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 32443/2026-TCU/Seproc via CONECTA TCU por LIDIANE DIAS TANAN em nome de Agência Nacional de Energia Elétrica",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "017.226/2026-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 32445/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "017.226/2026-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 32446/2026 por unidade Seproc em virtude de expedição",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "017.183/2026-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Acompanhamento permanente da dívida pública federal",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Documento Despacho de expediente (Excerto para apresentacao da equipe ) juntado ao processo por AudFiscal",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -57,216 +123,113 @@
     "SOF"
    ],
    "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (RREO junho de 2026) juntado ao processo por AudFiscal",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "014.219/2026-3",
+   "processo": "014.609/2026-6",
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Possível subavaliação de impactos fiscais decorrentes da utilização de fundos públicos, fundos garantidores, créditos subsidiados e créditos extraordinários.)",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária do Plenário em 19/08/2026 por meio do Acórdão 2175/2026-PL",
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (RARDP 3º BIMESTRE DE 2026) juntado ao processo por AudFiscal",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "014.219/2026-3",
+   "processo": "012.513/2026-1",
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Possível subavaliação de impactos fiscais decorrentes da utilização de fundos públicos, fundos garantidores, créditos subsidiados e créditos extraordinários.)",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Acórdão 2175/2026 — Plenário",
-   "acordao": "2175/2026",
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.010/2026-7",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Consulta acerca da legalidade de autarquia federal, com autonomia administrativa e financeira, que arrecade e seja custeada por receita de natureza jurídica de tarifa (preço público), elaborar sua proposta orçamentária própria.",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Documento Aviso juntado ao processo por Gabpres",
+   "assunto": "2ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 26/08/2026, às 14h30.",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "014.010/2026-7",
+   "processo": "006.412/2026-2",
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "Consulta acerca da legalidade de autarquia federal, com autonomia administrativa e financeira, que arrecade e seja custeada por receita de natureza jurídica de tarifa (preço público), elaborar sua proposta orçamentária própria.",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Aviso expedido pelo Gabinete da Presidência",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 26/08/2026, às 14h30.",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "010.183/2026-4",
+   "processo": "022.280/2024-3",
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "Consulta formulada pela Deputado Coronel Meira -\r\nComissão de Segurança Pública e Combate ao Crime \r\nOrganizado - CD, por meio Ofício  Pres. nº 78/2026 - CSPCCO",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Jorge Oliveira por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "010.183/2026-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Consulta formulada pela Deputado Coronel Meira -\r\nComissão de Segurança Pública e Combate ao Crime \r\nOrganizado - CD, por meio Ofício  Pres. nº 78/2026 - CSPCCO",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "006.750/2026-5",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "006.750/2026-5 - Relatório de Levantamento",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "006.750/2026-5",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "006.750/2026-5 - Relatório de Levantamento",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "004.887/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, prevista para 25/08/2026, às 15h.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "003.030/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Consulta do Congresso Nacional (REQ nº 40/2025 - CICS) sobre proposta orçamentária própria de autarquias federais custeadas por tarifas ou preços públicos.",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "016.873/2025-4 - Relatório de Levantamento",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Retificação do Catálogo de Políticas Públicas) juntado ao processo por AudDigital",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "016.873/2025-4 - Relatório de Levantamento",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Ajustes no Catálogo de Políticas Públicas) juntado ao processo por AudDigital",
+   "assunto": "Auditoria operacional sobre a estrutura e o funcionamento da Aneel, ANP, Anatel e ANM",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Documento Petição juntado ao processo por AudElétrica",
    "acordao": null,
    "novo_no_radar": false
   },
   {
    "processo": "011.358/2026-2",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 27953/2026-TCU/Seproc.",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudBenefícios/Ditrab. (Diretoria de Trabalho)",
    "acordao": null,
    "novo_no_radar": false
   },
   {
    "processo": "011.358/2026-2",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Peça No. 54 do tipo Resposta de comunicação (doc 80.924.520-6) desentranhada do processo por Secomp-1 - Motivo: Erro na juntada",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "011.601/2025-6",
+   "processo": "024.770/2025-6",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
-   "assunto": "Monitoramento das determinações feitas ao MT e à  ANTT por meio do Acórdão  522/2025-Plenário (006.626/2024-6) relacionadas com a FCA.",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Processo enviado de MIN-JGO para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
+   "assunto": "Monitoramento das deliberações endereçadas ao IBGE, MMA e ao MPO no Acórdão 1708/2025-Plenário no âmbito do Processo 020.665/2023-7 - Auditoria operacional em contas econômicas ambientais",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 30364/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
    "acordao": null,
    "novo_no_radar": true
   },
   {
-   "processo": "011.601/2025-6",
+   "processo": "026.569/2024-8",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
-   "assunto": "Monitoramento das determinações feitas ao MT e à  ANTT por meio do Acórdão  522/2025-Plenário (006.626/2024-6) relacionadas com a FCA.",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária do Plenário em 19/08/2026 por meio do Acórdão 2194/2026-PL",
+   "assunto": "Monitoramento das deliberações do Acórdão 2201/2024-Plenário, proferido no âmbito do TC 032.255/2023-3, que tratou de auditoria operacional para avaliar a governança instituída em âmbito federal para enfrentamento da crise climática",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 30366/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
    "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "011.601/2025-6",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Monitoramento das determinações feitas ao MT e à  ANTT por meio do Acórdão  522/2025-Plenário (006.626/2024-6) relacionadas com a FCA.",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Acórdão 2194/2026 — Plenário",
-   "acordao": "2194/2026",
    "novo_no_radar": true
   },
   {
    "processo": "024.312/2024-0",
    "orgaos": [],
    "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, prevista para 25/08/2026, às 15h.",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -276,9 +239,9 @@
   {
    "orgao": "MPO",
    "nome": "Ministério do Planejamento e Orçamento",
-   "total": 62,
+   "total": 64,
    "como_unidade": 31,
-   "como_interessado": 31
+   "como_interessado": 33
   },
   {
    "orgao": "AECI",
@@ -290,9 +253,9 @@
   {
    "orgao": "SE",
    "nome": "Secretaria-Executiva do MPO",
-   "total": 4,
+   "total": 18,
    "como_unidade": 0,
-   "como_interessado": 4
+   "como_interessado": 18
   },
   {
    "orgao": "SOF",
@@ -326,17 +289,17 @@
    "abertos": 14
   },
   {
+   "tipo": "Monitoramento",
+   "total": 7,
+   "abertos": 7
+  },
+  {
    "tipo": "Consulta",
    "total": 5,
    "abertos": 5
   },
   {
    "tipo": "Relatório de Levantamento",
-   "total": 5,
-   "abertos": 5
-  },
-  {
-   "tipo": "Monitoramento",
    "total": 5,
    "abertos": 5
   },
@@ -351,12 +314,12 @@
    "abertos": 2
   },
   {
-   "tipo": "Tomada de Contas Especial",
+   "tipo": "Denúncia",
    "total": 1,
    "abertos": 1
   },
   {
-   "tipo": "Denúncia",
+   "tipo": "Tomada de Contas Especial",
    "total": 1,
    "abertos": 1
   },
@@ -400,18 +363,18 @@
   },
   {
    "relator": "Augusto Nardes",
-   "total": 8
+   "total": 9
   },
   {
    "relator": "Bruno Dantas",
-   "total": 5
-  },
-  {
-   "relator": "Odair Cunha",
-   "total": 4
+   "total": 6
   },
   {
    "relator": "Walton Alencar Rodrigues",
+   "total": 4
+  },
+  {
+   "relator": "Odair Cunha",
    "total": 4
   },
   {
@@ -435,14 +398,11 @@
    "movimentacoes_mes": 4
   },
   {
-   "processo": "021.399/2025-5",
-   "orgaos": [
-    "AECI",
-    "MPO"
-   ],
-   "assunto": "Acompanhamento para avaliação de maturidade  da implementação da Política Compromisso Nacional Criança Alfabetizada (CNCA), para atendimento ao RePP 2026",
-   "relator": "Jorge Oliveira",
-   "movimentacoes_mes": 4
+   "processo": "011.685/2026-3",
+   "orgaos": [],
+   "assunto": "011.685/2026-3 - Denúncia",
+   "relator": "Walton Alencar Rodrigues",
+   "movimentacoes_mes": 3
   },
   {
    "processo": "017.226/2026-0",
@@ -455,53 +415,105 @@
    "movimentacoes_mes": 3
   },
   {
-   "processo": "014.010/2026-7",
+   "processo": "017.183/2026-0",
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "Consulta acerca da legalidade de autarquia federal, com autonomia administrativa e financeira, que arrecade e seja custeada por receita de natureza jurídica de tarifa (preço público), elaborar sua proposta orçamentária própria.",
-   "relator": "Jhonatan de Jesus",
+   "assunto": "Acompanhamento permanente da dívida pública federal",
+   "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
   },
   {
-   "processo": "003.030/2026-1",
+   "processo": "014.609/2026-6",
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "Consulta do Congresso Nacional (REQ nº 40/2025 - CICS) sobre proposta orçamentária própria de autarquias federais custeadas por tarifas ou preços públicos.",
-   "relator": "Jhonatan de Jesus",
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
   },
   {
-   "processo": "016.873/2025-4",
+   "processo": "006.412/2026-2",
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "016.873/2025-4 - Relatório de Levantamento",
-   "relator": "Jhonatan de Jesus",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
   },
   {
-   "processo": "011.601/2025-6",
+   "processo": "011.358/2026-2",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
-   "assunto": "Monitoramento das determinações feitas ao MT e à  ANTT por meio do Acórdão  522/2025-Plenário (006.626/2024-6) relacionadas com a FCA.",
-   "relator": "Jorge Oliveira",
+   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
+   "relator": "Augusto Nardes",
    "movimentacoes_mes": 3
   },
   {
-   "processo": "024.312/2024-0",
-   "orgaos": [],
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "processo": "024.770/2025-6",
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "assunto": "Monitoramento das deliberações endereçadas ao IBGE, MMA e ao MPO no Acórdão 1708/2025-Plenário no âmbito do Processo 020.665/2023-7 - Auditoria operacional em contas econômicas ambientais",
    "relator": "Augusto Nardes",
    "movimentacoes_mes": 3
   }
  ],
  "processos": [
+  {
+   "numero": "011.685/2026-3",
+   "id": "01168520263",
+   "codigo": "80388372",
+   "estado": "Aberto",
+   "relator": "Walton Alencar Rodrigues",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "unidades": [
+    "BB - Banco do Brasil S.A."
+   ],
+   "interessados": [],
+   "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": "acompanhado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-23T00:00:00+00:00",
+     "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-WAR",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-23T00:00:00+00:00",
+     "descricao": "Despacho de Cautelar oficializado.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-14T00:00:00+00:00",
+     "descricao": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-23T00:00:00+00:00",
+    "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-WAR",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Despacho de autoridade juntado ao processo por MIN-WAR",
+   "atualizado_em": "2026-08-23T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1168520263",
+   "garantido": true
+  },
   {
    "numero": "017.226/2026-0",
    "id": "01722620260",
@@ -531,33 +543,88 @@
    "acordao": null,
    "movimentacoes": [
     {
-     "data": "2026-08-20T00:00:00+00:00",
-     "descricao": "Processo excluído de pauta durante a sessão Ordinária do Plenário em 19/08/2026",
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 32443/2026-TCU/Seproc via CONECTA TCU por LIDIANE DIAS TANAN em nome de Agência Nacional de Energia Elétrica",
      "fase": null,
      "acordao": null
     },
     {
-     "data": "2026-08-19T00:00:00+00:00",
-     "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AAA",
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 32445/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
      "fase": null,
      "acordao": null
     },
     {
-     "data": "2026-08-19T00:00:00+00:00",
-     "descricao": "Despacho oficializado.",
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 32446/2026 por unidade Seproc em virtude de expedição",
      "fase": null,
      "acordao": null
     }
    ],
    "ultima_movimentacao": {
-    "data": "2026-08-20T00:00:00+00:00",
-    "descricao": "Processo excluído de pauta durante a sessão Ordinária do Plenário em 19/08/2026",
+    "data": "2026-08-21T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 32443/2026-TCU/Seproc via CONECTA TCU por LIDIANE DIAS TANAN em nome de Agência Nacional de Energia Elétrica",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Processo excluído de pauta durante a sessão Ordinária do Plenário em 19/08/2026",
-   "atualizado_em": "2026-08-20T00:00:00+00:00",
+   "fase_atual": "Registrada ciência de comunicação do Ofício 32443/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-08-21T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1722620260",
+   "garantido": false
+  },
+  {
+   "numero": "017.183/2026-0",
+   "id": "01718320260",
+   "codigo": "80878386",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "Acompanhamento permanente da dívida pública federal",
+   "natureza": "Relatório de Acompanhamento",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "STN - Secretaria do Tesouro Nacional"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Documento Despacho de expediente (Excerto para apresentacao da equipe ) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-14T00:00:00+00:00",
+     "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.878.414-0) publicada no BTCU Controle Externo n° 139, de 14/08/2026.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-13T00:00:00+00:00",
+     "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-21T00:00:00+00:00",
+    "descricao": "Documento Despacho de expediente (Excerto para apresentacao da equipe ) juntado ao processo por AudFiscal",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Despacho de expediente (Excerto para apresentacao da equipe ) juntado ",
+   "atualizado_em": "2026-08-21T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1718320260",
    "garantido": false
   },
   {
@@ -589,28 +656,402 @@
    "acordao": null,
    "movimentacoes": [
     {
-     "data": "2026-08-20T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (RREO junho de 2026) juntado ao processo por AudFiscal",
      "fase": null,
      "acordao": null
     },
     {
-     "data": "2026-08-19T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (FMI - 2026 ARTICLE IV CONSULTATION) juntado ao processo por AudFiscal",
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (RARDP 3º BIMESTRE DE 2026) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-20T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
      "fase": null,
      "acordao": null
     }
    ],
    "ultima_movimentacao": {
-    "data": "2026-08-20T00:00:00+00:00",
-    "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
+    "data": "2026-08-21T00:00:00+00:00",
+    "descricao": "Documento Elementos comprobatórios/Evidências (RREO junho de 2026) juntado ao processo por AudFiscal",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
-   "atualizado_em": "2026-08-20T00:00:00+00:00",
+   "fase_atual": "Documento Elementos comprobatórios/Evidências (RREO junho de 2026) juntado ao pr",
+   "atualizado_em": "2026-08-21T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1460920266",
    "garantido": false
+  },
+  {
+   "numero": "012.513/2026-1",
+   "id": "01251320261",
+   "codigo": "80438250",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "2ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "ANP - Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
+    "BCB - Banco Central do Brasil"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [
+    "MPO"
+   ],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 26/08/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-20T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-10T00:00:00+00:00",
+     "descricao": "Documento Despacho de expediente (despacho de expediente) juntado ao processo por Seproc",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-21T00:00:00+00:00",
+    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 26/08/2026, às 14h30.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 26/08/",
+   "atualizado_em": "2026-08-21T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1251320261",
+   "garantido": false
+  },
+  {
+   "numero": "006.412/2026-2",
+   "id": "00641220262",
+   "codigo": "80008933",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "STN - Secretaria do Tesouro Nacional"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 26/08/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-05T00:00:00+00:00",
+     "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por PROC-JMO",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-05T00:00:00+00:00",
+     "descricao": "Parecer emitido pelo Procurador Júlio Marcelo",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-21T00:00:00+00:00",
+    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 26/08/2026, às 14h30.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 26/08/",
+   "atualizado_em": "2026-08-21T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=641220262",
+   "garantido": false
+  },
+  {
+   "numero": "022.280/2024-3",
+   "id": "02228020243",
+   "codigo": "76786659",
+   "estado": "Aberto",
+   "relator": "Jorge Oliveira",
+   "assunto": "Auditoria operacional sobre a estrutura e o funcionamento da Aneel, ANP, Anatel e ANM",
+   "natureza": "Relatório de Auditoria",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "Agência Nacional de Mineração",
+    "ANATEL - Agência Nacional de Telecomunicações"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [
+    "MPO"
+   ],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Documento Petição juntado ao processo por AudElétrica",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-21T00:00:00+00:00",
+    "descricao": "Documento Petição juntado ao processo por AudElétrica",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Petição juntado ao processo por AudElétrica",
+   "atualizado_em": "2026-08-21T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2228020243",
+   "garantido": false
+  },
+  {
+   "numero": "011.358/2026-2",
+   "id": "01135820262",
+   "codigo": "80345619",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
+   "natureza": "Representação",
+   "unidades": [
+    "GM/MTE - Gabinete do Ministro - Mte (extinto)"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO",
+    "SE"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Processo enviado de Seproc para AudBenefícios/Ditrab. (Diretoria de Trabalho)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-20T00:00:00+00:00",
+     "descricao": "Registrada resposta de comunicação do Ofício 27953/2026-TCU/Seproc.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-21T00:00:00+00:00",
+    "descricao": "Processo enviado de Seproc para AudBenefícios/Ditrab. (Diretoria de Trabalho)",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo enviado de Seproc para AudBenefícios/Ditrab. (Diretoria de Trabalho)",
+   "atualizado_em": "2026-08-21T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1135820262",
+   "garantido": true
+  },
+  {
+   "numero": "024.770/2025-6",
+   "id": "02477020256",
+   "codigo": "79491341",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "Monitoramento das deliberações endereçadas ao IBGE, MMA e ao MPO no Acórdão 1708/2025-Plenário no âmbito do Processo 020.665/2023-7 - Auditoria operacional em contas econômicas ambientais",
+   "natureza": "Monitoramento",
+   "unidades": [
+    "IBGE - Fundação Instituto Brasileiro de Geografia e Estatística",
+    "MMA - Ministério do Meio Ambiente e Mudança do Clima"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO",
+    "SE"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 30364/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-13T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 30363/2026-TCU/Seproc via CONECTA TCU por Gilvan Varcacio Ferreira em nome de Secretaria-Executiva do Ministério do Meio Ambiente e Mudança do Clima",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-12T00:00:00+00:00",
+     "descricao": "Documento Deliberação originária juntado ao processo por Seproc",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-21T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 30364/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 30364/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-08-21T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2477020256",
+   "garantido": false
+  },
+  {
+   "numero": "026.569/2024-8",
+   "id": "02656920248",
+   "codigo": "77241589",
+   "estado": "Aberto",
+   "relator": "Bruno Dantas",
+   "assunto": "Monitoramento das deliberações do Acórdão 2201/2024-Plenário, proferido no âmbito do TC 032.255/2023-3, que tratou de auditoria operacional para avaliar a governança instituída em âmbito federal para enfrentamento da crise climática",
+   "natureza": "Monitoramento",
+   "unidades": [],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO",
+    "SE"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 30366/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-19T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 30365/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-13T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 30367/2026-TCU/Seproc via CONECTA TCU por MICHELLE FERNANDES DE QUEIROZ em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-21T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 30366/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 30366/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-08-21T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2656920248",
+   "garantido": false
+  },
+  {
+   "numero": "024.312/2024-0",
+   "id": "02431220240",
+   "codigo": "76933644",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "natureza": "Representação",
+   "unidades": [
+    "MEC - Ministério da Educação"
+   ],
+   "interessados": [],
+   "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": "acompanhado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-20T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, prevista para 25/08/2026, às 15h.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-19T00:00:00+00:00",
+     "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 19/08/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-21T00:00:00+00:00",
+    "descricao": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
+   "atualizado_em": "2026-08-21T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2431220240",
+   "garantido": true
   },
   {
    "numero": "014.219/2026-3",
@@ -1008,52 +1449,6 @@
    "garantido": false
   },
   {
-   "numero": "011.358/2026-2",
-   "id": "01135820262",
-   "codigo": "80345619",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
-   "natureza": "Representação",
-   "unidades": [
-    "GM/MTE - Gabinete do Ministro - Mte (extinto)"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-08-20T00:00:00+00:00",
-     "descricao": "Registrada resposta de comunicação do Ofício 27953/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-20T00:00:00+00:00",
-     "descricao": "Peça No. 54 do tipo Resposta de comunicação (doc 80.924.520-6) desentranhada do processo por Secomp-1 - Motivo: Erro na juntada",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-20T00:00:00+00:00",
-    "descricao": "Registrada resposta de comunicação do Ofício 27953/2026-TCU/Seproc.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada resposta de comunicação do Ofício 27953/2026-TCU/Seproc.",
-   "atualizado_em": "2026-08-20T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1135820262",
-   "garantido": true
-  },
-  {
    "numero": "011.601/2025-6",
    "id": "01160120256",
    "codigo": "78301273",
@@ -1110,54 +1505,6 @@
    "atualizado_em": "2026-08-20T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1160120256",
    "garantido": false
-  },
-  {
-   "numero": "024.312/2024-0",
-   "id": "02431220240",
-   "codigo": "76933644",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "natureza": "Representação",
-   "unidades": [
-    "MEC - Ministério da Educação"
-   ],
-   "interessados": [],
-   "orgaos": [],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [],
-   "vinculo": "acompanhado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-08-20T00:00:00+00:00",
-     "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, prevista para 25/08/2026, às 15h.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-19T00:00:00+00:00",
-     "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 19/08/2026, às 14h30.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-14T00:00:00+00:00",
-     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 19/08/2026, às 14h30.",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-20T00:00:00+00:00",
-    "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, prevista para 25/08/2026, às 15h.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo incluído na pauta da sessão Extraordinária de Plenário, prevista para 2",
-   "atualizado_em": "2026-08-20T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2431220240",
-   "garantido": true
   },
   {
    "numero": "017.106/2025-7",
@@ -1228,11 +1575,13 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -1476,61 +1825,6 @@
    "garantido": false
   },
   {
-   "numero": "017.183/2026-0",
-   "id": "01718320260",
-   "codigo": "80878386",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Acompanhamento permanente da dívida pública federal",
-   "natureza": "Relatório de Acompanhamento",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-08-14T00:00:00+00:00",
-     "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.878.414-0) publicada no BTCU Controle Externo n° 139, de 14/08/2026.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-13T00:00:00+00:00",
-     "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-13T00:00:00+00:00",
-     "descricao": "Relatoria alterada de relatoria a definir para MIN-AAA por AudFiscal (por Atribuição)",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-14T00:00:00+00:00",
-    "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.878.414-0) publicada no BTCU Controle Externo n° 139, de 14/08/2026.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.878.414-0) publicada no BTCU ",
-   "atualizado_em": "2026-08-14T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1718320260",
-   "garantido": false
-  },
-  {
    "numero": "007.442/2025-4",
    "id": "00744220254",
    "codigo": "77973187",
@@ -1583,54 +1877,6 @@
    "atualizado_em": "2026-08-14T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=744220254",
    "garantido": false
-  },
-  {
-   "numero": "011.685/2026-3",
-   "id": "01168520263",
-   "codigo": "80388372",
-   "estado": "Aberto",
-   "relator": "Walton Alencar Rodrigues",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "unidades": [
-    "BB - Banco do Brasil S.A."
-   ],
-   "interessados": [],
-   "orgaos": [],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [],
-   "vinculo": "acompanhado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-08-14T00:00:00+00:00",
-     "descricao": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-14T00:00:00+00:00",
-     "descricao": "Pronunciamento da AudFiscal concluído",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-13T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Estatísticas SVR Junho) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-14T00:00:00+00:00",
-    "descricao": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
-   "atualizado_em": "2026-08-14T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1168520263",
-   "garantido": true
   },
   {
    "numero": "008.723/2023-0",
@@ -1698,13 +1944,16 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [],
+   "orgaos_interessado": [
+    "SE"
+   ],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -1752,11 +2001,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -1809,12 +2060,14 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -2140,61 +2393,6 @@
    "garantido": false
   },
   {
-   "numero": "006.412/2026-2",
-   "id": "00641220262",
-   "codigo": "80008933",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-08-05T00:00:00+00:00",
-     "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por PROC-JMO",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-05T00:00:00+00:00",
-     "descricao": "Parecer emitido pelo Procurador Júlio Marcelo",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-30T00:00:00+00:00",
-     "descricao": "Processo 009.943/2026-9 foi apensado a este processo por AudFiscal.",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-05T00:00:00+00:00",
-    "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por PROC-JMO",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Enviado para pronunciamento do Ministro Antonio Anastasia por PROC-JMO",
-   "atualizado_em": "2026-08-05T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=641220262",
-   "garantido": false
-  },
-  {
    "numero": "008.798/2025-7",
    "id": "00879820257",
    "codigo": "78141261",
@@ -2465,12 +2663,14 @@
    "interessados": [],
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": "1924/2026",
@@ -2613,64 +2813,6 @@
    "fase_atual": "Processo enviado de Seproc para AudPortoFerrovia/AudPortoFerrovia-ASS. (Assessor",
    "atualizado_em": "2026-07-22T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1593920251",
-   "garantido": false
-  },
-  {
-   "numero": "012.513/2026-1",
-   "id": "01251320261",
-   "codigo": "80438250",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "2ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "ANP - Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
-    "BCB - Banco Central do Brasil"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-07-20T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-10T00:00:00+00:00",
-     "descricao": "Documento Despacho de expediente (despacho de expediente) juntado ao processo por Seproc",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-10T00:00:00+00:00",
-     "descricao": "Documento Pedido de prorrogação de prazo juntado ao processo por Seproc",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-20T00:00:00+00:00",
-    "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
-   "atualizado_em": "2026-07-20T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1251320261",
    "garantido": false
   },
   {
@@ -2984,11 +3126,13 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": "573/2026",
@@ -3082,64 +3226,6 @@
    "fase_atual": "Registrada resposta de comunicação do Ofício 18393/2026-TCU/Seproc.",
    "atualizado_em": "2026-06-26T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1498420253",
-   "garantido": false
-  },
-  {
-   "numero": "022.280/2024-3",
-   "id": "02228020243",
-   "codigo": "76786659",
-   "estado": "Aberto",
-   "relator": "Jorge Oliveira",
-   "assunto": "Auditoria operacional sobre a estrutura e o funcionamento da Aneel, ANP, Anatel e ANM",
-   "natureza": "Relatório de Auditoria",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "Agência Nacional de Mineração",
-    "ANATEL - Agência Nacional de Telecomunicações"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-06-25T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 24007/2026-TCU/Seproc via CONECTA TCU por VARLONE BATISTA SAMPAIO em nome de Agência Nacional de Telecomunicações",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-06-25T00:00:00+00:00",
-     "descricao": "Juntada comunicação Ofício 24007/2026 por unidade Seproc em virtude de expedição",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-06-03T00:00:00+00:00",
-     "descricao": "Processo 000.912/2026-3 foi apensado a este processo por AudRecursos.",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-06-25T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 24007/2026-TCU/Seproc via CONECTA TCU por VARLONE BATISTA SAMPAIO em nome de Agência Nacional de Telecomunicações",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 24007/2026-TCU/Seproc via CONECTA TC",
-   "atualizado_em": "2026-06-25T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2228020243",
    "garantido": false
   },
   {
@@ -3262,11 +3348,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3315,12 +3403,14 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3372,11 +3462,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3746,11 +3838,13 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -3853,13 +3947,16 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [],
+   "orgaos_interessado": [
+    "SE"
+   ],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -4334,6 +4431,48 @@
  ],
  "movimentacoes_recentes": [
   {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 26/08/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "012.513/2026-1",
+   "assunto": "2ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto",
+   "evento": "pauta"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 26/08/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto",
+   "evento": "pauta"
+  },
+  {
+   "data": "2026-08-20T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, prevista para 25/08/2026, às 15h.",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.312/2024-0",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto",
+   "evento": "pauta"
+  },
+  {
    "data": "2026-08-20T00:00:00+00:00",
    "descricao": "Acórdão 2175/2026 — Plenário",
    "fase": "Julgado",
@@ -4378,18 +4517,6 @@
    "evento": "acordao"
   },
   {
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, prevista para 25/08/2026, às 15h.",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.312/2024-0",
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "natureza": "Representação",
-   "orgaos": [],
-   "estado": "Aberto",
-   "evento": "pauta"
-  },
-  {
    "data": "2026-08-14T00:00:00+00:00",
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 19/08/2026, às 14h30.",
    "fase": null,
@@ -4401,18 +4528,6 @@
     "MPO",
     "SOF"
    ],
-   "estado": "Aberto",
-   "evento": "pauta"
-  },
-  {
-   "data": "2026-08-14T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 19/08/2026, às 14h30.",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.312/2024-0",
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "natureza": "Representação",
-   "orgaos": [],
    "estado": "Aberto",
    "evento": "pauta"
   },
@@ -4431,27 +4546,34 @@
    ],
    "estado": "Aberto",
    "evento": "pauta"
-  },
-  {
-   "data": "2026-07-23T00:00:00+00:00",
-   "descricao": "Acórdão 1924/2026 — Plenário",
-   "fase": "Julgado",
-   "acordao": "1924/2026",
-   "processo": "021.399/2025-5",
-   "assunto": "Acompanhamento para avaliação de maturidade  da implementação da Política Compromisso Nacional Criança Alfabetizada (CNCA), para atendimento ao RePP 2026",
-   "natureza": "Acompanhamento",
-   "orgaos": [
-    "AECI",
-    "MPO"
-   ],
-   "estado": "Aberto",
-   "evento": "acordao"
   }
  ],
  "movimentacoes": [
   {
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Processo excluído de pauta durante a sessão Ordinária do Plenário em 19/08/2026",
+   "data": "2026-08-23T00:00:00+00:00",
+   "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-WAR",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.685/2026-3",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-23T00:00:00+00:00",
+   "descricao": "Despacho de Cautelar oficializado.",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.685/2026-3",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 32443/2026-TCU/Seproc via CONECTA TCU por LIDIANE DIAS TANAN em nome de Agência Nacional de Energia Elétrica",
    "fase": null,
    "acordao": null,
    "processo": "017.226/2026-0",
@@ -4461,6 +4583,185 @@
     "MPO",
     "SOF"
    ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 32445/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.226/2026-0",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 32446/2026 por unidade Seproc em virtude de expedição",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.226/2026-0",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Documento Despacho de expediente (Excerto para apresentacao da equipe ) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.183/2026-0",
+   "assunto": "Acompanhamento permanente da dívida pública federal",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (RREO junho de 2026) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "014.609/2026-6",
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (RARDP 3º BIMESTRE DE 2026) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "014.609/2026-6",
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 26/08/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "012.513/2026-1",
+   "assunto": "2ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 26/08/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Documento Petição juntado ao processo por AudElétrica",
+   "fase": null,
+   "acordao": null,
+   "processo": "022.280/2024-3",
+   "assunto": "Auditoria operacional sobre a estrutura e o funcionamento da Aneel, ANP, Anatel e ANM",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudBenefícios/Ditrab. (Diretoria de Trabalho)",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.358/2026-2",
+   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.358/2026-2",
+   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 30364/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.770/2025-6",
+   "assunto": "Monitoramento das deliberações endereçadas ao IBGE, MMA e ao MPO no Acórdão 1708/2025-Plenário no âmbito do Processo 020.665/2023-7 - Auditoria operacional em contas econômicas ambientais",
+   "natureza": "Monitoramento",
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 30366/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+   "fase": null,
+   "acordao": null,
+   "processo": "026.569/2024-8",
+   "assunto": "Monitoramento das deliberações do Acórdão 2201/2024-Plenário, proferido no âmbito do TC 032.255/2023-3, que tratou de auditoria operacional para avaliar a governança instituída em âmbito federal para enfrentamento da crise climática",
+   "natureza": "Monitoramento",
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.312/2024-0",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "natureza": "Representação",
+   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -4475,6 +4776,31 @@
     "MPO",
     "SOF"
    ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-20T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 27953/2026-TCU/Seproc.",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.358/2026-2",
+   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-20T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, prevista para 25/08/2026, às 15h.",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.312/2024-0",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "natureza": "Representação",
+   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -4661,32 +4987,6 @@
   },
   {
    "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 27953/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.358/2026-2",
-   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Peça No. 54 do tipo Resposta de comunicação (doc 80.924.520-6) desentranhada do processo por Secomp-1 - Motivo: Erro na juntada",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.358/2026-2",
-   "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-20T00:00:00+00:00",
    "descricao": "Processo enviado de MIN-JGO para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
    "fase": null,
    "acordao": null,
@@ -4725,55 +5025,16 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-08-20T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, prevista para 25/08/2026, às 15h.",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.312/2024-0",
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "natureza": "Representação",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-08-19T00:00:00+00:00",
-   "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AAA",
+   "descricao": "Registrada ciência de comunicação do Ofício 30365/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
    "fase": null,
    "acordao": null,
-   "processo": "017.226/2026-0",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "natureza": "Representação",
+   "processo": "026.569/2024-8",
+   "assunto": "Monitoramento das deliberações do Acórdão 2201/2024-Plenário, proferido no âmbito do TC 032.255/2023-3, que tratou de auditoria operacional para avaliar a governança instituída em âmbito federal para enfrentamento da crise climática",
+   "natureza": "Monitoramento",
    "orgaos": [
     "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-19T00:00:00+00:00",
-   "descricao": "Despacho oficializado.",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.226/2026-0",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-19T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (FMI - 2026 ARTICLE IV CONSULTATION) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "014.609/2026-6",
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -4810,7 +5071,8 @@
    "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -4823,7 +5085,8 @@
    "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -4947,7 +5210,8 @@
    "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -4967,6 +5231,31 @@
   },
   {
    "data": "2026-08-14T00:00:00+00:00",
+   "descricao": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.685/2026-3",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-14T00:00:00+00:00",
+   "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.878.414-0) publicada no BTCU Controle Externo n° 139, de 14/08/2026.",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.183/2026-0",
+   "assunto": "Acompanhamento permanente da dívida pública federal",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-14T00:00:00+00:00",
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 19/08/2026, às 14h30.",
    "fase": null,
    "acordao": null,
@@ -4981,17 +5270,6 @@
   },
   {
    "data": "2026-08-14T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 19/08/2026, às 14h30.",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.312/2024-0",
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "natureza": "Representação",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-14T00:00:00+00:00",
    "descricao": "Documento Pesquisa de endereço (modeloDespachoInseridoParaEndereco) juntado ao processo por Seproc",
    "fase": null,
    "acordao": null,
@@ -5000,20 +5278,6 @@
    "natureza": "Tomada de Contas Especial",
    "orgaos": [
     "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-14T00:00:00+00:00",
-   "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.878.414-0) publicada no BTCU Controle Externo n° 139, de 14/08/2026.",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.183/2026-0",
-   "assunto": "Acompanhamento permanente da dívida pública federal",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -5041,28 +5305,6 @@
    "orgaos": [
     "MPO"
    ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-14T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Walton Alencar Rodrigues por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.685/2026-3",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-14T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.685/2026-3",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -5103,15 +5345,29 @@
   },
   {
    "data": "2026-08-13T00:00:00+00:00",
-   "descricao": "Relatoria alterada de relatoria a definir para MIN-AAA por AudFiscal (por Atribuição)",
+   "descricao": "Registrada ciência de comunicação do Ofício 30363/2026-TCU/Seproc via CONECTA TCU por Gilvan Varcacio Ferreira em nome de Secretaria-Executiva do Ministério do Meio Ambiente e Mudança do Clima",
    "fase": null,
    "acordao": null,
-   "processo": "017.183/2026-0",
-   "assunto": "Acompanhamento permanente da dívida pública federal",
-   "natureza": "Relatório de Acompanhamento",
+   "processo": "024.770/2025-6",
+   "assunto": "Monitoramento das deliberações endereçadas ao IBGE, MMA e ao MPO no Acórdão 1708/2025-Plenário no âmbito do Processo 020.665/2023-7 - Auditoria operacional em contas econômicas ambientais",
+   "natureza": "Monitoramento",
    "orgaos": [
     "MPO",
-    "SOF"
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-13T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 30367/2026-TCU/Seproc via CONECTA TCU por MICHELLE FERNANDES DE QUEIROZ em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
+   "fase": null,
+   "acordao": null,
+   "processo": "026.569/2024-8",
+   "assunto": "Monitoramento das deliberações do Acórdão 2201/2024-Plenário, proferido no âmbito do TC 032.255/2023-3, que tratou de auditoria operacional para avaliar a governança instituída em âmbito federal para enfrentamento da crise climática",
+   "natureza": "Monitoramento",
+   "orgaos": [
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5126,17 +5382,6 @@
    "orgaos": [
     "MPO"
    ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-13T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Estatísticas SVR Junho) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.685/2026-3",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -5160,6 +5405,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5174,6 +5420,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5188,6 +5435,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5202,6 +5450,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5216,6 +5465,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5231,6 +5481,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5246,6 +5497,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5261,7 +5513,22 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-12T00:00:00+00:00",
+   "descricao": "Documento Deliberação originária juntado ao processo por Seproc",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.770/2025-6",
+   "assunto": "Monitoramento das deliberações endereçadas ao IBGE, MMA e ao MPO no Acórdão 1708/2025-Plenário no âmbito do Processo 020.665/2023-7 - Auditoria operacional em contas econômicas ambientais",
+   "natureza": "Monitoramento",
+   "orgaos": [
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5288,6 +5555,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5391,6 +5659,34 @@
   },
   {
    "data": "2026-08-05T00:00:00+00:00",
+   "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por PROC-JMO",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-05T00:00:00+00:00",
+   "descricao": "Parecer emitido pelo Procurador Júlio Marcelo",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-05T00:00:00+00:00",
    "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por Seproc",
    "fase": null,
    "acordao": null,
@@ -5439,34 +5735,6 @@
    "processo": "016.141/2026-1",
    "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
    "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-05T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por PROC-JMO",
-   "fase": null,
-   "acordao": null,
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-05T00:00:00+00:00",
-   "descricao": "Parecer emitido pelo Procurador Júlio Marcelo",
-   "fase": null,
-   "acordao": null,
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
     "SOF"
@@ -5550,20 +5818,6 @@
    "natureza": "Tomada de Contas Especial",
    "orgaos": [
     "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-30T00:00:00+00:00",
-   "descricao": "Processo 009.943/2026-9 foi apensado a este processo por AudFiscal.",
-   "fase": null,
-   "acordao": null,
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -5702,7 +5956,8 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5716,7 +5971,8 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5730,7 +5986,8 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5797,7 +6054,8 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5855,19 +6113,6 @@
   },
   {
    "data": "2026-07-20T00:00:00+00:00",
-   "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por Seproc",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.601/2025-6",
-   "assunto": "Monitoramento das determinações feitas ao MT e à  ANTT por meio do Acórdão  522/2025-Plenário (006.626/2024-6) relacionadas com a FCA.",
-   "natureza": "Monitoramento",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-20T00:00:00+00:00",
    "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
    "fase": null,
    "acordao": null,
@@ -5877,6 +6122,19 @@
    "orgaos": [
     "MPO",
     "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-20T00:00:00+00:00",
+   "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por Seproc",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.601/2025-6",
+   "assunto": "Monitoramento das determinações feitas ao MT e à  ANTT por meio do Acórdão  522/2025-Plenário (006.626/2024-6) relacionadas com a FCA.",
+   "natureza": "Monitoramento",
+   "orgaos": [
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5918,6 +6176,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6043,20 +6302,6 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-10T00:00:00+00:00",
-   "descricao": "Documento Pedido de prorrogação de prazo juntado ao processo por Seproc",
-   "fase": null,
-   "acordao": null,
-   "processo": "012.513/2026-1",
-   "assunto": "2ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-07-09T00:00:00+00:00",
    "descricao": "Acórdão 1803/2026 — Plenário",
    "fase": "Julgado",
@@ -6078,7 +6323,8 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6103,34 +6349,6 @@
    "processo": "014.984/2025-3",
    "assunto": "Acompanhamento da Execução do Orçamento de Investimentos das Estatais e do Programa de Dispêndios Globais -  1º a 3º trimestre de 2025",
    "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-25T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 24007/2026-TCU/Seproc via CONECTA TCU por VARLONE BATISTA SAMPAIO em nome de Agência Nacional de Telecomunicações",
-   "fase": null,
-   "acordao": null,
-   "processo": "022.280/2024-3",
-   "assunto": "Auditoria operacional sobre a estrutura e o funcionamento da Aneel, ANP, Anatel e ANM",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-25T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 24007/2026 por unidade Seproc em virtude de expedição",
-   "fase": null,
-   "acordao": null,
-   "processo": "022.280/2024-3",
-   "assunto": "Auditoria operacional sobre a estrutura e o funcionamento da Aneel, ANP, Anatel e ANM",
-   "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
     "SOF"
@@ -6311,20 +6529,6 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-06-03T00:00:00+00:00",
-   "descricao": "Processo 000.912/2026-3 foi apensado a este processo por AudRecursos.",
-   "fase": null,
-   "acordao": null,
-   "processo": "022.280/2024-3",
-   "assunto": "Auditoria operacional sobre a estrutura e o funcionamento da Aneel, ANP, Anatel e ANM",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-05-27T00:00:00+00:00",
    "descricao": "Processo enviado de AudUrbana para MIN-BZ/não definida.",
    "fase": null,
@@ -6334,6 +6538,7 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6349,6 +6554,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6364,6 +6570,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6379,6 +6586,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6393,6 +6601,7 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6407,6 +6616,7 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6421,6 +6631,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6435,6 +6646,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6775,7 +6987,8 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6788,7 +7001,8 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6801,7 +7015,8 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6814,7 +7029,8 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6827,7 +7043,8 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6880,6 +7097,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6894,6 +7112,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6908,6 +7127,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6977,6 +7197,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6990,7 +7211,8 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -7071,88 +7293,6 @@
    "processo": "008.930/2025-2",
    "assunto": "008.930/2025-2 - Relatório de Levantamento",
    "natureza": "Relatório de Levantamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2025-10-21T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Pacote R: cenários estocásticos da dívida pública ) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "008.930/2025-2",
-   "assunto": "008.930/2025-2 - Relatório de Levantamento",
-   "natureza": "Relatório de Levantamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2025-10-20T00:00:00+00:00",
-   "descricao": "Documento Termo juntado ao processo via CONECTA TCU por RODRIGO LEITAO REQUENA",
-   "fase": null,
-   "acordao": null,
-   "processo": "020.662/2023-8",
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "natureza": "Solicitação de Solução Consensual",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2025-10-06T00:00:00+00:00",
-   "descricao": "Processo excluído da pauta da sessão Ordinária de Primeira Câmara, prevista para 07/10/2025, às 15h",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.409/2025-3",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Esclarecimentos sobre a aplicação do entendimento do Acórdão nº 1103/2024-Plenário à situação tratada no Acórdão nº 1649/2024-Plenário, envolvendo a recomposição do limite de gastos do Ministério Público da União.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2025-10-02T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 35491/2025-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "020.662/2023-8",
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "natureza": "Solicitação de Solução Consensual",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2025-10-02T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Primeira Câmara, prevista para 07/10/2025, às 15h.",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.409/2025-3",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Esclarecimentos sobre a aplicação do entendimento do Acórdão nº 1103/2024-Plenário à situação tratada no Acórdão nº 1649/2024-Plenário, envolvendo a recomposição do limite de gastos do Ministério Público da União.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2025-09-29T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Jhonatan de Jesus por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.409/2025-3",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Esclarecimentos sobre a aplicação do entendimento do Acórdão nº 1103/2024-Plenário à situação tratada no Acórdão nº 1649/2024-Plenário, envolvendo a recomposição do limite de gastos do Ministério Público da União.)",
-   "natureza": "Representação",
    "orgaos": [
     "MPO",
     "SOF"
