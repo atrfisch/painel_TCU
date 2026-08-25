@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-08-25T09:34:37.286976+00:00",
- "gerado_em_br": "25/08/2026 às 09:34",
+ "gerado_em": "2026-08-25T13:57:46.489765+00:00",
+ "gerado_em_br": "25/08/2026 às 13:57",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -9,14 +9,14 @@
   "processos": 75,
   "movimentacoes": 223,
   "abertos": 75,
-  "encerrados_ocultos": 563,
+  "encerrados_ocultos": 562,
   "so_interesse": 36
  },
  "garantidos": [
+  "011.685/2026-3",
   "017.183/2026-0",
   "025.632/2024-8",
   "005.104/2023-8",
-  "011.685/2026-3",
   "024.312/2024-0",
   "011.358/2026-2",
   "017.106/2025-7",
@@ -28,7 +28,29 @@
   "011.526/2022-0"
  ],
  "novos_processos": [],
- "andamentos_novos": [],
+ "andamentos_novos": [
+  {
+   "processo": "014.609/2026-6",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "data": "2026-08-25T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 0142/2026-TCU/AudFiscal.",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "011.685/2026-3",
+   "orgaos": [],
+   "assunto": "011.685/2026-3 - Denúncia",
+   "data": "2026-08-25T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 33193/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
+   "acordao": null,
+   "novo_no_radar": false
+  }
+ ],
  "tem_baseline": true,
  "por_orgao": [
   {
@@ -48,9 +70,9 @@
   {
    "orgao": "SE",
    "nome": "Secretaria-Executiva do MPO",
-   "total": 18,
+   "total": 6,
    "como_unidade": 0,
-   "como_interessado": 18
+   "como_interessado": 6
   },
   {
    "orgao": "SOF",
@@ -76,12 +98,12 @@
  ],
  "por_tipo": [
   {
-   "tipo": "Relatório de Auditoria",
+   "tipo": "Relatório de Acompanhamento",
    "total": 16,
    "abertos": 16
   },
   {
-   "tipo": "Relatório de Acompanhamento",
+   "tipo": "Relatório de Auditoria",
    "total": 16,
    "abertos": 16
   },
@@ -172,11 +194,11 @@
    "total": 7
   },
   {
-   "relator": "Odair Cunha",
+   "relator": "Walton Alencar Rodrigues",
    "total": 4
   },
   {
-   "relator": "Walton Alencar Rodrigues",
+   "relator": "Odair Cunha",
    "total": 4
   },
   {
@@ -198,6 +220,23 @@
    "assunto": "Representação referente ao ato de gestão (Objeto: Possível subavaliação de impactos fiscais decorrentes da utilização de fundos públicos, fundos garantidores, créditos subsidiados e créditos extraordinários.)",
    "relator": "Jhonatan de Jesus",
    "movimentacoes_mes": 4
+  },
+  {
+   "processo": "014.609/2026-6",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "011.685/2026-3",
+   "orgaos": [],
+   "assunto": "011.685/2026-3 - Denúncia",
+   "relator": "Walton Alencar Rodrigues",
+   "movimentacoes_mes": 3
   },
   {
    "processo": "018.198/2026-0",
@@ -230,16 +269,6 @@
    "movimentacoes_mes": 3
   },
   {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  },
-  {
    "processo": "010.183/2026-4",
    "orgaos": [
     "MPO",
@@ -258,21 +287,115 @@
    "assunto": "006.750/2026-5 - Relatório de Levantamento",
    "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
-  },
-  {
-   "processo": "025.632/2024-8",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "relator": "Bruno Dantas",
-   "movimentacoes_mes": 3
   }
  ],
  "processos": [
+  {
+   "numero": "014.609/2026-6",
+   "id": "01460920266",
+   "codigo": "80607514",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "BCB - Banco Central do Brasil",
+    "INSS - Instituto Nacional do Seguro Social"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [
+    "MPO"
+   ],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-25T00:00:00+00:00",
+     "descricao": "Registrada resposta de comunicação do Ofício 0142/2026-TCU/AudFiscal.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-24T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Relatório para comentários dos gestores) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-21T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (RREO junho de 2026) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-25T00:00:00+00:00",
+    "descricao": "Registrada resposta de comunicação do Ofício 0142/2026-TCU/AudFiscal.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada resposta de comunicação do Ofício 0142/2026-TCU/AudFiscal.",
+   "atualizado_em": "2026-08-25T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1460920266",
+   "garantido": false
+  },
+  {
+   "numero": "011.685/2026-3",
+   "id": "01168520263",
+   "codigo": "80388372",
+   "estado": "Aberto",
+   "relator": "Walton Alencar Rodrigues",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "unidades": [
+    "BB - Banco do Brasil S.A."
+   ],
+   "interessados": [],
+   "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": null,
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-25T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 33193/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-24T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, de 25/08/2026, às 15h.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-24T00:00:00+00:00",
+     "descricao": "Cadastrada representação legal 11704/2026 (representante CRISTIANE CARDOSO AVOLIO GOMES) por AudFiscal",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-25T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 33193/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 33193/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-08-25T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1168520263",
+   "garantido": true
+  },
   {
    "numero": "018.198/2026-0",
    "id": "01819820260",
@@ -442,64 +565,6 @@
    "garantido": true
   },
   {
-   "numero": "014.609/2026-6",
-   "id": "01460920266",
-   "codigo": "80607514",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "BCB - Banco Central do Brasil",
-    "INSS - Instituto Nacional do Seguro Social"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-08-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Relatório para comentários dos gestores) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-21T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (RREO junho de 2026) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-21T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (RARDP 3º BIMESTRE DE 2026) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-24T00:00:00+00:00",
-    "descricao": "Documento Elementos comprobatórios/Evidências (Relatório para comentários dos gestores) juntado ao processo por AudFiscal",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Elementos comprobatórios/Evidências (Relatório para comentários dos ge",
-   "atualizado_em": "2026-08-24T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1460920266",
-   "garantido": false
-  },
-  {
    "numero": "010.183/2026-4",
    "id": "01018320264",
    "codigo": "80315512",
@@ -628,14 +693,12 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -815,54 +878,6 @@
    "fase_atual": "Processo 016.375/2024-6 foi apensado a este processo por AudPortoFerrovia.",
    "atualizado_em": "2026-08-24T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=510420238",
-   "garantido": true
-  },
-  {
-   "numero": "011.685/2026-3",
-   "id": "01168520263",
-   "codigo": "80388372",
-   "estado": "Aberto",
-   "relator": "Walton Alencar Rodrigues",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "unidades": [
-    "BB - Banco do Brasil S.A."
-   ],
-   "interessados": [],
-   "orgaos": [],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [],
-   "vinculo": null,
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-08-24T00:00:00+00:00",
-     "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, de 25/08/2026, às 15h.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-24T00:00:00+00:00",
-     "descricao": "Cadastrada representação legal 11704/2026 (representante CRISTIANE CARDOSO AVOLIO GOMES) por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-24T00:00:00+00:00",
-     "descricao": "Cadastrada representação legal 11703/2026 (representante CRISTIANE CARDOSO AVOLIO GOMES) por AudFiscal",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-24T00:00:00+00:00",
-    "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, de 25/08/2026, às 15h.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo incluído na pauta da sessão Extraordinária de Plenário, de 25/08/2026, ",
-   "atualizado_em": "2026-08-24T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1168520263",
    "garantido": true
   },
   {
@@ -1085,13 +1100,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -1643,13 +1656,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -1962,16 +1973,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [
-    "SE"
-   ],
+   "orgaos_interessado": [],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -2019,13 +2027,11 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -2579,14 +2585,12 @@
    "interessados": [],
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": "1924/2026",
@@ -3042,13 +3046,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": "573/2026",
@@ -3264,13 +3266,11 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3319,14 +3319,12 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3378,13 +3376,11 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3754,13 +3750,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -3863,16 +3857,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [
-    "SE"
-   ],
+   "orgaos_interessado": [],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -4478,6 +4469,67 @@
  ],
  "movimentacoes": [
   {
+   "data": "2026-08-25T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 0142/2026-TCU/AudFiscal.",
+   "fase": null,
+   "acordao": null,
+   "processo": "014.609/2026-6",
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-25T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 33193/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.685/2026-3",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-24T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Relatório para comentários dos gestores) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "014.609/2026-6",
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-24T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, de 25/08/2026, às 15h.",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.685/2026-3",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-24T00:00:00+00:00",
+   "descricao": "Cadastrada representação legal 11704/2026 (representante CRISTIANE CARDOSO AVOLIO GOMES) por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.685/2026-3",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
    "data": "2026-08-24T00:00:00+00:00",
    "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
    "fase": null,
@@ -4577,20 +4629,6 @@
   },
   {
    "data": "2026-08-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Relatório para comentários dos gestores) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "014.609/2026-6",
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-24T00:00:00+00:00",
    "descricao": "Distribuído para o gabinete do Procurador Rodrigo Lima",
    "fase": null,
    "acordao": null,
@@ -4656,7 +4694,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4672,7 +4709,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4688,7 +4724,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4746,36 +4781,17 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-08-24T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Extraordinária de Plenário, de 25/08/2026, às 15h.",
+   "data": "2026-08-21T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (RREO junho de 2026) juntado ao processo por AudFiscal",
    "fase": null,
    "acordao": null,
-   "processo": "011.685/2026-3",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-24T00:00:00+00:00",
-   "descricao": "Cadastrada representação legal 11704/2026 (representante CRISTIANE CARDOSO AVOLIO GOMES) por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.685/2026-3",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-24T00:00:00+00:00",
-   "descricao": "Cadastrada representação legal 11703/2026 (representante CRISTIANE CARDOSO AVOLIO GOMES) por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.685/2026-3",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "orgaos": [],
+   "processo": "014.609/2026-6",
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
    "estado": "Aberto"
   },
   {
@@ -4800,34 +4816,6 @@
    "processo": "017.226/2026-0",
    "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
    "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-21T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (RREO junho de 2026) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "014.609/2026-6",
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-21T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (RARDP 3º BIMESTRE DE 2026) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "014.609/2026-6",
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
     "SOF"
@@ -4896,8 +4884,7 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -4910,8 +4897,7 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -4991,8 +4977,7 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5208,8 +5193,7 @@
    "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5222,8 +5206,7 @@
    "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5347,8 +5330,7 @@
    "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5505,7 +5487,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5520,7 +5501,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5535,7 +5515,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5550,7 +5529,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5565,7 +5543,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5607,7 +5584,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6008,8 +5984,7 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6023,8 +5998,7 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6038,8 +6012,7 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6106,8 +6079,7 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6345,8 +6317,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6560,7 +6531,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6576,7 +6546,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6592,7 +6561,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6608,7 +6576,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6623,7 +6590,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6638,7 +6604,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6653,7 +6618,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6668,7 +6632,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6995,8 +6958,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7009,8 +6971,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7023,8 +6984,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7037,8 +6997,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7051,8 +7010,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7105,7 +7063,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7120,7 +7077,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7135,7 +7091,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7205,7 +7160,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7219,8 +7173,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   }
