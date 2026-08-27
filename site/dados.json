@@ -1,13 +1,13 @@
 {
  "versao": 2,
- "gerado_em": "2026-08-27T13:35:25.906475+00:00",
- "gerado_em_br": "27/08/2026 às 13:35",
+ "gerado_em": "2026-08-27T13:54:36.951432+00:00",
+ "gerado_em_br": "27/08/2026 às 13:54",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
   "processos": 76,
-  "movimentacoes": 225,
+  "movimentacoes": 232,
   "abertos": 76,
   "encerrados_ocultos": 562,
   "so_interesse": 36
@@ -41,16 +41,16 @@
   {
    "orgao": "AECI",
    "nome": "Assessoria Especial de Controle Interno do MPO",
-   "total": 5,
+   "total": 9,
    "como_unidade": 0,
-   "como_interessado": 5
+   "como_interessado": 9
   },
   {
    "orgao": "SE",
    "nome": "Secretaria-Executiva do MPO",
-   "total": 4,
+   "total": 13,
    "como_unidade": 0,
-   "como_interessado": 4
+   "como_interessado": 13
   },
   {
    "orgao": "SOF",
@@ -188,9 +188,113 @@
    "total": 1
   }
  ],
- "por_unidade_resp": [],
- "por_representante": [],
+ "por_unidade_resp": [
+  {
+   "unidade": "AudFiscal",
+   "total": 21
+  },
+  {
+   "unidade": "AudUrbana",
+   "total": 3
+  },
+  {
+   "unidade": "AudSustentabilidade",
+   "total": 2
+  },
+  {
+   "unidade": "AudPetróleo",
+   "total": 2
+  },
+  {
+   "unidade": "AudEducação",
+   "total": 2
+  },
+  {
+   "unidade": "AudSaúde",
+   "total": 2
+  },
+  {
+   "unidade": "AudPessoal",
+   "total": 2
+  },
+  {
+   "unidade": "AudGestãoInovação",
+   "total": 1
+  },
+  {
+   "unidade": "AudTCE",
+   "total": 1
+  },
+  {
+   "unidade": "AudElétrica",
+   "total": 1
+  },
+  {
+   "unidade": "AudBancos",
+   "total": 1
+  },
+  {
+   "unidade": "AudTI",
+   "total": 1
+  }
+ ],
+ "por_representante": [
+  {
+   "representante": "Lucas Furtado",
+   "total": 8
+  },
+  {
+   "representante": "Rodrigo Lima",
+   "total": 6
+  },
+  {
+   "representante": "Cristina Machado",
+   "total": 5
+  },
+  {
+   "representante": "Júlio Marcelo",
+   "total": 5
+  },
+  {
+   "representante": "Paulo Bugarin",
+   "total": 4
+  },
+  {
+   "representante": "Sergio Caribé",
+   "total": 4
+  },
+  {
+   "representante": "Marinus Marsico",
+   "total": 3
+  },
+  {
+   "representante": "Lucas Furtado, Cristina Machado",
+   "total": 1
+  },
+  {
+   "representante": "Cristina Machado, Paulo Bugarin, Júlio Marcelo",
+   "total": 1
+  },
+  {
+   "representante": "Sergio Caribé, Lucas Furtado",
+   "total": 1
+  },
+  {
+   "representante": "Lucas Furtado, Paulo Bugarin",
+   "total": 1
+  }
+ ],
  "ranking_mes": [
+  {
+   "processo": "017.191/2026-2",
+   "orgaos": [
+    "MPO",
+    "SMA"
+   ],
+   "assunto": "Acompanhamento dos benefícios fiscais",
+   "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 5
+  },
   {
    "processo": "014.219/2026-3",
    "orgaos": [
@@ -258,16 +362,6 @@
    ],
    "assunto": "Monitoramento das determinações feitas ao MT e à  ANTT por meio do Acórdão  522/2025-Plenário (006.626/2024-6) relacionadas com a FCA.",
    "relator": "Jorge Oliveira",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "018.320/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Evolução das despesas obrigatórias da União e sua compatibilidade com o Regime Fiscal Sustentável e metas fiscais.)",
-   "relator": "Bruno Dantas",
    "movimentacoes_mes": 3
   }
  ],
@@ -404,8 +498,8 @@
    "relator": "Bruno Dantas",
    "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
    "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudGestãoInovação",
+   "representante_mp": "Rodrigo Lima",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "SRI/PR - Secretaria de Relações Institucionais da Presidência da República"
@@ -581,8 +675,8 @@
    "relator": "Antonio Anastasia",
    "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto:  Representação para realizar acompanhamento da evolução do déficit primário do governo \r\ncentral e das causas de sua deterioração, apurando se a proximidade do pleito eleitoral \r\nde 2026 concorreu para o agravamento do déficit nas contas do governo central)",
    "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Cristina Machado",
    "unidades": [],
    "interessados": [],
    "orgaos": [
@@ -639,19 +733,21 @@
    "relator": "Augusto Nardes",
    "assunto": "Monitoramento das deliberações endereçadas ao IBGE, MMA e ao MPO no Acórdão 1708/2025-Plenário no âmbito do Processo 020.665/2023-7 - Auditoria operacional em contas econômicas ambientais",
    "natureza": "Monitoramento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudSustentabilidade",
+   "representante_mp": "Paulo Bugarin",
    "unidades": [
     "IBGE - Fundação Instituto Brasileiro de Geografia e Estatística",
     "MMA - Ministério do Meio Ambiente e Mudança do Clima"
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -793,8 +889,8 @@
    "relator": "Bruno Dantas",
    "assunto": "Representação referente ao ato de gestão (Objeto: Evolução das despesas obrigatórias da União e sua compatibilidade com o Regime Fiscal Sustentável e metas fiscais.)",
    "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Rodrigo Lima",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
@@ -850,22 +946,32 @@
    "relator": "Antonio Anastasia",
    "assunto": "Acompanhamento permanente da dívida pública federal",
    "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Lucas Furtado",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [],
+   "interessados": [
+    "Assessoria Especial de Controle Interno do Ministério da Fazenda",
+    "Secretaria-Executiva do Ministério da Fazenda",
+    "Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento",
+    "Secretaria-Executiva do Ministério do Planejamento e Orçamento"
+   ],
    "orgaos": [
+    "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [],
+   "orgaos_interessado": [
+    "AECI",
+    "SE"
+   ],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -1024,14 +1130,17 @@
    "relator": "Augusto Nardes",
    "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
    "natureza": "Solicitação do Congresso Nacional",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Sergio Caribé",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "Agência Nacional de Mineração",
     "Anac - Agência Nacional de Aviação Civil"
    ],
-   "interessados": [],
+   "interessados": [
+    "Secretaria do Tesouro Nacional",
+    "Secretaria de Orçamento Federal"
+   ],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1078,8 +1187,8 @@
    "relator": "Walton Alencar Rodrigues",
    "assunto": "011.685/2026-3 - Denúncia",
    "natureza": "Denúncia",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Cristina Machado",
    "unidades": [
     "BB - Banco do Brasil S.A."
    ],
@@ -1128,14 +1237,19 @@
    "relator": "Antonio Anastasia",
    "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
    "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Lucas Furtado",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "ANEEL - Agência Nacional de Energia Elétrica",
     "CCEE - Câmara de Comercialização de Energia Elétrica"
    ],
-   "interessados": [],
+   "interessados": [
+    "CÂMARA DE COMERCIALIZAÇÃO DE ENERGIA ELÉTRICA",
+    "Secretaria-Executiva do Ministério de Minas e Energia",
+    "Agência Nacional de Energia Elétrica",
+    "Secretaria de Orçamento Federal"
+   ],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1188,8 +1302,8 @@
    "relator": "Jorge Oliveira",
    "assunto": "Consulta formulada pela Deputado Coronel Meira -\r\nComissão de Segurança Pública e Combate ao Crime \r\nOrganizado - CD, por meio Ofício  Pres. nº 78/2026 - CSPCCO",
    "natureza": "Consulta",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Rodrigo Lima",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "CD - Câmara dos Deputados",
@@ -1246,8 +1360,8 @@
    "relator": "Antonio Anastasia",
    "assunto": "006.750/2026-5 - Relatório de Levantamento",
    "natureza": "Relatório de Levantamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Cristina Machado",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "CC/PR - Casa Civil da Presidência da República",
@@ -1255,14 +1369,19 @@
    ],
    "interessados": [],
    "orgaos": [
+    "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [],
+   "orgaos_interessado": [
+    "AECI",
+    "SE"
+   ],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -1398,8 +1517,8 @@
    "relator": "Antonio Anastasia",
    "assunto": "2ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
    "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Júlio Marcelo",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "ANP - Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
@@ -1610,8 +1729,8 @@
    "relator": "Bruno Dantas",
    "assunto": "Monitoramento das deliberações do Acórdão 2201/2024-Plenário, proferido no âmbito do TC 032.255/2023-3, que tratou de auditoria operacional para avaliar a governança instituída em âmbito federal para enfrentamento da crise climática",
    "natureza": "Monitoramento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudSustentabilidade",
+   "representante_mp": "Lucas Furtado",
    "unidades": [],
    "interessados": [],
    "orgaos": [
@@ -1664,14 +1783,16 @@
    "relator": "Jhonatan de Jesus",
    "assunto": "Consulta acerca da legalidade de autarquia federal, com autonomia administrativa e financeira, que arrecade e seja custeada por receita de natureza jurídica de tarifa (preço público), elaborar sua proposta orçamentária própria.",
    "natureza": "Consulta",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Sergio Caribé",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "CD - Câmara dos Deputados",
     "STN - Secretaria do Tesouro Nacional"
    ],
-   "interessados": [],
+   "interessados": [
+    "Comissão de Agricultura, Pecuária, Abastecimento e Desenvolvimento Rural - CD"
+   ],
    "orgaos": [
     "MPO",
     "SOF"
@@ -1835,8 +1956,8 @@
    "relator": "Augusto Nardes",
    "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
    "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudPetróleo",
+   "representante_mp": "Lucas Furtado, Cristina Machado",
    "unidades": [
     "ANP - Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
     "BNDES - Banco Nacional de Desenvolvimento Econômico e Social",
@@ -1844,14 +1965,16 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
-   "acordao": null,
+   "acordao": "1880/2026",
    "movimentacoes": [
     {
      "data": "2026-08-19T00:00:00+00:00",
@@ -1891,8 +2014,8 @@
    "relator": "Augusto Nardes",
    "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
    "natureza": "Tomada de Contas Especial",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudTCE",
+   "representante_mp": "Cristina Machado, Paulo Bugarin, Júlio Marcelo",
    "unidades": [
     "IFPR - Instituto Federal de Educação, Ciência e Tecnologia do Paraná"
    ],
@@ -1945,8 +2068,8 @@
    "relator": "Bruno Dantas",
    "assunto": "Consulta sobre se os recebimentos decorrentes das novações dos créditos FCVS da Emgea constituem receitas que devem ser consideradas na geração de recursos próprios da empresa e compor o indicador NEFIL do PDG, ou são meras operações financeiras de troca de ativos que não devem influenciar o resultado fiscal.",
    "natureza": "Consulta",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Júlio Marcelo",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "Empresa Gestora de Ativos",
@@ -2107,8 +2230,8 @@
    "relator": "Antonio Anastasia",
    "assunto": "Acompanhamento dos benefícios fiscais",
    "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Lucas Furtado",
    "unidades": [
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
@@ -2140,6 +2263,18 @@
     {
      "data": "2026-08-13T00:00:00+00:00",
      "descricao": "Relatoria alterada de relatoria a definir para MIN-AAA por AudFiscal (por Atribuição)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-13T00:00:00+00:00",
+     "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-13T00:00:00+00:00",
+     "descricao": "Membro do MPTCU designado alterado de a definir para LUCAS FURTADO automaticamente pelo sistema",
      "fase": null,
      "acordao": null
     }
@@ -2221,23 +2356,25 @@
    "relator": "Jorge Oliveira",
    "assunto": "Representação referente ao ato de gestão com Uasg 170250 (Objeto: Elaboração das dotações constantes do Projeto de Lei Orçamentária Anual para o exercício de 2026, no que concerne às despesas obrigatórias do Benefício de Prestação Continuada ¿ BPC e do Seguro-Defeso.)",
    "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Sergio Caribé",
    "unidades": [
     "SPE - Secretaria de Política Econômica"
    ],
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
-   "acordao": null,
+   "acordao": "2052/2026",
    "movimentacoes": [
     {
      "data": "2026-08-13T00:00:00+00:00",
@@ -2277,8 +2414,8 @@
    "relator": "Jorge Oliveira",
    "assunto": "Monitoramento de determinações e recomendações feitas à Aneel, ANM, Anatel, ANP, Casa Civil da Presidência da República, Ministério da Fazenda e Secretaria de Orçamento Federal por meio do Acórdão 280/2026-Plenário (TC 022.280/2024-3 - Avaliação da estrutura e funcionamento da Aneel, ANP, Anatel e ANM)",
    "natureza": "Monitoramento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudElétrica",
+   "representante_mp": "Cristina Machado",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "Agência Nacional de Mineração",
@@ -2335,14 +2472,17 @@
    "relator": "Benjamin Zymler",
    "assunto": "Acompanhamento das Receitas Públicas - PF/BCN 2025",
    "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Cristina Machado",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "PGFN - Procuradoria-Geral da Fazenda Nacional",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
-   "interessados": [],
+   "interessados": [
+    "Assessoria Especial de Controle Interno do Ministério da Fazenda",
+    "Secretaria-Executiva do Ministério da Fazenda"
+   ],
    "orgaos": [
     "MPO",
     "SOF"
@@ -2393,8 +2533,8 @@
    "relator": "Odair Cunha",
    "assunto": "Acompanhamento da aplicação pelo BNDES  dos recursos decorrentes de operações de crédito externo com o New Development Bank e Banco Interamericano de Desenvolvimento-BID.",
    "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudBancos",
+   "representante_mp": "Lucas Furtado",
    "unidades": [
     "BNDES - Banco Nacional de Desenvolvimento Econômico e Social"
    ],
@@ -2512,8 +2652,8 @@
    "relator": "Antonio Anastasia",
    "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
    "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Júlio Marcelo",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "PGFN - Procuradoria-Geral da Fazenda Nacional",
@@ -2686,8 +2826,8 @@
    "relator": "Augusto Nardes",
    "assunto": "Gestão de Riscos e de Desastres (PNPDEC) - ciclo RePP 2026",
    "natureza": "Relatório de Levantamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudUrbana",
+   "representante_mp": "Marinus Marsico",
    "unidades": [
     "Sedec - Secretaria Nacional de Proteção e Defesa Civil"
    ],
@@ -2700,7 +2840,7 @@
     "MPO"
    ],
    "vinculo": "interessado",
-   "acordao": null,
+   "acordao": "1781/2026",
    "movimentacoes": [
     {
      "data": "2026-07-27T00:00:00+00:00",
@@ -2740,23 +2880,34 @@
    "relator": "Antonio Anastasia",
    "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
    "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Marinus Marsico",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "CC/PR - Casa Civil da Presidência da República",
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
-   "interessados": [],
+   "interessados": [
+    "Secretaria-Executiva da Casa Civil da Presidência da República",
+    "Assessoria Especial de Controle Interno do Ministério da Fazenda",
+    "Secretaria-Executiva do Ministério da Fazenda",
+    "Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento",
+    "Secretaria-Executiva do Ministério do Planejamento e Orçamento"
+   ],
    "orgaos": [
+    "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [],
+   "orgaos_interessado": [
+    "AECI",
+    "SE"
+   ],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -2798,21 +2949,31 @@
    "relator": "Jorge Oliveira",
    "assunto": "Acompanhamento para avaliação de maturidade  da implementação da Política Compromisso Nacional Criança Alfabetizada (CNCA), para atendimento ao RePP 2026",
    "natureza": "Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudEducação",
+   "representante_mp": "Sergio Caribé",
    "unidades": [
     "FNDE - Fundo Nacional de Desenvolvimento da Educação",
     "MEC - Ministério da Educação"
    ],
-   "interessados": [],
+   "interessados": [
+    "Secretaria-Executiva do Ministério da Educação",
+    "Assessoria Especial de Controle Interno do Ministério da Educação",
+    "Secretaria-Executiva da Casa Civil da Presidência da República",
+    "Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento",
+    "Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+    "Assessoria Especial de Controle Interno do Ministério da Gestão e da Inovação em Serviços Públicos",
+    "Secretaria-Executiva do Ministério da Gestão e da Inovação em Serviços Públicos"
+   ],
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": "1924/2026",
@@ -2861,8 +3022,8 @@
    "relator": "Jhonatan de Jesus",
    "assunto": "Concessão administrativa para apoio à prestação dos serviços públicos de adução de água bruta do Projeto de Integração do Rio São Francisco com Bacias Hidrográficas do Nordeste Setentrional (PISF)",
    "natureza": "Desestatização",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudUrbana",
+   "representante_mp": "Marinus Marsico",
    "unidades": [
     "SPPI - Secretaria Especial do Programa de Parcerias de Investimento"
    ],
@@ -2875,7 +3036,7 @@
     "MPO"
    ],
    "vinculo": "interessado",
-   "acordao": null,
+   "acordao": "1876/2026",
    "movimentacoes": [
     {
      "data": "2026-07-24T00:00:00+00:00",
@@ -2969,12 +3130,14 @@
    "relator": "Marcos Bemquerer",
    "assunto": "Monitoramento de determinações/recomendações constantes nos subitens 9.2 a 9.6 do Acórdão 1896/2021-TCU-Plenário, proferido no TC 031.532/2020-9, que cuidou de Auditoria de Natureza Operacional, tendo por objeto averiguar a adequabilidade dos componentes de governança do Fundo Setorial do Audiovisual (FSA), o qual constitui a principal política pública de fomento ao setor audiovisual brasileiro",
    "natureza": "Monitoramento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudEducação",
+   "representante_mp": "Lucas Furtado",
    "unidades": [
     "Ancine - Agência Nacional do Cinema"
    ],
-   "interessados": [],
+   "interessados": [
+    "Secretaria-Executiva do Ministério da Cultura"
+   ],
    "orgaos": [
     "SOF"
    ],
@@ -2983,7 +3146,7 @@
     "SOF"
    ],
    "vinculo": "interessado",
-   "acordao": null,
+   "acordao": "740/2026",
    "movimentacoes": [
     {
      "data": "2026-07-18T00:00:00+00:00",
@@ -3017,8 +3180,8 @@
    "relator": "Antonio Anastasia",
    "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  1º Semestre de 2026",
    "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Paulo Bugarin",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
@@ -3074,18 +3237,20 @@
    "relator": "Odair Cunha",
    "assunto": "ACOMPANHAMENTO DOS RISCOS LEVANTADOS NO RELATÓRIO QUE CONDUZIU AO ACÓRDÃO 1.850/2023-2a CÂMARA (TC 011.456/2022-1) E MONITORAMENTO DAS RECOMENDAÇÕES FEITAS A(AO) Ministério da Gestão e da Inovação em Serviços Públicos, Ministério do Planejamento e Orçamento, Secretaria de Governo Digital, POR MEIO DOS ACÓRDÃOS 3145/2020-Plenário E 419/2021-TCU-PLENÁRIO, NO ÂMBITO DOS PROCESSOS 036.673/2019-6 e 038.016/2019-2 (Acompanhamentos de iniciativas estruturantes de transformação digital do Governo Federal e das ações de desburocratização na APF).",
    "natureza": "Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudTI",
+   "representante_mp": "Júlio Marcelo",
    "unidades": [
     "SGD - Secretaria de Governo Digital"
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -3128,8 +3293,8 @@
    "relator": "Walton Alencar Rodrigues",
    "assunto": "Representação referente ao ato de gestão com Uasg 170500 (Objeto: Utilização de recursos oriundos da suspensão das parcelas da dívida do Estado do Rio Grande do Sul com a União no Programa de Subsídio de Juros para Investimentos em Grandes Empreendimentos Voltados ao Turismo no Estado do Rio Grande do Sul (PROGRANTUR).)",
    "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Rodrigo Lima",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "STN - Secretaria do Tesouro Nacional"
@@ -3179,12 +3344,15 @@
    "relator": "Antonio Anastasia",
    "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
    "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Lucas Furtado",
    "unidades": [
     "PGFN - Procuradoria-Geral da Fazenda Nacional"
    ],
-   "interessados": [],
+   "interessados": [
+    "Secretaria do Tesouro Nacional",
+    "Procuradoria-Geral da Fazenda Nacional"
+   ],
    "orgaos": [],
    "orgaos_unidade": [],
    "orgaos_interessado": [],
@@ -3206,6 +3374,36 @@
     {
      "data": "2026-06-12T00:00:00+00:00",
      "descricao": "Peça nº 4 do tipo Portaria de Fiscalização (doc 80.489.924-4) publicada no BTCU Controle Externo n° 96, de 12/06/2026.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-04-07T00:00:00+00:00",
+     "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.099.199-7) publicada no BTCU Controle Externo n° 54, de 07/04/2026.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-04-07T00:00:00+00:00",
+     "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-04-07T00:00:00+00:00",
+     "descricao": "Relatoria alterada de relatoria a definir para MIN-AAA por AudFiscal (por Atribuição)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-04-07T00:00:00+00:00",
+     "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-04-07T00:00:00+00:00",
+     "descricao": "Membro do MPTCU designado alterado de a definir para LUCAS FURTADO automaticamente pelo sistema",
      "fase": null,
      "acordao": null
     }
@@ -3348,14 +3546,16 @@
    "relator": "Walton Alencar Rodrigues",
    "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
    "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudSaúde",
+   "representante_mp": "Sergio Caribé, Lucas Furtado",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "ANS - Agência Nacional de Saúde Suplementar",
     "SE/MS - Secretaria-Executiva do Ministério da Saúde"
    ],
-   "interessados": [],
+   "interessados": [
+    "Conselho Nacional de Justiça"
+   ],
    "orgaos": [
     "MPO",
     "SOF"
@@ -3366,7 +3566,7 @@
    ],
    "orgaos_interessado": [],
    "vinculo": "unidade",
-   "acordao": null,
+   "acordao": "1120/2026",
    "movimentacoes": [
     {
      "data": "2026-06-17T00:00:00+00:00",
@@ -3842,8 +4042,8 @@
    "relator": "Jhonatan de Jesus",
    "assunto": "Auditoria para avaliação das causas e possíveis consequências da diminuição de ofertas de áreas e autorizações para exploração de petróleo",
    "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudPetróleo",
+   "representante_mp": "Lucas Furtado, Paulo Bugarin",
    "unidades": [
     "ANP - Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
     "Ibama - Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis",
@@ -3851,14 +4051,16 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
-   "acordao": null,
+   "acordao": "2620/2025",
    "movimentacoes": [
     {
      "data": "2026-04-23T00:00:00+00:00",
@@ -3952,8 +4154,8 @@
    "relator": "Benjamin Zymler",
    "assunto": "Atos de Aposentadoria da unidade emissora Tribunal de Contas da União, enviados ao TCU pela unidade de controle interno SECRETARIA DE AUDITORIA INTERNA - TCU para fins de análise e julgamento",
    "natureza": "Aposentadoria",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudPessoal",
+   "representante_mp": "Rodrigo Lima",
    "unidades": [
     "TCU - Tribunal de Contas da União"
    ],
@@ -3966,7 +4168,7 @@
     "SEPLAN"
    ],
    "vinculo": "interessado",
-   "acordao": null,
+   "acordao": "495/2026",
    "movimentacoes": [
     {
      "data": "2026-04-08T00:00:00+00:00",
@@ -4064,10 +4266,12 @@
    "relator": "Walton Alencar Rodrigues",
    "assunto": "Levantamento sobre a alocação de emendas parlamentares em obras públicas (Ac 2.207/2023-Plenário)",
    "natureza": "Relatório de Levantamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudUrbana",
+   "representante_mp": "Paulo Bugarin",
    "unidades": [],
-   "interessados": [],
+   "interessados": [
+    "CONGRESSO NACIONAL (VINCULADOR)"
+   ],
    "orgaos": [
     "MPO",
     "SOF"
@@ -4078,7 +4282,7 @@
     "SOF"
    ],
    "vinculo": "interessado",
-   "acordao": null,
+   "acordao": "253/2026",
    "movimentacoes": [
     {
      "data": "2026-03-10T00:00:00+00:00",
@@ -4288,8 +4492,8 @@
    "relator": "Jhonatan de Jesus",
    "assunto": "Representação referente ao ato de gestão (Objeto: Esclarecimentos sobre a aplicação do entendimento do Acórdão nº 1103/2024-Plenário à situação tratada no Acórdão nº 1649/2024-Plenário, envolvendo a recomposição do limite de gastos do Ministério Público da União.)",
    "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Júlio Marcelo",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal"
    ],
@@ -4344,8 +4548,8 @@
    "relator": "Bruno Dantas",
    "assunto": "Ofício nº 064/2025/CFFC-P, de 18/6/2025, encaminha o REQ 203/2025-CFFC, de autoria do Deputado Evair Vieira de Melo, por meio do qual solicita ao TCU informações \"sobre a auditoria que identificou a movimentação de aproximadamente R$ 30 bilhões fora do orçamento oficial por parte do Governo Federal\".",
    "natureza": "Solicitação do Congresso Nacional",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Lucas Furtado",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
     "CC/PR - Casa Civil da Presidência da República",
@@ -4408,17 +4612,19 @@
    "relator": "Bruno Dantas",
    "assunto": "Representação referente ao ato de gestão com códigoUasg 257999 (Objeto: Representação contra artifício utilizado pelo Ministério da Saúde para utilizar de forma discricionária os recursos do Programa de Trabalho 10.302.5018.8585 (Atenção à Saúde da População para Procedimentos em Média e Alta Complexidade), inserido na ação orçamentária 8585, classificada como despesa primária obrigatória (RP1).\r\n)",
    "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudSaúde",
+   "representante_mp": "Paulo Bugarin",
    "unidades": [
     "SE/MS - Secretaria-Executiva do Ministério da Saúde"
    ],
    "interessados": [],
    "orgaos": [
+    "AECI",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
+    "AECI",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -4462,12 +4668,14 @@
    "relator": "Augusto Sherman",
    "assunto": "Atos de Pensão civil da unidade emissora Ministério do Planejamento, Desenvolvimento e Gestão (Extinta), enviados ao TCU pela unidade de controle interno Controladoria-Geral da União para fins de análise e julgamento",
    "natureza": "Pensão Civil",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudPessoal",
+   "representante_mp": "Rodrigo Lima",
    "unidades": [
     "Ministério do Planejamento, Desenvolvimento e Gestão (extinta)"
    ],
-   "interessados": [],
+   "interessados": [
+    "Secretaria de Gestão de Pessoas"
+   ],
    "orgaos": [
     "AECI",
     "MPO"
@@ -4478,7 +4686,7 @@
     "MPO"
    ],
    "vinculo": "interessado",
-   "acordao": null,
+   "acordao": "2404/2024",
    "movimentacoes": [
     {
      "data": "2025-02-04T00:00:00+00:00",
@@ -4837,7 +5045,8 @@
    "assunto": "Monitoramento das deliberações endereçadas ao IBGE, MMA e ao MPO no Acórdão 1708/2025-Plenário no âmbito do Processo 020.665/2023-7 - Auditoria operacional em contas econômicas ambientais",
    "natureza": "Monitoramento",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5013,7 +5222,9 @@
    "assunto": "Acompanhamento permanente da dívida pública federal",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
+    "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5027,7 +5238,9 @@
    "assunto": "Acompanhamento permanente da dívida pública federal",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
+    "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5130,7 +5343,9 @@
    "assunto": "Acompanhamento permanente da dívida pública federal",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
+    "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5200,7 +5415,9 @@
    "assunto": "006.750/2026-5 - Relatório de Levantamento",
    "natureza": "Relatório de Levantamento",
    "orgaos": [
+    "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5214,7 +5431,9 @@
    "assunto": "006.750/2026-5 - Relatório de Levantamento",
    "natureza": "Relatório de Levantamento",
    "orgaos": [
+    "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5429,7 +5648,9 @@
    "assunto": "006.750/2026-5 - Relatório de Levantamento",
    "natureza": "Relatório de Levantamento",
    "orgaos": [
+    "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5547,7 +5768,8 @@
    "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5560,7 +5782,8 @@
    "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5670,7 +5893,8 @@
    "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5791,6 +6015,34 @@
   },
   {
    "data": "2026-08-13T00:00:00+00:00",
+   "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.191/2026-2",
+   "assunto": "Acompanhamento dos benefícios fiscais",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SMA"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-13T00:00:00+00:00",
+   "descricao": "Membro do MPTCU designado alterado de a definir para LUCAS FURTADO automaticamente pelo sistema",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.191/2026-2",
+   "assunto": "Acompanhamento dos benefícios fiscais",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SMA"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-13T00:00:00+00:00",
    "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
    "fase": null,
    "acordao": null,
@@ -5841,6 +6093,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5855,6 +6108,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5882,6 +6136,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6211,7 +6466,9 @@
    "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
+    "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6225,7 +6482,9 @@
    "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
+    "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6240,7 +6499,8 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6254,7 +6514,8 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6268,7 +6529,8 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6335,7 +6597,8 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6455,7 +6718,8 @@
    "assunto": "ACOMPANHAMENTO DOS RISCOS LEVANTADOS NO RELATÓRIO QUE CONDUZIU AO ACÓRDÃO 1.850/2023-2a CÂMARA (TC 011.456/2022-1) E MONITORAMENTO DAS RECOMENDAÇÕES FEITAS A(AO) Ministério da Gestão e da Inovação em Serviços Públicos, Ministério do Planejamento e Orçamento, Secretaria de Governo Digital, POR MEIO DOS ACÓRDÃOS 3145/2020-Plenário E 419/2021-TCU-PLENÁRIO, NO ÂMBITO DOS PROCESSOS 036.673/2019-6 e 038.016/2019-2 (Acompanhamentos de iniciativas estruturantes de transformação digital do Governo Federal e das ações de desburocratização na APF).",
    "natureza": "Acompanhamento",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6468,7 +6732,8 @@
    "assunto": "ACOMPANHAMENTO DOS RISCOS LEVANTADOS NO RELATÓRIO QUE CONDUZIU AO ACÓRDÃO 1.850/2023-2a CÂMARA (TC 011.456/2022-1) E MONITORAMENTO DAS RECOMENDAÇÕES FEITAS A(AO) Ministério da Gestão e da Inovação em Serviços Públicos, Ministério do Planejamento e Orçamento, Secretaria de Governo Digital, POR MEIO DOS ACÓRDÃOS 3145/2020-Plenário E 419/2021-TCU-PLENÁRIO, NO ÂMBITO DOS PROCESSOS 036.673/2019-6 e 038.016/2019-2 (Acompanhamentos de iniciativas estruturantes de transformação digital do Governo Federal e das ações de desburocratização na APF).",
    "natureza": "Acompanhamento",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6481,7 +6746,8 @@
    "assunto": "ACOMPANHAMENTO DOS RISCOS LEVANTADOS NO RELATÓRIO QUE CONDUZIU AO ACÓRDÃO 1.850/2023-2a CÂMARA (TC 011.456/2022-1) E MONITORAMENTO DAS RECOMENDAÇÕES FEITAS A(AO) Ministério da Gestão e da Inovação em Serviços Públicos, Ministério do Planejamento e Orçamento, Secretaria de Governo Digital, POR MEIO DOS ACÓRDÃOS 3145/2020-Plenário E 419/2021-TCU-PLENÁRIO, NO ÂMBITO DOS PROCESSOS 036.673/2019-6 e 038.016/2019-2 (Acompanhamentos de iniciativas estruturantes de transformação digital do Governo Federal e das ações de desburocratização na APF).",
    "natureza": "Acompanhamento",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -6745,7 +7011,9 @@
    "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
+    "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7119,7 +7387,8 @@
    "assunto": "Auditoria para avaliação das causas e possíveis consequências da diminuição de ofertas de áreas e autorizações para exploração de petróleo",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -7132,7 +7401,8 @@
    "assunto": "Auditoria para avaliação das causas e possíveis consequências da diminuição de ofertas de áreas e autorizações para exploração de petróleo",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -7241,100 +7511,58 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-03-20T00:00:00+00:00",
-   "descricao": "Cadastrada representação legal 3160/2026 (representante ROGERIO TELLES CORREIA DAS NEVES) por AudFiscal",
+   "data": "2026-04-07T00:00:00+00:00",
+   "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.099.199-7) publicada no BTCU Controle Externo n° 54, de 07/04/2026.",
    "fase": null,
    "acordao": null,
-   "processo": "015.352/2025-0",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-03-20T00:00:00+00:00",
-   "descricao": "Cadastrada representação legal 3159/2026 (representante ROGERIO TELLES CORREIA DAS NEVES) por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "015.352/2025-0",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-03-20T00:00:00+00:00",
-   "descricao": "Cadastrada representação legal 3158/2026 (representante ROGERIO TELLES CORREIA DAS NEVES) por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "015.352/2025-0",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-03-16T00:00:00+00:00",
-   "descricao": "Documento Resposta de determinação juntado ao processo por Seproc",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.674/2024-0",
-   "assunto": "Auditoria para avaliação das causas e possíveis consequências da diminuição de ofertas de áreas e autorizações para exploração de petróleo",
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
    "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO"
-   ],
+   "orgaos": [],
    "estado": "Aberto"
   },
   {
-   "data": "2026-03-10T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudUrbana/AudUrbana-ASS. (Assessoria da AudUrbana)",
+   "data": "2026-04-07T00:00:00+00:00",
+   "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
    "fase": null,
    "acordao": null,
-   "processo": "019.579/2024-1",
-   "assunto": "Levantamento sobre a alocação de emendas parlamentares em obras públicas (Ac 2.207/2023-Plenário)",
-   "natureza": "Relatório de Levantamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
    "estado": "Aberto"
   },
   {
-   "data": "2026-03-10T00:00:00+00:00",
-   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
+   "data": "2026-04-07T00:00:00+00:00",
+   "descricao": "Relatoria alterada de relatoria a definir para MIN-AAA por AudFiscal (por Atribuição)",
    "fase": null,
    "acordao": null,
-   "processo": "019.579/2024-1",
-   "assunto": "Levantamento sobre a alocação de emendas parlamentares em obras públicas (Ac 2.207/2023-Plenário)",
-   "natureza": "Relatório de Levantamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
    "estado": "Aberto"
   },
   {
-   "data": "2026-03-10T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Aviso 0175/2026-TCU/Seproc via CONECTA TCU por Maria do Socorro de Lacerda Dantas  em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
+   "data": "2026-04-07T00:00:00+00:00",
+   "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
    "fase": null,
    "acordao": null,
-   "processo": "019.579/2024-1",
-   "assunto": "Levantamento sobre a alocação de emendas parlamentares em obras públicas (Ac 2.207/2023-Plenário)",
-   "natureza": "Relatório de Levantamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-04-07T00:00:00+00:00",
+   "descricao": "Membro do MPTCU designado alterado de a definir para LUCAS FURTADO automaticamente pelo sistema",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
    "estado": "Aberto"
   }
  ]
