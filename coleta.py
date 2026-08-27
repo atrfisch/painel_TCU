@@ -731,20 +731,25 @@ def _uma_consulta(sessao: requests.Session, termo: str, filtro: str, rotulo: str
 
 def buscar_por_numero(sessao: requests.Session, numero: str) -> dict | None:
     """Busca um processo específico pelo número. Rede de segurança para os que
-    o filtro de unidade não captura."""
+    o filtro de unidade não captura. Usa o endpoint `documento` (completo), que
+    traz unidade responsável, representante do MPTCU e órgãos fiscalizados —
+    campos que o `documentosResumidos` omite."""
     proc_id = so_digitos(numero)
-    for termo in (numero, proc_id):
-        try:
-            params = {"termo": termo, "quantidade": 5, "inicio": 0}
-            r = sessao.get(PESQUISA_BASE, params=params, headers=PESQUISA_HEADERS, timeout=TIMEOUT)
-            r.raise_for_status()
-            itens = r.json().get("documentos") or []
-        except (requests.exceptions.RequestException, ValueError):
-            continue
-        for it in itens:
-            campo = _campos_pesquisa(it)
-            if so_digitos(campo["processo"]) == proc_id:
-                return campo
+    for endpoint in (PESQUISA_DETALHE, PESQUISA_BASE):
+        for termo in (numero, proc_id):
+            try:
+                params = {"termo": termo, "ordenacao": PESQUISA_ORDENACAO,
+                          "quantidade": 5, "inicio": 0}
+                r = sessao.get(endpoint, params=params, headers=PESQUISA_HEADERS, timeout=TIMEOUT)
+                r.raise_for_status()
+                d = r.json()
+                itens = d.get("documentos") if isinstance(d, dict) else d
+            except (requests.exceptions.RequestException, ValueError):
+                continue
+            for it in (itens or []):
+                campo = _campos_pesquisa(it)
+                if so_digitos(campo["processo"]) == proc_id:
+                    return campo
     return None
 
 
@@ -762,11 +767,24 @@ def enriquecer_detalhe(sessao: requests.Session, campo: dict) -> bool:
         return False
     numero_fmt = campo["processo"]  # ex.: "017.191/2026-2"
 
-    # Estratégias de detalhe, em ordem de preferência. A busca por número
-    # formatado no documentosResumidos (o que a interface faz ao abrir um
-    # processo pela URL /documento/processo/NNN.NNN/AAAA-D) devolve o registro
-    # com mais campos — incluindo os órgãos fiscalizados, que a busca em massa
-    # paginada omite. É essa a via que revela a SMA no 017.191.
+    # Estratégias de detalhe, em ordem de preferência. O endpoint `documento`
+    # (singular) com termo=NÚMERO devolve o registro COMPLETO — com
+    # UNIDADERESPONSAVELPORAGIR, REPRESENTANTESMPTCU e os órgãos fiscalizados —,
+    # ao contrário do `documentosResumidos`, que traz a versão enxuta SEM esses
+    # campos. Foi a URL /documento?termo=017.191/2026-2 que revelou tudo isso.
+    def _via_documento_termo():
+        r = sessao.get(PESQUISA_DETALHE,
+                       params={"termo": numero_fmt, "ordenacao": PESQUISA_ORDENACAO,
+                               "quantidade": 3, "inicio": 0},
+                       headers=PESQUISA_HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        d = r.json()
+        itens = d.get("documentos") if isinstance(d, dict) else d
+        for it in (itens or []):
+            if so_digitos(it.get("NUMEROFORMATADO") or it.get("PROC")) == proc_id:
+                return it
+        return None
+
     def _via_busca_numero():
         r = sessao.get(PESQUISA_BASE,
                        params={"termo": numero_fmt, "quantidade": 3, "inicio": 0},
@@ -787,7 +805,7 @@ def enriquecer_detalhe(sessao: requests.Session, campo: dict) -> bool:
         return d[0] if isinstance(d, list) and d else (d if isinstance(d, dict) else None)
 
     doc = None
-    for estrategia in (_via_busca_numero, _via_documento_key):
+    for estrategia in (_via_documento_termo, _via_busca_numero, _via_documento_key):
         try:
             doc = estrategia()
             if doc:
