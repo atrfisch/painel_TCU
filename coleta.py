@@ -615,16 +615,24 @@ def _campos_pesquisa(it: dict) -> dict:
     ultima = movs[0] if movs else None
     acordao = next((m["acordao"] for m in movs if m.get("acordao")), None)
 
-    # Unidade técnica do TCU responsável por instruir o processo (uma SecEx, p.
-    # ex.) e Representante do MP junto ao TCU. Campos que a página do processo
-    # mostra na aba "Unidades e Interlocutores". Podem não vir na listagem em
-    # massa — tentamos vários nomes prováveis; ficam vazios se a API não expõe.
+    # Unidade responsável por agir e Representante(s) do MP junto ao TCU. Nomes
+    # de campo CONFIRMADos na resposta real do endpoint de detalhe:
+    #   UNIDADERESPONSAVELPORAGIR (texto) e REPRESENTANTESMPTCU (lista).
+    # Não vêm na busca em massa — só no detalhe por número. Ficam vazios se
+    # ausentes (o painel oculta os gráficos correspondentes).
     unidade_tecnica = limpar_html(
-        it.get("UNIDADETECNICA") or it.get("UNIDADERESPONSAVEL")
-        or it.get("UNIDADEINSTRUCAO") or it.get("SECRETARIA") or "") or None
-    representante_mp = limpar_html(
-        it.get("REPRESENTANTEMP") or it.get("MEMBROMP") or it.get("PROCURADOR")
-        or it.get("REPRESENTANTEMPTCU") or it.get("MPTCU") or "") or None
+        it.get("UNIDADERESPONSAVELPORAGIR") or it.get("UNIDADERESPONSAVELTECNICA")
+        or it.get("UNIDADETECNICA") or "") or None
+    # O nome vem longo ("AudFiscal Unidade de Auditoria Especializada em..."):
+    # para o gráfico, fica a sigla/primeira palavra se o restante for a descrição.
+    if unidade_tecnica:
+        m_sigla = re.match(r"^([A-Za-zÀ-ÿ]{3,}(?:\d+)?)\s+Unidade\b", unidade_tecnica)
+        if m_sigla:
+            unidade_tecnica = m_sigla.group(1)
+    rep = it.get("REPRESENTANTESMPTCU") or it.get("REPRESENTANTEMPTCU") or it.get("REPRESENTANTEMP")
+    if isinstance(rep, list):
+        rep = ", ".join(limpar_html(x) for x in rep if x and str(x).strip())
+    representante_mp = limpar_html(rep or "") or None
 
     return {
         "processo": formatar_processo(it.get("NUMEROFORMATADO") or it.get("PROC")),
@@ -805,9 +813,11 @@ def enriquecer_detalhe(sessao: requests.Session, campo: dict) -> bool:
                 campo["vinculo"] = "unidade"
             elif campo.get("orgaos_interessado"):
                 campo["vinculo"] = campo.get("vinculo") or "interessado"
-        # Preenche o que faltava.
+        # Preenche o que faltava. unidade_tecnica e representante_mp SÓ vêm no
+        # detalhe (a busca em massa não os traz), então é aqui que eles entram.
         for k in ("movimentacoes_pesquisa", "ultima_pesquisa", "acordao",
-                  "relator", "assunto", "natureza", "estado"):
+                  "relator", "assunto", "natureza", "estado",
+                  "unidade_tecnica", "representante_mp"):
             if detalhado.get(k) and not campo.get(k):
                 campo[k] = detalhado[k]
         return bool(depois - antes)
@@ -900,13 +910,23 @@ def consultar_pesquisa(sessao: requests.Session, garantidos: list[str] | None = 
     # órgão do MPO reconhecido, ou garantidos; (2) para assim que o orçamento de
     # tempo acaba, seguindo com o que já tem. A captura por unidade/termo já
     # cobre a maioria; o enriquecimento é o reforço, não a espinha dorsal.
-    # Candidatos ao enriquecimento: quem pode ganhar classificação. Garantidos
-    # PRIMEIRO — eles são poucos e importam mais (você os marcou), então nunca
-    # devem ficar de fora se o orçamento apertar. Depois, os sem órgão ainda
-    # reconhecido, que podem ter vínculo escondido nos fiscalizados/interessados.
+    # Candidatos ao enriquecimento: (1) garantidos e sem-órgão, que podem ganhar
+    # classificação de órgão; (2) processos ABERTOS, para obter unidade
+    # responsável e representante do MPTCU, que só vêm no detalhe. Ordem: os que
+    # podem ganhar órgão primeiro (mais importante), depois os abertos para os
+    # campos extras. O orçamento de tempo protege contra travamento — o que não
+    # couber fica sem esses campos, mas nada quebra.
+    def _prioridade(c):
+        if c.get("garantido"):
+            return 0
+        if not c.get("orgaos"):
+            return 1
+        return 2  # aberto, só para unidade/representante
     candidatos = sorted(
-        (c for c in vistos.values() if not c.get("orgaos") or c.get("garantido")),
-        key=lambda c: 0 if c.get("garantido") else 1,
+        (c for c in vistos.values()
+         if not c.get("orgaos") or c.get("garantido")
+         or str(c.get("estado") or "").lower() == "aberto"),
+        key=_prioridade,
     )
     orcamento = timedelta(minutes=ENRIQUECIMENTO_MINUTOS)
     inicio_enr = datetime.now(timezone.utc)
