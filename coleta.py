@@ -615,6 +615,17 @@ def _campos_pesquisa(it: dict) -> dict:
     ultima = movs[0] if movs else None
     acordao = next((m["acordao"] for m in movs if m.get("acordao")), None)
 
+    # Unidade técnica do TCU responsável por instruir o processo (uma SecEx, p.
+    # ex.) e Representante do MP junto ao TCU. Campos que a página do processo
+    # mostra na aba "Unidades e Interlocutores". Podem não vir na listagem em
+    # massa — tentamos vários nomes prováveis; ficam vazios se a API não expõe.
+    unidade_tecnica = limpar_html(
+        it.get("UNIDADETECNICA") or it.get("UNIDADERESPONSAVEL")
+        or it.get("UNIDADEINSTRUCAO") or it.get("SECRETARIA") or "") or None
+    representante_mp = limpar_html(
+        it.get("REPRESENTANTEMP") or it.get("MEMBROMP") or it.get("PROCURADOR")
+        or it.get("REPRESENTANTEMPTCU") or it.get("MPTCU") or "") or None
+
     return {
         "processo": formatar_processo(it.get("NUMEROFORMATADO") or it.get("PROC")),
         "codigo": it.get("CODIGO"),
@@ -622,6 +633,8 @@ def _campos_pesquisa(it: dict) -> dict:
         "relator": limpar_html(it.get("RELATOR")) or None,
         "assunto": limpar_html(it.get("ASSUNTO") or it.get("TITULOCOMPLETO")) or None,
         "natureza": limpar_html(it.get("TIPO")) or None,
+        "unidade_tecnica": unidade_tecnica,
+        "representante_mp": representante_mp,
         "unidades": unidades_todas,
         "interessados": interessados,
         "orgaos": orgaos,
@@ -969,6 +982,8 @@ def consolidar_pesquisa(processos_pesquisa: list[dict]) -> list[dict]:
             "relator": p.get("relator"),
             "assunto": p.get("assunto"),
             "natureza": p.get("natureza"),
+            "unidade_tecnica": p.get("unidade_tecnica"),
+            "representante_mp": p.get("representante_mp"),
             "unidades": p.get("unidades") or [],
             "interessados": p.get("interessados") or [],
             "orgaos": sorted(p.get("orgaos") or []),
@@ -1158,6 +1173,26 @@ def montar(processos: list[dict], ancora: int, avisos: list[str],
     por_relator = sorted(({"relator": k, "total": v} for k, v in relatores.items()),
                          key=lambda x: -x["total"])
 
+    # Distribuição por Unidade Responsável por Agir (unidade técnica do TCU) e por
+    # Representante do MP junto ao TCU. Só entram no gráfico os processos que têm
+    # o campo preenchido — se a API não expõe, os agregados vêm vazios e o painel
+    # oculta os gráficos correspondentes.
+    unidades_resp: dict[str, int] = {}
+    for p in processos:
+        u = (p.get("unidade_tecnica") or "").strip()
+        if u:
+            unidades_resp[u] = unidades_resp.get(u, 0) + 1
+    por_unidade_resp = sorted(({"unidade": k, "total": v} for k, v in unidades_resp.items()),
+                              key=lambda x: -x["total"])
+
+    representantes: dict[str, int] = {}
+    for p in processos:
+        r = (p.get("representante_mp") or "").strip()
+        if r:
+            representantes[r] = representantes.get(r, 0) + 1
+    por_representante = sorted(({"representante": k, "total": v} for k, v in representantes.items()),
+                              key=lambda x: -x["total"])
+
     movs = [{**m, "processo": p["numero"], "assunto": p["assunto"],
              "natureza": p.get("natureza"), "orgaos": p["orgaos"], "estado": p["estado"]}
             for p in processos for m in p["movimentacoes"]]
@@ -1220,6 +1255,8 @@ def montar(processos: list[dict], ancora: int, avisos: list[str],
         "por_orgao": por_orgao,
         "por_tipo": por_tipo,
         "por_relator": por_relator,
+        "por_unidade_resp": por_unidade_resp,
+        "por_representante": por_representante,
         "ranking_mes": ranking_mes,
         "processos": processos,
         "movimentacoes_recentes": recentes[:60],
