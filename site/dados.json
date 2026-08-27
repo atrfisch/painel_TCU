@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-08-27T13:08:18.554826+00:00",
- "gerado_em_br": "27/08/2026 às 13:08",
+ "gerado_em": "2026-08-27T13:35:25.906475+00:00",
+ "gerado_em_br": "27/08/2026 às 13:35",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -9,7 +9,7 @@
   "processos": 76,
   "movimentacoes": 225,
   "abertos": 76,
-  "encerrados_ocultos": 563,
+  "encerrados_ocultos": 562,
   "so_interesse": 36
  },
  "garantidos": [
@@ -28,213 +28,7 @@
   "011.526/2022-0"
  ],
  "novos_processos": [],
- "andamentos_novos": [
-  {
-   "processo": "014.219/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Possível subavaliação de impactos fiscais decorrentes da utilização de fundos públicos, fundos garantidores, créditos subsidiados e créditos extraordinários.)",
-   "data": "2026-08-27T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "025.632/2024-8",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "data": "2026-08-27T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 33366/2026-TCU/Seproc via CONECTA TCU por Lindalva Ribeiro de Sena  em nome de Assessoria Especial de Controle Interno do Ministério da Cultura",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.219/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Possível subavaliação de impactos fiscais decorrentes da utilização de fundos públicos, fundos garantidores, créditos subsidiados e créditos extraordinários.)",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Documento Aviso juntado ao processo por Gabpres",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.219/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Possível subavaliação de impactos fiscais decorrentes da utilização de fundos públicos, fundos garantidores, créditos subsidiados e créditos extraordinários.)",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Aviso expedido pelo Gabinete da Presidência",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "025.632/2024-8",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 33348/2026-TCU/Seproc via CONECTA TCU por MONIQUE MARTINS DO COUTO REIS DOS SANTOS em nome de Banco Nacional de Desenvolvimento Econômico e Social",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "025.632/2024-8",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 33354/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.198/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 0050/2026 por unidade AudGestãoInovação em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "004.887/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Processo enviado de MIN-AAA para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "004.887/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Extraordinária do Plenário em 25/08/2026 por meio do Acórdão 2274/2026-PL",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "004.887/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Acórdão 2274/2026 — Plenário",
-   "acordao": "2274/2026",
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "016.873/2025-4 - Relatório de Levantamento",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Matriz de Planejamento - Repp 2026) juntado ao processo por AudDigital",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "016.873/2025-4 - Relatório de Levantamento",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudDigital",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.961/2026-1",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto:  Representação para realizar acompanhamento da evolução do déficit primário do governo \r\ncentral e das causas de sua deterioração, apurando se a proximidade do pleito eleitoral \r\nde 2026 concorreu para o agravamento do déficit nas contas do governo central)",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.961/2026-1",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 20001 (Objeto:  Representação para realizar acompanhamento da evolução do déficit primário do governo \r\ncentral e das causas de sua deterioração, apurando se a proximidade do pleito eleitoral \r\nde 2026 concorreu para o agravamento do déficit nas contas do governo central)",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Documento Termo (SPI) juntado ao processo por Seproc",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "024.770/2025-6",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Monitoramento das deliberações endereçadas ao IBGE, MMA e ao MPO no Acórdão 1708/2025-Plenário no âmbito do Processo 020.665/2023-7 - Auditoria operacional em contas econômicas ambientais",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 30363/2026-TCU/Seproc.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "011.601/2025-6",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Monitoramento das determinações feitas ao MT e à  ANTT por meio do Acórdão  522/2025-Plenário (006.626/2024-6) relacionadas com a FCA.",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudPortoFerrovia/D3AudPortoFerrovia. (3ª Diretoria da AudPortoFerrovia)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "011.601/2025-6",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Monitoramento das determinações feitas ao MT e à  ANTT por meio do Acórdão  522/2025-Plenário (006.626/2024-6) relacionadas com a FCA.",
-   "data": "2026-08-26T00:00:00+00:00",
-   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
-   "acordao": null,
-   "novo_no_radar": false
-  }
- ],
+ "andamentos_novos": [],
  "tem_baseline": true,
  "por_orgao": [
   {
@@ -254,9 +48,9 @@
   {
    "orgao": "SE",
    "nome": "Secretaria-Executiva do MPO",
-   "total": 16,
+   "total": 4,
    "como_unidade": 0,
-   "como_interessado": 16
+   "como_interessado": 4
   },
   {
    "orgao": "SOF",
@@ -431,7 +225,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
@@ -562,14 +355,12 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -1772,13 +1563,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -2055,13 +1844,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -2386,16 +2173,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [
-    "SE"
-   ],
+   "orgaos_interessado": [],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -2445,13 +2229,11 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3025,14 +2807,12 @@
    "interessados": [],
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": "1924/2026",
@@ -3458,13 +3238,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": "573/2026",
@@ -3688,13 +3466,11 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3745,14 +3521,12 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3806,13 +3580,11 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -4133,13 +3905,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -4246,16 +4016,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [
-    "SE"
-   ],
+   "orgaos_interessado": [],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -4889,7 +4656,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4933,7 +4699,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -4949,7 +4714,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5583,8 +5347,7 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5597,8 +5360,7 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5692,8 +5454,7 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5786,8 +5547,7 @@
    "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5800,8 +5560,7 @@
    "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5911,8 +5670,7 @@
    "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6041,7 +5799,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6056,7 +5813,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6071,7 +5827,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6086,7 +5841,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6101,7 +5855,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6129,7 +5882,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6488,8 +6240,7 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6503,8 +6254,7 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6518,8 +6268,7 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6586,8 +6335,7 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6812,8 +6560,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7013,7 +6760,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7029,7 +6775,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7045,7 +6790,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7061,7 +6805,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7076,7 +6819,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7091,7 +6833,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7106,7 +6847,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7121,7 +6861,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7406,8 +7145,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7420,8 +7158,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7434,8 +7171,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7448,8 +7184,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7462,8 +7197,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7516,7 +7250,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7531,7 +7264,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7546,7 +7278,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
