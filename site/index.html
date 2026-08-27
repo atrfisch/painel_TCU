@@ -35,16 +35,17 @@ header{background:var(--surface); border-bottom:1px solid var(--line)}
 .aviso{display:flex; gap:9px; padding:11px 14px; margin:14px 0 0; border-radius:var(--r);
   background:#f8ecd6; border:1px solid #e3c894; font-size:13px; color:#5b3a06}
 
-.kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; padding:24px 0 0}
-.kpi{background:var(--surface); border:1px solid var(--line); border-top:3px solid var(--line);
-  border-radius:var(--r); padding:13px 15px; box-shadow:var(--shadow); text-align:left; font:inherit; cursor:pointer}
+.kpis{display:flex; flex-wrap:nowrap; gap:8px; padding:24px 0 0; overflow-x:auto; scrollbar-width:thin}
+.kpi{flex:1 1 0; min-width:96px; background:var(--surface); border:1px solid var(--line); border-top:3px solid var(--line);
+  border-radius:var(--r); padding:9px 11px; box-shadow:var(--shadow); text-align:left; font:inherit; cursor:pointer}
 .kpi[aria-pressed="true"]{background:var(--surface-2); border-color:var(--ink-2)}
-.kpi b{font-family:"JetBrains Mono",monospace; font-size:28px; font-weight:600; line-height:1; display:block; letter-spacing:-.04em}
-.kpi span{display:block; font-size:13px; font-weight:600; margin-top:6px}
-.kpi small{display:block; font-size:11.5px; color:var(--muted); margin-top:2px; line-height:1.35}
+.kpi b{font-family:"JetBrains Mono",monospace; font-size:21px; font-weight:600; line-height:1; display:block; letter-spacing:-.04em}
+.kpi span{display:block; font-size:11.5px; font-weight:600; margin-top:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.kpi small{display:none}
 .kpi.total{border-top-color:var(--ink-2)}
 .kpi.aberto{border-top-color:var(--aberto)} .kpi.aberto b{color:var(--aberto)}
 .kpi.encerrado{border-top-color:var(--muted)} .kpi.encerrado b{color:var(--muted)}
+.kpi.prio{border-top-color:#d99a1c} .kpi.prio b{color:#c07d0a}
 
 section{padding:30px 0 0}
 section h2{font-size:19px}
@@ -73,7 +74,9 @@ section h2{font-size:19px}
 .painel h3{font-family:"Bricolage Grotesque",sans-serif; font-size:15px; margin:0 0 3px; font-weight:600}
 .painel .nota{margin:0 0 14px; font-size:12px; color:var(--muted)}
 
-.rk{display:flex; flex-direction:column; gap:8px}
+.rk{display:flex; flex-direction:column; gap:8px; max-height:165px; overflow-y:auto; padding-right:6px; scrollbar-width:thin}
+.rk::-webkit-scrollbar{width:7px}
+.rk::-webkit-scrollbar-thumb{background:var(--line-2); border-radius:4px}
 .rk-bar{font:inherit; background:none; border:0; padding:0; cursor:pointer; text-align:left; width:100%; display:grid; grid-template-columns:118px 1fr 24px; gap:9px; align-items:center}
 .rk-lbl{font-family:"JetBrains Mono",monospace; font-size:12px; font-weight:600; color:var(--petrol); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
 .rk-trilho{height:18px; background:var(--surface-2); border-radius:5px; overflow:hidden}
@@ -83,7 +86,9 @@ section h2{font-size:19px}
 .rk-bar[aria-pressed="true"] .rk-lbl{color:#c07d0a}
 .rk-bar[aria-pressed="true"] .rk-fill{background:var(--amber)}
 
-.barras{display:flex; flex-direction:column; gap:9px}
+.barras{display:flex; flex-direction:column; gap:9px; max-height:190px; overflow-y:auto; padding-right:6px; scrollbar-width:thin}
+.barras::-webkit-scrollbar{width:7px}
+.barras::-webkit-scrollbar-thumb{background:var(--line-2); border-radius:4px}
 .barra{font:inherit; background:none; border:0; padding:0; cursor:pointer; text-align:left; width:100%}
 .barra-top{display:flex; justify-content:space-between; gap:10px; font-size:12.5px; margin-bottom:3px; align-items:baseline}
 .barra-top b{font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; min-width:0}
@@ -107,7 +112,9 @@ section h2{font-size:19px}
 .chip-pauta{background:#f4e6cc; color:#7a4e08; text-transform:none; letter-spacing:0}
 
 .movs{list-style:none; margin:0; padding:0; background:var(--surface); border:1px solid var(--line);
-  border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow)}
+  border-radius:var(--r); overflow-y:auto; max-height:355px; box-shadow:var(--shadow); scrollbar-width:thin}
+.movs::-webkit-scrollbar{width:8px}
+.movs::-webkit-scrollbar-thumb{background:var(--line-2); border-radius:4px}
 .mov{display:grid; grid-template-columns:88px 1fr; gap:16px; padding:13px 17px; border-bottom:1px solid var(--line-2)}
 .mov:last-child{border-bottom:0}
 .mov:hover{background:var(--surface-2)}
@@ -182,7 +189,9 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
   .wrap{padding:0 14px}
   .hd h1{font-size:21px}
   .hd .quando{text-align:left}
-  .kpis{grid-template-columns:repeat(2,1fr)}
+  .kpis{gap:6px}
+  .kpi{min-width:84px; padding:8px 9px}
+  .kpi b{font-size:18px}
   section h2{font-size:17px}
   .ferramentas input,.ferramentas select{flex:1 1 100%}
   .cont{margin-left:0; width:100%}
@@ -227,6 +236,18 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
           <div class="barras" id="relatores"></div>
         </div>
       </div>
+      <div class="grid2" id="grid-extra" style="margin-top:14px">
+        <div class="painel" id="painel-unidade" hidden>
+          <h3>Unidade responsável por agir</h3>
+          <p class="nota">Unidade técnica do TCU. Clique para filtrar a lista.</p>
+          <div class="barras" id="unidades-resp"></div>
+        </div>
+        <div class="painel" id="painel-representante" hidden>
+          <h3>Representante do MP junto ao TCU</h3>
+          <p class="nota">Clique num representante para filtrar a lista.</p>
+          <div class="barras" id="representantes"></div>
+        </div>
+      </div>
     </section>
 
     <section>
@@ -243,6 +264,8 @@ footer{margin-top:44px; border-top:1px solid var(--line); background:var(--surfa
         <select id="f-orgao" aria-label="Filtrar por órgão"><option value="">Todos os órgãos</option></select>
         <select id="f-tipo" aria-label="Filtrar por tipo"><option value="">Todos os tipos</option></select>
         <select id="f-relator" aria-label="Filtrar por relator"><option value="">Todos os relatores</option></select>
+        <select id="f-unidade" aria-label="Filtrar por unidade responsável" hidden><option value="">Todas as unidades</option></select>
+        <select id="f-representante" aria-label="Filtrar por representante" hidden><option value="">Todos os representantes</option></select>
         <select id="ordem" aria-label="Ordenar">
           <option value="recente">Movimentação mais recente</option>
           <option value="numero">Número do processo</option>
@@ -325,6 +348,8 @@ function render(){
   rankingMes();
   barras();
   graficoRelator();
+  graficoUnidadeResp();
+  graficoRepresentante();
   movimentacoes();
   ferramentas();
   lista();
@@ -390,9 +415,9 @@ function kpis(){
     { f:"__org_" + o.orgao, n:o.total, t:o.orgao, d:o.nome, c:"total" }));
 
   document.getElementById("kpis").innerHTML = cartoes.map((k, i) => `
-    <button type="button" class="kpi ${k.c} sobe" data-f="${esc(k.f)}"
+    <button type="button" class="kpi ${k.c} sobe" data-f="${esc(k.f)}" title="${esc(k.t)}${k.d ? " — " + esc(k.d) : ""}"
             aria-pressed="${FILTRO_KPI === k.f && k.f !== ""}" style="animation-delay:${i * 40}ms">
-      <b>${k.n}</b><span>${esc(k.t)}</span><small>${esc(k.d)}</small>
+      <b>${k.n}</b><span>${esc(k.t)}</span>
     </button>`).join("");
 
   document.querySelectorAll(".kpi").forEach((b) => b.addEventListener("click", () => {
@@ -451,7 +476,7 @@ function graficoRelator(){
   if(!rel.length){ el.innerHTML = ""; return; }
   const max = Math.max(...rel.map((r) => r.total));
   const ativo = document.getElementById("f-relator");
-  el.innerHTML = rel.slice(0, 8).map((r) => {
+  el.innerHTML = rel.slice(0, 15).map((r) => {
     const sel = ativo && ativo.value === r.relator;
     // encurta "Benjamin Zymler" -> mantém; nomes longos truncam no CSS
     return `<button type="button" class="barra" data-rel="${esc(r.relator)}" aria-pressed="${sel}">
@@ -467,6 +492,41 @@ function graficoRelator(){
     graficoRelator(); lista();
     document.getElementById("linhas").scrollIntoView({ behavior:"smooth", block:"start" });
   }));
+}
+
+// Gráfico genérico para os dois campos novos. `chave` é o campo em cada item
+// dos dados; `filtroId` é o select correspondente na lista. O painel se oculta
+// quando não há dados — ou seja, quando a API não expôs o campo.
+function graficoLista(dados, chave, containerId, painelId, filtroId){
+  const painel = document.getElementById(painelId);
+  const el = document.getElementById(containerId);
+  if(!dados || !dados.length){ if(painel) painel.hidden = true; return; }
+  if(painel) painel.hidden = false;
+  const max = Math.max(...dados.map((d) => d.total));
+  const ativo = document.getElementById(filtroId);
+  el.innerHTML = dados.slice(0, 15).map((d) => {
+    const val = d[chave];
+    const sel = ativo && ativo.value === val;
+    return `<button type="button" class="barra" data-val="${esc(val)}" aria-pressed="${sel}">
+      <div class="barra-top"><b>${esc(val)}</b><span>${d.total}</span></div>
+      <div class="barra-trilho" style="width:${(d.total / max * 100).toFixed(1)}%">
+        <div class="barra-fill ab" style="width:100%"></div>
+      </div>
+    </button>`;
+  }).join("");
+  el.querySelectorAll(".barra").forEach((b) => b.addEventListener("click", () => {
+    const sel = document.getElementById(filtroId);
+    sel.value = sel.value === b.dataset.val ? "" : b.dataset.val;
+    render();
+    document.getElementById("linhas").scrollIntoView({ behavior:"smooth", block:"start" });
+  }));
+}
+
+function graficoUnidadeResp(){
+  graficoLista(D.por_unidade_resp, "unidade", "unidades-resp", "painel-unidade", "f-unidade");
+}
+function graficoRepresentante(){
+  graficoLista(D.por_representante, "representante", "representantes", "painel-representante", "f-representante");
 }
 
 function movimentacoes(){
@@ -507,10 +567,25 @@ function ferramentas(){
   preencher("f-tipo", D.processos.map((p) => p.natureza));
   preencher("f-relator", D.processos.map((p) => p.relator));
 
+  // Os filtros de unidade responsável e representante só aparecem se houver
+  // dado — mesma lógica dos gráficos correspondentes.
+  const temUnidade = D.processos.some((p) => p.unidade_tecnica);
+  const temRep = D.processos.some((p) => p.representante_mp);
+  if(temUnidade){
+    preencher("f-unidade", D.processos.map((p) => p.unidade_tecnica));
+    document.getElementById("f-unidade").hidden = false;
+  }
+  if(temRep){
+    preencher("f-representante", D.processos.map((p) => p.representante_mp));
+    document.getElementById("f-representante").hidden = false;
+  }
+
   document.getElementById("f-tipo").addEventListener("input", (e) => {
     FILTRO_TIPO = e.target.value; barras(); lista();
   });
   document.getElementById("f-relator").addEventListener("input", () => { graficoRelator(); lista(); });
+  document.getElementById("f-unidade").addEventListener("input", () => { graficoUnidadeResp(); lista(); });
+  document.getElementById("f-representante").addEventListener("input", () => { graficoRepresentante(); lista(); });
   ["q","f-orgao","ordem"].forEach((id) =>
     document.getElementById(id).addEventListener("input", lista));
 }
@@ -520,6 +595,8 @@ function lista(){
   const q = document.getElementById("q").value.trim().toLowerCase();
   const fo = document.getElementById("f-orgao").value;
   const fr = document.getElementById("f-relator").value;
+  const fu = document.getElementById("f-unidade").value;
+  const frep = document.getElementById("f-representante").value;
   const ord = document.getElementById("ordem").value;
 
   let l = D.processos.filter((p) => {
@@ -530,6 +607,8 @@ function lista(){
     if(FILTRO_TIPO && (p.natureza || "Não classificado") !== FILTRO_TIPO) return false;
     if(fo && !(p.orgaos || []).includes(fo)) return false;
     if(fr && p.relator !== fr) return false;
+    if(fu && p.unidade_tecnica !== fu) return false;
+    if(frep && p.representante_mp !== frep) return false;
     if(q && ![p.numero, p.assunto, p.relator, p.natureza].join(" ").toLowerCase().includes(q)) return false;
     return true;
   });
