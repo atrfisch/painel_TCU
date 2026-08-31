@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-08-31T13:06:30.478102+00:00",
- "gerado_em_br": "31/08/2026 às 13:06",
+ "gerado_em": "2026-08-31T16:42:55.721563+00:00",
+ "gerado_em_br": "31/08/2026 às 16:42",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -9,7 +9,7 @@
   "processos": 75,
   "movimentacoes": 227,
   "abertos": 75,
-  "encerrados_ocultos": 564,
+  "encerrados_ocultos": 565,
   "so_interesse": 36
  },
  "garantidos": [
@@ -37,31 +37,7 @@
    ],
    "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
    "data": "2026-08-31T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 34338/2026-TCU/Seproc via CONECTA TCU por ISABELLE BORGES DA SILVA em nome de Secretaria-Executiva do Ministério de Minas e Energia",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "004.887/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
-   "data": "2026-08-31T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 34337/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "004.887/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
-   "data": "2026-08-31T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 34340/2026 por unidade Seproc em virtude de expedição",
+   "descricao": "Registrada ciência de comunicação do Ofício 34339/2026-TCU/Seproc via CONECTA TCU por KEISER SILVA COSTA em nome de Secretaria-Executiva do Ministério de Portos e Aeroportos",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -70,7 +46,28 @@
    "orgaos": [],
    "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
    "data": "2026-08-31T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 34362/2026-TCU/Seproc via CONECTA TCU por REGINA SATIKO IDA em nome de Financiadora de Estudos e Projetos",
+   "descricao": "Juntada comunicação Ofício 34363/2026 por unidade Seproc em virtude de expedição",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "024.312/2024-0",
+   "orgaos": [],
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "data": "2026-08-31T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 34360/2026-TCU/Seproc via CONECTA TCU por LETICIA SOEIRO em nome de Secretaria do Tesouro Nacional",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "008.928/2025-8",
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
+   "data": "2026-08-31T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Aviso 0803/2026-TCU/Seproc via CONECTA TCU por JEFFERSON DE OLIVEIRA DAMASCENA em nome de COMISSÃO DE CIÊNCIA, TECNOLOGIA, INOVAÇÃO E INFORMÁTICA - SF",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -79,91 +76,18 @@
    "orgaos": [],
    "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
    "data": "2026-08-31T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, de 02/09/2026, às 14h30.",
+   "descricao": "Documento Novos elementos/informações adicionais (MEMORIAIS) juntado ao processo por AudPortoFerrovia",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "024.312/2024-0",
-   "orgaos": [],
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "data": "2026-08-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 34362/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "024.312/2024-0",
-   "orgaos": [],
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "data": "2026-08-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 34361/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "006.412/2026-2",
+   "processo": "031.310/2020-6",
    "orgaos": [
-    "MPO",
-    "SOF"
+    "MPO"
    ],
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "data": "2026-08-28T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 02/09/2026, às 14h30.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.191/2026-2",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SMA"
-   ],
-   "assunto": "Acompanhamento dos benefícios fiscais",
-   "data": "2026-08-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 34514/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.191/2026-2",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SMA"
-   ],
-   "assunto": "Acompanhamento dos benefícios fiscais",
-   "data": "2026-08-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 34515/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.191/2026-2",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SMA"
-   ],
-   "assunto": "Acompanhamento dos benefícios fiscais",
-   "data": "2026-08-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 34517/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "024.770/2025-6",
-   "orgaos": [
-    "MPO",
-    "SE"
-   ],
-   "assunto": "Monitoramento das deliberações endereçadas ao IBGE, MMA e ao MPO no Acórdão 1708/2025-Plenário no âmbito do Processo 020.665/2023-7 - Auditoria operacional em contas econômicas ambientais",
-   "data": "2026-08-28T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 30364/2026-TCU/Seproc.",
+   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
+   "data": "2026-08-31T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 31089/2026-TCU/Seproc.",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -187,9 +111,9 @@
   {
    "orgao": "SE",
    "nome": "Secretaria-Executiva do MPO",
-   "total": 14,
+   "total": 22,
    "como_unidade": 0,
-   "como_interessado": 14
+   "como_interessado": 22
   },
   {
    "orgao": "SOF",
@@ -255,12 +179,12 @@
    "abertos": 2
   },
   {
-   "tipo": "Denúncia",
+   "tipo": "Tomada de Contas Especial",
    "total": 1,
    "abertos": 1
   },
   {
-   "tipo": "Tomada de Contas Especial",
+   "tipo": "Denúncia",
    "total": 1,
    "abertos": 1
   },
@@ -337,11 +261,11 @@
    "total": 3
   },
   {
-   "unidade": "AudSustentabilidade",
+   "unidade": "AudPetróleo",
    "total": 2
   },
   {
-   "unidade": "AudPetróleo",
+   "unidade": "AudSustentabilidade",
    "total": 2
   },
   {
@@ -357,11 +281,11 @@
    "total": 2
   },
   {
-   "unidade": "AudGestãoInovação",
+   "unidade": "AudTCE",
    "total": 1
   },
   {
-   "unidade": "AudTCE",
+   "unidade": "AudGestãoInovação",
    "total": 1
   },
   {
@@ -462,10 +386,29 @@
    "movimentacoes_mes": 3
   },
   {
+   "processo": "008.928/2025-8",
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
+   "relator": "Augusto Nardes",
+   "movimentacoes_mes": 3
+  },
+  {
    "processo": "008.723/2023-0",
    "orgaos": [],
    "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
    "relator": "Benjamin Zymler",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "031.310/2020-6",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
+   "relator": "Augusto Nardes",
    "movimentacoes_mes": 3
   },
   {
@@ -475,28 +418,6 @@
     "SOF"
    ],
    "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "016.873/2025-4 - Relatório de Levantamento",
-   "relator": "Jhonatan de Jesus",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "017.191/2026-2",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SMA"
-   ],
-   "assunto": "Acompanhamento dos benefícios fiscais",
    "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
   }
@@ -532,6 +453,12 @@
    "movimentacoes": [
     {
      "data": "2026-08-31T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 34339/2026-TCU/Seproc via CONECTA TCU por KEISER SILVA COSTA em nome de Secretaria-Executiva do Ministério de Portos e Aeroportos",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-31T00:00:00+00:00",
      "descricao": "Registrada ciência de comunicação do Ofício 34338/2026-TCU/Seproc via CONECTA TCU por ISABELLE BORGES DA SILVA em nome de Secretaria-Executiva do Ministério de Minas e Energia",
      "fase": null,
      "acordao": null
@@ -539,12 +466,6 @@
     {
      "data": "2026-08-31T00:00:00+00:00",
      "descricao": "Juntada comunicação Ofício 34337/2026 por unidade Seproc em virtude de expedição",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-31T00:00:00+00:00",
-     "descricao": "Juntada comunicação Ofício 34340/2026 por unidade Seproc em virtude de expedição",
      "fase": null,
      "acordao": null
     },
@@ -557,11 +478,11 @@
    ],
    "ultima_movimentacao": {
     "data": "2026-08-31T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 34338/2026-TCU/Seproc via CONECTA TCU por ISABELLE BORGES DA SILVA em nome de Secretaria-Executiva do Ministério de Minas e Energia",
+    "descricao": "Registrada ciência de comunicação do Ofício 34339/2026-TCU/Seproc via CONECTA TCU por KEISER SILVA COSTA em nome de Secretaria-Executiva do Ministério de Portos e Aeroportos",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 34338/2026-TCU/Seproc via CONECTA TC",
+   "fase_atual": "Registrada ciência de comunicação do Ofício 34339/2026-TCU/Seproc via CONECTA TC",
    "atualizado_em": "2026-08-31T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=488720263",
    "garantido": false
@@ -588,33 +509,91 @@
    "movimentacoes": [
     {
      "data": "2026-08-31T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 34363/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-31T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 34360/2026-TCU/Seproc via CONECTA TCU por LETICIA SOEIRO em nome de Secretaria do Tesouro Nacional",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-31T00:00:00+00:00",
      "descricao": "Registrada ciência de comunicação do Ofício 34362/2026-TCU/Seproc via CONECTA TCU por REGINA SATIKO IDA em nome de Financiadora de Estudos e Projetos",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-28T00:00:00+00:00",
-     "descricao": "Juntada comunicação Ofício 34362/2026 por unidade Seproc em virtude de expedição",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-28T00:00:00+00:00",
-     "descricao": "Juntada comunicação Ofício 34361/2026 por unidade Seproc em virtude de expedição",
      "fase": null,
      "acordao": null
     }
    ],
    "ultima_movimentacao": {
     "data": "2026-08-31T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 34362/2026-TCU/Seproc via CONECTA TCU por REGINA SATIKO IDA em nome de Financiadora de Estudos e Projetos",
+    "descricao": "Juntada comunicação Ofício 34363/2026 por unidade Seproc em virtude de expedição",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 34362/2026-TCU/Seproc via CONECTA TC",
+   "fase_atual": "Juntada comunicação Ofício 34363/2026 por unidade Seproc em virtude de expedição",
    "atualizado_em": "2026-08-31T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2431220240",
    "garantido": true
+  },
+  {
+   "numero": "008.928/2025-8",
+   "id": "00892820258",
+   "codigo": "78162264",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
+   "natureza": "Relatório de Auditoria",
+   "unidade_tecnica": "AudPetróleo",
+   "representante_mp": "Lucas Furtado, Cristina Machado",
+   "unidades": [
+    "ANP - Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
+    "BNDES - Banco Nacional de Desenvolvimento Econômico e Social",
+    "EPE - Empresa de Pesquisa Energética"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO",
+    "SE"
+   ],
+   "vinculo": "interessado",
+   "acordao": "1880/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-08-31T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Aviso 0803/2026-TCU/Seproc via CONECTA TCU por JEFFERSON DE OLIVEIRA DAMASCENA em nome de COMISSÃO DE CIÊNCIA, TECNOLOGIA, INOVAÇÃO E INFORMÁTICA - SF",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-19T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 30637/2026-TCU/Seproc via CONECTA TCU por ERICA NATHAIR SANTOS FERRAZ em nome de Secretaria-Executiva do Ministério do Desenvolvimento, Indústria, Comércio e Serviços",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-19T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Aviso 0801/2026-TCU/Seproc via CONECTA TCU por THAIS CRUZ ANDREOZZI em nome de Comissão de Minas e Energia - CD",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-31T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Aviso 0803/2026-TCU/Seproc via CONECTA TCU por JEFFERSON DE OLIVEIRA DAMASCENA em nome de COMISSÃO DE CIÊNCIA, TECNOLOGIA, INOVAÇÃO E INFORMÁTICA - SF",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Aviso 0803/2026-TCU/Seproc via CONECTA TCU ",
+   "atualizado_em": "2026-08-31T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=892820258",
+   "garantido": false
   },
   {
    "numero": "008.723/2023-0",
@@ -640,6 +619,12 @@
    "movimentacoes": [
     {
      "data": "2026-08-31T00:00:00+00:00",
+     "descricao": "Documento Novos elementos/informações adicionais (MEMORIAIS) juntado ao processo por AudPortoFerrovia",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-31T00:00:00+00:00",
      "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, de 02/09/2026, às 14h30.",
      "fase": null,
      "acordao": null
@@ -649,24 +634,72 @@
      "descricao": "Enviado para pronunciamento do Ministro Benjamin Zymler por AudPortoFerrovia",
      "fase": null,
      "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-08-31T00:00:00+00:00",
+    "descricao": "Documento Novos elementos/informações adicionais (MEMORIAIS) juntado ao processo por AudPortoFerrovia",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Novos elementos/informações adicionais (MEMORIAIS) juntado ao processo",
+   "atualizado_em": "2026-08-31T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=872320230",
+   "garantido": true
+  },
+  {
+   "numero": "031.310/2020-6",
+   "id": "03131020206",
+   "codigo": "65697028",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
+   "natureza": "Tomada de Contas Especial",
+   "unidade_tecnica": "AudTCE",
+   "representante_mp": "Cristina Machado, Paulo Bugarin, Júlio Marcelo",
+   "unidades": [
+    "IFPR - Instituto Federal de Educação, Ciência e Tecnologia do Paraná"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-08-31T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 31089/2026-TCU/Seproc.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-08-19T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 31089/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
     },
     {
      "data": "2026-08-14T00:00:00+00:00",
-     "descricao": "Pronunciamento da AudPortoFerrovia concluído",
+     "descricao": "Documento Pesquisa de endereço (modeloDespachoInseridoParaEndereco) juntado ao processo por Seproc",
      "fase": null,
      "acordao": null
     }
    ],
    "ultima_movimentacao": {
     "data": "2026-08-31T00:00:00+00:00",
-    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, de 02/09/2026, às 14h30.",
+    "descricao": "Registrada ciência de comunicação do Ofício 31089/2026-TCU/Seproc.",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, de 02/09/2026, às 14",
+   "fase_atual": "Registrada ciência de comunicação do Ofício 31089/2026-TCU/Seproc.",
    "atualizado_em": "2026-08-31T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=872320230",
-   "garantido": true
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=3131020206",
+   "garantido": false
   },
   {
    "numero": "006.412/2026-2",
@@ -867,12 +900,14 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -1943,11 +1978,13 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -2209,118 +2246,6 @@
    "atualizado_em": "2026-08-19T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1710620257",
    "garantido": true
-  },
-  {
-   "numero": "008.928/2025-8",
-   "id": "00892820258",
-   "codigo": "78162264",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
-   "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": "AudPetróleo",
-   "representante_mp": "Lucas Furtado, Cristina Machado",
-   "unidades": [
-    "ANP - Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
-    "BNDES - Banco Nacional de Desenvolvimento Econômico e Social",
-    "EPE - Empresa de Pesquisa Energética"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SE"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO",
-    "SE"
-   ],
-   "vinculo": "interessado",
-   "acordao": "1880/2026",
-   "movimentacoes": [
-    {
-     "data": "2026-08-19T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 30637/2026-TCU/Seproc via CONECTA TCU por ERICA NATHAIR SANTOS FERRAZ em nome de Secretaria-Executiva do Ministério do Desenvolvimento, Indústria, Comércio e Serviços",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-19T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Aviso 0801/2026-TCU/Seproc via CONECTA TCU por THAIS CRUZ ANDREOZZI em nome de Comissão de Minas e Energia - CD",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-17T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 30634/2026-TCU/Seproc via CONECTA TCU por MARCIO NUNES BILAR em nome de Advocacia-Geral da União",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-19T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 30637/2026-TCU/Seproc via CONECTA TCU por ERICA NATHAIR SANTOS FERRAZ em nome de Secretaria-Executiva do Ministério do Desenvolvimento, Indústria, Comércio e Serviços",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 30637/2026-TCU/Seproc via CONECTA TC",
-   "atualizado_em": "2026-08-19T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=892820258",
-   "garantido": false
-  },
-  {
-   "numero": "031.310/2020-6",
-   "id": "03131020206",
-   "codigo": "65697028",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "unidade_tecnica": "AudTCE",
-   "representante_mp": "Cristina Machado, Paulo Bugarin, Júlio Marcelo",
-   "unidades": [
-    "IFPR - Instituto Federal de Educação, Ciência e Tecnologia do Paraná"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-08-19T00:00:00+00:00",
-     "descricao": "Juntada comunicação Ofício 31089/2026 por unidade Seproc em virtude de expedição",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-14T00:00:00+00:00",
-     "descricao": "Documento Pesquisa de endereço (modeloDespachoInseridoParaEndereco) juntado ao processo por Seproc",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-30T00:00:00+00:00",
-     "descricao": "Pronunciamento da Seproc concluído",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-19T00:00:00+00:00",
-    "descricao": "Juntada comunicação Ofício 31089/2026 por unidade Seproc em virtude de expedição",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Juntada comunicação Ofício 31089/2026 por unidade Seproc em virtude de expedição",
-   "atualizado_em": "2026-08-19T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=3131020206",
-   "garantido": false
   },
   {
    "numero": "017.351/2026-0",
@@ -3520,11 +3445,13 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": "573/2026",
@@ -3750,11 +3677,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3805,12 +3734,14 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3864,11 +3795,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -4191,11 +4124,13 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -4302,13 +4237,16 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [],
+   "orgaos_interessado": [
+    "SE"
+   ],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -4910,6 +4848,20 @@
  "movimentacoes": [
   {
    "data": "2026-08-31T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 34339/2026-TCU/Seproc via CONECTA TCU por KEISER SILVA COSTA em nome de Secretaria-Executiva do Ministério de Portos e Aeroportos",
+   "fase": null,
+   "acordao": null,
+   "processo": "004.887/2026-3",
+   "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-31T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 34338/2026-TCU/Seproc via CONECTA TCU por ISABELLE BORGES DA SILVA em nome de Secretaria-Executiva do Ministério de Minas e Energia",
    "fase": null,
    "acordao": null,
@@ -4938,16 +4890,24 @@
   },
   {
    "data": "2026-08-31T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 34340/2026 por unidade Seproc em virtude de expedição",
+   "descricao": "Juntada comunicação Ofício 34363/2026 por unidade Seproc em virtude de expedição",
    "fase": null,
    "acordao": null,
-   "processo": "004.887/2026-3",
-   "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
+   "processo": "024.312/2024-0",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-31T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 34360/2026-TCU/Seproc via CONECTA TCU por LETICIA SOEIRO em nome de Secretaria do Tesouro Nacional",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.312/2024-0",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "natureza": "Representação",
+   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -4957,6 +4917,31 @@
    "acordao": null,
    "processo": "024.312/2024-0",
    "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-31T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Aviso 0803/2026-TCU/Seproc via CONECTA TCU por JEFFERSON DE OLIVEIRA DAMASCENA em nome de COMISSÃO DE CIÊNCIA, TECNOLOGIA, INOVAÇÃO E INFORMÁTICA - SF",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.928/2025-8",
+   "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-31T00:00:00+00:00",
+   "descricao": "Documento Novos elementos/informações adicionais (MEMORIAIS) juntado ao processo por AudPortoFerrovia",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.723/2023-0",
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
    "natureza": "Representação",
    "orgaos": [],
    "estado": "Aberto"
@@ -4973,25 +4958,16 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-08-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 34362/2026 por unidade Seproc em virtude de expedição",
+   "data": "2026-08-31T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 31089/2026-TCU/Seproc.",
    "fase": null,
    "acordao": null,
-   "processo": "024.312/2024-0",
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "natureza": "Representação",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 34361/2026 por unidade Seproc em virtude de expedição",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.312/2024-0",
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "natureza": "Representação",
-   "orgaos": [],
+   "processo": "031.310/2020-6",
+   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
+   "natureza": "Tomada de Contas Especial",
+   "orgaos": [
+    "MPO"
+   ],
    "estado": "Aberto"
   },
   {
@@ -5081,6 +5057,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5096,6 +5073,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5153,6 +5131,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5754,7 +5733,8 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5767,7 +5747,8 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5852,7 +5833,8 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -5928,33 +5910,6 @@
   },
   {
    "data": "2026-08-19T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 30365/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
-   "fase": null,
-   "acordao": null,
-   "processo": "026.569/2024-8",
-   "assunto": "Monitoramento das deliberações do Acórdão 2201/2024-Plenário, proferido no âmbito do TC 032.255/2023-3, que tratou de auditoria operacional para avaliar a governança instituída em âmbito federal para enfrentamento da crise climática",
-   "natureza": "Monitoramento",
-   "orgaos": [
-    "MPO",
-    "SE"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-19T00:00:00+00:00",
-   "descricao": "Documento Termo juntado ao processo via CONECTA TCU por LEONARDO BARBOZA PINHEIRO",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.106/2025-7",
-   "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-19T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 30637/2026-TCU/Seproc via CONECTA TCU por ERICA NATHAIR SANTOS FERRAZ em nome de Secretaria-Executiva do Ministério do Desenvolvimento, Indústria, Comércio e Serviços",
    "fase": null,
    "acordao": null,
@@ -5989,6 +5944,33 @@
    "processo": "031.310/2020-6",
    "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
    "natureza": "Tomada de Contas Especial",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-19T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 30365/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
+   "fase": null,
+   "acordao": null,
+   "processo": "026.569/2024-8",
+   "assunto": "Monitoramento das deliberações do Acórdão 2201/2024-Plenário, proferido no âmbito do TC 032.255/2023-3, que tratou de auditoria operacional para avaliar a governança instituída em âmbito federal para enfrentamento da crise climática",
+   "natureza": "Monitoramento",
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-08-19T00:00:00+00:00",
+   "descricao": "Documento Termo juntado ao processo via CONECTA TCU por LEONARDO BARBOZA PINHEIRO",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.106/2025-7",
+   "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
+   "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO"
    ],
@@ -6065,20 +6047,6 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-08-17T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 30634/2026-TCU/Seproc via CONECTA TCU por MARCIO NUNES BILAR em nome de Advocacia-Geral da União",
-   "fase": null,
-   "acordao": null,
-   "processo": "008.928/2025-8",
-   "assunto": "Auditoria operacional para verificar a efetividade da política de conteúdo local (PCL)",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
-    "SE"
-   ],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-08-14T00:00:00+00:00",
    "descricao": "Enviado para pronunciamento do Ministro Benjamin Zymler por AudPortoFerrovia",
    "fase": null,
@@ -6091,13 +6059,15 @@
   },
   {
    "data": "2026-08-14T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudPortoFerrovia concluído",
+   "descricao": "Documento Pesquisa de endereço (modeloDespachoInseridoParaEndereco) juntado ao processo por Seproc",
    "fase": null,
    "acordao": null,
-   "processo": "008.723/2023-0",
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "natureza": "Representação",
-   "orgaos": [],
+   "processo": "031.310/2020-6",
+   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
+   "natureza": "Tomada de Contas Especial",
+   "orgaos": [
+    "MPO"
+   ],
    "estado": "Aberto"
   },
   {
@@ -6108,19 +6078,6 @@
    "processo": "007.442/2025-4",
    "assunto": "11º Ciclo da Fiscalização Contínua de Folhas e Pagamento",
    "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-14T00:00:00+00:00",
-   "descricao": "Documento Pesquisa de endereço (modeloDespachoInseridoParaEndereco) juntado ao processo por Seproc",
-   "fase": null,
-   "acordao": null,
-   "processo": "031.310/2020-6",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
    "orgaos": [
     "MPO"
    ],
@@ -6387,19 +6344,6 @@
     "AECI",
     "MPO",
     "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-30T00:00:00+00:00",
-   "descricao": "Pronunciamento da Seproc concluído",
-   "fase": null,
-   "acordao": null,
-   "processo": "031.310/2020-6",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "orgaos": [
-    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6841,7 +6785,8 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -7043,6 +6988,7 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7058,6 +7004,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7073,6 +7020,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7088,6 +7036,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7102,6 +7051,7 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7116,6 +7066,7 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7130,6 +7081,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7144,6 +7096,7 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7430,7 +7383,8 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -7443,7 +7397,8 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -7456,7 +7411,8 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -7469,7 +7425,8 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -7482,7 +7439,8 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -7590,6 +7548,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7604,6 +7563,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7618,6 +7578,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
