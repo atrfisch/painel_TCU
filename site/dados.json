@@ -1,19 +1,18 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-08T12:44:33.914848+00:00",
- "gerado_em_br": "08/09/2026 às 12:44",
+ "gerado_em": "2026-09-08T13:22:16.847229+00:00",
+ "gerado_em_br": "08/09/2026 às 13:22",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 75,
-  "movimentacoes": 228,
-  "abertos": 75,
-  "encerrados_ocultos": 564,
-  "so_interesse": 34
+  "processos": 69,
+  "movimentacoes": 210,
+  "abertos": 69,
+  "encerrados_ocultos": 295,
+  "so_interesse": 29
  },
  "garantidos": [
-  "008.723/2023-0",
   "011.685/2026-3",
   "017.183/2026-0",
   "025.632/2024-8",
@@ -28,38 +27,15 @@
   "011.526/2022-0"
  ],
  "novos_processos": [],
- "andamentos_novos": [
-  {
-   "processo": "021.399/2025-5",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE"
-   ],
-   "assunto": "Acompanhamento para avaliação de maturidade  da implementação da Política Compromisso Nacional Criança Alfabetizada (CNCA), para atendimento ao RePP 2026",
-   "data": "2026-09-08T00:00:00+00:00",
-   "descricao": "Documento Resposta de determinação juntado ao processo por AudEducação",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "008.723/2023-0",
-   "orgaos": [],
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "data": "2026-09-08T00:00:00+00:00",
-   "descricao": "Peça No. 330 do tipo Termo Pedido de Vista (doc 81.001.533-1) desentranhada do processo por Siasg - Motivo: Erro na juntada",
-   "acordao": null,
-   "novo_no_radar": false
-  }
- ],
+ "andamentos_novos": [],
  "tem_baseline": true,
  "por_orgao": [
   {
    "orgao": "MPO",
    "nome": "Ministério do Planejamento e Orçamento",
-   "total": 66,
+   "total": 60,
    "como_unidade": 35,
-   "como_interessado": 31
+   "como_interessado": 25
   },
   {
    "orgao": "AECI",
@@ -71,16 +47,16 @@
   {
    "orgao": "SE",
    "nome": "Secretaria-Executiva do MPO",
-   "total": 14,
+   "total": 13,
    "como_unidade": 0,
-   "como_interessado": 14
+   "como_interessado": 13
   },
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 44,
+   "total": 42,
    "como_unidade": 34,
-   "como_interessado": 10
+   "como_interessado": 8
   },
   {
    "orgao": "SEPLAN",
@@ -99,11 +75,6 @@
  ],
  "por_tipo": [
   {
-   "tipo": "Representação",
-   "total": 16,
-   "abertos": 16
-  },
-  {
    "tipo": "Relatório de Acompanhamento",
    "total": 16,
    "abertos": 16
@@ -114,9 +85,9 @@
    "abertos": 15
   },
   {
-   "tipo": "Monitoramento",
-   "total": 6,
-   "abertos": 6
+   "tipo": "Representação",
+   "total": 14,
+   "abertos": 14
   },
   {
    "tipo": "Relatório de Levantamento",
@@ -134,22 +105,17 @@
    "abertos": 4
   },
   {
+   "tipo": "Monitoramento",
+   "total": 4,
+   "abertos": 4
+  },
+  {
    "tipo": "Solicitação do Congresso Nacional",
    "total": 2,
    "abertos": 2
   },
   {
-   "tipo": "Solicitação de Solução Consensual",
-   "total": 1,
-   "abertos": 1
-  },
-  {
    "tipo": "Denúncia",
-   "total": 1,
-   "abertos": 1
-  },
-  {
-   "tipo": "Tomada de Contas Especial",
    "total": 1,
    "abertos": 1
   },
@@ -176,19 +142,19 @@
   },
   {
    "relator": "Benjamin Zymler",
-   "total": 13
-  },
-  {
-   "relator": "Jhonatan de Jesus",
-   "total": 11
+   "total": 12
   },
   {
    "relator": "Jorge Oliveira",
-   "total": 10
+   "total": 9
+  },
+  {
+   "relator": "Jhonatan de Jesus",
+   "total": 9
   },
   {
    "relator": "Augusto Nardes",
-   "total": 9
+   "total": 8
   },
   {
    "relator": "Bruno Dantas",
@@ -204,7 +170,7 @@
   },
   {
    "relator": "Marcos Bemquerer",
-   "total": 2
+   "total": 1
   },
   {
    "relator": "Augusto Sherman",
@@ -221,10 +187,6 @@
    "total": 3
   },
   {
-   "unidade": "AudEducação",
-   "total": 2
-  },
-  {
    "unidade": "AudPetróleo",
    "total": 2
   },
@@ -237,15 +199,15 @@
    "total": 2
   },
   {
+   "unidade": "AudEducação",
+   "total": 1
+  },
+  {
    "unidade": "AudGestãoInovação",
    "total": 1
   },
   {
    "unidade": "AudSustentabilidade",
-   "total": 1
-  },
-  {
-   "unidade": "AudTCE",
    "total": 1
   },
   {
@@ -263,15 +225,15 @@
  ],
  "por_representante": [
   {
-   "representante": "Lucas Furtado",
-   "total": 7
-  },
-  {
    "representante": "Rodrigo Lima",
    "total": 6
   },
   {
    "representante": "Júlio Marcelo",
+   "total": 6
+  },
+  {
+   "representante": "Lucas Furtado",
    "total": 6
   },
   {
@@ -292,10 +254,6 @@
   },
   {
    "representante": "Lucas Furtado, Cristina Machado",
-   "total": 1
-  },
-  {
-   "representante": "Cristina Machado, Paulo Bugarin, Júlio Marcelo",
    "total": 1
   },
   {
@@ -349,13 +307,6 @@
    "movimentacoes_mes": 4
   },
   {
-   "processo": "008.723/2023-0",
-   "orgaos": [],
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "relator": "Benjamin Zymler",
-   "movimentacoes_mes": 3
-  },
-  {
    "processo": "018.198/2026-0",
    "orgaos": [
     "MPO",
@@ -383,6 +334,13 @@
    ],
    "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
    "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "011.685/2026-3",
+   "orgaos": [],
+   "assunto": "011.685/2026-3 - Denúncia",
+   "relator": "Odair Cunha",
    "movimentacoes_mes": 3
   }
  ],
@@ -447,58 +405,6 @@
    "atualizado_em": "2026-09-08T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2139920255",
    "garantido": false
-  },
-  {
-   "numero": "008.723/2023-0",
-   "id": "00872320230",
-   "codigo": "73545490",
-   "estado": "Aberto",
-   "relator": "Benjamin Zymler",
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "AGU - Advocacia-Geral da União",
-    "Antaq - Agência Nacional de Transportes Aquaviários",
-    "ANTT - Agência Nacional de Transportes Terrestres"
-   ],
-   "interessados": [],
-   "orgaos": [],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [],
-   "vinculo": null,
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-08T00:00:00+00:00",
-     "descricao": "Peça No. 330 do tipo Termo Pedido de Vista (doc 81.001.533-1) desentranhada do processo por Siasg - Motivo: Erro na juntada",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-04T00:00:00+00:00",
-     "descricao": "Documento Termo Pedido de Vista juntado ao processo por Seses",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-02T00:00:00+00:00",
-     "descricao": "Pedido de sustentação oral (080.994.605-9) apreciado pelo Presidente do Plenário",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-08T00:00:00+00:00",
-    "descricao": "Peça No. 330 do tipo Termo Pedido de Vista (doc 81.001.533-1) desentranhada do processo por Siasg - Motivo: Erro na juntada",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Peça No. 330 do tipo Termo Pedido de Vista (doc 81.001.533-1) desentranhada do p",
-   "atualizado_em": "2026-09-08T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=872320230",
-   "garantido": true
   },
   {
    "numero": "018.198/2026-0",
@@ -678,60 +584,6 @@
    "fase_atual": "Registrada resposta de comunicação do Ofício 32446/2026-TCU/Seproc.",
    "atualizado_em": "2026-09-04T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1722620260",
-   "garantido": false
-  },
-  {
-   "numero": "020.662/2023-8",
-   "id": "02066220238",
-   "codigo": "74018032",
-   "estado": "Aberto",
-   "relator": "Jorge Oliveira",
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "natureza": "Solicitação de Solução Consensual",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "ANATEL - Agência Nacional de Telecomunicações"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-04T00:00:00+00:00",
-     "descricao": "Pronunciamento da SecexConsenso concluído",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2025-11-26T00:00:00+00:00",
-     "descricao": "Documento Memorando juntado ao processo por SecexConsenso. O(s) anexo(s) [Termo, Comunicação de decisão judicial] foi(ram) adicionado(s) como peça(s) do processo",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2025-10-20T00:00:00+00:00",
-     "descricao": "Documento Termo juntado ao processo via CONECTA TCU por RODRIGO LEITAO REQUENA",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-04T00:00:00+00:00",
-    "descricao": "Pronunciamento da SecexConsenso concluído",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Pronunciamento da SecexConsenso concluído",
-   "atualizado_em": "2026-09-04T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2066220238",
    "garantido": false
   },
   {
@@ -1672,60 +1524,6 @@
    "garantido": false
   },
   {
-   "numero": "031.310/2020-6",
-   "id": "03131020206",
-   "codigo": "65697028",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "unidade_tecnica": "AudTCE",
-   "representante_mp": "Cristina Machado, Paulo Bugarin, Júlio Marcelo",
-   "unidades": [
-    "IFPR - Instituto Federal de Educação, Ciência e Tecnologia do Paraná"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-08-31T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 31089/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-19T00:00:00+00:00",
-     "descricao": "Juntada comunicação Ofício 31089/2026 por unidade Seproc em virtude de expedição",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-14T00:00:00+00:00",
-     "descricao": "Documento Pesquisa de endereço (modeloDespachoInseridoParaEndereco) juntado ao processo por Seproc",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-08-31T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 31089/2026-TCU/Seproc.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 31089/2026-TCU/Seproc.",
-   "atualizado_em": "2026-08-31T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=3131020206",
-   "garantido": false
-  },
-  {
    "numero": "014.609/2026-6",
    "id": "01460920266",
    "codigo": "80607514",
@@ -2203,7 +2001,7 @@
    "orgaos": [],
    "orgaos_unidade": [],
    "orgaos_interessado": [],
-   "vinculo": null,
+   "vinculo": "acompanhado",
    "acordao": null,
    "movimentacoes": [
     {
@@ -2763,15 +2561,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
+    "AECI"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "AECI",
-    "MPO",
-    "SOF"
+    "AECI"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -3212,56 +3006,6 @@
    "garantido": false
   },
   {
-   "numero": "041.252/2021-7",
-   "id": "04125220217",
-   "codigo": "69349908",
-   "estado": "Aberto",
-   "relator": "Marcos Bemquerer",
-   "assunto": "Monitoramento de determinações/recomendações constantes nos subitens 9.2 a 9.6 do Acórdão 1896/2021-TCU-Plenário, proferido no TC 031.532/2020-9, que cuidou de Auditoria de Natureza Operacional, tendo por objeto averiguar a adequabilidade dos componentes de governança do Fundo Setorial do Audiovisual (FSA), o qual constitui a principal política pública de fomento ao setor audiovisual brasileiro",
-   "natureza": "Monitoramento",
-   "unidade_tecnica": "AudEducação",
-   "representante_mp": "Lucas Furtado",
-   "unidades": [
-    "Ancine - Agência Nacional do Cinema"
-   ],
-   "interessados": [
-    "Secretaria-Executiva do Ministério da Cultura"
-   ],
-   "orgaos": [
-    "SOF"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "SOF"
-   ],
-   "vinculo": "interessado",
-   "acordao": "740/2026",
-   "movimentacoes": [
-    {
-     "data": "2026-07-18T00:00:00+00:00",
-     "descricao": "Confidencialidade do processo alterada de Restrito para Público  por AudEducação",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-04-30T00:00:00+00:00",
-     "descricao": "Documento Resposta de determinação juntado ao processo por AudEducação",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-18T00:00:00+00:00",
-    "descricao": "Confidencialidade do processo alterada de Restrito para Público  por AudEducação",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Confidencialidade do processo alterada de Restrito para Público  por AudEducação",
-   "atualizado_em": "2026-07-18T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=4125220217",
-   "garantido": false
-  },
-  {
    "numero": "009.482/2026-1",
    "id": "00948220261",
    "codigo": "80253574",
@@ -3507,68 +3251,6 @@
    "atualizado_em": "2026-07-13T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=715820262",
    "garantido": true
-  },
-  {
-   "numero": "015.683/2019-2",
-   "id": "01568320192",
-   "codigo": "61758080",
-   "estado": "Aberto",
-   "relator": "Jhonatan de Jesus",
-   "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
-   "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "MECON - Ministério da Economia (extinto)",
-    "SE/MME - Secretaria-Executiva do Ministério de Minas e Energia",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "interessado",
-   "acordao": "573/2026",
-   "movimentacoes": [
-    {
-     "data": "2026-07-01T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 3850/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-04-09T00:00:00+00:00",
-     "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-04-09T00:00:00+00:00",
-     "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-02-11T00:00:00+00:00",
-     "descricao": "Acórdão 573/2026 — Primeira Câmara",
-     "fase": "Julgado",
-     "acordao": "573/2026"
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-01T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 3850/2026-TCU/Seproc.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 3850/2026-TCU/Seproc.",
-   "atualizado_em": "2026-07-01T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1568320192",
-   "garantido": false
   },
   {
    "numero": "014.984/2025-3",
@@ -4065,62 +3747,6 @@
    "fase_atual": "Processo enviado de Seproc para AudEducação/AudEducação-ASS. (Assessoria da AudE",
    "atualizado_em": "2026-05-13T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2113020256",
-   "garantido": false
-  },
-  {
-   "numero": "012.712/2022-1",
-   "id": "01271220221",
-   "codigo": "71412943",
-   "estado": "Aberto",
-   "relator": "Jhonatan de Jesus",
-   "assunto": "MONITORAMENTO DAS DETERMINAÇÕES E/OU RECOMENDAÇÕES FEITAS AO Ministério da Cidadania, por meio do Acórdão 3142/2021-Plenário, (016.827/2020-1 - RAcom Auxílio Emergencial).",
-   "natureza": "Monitoramento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "MCIDADANIA - Ministério da Cidadania (extinto)"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SE"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO",
-    "SE"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-05-07T00:00:00+00:00",
-     "descricao": "Processo enviado de Seproc para AudBenefícios/AudBenefícios-ASS. (Assessoria da AudBenefícios)",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-05-07T00:00:00+00:00",
-     "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-05-06T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 15572/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-05-07T00:00:00+00:00",
-    "descricao": "Processo enviado de Seproc para AudBenefícios/AudBenefícios-ASS. (Assessoria da AudBenefícios)",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo enviado de Seproc para AudBenefícios/AudBenefícios-ASS. (Assessoria da ",
-   "atualizado_em": "2026-05-07T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1271220221",
    "garantido": false
   },
   {
@@ -4654,13 +4280,11 @@
     "Secretaria de Gestão de Pessoas"
    ],
    "orgaos": [
-    "AECI",
-    "MPO"
+    "AECI"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "AECI",
-    "MPO"
+    "AECI"
    ],
    "vinculo": "interessado",
    "acordao": "2404/2024",
@@ -4790,28 +4414,6 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-09-08T00:00:00+00:00",
-   "descricao": "Peça No. 330 do tipo Termo Pedido de Vista (doc 81.001.533-1) desentranhada do processo por Siasg - Motivo: Erro na juntada",
-   "fase": null,
-   "acordao": null,
-   "processo": "008.723/2023-0",
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "natureza": "Representação",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Documento Termo Pedido de Vista juntado ao processo por Seses",
-   "fase": null,
-   "acordao": null,
-   "processo": "008.723/2023-0",
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "natureza": "Representação",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-09-04T00:00:00+00:00",
    "descricao": "Registrada resposta de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação.",
    "fase": null,
@@ -4892,19 +4494,6 @@
    "orgaos": [
     "MPO",
     "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Pronunciamento da SecexConsenso concluído",
-   "fase": null,
-   "acordao": null,
-   "processo": "020.662/2023-8",
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "natureza": "Solicitação de Solução Consensual",
-   "orgaos": [
-    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5141,17 +4730,6 @@
    "orgaos": [
     "MPO"
    ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-02T00:00:00+00:00",
-   "descricao": "Pedido de sustentação oral (080.994.605-9) apreciado pelo Presidente do Plenário",
-   "fase": null,
-   "acordao": null,
-   "processo": "008.723/2023-0",
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "natureza": "Representação",
-   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -5490,19 +5068,6 @@
    "orgaos": [
     "MPO",
     "SE"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-31T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 31089/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "031.310/2020-6",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "orgaos": [
-    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5997,19 +5562,6 @@
   },
   {
    "data": "2026-08-19T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 31089/2026 por unidade Seproc em virtude de expedição",
-   "fase": null,
-   "acordao": null,
-   "processo": "031.310/2020-6",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-19T00:00:00+00:00",
    "descricao": "Documento Termo juntado ao processo via CONECTA TCU por LEONARDO BARBOZA PINHEIRO",
    "fase": null,
    "acordao": null,
@@ -6088,19 +5640,6 @@
    "orgaos": [
     "MPO",
     "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-14T00:00:00+00:00",
-   "descricao": "Documento Pesquisa de endereço (modeloDespachoInseridoParaEndereco) juntado ao processo por Seproc",
-   "fase": null,
-   "acordao": null,
-   "processo": "031.310/2020-6",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "orgaos": [
-    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6239,9 +5778,7 @@
    "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
    "natureza": "Representação",
    "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
+    "AECI"
    ],
    "estado": "Aberto"
   },
@@ -6267,9 +5804,7 @@
    "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
    "natureza": "Representação",
    "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
+    "AECI"
    ],
    "estado": "Aberto"
   },
@@ -6348,9 +5883,7 @@
    "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
    "natureza": "Representação",
    "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
+    "AECI"
    ],
    "estado": "Aberto"
   },
@@ -6604,19 +6137,6 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-18T00:00:00+00:00",
-   "descricao": "Confidencialidade do processo alterada de Restrito para Público  por AudEducação",
-   "fase": null,
-   "acordao": null,
-   "processo": "041.252/2021-7",
-   "assunto": "Monitoramento de determinações/recomendações constantes nos subitens 9.2 a 9.6 do Acórdão 1896/2021-TCU-Plenário, proferido no TC 031.532/2020-9, que cuidou de Auditoria de Natureza Operacional, tendo por objeto averiguar a adequabilidade dos componentes de governança do Fundo Setorial do Audiovisual (FSA), o qual constitui a principal política pública de fomento ao setor audiovisual brasileiro",
-   "natureza": "Monitoramento",
-   "orgaos": [
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-07-17T00:00:00+00:00",
    "descricao": "Registrada resposta de comunicação do Ofício 0097/2026-TCU/AudFiscal.",
    "fase": null,
@@ -6732,19 +6252,6 @@
    "acordao": "1803/2026",
    "processo": "024.754/2024-2",
    "assunto": "Acompanhamento da aplicação pelo BNDES  dos recursos decorrentes de operações de crédito externo com o New Development Bank e Banco Interamericano de Desenvolvimento-BID.",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-01T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 3850/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "015.683/2019-2",
-   "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
     "MPO"
@@ -7217,48 +6724,6 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-05-07T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudBenefícios/AudBenefícios-ASS. (Assessoria da AudBenefícios)",
-   "fase": null,
-   "acordao": null,
-   "processo": "012.712/2022-1",
-   "assunto": "MONITORAMENTO DAS DETERMINAÇÕES E/OU RECOMENDAÇÕES FEITAS AO Ministério da Cidadania, por meio do Acórdão 3142/2021-Plenário, (016.827/2020-1 - RAcom Auxílio Emergencial).",
-   "natureza": "Monitoramento",
-   "orgaos": [
-    "MPO",
-    "SE"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-05-07T00:00:00+00:00",
-   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
-   "fase": null,
-   "acordao": null,
-   "processo": "012.712/2022-1",
-   "assunto": "MONITORAMENTO DAS DETERMINAÇÕES E/OU RECOMENDAÇÕES FEITAS AO Ministério da Cidadania, por meio do Acórdão 3142/2021-Plenário, (016.827/2020-1 - RAcom Auxílio Emergencial).",
-   "natureza": "Monitoramento",
-   "orgaos": [
-    "MPO",
-    "SE"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-05-06T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 15572/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-   "fase": null,
-   "acordao": null,
-   "processo": "012.712/2022-1",
-   "assunto": "MONITORAMENTO DAS DETERMINAÇÕES E/OU RECOMENDAÇÕES FEITAS AO Ministério da Cidadania, por meio do Acórdão 3142/2021-Plenário, (016.827/2020-1 - RAcom Auxílio Emergencial).",
-   "natureza": "Monitoramento",
-   "orgaos": [
-    "MPO",
-    "SE"
-   ],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-05-05T00:00:00+00:00",
    "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.255.664-4) publicada no BTCU Controle Externo n° 71, de 05/05/2026.",
    "fase": null,
@@ -7282,19 +6747,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-04-30T00:00:00+00:00",
-   "descricao": "Documento Resposta de determinação juntado ao processo por AudEducação",
-   "fase": null,
-   "acordao": null,
-   "processo": "041.252/2021-7",
-   "assunto": "Monitoramento de determinações/recomendações constantes nos subitens 9.2 a 9.6 do Acórdão 1896/2021-TCU-Plenário, proferido no TC 031.532/2020-9, que cuidou de Auditoria de Natureza Operacional, tendo por objeto averiguar a adequabilidade dos componentes de governança do Fundo Setorial do Audiovisual (FSA), o qual constitui a principal política pública de fomento ao setor audiovisual brasileiro",
-   "natureza": "Monitoramento",
-   "orgaos": [
     "SOF"
    ],
    "estado": "Aberto"
@@ -7360,32 +6812,6 @@
    "acordao": null,
    "processo": "001.131/2026-5",
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-04-09T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-   "fase": null,
-   "acordao": null,
-   "processo": "015.683/2019-2",
-   "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-04-09T00:00:00+00:00",
-   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
-   "fase": null,
-   "acordao": null,
-   "processo": "015.683/2019-2",
-   "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
     "MPO"
@@ -7512,6 +6938,213 @@
     "MPO",
     "SOF"
    ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-03-16T00:00:00+00:00",
+   "descricao": "Documento Resposta de determinação juntado ao processo por Seproc",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.674/2024-0",
+   "assunto": "Auditoria para avaliação das causas e possíveis consequências da diminuição de ofertas de áreas e autorizações para exploração de petróleo",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO",
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-03-10T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudUrbana/AudUrbana-ASS. (Assessoria da AudUrbana)",
+   "fase": null,
+   "acordao": null,
+   "processo": "019.579/2024-1",
+   "assunto": "Levantamento sobre a alocação de emendas parlamentares em obras públicas (Ac 2.207/2023-Plenário)",
+   "natureza": "Relatório de Levantamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-03-10T00:00:00+00:00",
+   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
+   "fase": null,
+   "acordao": null,
+   "processo": "019.579/2024-1",
+   "assunto": "Levantamento sobre a alocação de emendas parlamentares em obras públicas (Ac 2.207/2023-Plenário)",
+   "natureza": "Relatório de Levantamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-03-10T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Aviso 0175/2026-TCU/Seproc via CONECTA TCU por Maria do Socorro de Lacerda Dantas  em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
+   "fase": null,
+   "acordao": null,
+   "processo": "019.579/2024-1",
+   "assunto": "Levantamento sobre a alocação de emendas parlamentares em obras públicas (Ac 2.207/2023-Plenário)",
+   "natureza": "Relatório de Levantamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-03-03T00:00:00+00:00",
+   "descricao": "Documento Resposta de determinação juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "021.989/2024-9",
+   "assunto": "Representação de autoria do Senador Ciro Nogueira acerca de possível irregularidade concernente ao descumprimento das regras da Lei Complementar 101/2000 (Lei de Responsabilidade Fiscal  LRF) quando da edição da Medida\r\nProvisória 1.255, de 26/8/2024 (MP 1.255/2024), que autorizou a concessão de quotas diferenciadas de depreciação acelerada para navios-tanque novos produzidos no Brasil destinados ao ativo imobilizado e empregados exclusivamente em atividade de cabotagem de petróleo e seus derivados",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-02-02T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudFiscal/Dipog. (Diretoria de Fiscalização do Planejamento e do Orçamento Governamental)",
+   "fase": null,
+   "acordao": null,
+   "processo": "036.975/2020-6",
+   "assunto": "Acórdão 2283/2020-P item 9.2 - objetivo de melhor delinear e consolidar os entendimentos e procedimentos relativos ao Orçamento de Guerra, bem como suas intersecções com as hipóteses de abertura de crédito extraordinário e os limites impostos pelo Teto de Gastos. (TC 016.873/2020-3)",
+   "natureza": "Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-02-02T00:00:00+00:00",
+   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
+   "fase": null,
+   "acordao": null,
+   "processo": "036.975/2020-6",
+   "assunto": "Acórdão 2283/2020-P item 9.2 - objetivo de melhor delinear e consolidar os entendimentos e procedimentos relativos ao Orçamento de Guerra, bem como suas intersecções com as hipóteses de abertura de crédito extraordinário e os limites impostos pelo Teto de Gastos. (TC 016.873/2020-3)",
+   "natureza": "Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-02-02T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 54091/2025-TCU/Seproc.",
+   "fase": null,
+   "acordao": null,
+   "processo": "036.975/2020-6",
+   "assunto": "Acórdão 2283/2020-P item 9.2 - objetivo de melhor delinear e consolidar os entendimentos e procedimentos relativos ao Orçamento de Guerra, bem como suas intersecções com as hipóteses de abertura de crédito extraordinário e os limites impostos pelo Teto de Gastos. (TC 016.873/2020-3)",
+   "natureza": "Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2025-10-21T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Sensibilidade dos cenários estocásticos de dívida ) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.930/2025-2",
+   "assunto": "008.930/2025-2 - Relatório de Levantamento",
+   "natureza": "Relatório de Levantamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2025-10-21T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Metodologia de cenários estocásticos para a dívida) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.930/2025-2",
+   "assunto": "008.930/2025-2 - Relatório de Levantamento",
+   "natureza": "Relatório de Levantamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2025-10-21T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Pacote R: cenários estocásticos da dívida pública ) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.930/2025-2",
+   "assunto": "008.930/2025-2 - Relatório de Levantamento",
+   "natureza": "Relatório de Levantamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2025-10-06T00:00:00+00:00",
+   "descricao": "Processo excluído da pauta da sessão Ordinária de Primeira Câmara, prevista para 07/10/2025, às 15h",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.409/2025-3",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Esclarecimentos sobre a aplicação do entendimento do Acórdão nº 1103/2024-Plenário à situação tratada no Acórdão nº 1649/2024-Plenário, envolvendo a recomposição do limite de gastos do Ministério Público da União.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2025-10-02T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Primeira Câmara, prevista para 07/10/2025, às 15h.",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.409/2025-3",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Esclarecimentos sobre a aplicação do entendimento do Acórdão nº 1103/2024-Plenário à situação tratada no Acórdão nº 1649/2024-Plenário, envolvendo a recomposição do limite de gastos do Ministério Público da União.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2025-09-29T00:00:00+00:00",
+   "descricao": "Enviado para pronunciamento do Ministro Jhonatan de Jesus por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.409/2025-3",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Esclarecimentos sobre a aplicação do entendimento do Acórdão nº 1103/2024-Plenário à situação tratada no Acórdão nº 1649/2024-Plenário, envolvendo a recomposição do limite de gastos do Ministério Público da União.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2025-09-10T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.526/2022-0",
+   "assunto": "CONS - Nos termos do art. 1°, XVII, da Lei n° 8.443, de 1992,\r\nconfeccionados em face de preocupações e dúvidas desta Pasta em razão da divergência de entendimentos entre a CGU e os demais órgãos do Governo sobre qual tratamento deve ser dado à aplicação dos depósitos especiais do FAT.",
+   "natureza": "Consulta",
+   "orgaos": [],
    "estado": "Aberto"
   }
  ]
