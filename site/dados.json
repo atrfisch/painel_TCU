@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-07T14:50:39.375950+00:00",
- "gerado_em_br": "07/09/2026 às 14:50",
+ "gerado_em": "2026-09-08T12:44:33.914848+00:00",
+ "gerado_em_br": "08/09/2026 às 12:44",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -9,7 +9,7 @@
   "processos": 75,
   "movimentacoes": 228,
   "abertos": 75,
-  "encerrados_ocultos": 565,
+  "encerrados_ocultos": 564,
   "so_interesse": 34
  },
  "garantidos": [
@@ -30,78 +30,6 @@
  "novos_processos": [],
  "andamentos_novos": [
   {
-   "processo": "018.198/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.692/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.692/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.692/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Unidade responsável técnica alterada de AudFiscal para Diref por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.226/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 32446/2026-TCU/Seproc.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.226/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 31729/2026-TCU/Seproc.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
    "processo": "021.399/2025-5",
    "orgaos": [
     "AECI",
@@ -109,19 +37,8 @@
     "SE"
    ],
    "assunto": "Acompanhamento para avaliação de maturidade  da implementação da Política Compromisso Nacional Criança Alfabetizada (CNCA), para atendimento ao RePP 2026",
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 23174/2026-TCU/Seproc.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.662/2023-8",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Pronunciamento da SecexConsenso concluído",
+   "data": "2026-09-08T00:00:00+00:00",
+   "descricao": "Documento Resposta de determinação juntado ao processo por AudEducação",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -129,17 +46,8 @@
    "processo": "008.723/2023-0",
    "orgaos": [],
    "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Documento Termo Pedido de Vista juntado ao processo por Seses",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "011.685/2026-3",
-   "orgaos": [],
-   "assunto": "011.685/2026-3 - Denúncia",
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Documento Termo juntado ao processo via CONECTA TCU por EDVALDO DE ALMEIDA CAMPELO JUNIOR",
+   "data": "2026-09-08T00:00:00+00:00",
+   "descricao": "Peça No. 330 do tipo Termo Pedido de Vista (doc 81.001.533-1) desentranhada do processo por Siasg - Motivo: Erro na juntada",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -163,9 +71,9 @@
   {
    "orgao": "SE",
    "nome": "Secretaria-Executiva do MPO",
-   "total": 22,
+   "total": 14,
    "como_unidade": 0,
-   "como_interessado": 22
+   "como_interessado": 14
   },
   {
    "orgao": "SOF",
@@ -414,7 +322,6 @@
    "processo": "006.412/2026-2",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
@@ -440,6 +347,13 @@
    "assunto": "Representação referente ao ato de gestão (Objeto: Possível subavaliação de impactos fiscais decorrentes da utilização de fundos públicos, fundos garantidores, créditos subsidiados e créditos extraordinários.)",
    "relator": "Jhonatan de Jesus",
    "movimentacoes_mes": 4
+  },
+  {
+   "processo": "008.723/2023-0",
+   "orgaos": [],
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
+   "relator": "Benjamin Zymler",
+   "movimentacoes_mes": 3
   },
   {
    "processo": "018.198/2026-0",
@@ -470,16 +384,122 @@
    "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
    "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
-  },
-  {
-   "processo": "008.723/2023-0",
-   "orgaos": [],
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "relator": "Benjamin Zymler",
-   "movimentacoes_mes": 3
   }
  ],
  "processos": [
+  {
+   "numero": "021.399/2025-5",
+   "id": "02139920255",
+   "codigo": "79166537",
+   "estado": "Aberto",
+   "relator": "Jorge Oliveira",
+   "assunto": "Acompanhamento para avaliação de maturidade  da implementação da Política Compromisso Nacional Criança Alfabetizada (CNCA), para atendimento ao RePP 2026",
+   "natureza": "Acompanhamento",
+   "unidade_tecnica": "AudEducação",
+   "representante_mp": "Sergio Caribé",
+   "unidades": [
+    "FNDE - Fundo Nacional de Desenvolvimento da Educação",
+    "MEC - Ministério da Educação"
+   ],
+   "interessados": [
+    "Secretaria-Executiva do Ministério da Educação",
+    "Assessoria Especial de Controle Interno do Ministério da Educação",
+    "Secretaria-Executiva da Casa Civil da Presidência da República",
+    "Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento",
+    "Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+    "Assessoria Especial de Controle Interno do Ministério da Gestão e da Inovação em Serviços Públicos",
+    "Secretaria-Executiva do Ministério da Gestão e da Inovação em Serviços Públicos"
+   ],
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SE"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "AECI",
+    "MPO",
+    "SE"
+   ],
+   "vinculo": "interessado",
+   "acordao": "1924/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-09-08T00:00:00+00:00",
+     "descricao": "Documento Resposta de determinação juntado ao processo por AudEducação",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-23T00:00:00+00:00",
+     "descricao": "Acórdão 1924/2026 — Plenário",
+     "fase": "Julgado",
+     "acordao": "1924/2026"
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-08T00:00:00+00:00",
+    "descricao": "Documento Resposta de determinação juntado ao processo por AudEducação",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Resposta de determinação juntado ao processo por AudEducação",
+   "atualizado_em": "2026-09-08T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2139920255",
+   "garantido": false
+  },
+  {
+   "numero": "008.723/2023-0",
+   "id": "00872320230",
+   "codigo": "73545490",
+   "estado": "Aberto",
+   "relator": "Benjamin Zymler",
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
+   "natureza": "Representação",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "AGU - Advocacia-Geral da União",
+    "Antaq - Agência Nacional de Transportes Aquaviários",
+    "ANTT - Agência Nacional de Transportes Terrestres"
+   ],
+   "interessados": [],
+   "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": null,
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-08T00:00:00+00:00",
+     "descricao": "Peça No. 330 do tipo Termo Pedido de Vista (doc 81.001.533-1) desentranhada do processo por Siasg - Motivo: Erro na juntada",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-04T00:00:00+00:00",
+     "descricao": "Documento Termo Pedido de Vista juntado ao processo por Seses",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-02T00:00:00+00:00",
+     "descricao": "Pedido de sustentação oral (080.994.605-9) apreciado pelo Presidente do Plenário",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-08T00:00:00+00:00",
+    "descricao": "Peça No. 330 do tipo Termo Pedido de Vista (doc 81.001.533-1) desentranhada do processo por Siasg - Motivo: Erro na juntada",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Peça No. 330 do tipo Termo Pedido de Vista (doc 81.001.533-1) desentranhada do p",
+   "atualizado_em": "2026-09-08T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=872320230",
+   "garantido": true
+  },
   {
    "numero": "018.198/2026-0",
    "id": "01819820260",
@@ -661,67 +681,6 @@
    "garantido": false
   },
   {
-   "numero": "021.399/2025-5",
-   "id": "02139920255",
-   "codigo": "79166537",
-   "estado": "Aberto",
-   "relator": "Jorge Oliveira",
-   "assunto": "Acompanhamento para avaliação de maturidade  da implementação da Política Compromisso Nacional Criança Alfabetizada (CNCA), para atendimento ao RePP 2026",
-   "natureza": "Acompanhamento",
-   "unidade_tecnica": "AudEducação",
-   "representante_mp": "Sergio Caribé",
-   "unidades": [
-    "FNDE - Fundo Nacional de Desenvolvimento da Educação",
-    "MEC - Ministério da Educação"
-   ],
-   "interessados": [
-    "Secretaria-Executiva do Ministério da Educação",
-    "Assessoria Especial de Controle Interno do Ministério da Educação",
-    "Secretaria-Executiva da Casa Civil da Presidência da República",
-    "Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento",
-    "Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-    "Assessoria Especial de Controle Interno do Ministério da Gestão e da Inovação em Serviços Públicos",
-    "Secretaria-Executiva do Ministério da Gestão e da Inovação em Serviços Públicos"
-   ],
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "AECI",
-    "MPO",
-    "SE"
-   ],
-   "vinculo": "interessado",
-   "acordao": "1924/2026",
-   "movimentacoes": [
-    {
-     "data": "2026-09-04T00:00:00+00:00",
-     "descricao": "Registrada resposta de comunicação do Ofício 23174/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-23T00:00:00+00:00",
-     "descricao": "Acórdão 1924/2026 — Plenário",
-     "fase": "Julgado",
-     "acordao": "1924/2026"
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-04T00:00:00+00:00",
-    "descricao": "Registrada resposta de comunicação do Ofício 23174/2026-TCU/Seproc.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada resposta de comunicação do Ofício 23174/2026-TCU/Seproc.",
-   "atualizado_em": "2026-09-04T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2139920255",
-   "garantido": false
-  },
-  {
    "numero": "020.662/2023-8",
    "id": "02066220238",
    "codigo": "74018032",
@@ -774,58 +733,6 @@
    "atualizado_em": "2026-09-04T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2066220238",
    "garantido": false
-  },
-  {
-   "numero": "008.723/2023-0",
-   "id": "00872320230",
-   "codigo": "73545490",
-   "estado": "Aberto",
-   "relator": "Benjamin Zymler",
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "AGU - Advocacia-Geral da União",
-    "Antaq - Agência Nacional de Transportes Aquaviários",
-    "ANTT - Agência Nacional de Transportes Terrestres"
-   ],
-   "interessados": [],
-   "orgaos": [],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [],
-   "vinculo": null,
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-04T00:00:00+00:00",
-     "descricao": "Documento Termo Pedido de Vista juntado ao processo por Seses",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-02T00:00:00+00:00",
-     "descricao": "Pedido de sustentação oral (080.994.605-9) apreciado pelo Presidente do Plenário",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-02T00:00:00+00:00",
-     "descricao": "Documento Despacho de autoridade juntado ao processo por Gabpres. O(s) anexo(s) [Despacho de autoridade] foi(ram) adicionado(s) como peça(s) do processo",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-04T00:00:00+00:00",
-    "descricao": "Documento Termo Pedido de Vista juntado ao processo por Seses",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Termo Pedido de Vista juntado ao processo por Seses",
-   "atualizado_em": "2026-09-04T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=872320230",
-   "garantido": true
   },
   {
    "numero": "011.685/2026-3",
@@ -1090,16 +997,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [
-    "SE"
-   ],
+   "orgaos_interessado": [],
    "vinculo": "unidade",
    "acordao": "2406/2026",
    "movimentacoes": [
@@ -1157,16 +1061,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [
-    "SE"
-   ],
+   "orgaos_interessado": [],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -2344,13 +2245,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -3626,13 +3525,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": "573/2026",
@@ -3858,13 +3755,11 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3915,14 +3810,12 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3976,13 +3869,11 @@
    "interessados": [],
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -4305,13 +4196,11 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -4818,7 +4707,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto",
@@ -4834,7 +4722,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto",
@@ -4887,6 +4774,43 @@
   }
  ],
  "movimentacoes": [
+  {
+   "data": "2026-09-08T00:00:00+00:00",
+   "descricao": "Documento Resposta de determinação juntado ao processo por AudEducação",
+   "fase": null,
+   "acordao": null,
+   "processo": "021.399/2025-5",
+   "assunto": "Acompanhamento para avaliação de maturidade  da implementação da Política Compromisso Nacional Criança Alfabetizada (CNCA), para atendimento ao RePP 2026",
+   "natureza": "Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SE"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-08T00:00:00+00:00",
+   "descricao": "Peça No. 330 do tipo Termo Pedido de Vista (doc 81.001.533-1) desentranhada do processo por Siasg - Motivo: Erro na juntada",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.723/2023-0",
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-04T00:00:00+00:00",
+   "descricao": "Documento Termo Pedido de Vista juntado ao processo por Seses",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.723/2023-0",
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
   {
    "data": "2026-09-04T00:00:00+00:00",
    "descricao": "Registrada resposta de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação.",
@@ -4973,21 +4897,6 @@
   },
   {
    "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 23174/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "021.399/2025-5",
-   "assunto": "Acompanhamento para avaliação de maturidade  da implementação da Política Compromisso Nacional Criança Alfabetizada (CNCA), para atendimento ao RePP 2026",
-   "natureza": "Acompanhamento",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-04T00:00:00+00:00",
    "descricao": "Pronunciamento da SecexConsenso concluído",
    "fase": null,
    "acordao": null,
@@ -4997,17 +4906,6 @@
    "orgaos": [
     "MPO"
    ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Documento Termo Pedido de Vista juntado ao processo por Seses",
-   "fase": null,
-   "acordao": null,
-   "processo": "008.723/2023-0",
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "natureza": "Representação",
-   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -5143,7 +5041,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5158,7 +5055,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5173,7 +5069,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5188,7 +5083,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5252,17 +5146,6 @@
   {
    "data": "2026-09-02T00:00:00+00:00",
    "descricao": "Pedido de sustentação oral (080.994.605-9) apreciado pelo Presidente do Plenário",
-   "fase": null,
-   "acordao": null,
-   "processo": "008.723/2023-0",
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "natureza": "Representação",
-   "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-02T00:00:00+00:00",
-   "descricao": "Documento Despacho de autoridade juntado ao processo por Gabpres. O(s) anexo(s) [Despacho de autoridade] foi(ram) adicionado(s) como peça(s) do processo",
    "fase": null,
    "acordao": null,
    "processo": "008.723/2023-0",
@@ -5491,7 +5374,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5985,8 +5867,7 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5999,8 +5880,7 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6055,8 +5935,7 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6868,8 +6747,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7071,7 +6949,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7087,7 +6964,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7103,7 +6979,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7119,7 +6994,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7134,7 +7008,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7149,7 +7022,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7164,7 +7036,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7179,7 +7050,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7466,8 +7336,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7480,8 +7349,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7494,8 +7362,7 @@
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7508,8 +7375,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7522,8 +7388,7 @@
    "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO",
-    "SE"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7631,7 +7496,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7646,7 +7510,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
