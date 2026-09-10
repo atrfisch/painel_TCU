@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-10T12:47:28.033893+00:00",
- "gerado_em_br": "10/09/2026 às 12:47",
+ "gerado_em": "2026-09-10T13:25:41.399729+00:00",
+ "gerado_em_br": "10/09/2026 às 13:25",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -27,155 +27,8 @@
   "022.852/2025-5",
   "011.526/2022-0"
  ],
- "novos_processos": [
-  {
-   "processo": "019.622/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
-   "natureza": "Representação",
-   "relator": "Odair Cunha",
-   "estado": "Aberto"
-  }
- ],
- "andamentos_novos": [
-  {
-   "processo": "019.622/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Unidade responsável técnica alterada de AudFiscal para Difes por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "019.622/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "019.622/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Membro do MPTCU designado alterado de a definir para SERGIO CARIBÉ automaticamente pelo sistema",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Estatísticas fiscais do Banco Central do Brasil) juntado ao processo por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "006.412/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 36051/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "006.412/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 36050/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "006.412/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 36045/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.191/2026-2",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SMA"
-   ],
-   "assunto": "Acompanhamento dos benefícios fiscais",
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 34515/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.191/2026-2",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SMA"
-   ],
-   "assunto": "Acompanhamento dos benefícios fiscais",
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 34517/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Monitoramento e Avaliação de Políticas Públicas e Assuntos Econômicos",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.662/2023-8",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 36074/2026-TCU/Seproc via CONECTA TCU por VARLONE BATISTA SAMPAIO em nome de Agência Nacional de Telecomunicações",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.662/2023-8",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 36074/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  }
- ],
+ "novos_processos": [],
+ "andamentos_novos": [],
  "tem_baseline": true,
  "por_orgao": [
   {
