@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-14T20:27:24.399143+00:00",
- "gerado_em_br": "14/09/2026 às 20:27",
+ "gerado_em": "2026-09-14T20:56:59.859460+00:00",
+ "gerado_em_br": "14/09/2026 às 20:56",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -9,7 +9,7 @@
   "processos": 76,
   "movimentacoes": 231,
   "abertos": 76,
-  "encerrados_ocultos": 565,
+  "encerrados_ocultos": 535,
   "so_interesse": 36
  },
  "garantidos": [
@@ -30,52 +30,14 @@
  "novos_processos": [],
  "andamentos_novos": [
   {
-   "processo": "018.918/2026-3",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-14T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TCU por ROGERIO CAETANO DE FARIA em nome de Secretaria de Política Econômica",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.918/2026-3",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-14T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 37262/2026-TCU/Seproc via CONECTA TCU por LETICIA SOEIRO em nome de Secretaria do Tesouro Nacional",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.997/2022-0",
+   "processo": "018.198/2026-0",
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
    "data": "2026-09-14T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 0467/2026-TCU/AudEducação via CONECTA TCU por CÁTIA REGINA MOREIRA SALLES em nome de Ministério da Educação",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.997/2022-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
-   "data": "2026-09-14T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 0472/2026-TCU/AudEducação via CONECTA TCU por RUI ROTHE NEVES em nome de Universidade Federal de Minas Gerais",
+   "descricao": "Registrada ciência de comunicação do Ofício 0050/2026-TCU/AudGestãoInovação via CONECTA TCU por Magally Dato Barreirinhas em nome de Secretaria de Relações Institucionais da Presidência da República",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -106,9 +68,9 @@
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 47,
+   "total": 46,
    "como_unidade": 35,
-   "como_interessado": 12
+   "como_interessado": 11
   },
   {
    "orgao": "SEPLAN",
@@ -261,15 +223,15 @@
    "total": 2
   },
   {
+   "unidade": "AudGestãoInovação",
+   "total": 1
+  },
+  {
    "unidade": "AudTI",
    "total": 1
   },
   {
    "unidade": "AudEducação",
-   "total": 1
-  },
-  {
-   "unidade": "AudGestãoInovação",
    "total": 1
   },
   {
@@ -291,11 +253,11 @@
  ],
  "por_representante": [
   {
-   "representante": "Lucas Furtado",
+   "representante": "Rodrigo Lima",
    "total": 6
   },
   {
-   "representante": "Rodrigo Lima",
+   "representante": "Lucas Furtado",
    "total": 6
   },
   {
@@ -379,6 +341,16 @@
    "movimentacoes_mes": 3
   },
   {
+   "processo": "018.198/2026-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
+   "relator": "Bruno Dantas",
+   "movimentacoes_mes": 3
+  },
+  {
    "processo": "016.997/2022-0",
    "orgaos": [
     "MPO",
@@ -405,16 +377,6 @@
     "SOF"
    ],
    "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
    "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
   }
@@ -480,6 +442,63 @@
    "fase_atual": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TC",
    "atualizado_em": "2026-09-14T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1891820263",
+   "garantido": false
+  },
+  {
+   "numero": "018.198/2026-0",
+   "id": "01819820260",
+   "codigo": "80939520",
+   "estado": "Aberto",
+   "relator": "Bruno Dantas",
+   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
+   "natureza": "Relatório de Auditoria",
+   "unidade_tecnica": "AudGestãoInovação",
+   "representante_mp": "Rodrigo Lima",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "SRI/PR - Secretaria de Relações Institucionais da Presidência da República"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-14T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 0050/2026-TCU/AudGestãoInovação via CONECTA TCU por Magally Dato Barreirinhas em nome de Secretaria de Relações Institucionais da Presidência da República",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-04T00:00:00+00:00",
+     "descricao": "Registrada resposta de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-03T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-14T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 0050/2026-TCU/AudGestãoInovação via CONECTA TCU por Magally Dato Barreirinhas em nome de Secretaria de Relações Institucionais da Presidência da República",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 0050/2026-TCU/AudGestãoInovação via ",
+   "atualizado_em": "2026-09-14T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1819820260",
    "garantido": false
   },
   {
@@ -1101,14 +1120,12 @@
    "interessados": [],
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -1984,63 +2001,6 @@
    "atualizado_em": "2026-09-08T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=872320230",
    "garantido": true
-  },
-  {
-   "numero": "018.198/2026-0",
-   "id": "01819820260",
-   "codigo": "80939520",
-   "estado": "Aberto",
-   "relator": "Bruno Dantas",
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": "AudGestãoInovação",
-   "representante_mp": "Rodrigo Lima",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "SRI/PR - Secretaria de Relações Institucionais da Presidência da República"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-04T00:00:00+00:00",
-     "descricao": "Registrada resposta de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-03T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-01T00:00:00+00:00",
-     "descricao": "Peça nº 6 do tipo Portaria de Fiscalização (doc 80.984.453-9) publicada no BTCU Controle Externo n° 150, de 01/09/2026.",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-04T00:00:00+00:00",
-    "descricao": "Registrada resposta de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada resposta de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação.",
-   "atualizado_em": "2026-09-04T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1819820260",
-   "garantido": false
   },
   {
    "numero": "011.685/2026-3",
@@ -4879,8 +4839,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto",
    "evento": "pauta"
@@ -4958,6 +4917,20 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 0050/2026-TCU/AudGestãoInovação via CONECTA TCU por Magally Dato Barreirinhas em nome de Secretaria de Relações Institucionais da Presidência da República",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.198/2026-0",
+   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
     "MPO",
     "SOF"
    ],
@@ -5200,8 +5173,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5671,6 +5643,20 @@
   },
   {
    "data": "2026-09-04T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação.",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.198/2026-0",
+   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-04T00:00:00+00:00",
    "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
    "fase": null,
    "acordao": null,
@@ -5712,20 +5698,6 @@
   },
   {
    "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação.",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.198/2026-0",
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-04T00:00:00+00:00",
    "descricao": "Documento Termo juntado ao processo via CONECTA TCU por EDVALDO DE ALMEIDA CAMPELO JUNIOR",
    "fase": null,
    "acordao": null,
@@ -5760,6 +5732,20 @@
    "processo": "011.685/2026-3",
    "assunto": "011.685/2026-3 - Denúncia",
    "natureza": "Denúncia",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-03T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.198/2026-0",
+   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
+   "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
     "SOF"
@@ -5819,20 +5805,6 @@
    "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
    "natureza": "Representação",
    "orgaos": [
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-03T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.198/2026-0",
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5907,20 +5879,6 @@
    "acordao": null,
    "processo": "022.280/2024-3",
    "assunto": "Auditoria operacional sobre a estrutura e o funcionamento da Aneel, ANP, Anatel e ANM",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-01T00:00:00+00:00",
-   "descricao": "Peça nº 6 do tipo Portaria de Fiscalização (doc 80.984.453-9) publicada no BTCU Controle Externo n° 150, de 01/09/2026.",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.198/2026-0",
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
@@ -6663,8 +6621,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6691,8 +6648,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
