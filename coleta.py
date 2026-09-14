@@ -72,6 +72,7 @@ PESQUISA_ORDENACAO = "DTAUTUACAOORDENACAO desc, NUMEROCOMZEROS desc, KEY asc"
 # livre, além do filtro estruturado, recupera o que a grafia exata perderia.
 PESQUISA_UNIDADES = [
     'UNIDADESJURISDICIONADAS:("Ministério do Planejamento e Orçamento")',
+    'UNIDADESJURISDICIONADAS:("Ministerio do Planejamento e Orcamento")',
     'UNIDADESJURISDICIONADAS:("Secretaria de Orçamento Federal")',
     'UNIDADESJURISDICIONADAS:("SOF/MPO - Secretaria de Orçamento Federal")',
     'UNIDADESJURISDICIONADAS:("Secretaria Nacional de Planejamento")',
@@ -90,6 +91,7 @@ PESQUISA_INTERESSADOS = [
     'INTERESSADOS:("Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento")',
     'INTERESSADOS:("Secretaria-Executiva do Ministério do Planejamento e Orçamento")',
     'INTERESSADOS:("Ministério do Planejamento e Orçamento")',
+    'INTERESSADOS:("Ministerio do Planejamento e Orcamento")',
     'INTERESSADOS:("Secretaria de Orçamento Federal")',
     'INTERESSADOS:("Secretaria de Monitoramento e Avaliação de Políticas Públicas e Assuntos Econômicos")',
     'INTERESSADOS:("Secretaria Nacional de Planejamento")',
@@ -107,6 +109,7 @@ PESQUISA_INTERESSADOS = [
 # por frase exata perde essas variações — foi o que deixou o 017.191 escapar.
 PESQUISA_TERMOS = [
     '"Ministério do Planejamento e Orçamento"',
+    '"Ministerio do Planejamento e Orcamento"',
     '"Secretaria de Orçamento Federal"',
     '"Secretaria Nacional de Planejamento"',
     '"Monitoramento e Avaliação de Políticas Públicas"',
@@ -873,6 +876,7 @@ def consultar_pesquisa(sessao: requests.Session, garantidos: list[str] | None = 
     # com esse órgão está provado, mesmo que a listagem não exponha o campo.
     termo_orgao = {
         '"Ministério do Planejamento e Orçamento"': "MPO",
+        '"Ministerio do Planejamento e Orcamento"': "MPO",
         '"Secretaria de Orçamento Federal"': "SOF",
         '"Secretaria Nacional de Planejamento"': "SEPLAN",
         '"Monitoramento e Avaliação de Políticas Públicas"': "SMA",
