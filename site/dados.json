@@ -1,15 +1,15 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-14T15:39:27.464461+00:00",
- "gerado_em_br": "14/09/2026 às 15:39",
+ "gerado_em": "2026-09-14T20:27:24.399143+00:00",
+ "gerado_em_br": "14/09/2026 às 20:27",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 77,
-  "movimentacoes": 234,
-  "abertos": 77,
-  "encerrados_ocultos": 564,
+  "processos": 76,
+  "movimentacoes": 231,
+  "abertos": 76,
+  "encerrados_ocultos": 565,
   "so_interesse": 36
  },
  "garantidos": [
@@ -28,14 +28,65 @@
   "011.526/2022-0"
  ],
  "novos_processos": [],
- "andamentos_novos": [],
+ "andamentos_novos": [
+  {
+   "processo": "018.918/2026-3",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TCU por ROGERIO CAETANO DE FARIA em nome de Secretaria de Política Econômica",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "018.918/2026-3",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 37262/2026-TCU/Seproc via CONECTA TCU por LETICIA SOEIRO em nome de Secretaria do Tesouro Nacional",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "016.997/2022-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 0467/2026-TCU/AudEducação via CONECTA TCU por CÁTIA REGINA MOREIRA SALLES em nome de Ministério da Educação",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "016.997/2022-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 0472/2026-TCU/AudEducação via CONECTA TCU por RUI ROTHE NEVES em nome de Universidade Federal de Minas Gerais",
+   "acordao": null,
+   "novo_no_radar": false
+  }
+ ],
  "tem_baseline": true,
  "por_orgao": [
   {
    "orgao": "MPO",
    "nome": "Ministério do Planejamento e Orçamento",
-   "total": 69,
-   "como_unidade": 37,
+   "total": 68,
+   "como_unidade": 36,
    "como_interessado": 32
   },
   {
@@ -48,15 +99,15 @@
   {
    "orgao": "SE",
    "nome": "Secretaria-Executiva do MPO",
-   "total": 15,
+   "total": 14,
    "como_unidade": 0,
-   "como_interessado": 15
+   "como_interessado": 14
   },
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 48,
-   "como_unidade": 36,
+   "total": 47,
+   "como_unidade": 35,
    "como_interessado": 12
   },
   {
@@ -81,14 +132,14 @@
    "abertos": 18
   },
   {
-   "tipo": "Relatório de Acompanhamento",
+   "tipo": "Relatório de Auditoria",
    "total": 16,
    "abertos": 16
   },
   {
-   "tipo": "Relatório de Auditoria",
-   "total": 16,
-   "abertos": 16
+   "tipo": "Relatório de Acompanhamento",
+   "total": 15,
+   "abertos": 15
   },
   {
    "tipo": "Consulta",
@@ -149,7 +200,7 @@
  "por_relator": [
   {
    "relator": "Antonio Anastasia",
-   "total": 16
+   "total": 15
   },
   {
    "relator": "Benjamin Zymler",
@@ -328,6 +379,16 @@
    "movimentacoes_mes": 3
   },
   {
+   "processo": "016.997/2022-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "relator": "Augusto Nardes",
+   "movimentacoes_mes": 3
+  },
+  {
    "processo": "017.692/2026-1",
    "orgaos": [
     "MPO",
@@ -354,17 +415,6 @@
     "SOF"
    ],
    "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "004.887/2026-3",
-   "orgaos": [
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
    "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
   }
@@ -403,33 +453,91 @@
    "acordao": null,
    "movimentacoes": [
     {
+     "data": "2026-09-14T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TCU por ROGERIO CAETANO DE FARIA em nome de Secretaria de Política Econômica",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-14T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 37262/2026-TCU/Seproc via CONECTA TCU por LETICIA SOEIRO em nome de Secretaria do Tesouro Nacional",
+     "fase": null,
+     "acordao": null
+    },
+    {
      "data": "2026-09-11T00:00:00+00:00",
      "descricao": "Documento Elementos comprobatórios/Evidências (Matriz de Planejamento) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 37258/2026-TCU/Seproc via CONECTA TCU por RENATA DE SOUZA TARTALHO em nome de Instituto Nacional do Seguro Social",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 37257/2026-TCU/Seproc via CONECTA TCU por HENRIQUE LOBO BUENO em nome de Banco Central do Brasil",
      "fase": null,
      "acordao": null
     }
    ],
    "ultima_movimentacao": {
-    "data": "2026-09-11T00:00:00+00:00",
-    "descricao": "Documento Elementos comprobatórios/Evidências (Matriz de Planejamento) juntado ao processo por AudFiscal",
+    "data": "2026-09-14T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TCU por ROGERIO CAETANO DE FARIA em nome de Secretaria de Política Econômica",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Documento Elementos comprobatórios/Evidências (Matriz de Planejamento) juntado a",
-   "atualizado_em": "2026-09-11T00:00:00+00:00",
+   "fase_atual": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-09-14T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1891820263",
+   "garantido": false
+  },
+  {
+   "numero": "016.997/2022-0",
+   "id": "01699720220",
+   "codigo": "71725694",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "natureza": "Acompanhamento",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "COMAER - Comando da Aeronáutica",
+    "C Ex - Comando do Exército"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-14T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 0467/2026-TCU/AudEducação via CONECTA TCU por CÁTIA REGINA MOREIRA SALLES em nome de Ministério da Educação",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-14T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 0472/2026-TCU/AudEducação via CONECTA TCU por RUI ROTHE NEVES em nome de Universidade Federal de Minas Gerais",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-11T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 0465/2026-TCU/AudEducação via CONECTA TCU por SARA ALVES GOMES em nome de Instituto Brasileiro de Museus",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-14T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 0467/2026-TCU/AudEducação via CONECTA TCU por CÁTIA REGINA MOREIRA SALLES em nome de Ministério da Educação",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 0467/2026-TCU/AudEducação via CONECT",
+   "atualizado_em": "2026-09-14T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1699720220",
    "garantido": false
   },
   {
@@ -747,67 +855,6 @@
    "garantido": false
   },
   {
-   "numero": "004.887/2026-3",
-   "id": "00488720263",
-   "codigo": "79864753",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "BCB - Banco Central do Brasil",
-    "RFB - Secretaria Especial da Receita Federal do Brasil"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [
-    "SE"
-   ],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-10T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 34337/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-11T00:00:00+00:00",
-    "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFisca",
-   "atualizado_em": "2026-09-11T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=488720263",
-   "garantido": false
-  },
-  {
    "numero": "015.352/2025-0",
    "id": "01535220250",
    "codigo": "78536567",
@@ -857,64 +904,6 @@
    "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/",
    "atualizado_em": "2026-09-11T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1535220250",
-   "garantido": false
-  },
-  {
-   "numero": "016.997/2022-0",
-   "id": "01699720220",
-   "codigo": "71725694",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
-   "natureza": "Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "COMAER - Comando da Aeronáutica",
-    "C Ex - Comando do Exército"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 0465/2026-TCU/AudEducação via CONECTA TCU por SARA ALVES GOMES em nome de Instituto Brasileiro de Museus",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 0471/2026-TCU/AudEducação via CONECTA TCU por HENRIQUE DALPIAN em nome de Universidade Federal de Pernambuco",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 0468/2026-TCU/AudEducação via CONECTA TCU por ANDREIA FIRMIANO DA SILVA em nome de Universidade Federal do Pará",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-11T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 0465/2026-TCU/AudEducação via CONECTA TCU por SARA ALVES GOMES em nome de Instituto Brasileiro de Museus",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 0465/2026-TCU/AudEducação via CONECT",
-   "atualizado_em": "2026-09-11T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1699720220",
    "garantido": false
   },
   {
@@ -4945,6 +4934,64 @@
  ],
  "movimentacoes": [
   {
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TCU por ROGERIO CAETANO DE FARIA em nome de Secretaria de Política Econômica",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.918/2026-3",
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 37262/2026-TCU/Seproc via CONECTA TCU por LETICIA SOEIRO em nome de Secretaria do Tesouro Nacional",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.918/2026-3",
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 0467/2026-TCU/AudEducação via CONECTA TCU por CÁTIA REGINA MOREIRA SALLES em nome de Ministério da Educação",
+   "fase": null,
+   "acordao": null,
+   "processo": "016.997/2022-0",
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "natureza": "Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 0472/2026-TCU/AudEducação via CONECTA TCU por RUI ROTHE NEVES em nome de Universidade Federal de Minas Gerais",
+   "fase": null,
+   "acordao": null,
+   "processo": "016.997/2022-0",
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "natureza": "Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
    "data": "2026-09-11T00:00:00+00:00",
    "descricao": "Documento Elementos comprobatórios/Evidências (Matriz de Planejamento) juntado ao processo por AudFiscal",
    "fase": null,
@@ -4961,29 +5008,13 @@
   },
   {
    "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 37258/2026-TCU/Seproc via CONECTA TCU por RENATA DE SOUZA TARTALHO em nome de Instituto Nacional do Seguro Social",
+   "descricao": "Registrada ciência de comunicação do Ofício 0465/2026-TCU/AudEducação via CONECTA TCU por SARA ALVES GOMES em nome de Instituto Brasileiro de Museus",
    "fase": null,
    "acordao": null,
-   "processo": "018.918/2026-3",
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
+   "processo": "016.997/2022-0",
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "natureza": "Acompanhamento",
    "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 37257/2026-TCU/Seproc via CONECTA TCU por HENRIQUE LOBO BUENO em nome de Banco Central do Brasil",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.918/2026-3",
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "AECI",
     "MPO",
     "SOF"
    ],
@@ -5062,36 +5093,6 @@
   },
   {
    "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-   "fase": null,
-   "acordao": null,
-   "processo": "004.887/2026-3",
-   "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
-   "fase": null,
-   "acordao": null,
-   "processo": "004.887/2026-3",
-   "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-11T00:00:00+00:00",
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
    "fase": null,
    "acordao": null,
@@ -5112,48 +5113,6 @@
    "processo": "015.352/2025-0",
    "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
    "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 0465/2026-TCU/AudEducação via CONECTA TCU por SARA ALVES GOMES em nome de Instituto Brasileiro de Museus",
-   "fase": null,
-   "acordao": null,
-   "processo": "016.997/2022-0",
-   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
-   "natureza": "Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 0471/2026-TCU/AudEducação via CONECTA TCU por HENRIQUE DALPIAN em nome de Universidade Federal de Pernambuco",
-   "fase": null,
-   "acordao": null,
-   "processo": "016.997/2022-0",
-   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
-   "natureza": "Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 0468/2026-TCU/AudEducação via CONECTA TCU por ANDREIA FIRMIANO DA SILVA em nome de Universidade Federal do Pará",
-   "fase": null,
-   "acordao": null,
-   "processo": "016.997/2022-0",
-   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
-   "natureza": "Acompanhamento",
    "orgaos": [
     "MPO",
     "SOF"
@@ -5324,21 +5283,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-10T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 34337/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-   "fase": null,
-   "acordao": null,
-   "processo": "004.887/2026-3",
-   "assunto": "Avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União  1º bimestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7714,6 +7658,45 @@
    "acordao": null,
    "processo": "001.131/2026-5",
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-04-15T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 10198/2026-TCU/Seproc.",
+   "fase": null,
+   "acordao": null,
+   "processo": "001.131/2026-5",
+   "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-04-09T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
+   "fase": null,
+   "acordao": null,
+   "processo": "015.683/2019-2",
+   "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-04-09T00:00:00+00:00",
+   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
+   "fase": null,
+   "acordao": null,
+   "processo": "015.683/2019-2",
+   "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
     "MPO"
