@@ -132,7 +132,7 @@ _GARANTIDOS_FALLBACK = [
     "025.632/2024-8", "005.104/2023-8", "007.158/2026-2", "011.685/2026-3",
     "011.526/2022-0", "008.723/2023-0",
     "011.358/2026-2", "024.312/2024-0", "024.381/2025-0",
-    "017.191/2026-2", "017.183/2026-0",
+    "017.191/2026-2", "017.183/2026-0", "024.216/2025-9",
 ]
 
 # Órgãos manuais embutidos — segunda rede de segurança. Se o arquivo txt não for
@@ -141,6 +141,7 @@ _GARANTIDOS_FALLBACK = [
 _ORGAOS_MANUAIS_FALLBACK = {
     "017.191/2026-2": ["MPO", "SMA"],
     "017.183/2026-0": ["MPO", "SOF"],
+    "024.216/2025-9": ["MPO"],
 }
 
 RX_NUM_PROCESSO = re.compile(r"\d{3}\.\d{3}/\d{4}-\d")
@@ -1128,11 +1129,15 @@ def montar(processos: list[dict], ancora: int, avisos: list[str],
     agora = datetime.now(timezone.utc)
     hoje = agora.date()
 
-    # FOCO EM ABERTOS: encerrados saem de todo o painel. Guardamos a contagem
-    # só para registrar quantos foram descartados.
+    # FOCO EM ABERTOS: encerrados saem de todo o painel — EXCETO os que você
+    # marcou como acompanhados (garantido=True). Se você os pôs na lista, quer
+    # vê-los, abertos ou não; alguns processos de interesse ficam "encerrados"
+    # na base mesmo com tramitação recente.
     total_bruto = len(processos)
-    encerrados = sum(1 for p in processos if normalizar(p.get("estado")) != "aberto")
-    processos = [p for p in processos if normalizar(p.get("estado")) == "aberto"]
+    def _fica(p):
+        return normalizar(p.get("estado")) == "aberto" or p.get("garantido")
+    encerrados = sum(1 for p in processos if not _fica(p))
+    processos = [p for p in processos if _fica(p)]
 
     # --- Novidades desde a coleta anterior --------------------------------
     # "Novo" = processo que não existia no dados.json anterior.
