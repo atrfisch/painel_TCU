@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-15T18:04:11.312319+00:00",
- "gerado_em_br": "15/09/2026 às 18:04",
+ "gerado_em": "2026-09-15T18:36:23.235008+00:00",
+ "gerado_em_br": "15/09/2026 às 18:36",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -30,69 +30,8 @@
   "022.852/2025-5",
   "011.526/2022-0"
  ],
- "novos_processos": [
-  {
-   "processo": "005.405/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Contas do Presidente da República do exercício de 2025",
-   "natureza": "Contas do Presidente da República",
-   "relator": "Benjamin Zymler",
-   "estado": "Encerrado"
-  },
-  {
-   "processo": "024.216/2025-9",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "relator": "Bruno Dantas",
-   "estado": "Aberto"
-  },
-  {
-   "processo": "022.756/2025-6",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SEPLAN",
-    "SOF"
-   ],
-   "assunto": "Consolidação das análises setorias para subsídio ao parecer prévio das contas do Presidente da República",
-   "natureza": "Relatório de Auditoria",
-   "relator": "Benjamin Zymler",
-   "estado": "Encerrado"
-  }
- ],
- "andamentos_novos": [
-  {
-   "processo": "011.685/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "011.685/2026-3 - Denúncia",
-   "data": "2026-09-15T00:00:00+00:00",
-   "descricao": "Documento Vista e/ou Cópia (Pedido/Autorização/Recibo) juntado ao processo por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.184/2022-0",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
-   "data": "2026-09-15T00:00:00+00:00",
-   "descricao": "Pedido de sustentação oral (081.073.743-1) autuado e enviado para o gabinete do Ministro Walton Alencar Rodrigues",
-   "acordao": null,
-   "novo_no_radar": false
-  }
- ],
+ "novos_processos": [],
+ "andamentos_novos": [],
  "tem_baseline": true,
  "por_orgao": [
   {
