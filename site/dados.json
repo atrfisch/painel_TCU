@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-15T12:56:28.491635+00:00",
- "gerado_em_br": "15/09/2026 às 12:56",
+ "gerado_em": "2026-09-15T14:17:27.777725+00:00",
+ "gerado_em_br": "15/09/2026 às 14:17",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -9,7 +9,7 @@
   "processos": 77,
   "movimentacoes": 234,
   "abertos": 77,
-  "encerrados_ocultos": 564,
+  "encerrados_ocultos": 535,
   "so_interesse": 36
  },
  "garantidos": [
@@ -27,69 +27,8 @@
   "022.852/2025-5",
   "011.526/2022-0"
  ],
- "novos_processos": [
-  {
-   "processo": "019.911/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
-   "natureza": "Representação",
-   "relator": "Augusto Nardes",
-   "estado": "Aberto"
-  }
- ],
- "andamentos_novos": [
-  {
-   "processo": "019.911/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
-   "data": "2026-09-14T00:00:00+00:00",
-   "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "019.911/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
-   "data": "2026-09-14T00:00:00+00:00",
-   "descricao": "Membro do MPTCU designado alterado de a definir para CRISTINA MACHADO automaticamente pelo sistema",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "019.911/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
-   "data": "2026-09-14T00:00:00+00:00",
-   "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "011.685/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "011.685/2026-3 - Denúncia",
-   "data": "2026-09-14T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 34419/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-   "acordao": null,
-   "novo_no_radar": false
-  }
- ],
+ "novos_processos": [],
+ "andamentos_novos": [],
  "tem_baseline": true,
  "por_orgao": [
   {
@@ -116,9 +55,9 @@
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 48,
+   "total": 47,
    "como_unidade": 36,
-   "como_interessado": 12
+   "como_interessado": 11
   },
   {
    "orgao": "SEPLAN",
@@ -1283,14 +1222,12 @@
    "interessados": [],
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -4946,8 +4883,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto",
    "evento": "pauta"
@@ -5337,8 +5273,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6772,8 +6707,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6800,8 +6734,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
