@@ -1,24 +1,24 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-14T20:56:59.859460+00:00",
- "gerado_em_br": "14/09/2026 às 20:56",
+ "gerado_em": "2026-09-15T12:56:28.491635+00:00",
+ "gerado_em_br": "15/09/2026 às 12:56",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 76,
-  "movimentacoes": 231,
-  "abertos": 76,
-  "encerrados_ocultos": 535,
+  "processos": 77,
+  "movimentacoes": 234,
+  "abertos": 77,
+  "encerrados_ocultos": 564,
   "so_interesse": 36
  },
  "garantidos": [
+  "011.685/2026-3",
   "025.632/2024-8",
   "017.106/2025-7",
   "017.191/2026-2",
   "024.312/2024-0",
   "008.723/2023-0",
-  "011.685/2026-3",
   "017.183/2026-0",
   "005.104/2023-8",
   "011.358/2026-2",
@@ -27,17 +27,65 @@
   "022.852/2025-5",
   "011.526/2022-0"
  ],
- "novos_processos": [],
- "andamentos_novos": [
+ "novos_processos": [
   {
-   "processo": "018.198/2026-0",
+   "processo": "019.911/2026-2",
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
+   "natureza": "Representação",
+   "relator": "Augusto Nardes",
+   "estado": "Aberto"
+  }
+ ],
+ "andamentos_novos": [
+  {
+   "processo": "019.911/2026-2",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
    "data": "2026-09-14T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 0050/2026-TCU/AudGestãoInovação via CONECTA TCU por Magally Dato Barreirinhas em nome de Secretaria de Relações Institucionais da Presidência da República",
+   "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
+   "acordao": null,
+   "novo_no_radar": true
+  },
+  {
+   "processo": "019.911/2026-2",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Membro do MPTCU designado alterado de a definir para CRISTINA MACHADO automaticamente pelo sistema",
+   "acordao": null,
+   "novo_no_radar": true
+  },
+  {
+   "processo": "019.911/2026-2",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+   "acordao": null,
+   "novo_no_radar": true
+  },
+  {
+   "processo": "011.685/2026-3",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "011.685/2026-3 - Denúncia",
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 34419/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -47,8 +95,8 @@
   {
    "orgao": "MPO",
    "nome": "Ministério do Planejamento e Orçamento",
-   "total": 68,
-   "como_unidade": 36,
+   "total": 69,
+   "como_unidade": 37,
    "como_interessado": 32
   },
   {
@@ -68,9 +116,9 @@
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 46,
-   "como_unidade": 35,
-   "como_interessado": 11
+   "total": 48,
+   "como_unidade": 36,
+   "como_interessado": 12
   },
   {
    "orgao": "SEPLAN",
@@ -90,8 +138,8 @@
  "por_tipo": [
   {
    "tipo": "Representação",
-   "total": 18,
-   "abertos": 18
+   "total": 19,
+   "abertos": 19
   },
   {
    "tipo": "Relatório de Auditoria",
@@ -129,12 +177,12 @@
    "abertos": 2
   },
   {
-   "tipo": "Solicitação de Solução Consensual",
+   "tipo": "Denúncia",
    "total": 1,
    "abertos": 1
   },
   {
-   "tipo": "Denúncia",
+   "tipo": "Solicitação de Solução Consensual",
    "total": 1,
    "abertos": 1
   },
@@ -173,12 +221,12 @@
    "total": 11
   },
   {
-   "relator": "Jorge Oliveira",
+   "relator": "Augusto Nardes",
    "total": 10
   },
   {
-   "relator": "Augusto Nardes",
-   "total": 9
+   "relator": "Jorge Oliveira",
+   "total": 10
   },
   {
    "relator": "Bruno Dantas",
@@ -204,7 +252,7 @@
  "por_unidade_resp": [
   {
    "unidade": "AudFiscal",
-   "total": 20
+   "total": 21
   },
   {
    "unidade": "AudSaúde",
@@ -261,16 +309,16 @@
    "total": 6
   },
   {
+   "representante": "Cristina Machado",
+   "total": 5
+  },
+  {
    "representante": "Júlio Marcelo",
    "total": 5
   },
   {
    "representante": "Paulo Bugarin",
    "total": 5
-  },
-  {
-   "representante": "Cristina Machado",
-   "total": 4
   },
   {
    "representante": "Sergio Caribé",
@@ -330,6 +378,16 @@
    "movimentacoes_mes": 4
   },
   {
+   "processo": "019.911/2026-2",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
+   "relator": "Augusto Nardes",
+   "movimentacoes_mes": 3
+  },
+  {
    "processo": "018.918/2026-3",
    "orgaos": [
     "AECI",
@@ -351,6 +409,16 @@
    "movimentacoes_mes": 3
   },
   {
+   "processo": "011.685/2026-3",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "011.685/2026-3 - Denúncia",
+   "relator": "Odair Cunha",
+   "movimentacoes_mes": 3
+  },
+  {
    "processo": "016.997/2022-0",
    "orgaos": [
     "MPO",
@@ -359,29 +427,66 @@
    "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
    "relator": "Augusto Nardes",
    "movimentacoes_mes": 3
-  },
-  {
-   "processo": "017.692/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "017.226/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
   }
  ],
  "processos": [
+  {
+   "numero": "019.911/2026-2",
+   "id": "01991120262",
+   "codigo": "81069171",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
+   "natureza": "Representação",
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Cristina Machado",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "STN - Secretaria do Tesouro Nacional"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-14T00:00:00+00:00",
+     "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-14T00:00:00+00:00",
+     "descricao": "Membro do MPTCU designado alterado de a definir para CRISTINA MACHADO automaticamente pelo sistema",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-14T00:00:00+00:00",
+     "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-14T00:00:00+00:00",
+    "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
+   "atualizado_em": "2026-09-14T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1991120262",
+   "garantido": false
+  },
   {
    "numero": "018.918/2026-3",
    "id": "01891820263",
@@ -500,6 +605,64 @@
    "atualizado_em": "2026-09-14T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1819820260",
    "garantido": false
+  },
+  {
+   "numero": "011.685/2026-3",
+   "id": "01168520263",
+   "codigo": "80388372",
+   "estado": "Aberto",
+   "relator": "Odair Cunha",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "BB - Banco do Brasil S.A.",
+    "BCB - Banco Central do Brasil"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-14T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 34419/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-04T00:00:00+00:00",
+     "descricao": "Documento Termo juntado ao processo via CONECTA TCU por EDVALDO DE ALMEIDA CAMPELO JUNIOR",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-04T00:00:00+00:00",
+     "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-Seproc. (Caixa Processual da AudFiscal)",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-14T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 34419/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 34419/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-09-14T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1168520263",
+   "garantido": true
   },
   {
    "numero": "016.997/2022-0",
@@ -1120,12 +1283,14 @@
    "interessados": [],
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -2000,64 +2165,6 @@
    "fase_atual": "Processo enviado de MIN-BZ para Seses/Disup. (Diretoria de Suporte aos Colegiado",
    "atualizado_em": "2026-09-08T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=872320230",
-   "garantido": true
-  },
-  {
-   "numero": "011.685/2026-3",
-   "id": "01168520263",
-   "codigo": "80388372",
-   "estado": "Aberto",
-   "relator": "Odair Cunha",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "BB - Banco do Brasil S.A.",
-    "BCB - Banco Central do Brasil"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-04T00:00:00+00:00",
-     "descricao": "Documento Termo juntado ao processo via CONECTA TCU por EDVALDO DE ALMEIDA CAMPELO JUNIOR",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-04T00:00:00+00:00",
-     "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-Seproc. (Caixa Processual da AudFiscal)",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-04T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 34421/2026-TCU/Seproc via CONECTA TCU por MARCIO NUNES BILAR em nome de Advocacia-Geral da União",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-04T00:00:00+00:00",
-    "descricao": "Documento Termo juntado ao processo via CONECTA TCU por EDVALDO DE ALMEIDA CAMPELO JUNIOR",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Termo juntado ao processo via CONECTA TCU por EDVALDO DE ALMEIDA CAMPE",
-   "atualizado_em": "2026-09-04T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1168520263",
    "garantido": true
   },
   {
@@ -4839,7 +4946,8 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto",
    "evento": "pauta"
@@ -4894,6 +5002,48 @@
  "movimentacoes": [
   {
    "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
+   "fase": null,
+   "acordao": null,
+   "processo": "019.911/2026-2",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Membro do MPTCU designado alterado de a definir para CRISTINA MACHADO automaticamente pelo sistema",
+   "fase": null,
+   "acordao": null,
+   "processo": "019.911/2026-2",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+   "fase": null,
+   "acordao": null,
+   "processo": "019.911/2026-2",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-14T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TCU por ROGERIO CAETANO DE FARIA em nome de Secretaria de Política Econômica",
    "fase": null,
    "acordao": null,
@@ -4930,6 +5080,20 @@
    "processo": "018.198/2026-0",
    "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
    "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 34419/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.685/2026-3",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
    "orgaos": [
     "MPO",
     "SOF"
@@ -5173,7 +5337,8 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -5657,6 +5822,34 @@
   },
   {
    "data": "2026-09-04T00:00:00+00:00",
+   "descricao": "Documento Termo juntado ao processo via CONECTA TCU por EDVALDO DE ALMEIDA CAMPELO JUNIOR",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.685/2026-3",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-04T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-Seproc. (Caixa Processual da AudFiscal)",
+   "fase": null,
+   "acordao": null,
+   "processo": "011.685/2026-3",
+   "assunto": "011.685/2026-3 - Denúncia",
+   "natureza": "Denúncia",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-04T00:00:00+00:00",
    "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
    "fase": null,
    "acordao": null,
@@ -5693,48 +5886,6 @@
    "natureza": "Solicitação de Solução Consensual",
    "orgaos": [
     "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Documento Termo juntado ao processo via CONECTA TCU por EDVALDO DE ALMEIDA CAMPELO JUNIOR",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.685/2026-3",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-Seproc. (Caixa Processual da AudFiscal)",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.685/2026-3",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 34421/2026-TCU/Seproc via CONECTA TCU por MARCIO NUNES BILAR em nome de Advocacia-Geral da União",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.685/2026-3",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
-   "orgaos": [
-    "MPO",
-    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -6621,7 +6772,8 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -6648,7 +6800,8 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -7614,45 +7767,6 @@
    "acordao": null,
    "processo": "001.131/2026-5",
    "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-04-15T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 10198/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "001.131/2026-5",
-   "assunto": "Representação referente ao ato de gestão com Uasg 114601 (Objeto: Risco de descontinuidade das publicações do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (Sinapi).)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-04-09T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-   "fase": null,
-   "acordao": null,
-   "processo": "015.683/2019-2",
-   "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-04-09T00:00:00+00:00",
-   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
-   "fase": null,
-   "acordao": null,
-   "processo": "015.683/2019-2",
-   "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
     "MPO"
