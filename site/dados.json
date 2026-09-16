@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-16T13:08:31.539490+00:00",
- "gerado_em_br": "16/09/2026 às 13:08",
+ "gerado_em": "2026-09-16T14:06:17.442695+00:00",
+ "gerado_em_br": "16/09/2026 às 14:06",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -30,90 +30,8 @@
   "022.852/2025-5",
   "011.526/2022-0"
  ],
- "novos_processos": [
-  {
-   "processo": "019.709/2026-9",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
-   "natureza": "Solicitação",
-   "relator": "Antonio Anastasia",
-   "estado": "Aberto"
-  }
- ],
- "andamentos_novos": [
-  {
-   "processo": "025.632/2024-8",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "data": "2026-09-16T00:00:00+00:00",
-   "descricao": "Documento Resposta de determinação juntado ao processo por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.918/2026-3",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-15T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 37260/2026-TCU/Seproc via CONECTA TCU por BRUNA SILVEIRA ZOGHBI em nome de Secretaria de Coordenação e Governança das Empresas Estatais",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "024.312/2024-0",
-   "orgaos": [
-    "SOF"
-   ],
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "data": "2026-09-15T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 34363/2026-TCU/Seproc.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "019.709/2026-9",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
-   "data": "2026-09-15T00:00:00+00:00",
-   "descricao": "Processo enviado de MIN-AAA para Seproc/não definida.",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "019.709/2026-9",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
-   "data": "2026-09-15T00:00:00+00:00",
-   "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AAA",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "019.709/2026-9",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
-   "data": "2026-09-15T00:00:00+00:00",
-   "descricao": "Despacho oficializado.",
-   "acordao": null,
-   "novo_no_radar": true
-  }
- ],
+ "novos_processos": [],
+ "andamentos_novos": [],
  "tem_baseline": true,
  "por_orgao": [
   {
