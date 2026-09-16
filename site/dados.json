@@ -1,23 +1,23 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-15T18:36:23.235008+00:00",
- "gerado_em_br": "15/09/2026 às 18:36",
+ "gerado_em": "2026-09-16T13:08:31.539490+00:00",
+ "gerado_em_br": "16/09/2026 às 13:08",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 80,
-  "movimentacoes": 273,
-  "abertos": 80,
+  "processos": 81,
+  "movimentacoes": 275,
+  "abertos": 81,
   "encerrados_ocultos": 562,
-  "so_interesse": 38
+  "so_interesse": 39
  },
  "garantidos": [
-  "011.685/2026-3",
   "025.632/2024-8",
+  "011.685/2026-3",
+  "024.312/2024-0",
   "017.106/2025-7",
   "017.191/2026-2",
-  "024.312/2024-0",
   "005.405/2026-2",
   "008.723/2023-0",
   "017.183/2026-0",
@@ -30,23 +30,105 @@
   "022.852/2025-5",
   "011.526/2022-0"
  ],
- "novos_processos": [],
- "andamentos_novos": [],
+ "novos_processos": [
+  {
+   "processo": "019.709/2026-9",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "natureza": "Solicitação",
+   "relator": "Antonio Anastasia",
+   "estado": "Aberto"
+  }
+ ],
+ "andamentos_novos": [
+  {
+   "processo": "025.632/2024-8",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "data": "2026-09-16T00:00:00+00:00",
+   "descricao": "Documento Resposta de determinação juntado ao processo por AudFiscal",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "018.918/2026-3",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "data": "2026-09-15T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 37260/2026-TCU/Seproc via CONECTA TCU por BRUNA SILVEIRA ZOGHBI em nome de Secretaria de Coordenação e Governança das Empresas Estatais",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "024.312/2024-0",
+   "orgaos": [
+    "SOF"
+   ],
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "data": "2026-09-15T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 34363/2026-TCU/Seproc.",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "019.709/2026-9",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "data": "2026-09-15T00:00:00+00:00",
+   "descricao": "Processo enviado de MIN-AAA para Seproc/não definida.",
+   "acordao": null,
+   "novo_no_radar": true
+  },
+  {
+   "processo": "019.709/2026-9",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "data": "2026-09-15T00:00:00+00:00",
+   "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AAA",
+   "acordao": null,
+   "novo_no_radar": true
+  },
+  {
+   "processo": "019.709/2026-9",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "data": "2026-09-15T00:00:00+00:00",
+   "descricao": "Despacho oficializado.",
+   "acordao": null,
+   "novo_no_radar": true
+  }
+ ],
  "tem_baseline": true,
  "por_orgao": [
   {
    "orgao": "MPO",
    "nome": "Ministério do Planejamento e Orçamento",
-   "total": 72,
+   "total": 73,
    "como_unidade": 38,
-   "como_interessado": 34
+   "como_interessado": 35
   },
   {
    "orgao": "AECI",
    "nome": "Assessoria Especial de Controle Interno do MPO",
-   "total": 12,
+   "total": 11,
    "como_unidade": 0,
-   "como_interessado": 12
+   "como_interessado": 11
   },
   {
    "orgao": "SE",
@@ -124,6 +206,11 @@
    "abertos": 1
   },
   {
+   "tipo": "Solicitação",
+   "total": 1,
+   "abertos": 1
+  },
+  {
    "tipo": "Solicitação de Solução Consensual",
    "total": 1,
    "abertos": 1
@@ -157,7 +244,7 @@
  "por_relator": [
   {
    "relator": "Antonio Anastasia",
-   "total": 15
+   "total": 16
   },
   {
    "relator": "Benjamin Zymler",
@@ -252,8 +339,8 @@
    "total": 6
   },
   {
-   "representante": "Lucas Furtado",
-   "total": 6
+   "representante": "Sergio Caribé",
+   "total": 5
   },
   {
    "representante": "Cristina Machado",
@@ -264,12 +351,12 @@
    "total": 5
   },
   {
-   "representante": "Paulo Bugarin",
+   "representante": "Lucas Furtado",
    "total": 5
   },
   {
-   "representante": "Sergio Caribé",
-   "total": 4
+   "representante": "Paulo Bugarin",
+   "total": 5
   },
   {
    "representante": "Marinus Marsico",
@@ -325,16 +412,6 @@
    "movimentacoes_mes": 4
   },
   {
-   "processo": "019.911/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
-   "relator": "Augusto Nardes",
-   "movimentacoes_mes": 3
-  },
-  {
    "processo": "018.918/2026-3",
    "orgaos": [
     "AECI",
@@ -346,6 +423,34 @@
    "movimentacoes_mes": 3
   },
   {
+   "processo": "024.312/2024-0",
+   "orgaos": [
+    "SOF"
+   ],
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "relator": "Augusto Nardes",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "019.709/2026-9",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "019.911/2026-2",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
+   "relator": "Augusto Nardes",
+   "movimentacoes_mes": 3
+  },
+  {
    "processo": "018.198/2026-0",
    "orgaos": [
     "MPO",
@@ -354,29 +459,125 @@
    "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
    "relator": "Bruno Dantas",
    "movimentacoes_mes": 3
-  },
-  {
-   "processo": "016.997/2022-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
-   "relator": "Augusto Nardes",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "017.692/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
   }
  ],
  "processos": [
+  {
+   "numero": "025.632/2024-8",
+   "id": "02563220248",
+   "codigo": "77080640",
+   "estado": "Aberto",
+   "relator": "Bruno Dantas",
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "natureza": "Relatório de Auditoria",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "BB - Banco do Brasil S.A.",
+    "BCB - Banco Central do Brasil",
+    "BNDES - Banco Nacional de Desenvolvimento Econômico e Social"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-16T00:00:00+00:00",
+     "descricao": "Documento Resposta de determinação juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-11T00:00:00+00:00",
+     "descricao": "Registrada resposta de comunicação do Ofício 20415/2026-TCU/Seproc.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-16T00:00:00+00:00",
+    "descricao": "Documento Resposta de determinação juntado ao processo por AudFiscal",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Resposta de determinação juntado ao processo por AudFiscal",
+   "atualizado_em": "2026-09-16T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2563220248",
+   "garantido": true
+  },
+  {
+   "numero": "018.918/2026-3",
+   "id": "01891820263",
+   "codigo": "80979647",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "BCB - Banco Central do Brasil",
+    "PGFN - Procuradoria-Geral da Fazenda Nacional"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [
+    "AECI",
+    "MPO"
+   ],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-15T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 37260/2026-TCU/Seproc via CONECTA TCU por BRUNA SILVEIRA ZOGHBI em nome de Secretaria de Coordenação e Governança das Empresas Estatais",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-14T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TCU por ROGERIO CAETANO DE FARIA em nome de Secretaria de Política Econômica",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-14T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 37262/2026-TCU/Seproc via CONECTA TCU por LETICIA SOEIRO em nome de Secretaria do Tesouro Nacional",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-15T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 37260/2026-TCU/Seproc via CONECTA TCU por BRUNA SILVEIRA ZOGHBI em nome de Secretaria de Coordenação e Governança das Empresas Estatais",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 37260/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-09-15T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1891820263",
+   "garantido": false
+  },
   {
    "numero": "011.685/2026-3",
    "id": "01168520263",
@@ -410,12 +611,6 @@
      "descricao": "Documento Vista e/ou Cópia (Pedido/Autorização/Recibo) juntado ao processo por AudFiscal",
      "fase": null,
      "acordao": null
-    },
-    {
-     "data": "2026-09-14T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 34419/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-     "fase": null,
-     "acordao": null
     }
    ],
    "ultima_movimentacao": {
@@ -428,6 +623,112 @@
    "atualizado_em": "2026-09-15T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1168520263",
    "garantido": true
+  },
+  {
+   "numero": "024.312/2024-0",
+   "id": "02431220240",
+   "codigo": "76933644",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "natureza": "Representação",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "MEC - Ministério da Educação"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "SOF"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "SOF"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-15T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 34363/2026-TCU/Seproc.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-09T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 34361/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-03T00:00:00+00:00",
+     "descricao": "Documento Extrato de publicação no Diário Eletrônico do TCU juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-15T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 34363/2026-TCU/Seproc.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 34363/2026-TCU/Seproc.",
+   "atualizado_em": "2026-09-15T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2431220240",
+   "garantido": true
+  },
+  {
+   "numero": "019.709/2026-9",
+   "id": "01970920269",
+   "codigo": "81044101",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "natureza": "Solicitação",
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Sergio Caribé",
+   "unidades": [],
+   "interessados": [],
+   "orgaos": [
+    "MPO"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-15T00:00:00+00:00",
+     "descricao": "Processo enviado de MIN-AAA para Seproc/não definida.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-15T00:00:00+00:00",
+     "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AAA",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-15T00:00:00+00:00",
+     "descricao": "Despacho oficializado.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-15T00:00:00+00:00",
+    "descricao": "Processo enviado de MIN-AAA para Seproc/não definida.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo enviado de MIN-AAA para Seproc/não definida.",
+   "atualizado_em": "2026-09-15T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1970920269",
+   "garantido": false
   },
   {
    "numero": "020.184/2022-0",
@@ -543,68 +844,6 @@
    "fase_atual": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
    "atualizado_em": "2026-09-14T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1991120262",
-   "garantido": false
-  },
-  {
-   "numero": "018.918/2026-3",
-   "id": "01891820263",
-   "codigo": "80979647",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "BCB - Banco Central do Brasil",
-    "PGFN - Procuradoria-Geral da Fazenda Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [
-    "AECI",
-    "MPO"
-   ],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-14T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TCU por ROGERIO CAETANO DE FARIA em nome de Secretaria de Política Econômica",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-14T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 37262/2026-TCU/Seproc via CONECTA TCU por LETICIA SOEIRO em nome de Secretaria do Tesouro Nacional",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Matriz de Planejamento) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-14T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TCU por ROGERIO CAETANO DE FARIA em nome de Secretaria de Política Econômica",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TC",
-   "atualizado_em": "2026-09-14T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1891820263",
    "garantido": false
   },
   {
@@ -1089,60 +1328,6 @@
    "garantido": false
   },
   {
-   "numero": "025.632/2024-8",
-   "id": "02563220248",
-   "codigo": "77080640",
-   "estado": "Aberto",
-   "relator": "Bruno Dantas",
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "BB - Banco do Brasil S.A.",
-    "BCB - Banco Central do Brasil",
-    "BNDES - Banco Nacional de Desenvolvimento Econômico e Social"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Registrada resposta de comunicação do Ofício 20415/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-03T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 33413/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Monitoramento e Avaliação de Políticas Públicas e Assuntos Econômicos",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-11T00:00:00+00:00",
-    "descricao": "Registrada resposta de comunicação do Ofício 20415/2026-TCU/Seproc.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada resposta de comunicação do Ofício 20415/2026-TCU/Seproc.",
-   "atualizado_em": "2026-09-11T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2563220248",
-   "garantido": true
-  },
-  {
    "numero": "016.950/2026-7",
    "id": "01695020267",
    "codigo": "80853648",
@@ -1611,19 +1796,13 @@
    "relator": "Antonio Anastasia",
    "assunto": "Acompanhamento dos benefícios fiscais",
    "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": "AudFiscal",
-   "representante_mp": "Lucas Furtado",
+   "unidade_tecnica": null,
+   "representante_mp": null,
    "unidades": [
     "RFB - Secretaria Especial da Receita Federal do Brasil"
    ],
-   "interessados": [
-    "Assessoria Especial de Controle Interno do Ministério da Fazenda",
-    "Secretaria-Executiva do Ministério da Fazenda",
-    "Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento",
-    "Secretaria-Executiva do Ministério do Planejamento e Orçamento"
-   ],
+   "interessados": [],
    "orgaos": [
-    "AECI",
     "MPO",
     "SE",
     "SMA"
@@ -1633,7 +1812,6 @@
     "SMA"
    ],
    "orgaos_interessado": [
-    "AECI",
     "MPO",
     "SE"
    ],
@@ -1668,60 +1846,6 @@
    "fase_atual": "Registrada ciência de comunicação do Ofício 34515/2026-TCU/Seproc via CONECTA TC",
    "atualizado_em": "2026-09-09T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1719120262",
-   "garantido": true
-  },
-  {
-   "numero": "024.312/2024-0",
-   "id": "02431220240",
-   "codigo": "76933644",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "MEC - Ministério da Educação"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "SOF"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "SOF"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-09T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 34361/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-03T00:00:00+00:00",
-     "descricao": "Documento Extrato de publicação no Diário Eletrônico do TCU juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-31T00:00:00+00:00",
-     "descricao": "Documento Aviso juntado ao processo por Gabpres",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-09T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 34361/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 34361/2026-TCU/Seproc via CONECTA TC",
-   "atualizado_em": "2026-09-09T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2431220240",
    "garantido": true
   },
   {
@@ -5298,6 +5422,36 @@
  ],
  "movimentacoes": [
   {
+   "data": "2026-09-16T00:00:00+00:00",
+   "descricao": "Documento Resposta de determinação juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "025.632/2024-8",
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-15T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 37260/2026-TCU/Seproc via CONECTA TCU por BRUNA SILVEIRA ZOGHBI em nome de Secretaria de Coordenação e Governança das Empresas Estatais",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.918/2026-3",
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
    "data": "2026-09-15T00:00:00+00:00",
    "descricao": "Documento Vista e/ou Cópia (Pedido/Autorização/Recibo) juntado ao processo por AudFiscal",
    "fase": null,
@@ -5308,6 +5462,58 @@
    "orgaos": [
     "MPO",
     "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-15T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 34363/2026-TCU/Seproc.",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.312/2024-0",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "natureza": "Representação",
+   "orgaos": [
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-15T00:00:00+00:00",
+   "descricao": "Processo enviado de MIN-AAA para Seproc/não definida.",
+   "fase": null,
+   "acordao": null,
+   "processo": "019.709/2026-9",
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "natureza": "Solicitação",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-15T00:00:00+00:00",
+   "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AAA",
+   "fase": null,
+   "acordao": null,
+   "processo": "019.709/2026-9",
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "natureza": "Solicitação",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-15T00:00:00+00:00",
+   "descricao": "Despacho oficializado.",
+   "fase": null,
+   "acordao": null,
+   "processo": "019.709/2026-9",
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "natureza": "Solicitação",
+   "orgaos": [
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5328,13 +5534,29 @@
   },
   {
    "data": "2026-09-14T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 34419/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+   "descricao": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TCU por ROGERIO CAETANO DE FARIA em nome de Secretaria de Política Econômica",
    "fase": null,
    "acordao": null,
-   "processo": "011.685/2026-3",
-   "assunto": "011.685/2026-3 - Denúncia",
-   "natureza": "Denúncia",
+   "processo": "018.918/2026-3",
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
    "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-14T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 37262/2026-TCU/Seproc via CONECTA TCU por LETICIA SOEIRO em nome de Secretaria do Tesouro Nacional",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.918/2026-3",
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
     "MPO",
     "SOF"
    ],
@@ -5384,36 +5606,6 @@
   },
   {
    "data": "2026-09-14T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 37261/2026-TCU/Seproc via CONECTA TCU por ROGERIO CAETANO DE FARIA em nome de Secretaria de Política Econômica",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.918/2026-3",
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-14T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 37262/2026-TCU/Seproc via CONECTA TCU por LETICIA SOEIRO em nome de Secretaria do Tesouro Nacional",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.918/2026-3",
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-14T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 0050/2026-TCU/AudGestãoInovação via CONECTA TCU por Magally Dato Barreirinhas em nome de Secretaria de Relações Institucionais da Presidência da República",
    "fase": null,
    "acordao": null,
@@ -5456,12 +5648,12 @@
   },
   {
    "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
+   "descricao": "Registrada resposta de comunicação do Ofício 20415/2026-TCU/Seproc.",
    "fase": null,
    "acordao": null,
-   "processo": "020.184/2022-0",
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
-   "natureza": "Representação",
+   "processo": "025.632/2024-8",
+   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
+   "natureza": "Relatório de Auditoria",
    "orgaos": [
     "AECI",
     "MPO",
@@ -5471,12 +5663,12 @@
   },
   {
    "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Matriz de Planejamento) juntado ao processo por AudFiscal",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
    "fase": null,
    "acordao": null,
-   "processo": "018.918/2026-3",
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
+   "processo": "020.184/2022-0",
+   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
+   "natureza": "Representação",
    "orgaos": [
     "AECI",
     "MPO",
@@ -5592,21 +5784,6 @@
    "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 20415/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "025.632/2024-8",
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "AECI",
     "MPO",
     "SOF"
    ],
@@ -5849,6 +6026,19 @@
   },
   {
    "data": "2026-09-09T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 34361/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.312/2024-0",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "natureza": "Representação",
+   "orgaos": [
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-09T00:00:00+00:00",
    "descricao": "Documento Elementos comprobatórios/Evidências (Estatísticas fiscais do Banco Central do Brasil) juntado ao processo por AudFiscal",
    "fase": null,
    "acordao": null,
@@ -5912,7 +6102,6 @@
    "assunto": "Acompanhamento dos benefícios fiscais",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
-    "AECI",
     "MPO",
     "SE",
     "SMA"
@@ -5928,23 +6117,9 @@
    "assunto": "Acompanhamento dos benefícios fiscais",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
-    "AECI",
     "MPO",
     "SE",
     "SMA"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 34361/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.312/2024-0",
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "natureza": "Representação",
-   "orgaos": [
-    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -6203,6 +6378,19 @@
   },
   {
    "data": "2026-09-03T00:00:00+00:00",
+   "descricao": "Documento Extrato de publicação no Diário Eletrônico do TCU juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.312/2024-0",
+   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "natureza": "Representação",
+   "orgaos": [
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-03T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
    "fase": null,
    "acordao": null,
@@ -6240,34 +6428,6 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-03T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 33413/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Monitoramento e Avaliação de Políticas Públicas e Assuntos Econômicos",
-   "fase": null,
-   "acordao": null,
-   "processo": "025.632/2024-8",
-   "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-03T00:00:00+00:00",
-   "descricao": "Documento Extrato de publicação no Diário Eletrônico do TCU juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.312/2024-0",
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "natureza": "Representação",
-   "orgaos": [
     "SOF"
    ],
    "estado": "Aberto"
@@ -6470,23 +6630,9 @@
    "assunto": "Acompanhamento dos benefícios fiscais",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
-    "AECI",
     "MPO",
     "SE",
     "SMA"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-31T00:00:00+00:00",
-   "descricao": "Documento Aviso juntado ao processo por Gabpres",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.312/2024-0",
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "natureza": "Representação",
-   "orgaos": [
-    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -8026,34 +8172,6 @@
    "processo": "005.678/2025-0",
    "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
    "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-17T00:00:00+00:00",
-   "descricao": "Documento Aviso juntado ao processo por Gabpres",
-   "fase": null,
-   "acordao": null,
-   "processo": "005.678/2025-0",
-   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-15T00:00:00+00:00",
-   "descricao": "Documento Resposta de determinação juntado ao processo por AudElétrica",
-   "fase": null,
-   "acordao": null,
-   "processo": "011.228/2026-1",
-   "assunto": "Monitoramento de determinações e recomendações feitas à Aneel, ANM, Anatel, ANP, Casa Civil da Presidência da República, Ministério da Fazenda e Secretaria de Orçamento Federal por meio do Acórdão 280/2026-Plenário (TC 022.280/2024-3 - Avaliação da estrutura e funcionamento da Aneel, ANP, Anatel e ANM)",
-   "natureza": "Monitoramento",
    "orgaos": [
     "MPO",
     "SOF"
