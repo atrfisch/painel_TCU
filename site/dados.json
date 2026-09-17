@@ -1,15 +1,15 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-16T14:06:17.442695+00:00",
- "gerado_em_br": "16/09/2026 às 14:06",
+ "gerado_em": "2026-09-17T13:27:21.270813+00:00",
+ "gerado_em_br": "17/09/2026 às 13:27",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
   "processos": 81,
-  "movimentacoes": 275,
+  "movimentacoes": 277,
   "abertos": 81,
-  "encerrados_ocultos": 562,
+  "encerrados_ocultos": 533,
   "so_interesse": 39
  },
  "garantidos": [
@@ -31,7 +31,67 @@
   "011.526/2022-0"
  ],
  "novos_processos": [],
- "andamentos_novos": [],
+ "andamentos_novos": [
+  {
+   "processo": "017.692/2026-1",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
+   "data": "2026-09-16T00:00:00+00:00",
+   "descricao": "Apreciado na Sessão Ordinária do Plenário em 16/09/2026 por meio do Acórdão 2502/2026-PL",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "017.692/2026-1",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
+   "data": "2026-09-16T00:00:00+00:00",
+   "descricao": "Acórdão 2502/2026 — Plenário",
+   "acordao": "2502/2026",
+   "novo_no_radar": false
+  },
+  {
+   "processo": "015.352/2025-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
+   "data": "2026-09-16T00:00:00+00:00",
+   "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "019.709/2026-9",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "data": "2026-09-16T00:00:00+00:00",
+   "descricao": "Documento Termo juntado ao processo por Seproc",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "020.184/2022-0",
+   "orgaos": [
+    "AECI",
+    "MPO"
+   ],
+   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
+   "data": "2026-09-16T00:00:00+00:00",
+   "descricao": "Documento Pedido de sustentação oral juntado ao processo por MIN-WAR",
+   "acordao": null,
+   "novo_no_radar": false
+  }
+ ],
  "tem_baseline": true,
  "por_orgao": [
   {
@@ -58,9 +118,9 @@
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 50,
+   "total": 49,
    "como_unidade": 36,
-   "como_interessado": 14
+   "como_interessado": 13
   },
   {
    "orgao": "SEPLAN",
@@ -119,12 +179,12 @@
    "abertos": 2
   },
   {
-   "tipo": "Denúncia",
+   "tipo": "Solicitação",
    "total": 1,
    "abertos": 1
   },
   {
-   "tipo": "Solicitação",
+   "tipo": "Denúncia",
    "total": 1,
    "abertos": 1
   },
@@ -257,15 +317,15 @@
    "total": 6
   },
   {
+   "representante": "Júlio Marcelo",
+   "total": 5
+  },
+  {
    "representante": "Sergio Caribé",
    "total": 5
   },
   {
    "representante": "Cristina Machado",
-   "total": 5
-  },
-  {
-   "representante": "Júlio Marcelo",
    "total": 5
   },
   {
@@ -299,6 +359,16 @@
  ],
  "ranking_mes": [
   {
+   "processo": "017.692/2026-1",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
+   "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 4
+  },
+  {
    "processo": "012.513/2026-1",
    "orgaos": [
     "MPO",
@@ -330,23 +400,13 @@
    "movimentacoes_mes": 4
   },
   {
-   "processo": "018.918/2026-3",
+   "processo": "015.352/2025-0",
    "orgaos": [
-    "AECI",
     "MPO",
     "SOF"
    ],
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "024.312/2024-0",
-   "orgaos": [
-    "SOF"
-   ],
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "relator": "Augusto Nardes",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
+   "relator": "Benjamin Zymler",
    "movimentacoes_mes": 3
   },
   {
@@ -359,27 +419,150 @@
    "movimentacoes_mes": 3
   },
   {
-   "processo": "019.911/2026-2",
+   "processo": "020.184/2022-0",
    "orgaos": [
-    "MPO",
-    "SOF"
+    "AECI",
+    "MPO"
    ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
-   "relator": "Augusto Nardes",
+   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
+   "relator": "Marcos Bemquerer",
    "movimentacoes_mes": 3
   },
   {
-   "processo": "018.198/2026-0",
+   "processo": "018.918/2026-3",
    "orgaos": [
+    "AECI",
     "MPO",
     "SOF"
    ],
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "relator": "Bruno Dantas",
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
   }
  ],
  "processos": [
+  {
+   "numero": "017.692/2026-1",
+   "id": "01769220261",
+   "codigo": "80921551",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
+   "natureza": "Representação",
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Júlio Marcelo",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "SA-SE/CCivil - Secretaria de Administração da Secretaria Executiva da Casa Civil da Presidência da República",
+    "STN - Secretaria do Tesouro Nacional"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": "2502/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-09-16T00:00:00+00:00",
+     "descricao": "Apreciado na Sessão Ordinária do Plenário em 16/09/2026 por meio do Acórdão 2502/2026-PL",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-16T00:00:00+00:00",
+     "descricao": "Acórdão 2502/2026 — Plenário",
+     "fase": "Julgado",
+     "acordao": "2502/2026"
+    },
+    {
+     "data": "2026-09-11T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-04T00:00:00+00:00",
+     "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-16T00:00:00+00:00",
+    "descricao": "Apreciado na Sessão Ordinária do Plenário em 16/09/2026 por meio do Acórdão 2502/2026-PL",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Apreciado na Sessão Ordinária do Plenário em 16/09/2026 por meio do Acórdão 2502",
+   "atualizado_em": "2026-09-16T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1769220261",
+   "garantido": false
+  },
+  {
+   "numero": "015.352/2025-0",
+   "id": "01535220250",
+   "codigo": "78536567",
+   "estado": "Aberto",
+   "relator": "Benjamin Zymler",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
+   "natureza": "Relatório de Acompanhamento",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "BCB - Banco Central do Brasil",
+    "RFB - Secretaria Especial da Receita Federal do Brasil"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-16T00:00:00+00:00",
+     "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-11T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-11T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por MIN-BZ",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-16T00:00:00+00:00",
+    "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 16/09/",
+   "atualizado_em": "2026-09-16T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1535220250",
+   "garantido": false
+  },
   {
    "numero": "025.632/2024-8",
    "id": "02563220248",
@@ -433,6 +616,115 @@
    "atualizado_em": "2026-09-16T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2563220248",
    "garantido": true
+  },
+  {
+   "numero": "019.709/2026-9",
+   "id": "01970920269",
+   "codigo": "81044101",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "natureza": "Solicitação",
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Sergio Caribé",
+   "unidades": [],
+   "interessados": [],
+   "orgaos": [
+    "MPO"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-16T00:00:00+00:00",
+     "descricao": "Documento Termo juntado ao processo por Seproc",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-15T00:00:00+00:00",
+     "descricao": "Processo enviado de MIN-AAA para Seproc/não definida.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-15T00:00:00+00:00",
+     "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AAA",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-16T00:00:00+00:00",
+    "descricao": "Documento Termo juntado ao processo por Seproc",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Termo juntado ao processo por Seproc",
+   "atualizado_em": "2026-09-16T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1970920269",
+   "garantido": false
+  },
+  {
+   "numero": "020.184/2022-0",
+   "id": "02018420220",
+   "codigo": "71916404",
+   "estado": "Aberto",
+   "relator": "Marcos Bemquerer",
+   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
+   "natureza": "Representação",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "Ibama - Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis",
+    "MMA - Ministério do Meio Ambiente e Mudança do Clima"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "AECI",
+    "MPO"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "AECI",
+    "MPO"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-16T00:00:00+00:00",
+     "descricao": "Documento Pedido de sustentação oral juntado ao processo por MIN-WAR",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-15T00:00:00+00:00",
+     "descricao": "Pedido de sustentação oral (081.073.743-1) autuado e enviado para o gabinete do Ministro Walton Alencar Rodrigues",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-11T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-16T00:00:00+00:00",
+    "descricao": "Documento Pedido de sustentação oral juntado ao processo por MIN-WAR",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Pedido de sustentação oral juntado ao processo por MIN-WAR",
+   "atualizado_em": "2026-09-16T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2018420220",
+   "garantido": false
   },
   {
    "numero": "018.918/2026-3",
@@ -595,117 +887,6 @@
    "atualizado_em": "2026-09-15T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2431220240",
    "garantido": true
-  },
-  {
-   "numero": "019.709/2026-9",
-   "id": "01970920269",
-   "codigo": "81044101",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
-   "natureza": "Solicitação",
-   "unidade_tecnica": "AudFiscal",
-   "representante_mp": "Sergio Caribé",
-   "unidades": [],
-   "interessados": [],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-15T00:00:00+00:00",
-     "descricao": "Processo enviado de MIN-AAA para Seproc/não definida.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-15T00:00:00+00:00",
-     "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AAA",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-15T00:00:00+00:00",
-     "descricao": "Despacho oficializado.",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-15T00:00:00+00:00",
-    "descricao": "Processo enviado de MIN-AAA para Seproc/não definida.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo enviado de MIN-AAA para Seproc/não definida.",
-   "atualizado_em": "2026-09-15T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1970920269",
-   "garantido": false
-  },
-  {
-   "numero": "020.184/2022-0",
-   "id": "02018420220",
-   "codigo": "71916404",
-   "estado": "Aberto",
-   "relator": "Marcos Bemquerer",
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
-   "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "Ibama - Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis",
-    "MMA - Ministério do Meio Ambiente e Mudança do Clima"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-15T00:00:00+00:00",
-     "descricao": "Pedido de sustentação oral (081.073.743-1) autuado e enviado para o gabinete do Ministro Walton Alencar Rodrigues",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-06T00:00:00+00:00",
-     "descricao": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-15T00:00:00+00:00",
-    "descricao": "Pedido de sustentação oral (081.073.743-1) autuado e enviado para o gabinete do Ministro Walton Alencar Rodrigues",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Pedido de sustentação oral (081.073.743-1) autuado e enviado para o gabinete do ",
-   "atualizado_em": "2026-09-15T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2018420220",
-   "garantido": false
   },
   {
    "numero": "019.911/2026-2",
@@ -877,64 +1058,6 @@
    "fase_atual": "Registrada ciência de comunicação do Ofício 0467/2026-TCU/AudEducação via CONECT",
    "atualizado_em": "2026-09-14T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1699720220",
-   "garantido": false
-  },
-  {
-   "numero": "017.692/2026-1",
-   "id": "01769220261",
-   "codigo": "80921551",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
-   "natureza": "Representação",
-   "unidade_tecnica": "AudFiscal",
-   "representante_mp": "Júlio Marcelo",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "SA-SE/CCivil - Secretaria de Administração da Secretaria Executiva da Casa Civil da Presidência da República",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-04T00:00:00+00:00",
-     "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-04T00:00:00+00:00",
-     "descricao": "Pronunciamento da AudFiscal concluído",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-11T00:00:00+00:00",
-    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/",
-   "atualizado_em": "2026-09-11T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1769220261",
    "garantido": false
   },
   {
@@ -1191,58 +1314,6 @@
    "fase_atual": "Registrada ciência de comunicação do Aviso 0893/2026-TCU/Seproc via CONECTA TCU ",
    "atualizado_em": "2026-09-11T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=641220262",
-   "garantido": false
-  },
-  {
-   "numero": "015.352/2025-0",
-   "id": "01535220250",
-   "codigo": "78536567",
-   "estado": "Aberto",
-   "relator": "Benjamin Zymler",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
-   "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "BCB - Banco Central do Brasil",
-    "RFB - Secretaria Especial da Receita Federal do Brasil"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por MIN-BZ",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-11T00:00:00+00:00",
-    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/",
-   "atualizado_em": "2026-09-11T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1535220250",
    "garantido": false
   },
   {
@@ -5216,20 +5287,19 @@
  ],
  "movimentacoes_recentes": [
   {
-   "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
-   "fase": null,
-   "acordao": null,
-   "processo": "020.184/2022-0",
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
+   "data": "2026-09-16T00:00:00+00:00",
+   "descricao": "Acórdão 2502/2026 — Plenário",
+   "fase": "Julgado",
+   "acordao": "2502/2026",
+   "processo": "017.692/2026-1",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
    "natureza": "Representação",
    "orgaos": [
-    "AECI",
     "MPO",
     "SOF"
    ],
    "estado": "Aberto",
-   "evento": "pauta"
+   "evento": "acordao"
   },
   {
    "data": "2026-09-11T00:00:00+00:00",
@@ -5251,8 +5321,8 @@
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
    "fase": null,
    "acordao": null,
-   "processo": "014.609/2026-6",
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "processo": "015.352/2025-0",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
@@ -5266,8 +5336,23 @@
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
    "fase": null,
    "acordao": null,
-   "processo": "015.352/2025-0",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
+   "processo": "020.184/2022-0",
+   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
+   "natureza": "Representação",
+   "orgaos": [
+    "AECI",
+    "MPO"
+   ],
+   "estado": "Aberto",
+   "evento": "pauta"
+  },
+  {
+   "data": "2026-09-11T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "014.609/2026-6",
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
@@ -5341,6 +5426,48 @@
  "movimentacoes": [
   {
    "data": "2026-09-16T00:00:00+00:00",
+   "descricao": "Apreciado na Sessão Ordinária do Plenário em 16/09/2026 por meio do Acórdão 2502/2026-PL",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.692/2026-1",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-16T00:00:00+00:00",
+   "descricao": "Acórdão 2502/2026 — Plenário",
+   "fase": "Julgado",
+   "acordao": "2502/2026",
+   "processo": "017.692/2026-1",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-16T00:00:00+00:00",
+   "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30",
+   "fase": null,
+   "acordao": null,
+   "processo": "015.352/2025-0",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-16T00:00:00+00:00",
    "descricao": "Documento Resposta de determinação juntado ao processo por AudFiscal",
    "fase": null,
    "acordao": null,
@@ -5351,6 +5478,73 @@
     "AECI",
     "MPO",
     "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-16T00:00:00+00:00",
+   "descricao": "Documento Termo juntado ao processo por Seproc",
+   "fase": null,
+   "acordao": null,
+   "processo": "019.709/2026-9",
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "natureza": "Solicitação",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-16T00:00:00+00:00",
+   "descricao": "Documento Pedido de sustentação oral juntado ao processo por MIN-WAR",
+   "fase": null,
+   "acordao": null,
+   "processo": "020.184/2022-0",
+   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
+   "natureza": "Representação",
+   "orgaos": [
+    "AECI",
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-15T00:00:00+00:00",
+   "descricao": "Processo enviado de MIN-AAA para Seproc/não definida.",
+   "fase": null,
+   "acordao": null,
+   "processo": "019.709/2026-9",
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "natureza": "Solicitação",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-15T00:00:00+00:00",
+   "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AAA",
+   "fase": null,
+   "acordao": null,
+   "processo": "019.709/2026-9",
+   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
+   "natureza": "Solicitação",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-15T00:00:00+00:00",
+   "descricao": "Pedido de sustentação oral (081.073.743-1) autuado e enviado para o gabinete do Ministro Walton Alencar Rodrigues",
+   "fase": null,
+   "acordao": null,
+   "processo": "020.184/2022-0",
+   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
+   "natureza": "Representação",
+   "orgaos": [
+    "AECI",
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5392,60 +5586,6 @@
    "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
    "natureza": "Representação",
    "orgaos": [
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-15T00:00:00+00:00",
-   "descricao": "Processo enviado de MIN-AAA para Seproc/não definida.",
-   "fase": null,
-   "acordao": null,
-   "processo": "019.709/2026-9",
-   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
-   "natureza": "Solicitação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-15T00:00:00+00:00",
-   "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AAA",
-   "fase": null,
-   "acordao": null,
-   "processo": "019.709/2026-9",
-   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
-   "natureza": "Solicitação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-15T00:00:00+00:00",
-   "descricao": "Despacho oficializado.",
-   "fase": null,
-   "acordao": null,
-   "processo": "019.709/2026-9",
-   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
-   "natureza": "Solicitação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-15T00:00:00+00:00",
-   "descricao": "Pedido de sustentação oral (081.073.743-1) autuado e enviado para o gabinete do Ministro Walton Alencar Rodrigues",
-   "fase": null,
-   "acordao": null,
-   "processo": "020.184/2022-0",
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
-   "natureza": "Representação",
-   "orgaos": [
-    "AECI",
-    "MPO",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5566,6 +5706,48 @@
   },
   {
    "data": "2026-09-11T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "017.692/2026-1",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-11T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "015.352/2025-0",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-11T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por MIN-BZ",
+   "fase": null,
+   "acordao": null,
+   "processo": "015.352/2025-0",
+   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-11T00:00:00+00:00",
    "descricao": "Registrada resposta de comunicação do Ofício 20415/2026-TCU/Seproc.",
    "fase": null,
    "acordao": null,
@@ -5589,8 +5771,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5602,20 +5783,6 @@
    "processo": "016.997/2022-0",
    "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
    "natureza": "Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
-   "fase": null,
-   "acordao": null,
-   "processo": "017.692/2026-1",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
-   "natureza": "Representação",
    "orgaos": [
     "MPO",
     "SOF"
@@ -5672,34 +5839,6 @@
    "acordao": null,
    "processo": "006.412/2026-2",
    "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30.",
-   "fase": null,
-   "acordao": null,
-   "processo": "015.352/2025-0",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por MIN-BZ",
-   "fase": null,
-   "acordao": null,
-   "processo": "015.352/2025-0",
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
@@ -6241,20 +6380,6 @@
   },
   {
    "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação.",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.198/2026-0",
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-04T00:00:00+00:00",
    "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
    "fase": null,
    "acordao": null,
@@ -6269,12 +6394,12 @@
   },
   {
    "data": "2026-09-04T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
+   "descricao": "Registrada resposta de comunicação do Ofício 0053/2026-TCU/AudGestãoInovação.",
    "fase": null,
    "acordao": null,
-   "processo": "017.692/2026-1",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
-   "natureza": "Representação",
+   "processo": "018.198/2026-0",
+   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
+   "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
     "SOF"
@@ -7166,21 +7291,6 @@
   },
   {
    "data": "2026-08-06T00:00:00+00:00",
-   "descricao": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
-   "fase": null,
-   "acordao": null,
-   "processo": "020.184/2022-0",
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
-   "natureza": "Representação",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-06T00:00:00+00:00",
    "descricao": "Processo enviado de Seproc para AudBancos/AudBancos-ASS. (Assessoria da AudBancos)",
    "fase": null,
    "acordao": null,
@@ -8062,34 +8172,6 @@
    "processo": "014.984/2025-3",
    "assunto": "Acompanhamento da Execução do Orçamento de Investimentos das Estatais e do Programa de Dispêndios Globais -  1º a 3º trimestre de 2025",
    "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-17T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Aviso 0437/2026-TCU/Seproc via CONECTA TCU por ALINE BRANDAO MARIATH em nome de Comissão de Saúde - CD",
-   "fase": null,
-   "acordao": null,
-   "processo": "005.678/2025-0",
-   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-17T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Aviso 0529/2026-TCU/Seproc via CONECTA TCU por ALINE BRANDAO MARIATH em nome de Comissão de Saúde - CD",
-   "fase": null,
-   "acordao": null,
-   "processo": "005.678/2025-0",
-   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
-   "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
     "SOF"
