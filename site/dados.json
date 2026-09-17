@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-17T13:27:21.270813+00:00",
- "gerado_em_br": "17/09/2026 às 13:27",
+ "gerado_em": "2026-09-17T14:14:34.760195+00:00",
+ "gerado_em_br": "17/09/2026 às 14:14",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -9,7 +9,7 @@
   "processos": 81,
   "movimentacoes": 277,
   "abertos": 81,
-  "encerrados_ocultos": 533,
+  "encerrados_ocultos": 562,
   "so_interesse": 39
  },
  "garantidos": [
@@ -31,67 +31,7 @@
   "011.526/2022-0"
  ],
  "novos_processos": [],
- "andamentos_novos": [
-  {
-   "processo": "017.692/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
-   "data": "2026-09-16T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária do Plenário em 16/09/2026 por meio do Acórdão 2502/2026-PL",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.692/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
-   "data": "2026-09-16T00:00:00+00:00",
-   "descricao": "Acórdão 2502/2026 — Plenário",
-   "acordao": "2502/2026",
-   "novo_no_radar": false
-  },
-  {
-   "processo": "015.352/2025-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Resultados Fiscais e Execução Orçamentária e Financeira da União - 3° Bimestre 2025",
-   "data": "2026-09-16T00:00:00+00:00",
-   "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 16/09/2026, às 14h30",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "019.709/2026-9",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "OFÍCIO SEI Nº 47956/2026/MF",
-   "data": "2026-09-16T00:00:00+00:00",
-   "descricao": "Documento Termo juntado ao processo por Seproc",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.184/2022-0",
-   "orgaos": [
-    "AECI",
-    "MPO"
-   ],
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
-   "data": "2026-09-16T00:00:00+00:00",
-   "descricao": "Documento Pedido de sustentação oral juntado ao processo por MIN-WAR",
-   "acordao": null,
-   "novo_no_radar": false
-  }
- ],
+ "andamentos_novos": [],
  "tem_baseline": true,
  "por_orgao": [
   {
@@ -118,9 +58,9 @@
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 49,
+   "total": 50,
    "como_unidade": 36,
-   "como_interessado": 13
+   "como_interessado": 14
   },
   {
    "orgao": "SEPLAN",
@@ -422,7 +362,8 @@
    "processo": "020.184/2022-0",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
    "relator": "Marcos Bemquerer",
@@ -686,12 +627,14 @@
    "interessados": [],
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -5341,7 +5284,8 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto",
    "evento": "pauta"
@@ -5504,7 +5448,8 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -5544,7 +5489,8 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -5771,7 +5717,8 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto"
   },
