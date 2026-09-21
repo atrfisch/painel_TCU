@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-21T12:52:43.290491+00:00",
- "gerado_em_br": "21/09/2026 às 12:52",
+ "gerado_em": "2026-09-21T15:43:28.893732+00:00",
+ "gerado_em_br": "21/09/2026 às 15:43",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -9,7 +9,7 @@
   "processos": 81,
   "movimentacoes": 277,
   "abertos": 81,
-  "encerrados_ocultos": 563,
+  "encerrados_ocultos": 534,
   "so_interesse": 38
  },
  "garantidos": [
@@ -33,102 +33,24 @@
  "novos_processos": [],
  "andamentos_novos": [
   {
-   "processo": "014.609/2026-6",
+   "processo": "031.310/2020-6",
    "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-19T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/Diref. (Diretoria de Fiscalização das Regras Fiscais)",
+   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
+   "data": "2026-09-21T00:00:00+00:00",
+   "descricao": "Peça nº 467 do tipo Edital (doc 81.092.888-4) publicada no BTCU Deliberações n° 168, de 21/09/2026.",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "014.609/2026-6",
+   "processo": "031.310/2020-6",
    "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-19T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 38542/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-19T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 38541/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "019.911/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
-   "data": "2026-09-18T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Augusto Nardes por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "019.911/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
-   "data": "2026-09-18T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "006.750/2026-5",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "006.750/2026-5 - Relatório de Levantamento",
-   "data": "2026-09-18T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 23/09/2026, às 14h30.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "016.873/2025-4 - Relatório de Levantamento",
-   "data": "2026-09-18T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 23/09/2026, às 14h30.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.993/2026-5",
-   "orgaos": [
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 201007 (Objeto: Causas do déficit primário acumulado do Governo Central em 2026, incluindo análise de projeções fiscais, variações de receitas e despesas, fundamentos, agentes decisores e impactos plurianuais.)",
-   "data": "2026-09-18T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 23/09/2026, às 14h30.",
+   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
+   "data": "2026-09-21T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Edital 0897/2026-TCU/Seproc.",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -159,9 +81,9 @@
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 51,
+   "total": 50,
    "como_unidade": 37,
-   "como_interessado": 14
+   "como_interessado": 13
   },
   {
    "orgao": "SEPLAN",
@@ -447,6 +369,15 @@
    "movimentacoes_mes": 4
   },
   {
+   "processo": "031.310/2020-6",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
+   "relator": "Augusto Nardes",
+   "movimentacoes_mes": 3
+  },
+  {
    "processo": "019.911/2026-2",
    "orgaos": [
     "MPO",
@@ -467,19 +398,63 @@
    "assunto": "006.750/2026-5 - Relatório de Levantamento",
    "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "016.873/2025-4 - Relatório de Levantamento",
-   "relator": "Jhonatan de Jesus",
-   "movimentacoes_mes": 3
   }
  ],
  "processos": [
+  {
+   "numero": "031.310/2020-6",
+   "id": "03131020206",
+   "codigo": "65697028",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
+   "natureza": "Tomada de Contas Especial",
+   "unidade_tecnica": "AudTCE",
+   "representante_mp": "Cristina Machado, Paulo Bugarin, Júlio Marcelo",
+   "unidades": [
+    "IFPR - Instituto Federal de Educação, Ciência e Tecnologia do Paraná"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-21T00:00:00+00:00",
+     "descricao": "Peça nº 467 do tipo Edital (doc 81.092.888-4) publicada no BTCU Deliberações n° 168, de 21/09/2026.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-21T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Edital 0897/2026-TCU/Seproc.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-18T00:00:00+00:00",
+     "descricao": "Juntada comunicação Edital 0897/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-21T00:00:00+00:00",
+    "descricao": "Peça nº 467 do tipo Edital (doc 81.092.888-4) publicada no BTCU Deliberações n° 168, de 21/09/2026.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Peça nº 467 do tipo Edital (doc 81.092.888-4) publicada no BTCU Deliberações n° ",
+   "atualizado_em": "2026-09-21T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=3131020206",
+   "garantido": false
+  },
   {
    "numero": "014.609/2026-6",
    "id": "01460920266",
@@ -776,60 +751,6 @@
    "fase_atual": "Registrada resposta de comunicação do Ofício 36714/2026-TCU/Seproc.",
    "atualizado_em": "2026-09-18T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1695020267",
-   "garantido": false
-  },
-  {
-   "numero": "031.310/2020-6",
-   "id": "03131020206",
-   "codigo": "65697028",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "unidade_tecnica": "AudTCE",
-   "representante_mp": "Cristina Machado, Paulo Bugarin, Júlio Marcelo",
-   "unidades": [
-    "IFPR - Instituto Federal de Educação, Ciência e Tecnologia do Paraná"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-18T00:00:00+00:00",
-     "descricao": "Juntada comunicação Edital 0897/2026 por unidade Seproc em virtude de expedição",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-31T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 31089/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-19T00:00:00+00:00",
-     "descricao": "Juntada comunicação Ofício 31089/2026 por unidade Seproc em virtude de expedição",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-18T00:00:00+00:00",
-    "descricao": "Juntada comunicação Edital 0897/2026 por unidade Seproc em virtude de expedição",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Juntada comunicação Edital 0897/2026 por unidade Seproc em virtude de expedição",
-   "atualizado_em": "2026-09-18T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=3131020206",
    "garantido": false
   },
   {
@@ -1198,14 +1119,12 @@
    "interessados": [],
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -5481,8 +5400,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto",
    "evento": "pauta"
@@ -5520,6 +5438,32 @@
   }
  ],
  "movimentacoes": [
+  {
+   "data": "2026-09-21T00:00:00+00:00",
+   "descricao": "Peça nº 467 do tipo Edital (doc 81.092.888-4) publicada no BTCU Deliberações n° 168, de 21/09/2026.",
+   "fase": null,
+   "acordao": null,
+   "processo": "031.310/2020-6",
+   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
+   "natureza": "Tomada de Contas Especial",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-21T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Edital 0897/2026-TCU/Seproc.",
+   "fase": null,
+   "acordao": null,
+   "processo": "031.310/2020-6",
+   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
+   "natureza": "Tomada de Contas Especial",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
   {
    "data": "2026-09-19T00:00:00+00:00",
    "descricao": "Processo enviado de Seproc para AudFiscal/Diref. (Diretoria de Fiscalização das Regras Fiscais)",
@@ -5562,6 +5506,19 @@
     "AECI",
     "MPO",
     "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-18T00:00:00+00:00",
+   "descricao": "Juntada comunicação Edital 0897/2026 por unidade Seproc em virtude de expedição",
+   "fase": null,
+   "acordao": null,
+   "processo": "031.310/2020-6",
+   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
+   "natureza": "Tomada de Contas Especial",
+   "orgaos": [
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5634,19 +5591,6 @@
    "orgaos": [
     "MPO",
     "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-18T00:00:00+00:00",
-   "descricao": "Juntada comunicação Edital 0897/2026 por unidade Seproc em virtude de expedição",
-   "fase": null,
-   "acordao": null,
-   "processo": "031.310/2020-6",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "orgaos": [
-    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5829,8 +5773,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5844,8 +5787,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6084,8 +6026,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6843,19 +6784,6 @@
   },
   {
    "data": "2026-08-31T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 31089/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "031.310/2020-6",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-31T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 34514/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
    "fase": null,
    "acordao": null,
@@ -7184,19 +7112,6 @@
    "orgaos": [
     "MPO",
     "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-19T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 31089/2026 por unidade Seproc em virtude de expedição",
-   "fase": null,
-   "acordao": null,
-   "processo": "031.310/2020-6",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "orgaos": [
-    "MPO"
    ],
    "estado": "Aberto"
   },
