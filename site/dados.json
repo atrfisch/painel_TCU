@@ -1,13 +1,13 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-22T12:43:20.991029+00:00",
- "gerado_em_br": "22/09/2026 às 12:43",
+ "gerado_em": "2026-09-22T14:04:15.900852+00:00",
+ "gerado_em_br": "22/09/2026 às 14:04",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
   "processos": 81,
-  "movimentacoes": 278,
+  "movimentacoes": 277,
   "abertos": 81,
   "encerrados_ocultos": 534,
   "so_interesse": 37
@@ -33,215 +33,28 @@
  "novos_processos": [],
  "andamentos_novos": [
   {
-   "processo": "017.692/2026-1",
+   "processo": "006.412/2026-2",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
    "data": "2026-09-22T00:00:00+00:00",
    "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "024.312/2024-0",
-   "orgaos": [],
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "024.312/2024-0",
-   "orgaos": [],
-   "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
+   "processo": "006.412/2026-2",
+   "orgaos": [
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
    "data": "2026-09-22T00:00:00+00:00",
    "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.674/2024-0",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Auditoria para avaliação das causas e possíveis consequências da diminuição de ofertas de áreas e autorizações para exploração de petróleo",
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 38579/2026-TCU/Seproc via CONECTA TCU por MARCOS OLIVEIRA ZACARIAS em nome de Secretaria-Executiva do Ministério de Minas e Energia",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.184/2022-0",
-   "orgaos": [
-    "AECI",
-    "MPO"
-   ],
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária do Plenário em 16/09/2026 por meio do Acórdão 2517/2026-PL, referente aos Recursos 020.184/2022-0/R002 e 020.184/2022-0/R001",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.692/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Documento Aviso juntado ao processo por Gabpres",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.692/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Solicitação de fiscalização sobre a suficiência dos limites financeiros para execução das despesas não obrigatórias da União em 2026 e sobre o crescimento do estoque de restos a pagar.)",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Aviso expedido pelo Gabinete da Presidência",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.674/2024-0",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Auditoria para avaliação das causas e possíveis consequências da diminuição de ofertas de áreas e autorizações para exploração de petróleo",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 38578/2026-TCU/Seproc via CONECTA TCU por Gilvan Varcacio Ferreira em nome de Secretaria-Executiva do Ministério do Meio Ambiente e Mudança do Clima",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.674/2024-0",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Auditoria para avaliação das causas e possíveis consequências da diminuição de ofertas de áreas e autorizações para exploração de petróleo",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 38580/2026-TCU/Seproc via CONECTA TCU por MARCIO NUNES BILAR em nome de Advocacia-Geral da União",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.067/2026-7",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 926049 (Objeto: Recomposição de recursos orçamentários do Ministério Público da União decorrentes de alterações no limite de despesas primárias previstas nas Emendas Constitucionais 113 e 114 de 2021.)",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Unidade responsável técnica alterada de AudFiscal-ASS para Diref por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "019.622/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.918/2026-3",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 37259/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.918/2026-3",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 37256/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.198/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Peça nº 12 do tipo Portaria de Fiscalização (doc 81.105.120-8) publicada no BTCU Controle Externo n° 163, de 21/09/2026.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 38541/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "006.412/2026-2",
-   "orgaos": [
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 36051/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "006.412/2026-2",
-   "orgaos": [
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 36045/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "024.216/2025-9",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Documento Petição juntado ao processo por AudFiscal",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -538,17 +351,6 @@
    "movimentacoes_mes": 4
   },
   {
-   "processo": "006.412/2026-2",
-   "orgaos": [
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 4
-  },
-  {
    "processo": "012.513/2026-1",
    "orgaos": [
     "MPO",
@@ -558,6 +360,17 @@
    "assunto": "2ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
    "relator": "Antonio Anastasia",
    "movimentacoes_mes": 4
+  },
+  {
+   "processo": "006.412/2026-2",
+   "orgaos": [
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 3
   },
   {
    "processo": "024.312/2024-0",
@@ -650,6 +463,66 @@
    "fase_atual": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFisca",
    "atualizado_em": "2026-09-22T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1769220261",
+   "garantido": false
+  },
+  {
+   "numero": "006.412/2026-2",
+   "id": "00641220262",
+   "codigo": "80008933",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "STN - Secretaria do Tesouro Nacional"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [
+    "SE"
+   ],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-22T00:00:00+00:00",
+     "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-22T00:00:00+00:00",
+     "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-21T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 36051/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-22T00:00:00+00:00",
+    "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFisca",
+   "atualizado_em": "2026-09-22T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=641220262",
    "garantido": false
   },
   {
@@ -1128,72 +1001,6 @@
    "fase_atual": "Registrada ciência de comunicação do Ofício 38541/2026-TCU/Seproc via CONECTA TC",
    "atualizado_em": "2026-09-21T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1460920266",
-   "garantido": false
-  },
-  {
-   "numero": "006.412/2026-2",
-   "id": "00641220262",
-   "codigo": "80008933",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [
-    "SE"
-   ],
-   "vinculo": "unidade",
-   "acordao": "2406/2026",
-   "movimentacoes": [
-    {
-     "data": "2026-09-21T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 36051/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-21T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 36045/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-11T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Aviso 0893/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-03T00:00:00+00:00",
-     "descricao": "Acórdão 2406/2026 — Plenário",
-     "fase": "Julgado",
-     "acordao": "2406/2026"
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-21T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 36051/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 36051/2026-TCU/Seproc via CONECTA TC",
-   "atualizado_em": "2026-09-21T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=641220262",
    "garantido": false
   },
   {
@@ -5557,22 +5364,6 @@
    "evento": "pauta"
   },
   {
-   "data": "2026-09-03T00:00:00+00:00",
-   "descricao": "Acórdão 2406/2026 — Plenário",
-   "fase": "Julgado",
-   "acordao": "2406/2026",
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "estado": "Aberto",
-   "evento": "acordao"
-  },
-  {
    "data": "2026-08-27T00:00:00+00:00",
    "descricao": "Acórdão 2334/2026 — Plenário",
    "fase": "Julgado",
@@ -5600,6 +5391,36 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-22T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-22T00:00:00+00:00",
+   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5677,6 +5498,21 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-21T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 36051/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+   "fase": null,
+   "acordao": null,
+   "processo": "006.412/2026-2",
+   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5792,36 +5628,6 @@
    "orgaos": [
     "AECI",
     "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 36051/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-   "fase": null,
-   "acordao": null,
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 36045/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-   "fase": null,
-   "acordao": null,
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6213,21 +6019,6 @@
    "natureza": "Acompanhamento",
    "orgaos": [
     "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-11T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Aviso 0893/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
-   "fase": null,
-   "acordao": null,
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6736,21 +6527,6 @@
    "natureza": "Solicitação de Solução Consensual",
    "orgaos": [
     "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-03T00:00:00+00:00",
-   "descricao": "Acórdão 2406/2026 — Plenário",
-   "fase": "Julgado",
-   "acordao": "2406/2026",
-   "processo": "006.412/2026-2",
-   "assunto": "Acompanhamento do Projeto de Lei de Diretrizes Orçamentárias (PLDO) 2027",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SE",
-    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -8342,6 +8118,22 @@
     "SOF"
    ],
    "estado": "Aberto"
+  },
+  {
+   "data": "2026-06-18T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
+   "fase": null,
+   "acordao": null,
+   "processo": "022.756/2025-6",
+   "assunto": "Consolidação das análises setorias para subsídio ao parecer prévio das contas do Presidente da República",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SEPLAN",
+    "SOF"
+   ],
+   "estado": "Encerrado"
   }
  ]
 }
