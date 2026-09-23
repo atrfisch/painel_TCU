@@ -1,16 +1,16 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-23T12:48:28.233341+00:00",
- "gerado_em_br": "23/09/2026 às 12:48",
+ "gerado_em": "2026-09-23T14:16:18.083558+00:00",
+ "gerado_em_br": "23/09/2026 às 14:16",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 87,
-  "movimentacoes": 296,
-  "abertos": 87,
-  "encerrados_ocultos": 559,
-  "so_interesse": 37
+  "processos": 85,
+  "movimentacoes": 289,
+  "abertos": 85,
+  "encerrados_ocultos": 359,
+  "so_interesse": 35
  },
  "garantidos": [
   "024.312/2024-0",
@@ -36,101 +36,11 @@
    "processo": "020.184/2022-0",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
    "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 38917/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.184/2022-0",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 38916/2026-TCU/Seproc via CONECTA TCU por Gilvan Varcacio Ferreira em nome de Assessoria Especial de Controle Interno do Ministério do Meio Ambiente e Mudança do Clima",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.184/2022-0",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 38918/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Aviso 0932/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Documento Aviso juntado ao processo por Gabpres",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Aviso expedido pelo Gabinete da Presidência",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.088/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Reclassificação administrativa das despesas com precatórios e da Anvisa após aprovação da LOA 2026 pelo Congresso Nacional.)",
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.088/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Reclassificação administrativa das despesas com precatórios e da Anvisa após aprovação da LOA 2026 pelo Congresso Nacional.)",
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Documento Termo (SPI) juntado ao processo por Seproc",
+   "descricao": "Registrada ciência de comunicação do Ofício 38917/2026-TCU/Seproc via CONECTA TCU por Gilvan Varcacio Ferreira em nome de Secretaria-Executiva do Ministério do Meio Ambiente e Mudança do Clima",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -140,9 +50,9 @@
   {
    "orgao": "MPO",
    "nome": "Ministério do Planejamento e Orçamento",
-   "total": 79,
+   "total": 77,
    "como_unidade": 45,
-   "como_interessado": 34
+   "como_interessado": 32
   },
   {
    "orgao": "AECI",
@@ -161,9 +71,9 @@
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 56,
+   "total": 54,
    "como_unidade": 43,
-   "como_interessado": 13
+   "como_interessado": 11
   },
   {
    "orgao": "SEPLAN",
@@ -183,8 +93,8 @@
  "por_tipo": [
   {
    "tipo": "Representação",
-   "total": 24,
-   "abertos": 24
+   "total": 23,
+   "abertos": 23
   },
   {
    "tipo": "Relatório de Auditoria",
@@ -220,11 +130,6 @@
    "tipo": "Acompanhamento",
    "total": 4,
    "abertos": 4
-  },
-  {
-   "tipo": "Tomada de Contas Especial",
-   "total": 1,
-   "abertos": 1
   },
   {
    "tipo": "Denúncia",
@@ -268,11 +173,11 @@
   },
   {
    "relator": "Augusto Nardes",
-   "total": 12
+   "total": 11
   },
   {
    "relator": "Jhonatan de Jesus",
-   "total": 11
+   "total": 10
   },
   {
    "relator": "Jorge Oliveira",
@@ -322,10 +227,6 @@
   },
   {
    "unidade": "AudGestãoInovação",
-   "total": 1
-  },
-  {
-   "unidade": "AudTCE",
    "total": 1
   },
   {
@@ -380,10 +281,6 @@
   },
   {
    "representante": "Lucas Furtado, Paulo Bugarin",
-   "total": 1
-  },
-  {
-   "representante": "Cristina Machado, Paulo Bugarin, Júlio Marcelo",
    "total": 1
   },
   {
@@ -451,8 +348,7 @@
    "processo": "020.184/2022-0",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
    "relator": "Marcos Bemquerer",
@@ -498,18 +394,22 @@
    "interessados": [],
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
    "movimentacoes": [
+    {
+     "data": "2026-09-23T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 38917/2026-TCU/Seproc via CONECTA TCU por Gilvan Varcacio Ferreira em nome de Secretaria-Executiva do Ministério do Meio Ambiente e Mudança do Clima",
+     "fase": null,
+     "acordao": null
+    },
     {
      "data": "2026-09-23T00:00:00+00:00",
      "descricao": "Juntada comunicação Ofício 38917/2026 por unidade Seproc em virtude de expedição",
@@ -521,21 +421,15 @@
      "descricao": "Registrada ciência de comunicação do Ofício 38916/2026-TCU/Seproc via CONECTA TCU por Gilvan Varcacio Ferreira em nome de Assessoria Especial de Controle Interno do Ministério do Meio Ambiente e Mudança do Clima",
      "fase": null,
      "acordao": null
-    },
-    {
-     "data": "2026-09-23T00:00:00+00:00",
-     "descricao": "Juntada comunicação Ofício 38918/2026 por unidade Seproc em virtude de expedição",
-     "fase": null,
-     "acordao": null
     }
    ],
    "ultima_movimentacao": {
     "data": "2026-09-23T00:00:00+00:00",
-    "descricao": "Juntada comunicação Ofício 38917/2026 por unidade Seproc em virtude de expedição",
+    "descricao": "Registrada ciência de comunicação do Ofício 38917/2026-TCU/Seproc via CONECTA TCU por Gilvan Varcacio Ferreira em nome de Secretaria-Executiva do Ministério do Meio Ambiente e Mudança do Clima",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Juntada comunicação Ofício 38917/2026 por unidade Seproc em virtude de expedição",
+   "fase_atual": "Registrada ciência de comunicação do Ofício 38917/2026-TCU/Seproc via CONECTA TC",
    "atualizado_em": "2026-09-23T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2018420220",
    "garantido": false
@@ -1249,60 +1143,6 @@
    "fase_atual": "Registrada ciência de comunicação do Ofício 37259/2026-TCU/Seproc via CONECTA TC",
    "atualizado_em": "2026-09-21T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1891820263",
-   "garantido": false
-  },
-  {
-   "numero": "031.310/2020-6",
-   "id": "03131020206",
-   "codigo": "65697028",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "unidade_tecnica": "AudTCE",
-   "representante_mp": "Cristina Machado, Paulo Bugarin, Júlio Marcelo",
-   "unidades": [
-    "IFPR - Instituto Federal de Educação, Ciência e Tecnologia do Paraná"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-21T00:00:00+00:00",
-     "descricao": "Peça nº 467 do tipo Edital (doc 81.092.888-4) publicada no BTCU Deliberações n° 168, de 21/09/2026.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-21T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Edital 0897/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-18T00:00:00+00:00",
-     "descricao": "Juntada comunicação Edital 0897/2026 por unidade Seproc em virtude de expedição",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-21T00:00:00+00:00",
-    "descricao": "Peça nº 467 do tipo Edital (doc 81.092.888-4) publicada no BTCU Deliberações n° 168, de 21/09/2026.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Peça nº 467 do tipo Edital (doc 81.092.888-4) publicada no BTCU Deliberações n° ",
-   "atualizado_em": "2026-09-21T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=3131020206",
    "garantido": false
   },
   {
@@ -4563,68 +4403,6 @@
    "garantido": false
   },
   {
-   "numero": "015.683/2019-2",
-   "id": "01568320192",
-   "codigo": "61758080",
-   "estado": "Aberto",
-   "relator": "Jhonatan de Jesus",
-   "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
-   "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "MECON - Ministério da Economia (extinto)",
-    "SE/MME - Secretaria-Executiva do Ministério de Minas e Energia",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "interessado",
-   "acordao": "573/2026",
-   "movimentacoes": [
-    {
-     "data": "2026-07-01T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 3850/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-04-09T00:00:00+00:00",
-     "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-04-09T00:00:00+00:00",
-     "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-02-11T00:00:00+00:00",
-     "descricao": "Acórdão 573/2026 — Primeira Câmara",
-     "fase": "Julgado",
-     "acordao": "573/2026"
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-01T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 3850/2026-TCU/Seproc.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 3850/2026-TCU/Seproc.",
-   "atualizado_em": "2026-07-01T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1568320192",
-   "garantido": false
-  },
-  {
    "numero": "014.984/2025-3",
    "id": "01498420253",
    "codigo": "78488561",
@@ -5302,13 +5080,11 @@
     "CONGRESSO NACIONAL (VINCULADOR)"
    ],
    "orgaos": [
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": "253/2026",
@@ -5836,6 +5612,20 @@
  "movimentacoes": [
   {
    "data": "2026-09-23T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 38917/2026-TCU/Seproc via CONECTA TCU por Gilvan Varcacio Ferreira em nome de Secretaria-Executiva do Ministério do Meio Ambiente e Mudança do Clima",
+   "fase": null,
+   "acordao": null,
+   "processo": "020.184/2022-0",
+   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
+   "natureza": "Representação",
+   "orgaos": [
+    "AECI",
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-23T00:00:00+00:00",
    "descricao": "Juntada comunicação Ofício 38917/2026 por unidade Seproc em virtude de expedição",
    "fase": null,
    "acordao": null,
@@ -5844,8 +5634,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5859,23 +5648,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 38918/2026 por unidade Seproc em virtude de expedição",
-   "fase": null,
-   "acordao": null,
-   "processo": "020.184/2022-0",
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
-   "natureza": "Representação",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6232,32 +6005,6 @@
   },
   {
    "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Peça nº 467 do tipo Edital (doc 81.092.888-4) publicada no BTCU Deliberações n° 168, de 21/09/2026.",
-   "fase": null,
-   "acordao": null,
-   "processo": "031.310/2020-6",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Edital 0897/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "031.310/2020-6",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-21T00:00:00+00:00",
    "descricao": "Documento Petição juntado ao processo por AudFiscal",
    "fase": null,
    "acordao": null,
@@ -6280,19 +6027,6 @@
    "orgaos": [
     "MPO",
     "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-18T00:00:00+00:00",
-   "descricao": "Juntada comunicação Edital 0897/2026 por unidade Seproc em virtude de expedição",
-   "fase": null,
-   "acordao": null,
-   "processo": "031.310/2020-6",
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "orgaos": [
-    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -8589,6 +8323,48 @@
    "processo": "015.321/2025-8",
    "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
    "natureza": "Solicitação do Congresso Nacional",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-16T00:00:00+00:00",
+   "descricao": "Peça nº 4 do tipo Portaria de Fiscalização (doc 80.695.384-5) publicada no BTCU Controle Externo n° 119, de 16/07/2026.",
+   "fase": null,
+   "acordao": null,
+   "processo": "009.482/2026-1",
+   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  1º Semestre de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-13T00:00:00+00:00",
+   "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
+   "fase": null,
+   "acordao": null,
+   "processo": "015.329/2026-7",
+   "assunto": "Representação referente ao ato de gestão com Uasg 170500 (Objeto: Utilização de recursos oriundos da suspensão das parcelas da dívida do Estado do Rio Grande do Sul com a União no Programa de Subsídio de Juros para Investimentos em Grandes Empreendimentos Voltados ao Turismo no Estado do Rio Grande do Sul (PROGRANTUR).)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-13T00:00:00+00:00",
+   "descricao": "Membro do MPTCU designado alterado de a definir para RODRIGO LIMA automaticamente pelo sistema",
+   "fase": null,
+   "acordao": null,
+   "processo": "015.329/2026-7",
+   "assunto": "Representação referente ao ato de gestão com Uasg 170500 (Objeto: Utilização de recursos oriundos da suspensão das parcelas da dívida do Estado do Rio Grande do Sul com a União no Programa de Subsídio de Juros para Investimentos em Grandes Empreendimentos Voltados ao Turismo no Estado do Rio Grande do Sul (PROGRANTUR).)",
+   "natureza": "Representação",
    "orgaos": [
     "MPO",
     "SOF"
