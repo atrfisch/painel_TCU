@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-24T12:55:21.664271+00:00",
- "gerado_em_br": "24/09/2026 às 12:55",
+ "gerado_em": "2026-09-24T14:09:35.312567+00:00",
+ "gerado_em_br": "24/09/2026 às 14:09",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -9,7 +9,7 @@
   "processos": 89,
   "movimentacoes": 304,
   "abertos": 89,
-  "encerrados_ocultos": 559,
+  "encerrados_ocultos": 535,
   "so_interesse": 38
  },
  "garantidos": [
@@ -30,289 +30,8 @@
   "022.852/2025-5",
   "011.526/2022-0"
  ],
- "novos_processos": [
-  {
-   "processo": "020.781/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  2º Semestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "relator": "Antonio Anastasia",
-   "estado": "Aberto"
-  },
-  {
-   "processo": "003.487/2025-3",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
-   "natureza": "Representação",
-   "relator": "Antonio Anastasia",
-   "estado": "Aberto"
-  },
-  {
-   "processo": "031.310/2020-6",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "natureza": "Tomada de Contas Especial",
-   "relator": "Augusto Nardes",
-   "estado": "Aberto"
-  },
-  {
-   "processo": "015.683/2019-2",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
-   "natureza": "Representação",
-   "relator": "Jhonatan de Jesus",
-   "estado": "Aberto"
-  }
- ],
- "andamentos_novos": [
-  {
-   "processo": "020.781/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  2º Semestre de 2026",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "020.781/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  2º Semestre de 2026",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Relatoria alterada de relatoria a definir para MIN-AAA por AudFiscal (por Atribuição)",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "020.781/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  2º Semestre de 2026",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "018.198/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 0059/2026-TCU/AudGestãoInovação via CONECTA TCU por Eliane de Almeida e Silva Evangelista em nome de Secretaria-Executiva do Ministério da Gestão e da Inovação em Serviços Públicos",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.198/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 0060/2026-TCU/AudGestãoInovação via CONECTA TCU por LAIS SOARES FERNANDES DE CASTRO em nome de Secretaria-Executiva do Ministério da Integração e do Desenvolvimento Regional",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.993/2026-5",
-   "orgaos": [
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 201007 (Objeto: Causas do déficit primário acumulado do Governo Central em 2026, incluindo análise de projeções fiscais, variações de receitas e despesas, fundamentos, agentes decisores e impactos plurianuais.)",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária do Plenário em 23/09/2026 por meio do Acórdão 2571/2026-PL",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.993/2026-5",
-   "orgaos": [
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 201007 (Objeto: Causas do déficit primário acumulado do Governo Central em 2026, incluindo análise de projeções fiscais, variações de receitas e despesas, fundamentos, agentes decisores e impactos plurianuais.)",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Acórdão 2571/2026 — Plenário",
-   "acordao": "2571/2026",
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.198/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 0060/2026 por unidade AudGestãoInovação em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.918/2026-3",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 37263/2026-TCU/Seproc via CONECTA TCU por ISABELA BRAGA DE LIMA em nome de Secretaria Especial da Receita Federal do Brasil",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (BCB ) juntado ao processo por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.950/2026-7",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Documento Despacho de expediente juntado ao processo por AudSaúde",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "008.589/2025-9",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Auditoria na cobertura de benefícios assistenciais das três esferas de governo (Rede Integrar - Ação 1)",
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Processo 014.897/2026-1 foi apensado a este processo por AudBenefícios.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "003.487/2025-3",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Documento Despacho de expediente juntado ao processo por AudBenefícios",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "018.674/2024-0",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Auditoria para avaliação das causas e possíveis consequências da diminuição de ofertas de áreas e autorizações para exploração de petróleo",
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 38581/2026-TCU/Seproc via CONECTA TCU por MICHELLE FERNANDES DE QUEIROZ em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.184/2022-0",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 38918/2026-TCU/Seproc via CONECTA TCU por Jéssica Sandri Gonçalves de Sousa em nome de Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "003.487/2025-3",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Peça nº 21 do tipo Portaria de Fiscalização (doc 81.115.040-6) publicada no BTCU Controle Externo n° 164, de 22/09/2026.",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "031.310/2020-6",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Peça nº 467 do tipo Edital (doc 81.092.888-4) publicada no BTCU Deliberações n° 168, de 21/09/2026.",
-   "acordao": null,
-   "novo_no_radar": true
-  },
-  {
-   "processo": "031.310/2020-6",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Edital 0897/2026-TCU/Seproc.",
-   "acordao": null,
-   "novo_no_radar": true
-  }
- ],
+ "novos_processos": [],
+ "andamentos_novos": [],
  "tem_baseline": true,
  "por_orgao": [
   {
@@ -339,9 +58,9 @@
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 57,
+   "total": 55,
    "como_unidade": 44,
-   "como_interessado": 13
+   "como_interessado": 11
   },
   {
    "orgao": "SEPLAN",
@@ -1214,14 +933,12 @@
    "interessados": [],
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -5604,13 +5321,11 @@
     "CONGRESSO NACIONAL (VINCULADOR)"
    ],
    "orgaos": [
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "vinculo": "interessado",
    "acordao": "253/2026",
@@ -6368,8 +6083,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6383,8 +6097,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6398,8 +6111,7 @@
    "natureza": "Representação",
    "orgaos": [
     "AECI",
-    "MPO",
-    "SOF"
+    "MPO"
    ],
    "estado": "Aberto"
   },
