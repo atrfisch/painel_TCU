@@ -249,7 +249,7 @@ UNIDADES: dict[str, dict[str, Any]] = {
 # API que responde em 1-2s; o valor antigo (90s) fazia uma única requisição
 # lenta segurar a coleta por um minuto e meio, e centenas delas estouravam o
 # limite do GitHub.
-TIMEOUT = (10, 15)
+TIMEOUT = (10, 20)
 
 # Teto de tempo para a fase de enriquecimento por detalhe. Ela é opcional (a
 # captura principal não depende dela), então recebe um orçamento fixo: o que
@@ -683,12 +683,24 @@ def _uma_consulta(sessao: requests.Session, termo: str, filtro: str, rotulo: str
                   "quantidade": PESQUISA_QUANTIDADE, "inicio": inicio}
         if filtro:
             params["filtro"] = filtro
-        try:
-            r = sessao.get(PESQUISA_BASE, params=params, headers=PESQUISA_HEADERS, timeout=TIMEOUT)
-            r.raise_for_status()
-            dados = r.json()
-        except (requests.exceptions.RequestException, ValueError) as exc:
-            log.warning("Pesquisa (%s, início %d): %s", rotulo[:34], inicio, exc)
+        # Tenta a página algumas vezes antes de desistir. Um timeout pontual não
+        # deve abandonar a consulta inteira — foi o que fez processos da SOF e do
+        # Monitoramento ficarem de fora quando o TCU respondeu devagar num dia.
+        dados = None
+        for tentativa in range(3):
+            try:
+                r = sessao.get(PESQUISA_BASE, params=params, headers=PESQUISA_HEADERS, timeout=TIMEOUT)
+                r.raise_for_status()
+                dados = r.json()
+                break
+            except (requests.exceptions.RequestException, ValueError) as exc:
+                if tentativa == 2:
+                    log.warning("Pesquisa (%s, início %d): %s (desistindo após 3 tentativas)",
+                                rotulo[:34], inicio, exc)
+                else:
+                    log.info("Pesquisa (%s, início %d): tentativa %d falhou, repetindo",
+                             rotulo[:34], inicio, tentativa + 1)
+        if dados is None:
             break
         respondeu = True
         itens = dados if isinstance(dados, list) else (
