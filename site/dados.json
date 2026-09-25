@@ -1,16 +1,16 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-25T13:51:38.184320+00:00",
- "gerado_em_br": "25/09/2026 às 13:51",
+ "gerado_em": "2026-09-25T14:39:16.256951+00:00",
+ "gerado_em_br": "25/09/2026 às 14:39",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 89,
-  "movimentacoes": 304,
-  "abertos": 89,
-  "encerrados_ocultos": 559,
-  "so_interesse": 38
+  "processos": 90,
+  "movimentacoes": 306,
+  "abertos": 90,
+  "encerrados_ocultos": 681,
+  "so_interesse": 39
  },
  "garantidos": [
   "024.312/2024-0",
@@ -30,170 +30,19 @@
   "022.852/2025-5",
   "011.526/2022-0"
  ],
- "novos_processos": [],
- "andamentos_novos": [
+ "novos_processos": [
   {
-   "processo": "018.674/2024-0",
+   "processo": "041.252/2021-7",
    "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Auditoria para avaliação das causas e possíveis consequências da diminuição de ofertas de áreas e autorizações para exploração de petróleo",
-   "data": "2026-09-25T00:00:00+00:00",
-   "descricao": "Documento Extrato de publicação no Diário Eletrônico do TCU juntado ao processo por AudPetróleo",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.184/2022-0",
-   "orgaos": [
-    "AECI",
-    "MPO",
     "SOF"
    ],
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
-   "data": "2026-09-25T00:00:00+00:00",
-   "descricao": "Documento Extrato de publicação no Diário Eletrônico do TCU juntado ao processo por AudSustentabilidade",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.781/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  2º Semestre de 2026",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 81.129.478-0) publicada no BTCU Controle Externo n° 166, de 24/09/2026.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.205/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 550001 (Objeto: Edição do Decreto nº 13.120/2026, que dispõe sobre a correção dos valores dos benefícios financeiros do Programa Bolsa Família.)",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Augusto Nardes por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.205/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 550001 (Objeto: Edição do Decreto nº 13.120/2026, que dispõe sobre a correção dos valores dos benefícios financeiros do Programa Bolsa Família.)",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "019.911/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Segunda Câmara, prevista para 29/09/2026, às 10h30.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.918/2026-3",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (RARDP - 2026 4º BI) juntado ao processo por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "006.750/2026-5",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "006.750/2026-5 - Relatório de Levantamento",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Processo enviado de MIN-AAA para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "006.750/2026-5",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "006.750/2026-5 - Relatório de Levantamento",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária do Plenário em 23/09/2026 por meio do Acórdão 2607/2026-PL",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "016.873/2025-4 - Relatório de Levantamento",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Processo enviado de MIN-JPJ para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "016.873/2025-4 - Relatório de Levantamento",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária do Plenário em 23/09/2026 por meio do Acórdão 2616/2026-PL",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.950/2026-7",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Documento Despacho de expediente juntado ao processo por AudSaúde",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.950/2026-7",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Peça No. 75 do tipo Despacho de expediente (doc 81.135.275-6) desentranhada do processo por D-Ceis - Motivo: Erro na juntada",
-   "acordao": null,
-   "novo_no_radar": false
+   "assunto": "Monitoramento de determinações/recomendações constantes nos subitens 9.2 a 9.6 do Acórdão 1896/2021-TCU-Plenário, proferido no TC 031.532/2020-9, que cuidou de Auditoria de Natureza Operacional, tendo por objeto averiguar a adequabilidade dos componentes de governança do Fundo Setorial do Audiovisual (FSA), o qual constitui a principal política pública de fomento ao setor audiovisual brasileiro",
+   "natureza": "Monitoramento",
+   "relator": "Marcos Bemquerer",
+   "estado": "Aberto"
   }
  ],
+ "andamentos_novos": [],
  "tem_baseline": true,
  "por_orgao": [
   {
@@ -213,16 +62,16 @@
   {
    "orgao": "SE",
    "nome": "Secretaria-Executiva do MPO",
-   "total": 14,
+   "total": 24,
    "como_unidade": 0,
-   "como_interessado": 14
+   "como_interessado": 24
   },
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 57,
+   "total": 59,
    "como_unidade": 44,
-   "como_interessado": 13
+   "como_interessado": 15
   },
   {
    "orgao": "SEPLAN",
@@ -256,6 +105,11 @@
    "abertos": 16
   },
   {
+   "tipo": "Monitoramento",
+   "total": 6,
+   "abertos": 6
+  },
+  {
    "tipo": "Relatório de Levantamento",
    "total": 5,
    "abertos": 5
@@ -267,11 +121,6 @@
   },
   {
    "tipo": "Consulta",
-   "total": 5,
-   "abertos": 5
-  },
-  {
-   "tipo": "Monitoramento",
    "total": 5,
    "abertos": 5
   },
@@ -351,7 +200,7 @@
   },
   {
    "relator": "Marcos Bemquerer",
-   "total": 1
+   "total": 2
   },
   {
    "relator": "Augusto Sherman",
@@ -376,6 +225,10 @@
    "total": 2
   },
   {
+   "unidade": "AudEducação",
+   "total": 2
+  },
+  {
    "unidade": "AudPessoal",
    "total": 2
   },
@@ -389,10 +242,6 @@
   },
   {
    "unidade": "AudTI",
-   "total": 1
-  },
-  {
-   "unidade": "AudEducação",
    "total": 1
   },
   {
@@ -410,12 +259,12 @@
  ],
  "por_representante": [
   {
-   "representante": "Cristina Machado",
+   "representante": "Lucas Furtado",
    "total": 8
   },
   {
-   "representante": "Lucas Furtado",
-   "total": 7
+   "representante": "Cristina Machado",
+   "total": 8
   },
   {
    "representante": "Júlio Marcelo",
@@ -1211,6 +1060,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
@@ -1219,7 +1069,8 @@
    ],
    "orgaos_interessado": [
     "AECI",
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "unidade",
    "acordao": null,
@@ -2031,13 +1882,16 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [],
+   "orgaos_interessado": [
+    "SE"
+   ],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
@@ -2090,12 +1944,14 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -3740,11 +3596,13 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -4262,6 +4120,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SEPLAN",
     "SOF"
    ],
@@ -4269,6 +4128,7 @@
    "orgaos_interessado": [
     "AECI",
     "MPO",
+    "SE",
     "SEPLAN",
     "SOF"
    ],
@@ -4596,6 +4456,56 @@
    "garantido": false
   },
   {
+   "numero": "041.252/2021-7",
+   "id": "04125220217",
+   "codigo": "69349908",
+   "estado": "Aberto",
+   "relator": "Marcos Bemquerer",
+   "assunto": "Monitoramento de determinações/recomendações constantes nos subitens 9.2 a 9.6 do Acórdão 1896/2021-TCU-Plenário, proferido no TC 031.532/2020-9, que cuidou de Auditoria de Natureza Operacional, tendo por objeto averiguar a adequabilidade dos componentes de governança do Fundo Setorial do Audiovisual (FSA), o qual constitui a principal política pública de fomento ao setor audiovisual brasileiro",
+   "natureza": "Monitoramento",
+   "unidade_tecnica": "AudEducação",
+   "representante_mp": "Lucas Furtado",
+   "unidades": [
+    "Ancine - Agência Nacional do Cinema"
+   ],
+   "interessados": [
+    "Secretaria-Executiva do Ministério da Cultura"
+   ],
+   "orgaos": [
+    "SOF"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "SOF"
+   ],
+   "vinculo": "interessado",
+   "acordao": "740/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-07-18T00:00:00+00:00",
+     "descricao": "Confidencialidade do processo alterada de Restrito para Público  por AudEducação",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-04-30T00:00:00+00:00",
+     "descricao": "Documento Resposta de determinação juntado ao processo por AudEducação",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-07-18T00:00:00+00:00",
+    "descricao": "Confidencialidade do processo alterada de Restrito para Público  por AudEducação",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Confidencialidade do processo alterada de Restrito para Público  por AudEducação",
+   "atualizado_em": "2026-07-18T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=4125220217",
+   "garantido": false
+  },
+  {
    "numero": "009.482/2026-1",
    "id": "00948220261",
    "codigo": "80253574",
@@ -4811,11 +4721,15 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE",
+    "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE",
+    "SOF"
    ],
    "vinculo": "interessado",
    "acordao": "573/2026",
@@ -4989,11 +4903,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -5044,12 +4960,14 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -5103,11 +5021,13 @@
    "interessados": [],
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -5374,11 +5294,13 @@
    ],
    "interessados": [],
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "orgaos_unidade": [],
    "orgaos_interessado": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "vinculo": "interessado",
    "acordao": null,
@@ -5989,6 +5911,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto",
@@ -6379,6 +6302,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6394,6 +6318,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6409,6 +6334,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6833,6 +6759,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6848,6 +6775,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6928,6 +6856,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6942,6 +6871,7 @@
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6957,6 +6887,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7818,7 +7749,8 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -7831,7 +7763,8 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -7872,7 +7805,8 @@
    "assunto": "Representação sobre possível irregularidade em represamento de despesas do Seguro-Desemprego do Pescador Artesanal (SDPA), entre setembro e dezembro de 2025",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE"
    ],
    "estado": "Aberto"
   },
@@ -8230,6 +8164,7 @@
    "orgaos": [
     "AECI",
     "MPO",
+    "SE",
     "SEPLAN",
     "SOF"
    ],
