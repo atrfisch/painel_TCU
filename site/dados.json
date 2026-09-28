@@ -1,16 +1,16 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-28T13:35:30.832982+00:00",
- "gerado_em_br": "28/09/2026 às 13:35",
+ "gerado_em": "2026-09-28T17:34:14.689750+00:00",
+ "gerado_em_br": "28/09/2026 às 17:34",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 90,
-  "movimentacoes": 303,
-  "abertos": 90,
-  "encerrados_ocultos": 681,
-  "so_interesse": 39
+  "processos": 89,
+  "movimentacoes": 302,
+  "abertos": 89,
+  "encerrados_ocultos": 682,
+  "so_interesse": 38
  },
  "garantidos": [
   "024.312/2024-0",
@@ -33,13 +33,95 @@
  "novos_processos": [],
  "andamentos_novos": [
   {
+   "processo": "020.205/2026-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão com Uasg 550001 (Objeto: Edição do Decreto nº 13.120/2026, que dispõe sobre a correção dos valores dos benefícios financeiros do Programa Bolsa Família.)",
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AN",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "020.205/2026-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão com Uasg 550001 (Objeto: Edição do Decreto nº 13.120/2026, que dispõe sobre a correção dos valores dos benefícios financeiros do Programa Bolsa Família.)",
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Despacho de Cautelar oficializado.",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "009.482/2026-1",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  1º Semestre de 2026",
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Processo 016.088/2026-3 foi apensado a este processo por AudFiscal.",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "016.950/2026-7",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 39319/2026 por unidade Seproc em virtude de expedição",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "016.950/2026-7",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 39316/2026 por unidade Seproc em virtude de expedição",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "007.442/2025-4",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "11º Ciclo da Fiscalização Contínua de Folhas e Pagamento",
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Documento Resposta de determinação (Documento comprobatório) juntado ao processo por AudPessoal",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "007.442/2025-4",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "11º Ciclo da Fiscalização Contínua de Folhas e Pagamento",
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Documento Resposta de determinação (Petição AGU) juntado ao processo por AudPessoal",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
    "processo": "003.487/2025-3",
    "orgaos": [
     "MPO"
    ],
    "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
    "data": "2026-09-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 39152/2026 por unidade Seproc em virtude de expedição",
+   "descricao": "Registrada ciência de comunicação do Ofício 39153/2026-TCU/Seproc via CONECTA TCU por IRANEIDE PEREIRA DE ALMEIDA em nome de Conselho Nacional de Justiça",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -50,7 +132,7 @@
    ],
    "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
    "data": "2026-09-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 39151/2026 por unidade Seproc em virtude de expedição",
+   "descricao": "Registrada ciência de comunicação do Ofício 39149/2026-TCU/Seproc via CONECTA TCU por RAFAELLA DO NASCIMENTO FERREIRA em nome de Secretaria-Executiva do Ministério dos Direitos Humanos e da Cidadania",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -61,137 +143,7 @@
    ],
    "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
    "data": "2026-09-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 39149/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.674/2024-0",
-   "orgaos": [
-    "MPO",
-    "SE"
-   ],
-   "assunto": "Auditoria para avaliação das causas e possíveis consequências da diminuição de ofertas de áreas e autorizações para exploração de petróleo",
-   "data": "2026-09-28T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudPetróleo/AudPetróleo-ASS. (Assessoria da AudPetróleo)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.674/2024-0",
-   "orgaos": [
-    "MPO",
-    "SE"
-   ],
-   "assunto": "Auditoria para avaliação das causas e possíveis consequências da diminuição de ofertas de áreas e autorizações para exploração de petróleo",
-   "data": "2026-09-28T00:00:00+00:00",
-   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Evandro Albino Simpson",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.184/2022-0",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação apartada do TC 038.685/2021-3 para cumprimento do item 9.6 do Acórdão 1973/2022-TCU-Plenário.",
-   "data": "2026-09-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 38915/2026 por unidade Seproc em virtude de expedição",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.198/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "data": "2026-09-25T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 0060/2026-TCU/AudGestãoInovação.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.351/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Consulta sobre se os recebimentos decorrentes das novações dos créditos FCVS da Emgea constituem receitas que devem ser consideradas na geração de recursos próprios da empresa e compor o indicador NEFIL do PDG, ou são meras operações financeiras de troca de ativos que não devem influenciar o resultado fiscal.",
-   "data": "2026-09-25T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Bruno Dantas por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.351/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Consulta sobre se os recebimentos decorrentes das novações dos créditos FCVS da Emgea constituem receitas que devem ser consideradas na geração de recursos próprios da empresa e compor o indicador NEFIL do PDG, ou são meras operações financeiras de troca de ativos que não devem influenciar o resultado fiscal.",
-   "data": "2026-09-25T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.141/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
-   "data": "2026-09-25T00:00:00+00:00",
-   "descricao": "Peça nº 43 do tipo Portaria de Fiscalização (doc 81.138.803-8) publicada no BTCU Controle Externo n° 167, de 25/09/2026.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.997/2022-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
-   "data": "2026-09-25T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 0467/2026-TCU/AudEducação.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.662/2023-8",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "data": "2026-09-25T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para SecexConsenso/D1Consenso. (1ª Diretoria)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.662/2023-8",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "data": "2026-09-25T00:00:00+00:00",
-   "descricao": "Despacho de encerramento de ciclo de comunicação. Por SecexConsenso - Viviane Cristine Campos Baltar Duarte Somogyi",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "020.662/2023-8",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "data": "2026-09-25T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 36074/2026-TCU/Seproc.",
+   "descricao": "Registrada ciência de comunicação do Ofício 39150/2026-TCU/Seproc via CONECTA TCU por ANA CAROLINA MARTINS DE SANTANA em nome de Secretaria-Executiva do Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -201,9 +153,9 @@
   {
    "orgao": "MPO",
    "nome": "Ministério do Planejamento e Orçamento",
-   "total": 81,
+   "total": 80,
    "como_unidade": 46,
-   "como_interessado": 35
+   "como_interessado": 34
   },
   {
    "orgao": "AECI",
@@ -222,9 +174,9 @@
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 59,
+   "total": 58,
    "como_unidade": 44,
-   "como_interessado": 15
+   "como_interessado": 14
   },
   {
    "orgao": "SEPLAN",
@@ -244,8 +196,8 @@
  "por_tipo": [
   {
    "tipo": "Representação",
-   "total": 25,
-   "abertos": 25
+   "total": 24,
+   "abertos": 24
   },
   {
    "tipo": "Relatório de Auditoria",
@@ -329,7 +281,7 @@
   },
   {
    "relator": "Augusto Nardes",
-   "total": 12
+   "total": 11
   },
   {
    "relator": "Jhonatan de Jesus",
@@ -363,7 +315,7 @@
  "por_unidade_resp": [
   {
    "unidade": "AudFiscal",
-   "total": 28
+   "total": 27
   },
   {
    "unidade": "AudSaúde",
@@ -375,6 +327,10 @@
   },
   {
    "unidade": "AudPetróleo",
+   "total": 2
+  },
+  {
+   "unidade": "AudSustentabilidade",
    "total": 2
   },
   {
@@ -398,10 +354,6 @@
    "total": 1
   },
   {
-   "unidade": "AudSustentabilidade",
-   "total": 1
-  },
-  {
    "unidade": "AudElétrica",
    "total": 1
   },
@@ -412,19 +364,19 @@
  ],
  "por_representante": [
   {
-   "representante": "Lucas Furtado",
-   "total": 8
-  },
-  {
    "representante": "Cristina Machado",
    "total": 8
   },
   {
-   "representante": "Júlio Marcelo",
-   "total": 7
+   "representante": "Lucas Furtado",
+   "total": 8
   },
   {
    "representante": "Rodrigo Lima",
+   "total": 6
+  },
+  {
+   "representante": "Júlio Marcelo",
    "total": 6
   },
   {
@@ -432,11 +384,11 @@
    "total": 5
   },
   {
-   "representante": "Sergio Caribé",
-   "total": 4
+   "representante": "Marinus Marsico",
+   "total": 5
   },
   {
-   "representante": "Marinus Marsico",
+   "representante": "Sergio Caribé",
    "total": 4
   },
   {
@@ -467,16 +419,6 @@
    "movimentacoes_mes": 4
   },
   {
-   "processo": "016.088/2026-3",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Reclassificação administrativa das despesas com precatórios e da Anvisa após aprovação da LOA 2026 pelo Congresso Nacional.)",
-   "relator": "Augusto Nardes",
-   "movimentacoes_mes": 4
-  },
-  {
    "processo": "014.852/2026-8",
    "orgaos": [
     "MPO",
@@ -485,6 +427,35 @@
    "assunto": "Representação referente ao ato de gestão (Objeto: Mudança no formato de divulgação dos riscos fiscais judiciais no Projeto de Lei de Diretrizes Orçamentárias (PLDO) de 2027.)",
    "relator": "Walton Alencar Rodrigues",
    "movimentacoes_mes": 4
+  },
+  {
+   "processo": "020.205/2026-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Representação referente ao ato de gestão com Uasg 550001 (Objeto: Edição do Decreto nº 13.120/2026, que dispõe sobre a correção dos valores dos benefícios financeiros do Programa Bolsa Família.)",
+   "relator": "Augusto Nardes",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "016.950/2026-7",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
+   "relator": "Bruno Dantas",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "007.442/2025-4",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "11º Ciclo da Fiscalização Contínua de Folhas e Pagamento",
+   "relator": "Augusto Nardes",
+   "movimentacoes_mes": 3
   },
   {
    "processo": "003.487/2025-3",
@@ -515,28 +486,249 @@
    "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
    "relator": "Bruno Dantas",
    "movimentacoes_mes": 3
-  },
+  }
+ ],
+ "processos": [
   {
-   "processo": "020.662/2023-8",
-   "orgaos": [
-    "MPO"
+   "numero": "020.205/2026-0",
+   "id": "02020520260",
+   "codigo": "81100738",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "Representação referente ao ato de gestão com Uasg 550001 (Objeto: Edição do Decreto nº 13.120/2026, que dispõe sobre a correção dos valores dos benefícios financeiros do Programa Bolsa Família.)",
+   "natureza": "Representação",
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Cristina Machado",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "STN - Secretaria do Tesouro Nacional"
    ],
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "relator": "Jorge Oliveira",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "020.781/2026-1",
+   "interessados": [],
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  2º Semestre de 2026",
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-28T00:00:00+00:00",
+     "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AN",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-28T00:00:00+00:00",
+     "descricao": "Despacho de Cautelar oficializado.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-24T00:00:00+00:00",
+     "descricao": "Enviado para pronunciamento do Ministro Augusto Nardes por AudFiscal",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-28T00:00:00+00:00",
+    "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AN",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Despacho de autoridade juntado ao processo por MIN-AN",
+   "atualizado_em": "2026-09-28T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2020520260",
+   "garantido": false
+  },
+  {
+   "numero": "009.482/2026-1",
+   "id": "00948220261",
+   "codigo": "80253574",
+   "estado": "Aberto",
    "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  }
- ],
- "processos": [
+   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  1º Semestre de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "STN - Secretaria do Tesouro Nacional"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-28T00:00:00+00:00",
+     "descricao": "Processo 016.088/2026-3 foi apensado a este processo por AudFiscal.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-07-16T00:00:00+00:00",
+     "descricao": "Peça nº 4 do tipo Portaria de Fiscalização (doc 80.695.384-5) publicada no BTCU Controle Externo n° 119, de 16/07/2026.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-05-05T00:00:00+00:00",
+     "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.255.664-4) publicada no BTCU Controle Externo n° 71, de 05/05/2026.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-28T00:00:00+00:00",
+    "descricao": "Processo 016.088/2026-3 foi apensado a este processo por AudFiscal.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo 016.088/2026-3 foi apensado a este processo por AudFiscal.",
+   "atualizado_em": "2026-09-28T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=948220261",
+   "garantido": false
+  },
+  {
+   "numero": "016.950/2026-7",
+   "id": "01695020267",
+   "codigo": "80853648",
+   "estado": "Aberto",
+   "relator": "Bruno Dantas",
+   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
+   "natureza": "Relatório de Auditoria",
+   "unidade_tecnica": "AudSaúde",
+   "representante_mp": "Paulo Bugarin",
+   "unidades": [
+    "MS - Ministério da Saúde"
+   ],
+   "interessados": [
+    "Secretaria de Saúde do Estado do Piauí",
+    "Secretaria de Saúde do Estado do Amazonas",
+    "Secretaria de Saúde do Estado de Goiás",
+    "Secretaria de Saúde do Estado de Minas Gerais",
+    "Conselho Nacional de Secretários Municipais de Saúde",
+    "Prefeitura Municipal de Eirunepé - AM",
+    "Prefeitura Municipal de Ipixuna - AM",
+    "Prefeitura Municipal de Belo Vale - MG",
+    "Prefeitura Municipal de Moeda - MG",
+    "Prefeitura Municipal de Elesbão Veloso - PI",
+    "Prefeitura Municipal de Inhuma - PI",
+    "CONSELHO NACIONAL DE SECRETARIOS DE SAUDE",
+    "Assessoria Especial de Controle Interno do Ministério da Saúde"
+   ],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO",
+    "SOF"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-28T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 39319/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-28T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 39316/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-24T00:00:00+00:00",
+     "descricao": "Documento Despacho de expediente juntado ao processo por AudSaúde",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-28T00:00:00+00:00",
+    "descricao": "Juntada comunicação Ofício 39319/2026 por unidade Seproc em virtude de expedição",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Juntada comunicação Ofício 39319/2026 por unidade Seproc em virtude de expedição",
+   "atualizado_em": "2026-09-28T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1695020267",
+   "garantido": false
+  },
+  {
+   "numero": "007.442/2025-4",
+   "id": "00744220254",
+   "codigo": "77973187",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "11º Ciclo da Fiscalização Contínua de Folhas e Pagamento",
+   "natureza": "Relatório de Acompanhamento",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "COMAER - Comando da Aeronáutica",
+    "Abin - Agência Brasileira de Inteligência",
+    "AEB - Agência Espacial Brasileira"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-28T00:00:00+00:00",
+     "descricao": "Documento Resposta de determinação (Documento comprobatório) juntado ao processo por AudPessoal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-28T00:00:00+00:00",
+     "descricao": "Documento Resposta de determinação (Petição AGU) juntado ao processo por AudPessoal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-08T00:00:00+00:00",
+     "descricao": "Registrada resposta de comunicação do Ofício 2339/2025-TCU/AudPessoal.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-28T00:00:00+00:00",
+    "descricao": "Documento Resposta de determinação (Documento comprobatório) juntado ao processo por AudPessoal",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Resposta de determinação (Documento comprobatório) juntado ao processo",
+   "atualizado_em": "2026-09-28T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=744220254",
+   "garantido": false
+  },
   {
    "numero": "003.487/2025-3",
    "id": "00348720253",
@@ -564,19 +756,19 @@
    "movimentacoes": [
     {
      "data": "2026-09-28T00:00:00+00:00",
-     "descricao": "Juntada comunicação Ofício 39152/2026 por unidade Seproc em virtude de expedição",
+     "descricao": "Registrada ciência de comunicação do Ofício 39153/2026-TCU/Seproc via CONECTA TCU por IRANEIDE PEREIRA DE ALMEIDA em nome de Conselho Nacional de Justiça",
      "fase": null,
      "acordao": null
     },
     {
      "data": "2026-09-28T00:00:00+00:00",
-     "descricao": "Juntada comunicação Ofício 39151/2026 por unidade Seproc em virtude de expedição",
+     "descricao": "Registrada ciência de comunicação do Ofício 39149/2026-TCU/Seproc via CONECTA TCU por RAFAELLA DO NASCIMENTO FERREIRA em nome de Secretaria-Executiva do Ministério dos Direitos Humanos e da Cidadania",
      "fase": null,
      "acordao": null
     },
     {
      "data": "2026-09-28T00:00:00+00:00",
-     "descricao": "Juntada comunicação Ofício 39149/2026 por unidade Seproc em virtude de expedição",
+     "descricao": "Registrada ciência de comunicação do Ofício 39150/2026-TCU/Seproc via CONECTA TCU por ANA CAROLINA MARTINS DE SANTANA em nome de Secretaria-Executiva do Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
      "fase": null,
      "acordao": null
     },
@@ -589,11 +781,11 @@
    ],
    "ultima_movimentacao": {
     "data": "2026-09-28T00:00:00+00:00",
-    "descricao": "Juntada comunicação Ofício 39152/2026 por unidade Seproc em virtude de expedição",
+    "descricao": "Registrada ciência de comunicação do Ofício 39153/2026-TCU/Seproc via CONECTA TCU por IRANEIDE PEREIRA DE ALMEIDA em nome de Conselho Nacional de Justiça",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Juntada comunicação Ofício 39152/2026 por unidade Seproc em virtude de expedição",
+   "fase_atual": "Registrada ciência de comunicação do Ofício 39153/2026-TCU/Seproc via CONECTA TC",
    "atualizado_em": "2026-09-28T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=348720253",
    "garantido": false
@@ -941,12 +1133,14 @@
    "relator": "Jorge Oliveira",
    "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
    "natureza": "Solicitação de Solução Consensual",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "unidade_tecnica": "AudSustentabilidade",
+   "representante_mp": "Marinus Marsico",
    "unidades": [
     "ANATEL - Agência Nacional de Telecomunicações"
    ],
-   "interessados": [],
+   "interessados": [
+    "Spel Engenharia Ltda"
+   ],
    "orgaos": [
     "MPO"
    ],
@@ -1042,63 +1236,6 @@
    "fase_atual": "Peça nº 3 do tipo Portaria de Fiscalização (doc 81.129.478-0) publicada no BTCU ",
    "atualizado_em": "2026-09-24T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2078120261",
-   "garantido": false
-  },
-  {
-   "numero": "020.205/2026-0",
-   "id": "02020520260",
-   "codigo": "81100738",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "Representação referente ao ato de gestão com Uasg 550001 (Objeto: Edição do Decreto nº 13.120/2026, que dispõe sobre a correção dos valores dos benefícios financeiros do Programa Bolsa Família.)",
-   "natureza": "Representação",
-   "unidade_tecnica": "AudFiscal",
-   "representante_mp": "Cristina Machado",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-24T00:00:00+00:00",
-     "descricao": "Enviado para pronunciamento do Ministro Augusto Nardes por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-24T00:00:00+00:00",
-     "descricao": "Pronunciamento da AudFiscal concluído",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-21T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Decisão STF  MI 7.300/DF  18/9/2026  Decreto 13) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-24T00:00:00+00:00",
-    "descricao": "Enviado para pronunciamento do Ministro Augusto Nardes por AudFiscal",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Enviado para pronunciamento do Ministro Augusto Nardes por AudFiscal",
-   "atualizado_em": "2026-09-24T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2020520260",
    "garantido": false
   },
   {
@@ -1337,68 +1474,6 @@
    "fase_atual": "Processo enviado de MIN-JPJ para Seses/Disup. (Diretoria de Suporte aos Colegiad",
    "atualizado_em": "2026-09-24T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1687320254",
-   "garantido": false
-  },
-  {
-   "numero": "016.950/2026-7",
-   "id": "01695020267",
-   "codigo": "80853648",
-   "estado": "Aberto",
-   "relator": "Bruno Dantas",
-   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": "AudSaúde",
-   "representante_mp": "Paulo Bugarin",
-   "unidades": [
-    "MS - Ministério da Saúde"
-   ],
-   "interessados": [
-    "Secretaria de Saúde do Estado do Piauí",
-    "Secretaria de Saúde do Estado do Amazonas",
-    "Secretaria de Saúde do Estado de Goiás",
-    "Secretaria de Saúde do Estado de Minas Gerais",
-    "Conselho Nacional de Secretários Municipais de Saúde",
-    "Prefeitura Municipal de Belo Vale - MG",
-    "Prefeitura Municipal de Moeda - MG",
-    "Prefeitura Municipal de Elesbão Veloso - PI",
-    "Prefeitura Municipal de Inhuma - PI",
-    "CONSELHO NACIONAL DE SECRETARIOS DE SAUDE",
-    "Assessoria Especial de Controle Interno do Ministério da Saúde"
-   ],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO",
-    "SOF"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-24T00:00:00+00:00",
-     "descricao": "Documento Despacho de expediente juntado ao processo por AudSaúde",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-24T00:00:00+00:00",
-     "descricao": "Peça No. 75 do tipo Despacho de expediente (doc 81.135.275-6) desentranhada do processo por D-Ceis - Motivo: Erro na juntada",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-24T00:00:00+00:00",
-    "descricao": "Documento Despacho de expediente juntado ao processo por AudSaúde",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Despacho de expediente juntado ao processo por AudSaúde",
-   "atualizado_em": "2026-09-24T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1695020267",
    "garantido": false
   },
   {
@@ -1741,68 +1816,6 @@
    "atualizado_em": "2026-09-22T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2431220240",
    "garantido": true
-  },
-  {
-   "numero": "016.088/2026-3",
-   "id": "01608820263",
-   "codigo": "80757172",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Reclassificação administrativa das despesas com precatórios e da Anvisa após aprovação da LOA 2026 pelo Congresso Nacional.)",
-   "natureza": "Representação",
-   "unidade_tecnica": "AudFiscal",
-   "representante_mp": "Júlio Marcelo",
-   "unidades": [
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO",
-    "SOF"
-   ],
-   "vinculo": "interessado",
-   "acordao": "4835/2026",
-   "movimentacoes": [
-    {
-     "data": "2026-09-22T00:00:00+00:00",
-     "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-22T00:00:00+00:00",
-     "descricao": "Documento Termo (SPI) juntado ao processo por Seproc",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-22T00:00:00+00:00",
-     "descricao": "Apreciado na Sessão Ordinária da Segunda Câmara em 22/09/2026 por meio do Acórdão 4835/2026-2C",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-22T00:00:00+00:00",
-     "descricao": "Acórdão 4835/2026 — Segunda Câmara",
-     "fase": "Julgado",
-     "acordao": "4835/2026"
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-22T00:00:00+00:00",
-    "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFisca",
-   "atualizado_em": "2026-09-22T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1608820263",
-   "garantido": false
   },
   {
    "numero": "020.067/2026-7",
@@ -3098,50 +3111,6 @@
    "fase_atual": "Documento Resposta de determinação juntado ao processo por AudEducação",
    "atualizado_em": "2026-09-08T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2139920255",
-   "garantido": false
-  },
-  {
-   "numero": "007.442/2025-4",
-   "id": "00744220254",
-   "codigo": "77973187",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "11º Ciclo da Fiscalização Contínua de Folhas e Pagamento",
-   "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "COMAER - Comando da Aeronáutica",
-    "Abin - Agência Brasileira de Inteligência",
-    "AEB - Agência Espacial Brasileira"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-08T00:00:00+00:00",
-     "descricao": "Registrada resposta de comunicação do Ofício 2339/2025-TCU/AudPessoal.",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-08T00:00:00+00:00",
-    "descricao": "Registrada resposta de comunicação do Ofício 2339/2025-TCU/AudPessoal.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada resposta de comunicação do Ofício 2339/2025-TCU/AudPessoal.",
-   "atualizado_em": "2026-09-08T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=744220254",
    "garantido": false
   },
   {
@@ -4641,63 +4610,6 @@
    "garantido": false
   },
   {
-   "numero": "009.482/2026-1",
-   "id": "00948220261",
-   "codigo": "80253574",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  1º Semestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-07-16T00:00:00+00:00",
-     "descricao": "Peça nº 4 do tipo Portaria de Fiscalização (doc 80.695.384-5) publicada no BTCU Controle Externo n° 119, de 16/07/2026.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-05-05T00:00:00+00:00",
-     "descricao": "Peça nº 3 do tipo Portaria de Fiscalização (doc 80.255.664-4) publicada no BTCU Controle Externo n° 71, de 05/05/2026.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-05-05T00:00:00+00:00",
-     "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-16T00:00:00+00:00",
-    "descricao": "Peça nº 4 do tipo Portaria de Fiscalização (doc 80.695.384-5) publicada no BTCU Controle Externo n° 119, de 16/07/2026.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Peça nº 4 do tipo Portaria de Fiscalização (doc 80.695.384-5) publicada no BTCU ",
-   "atualizado_em": "2026-07-16T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=948220261",
-   "garantido": false
-  },
-  {
    "numero": "007.158/2026-2",
    "id": "00715820262",
    "codigo": "80099010",
@@ -5962,21 +5874,6 @@
    "evento": "acordao"
   },
   {
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Acórdão 4835/2026 — Segunda Câmara",
-   "fase": "Julgado",
-   "acordao": "4835/2026",
-   "processo": "016.088/2026-3",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Reclassificação administrativa das despesas com precatórios e da Anvisa após aprovação da LOA 2026 pelo Congresso Nacional.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto",
-   "evento": "acordao"
-  },
-  {
    "data": "2026-09-18T00:00:00+00:00",
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 23/09/2026, às 14h30.",
    "fase": null,
@@ -6057,7 +5954,103 @@
  "movimentacoes": [
   {
    "data": "2026-09-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 39152/2026 por unidade Seproc em virtude de expedição",
+   "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-AN",
+   "fase": null,
+   "acordao": null,
+   "processo": "020.205/2026-0",
+   "assunto": "Representação referente ao ato de gestão com Uasg 550001 (Objeto: Edição do Decreto nº 13.120/2026, que dispõe sobre a correção dos valores dos benefícios financeiros do Programa Bolsa Família.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Despacho de Cautelar oficializado.",
+   "fase": null,
+   "acordao": null,
+   "processo": "020.205/2026-0",
+   "assunto": "Representação referente ao ato de gestão com Uasg 550001 (Objeto: Edição do Decreto nº 13.120/2026, que dispõe sobre a correção dos valores dos benefícios financeiros do Programa Bolsa Família.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Processo 016.088/2026-3 foi apensado a este processo por AudFiscal.",
+   "fase": null,
+   "acordao": null,
+   "processo": "009.482/2026-1",
+   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  1º Semestre de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 39319/2026 por unidade Seproc em virtude de expedição",
+   "fase": null,
+   "acordao": null,
+   "processo": "016.950/2026-7",
+   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 39316/2026 por unidade Seproc em virtude de expedição",
+   "fase": null,
+   "acordao": null,
+   "processo": "016.950/2026-7",
+   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Documento Resposta de determinação (Documento comprobatório) juntado ao processo por AudPessoal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.442/2025-4",
+   "assunto": "11º Ciclo da Fiscalização Contínua de Folhas e Pagamento",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Documento Resposta de determinação (Petição AGU) juntado ao processo por AudPessoal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.442/2025-4",
+   "assunto": "11º Ciclo da Fiscalização Contínua de Folhas e Pagamento",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-28T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 39153/2026-TCU/Seproc via CONECTA TCU por IRANEIDE PEREIRA DE ALMEIDA em nome de Conselho Nacional de Justiça",
    "fase": null,
    "acordao": null,
    "processo": "003.487/2025-3",
@@ -6070,7 +6063,7 @@
   },
   {
    "data": "2026-09-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 39151/2026 por unidade Seproc em virtude de expedição",
+   "descricao": "Registrada ciência de comunicação do Ofício 39149/2026-TCU/Seproc via CONECTA TCU por RAFAELLA DO NASCIMENTO FERREIRA em nome de Secretaria-Executiva do Ministério dos Direitos Humanos e da Cidadania",
    "fase": null,
    "acordao": null,
    "processo": "003.487/2025-3",
@@ -6083,7 +6076,7 @@
   },
   {
    "data": "2026-09-28T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 39149/2026 por unidade Seproc em virtude de expedição",
+   "descricao": "Registrada ciência de comunicação do Ofício 39150/2026-TCU/Seproc via CONECTA TCU por ANA CAROLINA MARTINS DE SANTANA em nome de Secretaria-Executiva do Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
    "fase": null,
    "acordao": null,
    "processo": "003.487/2025-3",
@@ -6263,6 +6256,34 @@
   },
   {
    "data": "2026-09-24T00:00:00+00:00",
+   "descricao": "Enviado para pronunciamento do Ministro Augusto Nardes por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "020.205/2026-0",
+   "assunto": "Representação referente ao ato de gestão com Uasg 550001 (Objeto: Edição do Decreto nº 13.120/2026, que dispõe sobre a correção dos valores dos benefícios financeiros do Programa Bolsa Família.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-24T00:00:00+00:00",
+   "descricao": "Documento Despacho de expediente juntado ao processo por AudSaúde",
+   "fase": null,
+   "acordao": null,
+   "processo": "016.950/2026-7",
+   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-24T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 0059/2026-TCU/AudGestãoInovação via CONECTA TCU por Eliane de Almeida e Silva Evangelista em nome de Secretaria-Executiva do Ministério da Gestão e da Inovação em Serviços Públicos",
    "fase": null,
    "acordao": null,
@@ -6325,34 +6346,6 @@
    "processo": "020.781/2026-1",
    "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  2º Semestre de 2026",
    "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Augusto Nardes por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "020.205/2026-0",
-   "assunto": "Representação referente ao ato de gestão com Uasg 550001 (Objeto: Edição do Decreto nº 13.120/2026, que dispõe sobre a correção dos valores dos benefícios financeiros do Programa Bolsa Família.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "fase": null,
-   "acordao": null,
-   "processo": "020.205/2026-0",
-   "assunto": "Representação referente ao ato de gestão com Uasg 550001 (Objeto: Edição do Decreto nº 13.120/2026, que dispõe sobre a correção dos valores dos benefícios financeiros do Programa Bolsa Família.)",
-   "natureza": "Representação",
    "orgaos": [
     "MPO",
     "SOF"
@@ -6442,34 +6435,6 @@
    "processo": "016.873/2025-4",
    "assunto": "016.873/2025-4 - Relatório de Levantamento",
    "natureza": "Relatório de Levantamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Documento Despacho de expediente juntado ao processo por AudSaúde",
-   "fase": null,
-   "acordao": null,
-   "processo": "016.950/2026-7",
-   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-24T00:00:00+00:00",
-   "descricao": "Peça No. 75 do tipo Despacho de expediente (doc 81.135.275-6) desentranhada do processo por D-Ceis - Motivo: Erro na juntada",
-   "fase": null,
-   "acordao": null,
-   "processo": "016.950/2026-7",
-   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
     "SOF"
@@ -6657,76 +6622,6 @@
    "assunto": "Representação acerca de possíveis irregularidades na execução do programa de incentivo financeiro-educacional voltado a estudantes matriculados no ensino médio público beneficiários do Cadastro Único para Programas Sociais (CadÚnico), denominado Pé-de-Meia.",
    "natureza": "Representação",
    "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-   "fase": null,
-   "acordao": null,
-   "processo": "016.088/2026-3",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Reclassificação administrativa das despesas com precatórios e da Anvisa após aprovação da LOA 2026 pelo Congresso Nacional.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Documento Termo (SPI) juntado ao processo por Seproc",
-   "fase": null,
-   "acordao": null,
-   "processo": "016.088/2026-3",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Reclassificação administrativa das despesas com precatórios e da Anvisa após aprovação da LOA 2026 pelo Congresso Nacional.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária da Segunda Câmara em 22/09/2026 por meio do Acórdão 4835/2026-2C",
-   "fase": null,
-   "acordao": null,
-   "processo": "016.088/2026-3",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Reclassificação administrativa das despesas com precatórios e da Anvisa após aprovação da LOA 2026 pelo Congresso Nacional.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-22T00:00:00+00:00",
-   "descricao": "Acórdão 4835/2026 — Segunda Câmara",
-   "fase": "Julgado",
-   "acordao": "4835/2026",
-   "processo": "016.088/2026-3",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Reclassificação administrativa das despesas com precatórios e da Anvisa após aprovação da LOA 2026 pelo Congresso Nacional.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Decisão STF  MI 7.300/DF  18/9/2026  Decreto 13) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "020.205/2026-0",
-   "assunto": "Representação referente ao ato de gestão com Uasg 550001 (Objeto: Edição do Decreto nº 13.120/2026, que dispõe sobre a correção dos valores dos benefícios financeiros do Programa Bolsa Família.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
    "estado": "Aberto"
   },
   {
@@ -7323,6 +7218,19 @@
   },
   {
    "data": "2026-09-08T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 2339/2025-TCU/AudPessoal.",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.442/2025-4",
+   "assunto": "11º Ciclo da Fiscalização Contínua de Folhas e Pagamento",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-08T00:00:00+00:00",
    "descricao": "Peça nº 9 do tipo Portaria de Fiscalização (doc 81.025.420-4) publicada no BTCU Controle Externo n° 154, de 08/09/2026.",
    "fase": null,
    "acordao": null,
@@ -7431,19 +7339,6 @@
     "AECI",
     "MPO",
     "SE"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-08T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 2339/2025-TCU/AudPessoal.",
-   "fase": null,
-   "acordao": null,
-   "processo": "007.442/2025-4",
-   "assunto": "11º Ciclo da Fiscalização Contínua de Folhas e Pagamento",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO"
    ],
    "estado": "Aberto"
   },
