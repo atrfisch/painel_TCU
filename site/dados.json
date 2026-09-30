@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-09-30T13:11:04.990407+00:00",
- "gerado_em_br": "30/09/2026 às 13:11",
+ "gerado_em": "2026-09-30T15:50:51.676912+00:00",
+ "gerado_em_br": "30/09/2026 às 15:50",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -33,66 +33,6 @@
  "novos_processos": [],
  "andamentos_novos": [
   {
-   "processo": "019.911/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
-   "data": "2026-09-29T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária da Segunda Câmara em 29/09/2026 por meio do Acórdão 4936/2026-2C",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "019.911/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
-   "data": "2026-09-29T00:00:00+00:00",
-   "descricao": "Acórdão 4936/2026 — Segunda Câmara",
-   "acordao": "4936/2026",
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.198/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "data": "2026-09-29T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 0065/2026-TCU/AudGestãoInovação.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.198/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "data": "2026-09-29T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 0056/2026-TCU/AudGestãoInovação.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.198/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "data": "2026-09-29T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 0055/2026-TCU/AudGestãoInovação.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
    "processo": "014.609/2026-6",
    "orgaos": [
     "AECI",
@@ -101,54 +41,8 @@
     "SOF"
    ],
    "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-09-29T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 38540/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SEPLAN",
-    "SOF"
-   ],
-   "assunto": "Estruturação Metodológica e Execução Centralizada do Relatório de Fiscalizações em Políticas e Programas de Governo (RePP 2026)",
-   "data": "2026-09-29T00:00:00+00:00",
-   "descricao": "Confidencialidade do processo alterada de Sigiloso para Público  por Seproc",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.106/2025-7",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Auditoria operacional, integrada com conformidade, para avaliar a capacidade das Forças Armadas de cumprir com os Objetivos Nacionais de Defesa.",
-   "data": "2026-09-29T00:00:00+00:00",
-   "descricao": "Processo 017.305/2026-8 foi apensado a este processo por AudDefesa.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.993/2026-5",
-   "orgaos": [
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 201007 (Objeto: Causas do déficit primário acumulado do Governo Central em 2026, incluindo análise de projeções fiscais, variações de receitas e despesas, fundamentos, agentes decisores e impactos plurianuais.)",
-   "data": "2026-09-29T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "018.993/2026-5",
-   "orgaos": [
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 201007 (Objeto: Causas do déficit primário acumulado do Governo Central em 2026, incluindo análise de projeções fiscais, variações de receitas e despesas, fundamentos, agentes decisores e impactos plurianuais.)",
-   "data": "2026-09-29T00:00:00+00:00",
-   "descricao": "Documento Termo (SPI) juntado ao processo por Seproc",
+   "data": "2026-09-30T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 38542/2026-TCU/Seproc via CONECTA TCU por MARCELE BOTELHO em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -205,12 +99,12 @@
    "abertos": 24
   },
   {
-   "tipo": "Relatório de Auditoria",
+   "tipo": "Relatório de Acompanhamento",
    "total": 16,
    "abertos": 16
   },
   {
-   "tipo": "Relatório de Acompanhamento",
+   "tipo": "Relatório de Auditoria",
    "total": 16,
    "abertos": 16
   },
@@ -340,10 +234,6 @@
    "total": 2
   },
   {
-   "unidade": "AudSustentabilidade",
-   "total": 2
-  },
-  {
    "unidade": "AudEducação",
    "total": 2
   },
@@ -361,6 +251,10 @@
   },
   {
    "unidade": "AudTI",
+   "total": 1
+  },
+  {
+   "unidade": "AudSustentabilidade",
    "total": 1
   },
   {
@@ -394,11 +288,11 @@
    "total": 5
   },
   {
-   "representante": "Marinus Marsico",
-   "total": 5
+   "representante": "Sergio Caribé",
+   "total": 4
   },
   {
-   "representante": "Sergio Caribé",
+   "representante": "Marinus Marsico",
    "total": 4
   },
   {
@@ -460,6 +354,18 @@
    "movimentacoes_mes": 4
   },
   {
+   "processo": "014.609/2026-6",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 3
+  },
+  {
    "processo": "020.205/2026-0",
    "orgaos": [
     "MPO",
@@ -480,18 +386,6 @@
    "movimentacoes_mes": 3
   },
   {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  },
-  {
    "processo": "020.712/2023-5",
    "orgaos": [
     "MPO",
@@ -503,6 +397,70 @@
   }
  ],
  "processos": [
+  {
+   "numero": "014.609/2026-6",
+   "id": "01460920266",
+   "codigo": "80607514",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "BCB - Banco Central do Brasil",
+    "INSS - Instituto Nacional do Seguro Social"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [
+    "AECI",
+    "MPO",
+    "SE"
+   ],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-09-30T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 38542/2026-TCU/Seproc via CONECTA TCU por MARCELE BOTELHO em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-29T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 38540/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-23T00:00:00+00:00",
+     "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-09-30T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 38542/2026-TCU/Seproc via CONECTA TCU por MARCELE BOTELHO em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 38542/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-09-30T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1460920266",
+   "garantido": false
+  },
   {
    "numero": "020.205/2026-0",
    "id": "02020520260",
@@ -683,70 +641,6 @@
    "fase_atual": "Registrada resposta de comunicação do Ofício 0065/2026-TCU/AudGestãoInovação.",
    "atualizado_em": "2026-09-29T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1819820260",
-   "garantido": false
-  },
-  {
-   "numero": "014.609/2026-6",
-   "id": "01460920266",
-   "codigo": "80607514",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "BCB - Banco Central do Brasil",
-    "INSS - Instituto Nacional do Seguro Social"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [
-    "AECI",
-    "MPO",
-    "SE"
-   ],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-29T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 38540/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-23T00:00:00+00:00",
-     "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-23T00:00:00+00:00",
-     "descricao": "Pronunciamento da AudFiscal concluído",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-29T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 38540/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 38540/2026-TCU/Seproc via CONECTA TC",
-   "atualizado_em": "2026-09-29T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1460920266",
    "garantido": false
   },
   {
@@ -1615,14 +1509,12 @@
    "relator": "Jorge Oliveira",
    "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
    "natureza": "Solicitação de Solução Consensual",
-   "unidade_tecnica": "AudSustentabilidade",
-   "representante_mp": "Marinus Marsico",
+   "unidade_tecnica": null,
+   "representante_mp": null,
    "unidades": [
     "ANATEL - Agência Nacional de Telecomunicações"
    ],
-   "interessados": [
-    "Spel Engenharia Ltda"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO"
    ],
@@ -5974,6 +5866,38 @@
  ],
  "movimentacoes": [
   {
+   "data": "2026-09-30T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 38542/2026-TCU/Seproc via CONECTA TCU por MARCELE BOTELHO em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
+   "fase": null,
+   "acordao": null,
+   "processo": "014.609/2026-6",
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-29T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 38540/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+   "fase": null,
+   "acordao": null,
+   "processo": "014.609/2026-6",
+   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
    "data": "2026-09-29T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 39398/2026-TCU/Seproc via CONECTA TCU por ANA CAROLINA MARTINS DE SANTANA em nome de Secretaria-Executiva do Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
    "fase": null,
@@ -6081,22 +6005,6 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-29T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 38540/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
-   "fase": null,
-   "acordao": null,
-   "processo": "014.609/2026-6",
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6664,22 +6572,6 @@
   {
    "data": "2026-09-23T00:00:00+00:00",
    "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "014.609/2026-6",
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-23T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
    "fase": null,
    "acordao": null,
    "processo": "014.609/2026-6",
