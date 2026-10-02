@@ -1,7 +1,7 @@
 {
  "versao": 2,
- "gerado_em": "2026-10-02T13:19:45.678513+00:00",
- "gerado_em_br": "02/10/2026 às 13:19",
+ "gerado_em": "2026-10-02T15:34:55.222564+00:00",
+ "gerado_em_br": "02/10/2026 às 15:34",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
@@ -30,131 +30,8 @@
   "022.852/2025-5",
   "011.526/2022-0"
  ],
- "novos_processos": [
-  {
-   "processo": "041.252/2021-7",
-   "orgaos": [
-    "SOF"
-   ],
-   "assunto": "Monitoramento de determinações/recomendações constantes nos subitens 9.2 a 9.6 do Acórdão 1896/2021-TCU-Plenário, proferido no TC 031.532/2020-9, que cuidou de Auditoria de Natureza Operacional, tendo por objeto averiguar a adequabilidade dos componentes de governança do Fundo Setorial do Audiovisual (FSA), o qual constitui a principal política pública de fomento ao setor audiovisual brasileiro",
-   "natureza": "Monitoramento",
-   "relator": "Marcos Bemquerer",
-   "estado": "Aberto"
-  }
- ],
- "andamentos_novos": [
-  {
-   "processo": "019.911/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
-   "data": "2026-10-01T00:00:00+00:00",
-   "descricao": "Unidade responsável técnica alterada de AudFiscal para Direo por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "019.911/2026-2",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Inclusão de despesas com precatórios judiciais e com a Agência Nacional de Vigilância Sanitária no cálculo do piso constitucional da saúde nos exercícios de 2026 e 2027.)",
-   "data": "2026-10-01T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.226/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "data": "2026-10-01T00:00:00+00:00",
-   "descricao": "Cadastrada representação legal 14143/2026 (representante ROGERIO TELLES CORREIA DAS NEVES) por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.226/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "data": "2026-10-01T00:00:00+00:00",
-   "descricao": "Cadastrada representação legal 14142/2026 (representante FERNANDO MIZERSKI) por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "017.226/2026-0",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Itinerário de arrecadação e aplicação dos valores de Uso de Bem Público (UBP), com foco no não recolhimento à Conta Única do Tesouro Nacional, ausência de registro no Orçamento Geral da União e transferência de recursos às distribuidoras de energia elétrica.)",
-   "data": "2026-10-01T00:00:00+00:00",
-   "descricao": "Cadastrada representação legal 14141/2026 (representante PRISCILLA ROLIM DE ALMEIDA) por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SEPLAN",
-    "SOF"
-   ],
-   "assunto": "Estruturação Metodológica e Execução Centralizada do Relatório de Fiscalizações em Políticas e Programas de Governo (RePP 2026)",
-   "data": "2026-10-01T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 39697/2026-TCU/Seproc via CONECTA TCU por MARCELE BOTELHO em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SEPLAN",
-    "SOF"
-   ],
-   "assunto": "Estruturação Metodológica e Execução Centralizada do Relatório de Fiscalizações em Políticas e Programas de Governo (RePP 2026)",
-   "data": "2026-10-01T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Aviso 0962/2026-TCU/Seproc via CONECTA TCU por Ana Lucia Dornelles em nome de COMISSÃO MISTA DE ORÇAMENTO - SF",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.873/2025-4",
-   "orgaos": [
-    "MPO",
-    "SEPLAN",
-    "SOF"
-   ],
-   "assunto": "Estruturação Metodológica e Execução Centralizada do Relatório de Fiscalizações em Políticas e Programas de Governo (RePP 2026)",
-   "data": "2026-10-01T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 39695/2026-TCU/Seproc via CONECTA TCU por PEDRO MITSUO SILVA OKAWACHI em nome de Secretaria-Executiva do Ministério da Fazenda",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.950/2026-7",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "data": "2026-10-01T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 36647/2026-TCU/Seproc.",
-   "acordao": null,
-   "novo_no_radar": false
-  }
- ],
+ "novos_processos": [],
+ "andamentos_novos": [],
  "tem_baseline": true,
  "por_orgao": [
   {
