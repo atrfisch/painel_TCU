@@ -1,15 +1,15 @@
 {
  "versao": 2,
- "gerado_em": "2026-10-06T15:52:45.423475+00:00",
- "gerado_em_br": "06/10/2026 às 15:52",
+ "gerado_em": "2026-10-07T16:17:10.760277+00:00",
+ "gerado_em_br": "07/10/2026 às 16:17",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 86,
-  "movimentacoes": 296,
-  "abertos": 86,
-  "encerrados_ocultos": 857,
+  "processos": 87,
+  "movimentacoes": 297,
+  "abertos": 87,
+  "encerrados_ocultos": 686,
   "so_interesse": 36
  },
  "garantidos": [
@@ -30,8 +30,68 @@
   "022.852/2025-5",
   "011.526/2022-0"
  ],
- "novos_processos": [],
+ "novos_processos": [
+  {
+   "processo": "021.575/2026-6",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
+   "natureza": "Relatório de Acompanhamento",
+   "relator": "Jorge Oliveira",
+   "estado": "Aberto"
+  }
+ ],
  "andamentos_novos": [
+  {
+   "processo": "016.997/2022-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "data": "2026-10-07T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudEducação",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "021.575/2026-6",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
+   "data": "2026-10-06T00:00:00+00:00",
+   "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+   "acordao": null,
+   "novo_no_radar": true
+  },
+  {
+   "processo": "021.575/2026-6",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
+   "data": "2026-10-06T00:00:00+00:00",
+   "descricao": "Relatoria alterada de relatoria a definir para MIN-JGO por AudDigital (por Atribuição)",
+   "acordao": null,
+   "novo_no_radar": true
+  },
+  {
+   "processo": "021.575/2026-6",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
+   "data": "2026-10-06T00:00:00+00:00",
+   "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
+   "acordao": null,
+   "novo_no_radar": true
+  },
   {
    "processo": "018.198/2026-0",
    "orgaos": [
@@ -39,8 +99,32 @@
     "SOF"
    ],
    "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "data": "2026-10-05T00:00:00+00:00",
-   "descricao": "Peça nº 33 do tipo Portaria de Fiscalização (doc 81.185.532-5) publicada no BTCU Controle Externo n° 173, de 05/10/2026.",
+   "data": "2026-10-06T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Acesso aos autos Gabriel) juntado ao processo por AudGestãoInovação",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "018.198/2026-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
+   "data": "2026-10-06T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Documento AGU sobre requisição de 14Set2) juntado ao processo por AudGestãoInovação",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "016.950/2026-7",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
+   "data": "2026-10-06T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 37280/2026-TCU/Seproc.",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -50,8 +134,8 @@
   {
    "orgao": "MPO",
    "nome": "Ministério do Planejamento e Orçamento",
-   "total": 78,
-   "como_unidade": 45,
+   "total": 79,
+   "como_unidade": 46,
    "como_interessado": 33
   },
   {
@@ -71,8 +155,8 @@
   {
    "orgao": "SOF",
    "nome": "Secretaria de Orçamento Federal",
-   "total": 56,
-   "como_unidade": 43,
+   "total": 57,
+   "como_unidade": 44,
    "como_interessado": 13
   },
   {
@@ -97,12 +181,12 @@
    "abertos": 22
   },
   {
-   "tipo": "Relatório de Auditoria",
-   "total": 16,
-   "abertos": 16
+   "tipo": "Relatório de Acompanhamento",
+   "total": 17,
+   "abertos": 17
   },
   {
-   "tipo": "Relatório de Acompanhamento",
+   "tipo": "Relatório de Auditoria",
    "total": 16,
    "abertos": 16
   },
@@ -182,7 +266,7 @@
   },
   {
    "relator": "Jorge Oliveira",
-   "total": 10
+   "total": 11
   },
   {
    "relator": "Jhonatan de Jesus",
@@ -235,6 +319,10 @@
    "total": 2
   },
   {
+   "unidade": "AudDigital",
+   "total": 1
+  },
+  {
    "unidade": "AudGestãoInovação",
    "total": 1
   },
@@ -277,12 +365,12 @@
    "total": 6
   },
   {
-   "representante": "Paulo Bugarin",
+   "representante": "Marinus Marsico",
    "total": 5
   },
   {
-   "representante": "Marinus Marsico",
-   "total": 4
+   "representante": "Paulo Bugarin",
+   "total": 5
   },
   {
    "representante": "Sergio Caribé",
@@ -359,23 +447,13 @@
    "movimentacoes_mes": 4
   },
   {
-   "processo": "018.198/2026-0",
+   "processo": "021.575/2026-6",
    "orgaos": [
     "MPO",
     "SOF"
    ],
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "relator": "Rodrigo Pacheco",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "016.950/2026-7",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "relator": "Rodrigo Pacheco",
+   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
+   "relator": "Jorge Oliveira",
    "movimentacoes_mes": 3
   },
   {
@@ -386,9 +464,246 @@
    "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
    "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
+  },
+  {
+   "processo": "018.918/2026-3",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "relator": "Antonio Anastasia",
+   "movimentacoes_mes": 3
   }
  ],
  "processos": [
+  {
+   "numero": "016.997/2022-0",
+   "id": "01699720220",
+   "codigo": "71725694",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "natureza": "Acompanhamento",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "COMAER - Comando da Aeronáutica",
+    "C Ex - Comando do Exército"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-10-07T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudEducação",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-10-03T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudEducação",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-10-07T00:00:00+00:00",
+    "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudEducação",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudEducaçã",
+   "atualizado_em": "2026-10-07T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1699720220",
+   "garantido": false
+  },
+  {
+   "numero": "021.575/2026-6",
+   "id": "02157520266",
+   "codigo": "81205183",
+   "estado": "Aberto",
+   "relator": "Jorge Oliveira",
+   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
+   "natureza": "Relatório de Acompanhamento",
+   "unidade_tecnica": "AudDigital",
+   "representante_mp": "Marinus Marsico",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "RFB - Secretaria Especial da Receita Federal do Brasil",
+    "SEGES - Secretaria de Gestão e Inovação"
+   ],
+   "interessados": [
+    "CONGRESSO NACIONAL (VINCULADOR)"
+   ],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-10-06T00:00:00+00:00",
+     "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-10-06T00:00:00+00:00",
+     "descricao": "Relatoria alterada de relatoria a definir para MIN-JGO por AudDigital (por Atribuição)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-10-06T00:00:00+00:00",
+     "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-10-06T00:00:00+00:00",
+    "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+   "atualizado_em": "2026-10-06T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2157520266",
+   "garantido": false
+  },
+  {
+   "numero": "018.198/2026-0",
+   "id": "01819820260",
+   "codigo": "80939520",
+   "estado": "Aberto",
+   "relator": "Rodrigo Pacheco",
+   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
+   "natureza": "Relatório de Auditoria",
+   "unidade_tecnica": "AudGestãoInovação",
+   "representante_mp": "Rodrigo Lima",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "SRI/PR - Secretaria de Relações Institucionais da Presidência da República"
+   ],
+   "interessados": [
+    "Assessoria Especial de Controle Interno do Ministério da Gestão e da Inovação em Serviços Públicos",
+    "Secretaria-Executiva do Ministério da Gestão e da Inovação em Serviços Públicos",
+    "Assessoria Especial de Controle Interno do Ministério da Integração e do Desenvolvimento Regional",
+    "Secretaria-Executiva do Ministério da Integração e do Desenvolvimento Regional"
+   ],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-10-06T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Acesso aos autos Gabriel) juntado ao processo por AudGestãoInovação",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-10-06T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Documento AGU sobre requisição de 14Set2) juntado ao processo por AudGestãoInovação",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-10-06T00:00:00+00:00",
+    "descricao": "Documento Elementos comprobatórios/Evidências (Acesso aos autos Gabriel) juntado ao processo por AudGestãoInovação",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Elementos comprobatórios/Evidências (Acesso aos autos Gabriel) juntado",
+   "atualizado_em": "2026-10-06T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1819820260",
+   "garantido": false
+  },
+  {
+   "numero": "016.950/2026-7",
+   "id": "01695020267",
+   "codigo": "80853648",
+   "estado": "Aberto",
+   "relator": "Rodrigo Pacheco",
+   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
+   "natureza": "Relatório de Auditoria",
+   "unidade_tecnica": "AudSaúde",
+   "representante_mp": "Paulo Bugarin",
+   "unidades": [
+    "MS - Ministério da Saúde"
+   ],
+   "interessados": [
+    "Secretaria de Saúde do Estado do Piauí",
+    "Secretaria de Saúde do Estado do Amazonas",
+    "Secretaria de Saúde do Estado de Goiás",
+    "Secretaria de Saúde do Estado de Minas Gerais",
+    "Conselho Nacional de Secretários Municipais de Saúde",
+    "Prefeitura Municipal de Eirunepé - AM",
+    "Prefeitura Municipal de Ipixuna - AM",
+    "Prefeitura Municipal de Belo Vale - MG",
+    "Prefeitura Municipal de Moeda - MG",
+    "Prefeitura Municipal de Elesbão Veloso - PI",
+    "Prefeitura Municipal de Inhuma - PI",
+    "CONSELHO NACIONAL DE SECRETARIOS DE SAUDE",
+    "Assessoria Especial de Controle Interno do Ministério da Saúde"
+   ],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO",
+    "SOF"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-10-06T00:00:00+00:00",
+     "descricao": "Registrada resposta de comunicação do Ofício 37280/2026-TCU/Seproc.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-10-06T00:00:00+00:00",
+    "descricao": "Registrada resposta de comunicação do Ofício 37280/2026-TCU/Seproc.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada resposta de comunicação do Ofício 37280/2026-TCU/Seproc.",
+   "atualizado_em": "2026-10-06T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1695020267",
+   "garantido": false
+  },
   {
    "numero": "021.183/2026-0",
    "id": "02118320260",
@@ -438,138 +753,6 @@
    "fase_atual": "Unidade responsável técnica alterada de AudFiscal para Difes por AudFiscal",
    "atualizado_em": "2026-10-05T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2118320260",
-   "garantido": false
-  },
-  {
-   "numero": "018.198/2026-0",
-   "id": "01819820260",
-   "codigo": "80939520",
-   "estado": "Aberto",
-   "relator": "Rodrigo Pacheco",
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": "AudGestãoInovação",
-   "representante_mp": "Rodrigo Lima",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "SRI/PR - Secretaria de Relações Institucionais da Presidência da República"
-   ],
-   "interessados": [
-    "Assessoria Especial de Controle Interno do Ministério da Gestão e da Inovação em Serviços Públicos",
-    "Secretaria-Executiva do Ministério da Gestão e da Inovação em Serviços Públicos",
-    "Assessoria Especial de Controle Interno do Ministério da Integração e do Desenvolvimento Regional",
-    "Secretaria-Executiva do Ministério da Integração e do Desenvolvimento Regional"
-   ],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-10-05T00:00:00+00:00",
-     "descricao": "Peça nº 33 do tipo Portaria de Fiscalização (doc 81.185.532-5) publicada no BTCU Controle Externo n° 173, de 05/10/2026.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-30T00:00:00+00:00",
-     "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-30T00:00:00+00:00",
-     "descricao": "Relatoria alterada de MIN-BD para MIN-RP por AudGestãoInovação (por Atribuição)",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-10-05T00:00:00+00:00",
-    "descricao": "Peça nº 33 do tipo Portaria de Fiscalização (doc 81.185.532-5) publicada no BTCU Controle Externo n° 173, de 05/10/2026.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Peça nº 33 do tipo Portaria de Fiscalização (doc 81.185.532-5) publicada no BTCU",
-   "atualizado_em": "2026-10-05T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1819820260",
-   "garantido": false
-  },
-  {
-   "numero": "016.950/2026-7",
-   "id": "01695020267",
-   "codigo": "80853648",
-   "estado": "Aberto",
-   "relator": "Rodrigo Pacheco",
-   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": "AudSaúde",
-   "representante_mp": "Paulo Bugarin",
-   "unidades": [
-    "MS - Ministério da Saúde"
-   ],
-   "interessados": [
-    "Secretaria de Saúde do Estado do Piauí",
-    "Secretaria de Saúde do Estado do Amazonas",
-    "Secretaria de Saúde do Estado de Goiás",
-    "Secretaria de Saúde do Estado de Minas Gerais",
-    "Conselho Nacional de Secretários Municipais de Saúde",
-    "Prefeitura Municipal de Eirunepé - AM",
-    "Prefeitura Municipal de Ipixuna - AM",
-    "Prefeitura Municipal de Belo Vale - MG",
-    "Prefeitura Municipal de Moeda - MG",
-    "Prefeitura Municipal de Elesbão Veloso - PI",
-    "Prefeitura Municipal de Inhuma - PI",
-    "CONSELHO NACIONAL DE SECRETARIOS DE SAUDE",
-    "Assessoria Especial de Controle Interno do Ministério da Saúde"
-   ],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO",
-    "SOF"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-10-05T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 36712/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-10-05T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 36714/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-10-01T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 36647/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-10-05T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 36712/2026-TCU/Seproc.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 36712/2026-TCU/Seproc.",
-   "atualizado_em": "2026-10-05T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1695020267",
    "garantido": false
   },
   {
@@ -631,52 +814,6 @@
    "fase_atual": "Registrada resposta de comunicação do Ofício 39149/2026-TCU/Seproc.",
    "atualizado_em": "2026-10-05T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=348720253",
-   "garantido": false
-  },
-  {
-   "numero": "016.997/2022-0",
-   "id": "01699720220",
-   "codigo": "71725694",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
-   "natureza": "Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "COMAER - Comando da Aeronáutica",
-    "C Ex - Comando do Exército"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-10-03T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudEducação",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-10-03T00:00:00+00:00",
-    "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudEducação",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudEducaçã",
-   "atualizado_em": "2026-10-03T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1699720220",
    "garantido": false
   },
   {
@@ -5716,13 +5853,13 @@
  ],
  "movimentacoes": [
   {
-   "data": "2026-10-05T00:00:00+00:00",
-   "descricao": "Unidade responsável técnica alterada de AudFiscal para Difes por AudFiscal",
+   "data": "2026-10-07T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudEducação",
    "fase": null,
    "acordao": null,
-   "processo": "021.183/2026-0",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Proibição de exploração, oferta, intermediação e publicidade de apostas de quota fixa no Brasil, incluindo jogos online e cassinos virtuais, conforme cronograma estabelecido em medida provisória.)",
-   "natureza": "Representação",
+   "processo": "016.997/2022-0",
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "natureza": "Acompanhamento",
    "orgaos": [
     "MPO",
     "SOF"
@@ -5730,8 +5867,50 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-10-05T00:00:00+00:00",
-   "descricao": "Peça nº 33 do tipo Portaria de Fiscalização (doc 81.185.532-5) publicada no BTCU Controle Externo n° 173, de 05/10/2026.",
+   "data": "2026-10-06T00:00:00+00:00",
+   "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
+   "fase": null,
+   "acordao": null,
+   "processo": "021.575/2026-6",
+   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-10-06T00:00:00+00:00",
+   "descricao": "Relatoria alterada de relatoria a definir para MIN-JGO por AudDigital (por Atribuição)",
+   "fase": null,
+   "acordao": null,
+   "processo": "021.575/2026-6",
+   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-10-06T00:00:00+00:00",
+   "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
+   "fase": null,
+   "acordao": null,
+   "processo": "021.575/2026-6",
+   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-10-06T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Acesso aos autos Gabriel) juntado ao processo por AudGestãoInovação",
    "fase": null,
    "acordao": null,
    "processo": "018.198/2026-0",
@@ -5744,8 +5923,22 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-10-05T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 36712/2026-TCU/Seproc.",
+   "data": "2026-10-06T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Documento AGU sobre requisição de 14Set2) juntado ao processo por AudGestãoInovação",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.198/2026-0",
+   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-10-06T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 37280/2026-TCU/Seproc.",
    "fase": null,
    "acordao": null,
    "processo": "016.950/2026-7",
@@ -5759,12 +5952,12 @@
   },
   {
    "data": "2026-10-05T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 36714/2026-TCU/Seproc.",
+   "descricao": "Unidade responsável técnica alterada de AudFiscal para Difes por AudFiscal",
    "fase": null,
    "acordao": null,
-   "processo": "016.950/2026-7",
-   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "natureza": "Relatório de Auditoria",
+   "processo": "021.183/2026-0",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Proibição de exploração, oferta, intermediação e publicidade de apostas de quota fixa no Brasil, incluindo jogos online e cassinos virtuais, conforme cronograma estabelecido em medida provisória.)",
+   "natureza": "Representação",
    "orgaos": [
     "MPO",
     "SOF"
@@ -5835,20 +6028,6 @@
    "processo": "036.975/2020-6",
    "assunto": "Acórdão 2283/2020-P item 9.2 - objetivo de melhor delinear e consolidar os entendimentos e procedimentos relativos ao Orçamento de Guerra, bem como suas intersecções com as hipóteses de abertura de crédito extraordinário e os limites impostos pelo Teto de Gastos. (TC 016.873/2020-3)",
    "natureza": "Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-10-01T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 36647/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "016.950/2026-7",
-   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
     "SOF"
@@ -6034,34 +6213,6 @@
    "processo": "021.183/2026-0",
    "assunto": "Representação referente ao ato de gestão (Objeto: Proibição de exploração, oferta, intermediação e publicidade de apostas de quota fixa no Brasil, incluindo jogos online e cassinos virtuais, conforme cronograma estabelecido em medida provisória.)",
    "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-30T00:00:00+00:00",
-   "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.198/2026-0",
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-30T00:00:00+00:00",
-   "descricao": "Relatoria alterada de MIN-BD para MIN-RP por AudGestãoInovação (por Atribuição)",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.198/2026-0",
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
     "SOF"
@@ -8468,19 +8619,6 @@
   {
    "data": "2026-07-24T00:00:00+00:00",
    "descricao": "Documento Elementos comprobatórios/Evidências (Despacho de Concessão de Medida Cautelar) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Petição BNDES ) juntado ao processo por AudFiscal",
    "fase": null,
    "acordao": null,
    "processo": "024.216/2025-9",
