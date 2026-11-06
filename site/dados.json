@@ -1,16 +1,16 @@
 {
  "versao": 2,
- "gerado_em": "2026-11-05T17:22:40.075297+00:00",
- "gerado_em_br": "05/11/2026 às 17:22",
+ "gerado_em": "2026-11-06T16:49:13.048187+00:00",
+ "gerado_em_br": "06/11/2026 às 16:49",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
   "processos": 77,
-  "movimentacoes": 265,
+  "movimentacoes": 266,
   "abertos": 77,
   "encerrados_ocultos": 701,
-  "so_interesse": 34
+  "so_interesse": 35
  },
  "garantidos": [
   "025.632/2024-8",
@@ -33,50 +33,25 @@
  "novos_processos": [],
  "andamentos_novos": [
   {
-   "processo": "018.918/2026-3",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-11-05T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 42205/2026-TCU/Seproc.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "009.482/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  1º Semestre de 2026",
-   "data": "2026-11-05T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 42086/2026-TCU/Seproc.",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
    "processo": "016.950/2026-7",
    "orgaos": [
     "MPO",
     "SOF"
    ],
    "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "data": "2026-11-05T00:00:00+00:00",
+   "data": "2026-11-06T00:00:00+00:00",
    "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudSaúde",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "023.368/2025-0",
+   "processo": "020.662/2023-8",
    "orgaos": [
     "MPO"
    ],
-   "assunto": "Acompanhamento de Aspectos Macrofiscais, Orçamentários e de Gestão da ENBPar e da Eletronuclear",
-   "data": "2026-11-05T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Aviso 1019/2026-TCU/Seproc via CONECTA TCU por LAIRTON PEDRO KLEINUBING em nome de Não identificado",
+   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
+   "data": "2026-11-06T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 44204/2026-TCU/Seproc via CONECTA TCU por VARLONE BATISTA SAMPAIO em nome de Não identificado",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -87,44 +62,18 @@
    ],
    "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
    "data": "2026-11-05T00:00:00+00:00",
-   "descricao": "Apreciado na Sessão Ordinária do Plenário em 04/11/2026 por meio do Acórdão 2992/2026-PL",
+   "descricao": "Juntada comunicação Ofício 44204/2026 por unidade Seproc em virtude de expedição",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "020.662/2023-8",
+   "processo": "003.487/2025-3",
    "orgaos": [
     "MPO"
    ],
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
    "data": "2026-11-05T00:00:00+00:00",
-   "descricao": "Acórdão 2992/2026 — Plenário",
-   "acordao": "2992/2026",
-   "novo_no_radar": false
-  },
-  {
-   "processo": "016.141/2026-1",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
-   "data": "2026-11-04T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 43635/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Não identificado",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "014.609/2026-6",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "3ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "data": "2026-11-04T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 43592/2026-TCU/Seproc via CONECTA TCU por RENATA DE SOUZA TARTALHO em nome de Não identificado",
+   "descricao": "Peça nº 59 do tipo Portaria de Fiscalização (doc 81.365.493-3) publicada no BTCU Controle Externo n° 193, de 05/11/2026.",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -135,8 +84,8 @@
    "orgao": "MPO",
    "nome": "Ministério do Planejamento e Orçamento",
    "total": 69,
-   "como_unidade": 39,
-   "como_interessado": 30
+   "como_unidade": 38,
+   "como_interessado": 31
   },
   {
    "orgao": "AECI",
@@ -169,9 +118,9 @@
   {
    "orgao": "SMA",
    "nome": "Secretaria de Monitoramento e Avaliação",
-   "total": 1,
-   "como_unidade": 1,
-   "como_interessado": 0
+   "total": 4,
+   "como_unidade": 0,
+   "como_interessado": 4
   }
  ],
  "por_tipo": [
@@ -395,21 +344,21 @@
  ],
  "ranking_mes": [
   {
-   "processo": "023.368/2025-0",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Acompanhamento de Aspectos Macrofiscais, Orçamentários e de Gestão da ENBPar e da Eletronuclear",
-   "relator": "Benjamin Zymler",
-   "movimentacoes_mes": 4
-  },
-  {
    "processo": "020.662/2023-8",
    "orgaos": [
     "MPO"
    ],
    "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
    "relator": "Jorge Oliveira",
+   "movimentacoes_mes": 4
+  },
+  {
+   "processo": "023.368/2025-0",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "Acompanhamento de Aspectos Macrofiscais, Orçamentários e de Gestão da ENBPar e da Eletronuclear",
+   "relator": "Benjamin Zymler",
    "movimentacoes_mes": 4
   },
   {
@@ -469,6 +418,7 @@
     "AECI",
     "MPO",
     "SE",
+    "SMA",
     "SOF"
    ],
    "assunto": "Auditoria Operacional com aspectos de conformidade sobre a execução de projetos/programas públicos custeados com recursos públicos que transitam fora do Orçamento Geral da União.",
@@ -477,6 +427,124 @@
   }
  ],
  "processos": [
+  {
+   "numero": "016.950/2026-7",
+   "id": "01695020267",
+   "codigo": "80853648",
+   "estado": "Aberto",
+   "relator": "Rodrigo Pacheco",
+   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
+   "natureza": "Relatório de Auditoria",
+   "unidade_tecnica": "AudSaúde",
+   "representante_mp": "Paulo Bugarin",
+   "unidades": [
+    "MS - Ministério da Saúde"
+   ],
+   "interessados": [
+    "Secretaria de Saúde do Estado do Piauí",
+    "Secretaria de Saúde do Estado do Amazonas",
+    "Secretaria de Saúde do Estado de Goiás",
+    "Secretaria de Saúde do Estado de Minas Gerais",
+    "Conselho Nacional de Secretários Municipais de Saúde",
+    "Prefeitura Municipal de Eirunepé - AM",
+    "Prefeitura Municipal de Ipixuna - AM",
+    "Prefeitura Municipal de Belo Vale - MG",
+    "Prefeitura Municipal de Moeda - MG",
+    "Prefeitura Municipal de Elesbão Veloso - PI",
+    "Prefeitura Municipal de Inhuma - PI",
+    "CONSELHO NACIONAL DE SECRETARIOS DE SAUDE",
+    "Assessoria Especial de Controle Interno do Ministério da Saúde"
+   ],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO",
+    "SOF"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-11-06T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudSaúde",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-11-06T00:00:00+00:00",
+    "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudSaúde",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudSaúde",
+   "atualizado_em": "2026-11-06T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1695020267",
+   "garantido": false
+  },
+  {
+   "numero": "020.662/2023-8",
+   "id": "02066220238",
+   "codigo": "74018032",
+   "estado": "Aberto",
+   "relator": "Jorge Oliveira",
+   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
+   "natureza": "Solicitação de Solução Consensual",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "ANATEL - Agência Nacional de Telecomunicações"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO"
+   ],
+   "vinculo": "interessado",
+   "acordao": "2992/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-11-06T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 44204/2026-TCU/Seproc via CONECTA TCU por VARLONE BATISTA SAMPAIO em nome de Não identificado",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-05T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 44204/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-05T00:00:00+00:00",
+     "descricao": "Apreciado na Sessão Ordinária do Plenário em 04/11/2026 por meio do Acórdão 2992/2026-PL",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-05T00:00:00+00:00",
+     "descricao": "Acórdão 2992/2026 — Plenário",
+     "fase": "Julgado",
+     "acordao": "2992/2026"
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-11-06T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 44204/2026-TCU/Seproc via CONECTA TCU por VARLONE BATISTA SAMPAIO em nome de Não identificado",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 44204/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-11-06T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2066220238",
+   "garantido": false
+  },
   {
    "numero": "018.918/2026-3",
    "id": "01891820263",
@@ -574,64 +642,6 @@
    "garantido": false
   },
   {
-   "numero": "016.950/2026-7",
-   "id": "01695020267",
-   "codigo": "80853648",
-   "estado": "Aberto",
-   "relator": "Rodrigo Pacheco",
-   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": "AudSaúde",
-   "representante_mp": "Paulo Bugarin",
-   "unidades": [
-    "MS - Ministério da Saúde"
-   ],
-   "interessados": [
-    "Secretaria de Saúde do Estado do Piauí",
-    "Secretaria de Saúde do Estado do Amazonas",
-    "Secretaria de Saúde do Estado de Goiás",
-    "Secretaria de Saúde do Estado de Minas Gerais",
-    "Conselho Nacional de Secretários Municipais de Saúde",
-    "Prefeitura Municipal de Eirunepé - AM",
-    "Prefeitura Municipal de Ipixuna - AM",
-    "Prefeitura Municipal de Belo Vale - MG",
-    "Prefeitura Municipal de Moeda - MG",
-    "Prefeitura Municipal de Elesbão Veloso - PI",
-    "Prefeitura Municipal de Inhuma - PI",
-    "CONSELHO NACIONAL DE SECRETARIOS DE SAUDE",
-    "Assessoria Especial de Controle Interno do Ministério da Saúde"
-   ],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO",
-    "SOF"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-11-05T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudSaúde",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-11-05T00:00:00+00:00",
-    "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudSaúde",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudSaúde",
-   "atualizado_em": "2026-11-05T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1695020267",
-   "garantido": false
-  },
-  {
    "numero": "023.368/2025-0",
    "id": "02336820250",
    "codigo": "79344868",
@@ -694,17 +704,18 @@
    "garantido": false
   },
   {
-   "numero": "020.662/2023-8",
-   "id": "02066220238",
-   "codigo": "74018032",
+   "numero": "003.487/2025-3",
+   "id": "00348720253",
+   "codigo": "77599020",
    "estado": "Aberto",
-   "relator": "Jorge Oliveira",
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "natureza": "Solicitação de Solução Consensual",
+   "relator": "Antonio Anastasia",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
+   "natureza": "Representação",
    "unidade_tecnica": null,
    "representante_mp": null,
    "unidades": [
-    "ANATEL - Agência Nacional de Telecomunicações"
+    "CNJ - Conselho Nacional de Justiça",
+    "INSS - Instituto Nacional do Seguro Social"
    ],
    "interessados": [],
    "orgaos": [
@@ -715,42 +726,36 @@
     "MPO"
    ],
    "vinculo": "interessado",
-   "acordao": "2992/2026",
+   "acordao": "1216/2025",
    "movimentacoes": [
     {
      "data": "2026-11-05T00:00:00+00:00",
-     "descricao": "Apreciado na Sessão Ordinária do Plenário em 04/11/2026 por meio do Acórdão 2992/2026-PL",
+     "descricao": "Peça nº 59 do tipo Portaria de Fiscalização (doc 81.365.493-3) publicada no BTCU Controle Externo n° 193, de 05/11/2026.",
      "fase": null,
      "acordao": null
-    },
-    {
-     "data": "2026-11-05T00:00:00+00:00",
-     "descricao": "Acórdão 2992/2026 — Plenário",
-     "fase": "Julgado",
-     "acordao": "2992/2026"
     },
     {
      "data": "2026-11-04T00:00:00+00:00",
-     "descricao": "Documento Termo juntado ao processo via CONECTA TCU por MARIANA FELIX GONCALVES DE MATEUS",
+     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudBenefícios",
      "fase": null,
      "acordao": null
     },
     {
-     "data": "2026-10-28T00:00:00+00:00",
-     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 04/11/2026, às 14h30.",
-     "fase": null,
-     "acordao": null
+     "data": "2025-05-30T00:00:00+00:00",
+     "descricao": "Acórdão 1216/2025 — Plenário",
+     "fase": "Julgado",
+     "acordao": "1216/2025"
     }
    ],
    "ultima_movimentacao": {
     "data": "2026-11-05T00:00:00+00:00",
-    "descricao": "Apreciado na Sessão Ordinária do Plenário em 04/11/2026 por meio do Acórdão 2992/2026-PL",
+    "descricao": "Peça nº 59 do tipo Portaria de Fiscalização (doc 81.365.493-3) publicada no BTCU Controle Externo n° 193, de 05/11/2026.",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Apreciado na Sessão Ordinária do Plenário em 04/11/2026 por meio do Acórdão 2992",
+   "fase_atual": "Peça nº 59 do tipo Portaria de Fiscalização (doc 81.365.493-3) publicada no BTCU",
    "atualizado_em": "2026-11-05T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2066220238",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=348720253",
    "garantido": false
   },
   {
@@ -936,55 +941,6 @@
    "garantido": false
   },
   {
-   "numero": "003.487/2025-3",
-   "id": "00348720253",
-   "codigo": "77599020",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
-   "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "CNJ - Conselho Nacional de Justiça",
-    "INSS - Instituto Nacional do Seguro Social"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "interessado",
-   "acordao": "1216/2025",
-   "movimentacoes": [
-    {
-     "data": "2026-11-04T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudBenefícios",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2025-05-30T00:00:00+00:00",
-     "descricao": "Acórdão 1216/2025 — Plenário",
-     "fase": "Julgado",
-     "acordao": "1216/2025"
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-11-04T00:00:00+00:00",
-    "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudBenefícios",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudBenefíc",
-   "atualizado_em": "2026-11-04T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=348720253",
-   "garantido": false
-  },
-  {
    "numero": "003.030/2026-1",
    "id": "00303020261",
    "codigo": "79689969",
@@ -1119,6 +1075,7 @@
     "AECI",
     "MPO",
     "SE",
+    "SMA",
     "SOF"
    ],
    "orgaos_unidade": [],
@@ -1126,6 +1083,7 @@
     "AECI",
     "MPO",
     "SE",
+    "SMA",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -1788,15 +1746,13 @@
     "SE",
     "SMA"
    ],
-   "orgaos_unidade": [
-    "MPO",
-    "SMA"
-   ],
+   "orgaos_unidade": [],
    "orgaos_interessado": [
     "MPO",
-    "SE"
+    "SE",
+    "SMA"
    ],
-   "vinculo": "unidade",
+   "vinculo": "interessado",
    "acordao": null,
    "movimentacoes": [
     {
@@ -2296,6 +2252,7 @@
    "orgaos": [
     "MPO",
     "SEPLAN",
+    "SMA",
     "SOF"
    ],
    "orgaos_unidade": [
@@ -2303,7 +2260,8 @@
     "SOF"
    ],
    "orgaos_interessado": [
-    "SEPLAN"
+    "SEPLAN",
+    "SMA"
    ],
    "vinculo": "unidade",
    "acordao": "2616/2026",
@@ -4113,6 +4071,7 @@
     "MPO",
     "SE",
     "SEPLAN",
+    "SMA",
     "SOF"
    ],
    "orgaos_unidade": [],
@@ -4121,6 +4080,7 @@
     "MPO",
     "SE",
     "SEPLAN",
+    "SMA",
     "SOF"
    ],
    "vinculo": "interessado",
@@ -5155,20 +5115,6 @@
   },
   {
    "data": "2026-10-28T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 04/11/2026, às 14h30.",
-   "fase": null,
-   "acordao": null,
-   "processo": "020.662/2023-8",
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "natureza": "Solicitação de Solução Consensual",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto",
-   "evento": "pauta"
-  },
-  {
-   "data": "2026-10-28T00:00:00+00:00",
    "descricao": "Acórdão 2941/2026 — Plenário",
    "fase": "Julgado",
    "acordao": "2941/2026",
@@ -5231,36 +5177,7 @@
  ],
  "movimentacoes": [
   {
-   "data": "2026-11-05T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 42205/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.918/2026-3",
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-05T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 42086/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "009.482/2026-1",
-   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  1º Semestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-05T00:00:00+00:00",
+   "data": "2026-11-06T00:00:00+00:00",
    "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudSaúde",
    "fase": null,
    "acordao": null,
@@ -5274,13 +5191,26 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-11-05T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Aviso 1019/2026-TCU/Seproc via CONECTA TCU por LAIRTON PEDRO KLEINUBING em nome de Não identificado",
+   "data": "2026-11-06T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 44204/2026-TCU/Seproc via CONECTA TCU por VARLONE BATISTA SAMPAIO em nome de Não identificado",
    "fase": null,
    "acordao": null,
-   "processo": "023.368/2025-0",
-   "assunto": "Acompanhamento de Aspectos Macrofiscais, Orçamentários e de Gestão da ENBPar e da Eletronuclear",
-   "natureza": "Relatório de Acompanhamento",
+   "processo": "020.662/2023-8",
+   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
+   "natureza": "Solicitação de Solução Consensual",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-05T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 44204/2026 por unidade Seproc em virtude de expedição",
+   "fase": null,
+   "acordao": null,
+   "processo": "020.662/2023-8",
+   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
+   "natureza": "Solicitação de Solução Consensual",
    "orgaos": [
     "MPO"
    ],
@@ -5313,6 +5243,61 @@
    "estado": "Aberto"
   },
   {
+   "data": "2026-11-05T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 42205/2026-TCU/Seproc.",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.918/2026-3",
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-05T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 42086/2026-TCU/Seproc.",
+   "fase": null,
+   "acordao": null,
+   "processo": "009.482/2026-1",
+   "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  1º Semestre de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-05T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Aviso 1019/2026-TCU/Seproc via CONECTA TCU por LAIRTON PEDRO KLEINUBING em nome de Não identificado",
+   "fase": null,
+   "acordao": null,
+   "processo": "023.368/2025-0",
+   "assunto": "Acompanhamento de Aspectos Macrofiscais, Orçamentários e de Gestão da ENBPar e da Eletronuclear",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-05T00:00:00+00:00",
+   "descricao": "Peça nº 59 do tipo Portaria de Fiscalização (doc 81.365.493-3) publicada no BTCU Controle Externo n° 193, de 05/11/2026.",
+   "fase": null,
+   "acordao": null,
+   "processo": "003.487/2025-3",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
    "data": "2026-11-04T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 42791/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Não identificado",
    "fase": null,
@@ -5327,12 +5312,12 @@
   },
   {
    "data": "2026-11-04T00:00:00+00:00",
-   "descricao": "Documento Termo juntado ao processo via CONECTA TCU por MARIANA FELIX GONCALVES DE MATEUS",
+   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudBenefícios",
    "fase": null,
    "acordao": null,
-   "processo": "020.662/2023-8",
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "natureza": "Solicitação de Solução Consensual",
+   "processo": "003.487/2025-3",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
+   "natureza": "Representação",
    "orgaos": [
     "MPO"
    ],
@@ -5419,19 +5404,6 @@
    "processo": "004.306/2025-2",
    "assunto": "Monitoramento da recomendação feita ao Gabinete de Segurança Institucional da Presidência da República, por meio dos Acórdãos 2430/2024-P e  276/2025-P, no âmbito do processo 010.387/2024-2 (Avaliação PNCiber - LAR 2023-2024)",
    "natureza": "Monitoramento",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-04T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudBenefícios",
-   "fase": null,
-   "acordao": null,
-   "processo": "003.487/2025-3",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
-   "natureza": "Representação",
    "orgaos": [
     "MPO"
    ],
@@ -5561,6 +5533,7 @@
     "AECI",
     "MPO",
     "SE",
+    "SMA",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5577,6 +5550,7 @@
     "AECI",
     "MPO",
     "SE",
+    "SMA",
     "SOF"
    ],
    "estado": "Aberto"
@@ -5678,19 +5652,6 @@
    "orgaos": [
     "MPO",
     "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-10-28T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 04/11/2026, às 14h30.",
-   "fase": null,
-   "acordao": null,
-   "processo": "020.662/2023-8",
-   "assunto": "Solicitação de Solução Consensual da Anatel, para a resolução de contendas relacionada à concessionária do Serviço Telefônico Fixo Comutado (STFC) - Oi S.A - em Recuperação Judicial.",
-   "natureza": "Solicitação de Solução Consensual",
-   "orgaos": [
-    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -6051,6 +6012,7 @@
     "AECI",
     "MPO",
     "SE",
+    "SMA",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6136,6 +6098,7 @@
    "orgaos": [
     "MPO",
     "SEPLAN",
+    "SMA",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6178,6 +6141,7 @@
    "orgaos": [
     "MPO",
     "SEPLAN",
+    "SMA",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6193,6 +6157,7 @@
    "orgaos": [
     "MPO",
     "SEPLAN",
+    "SMA",
     "SOF"
    ],
    "estado": "Aberto"
@@ -6677,6 +6642,7 @@
    "orgaos": [
     "MPO",
     "SEPLAN",
+    "SMA",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7512,6 +7478,7 @@
     "MPO",
     "SE",
     "SEPLAN",
+    "SMA",
     "SOF"
    ],
    "estado": "Encerrado"
@@ -7983,19 +7950,6 @@
    "processo": "015.939/2025-1",
    "assunto": "Monitoramento das determinações feitas ao MT e à  ANTT por meio do Acórdão  522/2025-Plenário (006.626/2024-6) relacionadas com a RMS.\r\nContrato com prazo de vigência próximo ao fim.",
    "natureza": "Monitoramento",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-21T00:00:00+00:00",
-   "descricao": "Documento Extrato de publicação no Diário Eletrônico do TCU juntado ao processo por AudBancos",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.754/2024-2",
-   "assunto": "Acompanhamento da aplicação pelo BNDES  dos recursos decorrentes de operações de crédito externo com o New Development Bank e Banco Interamericano de Desenvolvimento-BID.",
-   "natureza": "Representação",
    "orgaos": [
     "MPO"
    ],
