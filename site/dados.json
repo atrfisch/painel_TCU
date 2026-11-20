@@ -1,18 +1,19 @@
 {
  "versao": 2,
- "gerado_em": "2026-11-19T18:12:55.085946+00:00",
- "gerado_em_br": "19/11/2026 às 18:12",
+ "gerado_em": "2026-11-20T17:50:51.653560+00:00",
+ "gerado_em_br": "20/11/2026 às 17:50",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
   "processos": 80,
-  "movimentacoes": 278,
+  "movimentacoes": 244,
   "abertos": 80,
   "encerrados_ocultos": 702,
-  "so_interesse": 37
+  "so_interesse": 38
  },
  "garantidos": [
+  "024.216/2025-9",
   "008.723/2023-0",
   "025.632/2024-8",
   "011.685/2026-3",
@@ -23,7 +24,6 @@
   "017.191/2026-2",
   "005.405/2026-2",
   "017.106/2025-7",
-  "024.216/2025-9",
   "005.104/2023-8",
   "011.358/2026-2",
   "022.756/2025-6",
@@ -33,49 +33,15 @@
  "novos_processos": [],
  "andamentos_novos": [
   {
-   "processo": "005.775/2026-4",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Auditoria Coordenada no Sistema Único de Assistência Social (SUAS)",
-   "data": "2026-11-19T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 45485/2026-TCU/Seproc via CONECTA TCU por EDMUNDO MONTE CAVALCANTE em nome de Tribunal de Contas do Estado do Ceará",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "005.775/2026-4",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Auditoria Coordenada no Sistema Único de Assistência Social (SUAS)",
-   "data": "2026-11-19T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 45499/2026-TCU/Seproc via CONECTA TCU por MARIO NEWTON PEPES HERMES em nome de Tribunal de Contas dos Municípios do Estado do Pará",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "005.775/2026-4",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Auditoria Coordenada no Sistema Único de Assistência Social (SUAS)",
-   "data": "2026-11-18T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 45481/2026-TCU/Seproc via CONECTA TCU por TARITA BITENCURT ALVES DA SILVA em nome de Tribunal de Contas do Estado de Tocantins",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "023.966/2026-2",
+   "processo": "018.918/2026-3",
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
    ],
-   "assunto": "Avaliação do Cumprimento das Regras Fiscais e da consistência das projeções de receitas e despesas primárias da União nos 5º e 6º bimestres de 2026",
-   "data": "2026-11-18T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Matriz de planejamento) juntado ao processo por AudFiscal",
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -88,20 +54,82 @@
     "SOF"
    ],
    "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
-   "data": "2026-11-18T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 46294/2026-TCU/Seproc via CONECTA TCU por MARCELE BOTELHO em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "016.950/2026-7",
+   "processo": "007.318/2026-0",
    "orgaos": [
+    "AECI",
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 46297/2026 por unidade Seproc em virtude de expedição",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "007.318/2026-0",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 46296/2026 por unidade Seproc em virtude de expedição",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "005.678/2025-0",
+   "orgaos": [
+    "AECI",
     "MPO",
     "SOF"
    ],
-   "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
-   "data": "2026-11-18T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudSaúde",
+   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "024.216/2025-9",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Processo enviado de MIN-RP para AudFiscal/AudFiscal-Seproc. (Caixa Processual da AudFiscal)",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "024.216/2025-9",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-RP",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "024.216/2025-9",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Despacho oficializado.",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -109,8 +137,8 @@
    "processo": "008.723/2023-0",
    "orgaos": [],
    "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "data": "2026-11-18T00:00:00+00:00",
-   "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -121,8 +149,8 @@
    "orgao": "MPO",
    "nome": "Ministério do Planejamento e Orçamento",
    "total": 71,
-   "como_unidade": 39,
-   "como_interessado": 32
+   "como_unidade": 38,
+   "como_interessado": 33
   },
   {
    "orgao": "AECI",
@@ -413,18 +441,6 @@
    "movimentacoes_mes": 4
   },
   {
-   "processo": "023.966/2026-2",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "Avaliação do Cumprimento das Regras Fiscais e da consistência das projeções de receitas e despesas primárias da União nos 5º e 6º bimestres de 2026",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  },
-  {
    "processo": "007.318/2026-0",
    "orgaos": [
     "AECI",
@@ -437,12 +453,23 @@
    "movimentacoes_mes": 3
   },
   {
-   "processo": "023.919/2026-4",
+   "processo": "005.678/2025-0",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
+   "relator": "Walton Alencar Rodrigues",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "024.216/2025-9",
    "orgaos": [
     "MPO"
    ],
-   "assunto": "Representação referente ao ato de gestão com Uasg 110772 (Objeto: Acompanhamento e avaliação da política fiscal brasileira, especialmente quanto ao equilíbrio fiscal, à transparência e ao planejamento previstos na Lei de Responsabilidade Fiscal.)",
-   "relator": "Antonio Anastasia",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
+   "relator": "Rodrigo Pacheco",
    "movimentacoes_mes": 3
   },
   {
@@ -453,17 +480,208 @@
    "movimentacoes_mes": 3
   },
   {
-   "processo": "021.575/2026-6",
+   "processo": "023.966/2026-2",
    "orgaos": [
+    "AECI",
     "MPO",
+    "SE",
     "SOF"
    ],
-   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
-   "relator": "Jorge Oliveira",
+   "assunto": "Avaliação do Cumprimento das Regras Fiscais e da consistência das projeções de receitas e despesas primárias da União nos 5º e 6º bimestres de 2026",
+   "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
   }
  ],
  "processos": [
+  {
+   "numero": "018.918/2026-3",
+   "id": "01891820263",
+   "codigo": "80979647",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "BCB - Banco Central do Brasil",
+    "PGFN - Procuradoria-Geral da Fazenda Nacional"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [
+    "AECI",
+    "MPO"
+   ],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-11-19T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-17T00:00:00+00:00",
+     "descricao": "Registrada resposta de comunicação do Ofício 44102/2026-TCU/Seproc.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-11-19T00:00:00+00:00",
+    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/",
+   "atualizado_em": "2026-11-19T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1891820263",
+   "garantido": false
+  },
+  {
+   "numero": "007.318/2026-0",
+   "id": "00731820260",
+   "codigo": "80119897",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Marinus Marsico",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "CC/PR - Casa Civil da Presidência da República",
+    "GM/MS - Gabinete do Ministro da Saúde"
+   ],
+   "interessados": [
+    "Secretaria-Executiva da Casa Civil da Presidência da República",
+    "Assessoria Especial de Controle Interno do Ministério da Fazenda",
+    "Secretaria-Executiva do Ministério da Fazenda",
+    "Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento",
+    "Secretaria-Executiva do Ministério do Planejamento e Orçamento"
+   ],
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [
+    "AECI",
+    "MPO",
+    "SE"
+   ],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-11-19T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 46294/2026-TCU/Seproc via CONECTA TCU por MARCELE BOTELHO em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-19T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 46297/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-19T00:00:00+00:00",
+     "descricao": "Juntada comunicação Ofício 46296/2026 por unidade Seproc em virtude de expedição",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-11-19T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 46294/2026-TCU/Seproc via CONECTA TCU por MARCELE BOTELHO em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 46294/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-11-19T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=731820260",
+   "garantido": false
+  },
+  {
+   "numero": "005.678/2025-0",
+   "id": "00567820250",
+   "codigo": "77840306",
+   "estado": "Aberto",
+   "relator": "Walton Alencar Rodrigues",
+   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
+   "natureza": "Relatório de Auditoria",
+   "unidade_tecnica": "AudSaúde",
+   "representante_mp": "Sergio Caribé, Lucas Furtado",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "ANS - Agência Nacional de Saúde Suplementar",
+    "SE/MS - Secretaria-Executiva do Ministério da Saúde"
+   ],
+   "interessados": [
+    "Conselho Nacional de Justiça"
+   ],
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [
+    "AECI"
+   ],
+   "vinculo": "unidade",
+   "acordao": "1120/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-11-19T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-13T00:00:00+00:00",
+     "descricao": "Processo enviado de MIN-RP para MIN-WAR/não definida.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-13T00:00:00+00:00",
+     "descricao": "Pronunciamento da AudSaúde concluído",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-11-19T00:00:00+00:00",
+    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/",
+   "atualizado_em": "2026-11-19T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=567820250",
+   "garantido": false
+  },
   {
    "numero": "005.775/2026-4",
    "id": "00577520264",
@@ -524,6 +742,114 @@
    "atualizado_em": "2026-11-19T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=577520264",
    "garantido": false
+  },
+  {
+   "numero": "024.216/2025-9",
+   "id": "02421620259",
+   "codigo": "79419863",
+   "estado": "Aberto",
+   "relator": "Rodrigo Pacheco",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
+   "natureza": "Representação",
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Marinus Marsico",
+   "unidades": [
+    "AGU - Advocacia-Geral da União",
+    "BNDES - Banco Nacional de Desenvolvimento Econômico e Social",
+    "CC/PR - Casa Civil da Presidência da República"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-11-19T00:00:00+00:00",
+     "descricao": "Processo enviado de MIN-RP para AudFiscal/AudFiscal-Seproc. (Caixa Processual da AudFiscal)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-19T00:00:00+00:00",
+     "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-RP",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-19T00:00:00+00:00",
+     "descricao": "Despacho oficializado.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-11-19T00:00:00+00:00",
+    "descricao": "Processo enviado de MIN-RP para AudFiscal/AudFiscal-Seproc. (Caixa Processual da AudFiscal)",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo enviado de MIN-RP para AudFiscal/AudFiscal-Seproc. (Caixa Processual da",
+   "atualizado_em": "2026-11-19T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2421620259",
+   "garantido": true
+  },
+  {
+   "numero": "008.723/2023-0",
+   "id": "00872320230",
+   "codigo": "73545490",
+   "estado": "Aberto",
+   "relator": "Benjamin Zymler",
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
+   "natureza": "Representação",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "AGU - Advocacia-Geral da União",
+    "Antaq - Agência Nacional de Transportes Aquaviários",
+    "ANTT - Agência Nacional de Transportes Terrestres"
+   ],
+   "interessados": [],
+   "orgaos": [],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [],
+   "vinculo": null,
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-11-19T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-18T00:00:00+00:00",
+     "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-13T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-11-19T00:00:00+00:00",
+    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/",
+   "atualizado_em": "2026-11-19T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=872320230",
+   "garantido": true
   },
   {
    "numero": "023.966/2026-2",
@@ -592,76 +918,6 @@
    "fase_atual": "Documento Elementos comprobatórios/Evidências (Matriz de planejamento) juntado a",
    "atualizado_em": "2026-11-18T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2396620262",
-   "garantido": false
-  },
-  {
-   "numero": "007.318/2026-0",
-   "id": "00731820260",
-   "codigo": "80119897",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": "AudFiscal",
-   "representante_mp": "Marinus Marsico",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "CC/PR - Casa Civil da Presidência da República",
-    "GM/MS - Gabinete do Ministro da Saúde"
-   ],
-   "interessados": [
-    "Secretaria-Executiva da Casa Civil da Presidência da República",
-    "Assessoria Especial de Controle Interno do Ministério da Fazenda",
-    "Secretaria-Executiva do Ministério da Fazenda",
-    "Assessoria Especial de Controle Interno do Ministério do Planejamento e Orçamento",
-    "Secretaria-Executiva do Ministério do Planejamento e Orçamento"
-   ],
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [
-    "AECI",
-    "MPO",
-    "SE"
-   ],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-11-18T00:00:00+00:00",
-     "descricao": "Pronunciamento da AudFiscal concluído",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-11-12T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Levantamento do NDContas) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-11-12T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (DGT anexo ao PLOA 2027) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-11-18T00:00:00+00:00",
-    "descricao": "Pronunciamento da AudFiscal concluído",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Pronunciamento da AudFiscal concluído",
-   "atualizado_em": "2026-11-18T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=731820260",
    "garantido": false
   },
   {
@@ -780,108 +1036,6 @@
    "fase_atual": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudSaúde",
    "atualizado_em": "2026-11-18T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1695020267",
-   "garantido": false
-  },
-  {
-   "numero": "008.723/2023-0",
-   "id": "00872320230",
-   "codigo": "73545490",
-   "estado": "Aberto",
-   "relator": "Benjamin Zymler",
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "natureza": "Representação",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "AGU - Advocacia-Geral da União",
-    "Antaq - Agência Nacional de Transportes Aquaviários",
-    "ANTT - Agência Nacional de Transportes Terrestres"
-   ],
-   "interessados": [],
-   "orgaos": [],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [],
-   "vinculo": null,
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-11-18T00:00:00+00:00",
-     "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-11-13T00:00:00+00:00",
-     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-11-12T00:00:00+00:00",
-     "descricao": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-11-18T00:00:00+00:00",
-    "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 18/11/",
-   "atualizado_em": "2026-11-18T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=872320230",
-   "garantido": true
-  },
-  {
-   "numero": "018.918/2026-3",
-   "id": "01891820263",
-   "codigo": "80979647",
-   "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "BCB - Banco Central do Brasil",
-    "PGFN - Procuradoria-Geral da Fazenda Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [
-    "AECI",
-    "MPO"
-   ],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-11-17T00:00:00+00:00",
-     "descricao": "Registrada resposta de comunicação do Ofício 44102/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-11-17T00:00:00+00:00",
-    "descricao": "Registrada resposta de comunicação do Ofício 44102/2026-TCU/Seproc.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada resposta de comunicação do Ofício 44102/2026-TCU/Seproc.",
-   "atualizado_em": "2026-11-17T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1891820263",
    "garantido": false
   },
   {
@@ -1272,69 +1426,6 @@
    "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 18/11/",
    "atualizado_em": "2026-11-13T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1532120258",
-   "garantido": false
-  },
-  {
-   "numero": "005.678/2025-0",
-   "id": "00567820250",
-   "codigo": "77840306",
-   "estado": "Aberto",
-   "relator": "Walton Alencar Rodrigues",
-   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
-   "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": "AudSaúde",
-   "representante_mp": "Sergio Caribé, Lucas Furtado",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "ANS - Agência Nacional de Saúde Suplementar",
-    "SE/MS - Secretaria-Executiva do Ministério da Saúde"
-   ],
-   "interessados": [
-    "Conselho Nacional de Justiça"
-   ],
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [
-    "AECI"
-   ],
-   "vinculo": "unidade",
-   "acordao": "1120/2026",
-   "movimentacoes": [
-    {
-     "data": "2026-11-13T00:00:00+00:00",
-     "descricao": "Processo enviado de MIN-RP para MIN-WAR/não definida.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-11-13T00:00:00+00:00",
-     "descricao": "Pronunciamento da AudSaúde concluído",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-11-13T00:00:00+00:00",
-     "descricao": "Documento Termo (Análise de Pedido de Prorrogação de Prazo) juntado ao processo por Seproc",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-11-13T00:00:00+00:00",
-    "descricao": "Processo enviado de MIN-RP para MIN-WAR/não definida.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo enviado de MIN-RP para MIN-WAR/não definida.",
-   "atualizado_em": "2026-11-13T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=567820250",
    "garantido": false
   },
   {
@@ -3357,272 +3448,6 @@
    "garantido": false
   },
   {
-   "numero": "024.216/2025-9",
-   "id": "02421620259",
-   "codigo": "79419863",
-   "estado": "Aberto",
-   "relator": "Rodrigo Pacheco",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "unidade_tecnica": "AudFiscal",
-   "representante_mp": "Marinus Marsico",
-   "unidades": [
-    "AGU - Advocacia-Geral da União",
-    "BNDES - Banco Nacional de Desenvolvimento Econômico e Social",
-    "CC/PR - Casa Civil da Presidência da República"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [
-    "MPO"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-30T00:00:00+00:00",
-     "descricao": "Processo enviado de MIN-BD para MIN-RP/não definida.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-30T00:00:00+00:00",
-     "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-30T00:00:00+00:00",
-     "descricao": "Relatoria alterada de MIN-BD para MIN-RP por AudFiscal (por Atribuição)",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-21T00:00:00+00:00",
-     "descricao": "Documento Petição juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-10T00:00:00+00:00",
-     "descricao": "Enviado para pronunciamento do Ministro Bruno Dantas por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-08-10T00:00:00+00:00",
-     "descricao": "Pronunciamento da AudFiscal concluído",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Notícia Secretaria do Espírito Santo) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (PARECER N 16_ 2025_SAECO_SAJ_CC_PR Parte 2) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Nota Informativa n 2_2025_SAORC_SAG_CC_PR ) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Nota Técnica SEI 1015/2025/MPO ) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Manifestação da Advocacia-Geral da União) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Nota BNDES AJI_JUCAD n.13/2025 ) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Ofício BNDES) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (ADPF 568) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Manual de Estatísticas Fiscais) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Estatísticas Fiscais de Setembro de 2023 ) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Mandaddo de Segurança 39.413 DF) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Resolução CRD n. 3 de 9/6/2025 ) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (NOTA BNDES -  AJI_JUCAD N.08_2025 ) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Ofício de Requisição 012/2025 ) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Balancetes Fundo Rio Doce 2025_06 s 2026_05) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Resoluções do Comitê do Rio Doce) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Peça 15 - Atas das Reuniões do Comitê do Rio Doce) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Estatuto do Fundo Rio Doce) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Acórdão 1372/2026 -Manif. Min. Jorge Oliveira) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Relatório Final Fiscalização 215/2024) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Relatório Preliminar de Auditoria - Fisc 215/2024) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Pet-13.157 - Decisão Monocrática de 29/8/2025) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (PET-13157-Referendo  pelo Plenário do STF) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Acordo Judicial ) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Despacho de Concessão de Medida Cautelar) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-24T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências (Petição BNDES ) juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2025-12-09T00:00:00+00:00",
-     "descricao": "Unidade responsável técnica alterada de AudFiscal-ASS para Dipog por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2025-12-09T00:00:00+00:00",
-     "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2025-12-09T00:00:00+00:00",
-     "descricao": "Unidade responsável técnica alterada de Seproc para AudFiscal-ASS por Seproc",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2025-12-09T00:00:00+00:00",
-     "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2025-12-09T00:00:00+00:00",
-     "descricao": "Membro do MPTCU designado alterado de a definir para MARINUS MARSICO automaticamente pelo sistema",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2025-12-09T00:00:00+00:00",
-     "descricao": "Relatoria alterada de relatoria a definir para MIN-BD por Seproc (por Atribuição)",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-30T00:00:00+00:00",
-    "descricao": "Processo enviado de MIN-BD para MIN-RP/não definida.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo enviado de MIN-BD para MIN-RP/não definida.",
-   "atualizado_em": "2026-09-30T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2421620259",
-   "garantido": true
-  },
-  {
    "numero": "007.442/2025-4",
    "id": "00744220254",
    "codigo": "77973187",
@@ -5326,6 +5151,50 @@
  ],
  "movimentacoes_recentes": [
   {
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.918/2026-3",
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto",
+   "evento": "pauta"
+  },
+  {
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "005.678/2025-0",
+   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto",
+   "evento": "pauta"
+  },
+  {
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.723/2023-0",
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto",
+   "evento": "pauta"
+  },
+  {
    "data": "2026-11-13T00:00:00+00:00",
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
    "fase": null,
@@ -5414,6 +5283,84 @@
  "movimentacoes": [
   {
    "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "018.918/2026-3",
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 46294/2026-TCU/Seproc via CONECTA TCU por MARCELE BOTELHO em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.318/2026-0",
+   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 46297/2026 por unidade Seproc em virtude de expedição",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.318/2026-0",
+   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Juntada comunicação Ofício 46296/2026 por unidade Seproc em virtude de expedição",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.318/2026-0",
+   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "005.678/2025-0",
+   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-19T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 45485/2026-TCU/Seproc via CONECTA TCU por EDMUNDO MONTE CAVALCANTE em nome de Tribunal de Contas do Estado do Ceará",
    "fase": null,
    "acordao": null,
@@ -5439,6 +5386,56 @@
    "estado": "Aberto"
   },
   {
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Processo enviado de MIN-RP para AudFiscal/AudFiscal-Seproc. (Caixa Processual da AudFiscal)",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.216/2025-9",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Documento Despacho de autoridade juntado ao processo por MIN-RP",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.216/2025-9",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Despacho oficializado.",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.216/2025-9",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.723/2023-0",
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
    "data": "2026-11-18T00:00:00+00:00",
    "descricao": "Registrada ciência de comunicação do Ofício 45481/2026-TCU/Seproc via CONECTA TCU por TARITA BITENCURT ALVES DA SILVA em nome de Tribunal de Contas do Estado de Tocantins",
    "fase": null,
@@ -5453,27 +5450,22 @@
   },
   {
    "data": "2026-11-18T00:00:00+00:00",
+   "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
+   "fase": null,
+   "acordao": null,
+   "processo": "008.723/2023-0",
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
+   "natureza": "Representação",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-18T00:00:00+00:00",
    "descricao": "Documento Elementos comprobatórios/Evidências (Matriz de planejamento) juntado ao processo por AudFiscal",
    "fase": null,
    "acordao": null,
    "processo": "023.966/2026-2",
    "assunto": "Avaliação do Cumprimento das Regras Fiscais e da consistência das projeções de receitas e despesas primárias da União nos 5º e 6º bimestres de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-18T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "fase": null,
-   "acordao": null,
-   "processo": "007.318/2026-0",
-   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "AECI",
@@ -5524,14 +5516,18 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-11-18T00:00:00+00:00",
-   "descricao": "Processo excluído da pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
+   "data": "2026-11-17T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 44102/2026-TCU/Seproc.",
    "fase": null,
    "acordao": null,
-   "processo": "008.723/2023-0",
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "natureza": "Representação",
-   "orgaos": [],
+   "processo": "018.918/2026-3",
+   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
    "estado": "Aberto"
   },
   {
@@ -5575,21 +5571,6 @@
    "assunto": "Auditoria Operacional sobre Emendas Parlamentares na Saúde",
    "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-17T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 44102/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.918/2026-3",
-   "assunto": "4ª avaliação do cumprimento das regras fiscais e da consistência das projeções atualizadas de receitas e despesas primárias da União do exercício de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "AECI",
     "MPO",
     "SOF"
    ],
@@ -5747,6 +5728,36 @@
   },
   {
    "data": "2026-11-13T00:00:00+00:00",
+   "descricao": "Processo enviado de MIN-RP para MIN-WAR/não definida.",
+   "fase": null,
+   "acordao": null,
+   "processo": "005.678/2025-0",
+   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-13T00:00:00+00:00",
+   "descricao": "Pronunciamento da AudSaúde concluído",
+   "fase": null,
+   "acordao": null,
+   "processo": "005.678/2025-0",
+   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-13T00:00:00+00:00",
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
    "fase": null,
    "acordao": null,
@@ -5779,51 +5790,6 @@
    "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
    "natureza": "Solicitação do Congresso Nacional",
    "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-13T00:00:00+00:00",
-   "descricao": "Processo enviado de MIN-RP para MIN-WAR/não definida.",
-   "fase": null,
-   "acordao": null,
-   "processo": "005.678/2025-0",
-   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-13T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudSaúde concluído",
-   "fase": null,
-   "acordao": null,
-   "processo": "005.678/2025-0",
-   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-13T00:00:00+00:00",
-   "descricao": "Documento Termo (Análise de Pedido de Prorrogação de Prazo) juntado ao processo por Seproc",
-   "fase": null,
-   "acordao": null,
-   "processo": "005.678/2025-0",
-   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "AECI",
     "MPO",
     "SOF"
    ],
@@ -5908,49 +5874,6 @@
    "orgaos": [
     "MPO"
    ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-12T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Levantamento do NDContas) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "007.318/2026-0",
-   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-12T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (DGT anexo ao PLOA 2027) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "007.318/2026-0",
-   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-12T00:00:00+00:00",
-   "descricao": "Documento Termo Pedidos de Vista Transferidos juntado ao processo por Seses",
-   "fase": null,
-   "acordao": null,
-   "processo": "008.723/2023-0",
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "natureza": "Representação",
-   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -7039,45 +6962,6 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-09-30T00:00:00+00:00",
-   "descricao": "Processo enviado de MIN-BD para MIN-RP/não definida.",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-30T00:00:00+00:00",
-   "descricao": "Documento Termo de distribuição juntado ao processo automaticamente pelo sistema",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-30T00:00:00+00:00",
-   "descricao": "Relatoria alterada de MIN-BD para MIN-RP por AudFiscal (por Atribuição)",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-09-28T00:00:00+00:00",
    "descricao": "Processo 021.341/2025-7 foi apensado a este processo por AudFiscal.",
    "fase": null,
@@ -7287,19 +7171,6 @@
    "orgaos": [
     "MPO",
     "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Documento Petição juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -7799,32 +7670,6 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Bruno Dantas por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-08-10T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-08-06T00:00:00+00:00",
    "descricao": "Processo enviado de Seproc para AudBancos/AudBancos-ASS. (Assessoria da AudBancos)",
    "fase": null,
@@ -7977,12 +7822,12 @@
   },
   {
    "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Notícia Secretaria do Espírito Santo) juntado ao processo por AudFiscal",
+   "descricao": "Processo enviado de Seproc para AudUrbana/AudUrbana-ASS. (Assessoria da AudUrbana)",
    "fase": null,
    "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
+   "processo": "014.062/2025-9",
+   "assunto": "Concessão administrativa para apoio à prestação dos serviços públicos de adução de água bruta do Projeto de Integração do Rio São Francisco com Bacias Hidrográficas do Nordeste Setentrional (PISF)",
+   "natureza": "Desestatização",
    "orgaos": [
     "MPO"
    ],
@@ -7990,12 +7835,12 @@
   },
   {
    "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (PARECER N 16_ 2025_SAECO_SAJ_CC_PR Parte 2) juntado ao processo por AudFiscal",
+   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
    "fase": null,
    "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
+   "processo": "014.062/2025-9",
+   "assunto": "Concessão administrativa para apoio à prestação dos serviços públicos de adução de água bruta do Projeto de Integração do Rio São Francisco com Bacias Hidrográficas do Nordeste Setentrional (PISF)",
+   "natureza": "Desestatização",
    "orgaos": [
     "MPO"
    ],
@@ -8003,11 +7848,24 @@
   },
   {
    "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Nota Informativa n 2_2025_SAORC_SAG_CC_PR ) juntado ao processo por AudFiscal",
+   "descricao": "Registrada ciência de comunicação do Ofício 27753/2026-TCU/Seproc via CONECTA TCU por MICHELLE FERNANDES DE QUEIROZ em nome de Secretaria Especial do Programa de Parcerias de Investimento",
    "fase": null,
    "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
+   "processo": "014.062/2025-9",
+   "assunto": "Concessão administrativa para apoio à prestação dos serviços públicos de adução de água bruta do Projeto de Integração do Rio São Francisco com Bacias Hidrográficas do Nordeste Setentrional (PISF)",
+   "natureza": "Desestatização",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-21T00:00:00+00:00",
+   "descricao": "Documento Extrato de publicação no Diário Eletrônico do TCU juntado ao processo por AudBancos",
+   "fase": null,
+   "acordao": null,
+   "processo": "024.754/2024-2",
+   "assunto": "Acompanhamento da aplicação pelo BNDES  dos recursos decorrentes de operações de crédito externo com o New Development Bank e Banco Interamericano de Desenvolvimento-BID.",
    "natureza": "Representação",
    "orgaos": [
     "MPO"
@@ -8015,12 +7873,36 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Nota Técnica SEI 1015/2025/MPO ) juntado ao processo por AudFiscal",
+   "data": "2026-07-18T00:00:00+00:00",
+   "descricao": "Confidencialidade do processo alterada de Restrito para Público  por AudEducação",
    "fase": null,
    "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
+   "processo": "041.252/2021-7",
+   "assunto": "Monitoramento de determinações/recomendações constantes nos subitens 9.2 a 9.6 do Acórdão 1896/2021-TCU-Plenário, proferido no TC 031.532/2020-9, que cuidou de Auditoria de Natureza Operacional, tendo por objeto averiguar a adequabilidade dos componentes de governança do Fundo Setorial do Audiovisual (FSA), o qual constitui a principal política pública de fomento ao setor audiovisual brasileiro",
+   "natureza": "Monitoramento",
+   "orgaos": [
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-13T00:00:00+00:00",
+   "descricao": "Peça nº 8 do tipo Portaria de Fiscalização (doc 80.674.511-2) publicada no BTCU Controle Externo n° 116, de 13/07/2026.",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-07-09T00:00:00+00:00",
+   "descricao": "Acórdão 1803/2026 — Plenário",
+   "fase": "Julgado",
+   "acordao": "1803/2026",
+   "processo": "024.754/2024-2",
+   "assunto": "Acompanhamento da aplicação pelo BNDES  dos recursos decorrentes de operações de crédito externo com o New Development Bank e Banco Interamericano de Desenvolvimento-BID.",
    "natureza": "Representação",
    "orgaos": [
     "MPO"
@@ -8028,158 +7910,158 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Manifestação da Advocacia-Geral da União) juntado ao processo por AudFiscal",
+   "data": "2026-07-08T00:00:00+00:00",
+   "descricao": "Unidade responsável técnica alterada de AudFiscal-ASS para Dipog por AudFiscal",
    "fase": null,
    "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
+   "processo": "031.460/2022-4",
+   "assunto": "Of.P.250/22-CTASP/DECOM/CD, de 16/12/2022, encaminha o Requerimento 130/2022, por meio do qual é solicitado ao TCU cópia dos \"relatórios técnicos que compõem a instrução dos processos TC 044.337/2021-3, TC 012.649/2021-0, TC 014.379/2021-0 e TC 027.688/2022-4\".",
+   "natureza": "Solicitação do Congresso Nacional",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Nota BNDES AJI_JUCAD n.13/2025 ) juntado ao processo por AudFiscal",
+   "data": "2026-07-01T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 3850/2026-TCU/Seproc.",
    "fase": null,
    "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
+   "processo": "015.683/2019-2",
+   "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
    "natureza": "Representação",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SE",
+    "SOF"
    ],
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Ofício BNDES) juntado ao processo por AudFiscal",
+   "data": "2026-06-26T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 18393/2026-TCU/Seproc.",
    "fase": null,
    "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
+   "processo": "014.984/2025-3",
+   "assunto": "Acompanhamento da Execução do Orçamento de Investimentos das Estatais e do Programa de Dispêndios Globais -  1º a 3º trimestre de 2025",
+   "natureza": "Relatório de Acompanhamento",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (ADPF 568) juntado ao processo por AudFiscal",
+   "data": "2026-06-22T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 22079/2026-TCU/Seproc via CONECTA TCU por ANDRESA COSTA BIASON em nome de Secretaria do Tesouro Nacional",
    "fase": null,
    "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
+   "processo": "014.984/2025-3",
+   "assunto": "Acompanhamento da Execução do Orçamento de Investimentos das Estatais e do Programa de Dispêndios Globais -  1º a 3º trimestre de 2025",
+   "natureza": "Relatório de Acompanhamento",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Manual de Estatísticas Fiscais) juntado ao processo por AudFiscal",
+   "data": "2026-06-18T00:00:00+00:00",
+   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
    "fase": null,
    "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
+   "processo": "022.756/2025-6",
+   "assunto": "Consolidação das análises setorias para subsídio ao parecer prévio das contas do Presidente da República",
+   "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO"
+    "AECI",
+    "MPO",
+    "SE",
+    "SEPLAN",
+    "SOF"
+   ],
+   "estado": "Encerrado"
+  },
+  {
+   "data": "2026-06-18T00:00:00+00:00",
+   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
+   "fase": null,
+   "acordao": null,
+   "processo": "022.756/2025-6",
+   "assunto": "Consolidação das análises setorias para subsídio ao parecer prévio das contas do Presidente da República",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SE",
+    "SEPLAN",
+    "SOF"
+   ],
+   "estado": "Encerrado"
+  },
+  {
+   "data": "2026-06-18T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 22077/2026-TCU/Seproc.",
+   "fase": null,
+   "acordao": null,
+   "processo": "014.984/2025-3",
+   "assunto": "Acompanhamento da Execução do Orçamento de Investimentos das Estatais e do Programa de Dispêndios Globais -  1º a 3º trimestre de 2025",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Estatísticas Fiscais de Setembro de 2023 ) juntado ao processo por AudFiscal",
+   "data": "2026-06-15T00:00:00+00:00",
+   "descricao": "Documento Resposta de determinação juntado ao processo por AudElétrica",
    "fase": null,
    "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
+   "processo": "011.228/2026-1",
+   "assunto": "Monitoramento de determinações e recomendações feitas à Aneel, ANM, Anatel, ANP, Casa Civil da Presidência da República, Ministério da Fazenda e Secretaria de Orçamento Federal por meio do Acórdão 280/2026-Plenário (TC 022.280/2024-3 - Avaliação da estrutura e funcionamento da Aneel, ANP, Anatel e ANM)",
+   "natureza": "Monitoramento",
    "orgaos": [
-    "MPO"
+    "MPO",
+    "SOF"
    ],
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Mandaddo de Segurança 39.413 DF) juntado ao processo por AudFiscal",
+   "data": "2026-06-12T00:00:00+00:00",
+   "descricao": "Peça nº 5 do tipo Portaria de Fiscalização (doc 80.496.541-3) publicada no BTCU Controle Externo n° 96, de 12/06/2026.",
    "fase": null,
    "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Resolução CRD n. 3 de 9/6/2025 ) juntado ao processo por AudFiscal",
+   "data": "2026-06-12T00:00:00+00:00",
+   "descricao": "Peça nº 4 do tipo Portaria de Fiscalização (doc 80.489.924-4) publicada no BTCU Controle Externo n° 96, de 12/06/2026.",
    "fase": null,
    "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (NOTA BNDES -  AJI_JUCAD N.08_2025 ) juntado ao processo por AudFiscal",
+   "data": "2026-05-27T00:00:00+00:00",
+   "descricao": "Processo enviado de AudUrbana para MIN-BZ/não definida.",
    "fase": null,
    "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
+   "processo": "022.852/2025-5",
+   "assunto": "Fiscalização para elaboração do Capítulo 3 que compõe o Relatório e Parecer prévio sobre as contas do presidente de 2025",
+   "natureza": "Relatório de Auditoria",
    "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Ofício de Requisição 012/2025 ) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Balancetes Fundo Rio Doce 2025_06 s 2026_05) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-24T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências (Resoluções do Comitê do Rio Doce) juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "024.216/2025-9",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO"
+    "MPO",
+    "SE",
+    "SOF"
    ],
    "estado": "Aberto"
   }
