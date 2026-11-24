@@ -1,16 +1,16 @@
 {
  "versao": 2,
- "gerado_em": "2026-11-23T21:06:51.292835+00:00",
- "gerado_em_br": "23/11/2026 às 21:06",
+ "gerado_em": "2026-11-24T20:11:33.833351+00:00",
+ "gerado_em_br": "24/11/2026 às 20:11",
  "ancora_btcu": 23240,
  "tem_estado": true,
  "avisos": [],
  "totais": {
-  "processos": 79,
-  "movimentacoes": 245,
-  "abertos": 79,
-  "encerrados_ocultos": 703,
-  "so_interesse": 37
+  "processos": 78,
+  "movimentacoes": 252,
+  "abertos": 78,
+  "encerrados_ocultos": 704,
+  "so_interesse": 36
  },
  "garantidos": [
   "007.158/2026-2",
@@ -33,42 +33,26 @@
  "novos_processos": [],
  "andamentos_novos": [
   {
-   "processo": "016.141/2026-1",
+   "processo": "019.622/2026-0",
    "orgaos": [
-    "AECI",
     "MPO",
     "SOF"
    ],
-   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
-   "data": "2026-11-23T00:00:00+00:00",
-   "descricao": "Documento Despacho de expediente (Negativa de prorrogação de prazo) juntado ao processo por AudFiscal",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
+   "data": "2026-11-24T00:00:00+00:00",
+   "descricao": "Enviado para pronunciamento do Ministro Odair Cunha por AudFiscal",
    "acordao": null,
    "novo_no_radar": false
   },
   {
-   "processo": "016.141/2026-1",
+   "processo": "019.622/2026-0",
    "orgaos": [
-    "AECI",
     "MPO",
     "SOF"
    ],
-   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
-   "data": "2026-11-23T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
-   "acordao": null,
-   "novo_no_radar": false
-  },
-  {
-   "processo": "007.318/2026-0",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
-   "data": "2026-11-23T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 46297/2026-TCU/Seproc via CONECTA TCU por ISABELA BRAGA DE LIMA em nome de Secretaria Especial da Receita Federal do Brasil",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
+   "data": "2026-11-24T00:00:00+00:00",
+   "descricao": "Pronunciamento da AudFiscal concluído",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -81,8 +65,31 @@
     "SOF"
    ],
    "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
-   "data": "2026-11-23T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 46295/2026-TCU/Seproc via CONECTA TCU por JULIANA DANTAS BORGES em nome de Secretaria-Executiva do Ministério da Fazenda",
+   "data": "2026-11-24T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 46296/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "016.997/2022-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "data": "2026-11-24T00:00:00+00:00",
+   "descricao": "Documento Novos elementos/informações adicionais (OFÍCIO Nº 090/2026/PRES/COREM ) juntado ao processo por AudEducação",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "005.775/2026-4",
+   "orgaos": [
+    "MPO"
+   ],
+   "assunto": "Auditoria Coordenada no Sistema Único de Assistência Social (SUAS)",
+   "data": "2026-11-24T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Aviso 1055/2026-TCU/Seproc via CONECTA TCU por ARIADNA EDENICE DE MENDONCA VASCONCELOS em nome de Comissão de Previdência, Assistência Social, Infância, Adolescência e Família - CD",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -92,7 +99,7 @@
     "MPO"
    ],
    "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
-   "data": "2026-11-23T00:00:00+00:00",
+   "data": "2026-11-24T00:00:00+00:00",
    "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudBenefícios",
    "acordao": null,
    "novo_no_radar": false
@@ -101,8 +108,8 @@
    "processo": "007.158/2026-2",
    "orgaos": [],
    "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
-   "data": "2026-11-23T00:00:00+00:00",
-   "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por AudFiscal",
+   "data": "2026-11-24T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Roteiro de Análise e sua aplicação aos arranjos) juntado ao processo por AudFiscal",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -111,7 +118,7 @@
    "orgaos": [],
    "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
    "data": "2026-11-23T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 0155/2026-TCU/AudFiscal.",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Estatuto Fundo Rio Doce) juntado ao processo por AudFiscal",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -120,7 +127,7 @@
    "orgaos": [],
    "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
    "data": "2026-11-23T00:00:00+00:00",
-   "descricao": "Peça No. 91 do tipo Resposta de comunicação (doc 81.152.299-9) desentranhada do processo por Dipog - Motivo: Erro na juntada",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Consultoria Senado - DOS FUNDOS ESPECIAIS AOS PRIV) juntado ao processo por AudFiscal",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -129,7 +136,7 @@
    "orgaos": [],
    "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
    "data": "2026-11-23T00:00:00+00:00",
-   "descricao": "Peça No. 92 do tipo Resposta de comunicação (doc 81.152.300-2) desentranhada do processo por Dipog - Motivo: Erro na juntada",
+   "descricao": "Documento Elementos comprobatórios/Evidências (IFI - Relatório de Acompanhamento Fiscal - 117) juntado ao processo por AudFiscal",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -138,7 +145,7 @@
    "orgaos": [],
    "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
    "data": "2026-11-23T00:00:00+00:00",
-   "descricao": "Peça No. 93 do tipo Resposta de comunicação (doc 81.152.301-9) desentranhada do processo por Dipog - Motivo: Erro na juntada",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Consultoria da Câmada - mecanismos extraorçamentár) juntado ao processo por AudFiscal",
    "acordao": null,
    "novo_no_radar": false
   },
@@ -147,7 +154,137 @@
    "orgaos": [],
    "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
    "data": "2026-11-23T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Recommendation of the Council on Budgetary Governa) juntado ao processo por AudFiscal",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "007.158/2026-2",
+   "orgaos": [],
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Framework for Assessing Public Financial Managemen) juntado ao processo por AudFiscal",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "007.158/2026-2",
+   "orgaos": [],
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Extrabudgetary Funds. FMI, 2010 ) juntado ao processo por AudFiscal",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "007.158/2026-2",
+   "orgaos": [],
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Manual de Estatísticas de Finanças Públicas (G) juntado ao processo por AudFiscal",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "007.158/2026-2",
+   "orgaos": [],
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Manual de Transparência fiscal do FMI) juntado ao processo por AudFiscal",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "007.158/2026-2",
+   "orgaos": [],
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Avaliação da Transparência Fiscal 2017 - FMI) juntado ao processo por AudFiscal",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "021.575/2026-6",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 0016/2026-TCU/AudDigital.",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "016.141/2026-1",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "016.141/2026-1",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Pronunciamento da AudFiscal concluído",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "015.321/2025-8",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Processo enviado de MIN-AN para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "015.321/2025-8",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Apreciado na Sessão Ordinária do Plenário em 18/11/2026 por meio do Acórdão 3144/2026-PL",
+   "acordao": null,
+   "novo_no_radar": false
+  },
+  {
+   "processo": "015.321/2025-8",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Acórdão 3144/2026 — Plenário",
+   "acordao": "3144/2026",
+   "novo_no_radar": false
+  },
+  {
+   "processo": "021.317/2026-7",
+   "orgaos": [
+    "SOF"
+   ],
+   "assunto": "Auditoria de Conformidade (com aspectos operacionais) na CVM para avaliar a destinação dos recursos da Taxa de Fiscalização, considerando a recente decisão do STF na ADI 7791.",
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 0093/2026-TCU/AudBancos.",
    "acordao": null,
    "novo_no_radar": false
   }
@@ -157,9 +294,9 @@
   {
    "orgao": "MPO",
    "nome": "Ministério do Planejamento e Orçamento",
-   "total": 70,
+   "total": 69,
    "como_unidade": 38,
-   "como_interessado": 32
+   "como_interessado": 31
   },
   {
    "orgao": "AECI",
@@ -229,12 +366,12 @@
    "abertos": 3
   },
   {
-   "tipo": "Relatório de Levantamento",
-   "total": 3,
-   "abertos": 3
+   "tipo": "Consulta",
+   "total": 2,
+   "abertos": 2
   },
   {
-   "tipo": "Consulta",
+   "tipo": "Relatório de Levantamento",
    "total": 2,
    "abertos": 2
   },
@@ -285,18 +422,18 @@
   },
   {
    "relator": "Augusto Nardes",
-   "total": 10
+   "total": 9
   },
   {
    "relator": "Jhonatan de Jesus",
    "total": 9
   },
   {
-   "relator": "Jorge Oliveira",
+   "relator": "Odair Cunha",
    "total": 8
   },
   {
-   "relator": "Odair Cunha",
+   "relator": "Jorge Oliveira",
    "total": 8
   },
   {
@@ -334,10 +471,6 @@
    "total": 2
   },
   {
-   "unidade": "AudUrbana",
-   "total": 2
-  },
-  {
    "unidade": "AudPessoal",
    "total": 2
   },
@@ -354,10 +487,6 @@
    "total": 1
   },
   {
-   "unidade": "SecexTCE Secretaria de Controle Externo de Tomada de Contas Especial",
-   "total": 1
-  },
-  {
    "unidade": "AudGestãoInovação",
    "total": 1
   },
@@ -367,6 +496,10 @@
   },
   {
    "unidade": "AudSustentabilidade",
+   "total": 1
+  },
+  {
+   "unidade": "AudUrbana",
    "total": 1
   },
   {
@@ -384,12 +517,12 @@
    "total": 6
   },
   {
-   "representante": "Marinus Marsico",
+   "representante": "Cristina Machado",
    "total": 5
   },
   {
-   "representante": "Cristina Machado",
-   "total": 5
+   "representante": "Marinus Marsico",
+   "total": 4
   },
   {
    "representante": "Paulo Bugarin",
@@ -422,7 +555,7 @@
    "orgaos": [],
    "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
    "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 7
+   "movimentacoes_mes": 18
   },
   {
    "processo": "005.775/2026-4",
@@ -431,6 +564,16 @@
    ],
    "assunto": "Auditoria Coordenada no Sistema Único de Assistência Social (SUAS)",
    "relator": "Jhonatan de Jesus",
+   "movimentacoes_mes": 4
+  },
+  {
+   "processo": "015.321/2025-8",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
+   "relator": "Augusto Nardes",
    "movimentacoes_mes": 4
   },
   {
@@ -453,17 +596,6 @@
    "movimentacoes_mes": 4
   },
   {
-   "processo": "016.141/2026-1",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SOF"
-   ],
-   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
-   "relator": "Antonio Anastasia",
-   "movimentacoes_mes": 3
-  },
-  {
    "processo": "007.318/2026-0",
    "orgaos": [
     "AECI",
@@ -476,45 +608,45 @@
    "movimentacoes_mes": 3
   },
   {
-   "processo": "005.678/2025-0",
+   "processo": "016.997/2022-0",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "relator": "Augusto Nardes",
+   "movimentacoes_mes": 3
+  },
+  {
+   "processo": "016.141/2026-1",
    "orgaos": [
     "AECI",
     "MPO",
     "SOF"
    ],
-   "assunto": "Auditoria Operacional da Sustentabilidade da Saúde Suplementar (ANS)",
-   "relator": "Walton Alencar Rodrigues",
-   "movimentacoes_mes": 3
-  },
-  {
-   "processo": "024.216/2025-9",
-   "orgaos": [
-    "MPO"
-   ],
-   "assunto": "Representação referente ao ato de gestão (Objeto: Meios utilizados pela União para execução de programas/projetos públicos com recursos que não transitam diretamente pelo orçamento, avaliando impactos e conformidade com a legislação fiscal, orçamentária e financeira.)",
-   "relator": "Rodrigo Pacheco",
+   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
+   "relator": "Antonio Anastasia",
    "movimentacoes_mes": 3
   }
  ],
  "processos": [
   {
-   "numero": "016.141/2026-1",
-   "id": "01614120261",
-   "codigo": "80761519",
+   "numero": "019.622/2026-0",
+   "id": "01962220260",
+   "codigo": "81036542",
    "estado": "Aberto",
-   "relator": "Antonio Anastasia",
-   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
-   "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": null,
-   "representante_mp": null,
+   "relator": "Odair Cunha",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
+   "natureza": "Representação",
+   "unidade_tecnica": "AudFiscal",
+   "representante_mp": "Sergio Caribé",
    "unidades": [
     "SOF/MPO - Secretaria de Orçamento Federal",
-    "PGFN - Procuradoria-Geral da Fazenda Nacional",
-    "RFB - Secretaria Especial da Receita Federal do Brasil"
+    "RFB - Secretaria Especial da Receita Federal do Brasil",
+    "STN - Secretaria do Tesouro Nacional"
    ],
    "interessados": [],
    "orgaos": [
-    "AECI",
     "MPO",
     "SOF"
    ],
@@ -522,40 +654,38 @@
     "MPO",
     "SOF"
    ],
-   "orgaos_interessado": [
-    "AECI"
-   ],
+   "orgaos_interessado": [],
    "vinculo": "unidade",
    "acordao": null,
    "movimentacoes": [
     {
-     "data": "2026-11-23T00:00:00+00:00",
-     "descricao": "Documento Despacho de expediente (Negativa de prorrogação de prazo) juntado ao processo por AudFiscal",
+     "data": "2026-11-24T00:00:00+00:00",
+     "descricao": "Enviado para pronunciamento do Ministro Odair Cunha por AudFiscal",
      "fase": null,
      "acordao": null
     },
     {
-     "data": "2026-11-23T00:00:00+00:00",
+     "data": "2026-11-24T00:00:00+00:00",
+     "descricao": "Pronunciamento da AudFiscal concluído",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-09-21T00:00:00+00:00",
      "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-11-13T00:00:00+00:00",
-     "descricao": "Processo enviado de Seproc para AudFiscal/Dipog. (Diretoria de Fiscalização do Planejamento e do Orçamento Governamental)",
      "fase": null,
      "acordao": null
     }
    ],
    "ultima_movimentacao": {
-    "data": "2026-11-23T00:00:00+00:00",
-    "descricao": "Documento Despacho de expediente (Negativa de prorrogação de prazo) juntado ao processo por AudFiscal",
+    "data": "2026-11-24T00:00:00+00:00",
+    "descricao": "Enviado para pronunciamento do Ministro Odair Cunha por AudFiscal",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Documento Despacho de expediente (Negativa de prorrogação de prazo) juntado ao p",
-   "atualizado_em": "2026-11-23T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1614120261",
+   "fase_atual": "Enviado para pronunciamento do Ministro Odair Cunha por AudFiscal",
+   "atualizado_em": "2026-11-24T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1962220260",
    "garantido": false
   },
   {
@@ -599,6 +729,12 @@
    "acordao": null,
    "movimentacoes": [
     {
+     "data": "2026-11-24T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 46296/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+     "fase": null,
+     "acordao": null
+    },
+    {
      "data": "2026-11-23T00:00:00+00:00",
      "descricao": "Registrada ciência de comunicação do Ofício 46297/2026-TCU/Seproc via CONECTA TCU por ISABELA BRAGA DE LIMA em nome de Secretaria Especial da Receita Federal do Brasil",
      "fase": null,
@@ -609,23 +745,136 @@
      "descricao": "Registrada ciência de comunicação do Ofício 46295/2026-TCU/Seproc via CONECTA TCU por JULIANA DANTAS BORGES em nome de Secretaria-Executiva do Ministério da Fazenda",
      "fase": null,
      "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-11-24T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Ofício 46296/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Ofício 46296/2026-TCU/Seproc via CONECTA TC",
+   "atualizado_em": "2026-11-24T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=731820260",
+   "garantido": false
+  },
+  {
+   "numero": "016.997/2022-0",
+   "id": "01699720220",
+   "codigo": "71725694",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "natureza": "Acompanhamento",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "COMAER - Comando da Aeronáutica",
+    "C Ex - Comando do Exército"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-11-24T00:00:00+00:00",
+     "descricao": "Documento Novos elementos/informações adicionais (OFÍCIO Nº 090/2026/PRES/COREM ) juntado ao processo por AudEducação",
+     "fase": null,
+     "acordao": null
     },
     {
-     "data": "2026-11-19T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 46294/2026-TCU/Seproc via CONECTA TCU por MARCELE BOTELHO em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
+     "data": "2026-10-29T00:00:00+00:00",
+     "descricao": "Documento Novos elementos/informações adicionais (a) juntado ao processo por AudEducação",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-10-29T00:00:00+00:00",
+     "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por AudEducação",
      "fase": null,
      "acordao": null
     }
    ],
    "ultima_movimentacao": {
-    "data": "2026-11-23T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 46297/2026-TCU/Seproc via CONECTA TCU por ISABELA BRAGA DE LIMA em nome de Secretaria Especial da Receita Federal do Brasil",
+    "data": "2026-11-24T00:00:00+00:00",
+    "descricao": "Documento Novos elementos/informações adicionais (OFÍCIO Nº 090/2026/PRES/COREM ) juntado ao processo por AudEducação",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 46297/2026-TCU/Seproc via CONECTA TC",
-   "atualizado_em": "2026-11-23T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=731820260",
+   "fase_atual": "Documento Novos elementos/informações adicionais (OFÍCIO Nº 090/2026/PRES/COREM ",
+   "atualizado_em": "2026-11-24T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1699720220",
+   "garantido": false
+  },
+  {
+   "numero": "005.775/2026-4",
+   "id": "00577520264",
+   "codigo": "79937966",
+   "estado": "Aberto",
+   "relator": "Jhonatan de Jesus",
+   "assunto": "Auditoria Coordenada no Sistema Único de Assistência Social (SUAS)",
+   "natureza": "Relatório de Auditoria",
+   "unidade_tecnica": "AudBenefícios",
+   "representante_mp": "Lucas Furtado",
+   "unidades": [],
+   "interessados": [
+    "Assessoria Especial de Controle Interno do Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
+    "Secretaria-Executiva do Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome"
+   ],
+   "orgaos": [
+    "MPO"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "MPO"
+   ],
+   "vinculo": "interessado",
+   "acordao": "3068/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-11-24T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Aviso 1055/2026-TCU/Seproc via CONECTA TCU por ARIADNA EDENICE DE MENDONCA VASCONCELOS em nome de Comissão de Previdência, Assistência Social, Infância, Adolescência e Família - CD",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-19T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 45485/2026-TCU/Seproc via CONECTA TCU por EDMUNDO MONTE CAVALCANTE em nome de Tribunal de Contas do Estado do Ceará",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-19T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 45499/2026-TCU/Seproc via CONECTA TCU por MARIO NEWTON PEPES HERMES em nome de Tribunal de Contas dos Municípios do Estado do Pará",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-12T00:00:00+00:00",
+     "descricao": "Acórdão 3068/2026 — Plenário",
+     "fase": "Julgado",
+     "acordao": "3068/2026"
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-11-24T00:00:00+00:00",
+    "descricao": "Registrada ciência de comunicação do Aviso 1055/2026-TCU/Seproc via CONECTA TCU por ARIADNA EDENICE DE MENDONCA VASCONCELOS em nome de Comissão de Previdência, Assistência Social, Infância, Adolescência e Família - CD",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada ciência de comunicação do Aviso 1055/2026-TCU/Seproc via CONECTA TCU ",
+   "atualizado_em": "2026-11-24T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=577520264",
    "garantido": false
   },
   {
@@ -654,6 +903,12 @@
    "acordao": "1216/2025",
    "movimentacoes": [
     {
+     "data": "2026-11-24T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudBenefícios",
+     "fase": null,
+     "acordao": null
+    },
+    {
      "data": "2026-11-23T00:00:00+00:00",
      "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudBenefícios",
      "fase": null,
@@ -667,13 +922,13 @@
     }
    ],
    "ultima_movimentacao": {
-    "data": "2026-11-23T00:00:00+00:00",
+    "data": "2026-11-24T00:00:00+00:00",
     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudBenefícios",
     "fase": null,
     "acordao": null
    },
    "fase_atual": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudBenefíc",
-   "atualizado_em": "2026-11-23T00:00:00+00:00",
+   "atualizado_em": "2026-11-24T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=348720253",
    "garantido": false
   },
@@ -700,6 +955,72 @@
    "vinculo": "acompanhado",
    "acordao": null,
    "movimentacoes": [
+    {
+     "data": "2026-11-24T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Roteiro de Análise e sua aplicação aos arranjos) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Estatuto Fundo Rio Doce) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Consultoria Senado - DOS FUNDOS ESPECIAIS AOS PRIV) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (IFI - Relatório de Acompanhamento Fiscal - 117) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Consultoria da Câmada - mecanismos extraorçamentár) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Recommendation of the Council on Budgetary Governa) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Framework for Assessing Public Financial Managemen) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Extrabudgetary Funds. FMI, 2010 ) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Manual de Estatísticas de Finanças Públicas (G) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Manual de Transparência fiscal do FMI) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Documento Elementos comprobatórios/Evidências (Avaliação da Transparência Fiscal 2017 - FMI) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
     {
      "data": "2026-11-23T00:00:00+00:00",
      "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por AudFiscal",
@@ -792,15 +1113,240 @@
     }
    ],
    "ultima_movimentacao": {
-    "data": "2026-11-23T00:00:00+00:00",
-    "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por AudFiscal",
+    "data": "2026-11-24T00:00:00+00:00",
+    "descricao": "Documento Elementos comprobatórios/Evidências (Roteiro de Análise e sua aplicação aos arranjos) juntado ao processo por AudFiscal",
     "fase": null,
     "acordao": null
    },
-   "fase_atual": "Documento Novos elementos/informações adicionais juntado ao processo por AudFisc",
-   "atualizado_em": "2026-11-23T00:00:00+00:00",
+   "fase_atual": "Documento Elementos comprobatórios/Evidências (Roteiro de Análise e sua aplicaçã",
+   "atualizado_em": "2026-11-24T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=715820262",
    "garantido": true
+  },
+  {
+   "numero": "021.575/2026-6",
+   "id": "02157520266",
+   "codigo": "81205183",
+   "estado": "Aberto",
+   "relator": "Jorge Oliveira",
+   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
+   "natureza": "Relatório de Acompanhamento",
+   "unidade_tecnica": "AudDigital",
+   "representante_mp": "Marinus Marsico",
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "RFB - Secretaria Especial da Receita Federal do Brasil",
+    "SEGES - Secretaria de Gestão e Inovação"
+   ],
+   "interessados": [
+    "CONGRESSO NACIONAL (VINCULADOR)"
+   ],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Registrada resposta de comunicação do Ofício 0016/2026-TCU/AudDigital.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-11-23T00:00:00+00:00",
+    "descricao": "Registrada resposta de comunicação do Ofício 0016/2026-TCU/AudDigital.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada resposta de comunicação do Ofício 0016/2026-TCU/AudDigital.",
+   "atualizado_em": "2026-11-23T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2157520266",
+   "garantido": false
+  },
+  {
+   "numero": "016.141/2026-1",
+   "id": "01614120261",
+   "codigo": "80761519",
+   "estado": "Aberto",
+   "relator": "Antonio Anastasia",
+   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
+   "natureza": "Relatório de Auditoria",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "PGFN - Procuradoria-Geral da Fazenda Nacional",
+    "RFB - Secretaria Especial da Receita Federal do Brasil"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [
+    "AECI"
+   ],
+   "vinculo": "unidade",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Pronunciamento da AudFiscal concluído",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Documento Despacho de expediente (Negativa de prorrogação de prazo) juntado ao processo por AudFiscal",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-11-23T00:00:00+00:00",
+    "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
+   "atualizado_em": "2026-11-23T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1614120261",
+   "garantido": false
+  },
+  {
+   "numero": "015.321/2025-8",
+   "id": "01532120258",
+   "codigo": "78531966",
+   "estado": "Aberto",
+   "relator": "Augusto Nardes",
+   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
+   "natureza": "Solicitação do Congresso Nacional",
+   "unidade_tecnica": null,
+   "representante_mp": null,
+   "unidades": [
+    "SOF/MPO - Secretaria de Orçamento Federal",
+    "Agência Nacional de Mineração",
+    "Anac - Agência Nacional de Aviação Civil"
+   ],
+   "interessados": [],
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_unidade": [
+    "MPO",
+    "SOF"
+   ],
+   "orgaos_interessado": [
+    "MPO"
+   ],
+   "vinculo": "unidade",
+   "acordao": "3144/2026",
+   "movimentacoes": [
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Processo enviado de MIN-AN para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Apreciado na Sessão Ordinária do Plenário em 18/11/2026 por meio do Acórdão 3144/2026-PL",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Acórdão 3144/2026 — Plenário",
+     "fase": "Julgado",
+     "acordao": "3144/2026"
+    },
+    {
+     "data": "2026-11-13T00:00:00+00:00",
+     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-11-23T00:00:00+00:00",
+    "descricao": "Processo enviado de MIN-AN para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Processo enviado de MIN-AN para Seses/Disup. (Diretoria de Suporte aos Colegiado",
+   "atualizado_em": "2026-11-23T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1532120258",
+   "garantido": false
+  },
+  {
+   "numero": "021.317/2026-7",
+   "id": "02131720267",
+   "codigo": "81163201",
+   "estado": "Aberto",
+   "relator": "Benjamin Zymler",
+   "assunto": "Auditoria de Conformidade (com aspectos operacionais) na CVM para avaliar a destinação dos recursos da Taxa de Fiscalização, considerando a recente decisão do STF na ADI 7791.",
+   "natureza": "Relatório de Auditoria",
+   "unidade_tecnica": "AudBancos",
+   "representante_mp": "Cristina Machado",
+   "unidades": [
+    "CVM - Comissão de Valores Mobiliários"
+   ],
+   "interessados": [
+    "Secretaria de Orçamento Federal"
+   ],
+   "orgaos": [
+    "SOF"
+   ],
+   "orgaos_unidade": [],
+   "orgaos_interessado": [
+    "SOF"
+   ],
+   "vinculo": "interessado",
+   "acordao": null,
+   "movimentacoes": [
+    {
+     "data": "2026-11-23T00:00:00+00:00",
+     "descricao": "Registrada resposta de comunicação do Ofício 0093/2026-TCU/AudBancos.",
+     "fase": null,
+     "acordao": null
+    },
+    {
+     "data": "2026-11-17T00:00:00+00:00",
+     "descricao": "Registrada ciência de comunicação do Ofício 0093/2026-TCU/AudBancos via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+     "fase": null,
+     "acordao": null
+    }
+   ],
+   "ultima_movimentacao": {
+    "data": "2026-11-23T00:00:00+00:00",
+    "descricao": "Registrada resposta de comunicação do Ofício 0093/2026-TCU/AudBancos.",
+    "fase": null,
+    "acordao": null
+   },
+   "fase_atual": "Registrada resposta de comunicação do Ofício 0093/2026-TCU/AudBancos.",
+   "atualizado_em": "2026-11-23T00:00:00+00:00",
+   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2131720267",
+   "garantido": false
   },
   {
    "numero": "018.918/2026-3",
@@ -919,67 +1465,6 @@
    "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/",
    "atualizado_em": "2026-11-19T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=567820250",
-   "garantido": false
-  },
-  {
-   "numero": "005.775/2026-4",
-   "id": "00577520264",
-   "codigo": "79937966",
-   "estado": "Aberto",
-   "relator": "Jhonatan de Jesus",
-   "assunto": "Auditoria Coordenada no Sistema Único de Assistência Social (SUAS)",
-   "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": "AudBenefícios",
-   "representante_mp": "Lucas Furtado",
-   "unidades": [],
-   "interessados": [
-    "Assessoria Especial de Controle Interno do Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
-    "Secretaria-Executiva do Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome"
-   ],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "interessado",
-   "acordao": "3068/2026",
-   "movimentacoes": [
-    {
-     "data": "2026-11-19T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 45485/2026-TCU/Seproc via CONECTA TCU por EDMUNDO MONTE CAVALCANTE em nome de Tribunal de Contas do Estado do Ceará",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-11-19T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 45499/2026-TCU/Seproc via CONECTA TCU por MARIO NEWTON PEPES HERMES em nome de Tribunal de Contas dos Municípios do Estado do Pará",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-11-18T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 45481/2026-TCU/Seproc via CONECTA TCU por TARITA BITENCURT ALVES DA SILVA em nome de Tribunal de Contas do Estado de Tocantins",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-11-12T00:00:00+00:00",
-     "descricao": "Acórdão 3068/2026 — Plenário",
-     "fase": "Julgado",
-     "acordao": "3068/2026"
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-11-19T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 45485/2026-TCU/Seproc via CONECTA TCU por EDMUNDO MONTE CAVALCANTE em nome de Tribunal de Contas do Estado do Ceará",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 45485/2026-TCU/Seproc via CONECTA TC",
-   "atualizado_em": "2026-11-19T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=577520264",
    "garantido": false
   },
   {
@@ -1324,122 +1809,6 @@
    "garantido": false
   },
   {
-   "numero": "021.317/2026-7",
-   "id": "02131720267",
-   "codigo": "81163201",
-   "estado": "Aberto",
-   "relator": "Benjamin Zymler",
-   "assunto": "Auditoria de Conformidade (com aspectos operacionais) na CVM para avaliar a destinação dos recursos da Taxa de Fiscalização, considerando a recente decisão do STF na ADI 7791.",
-   "natureza": "Relatório de Auditoria",
-   "unidade_tecnica": "AudBancos",
-   "representante_mp": "Cristina Machado",
-   "unidades": [
-    "CVM - Comissão de Valores Mobiliários"
-   ],
-   "interessados": [
-    "Secretaria de Orçamento Federal"
-   ],
-   "orgaos": [
-    "SOF"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "SOF"
-   ],
-   "vinculo": "interessado",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-11-17T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 0093/2026-TCU/AudBancos via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-11-11T00:00:00+00:00",
-     "descricao": "Juntada comunicação Ofício 0093/2026 por unidade AudBancos em virtude de expedição",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-10-06T00:00:00+00:00",
-     "descricao": "Peça nº 4 do tipo Portaria de Fiscalização (doc 81.189.612-0) publicada no BTCU Controle Externo n° 174, de 06/10/2026.",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-11-17T00:00:00+00:00",
-    "descricao": "Registrada ciência de comunicação do Ofício 0093/2026-TCU/AudBancos via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Registrada ciência de comunicação do Ofício 0093/2026-TCU/AudBancos via CONECTA ",
-   "atualizado_em": "2026-11-17T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2131720267",
-   "garantido": false
-  },
-  {
-   "numero": "021.575/2026-6",
-   "id": "02157520266",
-   "codigo": "81205183",
-   "estado": "Aberto",
-   "relator": "Jorge Oliveira",
-   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
-   "natureza": "Relatório de Acompanhamento",
-   "unidade_tecnica": "AudDigital",
-   "representante_mp": "Marinus Marsico",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "RFB - Secretaria Especial da Receita Federal do Brasil",
-    "SEGES - Secretaria de Gestão e Inovação"
-   ],
-   "interessados": [
-    "CONGRESSO NACIONAL (VINCULADOR)"
-   ],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-11-16T00:00:00+00:00",
-     "descricao": "Peça nº 33 do tipo Portaria de Fiscalização (doc 81.401.647-1) publicada no BTCU Controle Externo n° 199, de 16/11/2026.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-11-16T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 0019/2026-TCU/AudDigital via CONECTA TCU por Andréa Cristina Martins Belluomini Khallouf em nome de Não identificado",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-11-16T00:00:00+00:00",
-     "descricao": "Juntada comunicação Ofício 0019/2026 por unidade AudDigital em virtude de expedição",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-11-16T00:00:00+00:00",
-    "descricao": "Peça nº 33 do tipo Portaria de Fiscalização (doc 81.401.647-1) publicada no BTCU Controle Externo n° 199, de 16/11/2026.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Peça nº 33 do tipo Portaria de Fiscalização (doc 81.401.647-1) publicada no BTCU",
-   "atualizado_em": "2026-11-16T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2157520266",
-   "garantido": false
-  },
-  {
    "numero": "015.939/2025-1",
    "id": "01593920251",
    "codigo": "78609839",
@@ -1547,66 +1916,6 @@
    "fase_atual": "Processo enviado de Seproc para AudTI/AudTI-ASS. (Assessoria da AudTI)",
    "atualizado_em": "2026-11-16T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=719020247",
-   "garantido": false
-  },
-  {
-   "numero": "015.321/2025-8",
-   "id": "01532120258",
-   "codigo": "78531966",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
-   "natureza": "Solicitação do Congresso Nacional",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "Agência Nacional de Mineração",
-    "Anac - Agência Nacional de Aviação Civil"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-11-13T00:00:00+00:00",
-     "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-10-28T00:00:00+00:00",
-     "descricao": "Enviado para pronunciamento do Ministro Augusto Nardes por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-10-28T00:00:00+00:00",
-     "descricao": "Pronunciamento da AudFiscal concluído",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-11-13T00:00:00+00:00",
-    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 18/11/",
-   "atualizado_em": "2026-11-13T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1532120258",
    "garantido": false
   },
   {
@@ -1848,14 +2157,12 @@
    "relator": "Augusto Nardes",
    "assunto": "TCE instaurada pelo(a) Instituto Federal de Educação, Ciência e Tecnologia do Paraná em razão de Desfalque, alcance, desvio ou desaparecimento de dinheiro, bens ou valores públicos, Termo de cooperação 03/2010, firmado com o/a Ministério do Planejamento, Orçamento e Gestão , função ADMINISTRACAO, que teve como objeto Reforço da capacidade institucional e modernização administrativa da União, dos Estados e municípios, por meio da promoção da qualificação dos agentes públicos, mediante oferta e realização de Curso Superior de Tecnologia em Gestão Pública. (nº da TCE no sistema: 3358/2019).",
    "natureza": "Tomada de Contas Especial",
-   "unidade_tecnica": "SecexTCE Secretaria de Controle Externo de Tomada de Contas Especial",
+   "unidade_tecnica": null,
    "representante_mp": null,
    "unidades": [
     "IFPR - Instituto Federal de Educação, Ciência e Tecnologia do Paraná"
    ],
-   "interessados": [
-    "FUNDO NACIONAL DE SAÚDE - MS"
-   ],
+   "interessados": [],
    "orgaos": [
     "MPO"
    ],
@@ -1864,7 +2171,7 @@
     "MPO"
    ],
    "vinculo": "interessado",
-   "acordao": "7615/2020",
+   "acordao": null,
    "movimentacoes": [
     {
      "data": "2026-11-10T00:00:00+00:00",
@@ -2350,64 +2657,6 @@
    "fase_atual": "Documento Informações para subsidiar defesa da União (AGU) juntado ao processo p",
    "atualizado_em": "2026-10-29T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1819820260",
-   "garantido": false
-  },
-  {
-   "numero": "016.997/2022-0",
-   "id": "01699720220",
-   "codigo": "71725694",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
-   "natureza": "Acompanhamento",
-   "unidade_tecnica": null,
-   "representante_mp": null,
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "COMAER - Comando da Aeronáutica",
-    "C Ex - Comando do Exército"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-10-29T00:00:00+00:00",
-     "descricao": "Documento Novos elementos/informações adicionais (a) juntado ao processo por AudEducação",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-10-29T00:00:00+00:00",
-     "descricao": "Documento Novos elementos/informações adicionais juntado ao processo por AudEducação",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-10-08T00:00:00+00:00",
-     "descricao": "Enviado para pronunciamento do Ministro Augusto Nardes por AudEducação",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-10-29T00:00:00+00:00",
-    "descricao": "Documento Novos elementos/informações adicionais (a) juntado ao processo por AudEducação",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Novos elementos/informações adicionais (a) juntado ao processo por Aud",
-   "atualizado_em": "2026-10-29T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1699720220",
    "garantido": false
   },
   {
@@ -3763,64 +4012,6 @@
    "garantido": false
   },
   {
-   "numero": "019.622/2026-0",
-   "id": "01962220260",
-   "codigo": "81036542",
-   "estado": "Aberto",
-   "relator": "Odair Cunha",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
-   "natureza": "Representação",
-   "unidade_tecnica": "AudFiscal",
-   "representante_mp": "Sergio Caribé",
-   "unidades": [
-    "SOF/MPO - Secretaria de Orçamento Federal",
-    "RFB - Secretaria Especial da Receita Federal do Brasil",
-    "STN - Secretaria do Tesouro Nacional"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_unidade": [
-    "MPO",
-    "SOF"
-   ],
-   "orgaos_interessado": [],
-   "vinculo": "unidade",
-   "acordao": null,
-   "movimentacoes": [
-    {
-     "data": "2026-09-21T00:00:00+00:00",
-     "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-09T00:00:00+00:00",
-     "descricao": "Unidade responsável técnica alterada de AudFiscal para Difes por AudFiscal",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-09-09T00:00:00+00:00",
-     "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-09-21T00:00:00+00:00",
-    "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
-   "atualizado_em": "2026-09-21T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=1962220260",
-   "garantido": false
-  },
-  {
    "numero": "015.352/2025-0",
    "id": "01535220250",
    "codigo": "78536567",
@@ -4336,60 +4527,6 @@
    "atualizado_em": "2026-08-04T00:00:00+00:00",
    "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=2275620256",
    "garantido": true
-  },
-  {
-   "numero": "001.085/2026-3",
-   "id": "00108520263",
-   "codigo": "79607460",
-   "estado": "Aberto",
-   "relator": "Augusto Nardes",
-   "assunto": "Gestão de Riscos e de Desastres (PNPDEC) - ciclo RePP 2026",
-   "natureza": "Relatório de Levantamento",
-   "unidade_tecnica": "AudUrbana",
-   "representante_mp": "Marinus Marsico",
-   "unidades": [
-    "Sedec - Secretaria Nacional de Proteção e Defesa Civil"
-   ],
-   "interessados": [],
-   "orgaos": [
-    "MPO"
-   ],
-   "orgaos_unidade": [],
-   "orgaos_interessado": [
-    "MPO"
-   ],
-   "vinculo": "interessado",
-   "acordao": "1781/2026",
-   "movimentacoes": [
-    {
-     "data": "2026-07-27T00:00:00+00:00",
-     "descricao": "Processo enviado de Seproc para AudUrbana/AudUrbana-ASS. (Assessoria da AudUrbana)",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-27T00:00:00+00:00",
-     "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
-     "fase": null,
-     "acordao": null
-    },
-    {
-     "data": "2026-07-27T00:00:00+00:00",
-     "descricao": "Registrada ciência de comunicação do Ofício 26146/2026-TCU/Seproc.",
-     "fase": null,
-     "acordao": null
-    }
-   ],
-   "ultima_movimentacao": {
-    "data": "2026-07-27T00:00:00+00:00",
-    "descricao": "Processo enviado de Seproc para AudUrbana/AudUrbana-ASS. (Assessoria da AudUrbana)",
-    "fase": null,
-    "acordao": null
-   },
-   "fase_atual": "Processo enviado de Seproc para AudUrbana/AudUrbana-ASS. (Assessoria da AudUrban",
-   "atualizado_em": "2026-07-27T00:00:00+00:00",
-   "url_push": "https://pesquisa.apps.tcu.gov.br/#/push/processo?numero=108520263",
-   "garantido": false
   },
   {
    "numero": "014.062/2025-9",
@@ -5128,6 +5265,21 @@
  ],
  "movimentacoes_recentes": [
   {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Acórdão 3144/2026 — Plenário",
+   "fase": "Julgado",
+   "acordao": "3144/2026",
+   "processo": "015.321/2025-8",
+   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
+   "natureza": "Solicitação do Congresso Nacional",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto",
+   "evento": "acordao"
+  },
+  {
    "data": "2026-11-19T00:00:00+00:00",
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 25/11/2026, às 14h30.",
    "fase": null,
@@ -5176,10 +5328,13 @@
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
    "fase": null,
    "acordao": null,
-   "processo": "008.723/2023-0",
-   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
-   "natureza": "Representação",
-   "orgaos": [],
+   "processo": "015.321/2025-8",
+   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
+   "natureza": "Solicitação do Congresso Nacional",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
    "estado": "Aberto",
    "evento": "pauta"
   },
@@ -5188,13 +5343,10 @@
    "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
    "fase": null,
    "acordao": null,
-   "processo": "015.321/2025-8",
-   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
-   "natureza": "Solicitação do Congresso Nacional",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
+   "processo": "008.723/2023-0",
+   "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
+   "natureza": "Representação",
+   "orgaos": [],
    "estado": "Aberto",
    "evento": "pauta"
   },
@@ -5244,33 +5396,98 @@
  ],
  "movimentacoes": [
   {
-   "data": "2026-11-23T00:00:00+00:00",
-   "descricao": "Documento Despacho de expediente (Negativa de prorrogação de prazo) juntado ao processo por AudFiscal",
+   "data": "2026-11-24T00:00:00+00:00",
+   "descricao": "Enviado para pronunciamento do Ministro Odair Cunha por AudFiscal",
    "fase": null,
    "acordao": null,
-   "processo": "016.141/2026-1",
-   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
-   "natureza": "Relatório de Auditoria",
+   "processo": "019.622/2026-0",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
+   "natureza": "Representação",
    "orgaos": [
-    "AECI",
     "MPO",
     "SOF"
    ],
    "estado": "Aberto"
   },
   {
-   "data": "2026-11-23T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
+   "data": "2026-11-24T00:00:00+00:00",
+   "descricao": "Pronunciamento da AudFiscal concluído",
    "fase": null,
    "acordao": null,
-   "processo": "016.141/2026-1",
-   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
-   "natureza": "Relatório de Auditoria",
+   "processo": "019.622/2026-0",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
+   "natureza": "Representação",
    "orgaos": [
-    "AECI",
     "MPO",
     "SOF"
    ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-24T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 46296/2026-TCU/Seproc via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria-Executiva do Ministério do Planejamento e Orçamento",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.318/2026-0",
+   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
+   "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SE",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-24T00:00:00+00:00",
+   "descricao": "Documento Novos elementos/informações adicionais (OFÍCIO Nº 090/2026/PRES/COREM ) juntado ao processo por AudEducação",
+   "fase": null,
+   "acordao": null,
+   "processo": "016.997/2022-0",
+   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
+   "natureza": "Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-24T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Aviso 1055/2026-TCU/Seproc via CONECTA TCU por ARIADNA EDENICE DE MENDONCA VASCONCELOS em nome de Comissão de Previdência, Assistência Social, Infância, Adolescência e Família - CD",
+   "fase": null,
+   "acordao": null,
+   "processo": "005.775/2026-4",
+   "assunto": "Auditoria Coordenada no Sistema Único de Assistência Social (SUAS)",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-24T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudBenefícios",
+   "fase": null,
+   "acordao": null,
+   "processo": "003.487/2025-3",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Para apuração preliminar das providências e estudos destinados à implementação do modelo único de avaliação biopsicossocial da deficiência conduzidos pelo governo brasileiro.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-24T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Roteiro de Análise e sua aplicação aos arranjos) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -5316,6 +5533,116 @@
    "orgaos": [
     "MPO"
    ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Estatuto Fundo Rio Doce) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Consultoria Senado - DOS FUNDOS ESPECIAIS AOS PRIV) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (IFI - Relatório de Acompanhamento Fiscal - 117) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Consultoria da Câmada - mecanismos extraorçamentár) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Recommendation of the Council on Budgetary Governa) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Framework for Assessing Public Financial Managemen) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Extrabudgetary Funds. FMI, 2010 ) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Manual de Estatísticas de Finanças Públicas (G) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Manual de Transparência fiscal do FMI) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências (Avaliação da Transparência Fiscal 2017 - FMI) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "007.158/2026-2",
+   "assunto": "Avaliação da regularidade, transparência e governança de receitas e despesas de natureza pública não consignadas no Orçamento Geral da União",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [],
    "estado": "Aberto"
   },
   {
@@ -5385,18 +5712,142 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-11-19T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 46294/2026-TCU/Seproc via CONECTA TCU por MARCELE BOTELHO em nome de Secretaria-Executiva da Casa Civil da Presidência da República",
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 0016/2026-TCU/AudDigital.",
    "fase": null,
    "acordao": null,
-   "processo": "007.318/2026-0",
-   "assunto": "Avaliação do cumprimento dos limites e parâmetros da Lei de Responsabilidade Fiscal e da Lei Complementar 200/2023 - 1° e 2° quadrimestre de 2026",
+   "processo": "021.575/2026-6",
+   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
    "natureza": "Relatório de Acompanhamento",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Enviado para pronunciamento do Ministro Antonio Anastasia por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "016.141/2026-1",
+   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
+   "natureza": "Relatório de Auditoria",
    "orgaos": [
     "AECI",
     "MPO",
-    "SE",
     "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Pronunciamento da AudFiscal concluído",
+   "fase": null,
+   "acordao": null,
+   "processo": "016.141/2026-1",
+   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Documento Despacho de expediente (Negativa de prorrogação de prazo) juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "016.141/2026-1",
+   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "AECI",
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Processo enviado de MIN-AN para Seses/Disup. (Diretoria de Suporte aos Colegiados)",
+   "fase": null,
+   "acordao": null,
+   "processo": "015.321/2025-8",
+   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
+   "natureza": "Solicitação do Congresso Nacional",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Apreciado na Sessão Ordinária do Plenário em 18/11/2026 por meio do Acórdão 3144/2026-PL",
+   "fase": null,
+   "acordao": null,
+   "processo": "015.321/2025-8",
+   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
+   "natureza": "Solicitação do Congresso Nacional",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Acórdão 3144/2026 — Plenário",
+   "fase": "Julgado",
+   "acordao": "3144/2026",
+   "processo": "015.321/2025-8",
+   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
+   "natureza": "Solicitação do Congresso Nacional",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-23T00:00:00+00:00",
+   "descricao": "Registrada resposta de comunicação do Ofício 0093/2026-TCU/AudBancos.",
+   "fase": null,
+   "acordao": null,
+   "processo": "021.317/2026-7",
+   "assunto": "Auditoria de Conformidade (com aspectos operacionais) na CVM para avaliar a destinação dos recursos da Taxa de Fiscalização, considerando a recente decisão do STF na ADI 7791.",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 45485/2026-TCU/Seproc via CONECTA TCU por EDMUNDO MONTE CAVALCANTE em nome de Tribunal de Contas do Estado do Ceará",
+   "fase": null,
+   "acordao": null,
+   "processo": "005.775/2026-4",
+   "assunto": "Auditoria Coordenada no Sistema Único de Assistência Social (SUAS)",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-19T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 45499/2026-TCU/Seproc via CONECTA TCU por MARIO NEWTON PEPES HERMES em nome de Tribunal de Contas dos Municípios do Estado do Pará",
+   "fase": null,
+   "acordao": null,
+   "processo": "005.775/2026-4",
+   "assunto": "Auditoria Coordenada no Sistema Único de Assistência Social (SUAS)",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
+    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5427,32 +5878,6 @@
     "AECI",
     "MPO",
     "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-19T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 45485/2026-TCU/Seproc via CONECTA TCU por EDMUNDO MONTE CAVALCANTE em nome de Tribunal de Contas do Estado do Ceará",
-   "fase": null,
-   "acordao": null,
-   "processo": "005.775/2026-4",
-   "assunto": "Auditoria Coordenada no Sistema Único de Assistência Social (SUAS)",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-19T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 45499/2026-TCU/Seproc via CONECTA TCU por MARIO NEWTON PEPES HERMES em nome de Tribunal de Contas dos Municípios do Estado do Pará",
-   "fase": null,
-   "acordao": null,
-   "processo": "005.775/2026-4",
-   "assunto": "Auditoria Coordenada no Sistema Único de Assistência Social (SUAS)",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO"
    ],
    "estado": "Aberto"
   },
@@ -5504,19 +5929,6 @@
    "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
    "natureza": "Representação",
    "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-18T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 45481/2026-TCU/Seproc via CONECTA TCU por TARITA BITENCURT ALVES DA SILVA em nome de Tribunal de Contas do Estado de Tocantins",
-   "fase": null,
-   "acordao": null,
-   "processo": "005.775/2026-4",
-   "assunto": "Auditoria Coordenada no Sistema Único de Assistência Social (SUAS)",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO"
-   ],
    "estado": "Aberto"
   },
   {
@@ -5582,6 +5994,19 @@
    "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-11-17T00:00:00+00:00",
+   "descricao": "Registrada ciência de comunicação do Ofício 0093/2026-TCU/AudBancos via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
+   "fase": null,
+   "acordao": null,
+   "processo": "021.317/2026-7",
+   "assunto": "Auditoria de Conformidade (com aspectos operacionais) na CVM para avaliar a destinação dos recursos da Taxa de Fiscalização, considerando a recente decisão do STF na ADI 7791.",
+   "natureza": "Relatório de Auditoria",
+   "orgaos": [
     "SOF"
    ],
    "estado": "Aberto"
@@ -5654,61 +6079,6 @@
    "acordao": null,
    "processo": "009.482/2026-1",
    "assunto": "Acompanhamento da Regularidade da Execução Orçamentária e Financeira  1º Semestre de 2026",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-17T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 0093/2026-TCU/AudBancos via CONECTA TCU por RAISSA MORAIS CRUZEIRO em nome de Secretaria de Orçamento Federal",
-   "fase": null,
-   "acordao": null,
-   "processo": "021.317/2026-7",
-   "assunto": "Auditoria de Conformidade (com aspectos operacionais) na CVM para avaliar a destinação dos recursos da Taxa de Fiscalização, considerando a recente decisão do STF na ADI 7791.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-16T00:00:00+00:00",
-   "descricao": "Peça nº 33 do tipo Portaria de Fiscalização (doc 81.401.647-1) publicada no BTCU Controle Externo n° 199, de 16/11/2026.",
-   "fase": null,
-   "acordao": null,
-   "processo": "021.575/2026-6",
-   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-16T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 0019/2026-TCU/AudDigital via CONECTA TCU por Andréa Cristina Martins Belluomini Khallouf em nome de Não identificado",
-   "fase": null,
-   "acordao": null,
-   "processo": "021.575/2026-6",
-   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-16T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 0019/2026 por unidade AudDigital em virtude de expedição",
-   "fase": null,
-   "acordao": null,
-   "processo": "021.575/2026-6",
-   "assunto": "Coordenação e consolidação do Relatório de Fiscalização em Políticas Públicas e Programas de Governo (RePP 2027) e Macroavaliação de Políticas Públicas Autoavaliadas",
    "natureza": "Relatório de Acompanhamento",
    "orgaos": [
     "MPO",
@@ -5799,14 +6169,13 @@
   },
   {
    "data": "2026-11-13T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/Dipog. (Diretoria de Fiscalização do Planejamento e do Orçamento Governamental)",
+   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
    "fase": null,
    "acordao": null,
-   "processo": "016.141/2026-1",
-   "assunto": "Avaliação do Projeto de Lei Orçamentária Anual (PLOA) da União para o exercício de 2027",
-   "natureza": "Relatório de Auditoria",
+   "processo": "015.321/2025-8",
+   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
+   "natureza": "Solicitação do Congresso Nacional",
    "orgaos": [
-    "AECI",
     "MPO",
     "SOF"
    ],
@@ -5851,20 +6220,6 @@
    "assunto": "Exame do impacto do mecanismo de mitigação de riscos com o emprego de contas vinculadas em desestatizações, em cumprimento ao item 9.5.3 do Acórdão 752/2023-TCU-Plenário.",
    "natureza": "Representação",
    "orgaos": [],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-13T00:00:00+00:00",
-   "descricao": "Processo incluído na pauta da sessão Ordinária de Plenário, prevista para 18/11/2026, às 14h30.",
-   "fase": null,
-   "acordao": null,
-   "processo": "015.321/2025-8",
-   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
-   "natureza": "Solicitação do Congresso Nacional",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
    "estado": "Aberto"
   },
   {
@@ -5975,19 +6330,6 @@
     "AECI",
     "MPO",
     "SE",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-11-11T00:00:00+00:00",
-   "descricao": "Juntada comunicação Ofício 0093/2026 por unidade AudBancos em virtude de expedição",
-   "fase": null,
-   "acordao": null,
-   "processo": "021.317/2026-7",
-   "assunto": "Auditoria de Conformidade (com aspectos operacionais) na CVM para avaliar a destinação dos recursos da Taxa de Fiscalização, considerando a recente decisão do STF na ADI 7791.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
     "SOF"
    ],
    "estado": "Aberto"
@@ -6251,20 +6593,6 @@
   },
   {
    "data": "2026-10-29T00:00:00+00:00",
-   "descricao": "Documento Informações para subsidiar defesa da União (AGU) juntado ao processo por MIN-RP",
-   "fase": null,
-   "acordao": null,
-   "processo": "018.198/2026-0",
-   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-10-29T00:00:00+00:00",
    "descricao": "Documento Novos elementos/informações adicionais (a) juntado ao processo por AudEducação",
    "fase": null,
    "acordao": null,
@@ -6292,27 +6620,13 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-10-28T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Augusto Nardes por AudFiscal",
+   "data": "2026-10-29T00:00:00+00:00",
+   "descricao": "Documento Informações para subsidiar defesa da União (AGU) juntado ao processo por MIN-RP",
    "fase": null,
    "acordao": null,
-   "processo": "015.321/2025-8",
-   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
-   "natureza": "Solicitação do Congresso Nacional",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-10-28T00:00:00+00:00",
-   "descricao": "Pronunciamento da AudFiscal concluído",
-   "fase": null,
-   "acordao": null,
-   "processo": "015.321/2025-8",
-   "assunto": "Of. nº 20/2025/CTFC, de 16/7/2025, encaminha o Requerimento nº 40/2025-CTFC, de autoria do Senador Marcos Rogério, por meio do qual solicita ao TCU a realização de \"auditoria contábil, financeira, orçamentária e operacional nos atos da União, das seguintes  agências reguladoras federais: Agência Nacional de Mineração (ANM), Agência Nacional de Telecomunicações (Anatel), Agência Nacional de Energia Elétrica (Aneel), Agência Nacional de Aviação Civil (ANAC), Agência Nacional do Petróleo, Gás Natural\r\ne Biocombustíveis (ANP), Agência Nacional de Transportes Terrestres (ANTT) e Agência Nacional de Transportes Aquaviários (ANTAQ), bem como dos ministérios aos quais essas entidades estão vinculadas\".",
-   "natureza": "Solicitação do Congresso Nacional",
+   "processo": "018.198/2026-0",
+   "assunto": "Auditoria na Gestão Estruturante das Emendas Parlamentares",
+   "natureza": "Relatório de Auditoria",
    "orgaos": [
     "MPO",
     "SOF"
@@ -6747,20 +7061,6 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-10-08T00:00:00+00:00",
-   "descricao": "Enviado para pronunciamento do Ministro Augusto Nardes por AudEducação",
-   "fase": null,
-   "acordao": null,
-   "processo": "016.997/2022-0",
-   "assunto": "Autuado por força do disposto no Acórdão 1608/2022 - Plenário, que trata de acompanhamento com vistas a verificar o alcance das metas propostas nos Eixos de I a V do Plano de Ação, tendo elas sido instituídas pelo Plano Nacional Setorial de Museus (PNSM) 2010 ¿ 2020, e a verificar a fiel observância dos prazos previstos para a respectiva execução",
-   "natureza": "Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-10-07T00:00:00+00:00",
    "descricao": "Enviado para pronunciamento do Ministro Jhonatan de Jesus por AudFiscal",
    "fase": null,
@@ -6770,19 +7070,6 @@
    "natureza": "Consulta",
    "orgaos": [
     "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-10-06T00:00:00+00:00",
-   "descricao": "Peça nº 4 do tipo Portaria de Fiscalização (doc 81.189.612-0) publicada no BTCU Controle Externo n° 174, de 06/10/2026.",
-   "fase": null,
-   "acordao": null,
-   "processo": "021.317/2026-7",
-   "assunto": "Auditoria de Conformidade (com aspectos operacionais) na CVM para avaliar a destinação dos recursos da Taxa de Fiscalização, considerando a recente decisão do STF na ADI 7791.",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
     "SOF"
    ],
    "estado": "Aberto"
@@ -7167,6 +7454,20 @@
   },
   {
    "data": "2026-09-21T00:00:00+00:00",
+   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
+   "fase": null,
+   "acordao": null,
+   "processo": "019.622/2026-0",
+   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
+   "natureza": "Representação",
+   "orgaos": [
+    "MPO",
+    "SOF"
+   ],
+   "estado": "Aberto"
+  },
+  {
+   "data": "2026-09-21T00:00:00+00:00",
    "descricao": "Unidade responsável técnica alterada de AudFiscal-ASS para Diref por AudFiscal",
    "fase": null,
    "acordao": null,
@@ -7190,20 +7491,6 @@
    "orgaos": [
     "MPO",
     "SE",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-21T00:00:00+00:00",
-   "descricao": "Documento Elementos comprobatórios/Evidências juntado ao processo por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "019.622/2026-0",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
     "SOF"
    ],
    "estado": "Aberto"
@@ -7336,34 +7623,6 @@
     "MPO",
     "SE",
     "SMA"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Unidade responsável técnica alterada de AudFiscal para Difes por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "019.622/2026-0",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-09-09T00:00:00+00:00",
-   "descricao": "Documento Termo de sorteio juntado ao processo automaticamente pelo sistema",
-   "fase": null,
-   "acordao": null,
-   "processo": "019.622/2026-0",
-   "assunto": "Representação referente ao ato de gestão (Objeto: Acompanhamento preventivo das projeções de arrecadação da CBS e do Imposto Seletivo durante a transição da reforma tributária.)",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SOF"
    ],
    "estado": "Aberto"
   },
@@ -7787,45 +8046,6 @@
    "estado": "Aberto"
   },
   {
-   "data": "2026-07-27T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudUrbana/AudUrbana-ASS. (Assessoria da AudUrbana)",
-   "fase": null,
-   "acordao": null,
-   "processo": "001.085/2026-3",
-   "assunto": "Gestão de Riscos e de Desastres (PNPDEC) - ciclo RePP 2026",
-   "natureza": "Relatório de Levantamento",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-27T00:00:00+00:00",
-   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
-   "fase": null,
-   "acordao": null,
-   "processo": "001.085/2026-3",
-   "assunto": "Gestão de Riscos e de Desastres (PNPDEC) - ciclo RePP 2026",
-   "natureza": "Relatório de Levantamento",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-27T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 26146/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "001.085/2026-3",
-   "assunto": "Gestão de Riscos e de Desastres (PNPDEC) - ciclo RePP 2026",
-   "natureza": "Relatório de Levantamento",
-   "orgaos": [
-    "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
    "data": "2026-07-24T00:00:00+00:00",
    "descricao": "Processo enviado de Seproc para AudUrbana/AudUrbana-ASS. (Assessoria da AudUrbana)",
    "fase": null,
@@ -7911,111 +8131,6 @@
    "natureza": "Representação",
    "orgaos": [
     "MPO"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-08T00:00:00+00:00",
-   "descricao": "Unidade responsável técnica alterada de AudFiscal-ASS para Dipog por AudFiscal",
-   "fase": null,
-   "acordao": null,
-   "processo": "031.460/2022-4",
-   "assunto": "Of.P.250/22-CTASP/DECOM/CD, de 16/12/2022, encaminha o Requerimento 130/2022, por meio do qual é solicitado ao TCU cópia dos \"relatórios técnicos que compõem a instrução dos processos TC 044.337/2021-3, TC 012.649/2021-0, TC 014.379/2021-0 e TC 027.688/2022-4\".",
-   "natureza": "Solicitação do Congresso Nacional",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-07-01T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 3850/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "015.683/2019-2",
-   "assunto": "MP-TCU Propõe que o Tribunal adote providências com o objetivo de apurar a adequada gestão dos fundos governamentais de caráter orçamentário, tendo em vista os riscos inerentes à má gestão orçamentária desses fundos com impacto no déficit fiscal",
-   "natureza": "Representação",
-   "orgaos": [
-    "MPO",
-    "SE",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-26T00:00:00+00:00",
-   "descricao": "Registrada resposta de comunicação do Ofício 18393/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "014.984/2025-3",
-   "assunto": "Acompanhamento da Execução do Orçamento de Investimentos das Estatais e do Programa de Dispêndios Globais -  1º a 3º trimestre de 2025",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-22T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 22079/2026-TCU/Seproc via CONECTA TCU por ANDRESA COSTA BIASON em nome de Secretaria do Tesouro Nacional",
-   "fase": null,
-   "acordao": null,
-   "processo": "014.984/2025-3",
-   "assunto": "Acompanhamento da Execução do Orçamento de Investimentos das Estatais e do Programa de Dispêndios Globais -  1º a 3º trimestre de 2025",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
-   ],
-   "estado": "Aberto"
-  },
-  {
-   "data": "2026-06-18T00:00:00+00:00",
-   "descricao": "Processo enviado de Seproc para AudFiscal/AudFiscal-ASS. (Assessoria da AudFiscal)",
-   "fase": null,
-   "acordao": null,
-   "processo": "022.756/2025-6",
-   "assunto": "Consolidação das análises setorias para subsídio ao parecer prévio das contas do Presidente da República",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SEPLAN",
-    "SOF"
-   ],
-   "estado": "Encerrado"
-  },
-  {
-   "data": "2026-06-18T00:00:00+00:00",
-   "descricao": "Despacho de encerramento de ciclo de comunicação. Por Seproc - Marcelo Gonçalves da Silva",
-   "fase": null,
-   "acordao": null,
-   "processo": "022.756/2025-6",
-   "assunto": "Consolidação das análises setorias para subsídio ao parecer prévio das contas do Presidente da República",
-   "natureza": "Relatório de Auditoria",
-   "orgaos": [
-    "AECI",
-    "MPO",
-    "SE",
-    "SEPLAN",
-    "SOF"
-   ],
-   "estado": "Encerrado"
-  },
-  {
-   "data": "2026-06-18T00:00:00+00:00",
-   "descricao": "Registrada ciência de comunicação do Ofício 22077/2026-TCU/Seproc.",
-   "fase": null,
-   "acordao": null,
-   "processo": "014.984/2025-3",
-   "assunto": "Acompanhamento da Execução do Orçamento de Investimentos das Estatais e do Programa de Dispêndios Globais -  1º a 3º trimestre de 2025",
-   "natureza": "Relatório de Acompanhamento",
-   "orgaos": [
-    "MPO",
-    "SOF"
    ],
    "estado": "Aberto"
   }
